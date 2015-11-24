@@ -1,0 +1,22 @@
+{
+  "name": "emerald-ouc",
+  "version": "1.0.0",
+  "authors": [
+    "UTHSC Web Team"
+  ],
+  "description": "Emerald Foundation template for OUC.",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://uthsc.edu",
+  "dependencies": {
+    "emerald": "git@github.com:uthsc/emerald.git"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "private": true
+}
