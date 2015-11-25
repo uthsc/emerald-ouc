@@ -17,7 +17,7 @@
     <!--*******-->
     <!--Top Bar-->
     <!--*******-->
-    <nav class="top-bar show-for-large">
+    <nav class="top-bar show-for-large"  aria-label="Global site navigation" role="navigation">
         <div class="top-bar-left">
             <ul class="menu">
                 <li><a href="#">Students</a></li>
@@ -78,7 +78,16 @@
     <!--***********-->
     <!--Breadcrumbs-->
     <!--***********-->
-
+    <nav aria-label="You are here:" role="navigation">
+        <ul class="breadcrumbs">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Features</a></li>
+            <li class="disabled">Gene Splicing</li>
+            <li>
+                <span class="show-for-sr">Current: </span> Cloning
+            </li>
+        </ul>
+    </nav>
     <!--************-->
     <!--/Breadcrumbs-->
     <!--************-->
@@ -87,7 +96,48 @@
     <!--***************-->
     <!--Main Navigation-->
     <!--***************-->
-
+    <nav aria-label="Current section navigation" role="navigation">
+        <ul class="dropdown menu" data-dropdown-menu>
+            <li>
+                <a>Item 1</a>
+                <ul class="menu">
+                    <li><a href="#">Item 1A Loooong</a></li>
+                    <li>
+                        <a href='#'> Item 1 sub</a>
+                        <ul class='menu'>
+                            <li><a href='#'>Item 1 subA</a></li>
+                            <li><a href='#'>Item 1 subB</a></li>
+                            <li>
+                                <a href='#'> Item 1 sub</a>
+                                <ul class='menu'>
+                                    <li><a href='#'>Item 1 subA</a></li>
+                                    <li><a href='#'>Item 1 subB</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href='#'> Item 1 sub</a>
+                                <ul class='menu'>
+                                    <li><a href='#'>Item 1 subA</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Item 1B</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Item 2</a>
+                <ul class="menu">
+                    <li><a href="#">Item 2A</a></li>
+                    <li><a href="#">Item 2B</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Item 3</a></li>
+            <li><a href='#'>Item 4</a></li>
+            <li><a href="#">Item 5</a></li>
+            <li><a href='#'>Item 6</a></li>
+        </ul>
+    </nav>
     <!--****************-->
     <!--/Main Navigation-->
     <!--****************-->
@@ -101,7 +151,7 @@
     <!--/Hero Image-->
     <!--***********-->
 
-    
+
     <!--*******-->
     <!--Content-->
     <!--*******-->
