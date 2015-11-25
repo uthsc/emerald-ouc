@@ -18,7 +18,7 @@
         <!--*******-->
         <!--Top Bar-->
         <!--*******-->
-        <nav class="top-bar show-for-large" aria-label="Global site navigation" role="navigation">
+        <nav class="top-bar show-for-large" aria-label="navigate the uthsc site" role="navigation">
             <div class="top-bar-left">
                 <ul class="menu">
                     <li><a href="#">Students</a></li>
@@ -57,12 +57,14 @@
                     </li>
                     <li><a href="#">Make a Gift</a></li>
                     <li><a href="#">Take a Tour</a></li>
-                    <li><input type="search" role="search" placeholder="Search"></li>
+                    <li><input type="search" role="search" placeholder="Search" aria-label="search the uthsc website"></li>
                     <li>
-                        <button type="button" class="button">Search</button>
+                        <button type="button" class="button" aria-label="submit search">Search</button>
                     </li>
                 </ul>
+
             </div>
+
         </nav>
         <!--********-->
         <!--/Top Bar-->
@@ -83,14 +85,12 @@
         <!--***********-->
         <!--Breadcrumbs-->
         <!--***********-->
-        <nav aria-label="You are here:" role="navigation">
+        <nav aria-label="Breadcrumbs - you are here:" role="navigation">
             <ul class="breadcrumbs">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li class="disabled">Gene Splicing</li>
-                <li>
-                    <span class="show-for-sr">Current: </span> Cloning
-                </li>
+                <li><a aria-label="go to uthsc homepage" href="#" >Home</a></li>
+                <li><a aria-label="go to parent section - College of medicine" href="#">College of medicine</a></li>
+                <li><a aria-label="go to parent section - College of medicine - Students" href="#">Students</a></li>
+                <li><a class="disabled" href="" aria-label="current page - Admissions">Admissions</a></li>
             </ul>
         </nav>
         <!--************-->
@@ -101,7 +101,7 @@
         <!--***************-->
         <!--Main Navigation-->
         <!--***************-->
-        <nav aria-label="Current section navigation" role="navigation">
+        <nav aria-label="navigate the current section" role="navigation">
             <ul class="dropdown menu" data-dropdown-menu>
                 <li>
                     <a>Item 1</a>
@@ -166,7 +166,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" role="article">
             <div class="large-12 columns">
 
                 <div class="callout">
@@ -179,26 +179,26 @@
 
                     <div class="row">
                         <div class="large-4 medium-4 columns">
-                            <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br/>Everything you
+                            <p><a href="http://foundation.zurb.com/docs" role="link">Foundation Documentation</a><br/>Everything you
                                 need to know about using the framework.</p>
                         </div>
                         <div class="large-4 medium-4 columns">
-                            <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br/>These
+                            <p><a href="http://zurb.com/university/code-skills" role="link">Foundation Code Skills</a><br/>These
                                 online courses offer you a chance to better understand how Foundation works and how you
                                 can master it to create awesome projects.</p>
                         </div>
                         <div class="large-4 medium-4 columns">
-                            <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br/>Join the Foundation
+                            <p><a href="http://foundation.zurb.com/forum" role="link">Foundation Forum</a><br/>Join the Foundation
                                 community to ask a question or show off your knowlege.</p>
                         </div>
                     </div>
                     <div class="row">
                         <div class="large-4 medium-4 medium-push-2 columns">
-                            <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br/>Latest code,
+                            <p><a href="http://github.com/zurb/foundation" role="link">Foundation on Github</a><br/>Latest code,
                                 issue reports, feature requests and more.</p>
                         </div>
                         <div class="large-4 medium-4 medium-pull-2 columns">
-                            <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br/>Ping us on Twitter
+                            <p><a href="https://twitter.com/ZURBfoundation" role="link">@zurbfoundation</a><br/>Ping us on Twitter
                                 if you have questions. When you build something with this we'd love to see it (and send
                                 you a totally boss sticker).</p>
                         </div>
