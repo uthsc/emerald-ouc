@@ -56,7 +56,7 @@
                 </li>
                 <li><a href="#">Make a Gift</a></li>
                 <li><a href="#">Take a Tour</a></li>
-                <li><input type="search" placeholder="Search"></li>
+                <li><input type="search" role="search" placeholder="Search"></li>
                 <li><button type="button" class="button">Search</button></li>
             </ul>
         </div>
@@ -69,7 +69,9 @@
     <!--******-->
     <!--Banner-->
     <!--******-->
+    <header role="banner">
 
+    </header>
     <!--*******-->
     <!--/Banner-->
     <!--*******-->
@@ -323,11 +325,15 @@
             <div data-equalizer="data-equalizer" class="row">
                 <div data-equalizer-watch="data-equalizer-watch" class="medium-4 columns footer-box">
                     <h4>Contact Us</h4>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                        dicta sunt explicabo.</p>
                 </div>
                 <div data-equalizer-watch="data-equalizer-watch" class="medium-4 columns footer-box">
                     <h4>Links</h4>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
+                        dicta sunt explicabo.</p>
                 </div>
                 <div data-equalizer-watch="data-equalizer-watch" class="medium-4 columns footer-box hide-for-small">
                     <figure><img src="_resources/2015/images/campus-arches.jpg" alt="the arches on union avenue">
@@ -347,25 +353,64 @@
 
             <div class="row collapse">
                 <div class="columns text-center"><br>
-                    <p>&copy; <?php echo date("Y") ?> The University of Tennessee<br>Health Science Center<br> Memphis, Tennessee 38163<br> Main: (901) 448-5500<br> TDD: (901) 448-7382<br> Last Published: <?php echo date("F j, Y") ?></p><br><a href="mailto:webmaster@uthsc.edu" class="button radius secondary tiny"><span class="fa fa-envelope fa-3x two-line-button-icon"></span><span class="two-line-button-text">Email<br>Webmaster</span></a>
-                    <a href="/password/" class="button radius secondary tiny"><span class="fa fa-key fa-3x two-line-button-icon"></span><span class="two-line-button-text">Edit<br>Password</span></a><br>
+
+                    <!--Contact info-->
+                    <p>
+                        &copy; <?php echo date("Y") ?> The University of Tennessee<br>
+                        Health Science Center<br>
+                        Memphis, Tennessee 38163<br>
+                        Main: (901) 448-5500<br>
+                        TDD: (901) 448-7382<br>
+                        Last Published: <?php echo date("F j, Y") ?>
+                    </p>
+
+                    <!--Email webmaster-->
+                    <br>
+                    <a href="mailto:webmaster@uthsc.edu" class="button radius secondary tiny">
+                        <span class="fa fa-envelope fa-3x two-line-button-icon"></span>
+                        <span class="two-line-button-text">Email<br>Webmaster</span>
+                    </a>
+
+                    <!--Edit password-->
+                    <a href="/password/" class="button radius secondary tiny">
+                        <span class="fa fa-key fa-3x two-line-button-icon"></span>
+                        <span class="two-line-button-text">Edit<br>Password</span>
+                    </a>
+                    <br>
+
+                    <!--Social media links-->
                     <div class="social-icon">
-                        <a href="http://facebook.com/uthsc"><span class="fa fa-facebook fa-2x fa-inverse"></span></a>
-                        <a href="http://twitter.com/uthsc"><span class="fa fa-twitter fa-2x fa-inverse"></span></a>
-                        <a href="http://instagram.com/uthsc"><span class="fa fa-instagram fa-2x fa-inverse"></span></a>
-                        <a href="http://linkedin.com/company/university-of-tennessee-health-science-center"><span class="fa fa-linkedin fa-2x fa-inverse"></span></a>
-                        <a href="http://youtube.com/user/uthsc"><span class="fa fa-youtube fa-2x fa-inverse"></span></a>
-                        <a href="http://pinterest.com/uthsc/"><span class="fa fa-pinterest fa-2x fa-inverse"></span></a>
-                    </div><br>
+                        <a href="http://facebook.com/uthsc">
+                            <span class="fa fa-facebook fa-2x fa-inverse"></span>
+                        </a>
+                        <a href="http://twitter.com/uthsc">
+                            <span class="fa fa-twitter fa-2x fa-inverse"></span>
+                        </a>
+                        <a href="http://instagram.com/uthsc">
+                            <span class="fa fa-instagram fa-2x fa-inverse"></span>
+                        </a>
+                        <a href="http://linkedin.com/company/university-of-tennessee-health-science-center">
+                            <span class="fa fa-linkedin fa-2x fa-inverse"></span>
+                        </a>
+                        <a href="http://youtube.com/user/uthsc">
+                            <span class="fa fa-youtube fa-2x fa-inverse"></span>
+                        </a>
+                        <a href="http://pinterest.com/uthsc/">
+                            <span class="fa fa-pinterest fa-2x fa-inverse"></span>
+                        </a>
+                    </div>
+                    <br>
                 </div>
             </div>
 
-            <div class="row collapse">
-                <!--******************************-->
-                <!--Mobile Emergency Numbers Links-->
-                <!--******************************-->
-                <div id="emergency-mobile" class="columns small-12 hide-for-medium">
-                    <h3 class="text-center"><span class="fa fa-phone fa-flip-horizontal fa-2x"></span> Emergency Numbers</h3>
+            <!--******************************-->
+            <!--Mobile Emergency Numbers Links-->
+            <!--******************************-->
+            <div class="row collapse hide-for-medium">
+                <div id="emergency-mobile" class="small-12 columns">
+                    <h3 class="text-center">
+                        <span class="fa fa-phone fa-flip-horizontal fa-2x"></span> Emergency Numbers
+                    </h3>
 
                     <!--*******-->
                     <!--Modal 1-->
@@ -384,7 +429,8 @@
                             <p>or Campus Police at</p>
                             <h3>
                                 <a href="tel:901-448-4444" class="button emergency">
-                                    <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span> (901) 448-4444
+                                    <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
+                                    (901) 448-4444
                                 </a>
                             </h3>
                         </div>
@@ -426,7 +472,8 @@
                             <hr>
                             <h3 class="lead">
                                 <a href="tel:901-448-5630" class="button emergency">
-                                    <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span> (901) 448-5630
+                                    <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
+                                    (901) 448-5630
                                 </a>
                             </h3>
                         </div>
@@ -466,7 +513,8 @@
                             <hr>
                             <h3 class="lead">
                                 <a href="tel:901-448-5064" class="button emergency">
-                                    <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span> (901) 448-5064
+                                    <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
+                                    (901) 448-5064
                                 </a>
                             </h3>
                         </div>
@@ -507,7 +555,9 @@
                             <hr>
                             <h3 class="lead">
                                 <a href="tel:800-327-2255" class="button emergency">
-                                    <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span> (800) 327-2255<br>(Option 3)
+                                    <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
+                                    (800) 327-2255<br>
+                                    (Option 3)
                                 </a>
                             </h3>
                         </div>
@@ -549,7 +599,8 @@
                             <hr>
                             <h3 class="lead">
                                 <a href="tel:855-437-3486" class="button emergency">
-                                    <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span> (855) 437-3486
+                                    <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
+                                    (855) 437-3486
                                 </a>
                             </h3>
                         </div>
@@ -620,6 +671,7 @@
                     <!--/Modal 6-->
                     <!--********-->
                 </div>
+                </div>
                 <!--*******************************-->
                 <!--/Mobile Emergency Numbers Links-->
                 <!--*******************************-->
@@ -627,7 +679,8 @@
                 <!--******************************-->
                 <!--Desktop Emergency Numbers Link-->
                 <!--******************************-->
-                <div id="emergency-desktop" class="medium-5 medium-centered columns show-for-medium">
+            <div class="row show-for-medium">
+                <div id="emergency-desktop" class="medium-5 medium-centered columns ">
                     <div class="row">
                         <a href="/univheal/emergencies.php" class="button alert radius expand">
                             <div class="columns large-5 medium-4 text-right emergency-phone-icon">
@@ -644,10 +697,10 @@
                         </a>
                     </div>
                 </div>
-                <!--*******************************-->
-                <!--/Desktop Emergency Numbers Link-->
-                <!--*******************************-->
             </div>
+            <!--*******************************-->
+            <!--/Desktop Emergency Numbers Link-->
+            <!--*******************************-->
 
         </div>
         <!--**************-->
@@ -662,7 +715,7 @@
     <!--******************-->
     <!--Off canvas buttons-->
     <!--******************-->
-    <div class="hide-for-large">
+    <div class="hide-for-large" aria-hidden="true">
         <button class="button" type="button" data-toggle="offCanvasLeft">Open Left Menu</button>
         <button class="button" type="button" data-toggle="offCanvasRight">Open Right Menu</button>
     </div>
@@ -673,7 +726,7 @@
     <!--********************-->
     <!--Left off canvas menu-->
     <!--********************-->
-    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas data-position="left" style="background:rosybrown;height:100%;">
+    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas="data-off-canvas" aria-hidden="true">
         <button class="close-button" aria-label="Close menu" type="button" data-close>
             <span aria-hidden="true">&times;</span>
         </button>
@@ -728,7 +781,9 @@
                 </ul>
             </li>
 
-            <li><a href="http://foundation.zurb.com/develop/getting-started.html" class="button">Getting Started</a></li>
+            <li>
+                <a href="http://foundation.zurb.com/develop/getting-started.html" class="button">Getting Started</a>
+            </li>
 
         </ul>
     </div>
@@ -739,7 +794,8 @@
     <!--*********************-->
     <!--Right off canvas menu-->
     <!--*********************-->
-    <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right" style="background:rosybrown;height:100%;">
+    <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas="data-off-canvas" data-position="right"
+         aria-hidden="true">
         <button class="close-button" aria-label="Close menu" type="button" data-close>
             <span aria-hidden="true">&times;</span>
         </button>
