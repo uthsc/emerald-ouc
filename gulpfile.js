@@ -20,6 +20,13 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['sass'], function() {
+gulp.task('copy-fonts', function() {
+  gulp.src('./bower_components/font-awesome/fonts/**/*.{ttf,woff,eof,svg}')
+      .pipe(gulp.dest('./fonts'));
+  gulp.src('./bower_components/font-awesome/css/**/*.{css,css.map}')
+      .pipe(gulp.dest('./css'));
+});
+
+gulp.task('default', ['sass','copy-fonts'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
 });
