@@ -1,0 +1,69 @@
+// Foundation for Sites by ZURB
+// foundation.zurb.com
+// Licensed under MIT Open Source
+
+////
+/// @group top-bar
+////
+
+/// Padding for the top bar.
+/// @type Number
+//$uthsc-site-nav-padding: 0.5rem !default;
+$uthsc-site-nav-padding: 0rem !default;
+
+/// Background color for the top bar. This color also cascades to menus within the top bar.
+/// @type Color
+$uthsc-site-nav-background: #eee !default;
+
+/// Color for links inside a top bar menu.
+/// @type Color
+$uthsc-site-nav-link-color: #fff !default;
+
+/// Width of `<input>` elements inside the top bar.
+/// @type Number
+$uthsc-site-nav-input-width: 200px !default;
+
+/// Adds styles for a top bar container.
+@mixin uthsc-site-nav-container {
+  @include clearfix;
+  padding: $uthsc-site-nav-padding;
+
+  &, ul {
+    background-color: $uthsc-site-nav-background;
+  }
+
+  input {
+    width: $uthsc-site-nav-input-width;
+    margin-#{$global-right}: 1rem;
+  }
+
+  input.button {
+    width:auto;
+  }
+}
+
+@mixin uthsc-site-nav {
+  // Top bar container
+  .uthsc-site-nav {
+    @include uthsc-site-nav-container;
+
+    .menu > li > a {
+      display: block;
+      padding: 0.8rem .5rem;
+      line-height: 1;
+      font-size: .8rem;
+    }
+  }
+
+  // Sub-sections
+  // Stack on small screens
+  @include breakpoint(medium) {
+    .uthsc-site-nav-left {
+      float: left;
+    }
+
+    .uthsc-site-nav-right {
+      float: right
+    }
+  }
+}
