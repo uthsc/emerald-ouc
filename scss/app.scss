@@ -1,5 +1,7 @@
 @import 'emerald';
 
 @import 'partials/uthsc-site-nav';
+@import 'partials/uthsc-banner';
 
 @include uthsc-site-nav;
+@include uthsc-banner;

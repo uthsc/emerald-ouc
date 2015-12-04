@@ -1,0 +1,19 @@
+////
+/// @group banner
+////
+
+/// Background color for the banner. This color also cascades to menus within the top bar.
+/// @type Color
+$uthsc-banner-background: #eee !default;
+$uthsc-banner-background: $uthsc-green !default;
+
+/// Adds styles for a top bar container.
+@mixin uthsc-banner-container {
+  background-color: $uthsc-banner-background;
+}
+
+@mixin uthsc-banner {
+  .uthsc-banner {
+    @include uthsc-banner-container;
+  }
+}
