@@ -1,3 +1,6 @@
 @import 'emerald';
 
 @import 'partials/site';
+@import 'partials/uthsc-site-nav';
+
+@include uthsc-site-nav;
