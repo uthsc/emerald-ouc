@@ -13,7 +13,8 @@ $uthsc-site-nav-padding: 0rem !default;
 
 /// Background color for the uthsc-site-nav. This color also cascades to menus within the uthsc-site-nav.
 /// @type Color
-$uthsc-site-nav-background: #eee !default;
+$uthsc-site-nav-background: $uthsc-first-bookend-color !default;
+
 
 /// Color for links inside a uthsc-site-nav menu.
 /// @type Color
@@ -29,6 +30,8 @@ $uthsc-site-nav-input-width: 200px !default;
   padding: $uthsc-site-nav-padding;
 
   &, ul {
+
+  &, ul, .dropdown.menu .submenu {
     background-color: $uthsc-site-nav-background;
   }
 
