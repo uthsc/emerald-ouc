@@ -15,6 +15,7 @@ $uthsc-site-nav-padding: 0rem !default;
 /// @type Color
 $uthsc-site-nav-background: $uthsc-first-bookend-color !default;
 
+$uthsc-site-nav-background-hover: scale-color($uthsc-blue, $lightness: -20%);
 
 /// Color for links inside a uthsc-site-nav menu.
 /// @type Color
@@ -33,6 +34,10 @@ $uthsc-site-nav-input-width: 200px !default;
 
   &, ul, .dropdown.menu .submenu {
     background-color: $uthsc-site-nav-background;
+
+    li:hover, li ul li:hover {
+      background-color: $uthsc-site-nav-background-hover;
+    }
   }
 
   input {
