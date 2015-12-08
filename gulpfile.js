@@ -9,14 +9,16 @@ var sassPaths = [
 
 gulp.task('sass', function() {
   return gulp.src('scss/app.scss')
-    .pipe($.sass({
-      //outputStyle: 'compressed',
-      includePaths: sassPaths
-    })
-      .on('error', $.sass.logError))
+    .pipe($.sourcemaps.init())
+      .pipe($.sass({
+        //outputStyle: 'compressed',
+        includePaths: sassPaths
+      })
+        .on('error', $.sass.logError))
     .pipe($.autoprefixer({
       browsers: ['last 2 versions', 'ie >= 9']
     }))
+    .pipe($.sourcemaps.write('../css'))
     .pipe(gulp.dest('css'));
 });
 
