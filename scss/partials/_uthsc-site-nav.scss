@@ -30,7 +30,9 @@ $uthsc-site-nav-input-width: 200px !default;
   @include clearfix;
   padding: $uthsc-site-nav-padding;
 
-  &, ul {
+  a {
+    color: $uthsc-site-nav-link-color;
+  }
 
   &, ul, .dropdown.menu .submenu {
     background-color: $uthsc-site-nav-background;
