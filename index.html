@@ -449,282 +449,131 @@
                     </div>
                 </div>
 
-                <!--******************************-->
-                <!--Mobile Emergency Numbers Links-->
-                <!--******************************-->
-                <div class="row collapse hide-for-medium">
-                    <div id="emergency-mobile" class="small-12 columns">
-                        <h3 class="text-center">
-                            <span class="fa fa-phone fa-flip-horizontal fa-2x"></span> Emergency Numbers
-                        </h3>
+                            <p>or Campus Police at</p>
 
-                        <!--*******-->
-                        <!--Modal 1-->
-                        <!--*******-->
-                        <div href="#" id="myModal1" data-reveal="data-reveal" class="reveal text-center">
-
-                            <!--Modal 1 content-->
-                            <div class="call-buttons-box">
-                                <h2>Medical/Behavioral</h2>
-                                <hr>
-                                <h3 class="lead">
-                                    <a href="tel:911" class="button emergency">
-                                        <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span> 911
-                                    </a>
-                                </h3>
-
-                                <p>or Campus Police at</p>
-
-                                <h3>
-                                    <a href="tel:901-448-4444" class="button emergency">
-                                        <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
-                                        (901) 448-4444
-                                    </a>
-                                </h3>
-                            </div>
-
-                            <p>
-                                <!--Previous modal-->
-                                <a href="#" data-reveal-id="myModal6" class="secondary button tiny expand">
-                                    <span class="fa fa-chevron-up fa-2x fa-button"></span> Previous Emergency Number
-                                </a>
-
-                                <!--Next modal-->
-                                <a data-open="myModal2" class="secondary button tiny">
-                                    <span class="fa fa-chevron-down fa-2x fa-button"></span> Next Emergency Number
-                                </a>
-                            </p>
-
-                            <!--Close modal-->
-                            <button class="close-button" data-close aria-label="Close reveal" type="button">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                            <a href="tel:901-448-4444" class="button"
+                               aria-label="Call campus police at 901-448-4444">
+                                <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
+                                (901) 448-4444
+                            </a>
                         </div>
+                    </li>
+                    <!--*******************-->
+                    <!--/Medical/Behavioral-->
+                    <!--*******************-->
 
-                        <!--Modal 1 button-->
-                        <a data-open="myModal1" class="button alert">
-                            <span class="fa fa-info-circle"></span> Medical/Behavioral
-                        </a>
-                        <!--********-->
-                        <!--/Modal 1-->
-                        <!--********-->
-
-                        <!--*******-->
-                        <!--Modal 2-->
-                        <!--*******-->
-                        <div href="#" id="myModal2" data-reveal="data-reveal" class="reveal text-center">
-
-                            <!--Modal 2 content-->
-                            <div class="call-buttons-box">
-                                <h2>Medical Urgent Care</h2>
-                                <hr>
-                                <h3 class="lead">
-                                    <a href="tel:901-448-5630" class="button emergency">
-                                        <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
-                                        (901) 448-5630
-                                    </a>
-                                </h3>
-                            </div>
-                            <p>
-                                <!--Previous modal-->
-                                <a data-open="myModal1" class="secondary button tiny">
-                                    <span class="fa fa-chevron-up fa-2x fa-button"></span> Previous Emergency Number
-                                </a>
-                                <!--Next modal-->
-                                <a data-open="myModal3" class="secondary button tiny">
-                                    <span class="fa fa-chevron-down fa-2x fa-button"></span> Next Emergency Number
-                                </a>
-                            </p>
-
-                            <!--Close modal-->
-                            <button class="close-button" data-close aria-label="Close reveal" type="button">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-
-                        <!--Modal 2 button-->
-                        <a data-open="myModal2" class="button alert">
+                    <!--*******************-->
+                    <!--Medical Urgent Care-->
+                    <!--*******************-->
+                    <li class="accordion-item ">
+                        <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+                        <a href="#panel2d" role="tab" class="accordion-title" id="panel2d-heading"
+                           aria-controls="panel2d">
                             <span class="fa fa-info-circle"></span> Medical Urgent Care
                         </a>
-                        <!--********-->
-                        <!--/Modal 2-->
-                        <!--********-->
 
-                        <!--*******-->
-                        <!--Modal 3-->
-                        <!--*******-->
-                        <div href="#" id="myModal3" data-reveal="data-reveal" class="reveal text-center">
-
-                            <!--Modal 3 content-->
-                            <div class="call-buttons-box">
-                                <h2>Behavioral Health Urgent Care</h2>
-                                <hr>
-                                <h3 class="lead">
-                                    <a href="tel:901-448-5064" class="button emergency">
-                                        <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
-                                        (901) 448-5064
-                                    </a>
-                                </h3>
-                            </div>
-
-                            <p>
-                                <!--Previous modal-->
-                                <a data-open="myModal2" class="secondary button tiny">
-                                    <span class="fa fa-chevron-up fa-2x fa-button"></span> Previous Emergency Number
-                                </a>
-                                <!--Next modal-->
-                                <a data-open="myModal4" class="secondary button tiny">
-                                    <span class="fa fa-chevron-down fa-2x fa-button"></span> Next Emergency Number
-                                </a>
-                            </p>
-
-                            <!--Close modal-->
-                            <button class="close-button" data-close aria-label="Close reveal" type="button">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                        <!-- The content pane needs an ID that matches the above href, role="tabpanel",
+                        data-tab-content, and aria-labelledby. -->
+                        <div id="panel2d" class="accordion-content" role="tabpanel" data-tab-content
+                             aria-labelledby="panel2d-heading">
+                            <a href="tel:901-448-5630" class="button"
+                               aria-label="Call medical urgent care at 901-448-5630">
+                                <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
+                                (901) 448-5630
+                            </a>
                         </div>
+                    </li>
+                    <!--********************-->
+                    <!--/Medical Urgent Care-->
+                    <!--********************-->
 
-                        <!--Modal 3 button-->
-                        <a data-open="myModal3" class="button alert">
+                    <!--*****************************-->
+                    <!--Behavioral Health Urgent Care-->
+                    <!--*****************************-->
+                    <li class="accordion-item ">
+                        <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+                        <a href="#panel3d" role="tab" class="accordion-title" id="panel3d-heading"
+                           aria-controls="panel3d">
                             <span class="fa fa-info-circle"></span> Behavioral Health Urgent Care
                         </a>
-                        <!--********-->
-                        <!--/Modal 3-->
-                        <!--********-->
 
-                        <!--*******-->
-                        <!--Modal 4-->
-                        <!--*******-->
-                        <div href="#" id="myModal4" data-reveal="data-reveal" class="reveal text-center">
-
-                            <!--Modal 4 content-->
-                            <div class="call-buttons-box">
-                                <h2>Student Assistance Program (SAP)</h2>
-                                <hr>
-                                <h3 class="lead">
-                                    <a href="tel:800-327-2255" class="button emergency">
-                                        <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
-                                        (800) 327-2255<br>
-                                        (Option 3)
-                                    </a>
-                                </h3>
-                            </div>
-
-                            <p>
-                                <!--Previous modal-->
-                                <a data-open="myModal3" class="secondary button tiny">
-                                    <span class="fa fa-chevron-up fa-2x fa-button"></span> Previous Emergency Number
-                                </a>
-                                <!--Next modal-->
-                                <a data-open="myModal5" class="secondary button tiny">
-                                    <span class="fa fa-chevron-down fa-2x fa-button"></span> Next Emergency Number
-                                </a>
-                            </p>
-
-                            <!--Close modal-->
-                            <button class="close-button" data-close aria-label="Close reveal" type="button">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                        <!-- The content pane needs an ID that matches the above href, role="tabpanel",
+                        data-tab-content, and aria-labelledby. -->
+                        <div id="panel3d" class="accordion-content" role="tabpanel" data-tab-content
+                             aria-labelledby="panel2d-heading">
+                            <a href="tel:901-448-5064" class="button"
+                               aria-label="Call behavioral health urgent care at 901-448-448-5064">
+                                <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
+                                (901) 448-5064
+                            </a>
                         </div>
+                    </li>
+                    <!--******************************-->
+                    <!--/Behavioral Health Urgent Care-->
+                    <!--******************************-->
 
-                        <!--Modal 4 button-->
-                        <a data-open="myModal4" class="button alert">
+                    <!--**************************-->
+                    <!--Student Assistance Program-->
+                    <!--**************************-->
+                    <li class="accordion-item ">
+                        <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+                        <a href="#panel4d" role="tab" class="accordion-title" id="panel4d-heading"
+                           aria-controls="panel4d">
                             <span class="fa fa-info-circle"></span> Student Assistance Program
                         </a>
-                        <!--********-->
-                        <!--/Modal 4-->
-                        <!--********-->
 
+                        <!-- The content pane needs an ID that matches the above href, role="tabpanel",
+                        data-tab-content, and aria-labelledby. -->
+                        <div id="panel4d" class="accordion-content" role="tabpanel" data-tab-content
+                             aria-labelledby="panel4d-heading">
 
-                        <!--*******-->
-                        <!--Modal 5-->
-                        <!--*******-->
-                        <div href="#" id="myModal5" data-reveal="data-reveal" class="reveal text-center">
-
-                            <!--Modal 5 content-->
-                            <div class="call-buttons-box">
-                                <h2>Employee Assistance Program (EAP)</h2>
-                                <hr>
-                                <h3 class="lead">
-                                    <a href="tel:855-437-3486" class="button emergency">
-                                        <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
-                                        (855) 437-3486
-                                    </a>
-                                </h3>
-                            </div>
-
-                            <p>
-                                <!--Previous modal-->
-                                <a data-open="myModal4" class="secondary button tiny">
-                                    <span class="fa fa-chevron-up fa-2x fa-button"></span> Previous Emergency Number
-                                </a>
-                                <!--Next modal-->
-                                <a data-open="myModal6" class="secondary button tiny">
-                                    <span class="fa fa-chevron-down fa-2x fa-button"></span> Next Emergency Number
-                                </a>
-                            </p>
-
-                            <!--Close modal-->
-                            <button class="close-button" data-close aria-label="Close reveal" type="button">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                            <a href="tel:800-327-2255" class="button"
+                               aria-label="Call student assistance program at 800-327-2255">
+                                <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
+                                (800) 327-2255<br>
+                                (Option 3)
+                            </a>
                         </div>
+                    </li>
+                    <!--***************************-->
+                    <!--/Student Assistance Program-->
+                    <!--***************************-->
 
-                        <!--Modal 5 button-->
-                        <a data-open="myModal5" class="button alert">
+                    <!--***************************-->
+                    <!--Employee Assistance Program-->
+                    <!--***************************-->
+                    <li class="accordion-item ">
+                        <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+                        <a href="#panel5d" role="tab" class="accordion-title" id="panel5d-heading"
+                           aria-controls="panel5d">
                             <span class="fa fa-info-circle"></span> Employee Assistance Program
                         </a>
-                        <!--********-->
-                        <!--/Modal 5-->
-                        <!--********-->
 
-                        <!--*******-->
-                        <!--Modal 6-->
-                        <!--*******-->
-                        <div href="#" id="myModal6" data-reveal="data-reveal" class="reveal text-center">
+                        <!-- The content pane needs an ID that matches the above href, role="tabpanel",
+                        data-tab-content, and aria-labelledby. -->
+                        <div id="panel5d" class="accordion-content" role="tabpanel" data-tab-content
+                             aria-labelledby="panel5d-heading">
 
-                            <!--Modal 6 content-->
-                            <div class="call-buttons-box">
-                                <h2>After Hours Medical/Behavioral<br>Available (24/7)</h2>
-                                <hr>
-                                <h3 class="lead">
-                                    <a href="tel:901-541-5654" class="button emergency">
-                                        <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span> (901)
-                                        541-5654
-                                    </a>
-                                </h3>
-                            </div>
-
-                            <p>
-                                <!--Previous modal-->
-                                <a data-open="myModal5" class="secondary button tiny">
-                                    <span class="fa fa-chevron-up fa-2x fa-button"></span> Previous Emergency Number
-                                </a>
-                                <!--Next modal-->
-                                <a data-open="myModal1" class="secondary button tiny">
-                                    <span class="fa fa-chevron-down fa-2x fa-button"></span> Next Emergency Number
-                                </a>
-                            </p>
-
-                            <!--Close modal-->
-                            <button class="close-button" data-close aria-label="Close reveal" type="button">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
+                            <a href="tel:855-437-3486" class="button"
+                               aria-label="Call employee assistance program at 855-437-3486">
+                                <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
+                                (855) 437-3486
+                            </a>
                         </div>
+                    </li>
+                    <!--****************************-->
+                    <!--/Employee Assistance Program-->
+                    <!--****************************-->
 
-                        <!--Modal 6 button-->
-                        <a data-open="myModal6" class="button alert">
+                    <!--******************************-->
+                    <!--After Hours Medical/Behavioral-->
+                    <!--******************************-->
+                    <li class="accordion-item ">
+                        <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+                        <a href="#panel6d" role="tab" class="accordion-title" id="panel6d-heading"
+                           aria-controls="panel6d">
                             <span class="fa fa-info-circle"></span> After Hours Medical/Behavioral
                         </a>
-                        <!--********-->
-                        <!--/Modal 6-->
-                        <!--********-->
-                    </div>
-                </div>
-                <!--*******************************-->
-                <!--/Mobile Emergency Numbers Links-->
-                <!--*******************************-->
-
                 <!--******************************-->
                 <!--Desktop Emergency Numbers Link-->
                 <!--******************************-->
