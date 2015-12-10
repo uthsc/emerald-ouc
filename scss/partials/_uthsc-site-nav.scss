@@ -40,6 +40,10 @@ $uthsc-site-nav-input-width: 200px !default;
     li:hover, li ul li:hover {
       background-color: $uthsc-site-nav-background-hover;
     }
+
+    .dropdown.menu .is-dropdown-submenu-parent.is-down-arrow > a::after {
+      border-color: rgba(255, 255, 255, 0.4) transparent transparent;
+    }
   }
 
   input {
