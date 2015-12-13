@@ -2,6 +2,8 @@
 
 @import 'partials/uthsc-site-nav';
 @import 'partials/uthsc-banner';
+@import 'partials/uthsc-off-canvas';
 
 @include uthsc-site-nav;
 @include uthsc-banner;
+@include uthsc-off-canvas;
