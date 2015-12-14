@@ -12,11 +12,11 @@ $uthsc-offcanvas-background: $light-gray !default;
 
 /// Length of the animation on an off-canvas menu.
 /// @type Number
-$offcanvas-transition-length: 0.3s !default;
+$uthsc-offcanvas-transition-length: 0.3s !default;
 
 /// Timing function of the animation on an off-canvas menu.
 /// @type Keyword
-//$offcanvas-transition-timing: ease !default;
+$uthsc-offcanvas-transition-timing: ease !default;
 
 /// Background color for the overlay that appears when an off-canvas menu is open.
 /// @type Color
@@ -38,11 +38,11 @@ $uthsc-maincontent-shadow: 0 0 10px rgba($black, 0.5) !default;
     z-index: 10;
     top: 0;
     left: 0;
-    -webkit-transition: all $offcanvas-transition-length;
-    -moz-transition: all $offcanvas-transition-length;
-    -ms-transition: all $offcanvas-transition-length;
-    -o-transition: all $offcanvas-transition-length;
-    transition: all $offcanvas-transition-length;
+    -webkit-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
+    -moz-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
+    -ms-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
+    -o-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
+    transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
 
     //Foundation styles
     //width: 100%;
@@ -55,14 +55,14 @@ $uthsc-maincontent-shadow: 0 0 10px rgba($black, 0.5) !default;
     @include clearfix;
     //position: relative;
     //width: 100%;
-    //transition: transform $offcanvas-transition-length $offcanvas-transition-timing;
+    //transition: transform $uthsc-offcanvas-transition-length $uthsc-offcanvas-transition-timing;
   }
 
   // Container for page content
   .uthsc-off-canvas-content {
     //min-height: 100%;
     //background: $body-background;
-    //transition: transform $offcanvas-transition-length $offcanvas-transition-timing;
+    //transition: transform $uthsc-offcanvas-transition-length $uthsc-offcanvas-transition-timing;
     //backface-visibility: hidden;
     //z-index: 1;
     //
@@ -81,7 +81,7 @@ $uthsc-maincontent-shadow: 0 0 10px rgba($black, 0.5) !default;
     //height: 100%;
     //background: $offcanvas-exit-background;
     //cursor: pointer;
-    //transition: background $offcanvas-transition-length $offcanvas-transition-timing;
+    //transition: background $uthsc-offcanvas-transition-length $uthsc-offcanvas-transition-timing;
 
     .is-off-canvas-open & {
       //display: block;
@@ -188,11 +188,11 @@ $uthsc-maincontent-shadow: 0 0 10px rgba($black, 0.5) !default;
       background-color: lighten(#ececec, 5%);
       overflow: auto;
       overflow-x: hidden;
-      -webkit-transition: all $offcanvas-transition-length;
-      -moz-transition: all $offcanvas-transition-length;
-      -ms-transition: all $offcanvas-transition-length;
-      -o-transition: all $offcanvas-transition-length;
-      transition: all $offcanvas-transition-length;
+      -webkit-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
+      -moz-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
+      -ms-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
+      -o-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
+      transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
       min-height: 100%;
     }
 
