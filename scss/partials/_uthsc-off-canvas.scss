@@ -18,9 +18,6 @@ $offcanvas-transition-length: 0.3s !default;
 /// @type Keyword
 //$offcanvas-transition-timing: ease !default;
 
-/// If `true`, a revealed off-canvas will be fixed-position, and scroll with the screen.
-//$offcanvas-fixed-reveal: true !default;
-
 /// Background color for the overlay that appears when an off-canvas menu is open.
 /// @type Color
 $uthsc-offcanvas-exit-background: rgba($white, 0.25) !default;
