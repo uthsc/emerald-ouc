@@ -36,7 +36,7 @@
 
         $('html,body').animate({
             scrollTop: location
-        },300)
+        },0)
 
 
         //scroll with animation but supposedly wait for animation to finish
