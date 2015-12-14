@@ -20,14 +20,7 @@ $uthsc-offcanvas-transition-timing: ease !default;
 
 /// Background color for the overlay that appears when an off-canvas menu is open.
 /// @type Color
-$uthsc-offcanvas-exit-background: rgba($white, 0.25) !default;
-
-/// CSS class used for the main content area. The off-canvas mixins use this to target the page body.
-$uthsc-maincontent-class: 'off-canvas-content' !default;
-
-/// Box shadow to place under the main content area. This shadow overlaps the off-canvas menus.
-/// @type Shadow
-$uthsc-maincontent-shadow: 0 0 10px rgba($black, 0.5) !default;
+$uthsc-offcanvas-exit-background: rgba($black, 0.5) !default;
 
 /// Adds baseline styles for off-canvas. This CSS is required to make the other pieces work.
 @mixin uthsc-off-canvas-basics {
@@ -96,7 +89,7 @@ $uthsc-maincontent-shadow: 0 0 10px rgba($black, 0.5) !default;
     z-index: 15;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: $uthsc-offcanvas-exit-background;
   }
 
   .pmr-open { @include uthsc-off-canvas-position-open(right) }
@@ -107,7 +100,7 @@ $uthsc-maincontent-shadow: 0 0 10px rgba($black, 0.5) !default;
     &.menu {
       position: fixed;
       z-index: 20;
-      background-color: lighten(#ececec, 5%);
+      background-color: $uthsc-offcanvas-background;
       overflow: auto;
       overflow-x: hidden;
       -webkit-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
