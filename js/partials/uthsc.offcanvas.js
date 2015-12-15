@@ -7,7 +7,7 @@
 
     var body = $('body'),
         mask = document.createElement("div"),
-        wrapper = $(".uthsc-off-canvas-wrapper"),
+        wrapper = $("#uthsc-off-canvas-wrapper"),
         togglePushLeft = $(".toggle-push-left"),
         togglePushRight = $(".toggle-push-right"),
         windowLocation,
