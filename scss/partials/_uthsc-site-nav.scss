@@ -92,4 +92,7 @@ $uthsc-site-nav-input-width: 200px !default;
     }
   }
 
+  .uthsc-site-nav .submenu .fa {
+    @include menu-icon-fix;
+  }
 }
