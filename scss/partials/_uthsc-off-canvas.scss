@@ -22,100 +22,66 @@ $uthsc-offcanvas-transition-timing: ease !default;
 /// @type Color
 $uthsc-offcanvas-exit-background: rgba($black, 0.5) !default;
 
-/// Adds baseline styles for off-canvas. This CSS is required to make the other pieces work.
-@mixin uthsc-off-canvas-basics {
-
-  // Inspired by http://callmenick.com/2014/03/26/slide-and-push-menus-with-css3-transitions/
-  .uthsc-off-canvas-wrapper {
-    position: relative;
-    z-index: 10;
-    top: 0;
-    //left: 0;
-    -webkit-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-    -moz-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-    -ms-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-    -o-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-    transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-  }
+@mixin uthsc-off-canvas-transition {
+  -webkit-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
+  -moz-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
+  -ms-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
+  -o-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
+  transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
 }
 
-/// Adds basic styles for an off-canvas menu.
-@mixin uthsc-off-canvas-base {
-  @include disable-mouse-outline;
-}
-
-@mixin uthsc-off-canvas-position-open(
-  $position: left,
-  $size: $offcanvas-size
-) {
-
-  // Prevent page from scrolling when
-  // off canvas is activated
-  .uthsc-off-canvas-wrapper {
-    position: fixed;
-    width: 100%;
-  }
-
-  @if $position == left {
-    .uthsc-off-canvas-wrapper { left: $size; }
-    .offcanvas-nav.push-menu-left {
-      left: 0;
-      position: absolute;
-    }
-  }
-
-  @else if $position == right {
-    .uthsc-off-canvas-wrapper { right: $size; }
-    .offcanvas-nav.push-menu-right {
-      right: 0;
-      position: absolute;
-    }
-  }
-}
-
-/// Adds basic styles for an off-canvas menu.
-@mixin uthsc-off-canvas-base {
-  @include disable-mouse-outline;
-}
-
-@mixin uthsc-off-canvas-activation-buttons {
-
+//button bar that activates off canvas menus
+@mixin off-canvas-activation {
+  //mobile navigation
   #mobile-navigation {
     position: fixed;
     bottom: 0;
     z-index: 1;
     left:0;
     right: 0;
-    -webkit-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-    -moz-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-    -ms-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-    -o-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-    transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
+    @include uthsc-off-canvas-transition;
 
     button {
-      margin-bottom: 0;
+      margin: 0;
       width:50%;
       height: 44px;
     }
   }
 
   .pml-open #mobile-navigation{
-    left: 300px;
-    right: -300px;
+    left: $uthsc-offcanvas-size;
+    right: -$uthsc-offcanvas-size;
   }
 
   .pmr-open #mobile-navigation{
-    right: 300px;
-    left: -300px;
+    right: $uthsc-offcanvas-size;
+    left: -$uthsc-offcanvas-size;
   }
 
+  .bottom-nav-bar {
+    width: 100%;
+    height: 44px;
+    clear: left;
+    background-image: url(../images/uthsc-logo-short-grey.svg);
+    text-align: center;
+    line-height: 44px;
+    background-size: 89%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $uthsc-green;
+    opacity: 0.4;
+  }
+  .nav-toggler {
+    background: $uthsc-green;
+    height: 44px;
+  }
   .toggle-push-left {
     background-image: url("../images/2t.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left center;
     border-right: 1px solid #5d5c5c;
-
+    float:left;
   }
   .toggle-push-right {
     background-image: url("../images/5t.png");
@@ -123,25 +89,257 @@ $uthsc-offcanvas-exit-background: rgba($black, 0.5) !default;
     background-size: contain;
     background-position: right center;
     border-left: 1px solid #1e1e1e;
+    float:right;
   }
+}
 
 
+//off canvas aesthetic and uthsc-menu specific styles
+@mixin off-canvas-styles {
+  .offcanvas-nav {
+
+    &.menu {
+      background-color: lighten(#000, 5%);
 
 
+      ul > li > ul {
+        background-color: lighten(#000, 10%);
+        li:first-of-type {
+          border-top: solid 1px #000;
+        }
+        a, li .not-a-link {
+          padding-left: 30px;
+          font-size: 1em;
+        }
+      }
+
+      .uthsc-split-button {
+        width: 86%;
+        font-size: 0.75em;
+        padding: 10px 0;
+        margin: 0;
+        height: 44px;
+        position: absolute;
+        right: 0;
+        z-index: 1000;
+      }
+
+      .mission-links {
+        padding: 8px;
+        /*background-color: $uthsc-green;*/
+        background-color: $uthsc-grey-dark;
+        h2 {
+          color: $white;
+          text-align: center;
+          border: 2px solid #eaeaea;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          border-bottom: none;
+          margin-bottom: -9px;
+          padding: 5px 0 15px 0;
+          background-color: #000;
+        }
+      }
+
+      .button, {
+
+        &.inverse {
+          background-color: brown;
+          color: $uthsc-green;
+          border-bottom: 1px solid green;
+          text-align: left;
+          font-weight: bold;
+          margin-bottom: 0;
+
+          .fa {
+            padding: 0 14px 0 8px;
+            width: 44px;
+          }
+
+          &:nth-child(even) {
+            background: #a2a2a2;
+          }
+          &:last-of-type {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+          }
+        }
+
+        &.menu {
+          margin: 0;
+          padding: 0 0 0 17px;
+
+          .fa {
+            width: 37px;
+          }
+        }
+      }
+      li.not-a-link.menu > a {
+        padding: 7px 7px 7px 28px;
+      }
+      li.not-a-link.menu > a > i {
+        padding-right: 13px;
+      }
+      .uthsc-split-button.inverse {
+        background-color: #a2a2a2;
+        color: $uthsc-green;
+        border-bottom: 1px solid brown;
+        font-weight: bold;
+        text-align: left;
+        padding: 0 0 0 15px;
+        font-size: 1em;
+      }
+
+      .uthsc-split-button-home {
+        border-right: 1px solid #aaaaaa;
+        display: inline-block;
+        height: 44px;
+        margin: 0;
+        width: 16%;
+        z-index: 1001;
+
+        &.inverse {
+          background-color: #a2a2a2;
+          color: $uthsc-green;
+          border-bottom: 1px solid brown;
+          font-weight: bold;
+        }
+      }
+
+      .uthsc-split-button-breadcrumb-links {
+        z-index: 1002;
+
+        a {
+          color: #222;
+          font-size: 0.75em;
+        }
+
+        li {
+          text-align: center;
+          border: none;
+
+          &:after {
+            content: "\f106";
+            font-family: fontawesome;
+          }
+
+          &:last-child:after {
+            content: "";
+          }
+        }
+      }
+
+      .uthsc-split-button-mission-links {
+        z-index: 1002;
+        a {
+          color: #a2a2a2;
+          padding-left: 44px;
+        }
+        li {
+          text-align: left;
+          background-color: #000;
+          color: #a2a2a2;
+          border-bottom: 1px solid #006A4D;
+          i {
+            float: left;
+            padding: 12px 17px;
+          }
+        }
+      }
+
+      ol.uthsc-split-button-mission-links {
+        border-bottom: 3px solid #006A4D;
+        border: 0;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        overflow: hidden;
+      }
+
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      a {
+        font-weight: 300;
+        color: #fff;
+      }
+
+      p {
+        padding: 10px;
+        color: $white;
+        line-height: 1.25;
+        font-size: .75em;
+        background-color: #000;
+        margin: 0;
+      }
+    }
+
+    &.push-menu-left,
+    &.push-menu-right {
+
+      li {
+        display: block;
+        text-align: left;
+        border-bottom: solid 1px #000;
+
+        &:first-child {
+          border-top: none
+        }
+
+        &:last-child {
+          border-bottom: none
+        }
+      }
+
+      a {
+        display: block;
+        padding: 10px;
+        font-size: 1.15rem;
+      }
+
+      button.close-menu {
+        margin: 0;
+        padding: 10px 30px;
+        background-color: #000;
+      }
+    }
 
 
-
-
+    .bottom-nav-bar-off-canvas {
+      width: 100%;
+      height: 44px;
+      clear: left;
+      text-align: center;
+      line-height: 44px;
+      background-size: 89%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: lighten(#000, 5%);
+      opacity: 0.4;
+    }
+  }
 }
 
 @mixin uthsc-off-canvas {
 
-  @include uthsc-off-canvas-basics;
-
-  // Off-canvas container
-  .uthsc-off-canvas {
-    @include uthsc-off-canvas-base;
+  // From http://callmenick.com/2014/03/26/slide-and-push-menus-with-css3-transitions/
+  .uthsc-off-canvas-wrapper {
+    position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    @include uthsc-off-canvas-transition;
   }
+
+  //section {
+  //  margin-bottom: 30px
+  //}
+  //
+  //section.toggle {
+  //  text-align: center
+  //}
 
   .mask {
     position: fixed;
@@ -150,29 +348,39 @@ $uthsc-offcanvas-exit-background: rgba($black, 0.5) !default;
     z-index: 15;
     width: 100%;
     height: 100%;
-    background: $uthsc-offcanvas-exit-background;
+    background: rgba(0, 0, 0, 0.8);
   }
 
-  .pmr-open { @include uthsc-off-canvas-position-open(right) }
-  .pml-open { @include uthsc-off-canvas-position-open(left) }
+  .pmr-open {
+    .uthsc-off-canvas-wrapper {
+      position: fixed;
+      width: 100%;
+    }
+    .offcanvas-nav.push-menu-right {
+      position: absolute;
+    }
+  }
+
+  .pml-open {
+    .uthsc-off-canvas-wrapper {
+      position: fixed;
+      width: 100%;
+    }
+    .offcanvas-nav.push-menu-left {
+      position: absolute;
+    }
+  }
 
   .offcanvas-nav {
 
     &.menu {
       position: fixed;
       z-index: 20;
-      background-color: $uthsc-offcanvas-background;
       overflow: auto;
       overflow-x: hidden;
-
-      //controls the drawer slide out animation
-      -webkit-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-      -moz-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-      -ms-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-      -o-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-      transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
+      @include uthsc-off-canvas-transition;
       min-height: 100%;
-    }
+      }
 
     &.push-menu-left,
     &.push-menu-right {
@@ -181,12 +389,58 @@ $uthsc-offcanvas-exit-background: rgba($black, 0.5) !default;
     }
 
     &.push-menu-left {
-      left: -$uthsc-offcanvas-size;
+      left: -$uthsc-offcanvas-size
     }
     &.push-menu-right {
-      right: -$uthsc-offcanvas-size;
+      right: -$uthsc-offcanvas-size
+    }
+
+    @media all and (max-width: 330px) {
+      nav.push-menu-left,
+      nav.push-menu-right {
+        top: 0;
+        width: $uthsc-offcanvas-size;
+      }
+      &.push-menu-left {
+        left: -$uthsc-offcanvas-size
+      }
+      &.push-menu-right {
+        right: -$uthsc-offcanvas-size
+      }
+    }
+
+  }
+
+  body {
+    &.pml-open nav.push-menu-left {
+      left: 0
+    }
+    &.pmr-open nav.push-menu-right {
+      right: 0
+    }
+    &.pml-open .uthsc-off-canvas-wrapper {
+      left: $uthsc-offcanvas-size
+    }
+    &.pmr-open .uthsc-off-canvas-wrapper {
+      left: -$uthsc-offcanvas-size
+    }
+
+    @media all and (max-width: 330px) {
+      &.pml-open nav.push-menu-left {
+        left: 0
+      }
+      &.pmr-open nav.push-menu-right {
+        right: 0
+      }
+      &.pml-open .uthsc-off-canvas-wrapper {
+        left: 100%
+      }
+      &.pmr-open .uthsc-off-canvas-wrapper {
+        left: -100%
+      }
     }
   }
 
-  @include uthsc-off-canvas-activation-buttons;
+  @include off-canvas-styles;
+  @include off-canvas-activation;
 }
