@@ -34,11 +34,11 @@
         //scroll without animation
         //$('html, body').scrollTop(location);
 
-        //$('html,body').animate({
-        //    scrollTop: location
-        //},0)
+        $('html,body').animate({
+            scrollTop: location
+        },300)
 
-        $('html,body').scrollTop(location);
+        //$('html,body').scrollTop(location);
 
 
         //scroll with animation but supposedly wait for animation to finish
