@@ -1,5 +1,6 @@
 ////
 /// @group uthsc-off-canvas
+/// @Inspired by http://callmenick.com/2014/03/26/slide-and-push-menus-with-css3-transitions/
 ////
 
 /// Width of an off-canvas menu.
@@ -30,8 +31,8 @@ $uthsc-offcanvas-exit-background: rgba($black, 0.5) !default;
   transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
 }
 
-//button bar that activates off canvas menus
-@mixin off-canvas-activation {
+@mixin uthsc-off-canvas-activation-bar {
+
   //mobile navigation
   #mobile-navigation {
     position: fixed;
@@ -49,13 +50,13 @@ $uthsc-offcanvas-exit-background: rgba($black, 0.5) !default;
   }
 
   .pml-open #mobile-navigation{
-    left: $uthsc-offcanvas-size;
-    right: -$uthsc-offcanvas-size;
+    left: 300px;
+    right: -300px;
   }
 
   .pmr-open #mobile-navigation{
-    right: $uthsc-offcanvas-size;
-    left: -$uthsc-offcanvas-size;
+    right: 300px;
+    left: -300px;
   }
 
   .bottom-nav-bar {
@@ -93,192 +94,210 @@ $uthsc-offcanvas-exit-background: rgba($black, 0.5) !default;
   }
 }
 
+@mixin uthsc-off-canvas-styles {
 
-//off canvas aesthetic and uthsc-menu specific styles
-@mixin off-canvas-styles {
-  .offcanvas-nav {
+  //what is fb root?
+  //is this an override?
+  #fb-root > nav > ul > li:not(.not-a-link) > a {
+    font-size: inherit;
+    padding: 0;
+    font-weight: inherit;
+  }
 
-    &.menu {
-      background-color: lighten(#000, 5%);
+  .offcanvas-nav.menu {
+
+    //colors and aesthetic
+    ul > li > ul {
+      background-color: lighten(#000, 10%);
+      li:first-of-type {
+        border-top: solid 1px #000;
+      }
+      a, li .not-a-link {
+        padding-left: 30px;
+        font-size: 1em;
+      }
+    }
+
+    //colors and aesthetic
+    //what is uthsc-split-button?
+    .uthsc-split-button {
+      width: 86%;
+      font-size: 0.75em;
+      padding: 10px 0;
+      margin: 0;
+      height: 44px;
+      position: absolute;
+      right: 0;
+      z-index: 1000;
+    }
 
 
-      ul > li > ul {
-        background-color: lighten(#000, 10%);
-        li:first-of-type {
-          border-top: solid 1px #000;
+    //colors and aesthetic
+    .mission-links {
+      padding: 8px;
+      /*background-color: $uthsc-green;*/
+      background-color: $uthsc-grey-dark;
+      h2 {
+        color: $white;
+        text-align: center;
+        border: 2px solid #eaeaea;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom: none;
+        margin-bottom: -9px;
+        padding: 5px 0 15px 0;
+        background-color: #000;
+      }
+    }
+
+    //colors and aesthetic
+    .button, {
+
+      &.inverse {
+        background-color: brown;
+        color: $uthsc-green;
+        border-bottom: 1px solid green;
+        text-align: left;
+        font-weight: bold;
+        margin-bottom: 0;
+
+        .fa {
+          padding: 0 14px 0 8px;
+          width: 44px;
         }
-        a, li .not-a-link {
-          padding-left: 30px;
-          font-size: 1em;
+
+        &:nth-child(even) {
+          background: #a2a2a2;
+        }
+        &:last-of-type {
+          border-bottom-left-radius: 10px;
+          border-bottom-right-radius: 10px;
         }
       }
 
-      .uthsc-split-button {
-        width: 86%;
-        font-size: 0.75em;
-        padding: 10px 0;
+      &.menu {
         margin: 0;
-        height: 44px;
-        position: absolute;
-        right: 0;
-        z-index: 1000;
-      }
+        padding: 0 0 0 17px;
 
-      .mission-links {
-        padding: 8px;
-        /*background-color: $uthsc-green;*/
-        background-color: $uthsc-grey-dark;
-        h2 {
-          color: $white;
-          text-align: center;
-          border: 2px solid #eaeaea;
-          border-top-left-radius: 10px;
-          border-top-right-radius: 10px;
-          border-bottom: none;
-          margin-bottom: -9px;
-          padding: 5px 0 15px 0;
-          background-color: #000;
+        .fa {
+          width: 37px;
         }
       }
+    }
 
-      .button, {
+    //colors and aesthetic
+    //really specific?
+    li.not-a-link.menu > a {
+      padding: 7px 7px 7px 28px;
+    }
+    li.not-a-link.menu > a > i {
+      padding-right: 13px;
+    }
 
-        &.inverse {
-          background-color: brown;
-          color: $uthsc-green;
-          border-bottom: 1px solid green;
-          text-align: left;
-          font-weight: bold;
-          margin-bottom: 0;
+    //colors and aesthetic
+    .uthsc-split-button.inverse {
+      background-color: #a2a2a2;
+      color: $uthsc-green;
+      border-bottom: 1px solid brown;
+      font-weight: bold;
+      text-align: left;
+      padding: 0 0 0 15px;
+      font-size: 1em;
+    }
 
-          .fa {
-            padding: 0 14px 0 8px;
-            width: 44px;
-          }
+    //colors and aesthetic
+    .uthsc-split-button-home {
+      border-right: 1px solid #aaaaaa;
+      display: inline-block;
+      height: 44px;
+      margin: 0;
+      width: 16%;
+      z-index: 1001;
 
-          &:nth-child(even) {
-            background: #a2a2a2;
-          }
-          &:last-of-type {
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-          }
-        }
-
-        &.menu {
-          margin: 0;
-          padding: 0 0 0 17px;
-
-          .fa {
-            width: 37px;
-          }
-        }
-      }
-      li.not-a-link.menu > a {
-        padding: 7px 7px 7px 28px;
-      }
-      li.not-a-link.menu > a > i {
-        padding-right: 13px;
-      }
-      .uthsc-split-button.inverse {
+      &.inverse {
         background-color: #a2a2a2;
         color: $uthsc-green;
         border-bottom: 1px solid brown;
         font-weight: bold;
-        text-align: left;
-        padding: 0 0 0 15px;
-        font-size: 1em;
-      }
-
-      .uthsc-split-button-home {
-        border-right: 1px solid #aaaaaa;
-        display: inline-block;
-        height: 44px;
-        margin: 0;
-        width: 16%;
-        z-index: 1001;
-
-        &.inverse {
-          background-color: #a2a2a2;
-          color: $uthsc-green;
-          border-bottom: 1px solid brown;
-          font-weight: bold;
-        }
-      }
-
-      .uthsc-split-button-breadcrumb-links {
-        z-index: 1002;
-
-        a {
-          color: #222;
-          font-size: 0.75em;
-        }
-
-        li {
-          text-align: center;
-          border: none;
-
-          &:after {
-            content: "\f106";
-            font-family: fontawesome;
-          }
-
-          &:last-child:after {
-            content: "";
-          }
-        }
-      }
-
-      .uthsc-split-button-mission-links {
-        z-index: 1002;
-        a {
-          color: #a2a2a2;
-          padding-left: 44px;
-        }
-        li {
-          text-align: left;
-          background-color: #000;
-          color: #a2a2a2;
-          border-bottom: 1px solid #006A4D;
-          i {
-            float: left;
-            padding: 12px 17px;
-          }
-        }
-      }
-
-      ol.uthsc-split-button-mission-links {
-        border-bottom: 3px solid #006A4D;
-        border: 0;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        overflow: hidden;
-      }
-
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-
-      a {
-        font-weight: 300;
-        color: #fff;
-      }
-
-      p {
-        padding: 10px;
-        color: $white;
-        line-height: 1.25;
-        font-size: .75em;
-        background-color: #000;
-        margin: 0;
       }
     }
 
+    .uthsc-split-button-breadcrumb-links {
+      z-index: 1002;
+
+      a {
+        color: #222;
+        font-size: 0.75em;
+      }
+
+      li {
+        text-align: center;
+        border: none;
+
+        &:after {
+          content: "\f106";
+          font-family: fontawesome;
+        }
+
+        &:last-child:after {
+          content: "";
+        }
+      }
+    }
+
+
+    .uthsc-split-button-mission-links {
+      z-index: 1002;
+      a {
+        color: #a2a2a2;
+        padding-left: 44px;
+      }
+      li {
+        text-align: left;
+        background-color: #000;
+        color: #a2a2a2;
+        border-bottom: 1px solid #006A4D;
+        i {
+          float: left;
+          padding: 12px 17px;
+        }
+      }
+    }
+
+    ol.uthsc-split-button-mission-links {
+      border-bottom: 3px solid #006A4D;
+      border: 0;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      overflow: hidden;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      font-weight: 300;
+      color: #fff;
+    }
+
+    p {
+      padding: 10px;
+      color: $white;
+      line-height: 1.25;
+      font-size: .75em;
+      background-color: #000;
+      margin: 0;
+    }
+
+  }
+
+  .off-canvas {
+
     &.push-menu-left,
     &.push-menu-right {
-
       li {
         display: block;
         text-align: left;
@@ -305,8 +324,98 @@ $uthsc-offcanvas-exit-background: rgba($black, 0.5) !default;
         background-color: #000;
       }
     }
+  }
+}
 
+@mixin uthsc-off-canvas-basics {
 
+  #uthsc-off-canvas-wrapper {
+    position: relative;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    @include uthsc-off-canvas-transition;
+  }
+
+  //mask that covers content area
+  //when off canvas is activated
+  .mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 15;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+  }
+
+  //these are the basics
+  .offcanvas-nav.menu {
+    position: fixed;
+    z-index: 20;
+    background-color: lighten(#000, 5%);
+    overflow: auto;
+    overflow-x: hidden;
+    @include uthsc-off-canvas-transition;
+    min-height: 100%;
+  }
+}
+
+@mixin uthsc-off-canvas {
+
+  @include uthsc-off-canvas-basics;
+
+  .pmr-open {
+    #uthsc-off-canvas-wrapper {
+      position: fixed;
+      width: 100%;
+    }
+    .offcanvas-nav.push-menu-right {
+      position: absolute;
+    }
+  }
+
+  .pml-open {
+    #uthsc-off-canvas-wrapper {
+      position: fixed;
+      width: 100%;
+    }
+    .offcanvas-nav.push-menu-left {
+      position: absolute;
+    }
+  }
+
+  .offcanvas-nav {
+
+    &.push-menu-left,
+    &.push-menu-right {
+      width: 300px;
+      max-width: 86%;
+    }
+
+    &.push-menu-left {
+      left: -300px
+    }
+    &.push-menu-right {
+      right: -300px
+    }
+
+    @media all and (max-width: 330px) {
+      nav.push-menu-left,
+      nav.push-menu-right {
+        top: 0;
+        width: 300px;
+      }
+      &.push-menu-left {
+        left: -300px
+      }
+      &.push-menu-right {
+        right: -300px
+      }
+    }
+
+    //bottom bar for safari-ios
+    //to do rename class
     .bottom-nav-bar-off-canvas {
       width: 100%;
       height: 44px;
@@ -320,96 +429,6 @@ $uthsc-offcanvas-exit-background: rgba($black, 0.5) !default;
       opacity: 0.4;
     }
   }
-}
-
-@mixin uthsc-off-canvas {
-
-  // From http://callmenick.com/2014/03/26/slide-and-push-menus-with-css3-transitions/
-  .uthsc-off-canvas-wrapper {
-    position: relative;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    @include uthsc-off-canvas-transition;
-  }
-
-  //section {
-  //  margin-bottom: 30px
-  //}
-  //
-  //section.toggle {
-  //  text-align: center
-  //}
-
-  .mask {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 15;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-  }
-
-  .pmr-open {
-    .uthsc-off-canvas-wrapper {
-      position: fixed;
-      width: 100%;
-    }
-    .offcanvas-nav.push-menu-right {
-      position: absolute;
-    }
-  }
-
-  .pml-open {
-    .uthsc-off-canvas-wrapper {
-      position: fixed;
-      width: 100%;
-    }
-    .offcanvas-nav.push-menu-left {
-      position: absolute;
-    }
-  }
-
-  .offcanvas-nav {
-
-    &.menu {
-      position: fixed;
-      z-index: 20;
-      overflow: auto;
-      overflow-x: hidden;
-      @include uthsc-off-canvas-transition;
-      min-height: 100%;
-      }
-
-    &.push-menu-left,
-    &.push-menu-right {
-      width: $uthsc-offcanvas-size;
-      max-width: 86%;
-    }
-
-    &.push-menu-left {
-      left: -$uthsc-offcanvas-size
-    }
-    &.push-menu-right {
-      right: -$uthsc-offcanvas-size
-    }
-
-    @media all and (max-width: 330px) {
-      nav.push-menu-left,
-      nav.push-menu-right {
-        top: 0;
-        width: $uthsc-offcanvas-size;
-      }
-      &.push-menu-left {
-        left: -$uthsc-offcanvas-size
-      }
-      &.push-menu-right {
-        right: -$uthsc-offcanvas-size
-      }
-    }
-
-  }
 
   body {
     &.pml-open nav.push-menu-left {
@@ -418,11 +437,11 @@ $uthsc-offcanvas-exit-background: rgba($black, 0.5) !default;
     &.pmr-open nav.push-menu-right {
       right: 0
     }
-    &.pml-open .uthsc-off-canvas-wrapper {
-      left: $uthsc-offcanvas-size
+    &.pml-open #uthsc-off-canvas-wrapper {
+      left: 300px
     }
-    &.pmr-open .uthsc-off-canvas-wrapper {
-      left: -$uthsc-offcanvas-size
+    &.pmr-open #uthsc-off-canvas-wrapper {
+      left: -300px
     }
 
     @media all and (max-width: 330px) {
@@ -432,15 +451,16 @@ $uthsc-offcanvas-exit-background: rgba($black, 0.5) !default;
       &.pmr-open nav.push-menu-right {
         right: 0
       }
-      &.pml-open .uthsc-off-canvas-wrapper {
+      &.pml-open #uthsc-off-canvas-wrapper {
         left: 100%
       }
-      &.pmr-open .uthsc-off-canvas-wrapper {
+      &.pmr-open #uthsc-off-canvas-wrapper {
         left: -100%
       }
     }
   }
 
-  @include off-canvas-styles;
-  @include off-canvas-activation;
+  @include uthsc-off-canvas-activation-bar;
+  //@include uthsc-off-canvas-styles
+
 }
