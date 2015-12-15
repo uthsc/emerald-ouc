@@ -56,10 +56,14 @@ $uthsc-site-nav-input-width: 200px !default;
   }
 }
 
+
+
 @mixin uthsc-site-nav {
   // uthsc-site-nav container
   .uthsc-site-nav {
+
     font-weight: bold;
+
     @include uthsc-site-nav-container;
 
     .menu > li > a {
@@ -81,4 +85,5 @@ $uthsc-site-nav-input-width: 200px !default;
       float: right
     }
   }
+
 }
