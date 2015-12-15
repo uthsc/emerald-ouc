@@ -1,0 +1,18 @@
+////
+/// @group footer-bottom
+////
+
+/// Background color for the bottom footer.
+/// @type Color
+$uthsc-footer-bottom-background: $dark-gray !default;
+
+/// Adds styles for a top bar container.
+@mixin uthsc-footer-bottom-styles {
+  background-color: $uthsc-footer-bottom-background;
+}
+
+@mixin uthsc-footer-bottom {
+  .uthsc-footer-bottom {
+    @include uthsc-footer-bottom-styles;
+  }
+}
