@@ -56,6 +56,12 @@ $uthsc-site-nav-input-width: 200px !default;
   }
 }
 
+@mixin menu-icon-fix(
+  $width: 1.5rem
+){
+  width: $width;
+  text-align: center;
+}
 
 
 @mixin uthsc-site-nav {
