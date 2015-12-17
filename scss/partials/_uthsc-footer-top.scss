@@ -9,6 +9,7 @@ $uthsc-footer-top-background: #EFEFEF !default;
 /// Adds styles for a top bar container.
 @mixin uthsc-footer-top-styles {
   background-color: $uthsc-footer-top-background;
+  padding: 40px 0;
 }
 
 @mixin uthsc-footer-top {
