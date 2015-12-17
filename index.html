@@ -16,24 +16,37 @@
 <!--********************-->
 <nav class="offcanvas-nav menu push-menu-left">
 
-    <a href="index.php" class="button uthsc-split-button-home"><i class="fa fa-home"></i></a>
-    <!--<button data-dropdown="breadcrumbs-left" aria-controls="drop" aria-expanded="false"-->
-            <!--class="button dropdown uthsc-split-button">Breadcrumbs Back Home</button>-->
-    <!--<br>-->
-    <!--<ol aria-labelledby="breadcrumblabel" id="breadcrumbs-left" data-dropdown-content="data-dropdown-content"-->
-        <!--role="menu" aria-hidden="false" tabindex="-1" class="f-dropdown mega uthsc-split-button-breadcrumb-links">-->
-        <!--<li><a href="index.php" title="Home">Back to the Homepage-->
-            <!--<i style="float: left;" class="fa fa-level-up fa-2x fa-flip-horizontal"></i></a></li>-->
-        <!--<li><a href="products.html" title="Products">College of Medicine</a></li>-->
-        <!--<li><a href="products.html" title="Products">Office of Medical Education</a></li>-->
-        <!--<li><a href="products.html" title="Products">Clerkships</a></li>-->
-        <!--<li><a href="products.html" title="Products">Core Clerkship Directors</a></li>-->
-        <!--<li><a href="#"><strong>Current Page</strong></a></li>-->
-    <!--</ol>-->
-    <input type="text" placeholder="Search" style="margin:0;">
-    <button class="close-menu expand"><i class="fa fa-chevron-left"></i>&emsp; Close Menu</button>
+    <!--Breadcrumbs-->
+    <div class="uthsc-off-canvas-breadcrumbs button-group">
+        <a class="button home-button"><span class="fa fa-home"></span></a>
+        <button class="button breadcrumbs-button dropdown" type="button" data-toggle="example-dropdown">
+            Breadcrumbs Back Home
+        </button>
+        <div class="dropdown-pane bottom" id="example-dropdown" data-dropdown data-auto-focus="true">
+            <a href="index.php" title="Home">Back to the Homepage</a>
+            <a href="#" title="College of Medicine">College of Medicine</a>
+            <a href="#" title="Office of Medical Education">Office of Medical Education</a>
+            <a href="#" title="Clerkships">Clerkships</a>
+            <a href="#" title="Core Clerkship Directors">Core Clerkship Directors</a>
+            <a href="#"><strong>Current Page</strong></a>
+        </div>
+    </div>
+
+    <!--Search form-->
+    <form class="input-group off-canvas-search" style="margin-bottom:0;" aria-label="Search the UTHSC site">
+        <input type="search" aria-label="Search the UTHSC site" role="search"
+               placeholder="search" style="margin-right:0;">
+        <div class="input-group-button">
+            <button type="submit" class="button" aria-label="Submit search form">
+                <span class="fa fa-search"></span>
+            </button>
+        </div>
+    </form>
+
+    <!--Close menu button-->
+    <a class="close-menu">Close Menu &emsp;<i class="fa fa-chevron-right"></i></a>
     <ul>
-        <li class="not-a-link"><a>Menu Dropdown One</a>
+        <li><span class="link-heading">Menu Dropdown One</span>
             <ul>
                 <li><a href="#">First Item in Dropdown</a></li>
                 <li><a href="#">Second Item in Dropdown</a></li>
@@ -42,7 +55,7 @@
                 <li><a href="#">Fifth Item in Dropdown</a></li>
             </ul>
         </li>
-        <li class="not-a-link"><a>Menu Dropdown Two</a>
+        <li><span class="link-heading">Menu Dropdown Two</span>
             <ul>
                 <li><a href="#">First Item in Dropdown</a></li>
                 <li><a href="#">Second Item in Dropdown</a></li>
@@ -50,7 +63,7 @@
                 <li><a href="#">Fourth Item in Dropdown</a></li>
             </ul>
         </li>
-        <li class="not-a-link"><a>Menu Dropdown Three</a>
+        <li><span class="link-heading">Menu Dropdown Three</span>
             <ul>
                 <li><a href="#">First Item in Dropdown</a></li>
                 <li><a href="#">Second Item in Dropdown</a></li>
@@ -65,7 +78,7 @@
                 <li><a href="#">Eleventh Item in Dropdown</a></li>
             </ul>
         </li>
-        <li class="not-a-link"><a>Menu Dropdown Four</a>
+        <li><span class="link-heading">Menu Dropdown Four</span>
             <ul>
                 <li><a href="#">First Item in Dropdown</a></li>
                 <li><a href="#">Second Item in Dropdown</a></li>
@@ -81,7 +94,7 @@
                 <li><a href="#">First Item in Dropdown</a></li>
             </ul>
         </li>
-        <li class="not-a-link"><a>Menu Dropdown Six</a>
+        <li><span class="link-heading">Menu Dropdown Six</span>
             <ul>
                 <li><a href="#">First Item in Dropdown</a></li>
                 <li><a href="#">Second Item in Dropdown</a></li>
@@ -94,8 +107,9 @@
             </ul>
         </li>
     </ul>
-    <button class="close-menu expand"><i class="fa fa-chevron-left"></i>&emsp; Close Menu</button>
-    <div class="bottom-nav-bar-off-canvas"></div>
+
+    <!--Close menu button-->
+    <a class="close-menu">Close Menu &emsp;<i class="fa fa-chevron-right"></i></a>
 </nav>
 <!--*********************-->
 <!--/Left off canvas menu-->
@@ -105,31 +119,52 @@
 <!--/Right off canvas menu-->
 <!--**********************-->
 <nav class="offcanvas-nav menu push-menu-right">
-    <a href="index.php" class="button uthsc-split-button-home"><i class="fa fa-home"></i></a>
-    <!--<button data-dropdown="breadcrumbs-right" aria-controls="drop" aria-expanded="false" -->
-            <!--class="button dropdown uthsc-split-button">Breadcrumbs Back Home</button>-->
-    <!--<br>-->
-    <!--<ol id="breadcrumbs-right" aria-labelledby="breadcrumblabel" data-dropdown-content="data-dropdown-content" role="menu" aria-hidden="false" tabindex="-1" class="f-dropdown mega uthsc-split-button-breadcrumb-links">-->
-        <!--<li><a href="index.php" title="Home"><i style="float: left;" class="fa fa-level-up fa-2x fa-flip-horizontal"></i>Back to the Homepage</a></li>-->
-        <!--<li><a href="#" title="College of Medicine">College of Medicine</a></li>-->
-        <!--<li><a href="#" title="Office of Medical Education">Office of Medical Education</a></li>-->
-        <!--<li><a href="#" title="Clerkships">Clerkships</a></li>-->
-        <!--<li><a href="#" title="Core Clerkship Directors">Core Clerkship Directors</a></li>-->
-        <!--<li><a href="#"><strong>Current Page</strong></a></li>-->
-    <!--</ol>-->
-    <div class="search-bar has-form mobile">
-        <input type="text" class="search"><a href="#" class="button secondary tiny"><i class="fa fa-search"></i></a>
+
+    <!--Breadcrumbs-->
+    <div class="uthsc-off-canvas-breadcrumbs button-group">
+        <a class="button home-button"><span class="fa fa-home"></span></a>
+        <button class="button breadcrumbs-button dropdown" type="button" data-toggle="example-dropdown">
+            Breadcrumbs Back Home
+        </button>
+        <div class="dropdown-pane bottom" id="example-dropdown" data-dropdown data-auto-focus="true">
+                <a href="index.php" title="Home">Back to the Homepage</a>
+                <a href="#" title="College of Medicine">College of Medicine</a>
+                <a href="#" title="Office of Medical Education">Office of Medical Education</a>
+                <a href="#" title="Clerkships">Clerkships</a>
+                <a href="#" title="Core Clerkship Directors">Core Clerkship Directors</a>
+                <a href="#"><strong>Current Page</strong></a>
+        </div>
     </div>
-    <button class="close-menu expand">Close Menu &emsp;<i class="fa fa-chevron-right"></i>
-        <!-- Mission Links-->
-    </button>
+
+    <!--Search form-->
+    <form class="input-group off-canvas-search" style="margin-bottom:0;" aria-label="Search the UTHSC site">
+        <input type="search" aria-label="Search the UTHSC site" role="search"
+               placeholder="search" style="margin-right:0;">
+        <div class="input-group-button">
+            <button type="submit" class="button" aria-label="Submit search form">
+                <span class="fa fa-search"></span>
+            </button>
+        </div>
+    </form>
+
+    <!--Close menu button-->
+    <a class="close-menu">Close Menu &emsp;<i class="fa fa-chevron-right"></i></a>
+
+    <!--Mission links-->
     <div class="mission-links">
-        <h2>Mission</h2><a href="/education/" class="button inverse"><i class="fa fa-graduation-cap"></i>Education</a><a href="/research/" class="button inverse"><i class="fa fa-flask"></i>Research</a><a href="/clinicalcare/" class="button inverse"><i class="fa fa-medkit"></i>Clinical Care</a><a href="/publicservice/" class="button inverse"><i class="fa fa-globe"></i>Public Service</a>
+        <h2>Mission</h2>
+
+        <a href="/education/"><i class="fa fa-graduation-cap"></i>Education</a>
+        <a href="/research/"><i class="fa fa-flask"></i>Research</a>
+        <a href="/clinicalcare/"><i class="fa fa-medkit"></i>Clinical Care</a>
+        <a href="/publicservice/"><i class="fa fa-globe"></i>Public Service</a>
     </div>
+
+    <a href="#" class="call-to-action-link"><i class="fa fa-gift"></i>Make a Gift</a>
+    <a href="template.php" class="call-to-action-link"><i class="fa fa-road"></i>Take a Tour</a>
+
     <ul>
-        <li class="button menu"><a href="#"><i class="fa fa-gift"></i>Make a Gift</a></li>
-        <li class="button menu"><a href="template.php"><i class="fa fa-road"></i>Take a Tour</a></li>
-        <li class="not-a-link"><a>Information for...</a>
+        <li><span class="link-heading">Information for...</span>
             <ul>
                 <li><a href="#">Students</a></li>
                 <li><a href="#">Faculty &amp; Staff</a></li>
@@ -138,7 +173,7 @@
                 <li><a href="#">Patients</a></li>
             </ul>
         </li>
-        <li class="not-a-link menu"><a><i class="fa fa-university">&emsp; Resources</i></a>
+        <li><span class="link-heading"><i class="fa fa-university">&emsp; Resources</i></span>
             <ul>
                 <li><a href="#">Banner</a></li>
                 <li><a href="#">Blackboard</a></li>
@@ -152,7 +187,9 @@
             </ul>
         </li>
     </ul>
-    <button class="close-menu expand">Close Menu &emsp;<i class="fa fa-chevron-right"></i></button>
+
+    <!--Close menu button-->
+    <a class="close-menu">Close Menu &emsp;<i class="fa fa-chevron-right"></i></a>
 </nav>
 <!--**********************-->
 <!--/Right off canvas menu-->

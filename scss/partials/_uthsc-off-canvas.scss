@@ -9,7 +9,7 @@ $uthsc-offcanvas-size: 300px !default;
 
 /// Background color of an off-canvas menu.
 /// @type Color
-$uthsc-offcanvas-background: $light-gray !default;
+$uthsc-offcanvas-background: $dark-gray !default;
 
 /// Length of the animation on an off-canvas menu.
 /// @type Number
@@ -334,6 +334,106 @@ $jet         : #222222;
   }
 }
 
+
+//consistent padding for full-width
+//off-canvas links
+@mixin off-canvas-link-padding {
+  width: 100%;
+  padding: .5em 1em;
+  display: block;
+}
+
+@mixin uthsc-off-canvas-breadcrumbs {
+
+  //remove default bottom margin on button-group
+  margin-bottom: 0;
+
+  .dropdown-pane {
+    //using important to override inline
+    //styles added by foundation
+    left:0 !important;
+
+    //reset dropdown-pane padding
+    //for full width links
+    padding:0;
+
+    a {
+      border-bottom: 1px solid black;
+      @include off-canvas-link-padding;
+    }
+  }
+
+  //make buttons full width
+  .home-button { width:16%; }
+  .breadcrumbs-button { width:84%; }
+}
+
+
+
+@mixin uthsc-off-canvas-styles-new {
+
+
+  //close menu button
+  .close-menu {
+    color: $white;
+    @include off-canvas-link-padding;
+  }
+
+  //search bar
+  .off-canvas-search {
+    .button {
+      //manually set height to the same as the input
+      height: 2.4375rem;
+    }
+  }
+
+  //mission links
+  .mission-links {
+
+    padding: .5em;
+    background: $uthsc-grey-dark;
+    
+    h2 {
+      color: $white;
+      background: $black;
+      text-align: center;
+      margin-bottom: 0;
+    }
+
+    a {
+      background: $light-gray;
+      @include off-canvas-link-padding;
+    }
+  }
+
+  //call-to-action-links
+  //make a gift
+  //take a tour
+  .call-to-action-link {
+    background: $uthsc-green;
+    color:$white;
+    @include off-canvas-link-padding;
+  }
+
+  //unordered list reset
+  ul, ul ul, li {
+    margin:0;
+    list-style: none;
+  }
+
+  .link-heading {
+    background:$black;
+    color: $white;
+    @include off-canvas-link-padding;
+  }
+
+  li a {
+    color: $white;
+    @include off-canvas-link-padding;
+  }
+
+}
+
 @mixin uthsc-off-canvas-basics {
   #uthsc-off-canvas-wrapper {
     position: relative;
@@ -465,6 +565,9 @@ $jet         : #222222;
     }
   }
 
+  .uthsc-off-canvas-breadcrumbs { @include uthsc-off-canvas-breadcrumbs; }
+
   @include uthsc-off-canvas-activation-bar;
-  @include uthsc-off-canvas-styles
+
+  .offcanvas-nav { @include uthsc-off-canvas-styles-new; }
 }
