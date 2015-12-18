@@ -372,7 +372,6 @@ $jet         : #222222;
 
 @mixin uthsc-off-canvas-styles-new {
 
-
   //close menu button
   .close-menu {
     color: $white;
@@ -389,8 +388,9 @@ $jet         : #222222;
 
   //mission links
   .mission-links {
-
-    padding: .5em;
+    //padding around mission links
+    //from previous styles
+    //padding: .5em;
     background: $uthsc-grey-dark;
     
     h2 {
