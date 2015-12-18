@@ -14,12 +14,12 @@
 <!--********************-->
 <!--Left off canvas menu-->
 <!--********************-->
-<nav class="offcanvas-nav menu push-menu-left">
+<nav class="offcanvas-nav menu push-menu-left hide-for-large" aria-hidden="true">
 
     <!--Breadcrumbs-->
     <div class="uthsc-off-canvas-breadcrumbs button-group">
         <a class="button home-button"><span class="fa fa-home"></span></a>
-        <button class="button breadcrumbs-button dropdown" type="button" data-toggle="example-dropdown">
+        <button class="button breadcrumbs-button dropdown" type="button" data-toggle="left-off-canvas-dropdown">
             Breadcrumbs Back Home
         </button>
         <div class="dropdown-pane bottom" id="example-dropdown" data-dropdown data-auto-focus="true">
@@ -118,7 +118,7 @@
 <!--**********************-->
 <!--/Right off canvas menu-->
 <!--**********************-->
-<nav class="offcanvas-nav menu push-menu-right">
+<nav class="offcanvas-nav menu push-menu-right hide-for-large" aria-hidden="true">
 
     <!--Breadcrumbs-->
     <div class="uthsc-off-canvas-breadcrumbs button-group">
@@ -339,7 +339,7 @@
         <!--***************-->
         <!--Main Navigation-->
         <!--***************-->
-        <nav aria-label="Current section menu" role="navigation">
+        <nav class="show-for-large" aria-label="Current section menu" role="navigation">
             <ul class="dropdown menu" data-dropdown-menu>
                 <li>
                     <a>Item 1</a>
@@ -891,7 +891,7 @@
         <!--******************-->
         <!--Off canvas buttons-->
         <!--******************-->
-        <div aria-hidden="true" id="mobile-navigation">
+        <div aria-hidden="true" id="mobile-navigation" class="hide-for-large">
             <button class="toggle-push-left button">Left</button>
             <button class="toggle-push-right button">Right</button>
         </div>
