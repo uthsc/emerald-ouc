@@ -468,8 +468,16 @@
     border-left: 1px solid #1e1e1e;
     float:right;
   }
-}
 
+  //adds a space equal to the height of the
+  //off-canvas activation bar to prevent
+  //content from being covered
+
+  .mobile-nav-bottom-spacing-fix {
+    height: 44px;
+    width: 100%;
+  }
+}
 
 @mixin uthsc-push-menu {
 
