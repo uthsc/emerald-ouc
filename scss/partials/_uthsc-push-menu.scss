@@ -121,7 +121,6 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
   }
 
   .uthsc-off-canvas-breadcrumbs { @include uthsc-off-canvas-breadcrumbs; }
-
 }
 
 
@@ -183,6 +182,12 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
   .mobile-nav-bottom-spacing-fix {
     height: 44px;
     width: 100%;
+  }
+
+  .safari-bottom-nav-fix {
+    height: 44px;
+    width: 100%;
+    clear: left;
   }
 }
 
