@@ -711,6 +711,12 @@
         <!--Mobile navigation bottom spacing fix-->
         <!--************************************-->
         <div class="mobile-nav-bottom-spacing-fix hide-for-large"></div>
+
+        <?php
+            if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone')) {
+                echo '<div class="safari-bottom-nav-fix"></div>';
+            }
+        ?>
         <!--*************************************-->
         <!--/Mobile navigation bottom spacing fix-->
         <!--*************************************-->
