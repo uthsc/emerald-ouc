@@ -158,7 +158,7 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
     background: $uthsc-green;
     height: 44px;
   }
-  .toggle-push-left {
+  .toggle-slide-left {
     background-image: url("../images/2t.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -166,7 +166,7 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
     border-right: 1px solid #5d5c5c;
     float:left;
   }
-  .toggle-push-right {
+  .toggle-slide-right {
     background-image: url("../images/5t.png");
     background-repeat: no-repeat;
     background-size: contain;
