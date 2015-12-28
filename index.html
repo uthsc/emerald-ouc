@@ -13,12 +13,11 @@
 <!--******************-->
 <!--Off canvas wrapper-->
 <!--******************-->
-<div class="off-canvas-wrapper">
-    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+<div id="o-wrapper" class="o-wrapper">
 
-        <!--*******-->
-        <!--Top Bar-->
-        <!--*******-->
+        <!--**************-->
+        <!--UTHSC site nav-->
+        <!--**************-->
         <nav class="uthsc-site-nav show-for-large" aria-label="UTHSC site menu" role="navigation">
             <div class="uthsc-site-nav-left">
                 <ul class="menu">
@@ -91,9 +90,9 @@
                 </ul>
             </div>
         </nav>
-        <!--********-->
-        <!--/Top Bar-->
-        <!--********-->
+        <!--***************-->
+        <!--/UTHSC site nav-->
+        <!--***************-->
 
 
         <!--******-->
@@ -130,7 +129,7 @@
         <!--***********-->
         <!--Breadcrumbs-->
         <!--***********-->
-        <nav aria-label="Breadcrumbs - you are here:" role="navigation">
+        <nav aria-label="Breadcrumbs - you are here:" role="navigation" class="show-for-large">
             <ul class="breadcrumbs">
                 <li><a aria-label="go to UTHSC homepage" href="#" >Home</a></li>
                 <li><a aria-label="go to parent section - College of medicine" href="#">College of medicine</a></li>
@@ -146,7 +145,7 @@
         <!--***************-->
         <!--Main Navigation-->
         <!--***************-->
-        <nav aria-label="Current section menu" role="navigation">
+        <nav class="show-for-large" aria-label="Current section menu" role="navigation">
             <ul class="dropdown menu" data-dropdown-menu>
                 <li>
                     <a>Item 1</a>
@@ -380,6 +379,18 @@
                     </div>
                 </div>
             </div>
+
+            <div class="c-buttons">
+                <!--<button id="c-button&#45;&#45;slide-left" class="c-button">Slide Left</button>-->
+                <!--<button id="c-button&#45;&#45;slide-right" class="c-button">Slide Right</button>-->
+                <button id="c-button--push-left" class="c-button">Push Left</button>
+                <button id="c-button--push-right" class="c-button">Push Right</button>
+                <button id="c-button--slide-top" class="c-button">Slide Top</button>
+                <button id="c-button--slide-bottom" class="c-button">Slide Botton</button>
+                <button id="c-button--push-top" class="c-button">Push Top</button>
+                <button id="c-button--push-bottom" class="c-button">Push Bottom</button>
+            </div>
+
         </div>
         <!--********-->
         <!--/Content-->
@@ -696,70 +707,388 @@
         <!--*******-->
 
 
-        <!--******************-->
-        <!--Off canvas buttons-->
-        <!--******************-->
-        <div class="hide-for-large" aria-hidden="true">
-            <button class="button" type="button" data-toggle="offCanvasLeft">Open Left Menu</button>
-            <button class="button" type="button" data-toggle="offCanvasRight">Open Right Menu</button>
-        </div>
-        <!--*******************-->
-        <!--/Off canvas buttons-->
-        <!--*******************-->
+        <!--************************************-->
+        <!--Mobile navigation bottom spacing fix-->
+        <!--************************************-->
+        <div class="mobile-nav-bottom-spacing-fix hide-for-large"></div>
 
+        <!--Safari bottom nav fix-->
+        <!--<?php-->
+            <!--if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone')) {-->
+                <!--echo '<div class="safari-bottom-nav-fix"></div>';-->
+            <!--}-->
+        <!--?>-->
+        <!--*************************************-->
+        <!--/Mobile navigation bottom spacing fix-->
+        <!--*************************************-->
 
-        <!--********************-->
-        <!--Left off canvas menu-->
-        <!--********************-->
-        <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas="data-off-canvas" aria-hidden="true">
-            <button tabindex="-1" class="close-button" aria-label="Close menu" type="button" data-close>
-                <span aria-hidden="true">&times;</span>
-            </button>
-            <ul class="mobile-ofc vertical menu">
-                <li>
-                    <a  tabindex="-1" href="http://foundation.zurb.com/learn/about.html">Learn</a>
-                    <ul class="submenu menu vertical"  tabindex="-1" data-submenu>
-                        <li><a tabindex="-1" href="#">About Foundation</a></li>
-                        <li><a tabindex="-1" href="#">Tutorials</a></li>
-                        <li><a tabindex="-1" href="#">Classes</a></li>
-                        <li><a tabindex="-1" href="#">Case Studies</a></li>
-                        <li><a tabindex="-1" href="#">Brands</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <!--*********************-->
-        <!--/Left off canvas menu-->
-        <!--*********************-->
-
-
-        <!--*********************-->
-        <!--Right off canvas menu-->
-        <!--*********************-->
-        <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas="data-off-canvas"
-             data-position="right" aria-hidden="true">
-            <button tabindex="-1" class="close-button" aria-label="Close menu" type="button" data-close>
-                <span aria-hidden="true">&times;</span>
-            </button>
-            <ul class="vertical menu" tabindex="-1">
-                <li><a tabindex="-1" href="#">Foundation</a></li>
-                <li><a tabindex="-1" href="#">Dot</a></li>
-                <li><a tabindex="-1" href="#">ZURB</a></li>
-                <li><a tabindex="-1" href="#">Com</a></li>
-                <li><a tabindex="-1" href="#">Slash</a></li>
-                <li><a tabindex="-1" href="#">Sites</a></li>
-            </ul>
-        </div>
-        <!--**********************-->
-        <!--/Right off canvas menu-->
-        <!--**********************-->
-
-        <div class="off-canvas-content" data-off-canvas-content></div>
-
-    </div>
 </div>
 <!--*******************-->
 <!--/Off canvas wrapper-->
+<!--*******************-->
+
+
+<!--********************-->
+<!--Left off canvas menu-->
+<!--********************-->
+<!--<nav id="c-menu&#45;&#45;push-left" class="c-menu c-menu&#45;&#45;push-left">-->
+<nav id="c-menu--slide-left" class="c-menu c-menu--slide-left">
+    <!--Breadcrumbs-->
+    <div class="uthsc-off-canvas-breadcrumbs button-group">
+        <a class="button home-button"><span class="fa fa-home"></span></a>
+        <button class="button breadcrumbs-button dropdown" type="button" data-toggle="left-breadcrumbs-dropdown">
+            Breadcrumbs Back Home
+        </button>
+        <div class="dropdown-pane bottom" id="left-breadcrumbs-dropdown" data-dropdown data-auto-focus="true">
+            <a href="index.php" title="Home">Back to the Homepage</a>
+            <a href="#" title="College of Medicine">College of Medicine</a>
+            <a href="#" title="Office of Medical Education">Office of Medical Education</a>
+            <a href="#" title="Clerkships">Clerkships</a>
+            <a href="#" title="Core Clerkship Directors">Core Clerkship Directors</a>
+            <a href="#"><strong>Current Page</strong></a>
+        </div>
+    </div>
+
+    <!--Search form-->
+    <form class="input-group off-canvas-search" style="margin-bottom:0;" aria-label="Search the UTHSC site">
+        <input type="search" aria-label="Search the UTHSC site" role="search"
+               placeholder="search" style="margin-right:0;">
+        <div class="input-group-button">
+            <button type="submit" class="button" aria-label="Submit search form">
+                <span class="fa fa-search"></span>
+            </button>
+        </div>
+    </form>
+
+    <!--Close menu button-->
+    <button class="c-menu__close">
+        <i class="fa fa-chevron-left"></i>&emsp; Close Menu
+    </button>
+
+    <ul>
+        <li><span class="link-heading">Menu Dropdown One</span>
+            <ul>
+                <li><a href="#">First Item in Dropdown</a></li>
+                <li><a href="#">Second Item in Dropdown</a></li>
+                <li><a href="#">Third Item in Dropdown</a></li>
+                <li><a href="#">Fourth Item in Dropdown</a></li>
+                <li><a href="#">Fifth Item in Dropdown</a></li>
+            </ul>
+        </li>
+        <li><span class="link-heading">Menu Dropdown Two</span>
+            <ul>
+                <li><a href="#">First Item in Dropdown</a></li>
+                <li><a href="#">Second Item in Dropdown</a></li>
+                <li><a href="#">Third Item in Dropdown That Goes to Two Lines</a></li>
+                <li><a href="#">Fourth Item in Dropdown</a></li>
+            </ul>
+        </li>
+        <li><span class="link-heading">Menu Dropdown Three</span>
+            <ul>
+                <li><a href="#">First Item in Dropdown</a></li>
+                <li><a href="#">Second Item in Dropdown</a></li>
+                <li><a href="#">Third Item in Dropdown</a></li>
+                <li><a href="#">Fourth Item in Dropdown</a></li>
+                <li><a href="#">Fifth Item in Dropdown</a></li>
+                <li><a href="#">Sixth Item in Dropdown</a></li>
+                <li><a href="#">Seventh Item in Dropdown</a></li>
+                <li><a href="#">Eighth Item in Dropdown</a></li>
+                <li><a href="#">Ninth Item in Dropdown</a></li>
+                <li><a href="#">Tenth Item in Dropdown</a></li>
+                <li><a href="#">Eleventh Item in Dropdown</a></li>
+            </ul>
+        </li>
+        <li><span class="link-heading">Menu Dropdown Four</span>
+            <ul>
+                <li><a href="#">First Item in Dropdown</a></li>
+                <li><a href="#">Second Item in Dropdown</a></li>
+                <li><a href="#">Third Item in Dropdown</a></li>
+                <li><a href="#">Fourth Item in Dropdown</a></li>
+                <li><a href="#">Fifth Item in Dropdown</a></li>
+                <li><a href="#">Sixth Item in Dropdown</a></li>
+                <li><a href="#">Seventh Item in Dropdown</a></li>
+            </ul>
+        </li>
+        <li><span class="link-heading">Menu Dropdown Five</span>
+            <ul>
+                <li><a href="#">First Item in Dropdown</a></li>
+            </ul>
+        </li>
+        <li><span class="link-heading">Menu Dropdown Six</span>
+            <ul>
+                <li><a href="#">First Item in Dropdown</a></li>
+                <li><a href="#">Second Item in Dropdown</a></li>
+                <li><a href="#">Third Item in Dropdown</a></li>
+                <li><a href="#">Fourth Item in Dropdown</a></li>
+                <li><a href="#">Fifth Item in Dropdown That Goes to Three Lines Because it Is Very Long</a></li>
+                <li><a href="#">Sixth Item in Dropdown</a></li>
+                <li><a href="#">Seventh Item in Dropdown</a></li>
+                <li><a href="#">Eighth Item in Dropdown</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <!--Close menu button-->
+    <!--<button class="c-menu__close">-->
+        <!--<i class="fa fa-chevron-left"></i>&emsp; Close Menu-->
+    <!--</button>-->
+
+    <!--Safari bottom nav fix-->
+    <!--<?php-->
+    <!--if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone')) {-->
+    <!--echo '<div class="safari-bottom-nav-fix"></div>';-->
+    <!--}-->
+    <!--?>-->
+</nav><!-- /c-menu push-left -->
+<!--*********************-->
+<!--/Left off canvas menu-->
+<!--*********************-->
+
+<!--*********************-->
+<!--Right off canvas menu-->
+<!--*********************-->
+<!--<nav id="c-menu&#45;&#45;push-right" class="c-menu c-menu&#45;&#45;push-right">-->
+<nav id="c-menu--slide-right" class="c-menu c-menu--slide-right">
+
+    <!--Breadcrumbs-->
+    <div class="uthsc-off-canvas-breadcrumbs button-group">
+        <a class="button home-button"><span class="fa fa-home"></span></a>
+        <button class="button breadcrumbs-button dropdown" type="button" data-toggle="right-breadcrumbs-dropdown">
+            Breadcrumbs Back Home
+        </button>
+        <div class="dropdown-pane bottom" id="right-breadcrumbs-dropdown" data-dropdown data-auto-focus="true">
+            <a href="index.php" title="Home">Back to the Homepage</a>
+            <a href="#" title="College of Medicine">College of Medicine</a>
+            <a href="#" title="Office of Medical Education">Office of Medical Education</a>
+            <a href="#" title="Clerkships">Clerkships</a>
+            <a href="#" title="Core Clerkship Directors">Core Clerkship Directors</a>
+            <a href="#"><strong>Current Page</strong></a>
+        </div>
+    </div>
+
+    <!--Search form-->
+    <form class="input-group off-canvas-search" style="margin-bottom:0;" aria-label="Search the UTHSC site">
+        <input type="search" aria-label="Search the UTHSC site" role="search"
+               placeholder="search" style="margin-right:0;">
+        <div class="input-group-button">
+            <button type="submit" class="button" aria-label="Submit search form">
+                <span class="fa fa-search"></span>
+            </button>
+        </div>
+    </form>
+
+    <!--Close menu button-->
+    <button class="c-menu__close">
+        <i class="fa fa-chevron-left"></i>&emsp; Close Menu
+    </button>
+
+    <!--Mission links-->
+    <div class="mission-links">
+        <h2 class="link-heading">Mission</h2>
+
+        <a href="/education/"><i class="fa fa-graduation-cap"></i>Education</a>
+        <a href="/research/"><i class="fa fa-flask"></i>Research</a>
+        <a href="/clinicalcare/"><i class="fa fa-medkit"></i>Clinical Care</a>
+        <a href="/publicservice/"><i class="fa fa-globe"></i>Public Service</a>
+    </div>
+
+    <a href="#" class="call-to-action-link"><i class="fa fa-gift"></i>Make a Gift</a>
+    <a href="template.php" class="call-to-action-link"><i class="fa fa-road"></i>Take a Tour</a>
+
+    <ul>
+        <li><span class="link-heading">Information for...</span>
+            <ul>
+                <li><a href="#">Students</a></li>
+                <li><a href="#">Faculty &amp; Staff</a></li>
+                <li><a href="#">Alumni</a></li>
+                <li><a href="#">Visitors</a></li>
+                <li><a href="#">Patients</a></li>
+            </ul>
+        </li>
+        <li><span class="link-heading"><i class="fa fa-university">&emsp; Resources</i></span>
+            <ul>
+                <li><a href="#">Banner</a></li>
+                <li><a href="#">Blackboard</a></li>
+                <li><a href="#">Calendar</a></li>
+                <li><a href="#">Career Opportunities</a></li>
+                <li><a href="#">iLogin</a></li>
+                <li><a href="#">Maps</a></li>
+                <li><a href="#">MyUT</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Webmail</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <!--Close menu button-->
+    <!--<button class="c-menu__close">-->
+        <!--<i class="fa fa-chevron-left"></i>&emsp; Close Menu-->
+    <!--</button>-->
+
+    <!--Safari bottom nav fix-->
+    <!--<?php-->
+    <!--if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone')) {-->
+    <!--echo '<div class="safari-bottom-nav-fix"></div>';-->
+    <!--}-->
+    <!--?>-->
+</nav><!-- /c-menu push-right -->
+<!--**********************-->
+<!--/Right off canvas menu-->
+<!--**********************-->
+
+
+<!--***************-->
+<!--Off canvas mask-->
+<!--***************-->
+<div id="c-mask" class="c-mask"></div><!-- /c-mask -->
+<!--****************-->
+<!--/Off canvas mask-->
+<!--****************-->
+
+
+<!--*********************-->
+<!--Other off canvas menu-->
+<!--*********************-->
+<!--<nav id="c-menu&#45;&#45;slide-left" class="c-menu c-menu&#45;&#45;slide-left">-->
+    <!--<button class="c-menu__close">&larr; Close Menu</button>-->
+    <!--<ul class="c-menu__items">-->
+        <!--<li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>-->
+        <!--<li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>-->
+        <!--<li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>-->
+        <!--<li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>-->
+        <!--<li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>-->
+    <!--</ul>-->
+<!--</nav>&lt;!&ndash; /c-menu slide-left &ndash;&gt;-->
+
+<!--<nav id="c-menu&#45;&#45;slide-right" class="c-menu c-menu&#45;&#45;slide-right">-->
+    <!--<button class="c-menu__close">Close Menu &rarr;</button>-->
+    <!--<ul class="c-menu__items">-->
+        <!--<li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>-->
+        <!--<li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>-->
+        <!--<li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>-->
+        <!--<li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>-->
+        <!--<li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>-->
+    <!--</ul>-->
+<!--</nav>&lt;!&ndash; /c-menu slide-right &ndash;&gt;-->
+
+<nav id="c-menu--push-left" class="c-menu c-menu--push-left">
+    <button class="c-menu__close">&larr; Close Menu</button>
+    <ul class="c-menu__items">
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+    </ul>
+</nav><!-- /c-menu push-left -->
+
+<nav id="c-menu--push-right" class="c-menu c-menu--push-right">
+    <button class="c-menu__close">Close Menu &rarr;</button>
+    <ul class="c-menu__items">
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Work</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Contact</a></li>
+    </ul>
+</nav><!-- /c-menu push-right -->
+
+<nav id="c-menu--slide-top" class="c-menu c-menu--slide-top">
+    <button class="c-menu__close"><strong>x</strong></button>
+    <ul class="c-menu__items">
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+    </ul>
+</nav><!-- /c-menu slide-top -->
+
+<nav id="c-menu--push-top" class="c-menu c-menu--push-top">
+    <button class="c-menu__close"><strong>x</strong></button>
+    <ul class="c-menu__items">
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+    </ul>
+</nav><!-- /c-menu push-top -->
+
+<nav id="c-menu--slide-bottom" class="c-menu c-menu--slide-bottom">
+    <button class="c-menu__close"><strong>x</strong></button>
+    <ul class="c-menu__items">
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+    </ul>
+</nav><!-- /c-menu slide-bottom -->
+
+<nav id="c-menu--push-bottom" class="c-menu c-menu--push-bottom">
+    <button class="c-menu__close"><strong>x</strong></button>
+    <ul class="c-menu__items">
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Home</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">About</a></li>
+        <li class="c-menu__item"><a href="#" class="c-menu__link">Services</a></li>
+    </ul>
+</nav><!-- /c-menu push-bottom -->
+<!--***********************-->
+<!--/Other off canvas menus-->
+<!--***********************-->
+
+
+<!--******************-->
+<!--Off canvas buttons-->
+<!--******************-->
+<div aria-hidden="true" id="mobile-navigation" class="hide-for-large">
+    <button id="c-button--slide-left" class="toggle-slide-left button">Left</button>
+    <button id="c-button--slide-right" class="toggle-slide-right button">Right</button>
+
+    <!--Safari bottom nav fix-->
+    <!--<?php-->
+    <!--if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone')) {-->
+    <!--echo '<div class="safari-bottom-nav-fix"></div>';-->
+    <!--}-->
+    <!--?>-->
+</div>
+<!--*******************-->
+<!--/Off canvas buttons-->
 <!--*******************-->
 
 
@@ -770,6 +1099,174 @@
 <script src="bower_components/what-input/what-input.js"></script>
 <script src="bower_components/foundation-sites/dist/foundation.js"></script>
 <script src="js/app.js"></script>
+<script src="js/partials/push-menu.js"></script>
+<script>
+
+    /**
+     * Slide left instantiation and action.
+     */
+    var slideLeft = new Menu({
+        wrapper: '#o-wrapper',
+        type: 'slide-left',
+        menuOpenerClass: '.c-button',
+        maskId: '#c-mask'
+    });
+
+    var slideLeftBtn = document.querySelector('#c-button--slide-left');
+
+    slideLeftBtn.addEventListener('click', function(e) {
+        e.preventDefault;
+        slideLeft.open();
+    });
+
+
+
+
+
+    /**
+     * Push left instantiation and action.
+     */
+    var pushLeft = new Menu({
+        wrapper: '#o-wrapper',
+        type: 'push-left',
+        menuOpenerClass: '.c-button',
+        maskId: '#c-mask'
+    });
+
+    var pushLeftBtn = document.querySelector('#c-button--push-left');
+
+    pushLeftBtn.addEventListener('click', function(e) {
+        e.preventDefault;
+        pushLeft.open();
+    });
+
+
+
+
+
+    /**
+     * Slide right instantiation and action.
+     */
+    var slideRight = new Menu({
+        wrapper: '#o-wrapper',
+        type: 'slide-right',
+        menuOpenerClass: '.c-button',
+        maskId: '#c-mask'
+    });
+
+    var slideRightBtn = document.querySelector('#c-button--slide-right');
+
+    slideRightBtn.addEventListener('click', function(e) {
+        e.preventDefault;
+        slideRight.open();
+    });
+
+
+
+
+
+    /**
+     * Push right instantiation and action.
+     */
+    var pushRight = new Menu({
+        wrapper: '#o-wrapper',
+        type: 'push-right',
+        menuOpenerClass: '.c-button',
+        maskId: '#c-mask'
+    });
+
+    var pushRightBtn = document.querySelector('#c-button--push-right');
+
+    pushRightBtn.addEventListener('click', function(e) {
+        e.preventDefault;
+        pushRight.open();
+    });
+
+
+
+
+
+    /**
+     * Slide top instantiation and action.
+     */
+    var slideTop = new Menu({
+        wrapper: '#o-wrapper',
+        type: 'slide-top',
+        menuOpenerClass: '.c-button',
+        maskId: '#c-mask'
+    });
+
+    var slideTopBtn = document.querySelector('#c-button--slide-top');
+
+    slideTopBtn.addEventListener('click', function(e) {
+        e.preventDefault;
+        slideTop.open();
+    });
+
+
+
+
+
+    /**
+     * Push top instantiation and action.
+     */
+    var pushTop = new Menu({
+        wrapper: '#o-wrapper',
+        type: 'push-top',
+        menuOpenerClass: '.c-button',
+        maskId: '#c-mask'
+    });
+
+    var pushTopBtn = document.querySelector('#c-button--push-top');
+
+    pushTopBtn.addEventListener('click', function(e) {
+        e.preventDefault;
+        pushTop.open();
+    });
+
+
+
+
+
+    /**
+     * Slide bottom instantiation and action.
+     */
+    var slideBottom = new Menu({
+        wrapper: '#o-wrapper',
+        type: 'slide-bottom',
+        menuOpenerClass: '.c-button',
+        maskId: '#c-mask'
+    });
+
+    var slideBottomBtn = document.querySelector('#c-button--slide-bottom');
+
+    slideBottomBtn.addEventListener('click', function(e) {
+        e.preventDefault;
+        slideBottom.open();
+    });
+
+
+
+
+
+    /**
+     * Push bottom instantiation and action.
+     */
+    var pushBottom = new Menu({
+        wrapper: '#o-wrapper',
+        type: 'push-bottom',
+        menuOpenerClass: '.c-button',
+        maskId: '#c-mask'
+    });
+
+    var pushBottomBtn = document.querySelector('#c-button--push-bottom');
+
+    pushBottomBtn.addEventListener('click', function(e) {
+        e.preventDefault;
+        pushBottom.open();
+    });
+
+</script>
 <!--********-->
 <!--/Scripts-->
 <!--********-->

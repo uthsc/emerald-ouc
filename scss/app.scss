@@ -2,6 +2,8 @@
 
 @import 'partials/uthsc-site-nav';
 @import 'partials/uthsc-banner';
+@import 'partials/uthsc-push-menu';
 
 @include uthsc-site-nav;
 @include uthsc-banner;
+@include uthsc-push-menu;
