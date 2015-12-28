@@ -3,7 +3,9 @@
 @import 'partials/uthsc-site-nav';
 @import 'partials/uthsc-banner';
 @import 'partials/uthsc-push-menu';
+@import 'partials/uthsc-breadcrumbs';
 
 @include uthsc-site-nav;
 @include uthsc-banner;
 @include uthsc-push-menu;
+@include uthsc-breadcrumbs;
