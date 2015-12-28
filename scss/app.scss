@@ -5,9 +5,11 @@
 @import 'partials/uthsc-push-menu';
 @import 'partials/uthsc-breadcrumbs';
 @import 'partials/uthsc-footer-top';
+@import 'partials/uthsc-footer-bottom';
 
 @include uthsc-site-nav;
 @include uthsc-banner;
 @include uthsc-push-menu;
 @include uthsc-breadcrumbs;
 @include uthsc-footer-top;
+@include uthsc-footer-bottom;
