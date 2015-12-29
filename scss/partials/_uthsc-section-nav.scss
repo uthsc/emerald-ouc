@@ -1,0 +1,62 @@
+// Foundation for Sites by ZURB
+// foundation.zurb.com
+// Licensed under MIT Open Source
+
+////
+/// @group top-bar
+////
+
+/// Padding for the top bar.
+/// @type Number
+$section-nav-padding: 0 !default;
+
+/// Background color for the top bar. This color also cascades to menus within the top bar.
+/// @type Color
+$section-nav-background: $uthsc-green !default;
+
+/// Color for links inside a top bar menu.
+/// @type Color
+$section-nav-link-color: #fff !default;
+
+/// Width of `<input>` elements inside the top bar.
+/// @type Number
+$section-nav-input-width: 200px !default;
+
+/// Adds styles for a top bar container.
+@mixin section-nav-container {
+  @include clearfix;
+  padding: $section-nav-padding;
+
+  &, ul {
+    background: $section-nav-background;
+
+    & li > a {
+      color: $section-nav-link-color;
+    }
+
+  }
+
+  input {
+    width: $section-nav-input-width;
+    margin-#{$global-right}: 1rem;
+  }
+}
+
+@mixin  uthsc-section-nav {
+  // Top bar container
+  .uthsc-section-nav {
+    @include section-nav-container;
+  }
+
+  // Sub-sections
+  // Stack on small screens
+  @include breakpoint(medium) {
+    .top-bar-left {
+      float: left;
+    }
+
+    .top-bar-right {
+      float: right
+    }
+  }
+}
