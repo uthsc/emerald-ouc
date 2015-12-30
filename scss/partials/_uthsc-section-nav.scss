@@ -12,11 +12,11 @@ $section-nav-padding: 0 !default;
 
 /// Background color for the top bar. This color also cascades to menus within the top bar.
 /// @type Color
-$section-nav-background: $uthsc-green !default;
+$section-nav-background: #eee !default;
 
 /// Color for links inside a top bar menu.
 /// @type Color
-$section-nav-link-color: #fff !default;
+$section-nav-link-color: #000 !default;
 
 /// Width of `<input>` elements inside the top bar.
 /// @type Number
@@ -42,23 +42,53 @@ $section-nav-input-width: 200px !default;
   }
 }
 
+//center text in heading links
+@mixin center-link-text {
+  //position: absolute;
+  //top: 50%;
+  //left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+}
+
 @mixin  uthsc-section-nav {
   // Top bar container
   .uthsc-section-nav {
     @include section-nav-container;
+
+    .section-navigation-link-heading .section-navigation-link-heading-text{
+      @include center-link-text;
+    }
+
+    .section-navigation-link-heading {
+      background: $uthsc-green;
+      color: #fff;
+      position:relative;
+    }
+
+
+    //top nav heading link padding
+    li {
+      //reset padding on li's
+      padding:0;
+      //add padding to outer li's
+      &:first-child { padding-left:0.9375rem; }
+      &:last-child { padding-right:0.9375rem; }
+    }
+
   }
 
   // Sub-sections
   // Stack on small screens
-  @include breakpoint(medium) {
-    .top-bar-left {
-      float: left;
-    }
-
-    .top-bar-right {
-      float: right
-    }
-  }
+  //@include breakpoint(medium) {
+  //  .top-bar-left {
+  //    float: left;
+  //  }
+  //
+  //  .top-bar-right {
+  //    float: right
+  //  }
+  //}
 
   .uthsc-sticky {
     position: fixed;
@@ -68,4 +98,87 @@ $section-nav-input-width: 200px !default;
     z-index: 100;
     border-top: 0;
   }
+
+  #uthsc-navigation-alt {
+
+    background-color: $uthsc-green;
+
+    a {
+      color: #fff;
+      padding: .5em;
+      display:block;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    //Top Level Category List
+    & > ul > li {
+
+      text-align: center;
+      //border-right: 1px solid $uthsc-bg-hover;
+
+      &:hover {
+        background-color: scale-color($primary-color, $lightness: -10%);
+      }
+
+      &:first-child {
+        //border-left: 1px solid $uthsc-bg-hover;
+      }
+      & > a {
+        width:100%;
+        display: table-cell;
+        vertical-align: middle;
+        font-weight: 100;
+      }
+    }
+
+    //Inner Link List
+    & > ul > li > ul {
+      //display: none;
+      margin-left: 0;
+      margin-top: 0.2em;
+      margin-bottom: 0.6em;
+      padding-left: 0px;
+      //height: 200px; //What are we going to do about this? It can't be fixed height.
+      //background: blue;
+      text-align: left;
+
+      li {
+        float: none;
+        font-size: .8em;
+        line-height: 1.5em;
+        font-weight: 300;
+        //font-style: $font-weight-italic;
+
+        &:hover {
+          //background: $uthsc-bg-double-hover;
+        }
+      }
+      &:before {
+        content: "";
+        display: block;
+        height: 6px;
+        width: 50%;
+        margin-left: auto;
+        background: white;
+        margin-right: auto;
+        margin-bottom: 0.4em;
+        color: white !important;
+        opacity: 0.07;
+      }
+    }
+
+    &.hide-class ul li ul {
+      position: absolute !important;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      transition: all, transform 2s;
+    }
+
+  }
+
 }
