@@ -27,6 +27,7 @@
         });
     });
 
+    //expanding menu
     var openTimer;
     var closeTimer;
     var endTimer;
@@ -35,11 +36,13 @@
     jQuery("#uthsc-navigation-alt").bind('mouseleave', closeSubMenu);
 
     function expandMenu() {
-        $('#uthsc-navigation-alt ul li ul').stop(true, true).slideDown(400);
+        //$('#uthsc-navigation-alt ul li ul').stop(true, true).slideDown(400);
+        $('#uthsc-navigation-alt').removeClass('hide-class');
     }
 
     function collapseMenu() {
-        $('#uthsc-navigation-alt ul li ul').stop(true, true).slideUp(400);
+        //$('#uthsc-navigation-alt ul li ul').stop(true, true).slideUp(400);
+        $('#uthsc-navigation-alt').addClass('hide-class');
     }
 
     function clearTimer() {
@@ -49,16 +52,15 @@
 
     function openSubMenu() {
         //$('#uthsc-navigation-alt').addClass('uthsc-navigation-active');
-        $('#uthsc-navigation-alt').removeClass('hide-class');
         clearTimer();
         openTimer = setTimeout(expandMenu, 400);
     }
 
     function closeSubMenu() {
         //$('#uthsc-navigation-alt').removeClass('uthsc-navigation-active');
-        $('#uthsc-navigation-alt').addClass('hide-class');
-        //clearTimer();
-        //closeTimer = setTimeout(collapseMenu, 400);
+
+        clearTimer();
+        closeTimer = setTimeout(collapseMenu, 400);
     }
 
     $("#uthsc-navigation-alt").on( 'keyup', function( e ) {
@@ -68,6 +70,5 @@
     $(document).ready(function () {
         closeSubMenu();
     });
-
 
 }(jQuery);
