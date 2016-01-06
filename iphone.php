@@ -129,13 +129,19 @@
     <!--***********-->
     <!--Breadcrumbs-->
     <!--***********-->
-    <nav aria-label="Breadcrumbs - you are here:" role="navigation" class="show-for-large">
-        <ul class="breadcrumbs">
-            <li><a aria-label="go to UTHSC homepage" href="#" >Home</a></li>
-            <li><a aria-label="go to parent section - College of medicine" href="#">College of medicine</a></li>
-            <li><a aria-label="go to parent section - College of medicine - Students" href="#">Students</a></li>
-            <li><a class="disabled" href="" aria-label="current page - Admissions">Admissions</a></li>
-        </ul>
+    <nav aria-label="Breadcrumbs - you are here:" role="navigation" class="show-for-large uthsc-breadcrumbs">
+        <div class="row">
+            <ul class="breadcrumbs column">
+                <li>
+                    <a aria-label="go to UTHSC homepage" href="#" >
+                        <span class="uthsc-home-icon-breadcrumbs fa fa-home fa-2x"></span>
+                    </a>
+                </li>
+                <li><a aria-label="go to parent section - College of medicine" href="#">College of medicine</a></li>
+                <li><a aria-label="go to parent section - College of medicine - Students" href="#">Students</a></li>
+                <li><a class="disabled" href="" aria-label="current page - Admissions">Admissions</a></li>
+            </ul>
+        </div>
     </nav>
     <!--************-->
     <!--/Breadcrumbs-->
@@ -145,47 +151,50 @@
     <!--***************-->
     <!--Main Navigation-->
     <!--***************-->
-    <nav class="show-for-large" aria-label="Current section menu" role="navigation">
-        <ul class="dropdown menu" data-dropdown-menu>
-            <li>
-                <a>Item 1</a>
-                <ul class="menu">
-                    <li><a href="#">Item 1A Loooong</a></li>
-                    <li>
-                        <a href='#'> Item 1 sub</a>
-                        <ul class='menu'>
-                            <li><a href='#'>Item 1 subA</a></li>
-                            <li><a href='#'>Item 1 subB</a></li>
-                            <li>
-                                <a href='#'> Item 1 sub</a>
-                                <ul class='menu'>
-                                    <li><a href='#'>Item 1 subA</a></li>
-                                    <li><a href='#'>Item 1 subB</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href='#'> Item 1 sub</a>
-                                <ul class='menu'>
-                                    <li><a href='#'>Item 1 subA</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Item 1B</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Item 2</a>
-                <ul class="menu">
-                    <li><a href="#">Item 2A</a></li>
-                    <li><a href="#">Item 2B</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Item 3</a></li>
-            <li><a href='#'>Item 4</a></li>
-            <li><a href="#">Item 5</a></li>
-            <li><a href='#'>Item 6</a></li>
-        </ul>
+    <nav class="show-for-large uthsc-section-nav" aria-label="Current section menu" role="navigation">
+        <div class="row">
+            <ul class="dropdown menu" data-dropdown-menu>
+                <li>
+                    <a>Item 1</a>
+                    <ul class="menu">
+                        <li><a href="#">Item 1A Loooong</a></li>
+                        <li>
+                            <a href='#'> Item 1 sub</a>
+                            <ul class='menu'>
+                                <li><a href='#'>Item 1 subA</a></li>
+                                <li><a href='#'>Item 1 subB</a></li>
+                                <li>
+                                    <a href='#'> Item 1 sub</a>
+                                    <ul class='menu'>
+                                        <li><a href='#'>Item 1 subA</a></li>
+                                        <li><a href='#'>Item 1 subB</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href='#'> Item 1 sub</a>
+                                    <ul class='menu'>
+                                        <li><a href='#'>Item 1 subA</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Item 1B</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Item 2</a>
+                    <ul class="menu">
+                        <li><a href="#">Item 2A</a></li>
+                        <li><a href="#">Item 2B</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href='#'>Item 4</a></li>
+                <li><a href="#">Item 5</a></li>
+                <li><a href='#'>Item 6</a></li>
+            </ul>
+        </div>
+
     </nav>
     <!--****************-->
     <!--/Main Navigation-->
@@ -715,7 +724,7 @@
     <!--Safari bottom nav fix-->
     <?php
         if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone')) {
-                echo '<div class="safari-bottom-nav-fix"></div>';
+            echo '<div class="safari-bottom-nav-fix"></div>';
         }
     ?>
     <!--*************************************-->
