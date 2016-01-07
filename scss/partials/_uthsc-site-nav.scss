@@ -67,6 +67,10 @@ $uthsc-site-nav-input-width: 160px !default;
   // uthsc-site-nav container
   .uthsc-site-nav {
 
+    @include breakpoint(medium down) {
+      @include element-invisible;
+    }
+
     font-weight: bold;
 
     @include uthsc-site-nav-container;
