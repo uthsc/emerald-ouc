@@ -33,7 +33,6 @@ $section-nav-input-width: 200px !default;
     & li > a {
       color: $section-nav-link-color;
     }
-
   }
 
   input {
@@ -66,7 +65,8 @@ $section-nav-input-width: 200px !default;
 
 @mixin  uthsc-section-nav {
 
-
+  //this class is added to the section nav to
+  //make it stick to the top of the window
   .uthsc-sticky {
     position: fixed;
     width: 100%;
