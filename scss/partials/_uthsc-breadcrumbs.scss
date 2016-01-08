@@ -11,6 +11,11 @@ $uthsc-breadcrumbs-background: #005f45 !default;
     background: $uthsc-breadcrumbs-background;
     color: $white;
 
+        a {
+          color: #BBBBBB;
+          &:hover {
+            text-decoration: none;
+          }
           &:not(.disabled):hover {
             color: $white;
           }
