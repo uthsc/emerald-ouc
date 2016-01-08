@@ -40,11 +40,11 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
   }
 
   //make buttons full width
-  .home-button { width:16%; }
-  .breadcrumbs-button { width:84%; }
-  .breadcrumbs-button {
-    background: $uthsc-green-dark;
+  .home-button {
+    width:16%;
+    border-right: 1px solid $base;
   }
+  .breadcrumbs-button { width:84%; }
 }
 
 @mixin uthsc-off-canvas-styles-new {
@@ -64,6 +64,7 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
     .button {
       //manually set height to the same as the input
       height: 2.4375rem;
+      background-color: $light-oil;
     }
   }
 
@@ -77,10 +78,9 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
   .mission-links {
     //padding around mission links
     //from previous styles
-    padding: .5em;
-    background: $uthsc-grey-dark;
 
     h2 {
+      font-size: 1.5rem;
       line-height: 1em;
       text-align: center;
       margin-bottom: 0;
@@ -108,7 +108,7 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
   }
 
   .link-heading {
-    background:#404040;
+    background:$light-oil;
     color: $white;
     border-bottom: 1px solid $black;
     @include off-canvas-link-padding;
@@ -118,6 +118,10 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
     color: $white;
     border-bottom: 1px solid $black;
     @include off-canvas-link-padding;
+  }
+
+  ul li ul li a {
+    padding-left: 1.75rem;
   }
 
   .uthsc-off-canvas-breadcrumbs { @include uthsc-off-canvas-breadcrumbs; }
