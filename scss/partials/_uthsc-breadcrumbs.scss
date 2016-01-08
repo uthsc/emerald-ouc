@@ -11,6 +11,7 @@ $uthsc-breadcrumbs-background: #005f45 !default;
     background: $uthsc-breadcrumbs-background;
     color: $white;
 
+    ul {
       li{
         display: inline;
         float: none;
@@ -36,9 +37,11 @@ $uthsc-breadcrumbs-background: #005f45 !default;
           margin: 0 1em 0 1.3em;
         }
       }
+    }
+
     .breadcrumbs {
       margin:0;
-      line-height:2.25em;
+      padding: .5em 0;
     }
 
     a {
