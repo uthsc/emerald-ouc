@@ -41,10 +41,8 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
 
   //make buttons full width
   .home-button { width:16%; }
-  .breadcrumbs-button { width:84%; }
-  .breadcrumbs-button {
-    background: $uthsc-green-dark;
   }
+  .breadcrumbs-button { width:84%; }
 }
 
 @mixin uthsc-off-canvas-styles-new {
