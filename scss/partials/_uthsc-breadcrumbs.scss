@@ -11,6 +11,10 @@ $uthsc-breadcrumbs-background: #005f45 !default;
     background: $uthsc-breadcrumbs-background;
     color: $white;
 
+      li{
+        display: inline;
+        float: none;
+        text-transform: none;
         a {
           color: #BBBBBB;
           &:hover {
@@ -24,12 +28,14 @@ $uthsc-breadcrumbs-background: #005f45 !default;
             top: 0.2rem;
             padding-left: 1rem;
           }
+        }
         &:not(:last-child)::after {
           content: '\f054';
           font-family: fontawesome;
           color: #BBBBBB;
           margin: 0 1em 0 1.3em;
         }
+      }
     .breadcrumbs {
       margin:0;
       line-height:2.25em;
