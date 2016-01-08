@@ -11,6 +11,11 @@ $uthsc-breadcrumbs-background: #005f45 !default;
     background: $uthsc-breadcrumbs-background;
     color: $white;
 
+          .fa-home {
+            position: relative;
+            top: 0.2rem;
+            padding-left: 1rem;
+          }
         &:not(:last-child)::after {
           content: '\f054';
           font-family: fontawesome;
