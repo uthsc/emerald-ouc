@@ -9,7 +9,6 @@ $uthsc-breadcrumbs-background: #005f45 !default;
 @mixin uthsc-breadcrumbs {
   .uthsc-breadcrumbs {
     background: $uthsc-breadcrumbs-background;
-    color: $white;
 
     ul {
       li{
