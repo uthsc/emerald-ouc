@@ -64,6 +64,7 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
     .button {
       //manually set height to the same as the input
       height: 2.4375rem;
+      background-color: $light-oil;
     }
   }
 
@@ -107,7 +108,7 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
   }
 
   .link-heading {
-    background:#404040;
+    background:$light-oil;
     color: $white;
     border-bottom: 1px solid $black;
     @include off-canvas-link-padding;
