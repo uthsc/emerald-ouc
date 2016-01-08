@@ -79,6 +79,7 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
     //from previous styles
 
     h2 {
+      font-size: 1.5rem;
       line-height: 1em;
       text-align: center;
       margin-bottom: 0;
@@ -116,6 +117,10 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
     color: $white;
     border-bottom: 1px solid $black;
     @include off-canvas-link-padding;
+  }
+
+  ul li ul li a {
+    padding-left: 1.75rem;
   }
 
   .uthsc-off-canvas-breadcrumbs { @include uthsc-off-canvas-breadcrumbs; }
