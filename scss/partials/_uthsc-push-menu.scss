@@ -40,7 +40,9 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
   }
 
   //make buttons full width
-  .home-button { width:16%; }
+  .home-button {
+    width:16%;
+    border-right: 1px solid $base;
   }
   .breadcrumbs-button { width:84%; }
 }
