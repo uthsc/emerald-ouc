@@ -11,6 +11,9 @@ $uthsc-breadcrumbs-background: #005f45 !default;
     background: $uthsc-breadcrumbs-background;
     color: $white;
 
+          &:not(.disabled):hover {
+            color: $white;
+          }
           .fa-home {
             position: relative;
             top: 0.2rem;
