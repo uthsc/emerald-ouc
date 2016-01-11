@@ -9,15 +9,40 @@ $uthsc-breadcrumbs-background: #005f45 !default;
 @mixin uthsc-breadcrumbs {
   .uthsc-breadcrumbs {
     background: $uthsc-breadcrumbs-background;
-    color: $white;
+
+    ul {
+      li{
+        display: inline;
+        float: none;
+        text-transform: none;
+        font-size: 0.9rem;
+        a {
+          color: #BBBBBB;
+          &:hover {
+            text-decoration: none;
+          }
+          &:not(.disabled):hover {
+            color: $white;
+          }
+          .fa-home {
+            position: relative;
+            top: 0.2rem;
+            padding-left: 1rem;
+          }
+        }
+        &:not(:last-child)::after {
+          content: '\f054';
+          font-family: fontawesome;
+          color: #BBBBBB;
+          margin: 0 1rem 0 1.3rem;
+        }
+      }
+    }
 
     .breadcrumbs {
       margin:0;
-      line-height:2.25em;
+      padding: .5rem 0;
     }
 
-    a {
-      color:white;
-    }
   }
 }
