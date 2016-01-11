@@ -29,6 +29,22 @@ gulp.task('copy-fonts', function() {
       .pipe(gulp.dest('./css'));
 });
 
+gulp.task('buildjs', function() {
+  return gulp.src ([
+      './bower_components/jquery/dist/jquery.js',
+      './bower_components/what-input/what-input.js',
+      './bower_components/foundation-sites/dist/foundation.js',
+      './js/app.js',
+      './js/partials/push-menu.js',
+      './js/partials/uthsc.section-nav.js'
+      ])
+      .pipe($.concat('uthsc.js'))
+      .pipe(gulp.dest('./js/dist'))
+      .pipe($.uglify())
+      .pipe($.rename('uthsc.min.js'))
+      .pipe(gulp.dest('./js/dist'));
+});
+
 gulp.task('default', ['sass','copy-fonts'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
 });
