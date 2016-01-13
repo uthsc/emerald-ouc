@@ -46,5 +46,8 @@ $uthsc-breadcrumbs-background: #005f45 !default;
 
   }
     color: $uthsc-green;
+     a {
        color: $uthsc-green !important;
+       border-bottom: none !important;
+    }
 }
