@@ -50,4 +50,7 @@ $uthsc-breadcrumbs-background: #005f45 !default;
        color: $uthsc-green !important;
        border-bottom: none !important;
     }
+    .dropdown-pane {
+      border: 1px solid #bbb;
+      box-shadow:  0 2px 10px rgba(0,0,0,.2);
 }
