@@ -45,17 +45,22 @@ $uthsc-breadcrumbs-background: #005f45 !default;
     }
 
   }
+  .uthsc-off-canvas-breadcrumbs {
     color: $uthsc-green;
      a {
        color: $uthsc-green !important;
        border-bottom: none !important;
     }
+
     .dropdown-pane {
       border: 1px solid #bbb;
       box-shadow:  0 2px 10px rgba(0,0,0,.2);
+
     a:before, li:last-of-type:before {
       content: "\f077";
       font-family: fontawesome;
       padding: 0 1.1rem 0 0.1rem !important;
     }
+    }
+  }
 }
