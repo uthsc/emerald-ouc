@@ -30,11 +30,15 @@ $uthsc-breadcrumbs-background: #005f45 !default;
             padding-left: 1rem;
           }
         }
-        &:not(:last-child)::after {
-          content: '\f054';
-          font-family: fontawesome;
+
+        .fa-chevron-right {
           color: #BBBBBB;
           margin: 0 1rem 0 1.3rem;
+        }
+
+        &:not(:last-child)::after {
+          content: '';
+          margin:0;
         }
       }
 
