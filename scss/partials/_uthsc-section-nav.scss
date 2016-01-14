@@ -23,6 +23,7 @@ $section-nav-link-color: #000 !default;
 $section-nav-input-width: 200px !default;
 
 $uthsc-blue-dark: #0084b6 !default;
+$uthsc-section-nav-border: scale-color($uthsc-breadcrumbs-background, $lightness: -20%);
 
 /// Adds styles for a top bar container.
 @mixin section-nav-container {
@@ -82,19 +83,18 @@ $uthsc-blue-dark: #0084b6 !default;
     & > ul > li {
 
       text-align: center;
-      border-right: 1px solid $uthsc-breadcrumbs-background;
+      border-right: 1px solid $uthsc-section-nav-border;
 
       &:hover {
         background-color: scale-color($primary-color, $lightness: -10%);
       }
 
       &:first-child {
-        border-left: 1px solid $uthsc-breadcrumbs-background;
+        border-left: 1px solid $uthsc-section-nav-border;
       }
       & > a {
         //width:100%;
         @include vertical-center-flex-box;
-        font-weight: normal;
         font-weight: bold;
         font-size: 1rem;
       }
