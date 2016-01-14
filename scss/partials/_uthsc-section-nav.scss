@@ -22,6 +22,9 @@ $section-nav-link-color: #000 !default;
 /// @type Number
 $section-nav-input-width: 200px !default;
 
+$uthsc-blue-dark: #0084b6 !default;
+$uthsc-section-nav-border: scale-color($uthsc-breadcrumbs-background, $lightness: -20%);
+
 /// Adds styles for a top bar container.
 @mixin section-nav-container {
   @include clearfix;
@@ -64,7 +67,7 @@ $section-nav-input-width: 200px !default;
       display:block;
 
       &:hover {
-        background: cadetblue;
+        background: $uthsc-blue-dark;
       }
     }
 
@@ -80,19 +83,20 @@ $section-nav-input-width: 200px !default;
     & > ul > li {
 
       text-align: center;
-      //border-right: 1px solid $uthsc-bg-hover;
+      border-right: 1px solid $uthsc-section-nav-border;
 
       &:hover {
         background-color: scale-color($primary-color, $lightness: -10%);
       }
 
       &:first-child {
-        //border-left: 1px solid $uthsc-bg-hover;
+        border-left: 1px solid $uthsc-section-nav-border;
       }
       & > a {
         //width:100%;
         @include vertical-center-flex-box;
-        font-weight: 100;
+        font-weight: bold;
+        font-size: 1rem;
       }
     }
 
@@ -111,7 +115,7 @@ $section-nav-input-width: 200px !default;
         float: none;
         font-size: .8em;
         line-height: 1.5em;
-        font-weight: 300;
+        font-weight: bold;
         //font-style: $font-weight-italic;
 
 
