@@ -11,7 +11,7 @@ $uthsc-breadcrumbs-background: #005f45 !default;
     background: $uthsc-breadcrumbs-background;
 
     ul {
-      li{
+      li {
         display: inline;
         float: none;
         text-transform: none;
@@ -30,13 +30,24 @@ $uthsc-breadcrumbs-background: #005f45 !default;
             padding-left: 1rem;
           }
         }
-        &:not(:last-child)::after {
-          content: '\f054';
-          font-family: fontawesome;
+
+        .fa-chevron-right {
           color: #BBBBBB;
           margin: 0 1rem 0 1.3rem;
         }
+
+        &:not(:last-child)::after {
+          content: '';
+          margin:0;
+        }
       }
+
+      @include breakpoint(medium down) {
+
+        //@include element-invisible;
+        @include uthsc-element-invisible;
+      }
+
     }
 
     .breadcrumbs {
@@ -44,5 +55,23 @@ $uthsc-breadcrumbs-background: #005f45 !default;
       padding: .5rem 0;
     }
 
+  }
+  .uthsc-off-canvas-breadcrumbs {
+    color: $uthsc-green;
+     a {
+       color: $uthsc-green !important;
+       border-bottom: none !important;
+    }
+
+    .dropdown-pane {
+      border: 1px solid #bbb;
+      box-shadow:  0 2px 10px rgba(0,0,0,.2);
+
+    a:before, li:last-of-type:before {
+      content: "\f077";
+      font-family: fontawesome;
+      padding: 0 1.1rem 0 0.1rem !important;
+    }
+    }
   }
 }

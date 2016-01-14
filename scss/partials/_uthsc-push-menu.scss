@@ -33,7 +33,7 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
     //for full width links
     padding:0;
 
-    a {
+    a, .disabled {
       //border-bottom: 1px solid black;
       @include off-canvas-link-padding;
     }
@@ -43,6 +43,7 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
   .home-button {
     width:16%;
     border-right: 1px solid $base;
+    color: white !important;
   }
   .breadcrumbs-button { width:84%; }
 }
