@@ -63,6 +63,17 @@ $section-nav-input-width: 200px !default;
   //background:brown;
 }
 
+//modified version of foundation's element invisible mixin
+//edited to prevent bug with equalizer that caused equalized
+//menu items to be full height on resize
+@mixin uthsc-element-invisible {
+  position: absolute !important;
+  //width: 1px;
+  //height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
 @mixin  uthsc-section-nav {
 
   //this class is added to the section nav to
@@ -84,7 +95,7 @@ $section-nav-input-width: 200px !default;
       color: #fff;
       padding: .5em;
       display:block;
-      
+
       &:hover {
         background: cadetblue;
       }
@@ -157,18 +168,21 @@ $section-nav-input-width: 200px !default;
 
     //hide hover-able nested links from view but remain visible to screen readers
     &.hide-class ul li ul {
-      @include element-invisible;
+      //@include element-invisible;
+      @include uthsc-element-invisible;
     }
 
     //hide entire navigation menu from view for medium down but remain visible to screen readers
     @include breakpoint(medium down) {
-      @include element-invisible;
+
+      //@include element-invisible;
+      @include uthsc-element-invisible;
     }
 
     .section-navigation-heading-link {
 
     }
-    
+
     .uthsc-navigation-column > a {
       //background: cadetblue;
     }
