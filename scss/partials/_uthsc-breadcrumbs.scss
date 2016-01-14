@@ -37,6 +37,13 @@ $uthsc-breadcrumbs-background: #005f45 !default;
           margin: 0 1rem 0 1.3rem;
         }
       }
+
+      @include breakpoint(medium down) {
+
+        //@include element-invisible;
+        @include uthsc-element-invisible;
+      }
+
     }
 
     .breadcrumbs {
