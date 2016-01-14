@@ -115,14 +115,14 @@ $uthsc-blue-dark: #0084b6 !default;
     & > ul > li {
 
       text-align: center;
-      //border-right: 1px solid $uthsc-bg-hover;
+      border-right: 1px solid $uthsc-breadcrumbs-background;
 
       &:hover {
         background-color: scale-color($primary-color, $lightness: -10%);
       }
 
       &:first-child {
-        //border-left: 1px solid $uthsc-bg-hover;
+        border-left: 1px solid $uthsc-breadcrumbs-background;
       }
       & > a {
         //width:100%;
