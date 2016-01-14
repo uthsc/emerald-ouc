@@ -22,6 +22,8 @@ $section-nav-link-color: #000 !default;
 /// @type Number
 $section-nav-input-width: 200px !default;
 
+$uthsc-blue-dark: #0084b6 !default;
+
 /// Adds styles for a top bar container.
 @mixin section-nav-container {
   @include clearfix;
