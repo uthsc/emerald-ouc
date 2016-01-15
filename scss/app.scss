@@ -1,6 +1,7 @@
 @import 'emerald';
 
 @import 'partials/uthsc-mixins';
+@import 'partials/uthsc-global';
 @import 'partials/uthsc-anchortext';
 @import 'partials/uthsc-site-nav';
 @import 'partials/uthsc-banner';
@@ -11,6 +12,7 @@
 @import 'partials/uthsc-footer-top';
 @import 'partials/uthsc-footer-bottom';
 
+@include uthsc-global;
 @include uthsc-site-nav;
 @include uthsc-anchortext;
 @include uthsc-banner;
