@@ -1,0 +1,33 @@
+@mixin uthsc-global {
+  /* Add padding to floated images */
+  .left img, figure.left {
+    margin-right: 1em;
+    float:left;
+  }
+
+  .right img, figure.right {
+    margin-left: 1em;
+    float:right;
+  }
+  figure.right img  {
+    margin: 0;
+  }
+  .image-40 {
+    width: 40%;
+  }
+
+  figure {
+    border: 1px solid #bababa;
+    border-radius: 0 0 3px 3px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 0;
+    max-width: 302px;
+    max-height: 302px;
+    figcaption {
+      padding: 5px;
+      font-size: 0.85em;
+      font-family: "Open Sans";
+    }
+  }
+}
