@@ -23,7 +23,7 @@ gulp.task('sass', function() {
 });
 
 gulp.task('copy-fonts', function() {
-  gulp.src('./bower_components/font-awesome/fonts/**/*.{ttf,woff,eof,svg}')
+  gulp.src('./bower_components/font-awesome/fonts/**/*.{ttf,woff,woff2,eof,svg}')
       .pipe(gulp.dest('./fonts'));
   gulp.src('./bower_components/font-awesome/css/**/*.{css,css.map}')
       .pipe(gulp.dest('./css'));
