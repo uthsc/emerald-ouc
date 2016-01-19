@@ -80,15 +80,20 @@
                 <li><a href="/give/"><span class="fa fa-gift"></span> Make a Gift</a></li>
                 <li><a href="/admissions/visit-uthsc.php"><span class="fa fa-road"></span> Take a Tour</a></li>
                 <li>
-                    <form class="input-group show-for-large" style="margin-bottom:0;" aria-label="Search the UTHSC site">
-                        <input type="search" aria-label="Search the UTHSC site" role="search"
-                               placeholder="search" style="margin-right:0;">
-                        <div class="input-group-button">
-                            <button type="submit" class="button" aria-label="Submit search form">
-                                <span class="fa fa-search"></span>
-                            </button>
-                        </div>
-                    </form>
+                    <div class="show-for-large">
+                        <!--Search form-->
+                        <form class="input-group show-for-large" style="margin-bottom:0;"
+                              aria-label="Search the UTHSC site" action="http://uthsc.edu/search/" method="get">
+                            <input type="search" aria-label="Search the UTHSC site" role="search"
+                                   placeholder="search" style="margin-right:0;">
+                            <div class="input-group-button">
+                                <button type="submit" class="button" aria-label="Submit search form">
+                                    <span class="fa fa-search"></span>
+                                </button>
+                            </div>
+                        </form>
+                        <!--/Search form-->
+                    </div>
                 </li>
             </ul>
         </div>
@@ -112,7 +117,9 @@
 
         <div class="row">
             <div class="medium-12 hide-for-large columns small-collapse">
-                <form class="input-group" style="margin-bottom:0;" aria-label="Search the UTHSC site">
+                <!--Search form-->
+                <form class="input-group" style="margin-bottom:0;"
+                      aria-label="Search the UTHSC site" action="http://uthsc.edu/search/" method="get">
                     <input type="search" aria-label="Search the UTHSC site" role="search"
                            placeholder="search" style="margin-right:0;">
                     <div class="input-group-button">
@@ -121,6 +128,7 @@
                         </button>
                     </div>
                 </form>
+                <!--/Search form-->
             </div>
         </div>
     </header>
@@ -678,11 +686,8 @@
     <div class="mobile-nav-bottom-spacing-fix hide-for-large"></div>
 
     <!--Safari bottom nav fix-->
-    <!--<?php-->
-    <!--if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone')) {-->
-    <!--echo '<div class="safari-bottom-nav-fix"></div>';-->
-    <!--}-->
-    <!--?>-->
+    <div class="safari-bottom-nav-fix"></div>
+    <!--Safari bottom nav fix-->
     <!--*************************************-->
     <!--/Mobile navigation bottom spacing fix-->
     <!--*************************************-->
@@ -696,15 +701,16 @@
 <!--********************-->
 <!--Left off canvas menu-->
 <!--********************-->
-<!--<nav id="uthsc-off-canvas-menu&#45;&#45;push-left" class="uthsc-off-canvas-menu uthsc-off-canvas-menu&#45;&#45;push-left">-->
-<nav id="uthsc-off-canvas-menu--slide-left" class="uthsc-off-canvas-menu uthsc-off-canvas-menu--slide-left" aria-hidden="true">
+<nav id="uthsc-off-canvas-menu--slide-left" class="uthsc-off-canvas-menu uthsc-off-canvas-menu--slide-left"
+     aria-hidden="true">
     <!--Breadcrumbs-->
     <div class="uthsc-off-canvas-breadcrumbs button-group">
         <a class="button home-button"><span class="fa fa-home"></span></a>
         <button class="button breadcrumbs-button dropdown" type="button" data-toggle="left-breadcrumbs-dropdown">
             Breadcrumbs Back Home
         </button>
-        <div class="dropdown-pane bottom" id="left-breadcrumbs-dropdown" data-dropdown="data-dropdown" data-v-offset="0" data-auto-focus="true">
+        <div class="dropdown-pane bottom" id="left-breadcrumbs-dropdown" data-dropdown="data-dropdown"
+             data-v-offset="0" data-auto-focus="true">
             <ul class="uthsc-off-canvas-breadcrumbs-list">
                 <li><a href="index.php" title="Home">Back to the Homepage</a></li>
                 <li><a href="#" title="College of Medicine">College of Medicine</a></li>
@@ -716,16 +722,20 @@
         </div>
     </div>
 
-    <!--Search form-->
-    <form class="input-group off-canvas-search" style="margin-bottom:0;" aria-label="Search the UTHSC site">
-        <input type="search" aria-label="Search the UTHSC site" role="search"
-               placeholder="search" style="margin-right:0;">
-        <div class="input-group-button">
-            <button type="submit" class="button" aria-label="Submit search form">
-                <span class="fa fa-search"></span>
-            </button>
-        </div>
-    </form>
+    <div class="off-canvas-search">
+        <!--Search form-->
+        <form class="input-group show-for-large" style="margin-bottom:0;"
+              aria-label="Search the UTHSC site" action="http://uthsc.edu/search/" method="get">
+            <input type="search" aria-label="Search the UTHSC site" role="search"
+                   placeholder="search" style="margin-right:0;">
+            <div class="input-group-button">
+                <button type="submit" class="button" aria-label="Submit search form">
+                    <span class="fa fa-search"></span>
+                </button>
+            </div>
+        </form>
+        <!--/Search form-->
+    </div>
 
     <!--Close menu button-->
     <button class="uthsc-off-canvas-menu__close">
@@ -795,18 +805,10 @@
         </li>
     </ul>
 
-    <!--Close menu button-->
-    <!--<button class="uthsc-off-canvas-menu__close">-->
-    <!--<i class="fa fa-chevron-left"></i>&emsp; Close Menu-->
-    <!--</button>-->
-
     <!--Safari bottom nav fix-->
-    <!--<?php-->
-    <!--if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone')) {-->
-    <!--echo '<div class="safari-bottom-nav-fix"></div>';-->
-    <!--}-->
-    <!--?>-->
-</nav><!-- /uthsc-off-canvas-menu push-left -->
+    <div class="safari-bottom-nav-fix"></div>
+    <!--Safari bottom nav fix-->
+</nav>
 <!--*********************-->
 <!--/Left off canvas menu-->
 <!--*********************-->
@@ -814,8 +816,8 @@
 <!--*********************-->
 <!--Right off canvas menu-->
 <!--*********************-->
-<!--<nav id="uthsc-off-canvas-menu&#45;&#45;push-right" class="uthsc-off-canvas-menu uthsc-off-canvas-menu&#45;&#45;push-right">-->
-<nav id="uthsc-off-canvas-menu--slide-right" class="uthsc-off-canvas-menu uthsc-off-canvas-menu--slide-right" aria-hidden="true">
+<nav id="uthsc-off-canvas-menu--slide-right" class="uthsc-off-canvas-menu uthsc-off-canvas-menu--slide-right"
+     aria-hidden="true">
 
     <!--Breadcrumbs-->
     <div class="uthsc-off-canvas-breadcrumbs button-group">
@@ -823,7 +825,8 @@
         <button class="button breadcrumbs-button dropdown" type="button" data-toggle="right-breadcrumbs-dropdown">
             Breadcrumbs Back Home
         </button>
-        <div class="dropdown-pane bottom" id="right-breadcrumbs-dropdown" data-dropdown="data-dropdown" data-v-offset="0" data-auto-focus="true">
+        <div class="dropdown-pane bottom" id="right-breadcrumbs-dropdown" data-dropdown="data-dropdown"
+             data-v-offset="0" data-auto-focus="true">
             <ul class="uthsc-off-canvas-breadcrumbs-list">
                 <li><a href="index.php" title="Home">Back to the Homepage</a></li>
                 <li><a href="#" title="College of Medicine">College of Medicine</a></li>
@@ -835,16 +838,20 @@
         </div>
     </div>
 
-    <!--Search form-->
-    <form class="input-group off-canvas-search" style="margin-bottom:0;" aria-label="Search the UTHSC site">
-        <input type="search" aria-label="Search the UTHSC site" role="search"
-               placeholder="search" style="margin-right:0;">
-        <div class="input-group-button">
-            <button type="submit" class="button" aria-label="Submit search form">
-                <span class="fa fa-search"></span>
-            </button>
-        </div>
-    </form>
+    <div class="off-canvas-search">
+        <!--Search form-->
+        <form class="input-group" style="margin-bottom:0;"
+              aria-label="Search the UTHSC site" action="http://uthsc.edu/search/" method="get">
+            <input type="search" aria-label="Search the UTHSC site" role="search"
+                   placeholder="search" style="margin-right:0;">
+            <div class="input-group-button">
+                <button type="submit" class="button" aria-label="Submit search form">
+                    <span class="fa fa-search"></span>
+                </button>
+            </div>
+        </form>
+        <!--/Search form-->
+    </div>
 
     <!--Close menu button-->
     <button class="uthsc-off-canvas-menu__close">
@@ -889,18 +896,10 @@
         </li>
     </ul>
 
-    <!--Close menu button-->
-    <!--<button class="uthsc-off-canvas-menu__close">-->
-    <!--<i class="fa fa-chevron-left"></i>&emsp; Close Menu-->
-    <!--</button>-->
-
     <!--Safari bottom nav fix-->
-    <!--<?php-->
-    <!--if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone')) {-->
-    <!--echo '<div class="safari-bottom-nav-fix"></div>';-->
-    <!--}-->
-    <!--?>-->
-</nav><!-- /uthsc-off-canvas-menu push-right -->
+    <div class="safari-bottom-nav-fix"></div>
+    <!--Safari bottom nav fix-->
+</nav>
 <!--**********************-->
 <!--/Right off canvas menu-->
 <!--**********************-->
@@ -922,11 +921,8 @@
     <button id="uthsc-off-canvas-button--slide-right" class="toggle-slide-right button">Right</button>
 
     <!--Safari bottom nav fix-->
-    <!--<?php-->
-    <!--if (strpos($_SERVER['HTTP_USER_AGENT'], 'iPhone')) {-->
-    <!--echo '<div class="safari-bottom-nav-fix"></div>';-->
-    <!--}-->
-    <!--?>-->
+    <div class="safari-bottom-nav-fix"></div>
+    <!--Safari bottom nav fix-->
 </div>
 <!--*******************-->
 <!--/Off canvas buttons-->
@@ -977,6 +973,7 @@
         slideRight.open();
     });
 </script>
+<script src="js/partials/uthsc.safari-bottom-nav-fix.js"></script>
 <!--********-->
 <!--/Scripts-->
 <!--********-->

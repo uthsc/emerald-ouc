@@ -36,7 +36,8 @@ gulp.task('buildjs', function() {
       './bower_components/foundation-sites/dist/foundation.js',
       './js/app.js',
       './js/partials/uthsc.off-canvas.js',
-      './js/partials/uthsc.section-nav.js'
+      './js/partials/uthsc.section-nav.js',
+      './js/partials/uthsc.safari-bottom-nav-fix.js'
       ])
       .pipe($.concat('uthsc.js'))
       .pipe(gulp.dest('./js/dist'))

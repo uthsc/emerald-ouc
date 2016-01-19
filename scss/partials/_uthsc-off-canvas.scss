@@ -188,24 +188,7 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
     height: 44px;
     width: 100%;
   }
-
-  .safari-bottom-nav-fix {
-    height: 44px;
-    width: 100%;
-    clear: left;
-  }
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* -----------------------------------------------------------------------------
 
@@ -622,10 +605,6 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
     cursor: not-allowed;
   }
 }
-
-
-
-
 
 @mixin uthsc-off-canvas {
 
