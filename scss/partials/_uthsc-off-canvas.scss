@@ -596,10 +596,6 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
 
 ----------------------------------------------------------------------------- */
 @mixin uthsc-push-menu-buttons {
-  .c-buttons {
-    margin-bottom: 48px;
-    text-align: center;
-  }
 
   .uthsc-off-canvas-button {
     display: inline-block;
@@ -631,7 +627,7 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
 
 
 
-@mixin uthsc-push-menu {
+@mixin uthsc-off-canvas {
 
   @include uthsc-push-menu-wrapper;
 
