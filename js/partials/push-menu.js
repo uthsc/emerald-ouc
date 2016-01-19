@@ -37,10 +37,10 @@
      * Menu Options.
      */
     Menu.prototype.options = {
-        wrapper: '#o-wrapper',          // The content wrapper
-        type: 'slide-left',             // The menu type
-        menuOpenerClass: '.c-button',   // The menu opener class names (i.e. the buttons)
-        maskId: '#c-mask'               // The ID of the mask
+        wrapper: '#uthsc-off-canvas-wrapper', // The content wrapper
+        type: 'slide-left',                   // The menu type
+        menuOpenerClass: '.c-button',         // The menu opener class names (i.e. the buttons)
+        maskId: '#c-mask'                     // The ID of the mask
     };
 
     /**

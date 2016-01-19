@@ -213,7 +213,7 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
 
 ----------------------------------------------------------------------------- */
 @mixin uthsc-push-menu-wrapper {
-  .o-wrapper {
+  .uthsc-off-canvas-wrapper {
     -webkit-transition: -webkit-transform 0.3s;
     transition: transform 0.3s;
   }
@@ -493,39 +493,39 @@ $uthsc-green-dark : darken($uthsc-green, 5% );
    * Various wrapper states occur depending on if a menu is pushing into view, in
    * which case, the wrapper has to be pushed by the respective distance.
    */
-  .o-wrapper.has-push-left {
+  .uthsc-off-canvas-wrapper.has-push-left {
     -webkit-transform: translateX(100%);
     -ms-transform: translateX(100%);
     transform: translateX(100%);
   }
   @media all and (min-width: 320px) {
-    .o-wrapper.has-push-left {
+    .uthsc-off-canvas-wrapper.has-push-left {
       -webkit-transform: translateX(300px);
       -ms-transform: translateX(300px);
       transform: translateX(300px);
     }
   }
 
-  .o-wrapper.has-push-right {
+  .uthsc-off-canvas-wrapper.has-push-right {
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%);
   }
   @media all and (min-width: 320px) {
-    .o-wrapper.has-push-right {
+    .uthsc-off-canvas-wrapper.has-push-right {
       -webkit-transform: translateX(-300px);
       -ms-transform: translateX(-300px);
       transform: translateX(-300px);
     }
   }
 
-  .o-wrapper.has-push-top {
+  .uthsc-off-canvas-wrapper.has-push-top {
     -webkit-transform: translateY(60px);
     -ms-transform: translateY(60px);
     transform: translateY(60px);
   }
 
-  .o-wrapper.has-push-bottom {
+  .uthsc-off-canvas-wrapper.has-push-bottom {
     -webkit-transform: translateY(-60px);
     -ms-transform: translateY(-60px);
     transform: translateY(-60px);
