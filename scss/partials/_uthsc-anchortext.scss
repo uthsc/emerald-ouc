@@ -1,5 +1,5 @@
 @mixin uthsc-anchortext {
-  .main-content {
+  .main-content, .uthsc-footer-top {
 
     p a, li a, .anchortext {
       text-decoration: none;
@@ -42,6 +42,12 @@
     //    text-shadow: none;
     //  }
     //}
+  //fix background on footer-top
+  .uthsc-footer-top {
+    p a, li a, , figcaption a {
+      text-shadow: -1px 0 0 $uthsc-footer-top-background, 1px 0 0 $uthsc-footer-top-background !important;
+    }
   }
+
 }
 
