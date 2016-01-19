@@ -56,4 +56,13 @@
       }
     }
   }
+  .main-content, .uthsc-footer-top {
+    & ol, ul {
+      margin-left: 0;
+      position: relative;
+      padding-left: 0;
+      left: 1rem;
+    }
+  }
+
 }
