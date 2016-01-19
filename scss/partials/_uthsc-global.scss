@@ -2,14 +2,14 @@
   /* Add padding to floated images */
   .left img, figure.left {
     margin-right: 1em;
-    float:left;
+    float: left;
   }
 
   .right img, figure.right {
     margin-left: 1em;
-    float:right;
+    float: right;
   }
-  figure.right img  {
+  figure.right img {
     margin: 0;
   }
   .image-40 {
