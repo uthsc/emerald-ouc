@@ -1,0 +1,13 @@
+////
+/// @group uthsc-safari-bottom-nav-fix
+////
+
+
+@mixin uthsc-safari-bottom-nav-fix {
+  .safari-bottom-nav-fix--active {
+    height:44px;
+    width:100%;
+    background:brown;
+    clear:left;
+  }
+}
