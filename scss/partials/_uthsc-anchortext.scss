@@ -1,7 +1,7 @@
 @mixin uthsc-anchortext {
   .main-content, .uthsc-footer-top {
 
-    p a, li a, .anchortext {
+    p a, li a, figcaption a, .anchortext {
       text-decoration: none;
 
       background-image: linear-gradient(to top,
