@@ -1,27 +1,6 @@
-////
-/// @group uthsc-off-canvas
-/// @Inspired by http://callmenick.com/2014/03/26/slide-and-push-menus-with-css3-transitions/
-////
-
-/// Width of an off-canvas menu.
-/// @type Number
-$uthsc-offcanvas-size: 300px !default;
-
 /// Background color of an off-canvas menu.
 /// @type Color
-$uthsc-offcanvas-background: $dark-gray !default;
-
-/// Length of the animation on an off-canvas menu.
-/// @type Number
-$uthsc-offcanvas-transition-length: 0.3s !default;
-
-/// Timing function of the animation on an off-canvas menu.
-/// @type Keyword
-$uthsc-offcanvas-transition-timing: ease !default;
-
-/// Background color for the overlay that appears when an off-canvas menu is open.
-/// @type Color
-$uthsc-offcanvas-exit-background: rgba($black, 0.5) !default;
+$uthsc-offcanvas-background: #4d4d4d !default;
 
 $gainsboro   : #DDDDDD;
 $base        : #AAAAAA;
@@ -30,310 +9,7 @@ $light-oil   : #404040;
 $oil         : #333333;
 $light-jet   : #292929;
 $jet         : #222222;
-
-@mixin uthsc-off-canvas-transition {
-  -webkit-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-  -moz-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-  -ms-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-  -o-transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-  transition: $uthsc-offcanvas-transition-timing $uthsc-offcanvas-transition-length;
-}
-
-@mixin uthsc-off-canvas-activation-bar {
-
-  //mobile navigation
-  #mobile-navigation {
-    position: fixed;
-    bottom: 0;
-    z-index: 1;
-    left:0;
-    right: 0;
-    @include uthsc-off-canvas-transition;
-
-    button {
-      margin: 0;
-      width:50%;
-      height: 44px;
-    }
-  }
-
-  .pml-open #mobile-navigation{
-    left: 300px;
-    right: -300px;
-  }
-
-  .pmr-open #mobile-navigation{
-    right: 300px;
-    left: -300px;
-  }
-
-  .bottom-nav-bar {
-    width: 100%;
-    height: 44px;
-    clear: left;
-    background-image: url(../images/uthsc-logo-short-grey.svg);
-    text-align: center;
-    line-height: 44px;
-    background-size: 89%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: $uthsc-green;
-    opacity: 0.4;
-  }
-  .nav-toggler {
-    background: $uthsc-green;
-    height: 44px;
-  }
-  .toggle-push-left {
-    background-image: url("../images/2t.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left center;
-    border-right: 1px solid #5d5c5c;
-    float:left;
-  }
-  .toggle-push-right {
-    background-image: url("../images/5t.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right center;
-    border-left: 1px solid #1e1e1e;
-    float:right;
-  }
-}
-
-@mixin uthsc-off-canvas-styles {
-
-  //what is fb root?
-  //is this an override?
-  #fb-root > nav > ul > li:not(.not-a-link) > a {
-    font-size: inherit;
-    padding: 0;
-    font-weight: inherit;
-  }
-
-  .offcanvas-nav.menu {
-
-    //colors and aesthetic
-    ul > li > ul {
-      background-color: lighten($oil, 10%);
-      li:first-of-type {
-        border-top: solid 1px $jet;
-      }
-      a, li .not-a-link {
-        padding-left: 30px;
-        font-size: 1em;
-      }
-    }
-
-    //colors and aesthetic
-    //what is uthsc-split-button?
-    .uthsc-split-button {
-      width: 86%;
-      font-size: 0.75em;
-      padding: 10px 0;
-      margin: 0;
-      height: 44px;
-      position: absolute;
-      right: 0;
-      z-index: 1000;
-    }
-
-
-    //colors and aesthetic
-    .mission-links {
-      padding: 8px;
-      /*background-color: $uthsc-green;*/
-      background-color: $uthsc-grey-dark;
-      h2 {
-        color: $white;
-        text-align: center;
-        border: 2px solid #eaeaea;
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-        border-bottom: none;
-        margin-bottom: -9px;
-        padding: 5px 0 15px 0;
-        background-color: $oil;
-      }
-    }
-
-    //colors and aesthetic
-    .button, {
-
-      &.inverse {
-        background-color: $gainsboro;
-        color: $uthsc-green;
-        border-bottom: 1px solid $base;
-        text-align: left;
-        font-weight: bold;
-        margin-bottom: 0;
-
-        .fa {
-          padding: 0 14px 0 8px;
-          width: 44px;
-        }
-
-        &:nth-child(even) {
-          background: #a2a2a2;
-        }
-        &:last-of-type {
-          border-bottom-left-radius: 10px;
-          border-bottom-right-radius: 10px;
-        }
-      }
-
-      &.menu {
-        margin: 0;
-        padding: 0 0 0 17px;
-
-        .fa {
-          width: 37px;
-        }
-      }
-    }
-
-    //colors and aesthetic
-    //really specific?
-    li.not-a-link.menu > a {
-      padding: 7px 7px 7px 28px;
-    }
-    li.not-a-link.menu > a > i {
-      padding-right: 13px;
-    }
-
-    //colors and aesthetic
-    .uthsc-split-button.inverse {
-      background-color: #a2a2a2;
-      color: $uthsc-green;
-      border-bottom: 1px solid $gainsboro;
-      font-weight: bold;
-      text-align: left;
-      padding: 0 0 0 15px;
-      font-size: 1em;
-    }
-
-    //colors and aesthetic
-    .uthsc-split-button-home {
-      border-right: 1px solid #aaaaaa;
-      display: inline-block;
-      height: 44px;
-      margin: 0;
-      width: 16%;
-      z-index: 1001;
-
-      &.inverse {
-        background-color: #a2a2a2;
-        color: $uthsc-green;
-        border-bottom: 1px solid $gainsboro;
-        font-weight: bold;
-      }
-    }
-
-    .uthsc-split-button-breadcrumb-links {
-      z-index: 1002;
-
-      a {
-        color: #222;
-        font-size: 0.75em;
-      }
-
-      li {
-        text-align: center;
-        border: none;
-
-        &:after {
-          content: "\f106";
-          font-family: fontawesome;
-        }
-
-        &:last-child:after {
-          content: "";
-        }
-      }
-    }
-
-    .uthsc-split-button-mission-links {
-      z-index: 1002;
-      a {
-        color: #a2a2a2;
-        padding-left: 44px;
-      }
-      li {
-        text-align: left;
-        background-color: #000;
-        color: #a2a2a2;
-        border-bottom: 1px solid #006A4D;
-        i {
-          float: left;
-          padding: 12px 17px;
-        }
-      }
-    }
-
-    ol.uthsc-split-button-mission-links {
-      border-bottom: 3px solid #006A4D;
-      border: 0;
-      border-bottom-left-radius: 10px;
-      border-bottom-right-radius: 10px;
-      overflow: hidden;
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    a {
-      font-weight: 300;
-      color: #fff;
-    }
-
-    p {
-      padding: 10px;
-      color: $white;
-      line-height: 1.25;
-      font-size: .75em;
-      background-color: #000;
-      margin: 0;
-    }
-
-  }
-
-  .off-canvas {
-
-    &.push-menu-left,
-    &.push-menu-right {
-      li {
-        display: block;
-        text-align: left;
-        border-bottom: solid 1px #000;
-
-        &:first-child {
-          border-top: none
-        }
-
-        &:last-child {
-          border-bottom: none
-        }
-      }
-
-      a {
-        display: block;
-        padding: 10px;
-        font-size: 1.15rem;
-      }
-
-      button.close-menu {
-        margin: 0;
-        padding: 10px 30px;
-        background-color: #000;
-      }
-    }
-  }
-}
-
+$uthsc-green-dark : darken($uthsc-green, 5% );
 
 //consistent padding for full-width
 //off-canvas links
@@ -357,18 +33,20 @@ $jet         : #222222;
     //for full width links
     padding:0;
 
-    a {
-      border-bottom: 1px solid black;
+    a, .disabled {
+      //border-bottom: 1px solid black;
       @include off-canvas-link-padding;
     }
   }
 
   //make buttons full width
-  .home-button { width:16%; }
+  .home-button {
+    width:16%;
+    border-right: 1px solid $base;
+    color: white !important;
+  }
   .breadcrumbs-button { width:84%; }
 }
-
-
 
 @mixin uthsc-off-canvas-styles-new {
 
@@ -380,22 +58,31 @@ $jet         : #222222;
 
   //search bar
   .off-canvas-search {
+
+    input[type="search"] {
+      margin:0;
+    }
     .button {
       //manually set height to the same as the input
       height: 2.4375rem;
+      background-color: $light-oil;
     }
+  }
+
+  //remove default right border on
+  //button group buttons
+  .button-group .button {
+    border-right:none;
   }
 
   //mission links
   .mission-links {
     //padding around mission links
     //from previous styles
-    //padding: .5em;
-    background: $uthsc-grey-dark;
 
     h2 {
-      color: $white;
-      background: $black;
+      font-size: 1.5rem;
+      line-height: 1em;
       text-align: center;
       margin-bottom: 0;
     }
@@ -422,152 +109,517 @@ $jet         : #222222;
   }
 
   .link-heading {
-    background:$black;
+    background:$light-oil;
     color: $white;
+    border-bottom: 1px solid $black;
     @include off-canvas-link-padding;
   }
-
+  
   li a {
     color: $white;
+    border-bottom: 1px solid $black;
     @include off-canvas-link-padding;
   }
 
+  ul li ul li a {
+    padding-left: 1.75rem;
+  }
+
+  .uthsc-off-canvas-breadcrumbs { @include uthsc-off-canvas-breadcrumbs; }
 }
 
-@mixin uthsc-off-canvas-basics {
-  #uthsc-off-canvas-wrapper {
-    position: relative;
-    z-index: 10;
-    top: 0;
-    left: 0;
-    @include uthsc-off-canvas-transition;
+
+@mixin uthsc-off-canvas-activation-bar {
+
+  //mobile navigation
+  #mobile-navigation {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    left:0;
+    right: 0;
+
+    button {
+      margin: 0;
+      width:50%;
+      height: 44px;
+    }
   }
 
-  //mask that covers content area
-  //when off canvas is activated
-  .mask {
+  .bottom-nav-bar {
+    width: 100%;
+    height: 44px;
+    clear: left;
+    background-image: url(../images/uthsc-logo-short-grey.svg);
+    text-align: center;
+    line-height: 44px;
+    background-size: 89%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $uthsc-green;
+    opacity: 0.4;
+  }
+  .nav-toggler {
+    background: $uthsc-green;
+    height: 44px;
+  }
+  .toggle-slide-left {
+    background-image: url("../images/2t.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    border-right: 1px solid #5d5c5c;
+    float:left;
+  }
+  .toggle-slide-right {
+    background-image: url("../images/5t.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right center;
+    border-left: 1px solid #1e1e1e;
+    float:right;
+  }
+
+  //adds a space equal to the height of the
+  //off-canvas activation bar to prevent
+  //content from being covered
+
+  .mobile-nav-bottom-spacing-fix {
+    height: 44px;
+    width: 100%;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+
+    WRAPPER OBJECT
+
+----------------------------------------------------------------------------- */
+@mixin uthsc-push-menu-wrapper {
+  .uthsc-off-canvas-wrapper {
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+
+  CONTAINER OBJECTS
+
+----------------------------------------------------------------------------- */
+@mixin uthsc-push-menu-container {
+
+  .o-container {
+    margin: 0 auto;
+    padding: 0 12px;
+    max-width: 960px;
+  }
+
+  @media all and (min-width: 480px) {
+    .o-container {
+      padding: 0 24px;
+    }
+  }
+  @media all and (min-width: 720px) {
+    .o-container {
+      padding: 0 48px;
+    }
+  }
+}
+
+/* -----------------------------------------------------------------------------
+
+   SLIDE AND PUSH MENUS COMPONENT
+
+----------------------------------------------------------------------------- */
+@mixin uthsc-slide-push-menus-component {
+  /**
+   * Menu overview.
+   */
+  .uthsc-off-canvas-menu {
     position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 15;
+    z-index: 200;
+    background-color: $uthsc-offcanvas-background;
+    -webkit-transition: -webkit-transform 0.3s;
+    transition: transform 0.3s;
+  }
+
+  .uthsc-off-canvas-menu__items {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  /**
+   * Left and right menus
+   *
+   * Slide and push menus coming in from the left and right inherit a lot of
+   * common styles. We'll start each of them off by doing up the common styles
+   * for each version, followed by individual styles.
+   *
+   * The various versions are governed by modifier classes.
+   */
+  /**
+   * Common modifiers for left/right menus.
+   */
+  .uthsc-off-canvas-menu--slide-left,
+  .uthsc-off-canvas-menu--slide-right,
+  .uthsc-off-canvas-menu--push-left,
+  .uthsc-off-canvas-menu--push-right {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    overflow-y: scroll;
+  }
+  @media all and (min-width: 320px) {
+    .uthsc-off-canvas-menu--slide-left,
+    .uthsc-off-canvas-menu--slide-right,
+    .uthsc-off-canvas-menu--push-left,
+    .uthsc-off-canvas-menu--push-right {
+      width: 300px;
+    }
   }
 
-  //these are the basics
-  .offcanvas-nav.menu {
+  .uthsc-off-canvas-menu--slide-left .uthsc-off-canvas-menu__item,
+  .uthsc-off-canvas-menu--slide-right .uthsc-off-canvas-menu__item,
+  .uthsc-off-canvas-menu--push-left .uthsc-off-canvas-menu__item,
+  .uthsc-off-canvas-menu--push-right .uthsc-off-canvas-menu__item {
+    display: block;
+    text-align: center;
+    border-top: solid 1px #b5dbe9;
+    border-bottom: $black;
+  }
+  .uthsc-off-canvas-menu--slide-left .uthsc-off-canvas-menu__item:first-child,
+  .uthsc-off-canvas-menu--slide-right .uthsc-off-canvas-menu__item:first-child,
+  .uthsc-off-canvas-menu--push-left .uthsc-off-canvas-menu__item:first-child,
+  .uthsc-off-canvas-menu--push-right .uthsc-off-canvas-menu__item:first-child {
+    border-top: none;
+  }
+  .uthsc-off-canvas-menu--slide-left .uthsc-off-canvas-menu__item:last-child,
+  .uthsc-off-canvas-menu--slide-right .uthsc-off-canvas-menu__item:last-child,
+  .uthsc-off-canvas-menu--push-left .uthsc-off-canvas-menu__item:last-child,
+  .uthsc-off-canvas-menu--push-right .uthsc-off-canvas-menu__item:last-child {
+    border-bottom: none;
+  }
+
+  .uthsc-off-canvas-menu--slide-left .uthsc-off-canvas-menu__link,
+  .uthsc-off-canvas-menu--slide-right .uthsc-off-canvas-menu__link,
+  .uthsc-off-canvas-menu--push-left .uthsc-off-canvas-menu__link,
+  .uthsc-off-canvas-menu--push-right .uthsc-off-canvas-menu__link {
+    display: block;
+    padding: 12px 24px;
+    color: #fff;
+  }
+
+  .uthsc-off-canvas-menu--slide-left .uthsc-off-canvas-menu__close,
+  .uthsc-off-canvas-menu--slide-right .uthsc-off-canvas-menu__close,
+  .uthsc-off-canvas-menu--push-left .uthsc-off-canvas-menu__close,
+  .uthsc-off-canvas-menu--push-right .uthsc-off-canvas-menu__close {
+    display: block;
+    padding: 12px 24px;
+    width: 100%;
+  }
+
+  /**
+   * Slide/Push Menu Left.
+   */
+  .uthsc-off-canvas-menu--slide-left,
+  .uthsc-off-canvas-menu--push-left {
+    top: 0;
+    left: 0;
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  @media all and (min-width: 320px) {
+    .uthsc-off-canvas-menu--slide-left,
+    .uthsc-off-canvas-menu--push-left {
+      -webkit-transform: translateX(-300px);
+      -ms-transform: translateX(-300px);
+      transform: translateX(-300px);
+    }
+  }
+
+  .uthsc-off-canvas-menu--slide-left.is-active,
+  .uthsc-off-canvas-menu--push-left.is-active {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /**
+   * Slide/Push Menu Right.
+   */
+  .uthsc-off-canvas-menu--slide-right,
+  .uthsc-off-canvas-menu--push-right {
+    top: 0;
+    right: 0;
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  @media all and (min-width: 320px) {
+    .uthsc-off-canvas-menu--slide-right,
+    .uthsc-off-canvas-menu--push-right {
+      -webkit-transform: translateX(300px);
+      -ms-transform: translateX(300px);
+      transform: translateX(300px);
+    }
+  }
+
+  .uthsc-off-canvas-menu--slide-right.is-active,
+  .uthsc-off-canvas-menu--push-right.is-active {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  /**
+   * Top and bottom menus
+   *
+   * Slide and push menus coming in from the top and bottom inherit a lot of
+   * common styles. We'll start each of them off by doing up the common styles
+   * for each version, followed by individual styles.
+   *
+   * The various versions are governed by modifier classes.
+
+  /**
+   * Common modifiers for top/bottom menus
+   */
+  .uthsc-off-canvas-menu--slide-top,
+  .uthsc-off-canvas-menu--slide-bottom,
+  .uthsc-off-canvas-menu--push-top,
+  .uthsc-off-canvas-menu--push-bottom {
+    vertical-align: middle;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    overflow-x: scroll;
+  }
+
+  .uthsc-off-canvas-menu--slide-top .uthsc-off-canvas-menu__items,
+  .uthsc-off-canvas-menu--slide-bottom .uthsc-off-canvas-menu__items,
+  .uthsc-off-canvas-menu--push-top .uthsc-off-canvas-menu__items,
+  .uthsc-off-canvas-menu--push-bottom .uthsc-off-canvas-menu__items {
+    display: inline-block;
+    text-align: center;
+  }
+
+  .uthsc-off-canvas-menu--slide-top .uthsc-off-canvas-menu__item,
+  .uthsc-off-canvas-menu--slide-bottom .uthsc-off-canvas-menu__item,
+  .uthsc-off-canvas-menu--push-top .uthsc-off-canvas-menu__item,
+  .uthsc-off-canvas-menu--push-bottom .uthsc-off-canvas-menu__item {
+    display: inline-block;
+    line-height: 60px;
+  }
+
+  .uthsc-off-canvas-menu--slide-top .uthsc-off-canvas-menu__link,
+  .uthsc-off-canvas-menu--slide-bottom .uthsc-off-canvas-menu__link,
+  .uthsc-off-canvas-menu--push-top .uthsc-off-canvas-menu__link,
+  .uthsc-off-canvas-menu--push-bottom .uthsc-off-canvas-menu__link {
+    display: block;
+    padding: 0 4px;
+    color: #fff;
+  }
+
+  .uthsc-off-canvas-menu--slide-top .uthsc-off-canvas-menu__close,
+  .uthsc-off-canvas-menu--slide-bottom .uthsc-off-canvas-menu__close,
+  .uthsc-off-canvas-menu--push-top .uthsc-off-canvas-menu__close,
+  .uthsc-off-canvas-menu--push-bottom .uthsc-off-canvas-menu__close {
+    display: inline-block;
+    margin-right: 12px;
+    padding: 0 24px;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  /**
+   * Slide/Push Menu Top.
+   */
+  .uthsc-off-canvas-menu--slide-top,
+  .uthsc-off-canvas-menu--push-top {
+    top: 0;
+    left: 0;
+    -webkit-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    transform: translateY(-60px);
+  }
+
+  .uthsc-off-canvas-menu--slide-top.is-active,
+  .uthsc-off-canvas-menu--push-top.is-active {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  /**
+   * Slide/Push Menu Bottom.
+   */
+  .uthsc-off-canvas-menu--slide-bottom,
+  .uthsc-off-canvas-menu--push-bottom {
+    bottom: 0;
+    left: 0;
+    -webkit-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    transform: translateY(60px);
+  }
+
+  .uthsc-off-canvas-menu--slide-bottom.is-active,
+  .uthsc-off-canvas-menu--push-bottom.is-active {
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  /**
+   * Wrapper states.
+   *
+   * Various wrapper states occur depending on if a menu is pushing into view, in
+   * which case, the wrapper has to be pushed by the respective distance.
+   */
+  .uthsc-off-canvas-wrapper.has-push-left {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  @media all and (min-width: 320px) {
+    .uthsc-off-canvas-wrapper.has-push-left {
+      -webkit-transform: translateX(300px);
+      -ms-transform: translateX(300px);
+      transform: translateX(300px);
+    }
+  }
+
+  .uthsc-off-canvas-wrapper.has-push-right {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+  @media all and (min-width: 320px) {
+    .uthsc-off-canvas-wrapper.has-push-right {
+      -webkit-transform: translateX(-300px);
+      -ms-transform: translateX(-300px);
+      transform: translateX(-300px);
+    }
+  }
+
+  .uthsc-off-canvas-wrapper.has-push-top {
+    -webkit-transform: translateY(60px);
+    -ms-transform: translateY(60px);
+    transform: translateY(60px);
+  }
+
+  .uthsc-off-canvas-wrapper.has-push-bottom {
+    -webkit-transform: translateY(-60px);
+    -ms-transform: translateY(-60px);
+    transform: translateY(-60px);
+  }
+
+  /**
+   * Body states.
+   *
+   * When a menu is active, we want to hide the overflows on the body to prevent
+   * awkward document scrolling.
+   */
+  body.has-active-menu {
+    overflow: hidden;
+  }
+
+  /**
+   * Close button resets.
+   */
+  .uthsc-off-canvas-menu__close {
+    color: #fff;
+    background-color: $jet;
+    font-size: 14px;
+    border: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+  }
+
+  .uthsc-off-canvas-menu__close:focus {
+    outline: none;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+
+  MASK COMPONENT
+
+----------------------------------------------------------------------------- */
+@mixin uthsc-push-menu-mask {
+  .uthsc-off-canvas-mask {
     position: fixed;
-    z-index: 20;
-    background-color: lighten($oil, 5%);
-    overflow: auto;
-    overflow-x: hidden;
-    @include uthsc-off-canvas-transition;
-    min-height: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    background-color: #000;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+    transition: opacity 0.3s, width 0s 0.3s, height 0s 0.3s;
+  }
+
+  .uthsc-off-canvas-mask.is-active {
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    -webkit-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+
+  BUTTONS
+
+----------------------------------------------------------------------------- */
+@mixin uthsc-push-menu-buttons {
+
+  .uthsc-off-canvas-button {
+    display: inline-block;
+    margin: 4px;
+    padding: 12px 24px;
+    color: #67b5d1;
+    background: none;
+    font-size: 14px;
+    border: solid 2px #67b5d1;
+    box-shadow: none;
+    border-radius: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+  }
+
+  .uthsc-off-canvas-button:focus {
+    outline: none;
+  }
+
+  .uthsc-off-canvas-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
   }
 }
 
 @mixin uthsc-off-canvas {
-  @include uthsc-off-canvas-basics;
 
-  .pmr-open {
-    #uthsc-off-canvas-wrapper {
-      position: fixed;
-      width: 100%;
-    }
-    .offcanvas-nav.push-menu-right {
-      position: absolute;
-    }
-  }
+  @include uthsc-push-menu-wrapper;
 
-  .pml-open {
-    #uthsc-off-canvas-wrapper {
-      position: fixed;
-      width: 100%;
-    }
-    .offcanvas-nav.push-menu-left {
-      position: absolute;
-    }
-  }
+  @include uthsc-push-menu-container;
 
-  .offcanvas-nav {
+  @include uthsc-slide-push-menus-component;
 
-    &.push-menu-left,
-    &.push-menu-right {
-      width: 300px;
-      max-width: 86%;
-    }
+  @include uthsc-push-menu-mask;
 
-    &.push-menu-left {
-      left: -300px
-    }
-    &.push-menu-right {
-      right: -300px
-    }
-
-    @media all and (max-width: 330px) {
-      nav.push-menu-left,
-      nav.push-menu-right {
-        top: 0;
-        width: 300px;
-      }
-      &.push-menu-left {
-        left: -300px
-      }
-      &.push-menu-right {
-        right: -300px
-      }
-    }
-
-    //bottom bar for safari-ios
-    //to do rename class
-    .bottom-nav-bar-off-canvas {
-      width: 100%;
-      height: 44px;
-      clear: left;
-      text-align: center;
-      line-height: 44px;
-      background-size: 89%;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-color: lighten($oil, 5%);
-      opacity: 0.4;
-    }
-  }
-
-  body {
-    &.pml-open nav.push-menu-left {
-      left: 0
-    }
-    &.pmr-open nav.push-menu-right {
-      right: 0
-    }
-    &.pml-open #uthsc-off-canvas-wrapper {
-      left: 300px
-    }
-    &.pmr-open #uthsc-off-canvas-wrapper {
-      left: -300px
-    }
-
-    @media all and (max-width: 330px) {
-      &.pml-open nav.push-menu-left {
-        left: 0
-      }
-      &.pmr-open nav.push-menu-right {
-        right: 0
-      }
-      &.pml-open #uthsc-off-canvas-wrapper {
-        left: 100%
-      }
-      &.pmr-open #uthsc-off-canvas-wrapper {
-        left: -100%
-      }
-    }
-  }
-
-  .uthsc-off-canvas-breadcrumbs { @include uthsc-off-canvas-breadcrumbs; }
+  @include uthsc-push-menu-buttons;
 
   @include uthsc-off-canvas-activation-bar;
 
-  .offcanvas-nav { @include uthsc-off-canvas-styles-new; }
+  .uthsc-off-canvas-menu { @include uthsc-off-canvas-styles-new; }
+
 }
