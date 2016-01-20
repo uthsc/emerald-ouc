@@ -2,20 +2,41 @@
   /* Add padding to floated images */
   .left img, figure.left {
     margin-right: 1em;
-    float:left;
+    float: left;
   }
 
   .right img, figure.right {
     margin-left: 1em;
-    float:right;
+    float: right;
   }
-  figure.right img  {
+  figure.right img {
     margin: 0;
   }
   .image-40 {
     width: 40%;
   }
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  a, strong, b {
+    font-weight: 700;
+  }
 
+  em, i {
+    font-style: italic;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    & strong, b, em, i {
+      font-weight: 400;
+      font-style: normal;
+    }
+  }
   figure {
     border: 1px solid #bababa;
     border-radius: 0 0 3px 3px;
@@ -27,7 +48,36 @@
     figcaption {
       padding: 5px;
       font-size: 0.85em;
-      font-family: "Open Sans";
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      font-style: normal;
+      a {
+        font-weight: 700;
+      }
     }
   }
+  .main-content, .uthsc-footer-top {
+    & ol, ul {
+      margin-left: 0;
+      position: relative;
+      padding-left: 0;
+      left: 1rem;
+    }
+  }
+
+  // for styling indented list items
+  //ul ul {
+  //  list-style-type: circle;
+  //  ul {
+  //    list-style-type: square;
+  //  }
+  //}
+
+  ol ol {
+    list-style-type: lower-alpha;
+    ol {
+      list-style-type: lower-roman;
+    }
+  }
+
 }
