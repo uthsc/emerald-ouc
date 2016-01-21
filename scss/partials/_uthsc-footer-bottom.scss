@@ -9,6 +9,12 @@ $uthsc-footer-bottom-background: $uthsc-first-bookend-color !default;
 /// Adds styles for a top bar container.
 @mixin uthsc-footer-bottom-styles {
   background-color: $uthsc-footer-bottom-background;
+
+  p {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+  }
 }
 
 @mixin uthsc-footer-bottom {
