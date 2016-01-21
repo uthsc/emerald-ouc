@@ -470,36 +470,50 @@
     <!--*************-->
     <footer aria-label="UTHSC contact information and links" role="contentinfo" class="uthsc-footer-bottom">
         <div class="row collapse">
-            <div class="columns text-center"><br>
-                <!--Contact info-->
-                <div aria-label="UTHSC contact information">
-                    <p>
-                        &copy; <?php echo date("Y") ?>
-                        The University of Tennessee Health Science Center<br>
-                        Memphis, Tennessee 38163<br>
-                        Main: (901) 448-5500<br>
-                        TDD: (901) 448-7382<br>
-                        Last Published: <?php echo date("F j, Y") ?>
-                    </p>
-                </div>
-
-                <!--Email webmaster-->
-                <br>
-                <a href="mailto:webmaster@uthsc.edu" class="button radius secondary tiny">
-                    <span class="fa fa-envelope fa-3x two-line-button-icon"></span>
-                    <span class="two-line-button-text">Email<br>Webmaster</span>
-                </a>
-
-                <!--Edit password-->
-                <a href="/password/" class="button radius secondary tiny">
-                    <span class="fa fa-key fa-3x two-line-button-icon"></span>
-                    <span class="two-line-button-text">Edit<br>Password</span>
-                </a>
-                <br>
-
+            <!--Contact info-->
+            <div class="columns text-center" aria-label="UTHSC contact information">
+                <p>
+                    &copy; 2016<?php echo date("Y") ?>
+                    The University of Tennessee<br>
+                    Health Science Center<br>
+                    Memphis, Tennessee 38163<br>
+                    Main: (901) 448-5500<br>
+                    TDD: (901) 448-7382<br>
+                    Last Published: January 20, 2016<?php echo date("F j, Y") ?>
+                </p>
             </div>
+            <div class="columns">
+                <div class="row">
+                    <!--Email webmaster-->
+                    <div class="columns small-12 medium-3 medium-offset-3">
+                        <a href="mailto:webmaster@uthsc.edu" class="button secondary expanded">
+                            <div class="row collapse">
+                                <div class="columns small-6 text-right">
+                                    <span class="fa fa-envelope fa-3x"></span>&emsp;
+                                </div>
+                                <div class="columns small-6 text-left">
+                                    <p>
+                                        Email<br>
+                                        Webmaster
+                                    </p>
+                                </div>
+                            </div>
                         </a>
                     </div>
+                    <!--Edit password-->
+                    <div class="columns small-12 medium-3 medium-pull-3">
+                        <a href="/password/" class="button secondary expanded">
+                            <div class="row collapse">
+                                <div class="columns small-6 text-right">
+                                    <span class="fa fa-key fa-3x"></span>&emsp;
+                                </div>
+                                <div class="columns small-6 text-left">
+                                    <p>
+                                        Edit<br>
+                                        Password
+                                    </p>
+                                </div>
+                            </div>
                         </a>
                     </div>
                 </div>
