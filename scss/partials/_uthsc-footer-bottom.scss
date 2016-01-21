@@ -23,6 +23,9 @@ $uthsc-footer-bottom-background: $uthsc-first-bookend-color !default;
     margin-bottom: 0;
   }
 
+  .uthsc-social-icons .fa {
+    padding: 1rem;
+  }
 }
 
 @mixin uthsc-footer-bottom {
