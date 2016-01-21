@@ -19,8 +19,12 @@ $uthsc-footer-bottom-background: $uthsc-first-bookend-color !default;
     margin: 1rem;
   }
 
-  a.button p {
+  .uthsc-footer-button {
+    background-color: #ffffff;
+    p {
     margin-bottom: 0;
+    color: $uthsc-footer-bottom-background;
+    }
   }
 
   .uthsc-social-icons .fa {
