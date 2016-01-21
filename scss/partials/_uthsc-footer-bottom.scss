@@ -19,6 +19,10 @@ $uthsc-footer-bottom-background: $uthsc-first-bookend-color !default;
     margin: 1rem;
   }
 
+  a.button p {
+    margin-bottom: 0;
+  }
+
 }
 
 @mixin uthsc-footer-bottom {
