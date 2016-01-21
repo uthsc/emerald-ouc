@@ -15,6 +15,10 @@ $uthsc-footer-bottom-background: $uthsc-first-bookend-color !default;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
   }
+  .uthsc-copy-block p {
+    margin: 1rem;
+  }
+
 }
 
 @mixin uthsc-footer-bottom {
