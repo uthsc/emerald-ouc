@@ -30,6 +30,15 @@ $uthsc-footer-bottom-background: $uthsc-first-bookend-color !default;
   .uthsc-social-icons .fa {
     padding: 1rem;
   }
+  #emergency-desktop {
+    .fa {
+    margin-top: 1rem;
+    }
+    * {
+      color: #ffffff;
+      font-weight: 700;
+    }
+  }
 }
 
 @mixin uthsc-footer-bottom {
