@@ -19,14 +19,19 @@ gulp.task('sass', function() {
       browsers: ['last 2 versions', 'ie >= 9']
     }))
     .pipe($.sourcemaps.write('../css'))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest('./-resources/2015/css'));
 });
 
 gulp.task('copy-fonts', function() {
   gulp.src('./bower_components/font-awesome/fonts/**/*.{ttf,woff,woff2,eof,svg}')
-      .pipe(gulp.dest('./fonts'));
+      .pipe(gulp.dest('./-resources/2015/fonts'));
   gulp.src('./bower_components/font-awesome/css/**/*.{css,css.map}')
-      .pipe(gulp.dest('./css'));
+      .pipe(gulp.dest('./-resources/2015/css'));
+});
+
+gulp.task('copy-images', function() {
+    gulp.src('./images/*')
+        .pipe(gulp.dest('./-resources/2015/images'));
 });
 
 gulp.task('buildjs', function() {
@@ -40,11 +45,13 @@ gulp.task('buildjs', function() {
       './js/partials/uthsc.safari-bottom-nav-fix.js'
       ])
       .pipe($.concat('uthsc.js'))
-      .pipe(gulp.dest('./js/dist'))
+      .pipe(gulp.dest('./-resources/2015/js'))
       .pipe($.uglify())
       .pipe($.rename('uthsc.min.js'))
-      .pipe(gulp.dest('./js/dist'));
+      .pipe(gulp.dest('./-resources/2015/js'));
 });
+
+gulp.task('build', ['sass','copy-fonts', 'copy-images', 'buildjs']);
 
 gulp.task('default', ['sass','copy-fonts'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);

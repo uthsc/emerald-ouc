@@ -5,8 +5,8 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="-resources/2015/css/app.css">
+    <link rel="stylesheet" href="-resources/2015/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
           href="http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
@@ -466,13 +466,15 @@
         <div class="row">
             <div class="columns text-center uthsc-copy-block" aria-label="UTHSC contact information">
                 <p>
-                    &copy; 2016<?php echo date("Y") ?>
+                    &copy; 2016
+                    <!--<?php echo date("Y") ?>-->
                     The University of Tennessee<br>
                     Health Science Center<br>
                     Memphis, Tennessee 38163<br>
                     Main: (901) 448-5500<br>
                     TDD: (901) 448-7382<br>
-                    Last Published: January 20, 2016<?php echo date("F j, Y") ?>
+                    Last Published: January 20, 2016
+                    <!--<?php echo date("F j, Y") ?>-->
                 </p>
             </div>
         </div>
@@ -514,7 +516,6 @@
         <!--Social media links-->
         <div class="row">
             <div class="columns small-12 text-center uthsc-social-icons" aria-label="UTHSC on social media">
-                <div class="">
                 <a href="http://facebook.com/uthsc" aria-label="facebook">
                     <span class="fa fa-facebook fa-2x fa-inverse"></span>
                     <span class="show-for-sr">facebook</span>
@@ -547,174 +548,177 @@
         <!--******************************-->
         <div aria-label="Emergency contact numbers" class="row collapse hide-for-medium">
             <div class="columns">
-                <h2 class="text-center"><span class="fa fa-phone fa-flip-horizontal fa-2x"></span> Emergency Numbers</h2>
-                <ul class="accordion emergency-contact" role="tablist"
-                data-accordion="data-accordion" data-allow-all-closed="true">
+                    <h2 class="text-center">
+                        <span class="fa fa-phone fa-flip-horizontal fa-2x"></span>
+                        Emergency Numbers
+                    </h2>
+                    <ul class="accordion emergency-contact" role="tablist"
+                    data-accordion="data-accordion" data-allow-all-closed="true">
 
-                <!--******************-->
-                <!--Medical/Behavioral-->
-                <!--******************-->
+                    <!--******************-->
+                    <!--Medical/Behavioral-->
+                    <!--******************-->
 
-                <li class="accordion-item">
-                    <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
-                    <a href="#panel1d" role="tab" class="accordion-title" id="panel1d-heading"
-                       aria-controls="panel1d">
-                        <span class="fa fa-info-circle"></span> Medical/Behavioral
-                    </a>
-
-                    <!-- The content pane needs an ID that matches the above href, role="tabpanel",
-                    data-tab-content, and aria-labelledby. -->
-                    <div id="panel1d" class="accordion-content" role="tabpanel" data-tab-content
-                         aria-labelledby="panel1d-heading">
-
-                        <a href="tel:911" class="button"
-                           aria-label="Call police at 911">
-                            <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span> 911
+                    <li class="accordion-item">
+                        <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+                        <a href="#panel1d" role="tab" class="accordion-title" id="panel1d-heading"
+                           aria-controls="panel1d">
+                            <span class="fa fa-info-circle"></span> Medical/Behavioral
                         </a>
 
-                        <p>or Campus Police at</p>
+                        <!-- The content pane needs an ID that matches the above href, role="tabpanel",
+                        data-tab-content, and aria-labelledby. -->
+                        <div id="panel1d" class="accordion-content" role="tabpanel" data-tab-content
+                             aria-labelledby="panel1d-heading">
 
-                        <a href="tel:901-448-4444" class="button"
-                           aria-label="Call campus police at 901-448-4444">
-                            <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
-                            (901) 448-4444
+                            <a href="tel:911" class="button"
+                               aria-label="Call police at 911">
+                                <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span> 911
+                            </a>
+
+                            <p>or Campus Police at</p>
+
+                            <a href="tel:901-448-4444" class="button"
+                               aria-label="Call campus police at 901-448-4444">
+                                <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
+                                (901) 448-4444
+                            </a>
+                        </div>
+                    </li>
+                    <!--*******************-->
+                    <!--/Medical/Behavioral-->
+                    <!--*******************-->
+
+                    <!--*******************-->
+                    <!--Medical Urgent Care-->
+                    <!--*******************-->
+                    <li class="accordion-item ">
+                        <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+                        <a href="#panel2d" role="tab" class="accordion-title" id="panel2d-heading"
+                           aria-controls="panel2d">
+                            <span class="fa fa-info-circle"></span> Medical Urgent Care
                         </a>
-                    </div>
-                </li>
-                <!--*******************-->
-                <!--/Medical/Behavioral-->
-                <!--*******************-->
 
-                <!--*******************-->
-                <!--Medical Urgent Care-->
-                <!--*******************-->
-                <li class="accordion-item ">
-                    <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
-                    <a href="#panel2d" role="tab" class="accordion-title" id="panel2d-heading"
-                       aria-controls="panel2d">
-                        <span class="fa fa-info-circle"></span> Medical Urgent Care
-                    </a>
+                        <!-- The content pane needs an ID that matches the above href, role="tabpanel",
+                        data-tab-content, and aria-labelledby. -->
+                        <div id="panel2d" class="accordion-content" role="tabpanel" data-tab-content
+                             aria-labelledby="panel2d-heading">
+                            <a href="tel:901-448-5630" class="button"
+                               aria-label="Call medical urgent care at 901-448-5630">
+                                <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
+                                (901) 448-5630
+                            </a>
+                        </div>
+                    </li>
+                    <!--********************-->
+                    <!--/Medical Urgent Care-->
+                    <!--********************-->
 
-                    <!-- The content pane needs an ID that matches the above href, role="tabpanel",
-                    data-tab-content, and aria-labelledby. -->
-                    <div id="panel2d" class="accordion-content" role="tabpanel" data-tab-content
-                         aria-labelledby="panel2d-heading">
-                        <a href="tel:901-448-5630" class="button"
-                           aria-label="Call medical urgent care at 901-448-5630">
-                            <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
-                            (901) 448-5630
+                    <!--*****************************-->
+                    <!--Behavioral Health Urgent Care-->
+                    <!--*****************************-->
+                    <li class="accordion-item ">
+                        <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+                        <a href="#panel3d" role="tab" class="accordion-title" id="panel3d-heading"
+                           aria-controls="panel3d">
+                            <span class="fa fa-info-circle"></span> Behavioral Health Urgent Care
                         </a>
-                    </div>
-                </li>
-                <!--********************-->
-                <!--/Medical Urgent Care-->
-                <!--********************-->
 
-                <!--*****************************-->
-                <!--Behavioral Health Urgent Care-->
-                <!--*****************************-->
-                <li class="accordion-item ">
-                    <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
-                    <a href="#panel3d" role="tab" class="accordion-title" id="panel3d-heading"
-                       aria-controls="panel3d">
-                        <span class="fa fa-info-circle"></span> Behavioral Health Urgent Care
-                    </a>
+                        <!-- The content pane needs an ID that matches the above href, role="tabpanel",
+                        data-tab-content, and aria-labelledby. -->
+                        <div id="panel3d" class="accordion-content" role="tabpanel" data-tab-content
+                             aria-labelledby="panel2d-heading">
+                            <a href="tel:901-448-5064" class="button"
+                               aria-label="Call behavioral health urgent care at 901-448-448-5064">
+                                <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
+                                (901) 448-5064
+                            </a>
+                        </div>
+                    </li>
+                    <!--******************************-->
+                    <!--/Behavioral Health Urgent Care-->
+                    <!--******************************-->
 
-                    <!-- The content pane needs an ID that matches the above href, role="tabpanel",
-                    data-tab-content, and aria-labelledby. -->
-                    <div id="panel3d" class="accordion-content" role="tabpanel" data-tab-content
-                         aria-labelledby="panel2d-heading">
-                        <a href="tel:901-448-5064" class="button"
-                           aria-label="Call behavioral health urgent care at 901-448-448-5064">
-                            <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
-                            (901) 448-5064
+                    <!--**************************-->
+                    <!--Student Assistance Program-->
+                    <!--**************************-->
+                    <li class="accordion-item ">
+                        <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+                        <a href="#panel4d" role="tab" class="accordion-title" id="panel4d-heading"
+                           aria-controls="panel4d">
+                            <span class="fa fa-info-circle"></span> Student Assistance Program
                         </a>
-                    </div>
-                </li>
-                <!--******************************-->
-                <!--/Behavioral Health Urgent Care-->
-                <!--******************************-->
 
-                <!--**************************-->
-                <!--Student Assistance Program-->
-                <!--**************************-->
-                <li class="accordion-item ">
-                    <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
-                    <a href="#panel4d" role="tab" class="accordion-title" id="panel4d-heading"
-                       aria-controls="panel4d">
-                        <span class="fa fa-info-circle"></span> Student Assistance Program
-                    </a>
+                        <!-- The content pane needs an ID that matches the above href, role="tabpanel",
+                        data-tab-content, and aria-labelledby. -->
+                        <div id="panel4d" class="accordion-content" role="tabpanel" data-tab-content
+                             aria-labelledby="panel4d-heading">
 
-                    <!-- The content pane needs an ID that matches the above href, role="tabpanel",
-                    data-tab-content, and aria-labelledby. -->
-                    <div id="panel4d" class="accordion-content" role="tabpanel" data-tab-content
-                         aria-labelledby="panel4d-heading">
+                            <a href="tel:800-327-2255" class="button"
+                               aria-label="Call student assistance program at 800-327-2255">
+                                <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
+                                (800) 327-2255<br>
+                                (Option 3)
+                            </a>
+                        </div>
+                    </li>
+                    <!--***************************-->
+                    <!--/Student Assistance Program-->
+                    <!--***************************-->
 
-                        <a href="tel:800-327-2255" class="button"
-                           aria-label="Call student assistance program at 800-327-2255">
-                            <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
-                            (800) 327-2255<br>
-                            (Option 3)
+                    <!--***************************-->
+                    <!--Employee Assistance Program-->
+                    <!--***************************-->
+                    <li class="accordion-item ">
+                        <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+                        <a href="#panel5d" role="tab" class="accordion-title" id="panel5d-heading"
+                           aria-controls="panel5d">
+                            <span class="fa fa-info-circle"></span> Employee Assistance Program
                         </a>
-                    </div>
-                </li>
-                <!--***************************-->
-                <!--/Student Assistance Program-->
-                <!--***************************-->
 
-                <!--***************************-->
-                <!--Employee Assistance Program-->
-                <!--***************************-->
-                <li class="accordion-item ">
-                    <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
-                    <a href="#panel5d" role="tab" class="accordion-title" id="panel5d-heading"
-                       aria-controls="panel5d">
-                        <span class="fa fa-info-circle"></span> Employee Assistance Program
-                    </a>
+                        <!-- The content pane needs an ID that matches the above href, role="tabpanel",
+                        data-tab-content, and aria-labelledby. -->
+                        <div id="panel5d" class="accordion-content" role="tabpanel" data-tab-content
+                             aria-labelledby="panel5d-heading">
 
-                    <!-- The content pane needs an ID that matches the above href, role="tabpanel",
-                    data-tab-content, and aria-labelledby. -->
-                    <div id="panel5d" class="accordion-content" role="tabpanel" data-tab-content
-                         aria-labelledby="panel5d-heading">
+                            <a href="tel:855-437-3486" class="button"
+                               aria-label="Call employee assistance program at 855-437-3486">
+                                <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
+                                (855) 437-3486
+                            </a>
+                        </div>
+                    </li>
+                    <!--****************************-->
+                    <!--/Employee Assistance Program-->
+                    <!--****************************-->
 
-                        <a href="tel:855-437-3486" class="button"
-                           aria-label="Call employee assistance program at 855-437-3486">
-                            <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
-                            (855) 437-3486
+                    <!--******************************-->
+                    <!--After Hours Medical/Behavioral-->
+                    <!--******************************-->
+                    <li class="accordion-item ">
+                        <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+                        <a href="#panel6d" role="tab" class="accordion-title" id="panel6d-heading"
+                           aria-controls="panel6d">
+                            <span class="fa fa-info-circle"></span> After Hours Medical/Behavioral
                         </a>
-                    </div>
-                </li>
-                <!--****************************-->
-                <!--/Employee Assistance Program-->
-                <!--****************************-->
 
-                <!--******************************-->
-                <!--After Hours Medical/Behavioral-->
-                <!--******************************-->
-                <li class="accordion-item ">
-                    <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
-                    <a href="#panel6d" role="tab" class="accordion-title" id="panel6d-heading"
-                       aria-controls="panel6d">
-                        <span class="fa fa-info-circle"></span> After Hours Medical/Behavioral
-                    </a>
+                        <!-- The content pane needs an ID that matches the above href, role="tabpanel",
+                        data-tab-content, and aria-labelledby. -->
+                        <div id="panel6d" class="accordion-content" role="tabpanel" data-tab-content
+                             aria-labelledby="panel6d-heading">
 
-                    <!-- The content pane needs an ID that matches the above href, role="tabpanel",
-                    data-tab-content, and aria-labelledby. -->
-                    <div id="panel6d" class="accordion-content" role="tabpanel" data-tab-content
-                         aria-labelledby="panel6d-heading">
+                            <a href="tel:901-541-5654" class="button"
+                               aria-label="Call after hours medical behavioral at 901-541-5654">
+                                <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
+                                (901) 541-5654
+                            </a>
+                        </div>
+                    </li>
+                    <!--*******************************-->
+                    <!--/After Hours Medical/Behavioral-->
+                    <!--*******************************-->
 
-                        <a href="tel:901-541-5654" class="button"
-                           aria-label="Call after hours medical behavioral at 901-541-5654">
-                            <span class="fa fa-phone fa-2x fa-flip-horizontal fa-button"></span>
-                            (901) 541-5654
-                        </a>
-                    </div>
-                </li>
-                <!--*******************************-->
-                <!--/After Hours Medical/Behavioral-->
-                <!--*******************************-->
-
-            </ul>
+                </ul>
             </div>
         </div>
         <!--*******************************-->
@@ -1009,48 +1013,7 @@
 <!--*******-->
 <!--Scripts-->
 <!--*******-->
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/what-input/what-input.js"></script>
-<script src="bower_components/foundation-sites/dist/foundation.js"></script>
-<script src="js/app.js"></script>
-<script src="js/partials/uthsc.off-canvas.js"></script>
-<script src="js/partials/uthsc.section-nav.js"></script>
-<script>
-    /**
-     * Slide left instantiation and action.
-     */
-    var slideLeft = new Menu({
-        wrapper: '#uthsc-off-canvas-wrapper',
-        type: 'slide-left',
-        menuOpenerClass: '.uthsc-off-canvas-button',
-        maskId: '#uthsc-off-canvas-mask'
-    });
-
-    var slideLeftBtn = document.querySelector('#uthsc-off-canvas-button--slide-left');
-
-    slideLeftBtn.addEventListener('click', function(e) {
-        e.preventDefault;
-        slideLeft.open();
-    });
-
-    /**
-     * Slide right instantiation and action.
-     */
-    var slideRight = new Menu({
-        wrapper: '#uthsc-off-canvas-wrapper',
-        type: 'slide-right',
-        menuOpenerClass: '.uthsc-off-canvas-button',
-        maskId: '#uthsc-off-canvas-mask'
-    });
-
-    var slideRightBtn = document.querySelector('#uthsc-off-canvas-button--slide-right');
-
-    slideRightBtn.addEventListener('click', function(e) {
-        e.preventDefault;
-        slideRight.open();
-    });
-</script>
-<script src="js/partials/uthsc.safari-bottom-nav-fix.js"></script>
+<script src="-resources/2015/js/uthsc.min.js"></script>
 <!--********-->
 <!--/Scripts-->
 <!--********-->

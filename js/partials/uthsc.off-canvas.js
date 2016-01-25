@@ -119,3 +119,38 @@
     window.Menu = Menu;
 
 })(window);
+
+//Template specific js
+/**
+ * Slide left instantiation and action.
+ */
+var slideLeft = new Menu({
+    wrapper: '#uthsc-off-canvas-wrapper',
+    type: 'slide-left',
+    menuOpenerClass: '.uthsc-off-canvas-button',
+    maskId: '#uthsc-off-canvas-mask'
+});
+
+var slideLeftBtn = document.querySelector('#uthsc-off-canvas-button--slide-left');
+
+slideLeftBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    slideLeft.open();
+});
+
+/**
+ * Slide right instantiation and action.
+ */
+var slideRight = new Menu({
+    wrapper: '#uthsc-off-canvas-wrapper',
+    type: 'slide-right',
+    menuOpenerClass: '.uthsc-off-canvas-button',
+    maskId: '#uthsc-off-canvas-mask'
+});
+
+var slideRightBtn = document.querySelector('#uthsc-off-canvas-button--slide-right');
+
+slideRightBtn.addEventListener('click', function(e) {
+    e.preventDefault;
+    slideRight.open();
+});
