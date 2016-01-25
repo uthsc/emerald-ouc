@@ -29,6 +29,11 @@ gulp.task('copy-fonts', function() {
       .pipe(gulp.dest('./-resources/2015/css'));
 });
 
+gulp.task('copy-images', function() {
+    gulp.src('./images/*')
+        .pipe(gulp.dest('./-resources/2015/images'));
+});
+
 gulp.task('buildjs', function() {
   return gulp.src ([
       './bower_components/jquery/dist/jquery.js',
