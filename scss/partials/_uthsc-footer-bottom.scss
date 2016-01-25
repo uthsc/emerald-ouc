@@ -32,6 +32,9 @@ $uthsc-footer-bottom-background: $uthsc-first-bookend-color !default;
 
   .uthsc-social-icons .fa {
     padding: 1rem;
+    &:hover {
+      color: $uthsc-blue-dark;
+    }
   }
   #uthsc-emergency-desktop
   .fa {
