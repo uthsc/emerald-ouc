@@ -21,14 +21,20 @@ $uthsc-footer-bottom-background: $uthsc-first-bookend-color !default;
 
   .uthsc-footer-button {
     background-color: #ffffff;
+    &:hover {
+      background-color: $uthsc-blue-dark;
+    }
     p {
-    margin-bottom: 0;
-    color: $uthsc-footer-bottom-background;
+      margin-bottom: 0;
+      color: $uthsc-footer-bottom-background;
     }
   }
 
   .uthsc-social-icons .fa {
     padding: 1rem;
+    &:hover {
+      color: $uthsc-blue-dark;
+    }
   }
   #uthsc-emergency-desktop
   .fa {
