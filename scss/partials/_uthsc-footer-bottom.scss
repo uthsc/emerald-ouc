@@ -4,11 +4,41 @@
 
 /// Background color for the bottom footer.
 /// @type Color
-$uthsc-footer-bottom-background: $dark-gray !default;
+$uthsc-footer-bottom-background: $uthsc-first-bookend-color !default;
 
 /// Adds styles for a top bar container.
 @mixin uthsc-footer-bottom-styles {
   background-color: $uthsc-footer-bottom-background;
+
+  p {
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+  }
+  .uthsc-copy-block p {
+    margin: 1rem;
+  }
+
+  .uthsc-footer-button {
+    background-color: #ffffff;
+    p {
+    margin-bottom: 0;
+    color: $uthsc-footer-bottom-background;
+    }
+  }
+
+  .uthsc-social-icons .fa {
+    padding: 1rem;
+  }
+  #emergency-desktop {
+    .fa {
+    margin-top: 1rem;
+    }
+    * {
+      color: #ffffff;
+      font-weight: 700;
+    }
+  }
 }
 
 @mixin uthsc-footer-bottom {
