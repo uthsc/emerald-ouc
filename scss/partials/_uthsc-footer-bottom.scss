@@ -30,17 +30,56 @@ $uthsc-footer-bottom-background: $uthsc-first-bookend-color !default;
   .uthsc-social-icons .fa {
     padding: 1rem;
   }
-  #emergency-desktop {
-    .fa {
+  #uthsc-emergency-desktop
+  .fa {
     margin-top: 1rem;
-    }
+  }
+  h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+  }
+  & #uthsc-emergency-mobile {
+
     * {
       color: #ffffff;
       font-weight: 700;
     }
+    h2 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    $accordion-background: #b5121b;
+    $accordion-background-hover-color: scale-color($accordion-background, $lightness: -5%);
+    $accordion-background-active-color: scale-color($accordion-background, $lightness: -30%);
+    .accordion {
+      border: none;
+      color: #fff;
+    }
+    .accordion-title {
+      background: $accordion-background;
+      padding: 1rem;
+      font-size: 1rem;
+      height: 44px;
+      &:hover, &:focus, &:active {
+        background: $accordion-background-active-color;
+      }
+    }
+    .accordion-content {
+      background: scale-color($accordion-background-active-color, $lightness: -30%);
+      .button {
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p {
+        margin: 0.8rem;
+      }
+    }
+
   }
 }
-
 @mixin uthsc-footer-bottom {
   .uthsc-footer-bottom {
     @include uthsc-footer-bottom-styles;
