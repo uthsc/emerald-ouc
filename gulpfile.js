@@ -51,6 +51,8 @@ gulp.task('buildjs', function() {
       .pipe(gulp.dest('./-resources/2015/js'));
 });
 
+gulp.task('build', ['sass','copy-fonts', 'copy-images', 'buildjs']);
+
 gulp.task('default', ['sass','copy-fonts'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
 });
