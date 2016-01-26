@@ -34,24 +34,30 @@ gulp.task('copy-images', function() {
         .pipe(gulp.dest('./-resources/2015/images'));
 });
 
+gulp.task('copy-vendor-js', function() {
+    return gulp.src ([
+        './bower_components/jquery/dist/jquery.min.js',
+        './bower_components/what-input/what-input.min.js',
+        './bower_components/foundation-sites/dist/foundation.min.js'
+    ])
+        .pipe(gulp.dest('./-resources/2015/js'));
+});
+
 gulp.task('buildjs', function() {
   return gulp.src ([
-      './bower_components/jquery/dist/jquery.js',
-      './bower_components/what-input/what-input.js',
-      './bower_components/foundation-sites/dist/foundation.js',
       './js/app.js',
       './js/partials/uthsc.off-canvas.js',
       './js/partials/uthsc.section-nav.js',
       './js/partials/uthsc.safari-bottom-nav-fix.js'
       ])
-      .pipe($.concat('uthsc.js'))
-      .pipe(gulp.dest('./-resources/2015/js'))
-      .pipe($.uglify())
-      .pipe($.rename('uthsc.min.js'))
-      .pipe(gulp.dest('./-resources/2015/js'));
+          .pipe($.concat('uthsc.js'))
+          .pipe(gulp.dest('./-resources/2015/js'))
+          .pipe($.uglify())
+          .pipe($.rename('uthsc.min.js'))
+          .pipe(gulp.dest('./-resources/2015/js'));
 });
 
-gulp.task('build', ['sass','copy-fonts', 'copy-images', 'buildjs']);
+gulp.task('build', ['sass','copy-fonts', 'copy-images', 'copy-vendor-js', 'buildjs']);
 
 gulp.task('default', ['sass','copy-fonts'], function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
