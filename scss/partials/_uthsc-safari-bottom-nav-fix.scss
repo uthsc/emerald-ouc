@@ -7,7 +7,12 @@
   .safari-bottom-nav-fix--active {
     height:44px;
     width:100%;
-    background:brown;
+    background:darken($uthsc-green, 5%);
+    background-image: url('../images/uthsc-logo-short-green-dark-emboss.png');
+    background-size: 68%;
+    background-repeat: no-repeat;
+    background-position: 50% 7px;
     clear:left;
+    fill: red;
   }
 }
