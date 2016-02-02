@@ -16,6 +16,12 @@ $uthsc-footer-top-background: #EFEFEF !default;
   .uthsc-footer-top {
     @include uthsc-footer-top-styles;
   }
+  .footer-box:last-of-type ul li {
+    display: inline;
+    a {
+      background-image: none;
+    }
+  }
   .uthsc-footer-middle {
     color: #6a6a6a;
     background-color: $uthsc-footer-top-background;
