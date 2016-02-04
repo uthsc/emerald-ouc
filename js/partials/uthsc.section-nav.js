@@ -8,15 +8,15 @@
     // allows foundation's sticky class to be used elsewhere.
     $(document).ready(function() {
 
-        var stickyNavTop = $('#uthsc-navigation-alt').offset().top;
+        var stickyNavTop = $('#uthsc-section-navigation').offset().top;
 
         var stickyNav = function(){
             var scrollTop = $(window).scrollTop();
 
             if (scrollTop > stickyNavTop) {
-                $('#uthsc-navigation-alt').addClass('uthsc-sticky');
+                $('#uthsc-section-navigation').addClass('uthsc-sticky');
             } else {
-                $('#uthsc-navigation-alt').removeClass('uthsc-sticky');
+                $('#uthsc-section-navigation').removeClass('uthsc-sticky');
             }
         };
 
@@ -33,16 +33,16 @@
     var endTimer;
 
     jQuery(".uthsc-navigation-column").bind('mouseover', openSubMenu);
-    jQuery("#uthsc-navigation-alt").bind('mouseleave', closeSubMenu);
+    jQuery("#uthsc-section-navigation").bind('mouseleave', closeSubMenu);
 
     function expandMenu() {
-        //$('#uthsc-navigation-alt ul li ul').stop(true, true).slideDown(400);
-        $('#uthsc-navigation-alt').removeClass('hide-class');
+        //$('#uthsc-section-navigation ul li ul').stop(true, true).slideDown(400);
+        $('#uthsc-section-navigation').removeClass('hide-class');
     }
 
     function collapseMenu() {
-        //$('#uthsc-navigation-alt ul li ul').stop(true, true).slideUp(400);
-        $('#uthsc-navigation-alt').addClass('hide-class');
+        //$('#uthsc-section-navigation ul li ul').stop(true, true).slideUp(400);
+        $('#uthsc-section-navigation').addClass('hide-class');
     }
 
     function clearTimer() {
@@ -51,19 +51,19 @@
     }
 
     function openSubMenu() {
-        //$('#uthsc-navigation-alt').addClass('uthsc-navigation-active');
+        //$('#uthsc-section-navigation').addClass('uthsc-navigation-active');
         clearTimer();
         openTimer = setTimeout(expandMenu, 400);
     }
 
     function closeSubMenu() {
-        //$('#uthsc-navigation-alt').removeClass('uthsc-navigation-active');
+        //$('#uthsc-section-navigation').removeClass('uthsc-navigation-active');
 
         clearTimer();
         closeTimer = setTimeout(collapseMenu, 400);
     }
 
-    $("#uthsc-navigation-alt").on( 'keyup', function( e ) {
+    $("#uthsc-section-navigation").on( 'keyup', function( e ) {
         openSubMenu();
     } );
 
