@@ -51,9 +51,8 @@ $uthsc-footer-bottom-background: $uthsc-first-bookend-color !default;
       font-weight: 700;
     }
     h2 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      @include uthsc-vertical-center;
+      @include uthsc-horizontal-center;
     }
     $accordion-background: #b5121b;
     $accordion-background-hover-color: scale-color($accordion-background, $lightness: -5%);
@@ -74,10 +73,8 @@ $uthsc-footer-bottom-background: $uthsc-first-bookend-color !default;
     .accordion-content {
       background: scale-color($accordion-background-active-color, $lightness: -30%);
       .button {
-        margin: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include uthsc-vertical-center;
+        @include uthsc-horizontal-center;
       }
       p {
         margin: 0.8rem;
