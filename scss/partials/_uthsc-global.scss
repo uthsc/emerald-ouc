@@ -1,3 +1,11 @@
+/* social account colors */
+$uthsc-twitter:     #55acee;
+$uthsc-facebook:    #3b5999;
+$uthsc-google-plus: #DC4E41;
+$uthsc-linkedin:    #0077b5;
+$uthsc-youtube:     #cd201f;
+$uthsc-pinterest:   #bd081c;
+$uthsc-instagram:   #3f729b;
 @mixin uthsc-global {
   /* Add padding to floated images */
   .left img, figure.left {
