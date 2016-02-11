@@ -53,6 +53,12 @@ $uthsc-site-nav-input-width: 160px !default;
   input.button {
     width:auto;
   }
+
+  /* fix for dropdown arrow issue */
+  .dropdown.menu .is-dropdown-submenu-parent.is-down-arrow > a::after {
+    position: initial;
+  }
+
 }
 
 @mixin menu-icon-fix(
