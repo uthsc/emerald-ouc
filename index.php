@@ -133,7 +133,8 @@
     <!--******-->
     <!--Banner-->
     <!--******-->
-    <header aria-label="UTHSC Logo" role="banner" class="uthsc-banner hide-for-print">
+    <header aria-label="UTHSC Logo" role="banner" class="uthsc-banner hide-for-print"
+            style="border-bottom: 1px solid #00835f;">
         <div class="row">
             <div class="medium-10 large-8 small-centered columns">
                 <a href="http://uthsc.edu">
