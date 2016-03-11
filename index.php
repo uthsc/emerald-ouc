@@ -30,7 +30,7 @@
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PR6VFZ');</script>
+    })(window,document,'script','dataLayer','GTM-PR6VFZ');</script>
 <!-- End Google Tag Manager -->
 
 <a href="#main-content" class="show-on-focus">Skip to content</a>
@@ -321,28 +321,28 @@
         <div class="fullscreen">
             <!--<div style="height: 38%;"></div>-->
             <!--<div data-magellan-expedition="fixed" class="magellan">-->
-                <!--<dl class="sub-nav">-->
-                    <!--<dd data-magellan-arrival="education"><a href="#education">-->
-                        <!--<span class="fa fa-graduation-cap fa-3x"></span>-->
-                        <!--<p class="subheader">Education</p></a>-->
-                    <!--</dd>-->
-                    <!--<dd data-magellan-arrival="research"><a href="#research">-->
-                        <!--<span class="fa fa-flask fa-3x"></span>-->
-                        <!--<p class="subheader">Research</p></a>-->
-                    <!--</dd>-->
-                    <!--<dd data-magellan-arrival="clinical-care"><a href="#clinical-care">-->
-                        <!--<span class="fa fa-medkit fa-3x"></span>-->
-                        <!--<p class="subheader">Clinical Care</p></a>-->
-                    <!--</dd>-->
-                    <!--<dd data-magellan-arrival="public-service"><a href="#public-service">-->
-                        <!--<span class="fa fa-globe fa-3x"></span>-->
-                        <!--<p class="subheader">Public Service</p></a>-->
-                    <!--</dd>-->
-                    <!--<dd data-magellan-arrival="top" class="to-top"><a href="#top">-->
-                        <!--<span class="fa fa-arrow-circle-up fa-2x"></span>-->
-                        <!--<p class="subheader">To Top</p></a>-->
-                    <!--</dd>-->
-                <!--</dl>-->
+            <!--<dl class="sub-nav">-->
+            <!--<dd data-magellan-arrival="education"><a href="#education">-->
+            <!--<span class="fa fa-graduation-cap fa-3x"></span>-->
+            <!--<p class="subheader">Education</p></a>-->
+            <!--</dd>-->
+            <!--<dd data-magellan-arrival="research"><a href="#research">-->
+            <!--<span class="fa fa-flask fa-3x"></span>-->
+            <!--<p class="subheader">Research</p></a>-->
+            <!--</dd>-->
+            <!--<dd data-magellan-arrival="clinical-care"><a href="#clinical-care">-->
+            <!--<span class="fa fa-medkit fa-3x"></span>-->
+            <!--<p class="subheader">Clinical Care</p></a>-->
+            <!--</dd>-->
+            <!--<dd data-magellan-arrival="public-service"><a href="#public-service">-->
+            <!--<span class="fa fa-globe fa-3x"></span>-->
+            <!--<p class="subheader">Public Service</p></a>-->
+            <!--</dd>-->
+            <!--<dd data-magellan-arrival="top" class="to-top"><a href="#top">-->
+            <!--<span class="fa fa-arrow-circle-up fa-2x"></span>-->
+            <!--<p class="subheader">To Top</p></a>-->
+            <!--</dd>-->
+            <!--</dl>-->
             <!--</div>-->
         </div>
     </div>
@@ -423,7 +423,7 @@
                                         <ul>
                                             <li><a href="/admissions/">Admissions</a></li>
                                             <li><a href="/admissions/application-deadlines.php">
-                                                Application Deadlines</a></li>
+                                                    Application Deadlines</a></li>
                                             <li><a href="/admissions/degrees-offered.php">Degrees Offered</a></li>
                                             <li><a href="/finaid/">Financial Aid</a></li>
                                             <li><a href="/maps/">Maps and Directions</a></li>
@@ -435,9 +435,9 @@
                                         <h4>Current</h4>
                                         <ul>
                                             <li><a href="/registrar/academic_calendar.php">
-                                                Academic Calendar</a></li>
+                                                    Academic Calendar</a></li>
                                             <li><a href="/registrar/students.php#catalogs">
-                                                Academic Catalog</a></li>
+                                                    Academic Catalog</a></li>
                                             <li><a href="/banner/">Banner Self-Service</a></li>
                                             <li><a href="/centerscope/">CenterScope</a></li>
                                             <li><a href="/oss/">One Stop Shop</a></li>
@@ -657,8 +657,8 @@
             <div class="columns small-centered medium-7">
                 <div class="map-cover"></div>
                 <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d52195.518026446356!2d-89.996586!3d35.151136!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1434487876316"
-                        width="100%" height="275" frameborder="0" style="border:0"></iframe>
+                    src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d52195.518026446356!2d-89.996586!3d35.151136!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1434487876316"
+                    width="100%" height="275" frameborder="0" style="border:0"></iframe>
             </div>
         </div>
         <!--/Map-->
@@ -667,7 +667,50 @@
 
         <!--Events-->
         <div id="events" class="row">
-            <?php readfile("http://events.uthsc.edu/widgets/uthsc_homepage_2015.php"); ?>
+            <div class="columns medium-6 large-3 events">
+                <div class="event-date"><span>MAR</span><br /><span>12</span></div>
+                <p class="event-title">
+                    <a href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=2844">
+                        Determined To Be A Doctor Someday
+                    </a>
+                </p>
+                <p class="event-time">9:00am</p>
+            </div>
+            <div class="columns medium-6 large-3 events">
+                <div class="event-date"><span>MAR</span><br /><span>15</span></div>
+                <p class="event-title">
+                    <a href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=2899">
+                        Molecular Bioinformatics Workshop Series
+                    </a>
+                </p>
+                <p class="event-time">12:00pm</p></div>
+            <div class="columns medium-6 large-3 events">
+                <div class="event-date"><span>MAR</span><br /><span>17</span></div>
+                <p class="event-title">
+                    <a href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=2911">
+                        VCR Distinguished Lecture Series
+                    </a>
+                </p>
+                <p class="event-time">1:00pm</p>
+            </div>
+            <div class="columns medium-6 large-3 events">
+                <div class="event-date"><span>MAR</span><br /><span>18</span></div>
+                <p class="event-title">
+                    <a href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=2830">
+                        UTHEI/Southern College of Optometry Joint Meeting
+                    </a>
+                </p>
+                <p class="event-time">12:00pm</p>
+            </div>
+            <div class="columns medium-6 large-3 events">
+                <div class="event-date"><span>MAR</span><br /><span>29</span></div>
+                <p class="event-title">
+                    <a href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=2881">
+                        Neuroscience Spring 2016 Seminar Series -
+                    </a>
+                </p>
+                <p class="event-time">12:00pm</p>
+            </div>
         </div>
         <!--/Events-->
 
@@ -727,7 +770,7 @@
                 <!--Recommendation: give image class and add padding with a media query-->
                 <!--<div class="show-for-small-only"><img src="-resources/2015/images/numbers.png"></div>-->
                 <!--<div class="show-for-medium">-->
-                    <!--<img src="-resources/2015/images/numbers.png" style="padding: 2vw 6vw 0;">-->
+                <!--<img src="-resources/2015/images/numbers.png" style="padding: 2vw 6vw 0;">-->
                 <!--</div>-->
 
                 <hr style="width: 80%;margin: 3% 10%;">
