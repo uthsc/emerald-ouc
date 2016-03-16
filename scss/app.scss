@@ -9,6 +9,7 @@
 @import 'partials/uthsc-breadcrumbs';
 @import 'partials/uthsc-section-nav';
 @import 'partials/uthsc-hero';
+@import 'partials/uthsc-homepage';
 @import 'partials/uthsc-footer-top';
 @import 'partials/uthsc-footer-bottom';
 @import 'partials/uthsc-safari-bottom-nav-fix';
@@ -21,6 +22,7 @@
 @include uthsc-section-nav;
 @include uthsc-breadcrumbs;
 @include uthsc-hero;
+@include uthsc-homepage;
 @include uthsc-footer-top;
 @include uthsc-footer-bottom;
 @include uthsc-safari-bottom-nav-fix;
