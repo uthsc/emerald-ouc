@@ -11,7 +11,7 @@
 @import 'partials/uthsc-hero';
 @import 'partials/uthsc-homepage';
 @import 'partials/uthsc-content-footer';
-@import 'partials/uthsc-footer-bottom';
+@import 'partials/uthsc-global-footer';
 @import 'partials/uthsc-safari-bottom-nav-fix';
 
 @include uthsc-global;
@@ -24,5 +24,5 @@
 @include uthsc-hero;
 @include uthsc-homepage;
 @include uthsc-content-footer;
-@include uthsc-footer-bottom;
+@include uthsc-global-footer;
 @include uthsc-safari-bottom-nav-fix;
