@@ -4,17 +4,17 @@
 
 /// Background color for the top footer.
 /// @type Color
-$uthsc-footer-top-background: #EFEFEF !default;
+$uthsc-content-footer-background: #EFEFEF !default;
 
 /// Adds styles for a top bar container.
-@mixin uthsc-footer-top-styles {
-  background-color: $uthsc-footer-top-background;
+@mixin uthsc-content-footer-styles {
+  background-color: $uthsc-content-footer-background;
   padding: 40px 0 0;
 }
 
-@mixin uthsc-footer-top {
-  .uthsc-footer-top {
-    @include uthsc-footer-top-styles;
+@mixin uthsc-content-footer {
+  .uthsc-content-footer {
+    @include uthsc-content-footer-styles;
   }
 
   .uthsc-share {
@@ -81,7 +81,7 @@ $uthsc-footer-top-background: #EFEFEF !default;
   }
   .uthsc-last-published {
     color: #6a6a6a;
-    background-color: $uthsc-footer-top-background;
+    background-color: $uthsc-content-footer-background;
     border-top: 1px solid #ddd;
     p {
       margin: 0;
