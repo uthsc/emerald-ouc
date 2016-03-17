@@ -1,5 +1,5 @@
 @mixin uthsc-anchortext {
-  .main-content, .uthsc-footer-top {
+  .main-content, .uthsc-content-footer {
 
     p a, li a, figcaption a, .anchortext {
       text-decoration: none;
@@ -25,9 +25,9 @@
   }
 
   //fix background on footer-top
-  .uthsc-footer-top {
+  .uthsc-content-footer {
     p a, li a, , figcaption a {
-      text-shadow: -1px 0 0 $uthsc-footer-top-background, 1px 0 0 $uthsc-footer-top-background !important;
+      text-shadow: -1px 0 0 $uthsc-content-footer-background, 1px 0 0 $uthsc-content-footer-background !important;
     }
   }
 

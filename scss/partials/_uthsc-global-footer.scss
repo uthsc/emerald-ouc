@@ -1,14 +1,14 @@
 ////
-/// @group footer-bottom
+/// @group global-footer
 ////
 
-/// Background color for the bottom footer.
+/// Background color for the global footer.
 /// @type Color
-$uthsc-footer-bottom-background: $uthsc-first-bookend-color !default;
+$uthsc-global-footer-background: $uthsc-first-bookend-color !default;
 
 /// Adds styles for a top bar container.
-@mixin uthsc-footer-bottom-styles {
-  background-color: $uthsc-footer-bottom-background;
+@mixin uthsc-global-footer-styles {
+  background-color: $uthsc-global-footer-background;
 
   p {
     color: #ffffff;
@@ -26,7 +26,7 @@ $uthsc-footer-bottom-background: $uthsc-first-bookend-color !default;
     }
     p {
       margin-bottom: 0;
-      color: $uthsc-footer-bottom-background;
+      color: $uthsc-global-footer-background;
     }
   }
 
@@ -83,8 +83,8 @@ $uthsc-footer-bottom-background: $uthsc-first-bookend-color !default;
 
   }
 }
-@mixin uthsc-footer-bottom {
-  .uthsc-footer-bottom {
-    @include uthsc-footer-bottom-styles;
+@mixin uthsc-global-footer {
+  .uthsc-global-footer {
+    @include uthsc-global-footer-styles;
   }
 }
