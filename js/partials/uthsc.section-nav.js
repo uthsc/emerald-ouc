@@ -67,8 +67,4 @@
         openSubMenu();
     } );
 
-    $(document).ready(function () {
-        closeSubMenu();
-    });
-
 }(jQuery);
