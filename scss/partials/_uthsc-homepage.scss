@@ -5,20 +5,26 @@
     }
 
     //Homepage mobile tabs
-    ul.tabs li {
-      width: 24%;
-      a {
-        padding: .5em;
-        text-align: center;
+    ul.tabs {
+      margin-right: 0;
+      left: auto;
 
-        &:hover {
-          background-color: $uthsc-gray-light;
+      li {
+        width: 25%;
+        a {
+          padding: .5em;
+          text-align: center;
+
+          &:hover {
+            background-color: $uthsc-gray-light;
+          }
+        }
+        &.tabs-title > a[aria-selected='true'] {
+          background-color: $uthsc-gray-dark;
         }
       }
-      &.tabs-title > a[aria-selected='true'] {
-        background-color: $uthsc-gray-dark;
-      }
     }
+
     //End Homepage mobile tabs
 
     .columns.mission-image {
