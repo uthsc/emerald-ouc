@@ -5,22 +5,8 @@
     }
 
     //Homepage mobile tabs
-
-    .tabs {
-    //  margin-top: -2px;
-    }
-    .tabs dd > a, .tabs .tab-title > a {
-    //  padding: 0;
-    //  padding-bottom: .75rem;
-    }
-
-    h2.tab-header {
-    //  color: $secondary-color;
-    }
-
     ul.tabs li {
       width: 24%;
-
       a {
         padding: .5em;
         text-align: center;
@@ -29,32 +15,10 @@
           background-color: $uthsc-gray-light;
         }
       }
-    //  padding-top: 1rem;
       &.tabs-title > a[aria-selected='true'] {
         background-color: $uthsc-gray-dark;
-    //    position: relative;
-    //    top: 2px;
-    //    border: 2px solid #00a5e3;
-    //    border-bottom: none;
-    //    border-top: none;
-    //    a {
-    //      background-color: transparent;
-    //    }
       }
     }
-    //.tabs-content {
-    //  border: 2px solid #00a5e3;
-    //  background-color: #f5f5f5;
-    //  .college-image {
-    //    margin-bottom: 2rem;
-    //  }
-    //  .small-news .news-box {
-    //    padding: 0 !important;
-    //  }
-    //}
-    //.tabs-content .columns:not(.mission-image):not(.college-image) {
-    //  padding: 0 1rem;
-    //}
     //End Homepage mobile tabs
 
     .columns.mission-image {
