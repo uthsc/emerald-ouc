@@ -650,18 +650,16 @@
         <!--todo: does this need to have the about class or should that be moved to something else-->
         <div id="about" class="content-area show-for-medium">
 
-            <!--Numbers-->
-            <!--todo: Numbers is too broad, consider using class instead of ID-->
-            <!--todo: Do we even need this numbers id? could it be about instead-->
-            <div id="numbers" class="row text-center" data-equalizer="homepage-stats">
-                <div data-equalizer-watch="homepage-stats" class="columns numbers medium-3">
+            <!--Infographics-->
+            <div class="uthsc-infographics row text-center" data-equalizer="homepage-stats">
+                <div data-equalizer-watch="homepage-stats" class="columns uthsc-infographic medium-3">
                     <h2>$2.7</h2>
                     <p>Billion</p>
-                    <p>contributed to the<br><span>Tennessee economy</span></p>
+                    <p>contributed to the<br><span class="uthsc-infographic-highlight">Tennessee economy</span></p>
                 </div>
 
                 <div data-equalizer-watch="homepage-stats" class="columns medium-6">
-                    <div class="row numbers tennessee">
+                    <div class="row uthsc-infographic tennessee">
                         <div class="columns medium-6">
                             <h2>4<span class="fa fa-map-marker"></span></h2>
                             <p>Campuses</p>
@@ -674,22 +672,21 @@
                         </div>
                         <div class="columns medium-6">
                             <h2>100+</h2>
-                            <p>Clinical &amp<br />Educational Sites<br />Across Tennessee</p>
+                            <p>Clinical &amp<br />Educational Sites</p>
                         </div>
                     </div>
+                    <p><span class="uthsc-infographic-highlight" style="position: relative; top: -2.7rem;">Across Tennessee</span>
                 </div>
 
-                <div data-equalizer-watch="homepage-stats" class="columns medium-3 numbers">
+                <div data-equalizer-watch="homepage-stats" class="columns medium-3 uthsc-infographic">
                     <h2>$200</h2>
                     <p>Million</p>
-                    <p>in sponsored programs<br><span>in fiscal 2014</span></p>
+                    <p>in sponsored programs<br><span class="uthsc-infographic-highlight">in fiscal 2014</span></p>
                 </div>
             </div>
-            <!--/Numbers-->
+            <!--/Infographics-->
 
-            <!--********-->
             <!--Map area-->
-            <!--********-->
 
             <!--Call to Action Buttons-->
             <div class="row">
@@ -708,18 +705,16 @@
 
             <!--Map-->
             <div class="row">
-                <div class="columns small-centered medium-7">
+                <div class="columns small-centered medium-12">
                     <div class="map-cover"></div>
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d52195.518026446356!2d-89.996586!3d35.151136!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1434487876316"
-                        width="100%" height="275" frameborder="0" style="border:0"></iframe>
+                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d52195.518026446356!2d-89.996586!3d35.151136!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1434487876316"
+                            width="100%" height="275" frameborder="0" style="border:0"></iframe>
                 </div>
             </div>
             <!--/Map-->
 
-            <!--********-->
             <!--/Map area-->
-            <!--********-->
 
             <!--Events-->
             <div id="events" class="row">
@@ -758,17 +753,9 @@
                     </p>
                     <p class="event-time">12:00pm</p>
                 </div>
-                <div class="columns medium-6 large-3 events">
-                    <div class="event-date"><span>MAR</span><br /><span>29</span></div>
-                    <p class="event-title">
-                        <a href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=2881">
-                            Neuroscience Spring 2016 Seminar Series -
-                        </a>
-                    </p>
-                    <p class="event-time">12:00pm</p>
-                </div>
             </div>
             <!--/Events-->
+
 
             <!--Blockquote-->
             <div class="row">
@@ -845,7 +832,7 @@
 
                     <div class="columns medium-9">
 
-                        <img class="" src="-resources/2015/images/numbers.png">
+                        <img class="uthsc-center-graphic" src="-resources/2015/images/numbers.png">
 
                         <!--todo: This doesn't seem like the best way to do this-->
                         <!--todo: Recommendation: give image class and add padding with a media query-->

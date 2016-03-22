@@ -97,7 +97,7 @@
       margin-bottom: -17vh;
       text-align: center;
     }
-    #numbers h2 {
+    .uthsc-infographics h2 {
       font-weight: bolder;
       font-size: 4rem;
       font-family: inherit;
@@ -107,16 +107,16 @@
       color: #ced0b4;
       margin: 0;
     }
-    #numbers p {
+    .uthsc-infographics p {
       font-size: 0.75rem;
       font-weight: lighter;
     }
-    #numbers p:first-of-type {
+    .uthsc-infographics p:first-of-type {
       font-size: 1.5rem;
       font-weight: bold;
       margin: 0;
     }
-    #numbers span {
+    .uthsc-infographics .uthsc-infographic-highlight {
       font-weight: bold;
       color: #b06010;
       letter-spacing: 6px;
@@ -188,29 +188,35 @@
     p.event-title {
       padding-top: 0.5rem;
     }
-    .numbers {
+    .uthsc-infographic {
       background-size: contain !important;
       background-repeat: no-repeat !important;
       background-position: center !important;
       margin: 1.5rem 0px !important;
+      padding: 0.5rem;
       &.tennessee {
-        background: url("http://uthsc.edu/test/redesign/nwinn1/_resources/2015/images/uthsc-tennessee-gray.png");
+        background: url("../images/uthsc-tennessee-gray.png");
         &:hover {
-          background: url("http://uthsc.edu/test/redesign/nwinn1/_resources/2015/images/uthsc-tennessee-color.png");
+          background: url("../images/uthsc-tennessee-color.png");
         }
       }
       &.pharmacy {
-        background: url("http://uthsc.edu/test/redesign/nwinn1/_resources/2015/images/numbers-pharmacy-seal.png");
+        background: url("../images/numbers-pharmacy-seal.png");
       }
       &.foam-hand {
-        background: url("http://uthsc.edu/test/redesign/nwinn1/_resources/2015/images/numbers-foam-hand.png");
+        background: url("../images/numbers-foam-hand.png");
       }
       &.billions {
-        background: url("http://uthsc.edu/test/redesign/nwinn1/_resources/2015/images/numbers-billion-b.png");
+        background: url("../images/numbers-billion-b.png");
       }
       &.millions {
-        background: url("http://uthsc.edu/test/redesign/nwinn1/_resources/2015/images/numbers-million-m.png");
+        background: url("../images/numbers-million-m.png");
       }
     }
+    .uthsc-center-graphic {
+      display: block;
+      margin: 1rem auto 0;
+    }
+
   }
 }
