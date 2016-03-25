@@ -50,6 +50,118 @@
 <!--/Facebook SDK for JavaScript-->
 <!--****************************-->
 
+<!--***************-->
+<!--Google Maps API-->
+<!--***************-->
+<script>
+    var marker;
+
+    function initMap() {
+        var myLatLng = {lat: 35.1393278, lng: -90.0320579};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+            center: myLatLng,
+            zoom: 15,
+            scrollwheel:  false
+        });
+
+        var infowindow = new google.maps.InfoWindow({
+            content: 'Lamar Alexander Building',
+            maxWidth: 200
+        });
+
+        marker = new google.maps.Marker({
+            position: {lat:35.140173, lng:-90.031881},
+            map: map,
+            title: 'Lamar Alexander Building'
+        });
+        marker.addListener('click', function() {
+            infowindow.open(map, marker);
+        });
+
+        // Define the LatLng coordinates for the polygon's path.
+        var uthscCoords = [
+            {lat:35.1349486, lng: -90.0296545},
+            {lat:35.1381116, lng: -90.0295204},
+            {lat:35.1379625, lng: -90.0281686},
+            {lat:35.1382827, lng: -90.0281631},
+            {lat:35.1384406, lng: -90.0281847},
+            {lat:35.1386205, lng: -90.0282598},
+            {lat:35.1387653, lng: -90.0283348},
+            {lat:35.1388881, lng: -90.0283455},
+            {lat:35.1390241, lng: -90.0282919},
+            {lat:35.1400155, lng: -90.0281525},
+            {lat:35.1409455, lng: -90.0277877},
+            {lat:35.1413446, lng: -90.0277501},
+            {lat:35.1412218, lng: -90.0266987},
+            {lat:35.1418886, lng: -90.0265807},
+            {lat:35.1419325, lng: -90.0272298},
+            {lat:35.1421913, lng: -90.0272137},
+            {lat:35.1422176, lng: -90.0276321},
+            {lat:35.1426563, lng: -90.0275731},
+            {lat:35.1428798, lng: -90.0295472},
+            {lat:35.1428054, lng: -90.0300139},
+            {lat:35.1421386, lng: -90.0300944},
+            {lat:35.1422088, lng: -90.0308829},
+            {lat:35.1412832, lng: -90.0309849},
+            {lat:35.1410332, lng: -90.0311244},
+            {lat:35.1403663, lng: -90.0312263},
+            {lat:35.1404419, lng: -90.0323859},
+            {lat:35.1412131, lng: -90.0323045},
+            {lat:35.1412876, lng: -90.0327390},
+            {lat:35.1404629, lng: -90.0327980},
+            {lat:35.1404989, lng: -90.0334740},
+            {lat:35.1424808, lng: -90.0331682},
+            {lat:35.1427659, lng: -90.0302446},
+            {lat:35.1430467, lng: -90.0302339},
+            {lat:35.1434108, lng: -90.0312969},
+            {lat:35.1435731, lng: -90.0330340},
+            {lat:35.1426168, lng: -90.0331682},
+            {lat:35.1428098, lng: -90.0352818},
+            {lat:35.1433713, lng: -90.0374168},
+            {lat:35.1435818, lng: -90.0380552},
+            {lat:35.1424501, lng: -90.0384521},
+            {lat:35.1420685, lng: -90.0368965},
+            {lat:35.1407437, lng: -90.0375348},
+            {lat:35.1401208, lng: -90.0378835},
+            {lat:35.1399628, lng: -90.0373363},
+            {lat:35.1389627, lng: -90.0376850},
+            {lat:35.1387389, lng: -90.0358772},
+            {lat:35.1386161, lng: -90.0347829},
+            {lat:35.1375807, lng: -90.0348687},
+            {lat:35.1376158, lng: -90.0350617},
+            {lat:35.1375633, lng: -90.0353837},
+            {lat:35.1371772, lng: -90.0358772},
+            {lat:35.1367034, lng: -90.0352979},
+            {lat:35.1363525, lng: -90.0349769},
+            {lat:35.1358436, lng: -90.0348687},
+            {lat:35.1355979, lng: -90.0332808},
+            {lat:35.1352479, lng: -90.0310278},
+            {lat:35.1349486, lng: -90.0296545}
+        ];
+
+
+        // Construct the polygon.
+        var uthscPolygon = new google.maps.Polygon({
+            paths: uthscCoords,
+            strokeColor: '#f77f00',
+            strokeOpacity: 0.8,
+            strokeWeight: 4,
+            fillColor: '#006a4d',
+            fillOpacity: 0.35
+        });
+        uthscPolygon.setMap(map);
+    }
+
+</script>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLV5PU6hBErfU5GOc9Jy4-6bWud2iaVj8&callback=initMap">
+</script>
+<!--****************-->
+<!--/Google Maps API-->
+<!--****************-->
+
 <!--******************-->
 <!--Google Tag Manager-->
 <!--******************-->
@@ -265,6 +377,9 @@
             background-position-x: 100%;
             background-position-y: 80%;
             background-repeat: no-repeat;
+        }
+        #map {
+            height: 100%;
         }
     </style>
 
@@ -734,11 +849,8 @@
 
             <!--Map-->
             <div class="row">
-                <div class="columns small-centered medium-12">
-                    <div class="map-cover"></div>
-                    <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d52195.518026446356!2d-89.996586!3d35.151136!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1434487876316"
-                            width="100%" height="275" frameborder="0" style="border:0"></iframe>
+                <div class="columns small-centered medium-12" style="width:100%; height: 275px">
+                    <div id="map" style="width: 100%; height: 100%"></div>
                 </div>
             </div>
             <!--/Map-->
