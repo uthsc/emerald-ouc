@@ -20,9 +20,9 @@
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href="-resources/2015/css/app.css">
     <link rel="stylesheet" href="-resources/2015/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
-          href="http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
+          href="https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
     <?php
     function get_uthsc_instagram (
         $user_id='302960952',
@@ -269,13 +269,13 @@
                     <a href="#">Resources</a>
                     <ul class="submenu menu vertical" data-submenu>
                         <li><a href="/banner/info/">Banner</a></li>
-                        <li><a href="http://courses.uthsc.edu/">Blackboard</a></li>
+                        <li><a href="https://courses.uthsc.edu/">Blackboard</a></li>
                         <li><a href="http://events.uthsc.edu/">Calendar</a></li>
-                        <li><a href="http://uthsc.edu/hr/employment/">Career Opportunities</a></li>
+                        <li><a href="/hr/employment/">Career Opportunities</a></li>
                         <li><a href="/ilogin/">iLogin</a></li>
                         <li><a href="/map/">Maps</a></li>
-                        <li><a href="http://utap.tennessee.edu/">MyUT</a></li>
-                        <li><a href="http://news.uthsc.edu/">News</a></li>
+                        <li><a href="https://utap.tennessee.edu/">MyUT</a></li>
+                        <li><a href="https://news.uthsc.edu/">News</a></li>
                         <li><a href="/email/">Webmail</a></li>
                     </ul>
                 </li>
@@ -285,7 +285,7 @@
                     <div class="show-for-large">
                         <!--Search form-->
                         <form class="input-group" aria-label="Search the UTHSC site"
-                              action="http://uthsc.edu/search/" method="get" style="margin-bottom:0;">
+                              action="/search/" method="get" style="margin-bottom:0;">
                             <input type="search" aria-label="Search the UTHSC site" role="search" name="s"
                                    placeholder="search" style="margin-right:0;">
                             <div class="input-group-button">
@@ -312,7 +312,7 @@
             style="border-bottom: 1px solid #00835f;">
         <div class="row">
             <div class="medium-10 large-8 small-centered columns">
-                <a href="http://uthsc.edu">
+                <a href="/">
                     <img src="-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
                 </a>
             </div>
@@ -322,7 +322,7 @@
             <div class="hide-for-large columns small-collapse">
                 <!--Search form-->
                 <form class="input-group" aria-label="Search the UTHSC site"
-                      action="http://uthsc.edu/search/" method="get" style="margin-bottom:0;">
+                      action="/search/" method="get" style="margin-bottom:0;">
                     <input type="search" aria-label="Search the UTHSC site" role="search" name="s"
                            placeholder="search" style="margin-right:0;">
                     <div class="input-group-button">
@@ -558,7 +558,7 @@
                                         <span class="news-box-for">for Academics</span></span></h3>
                                 </div>
                                 <div class="columns small-12">
-                                    <?php readfile("http://news.uthsc.edu/news-html/redesign-news-education.php"); ?>
+                                    <?php readfile("https://news.uthsc.edu/news-html/redesign-news-education.php"); ?>
                                 </div>
                             </div>
                         </div>
@@ -596,7 +596,7 @@
                                     <span class="news-box-for">for Research</span></span></h3>
                                 </div>
                                 <div class="columns small-12">
-                                    <?php readfile("http://news.uthsc.edu/news-html/redesign-news-research.php"); ?>
+                                    <?php readfile("https://news.uthsc.edu/news-html/redesign-news-research.php"); ?>
                                 </div>
                             </div>
                         </div>
@@ -632,7 +632,7 @@
                                     <span class="news-box-for">for Clinical Care</span></span></h3>
                                 </div>
                                 <div class="columns small-12">
-                                    <?php readfile("http://news.uthsc.edu/news-html/redesign-news-clinical-care.php"); ?>
+                                    <?php readfile("https://news.uthsc.edu/news-html/redesign-news-clinical-care.php"); ?>
                                 </div>
                             </div>
                         </div>
@@ -667,7 +667,7 @@
                                     <span class="news-box-for">for Public Service</span></span></h3>
                                 </div>
                                 <div class="columns small-12">
-                                    <?php readfile("http://news.uthsc.edu/news-html/redesign-news-public-service.php"); ?>
+                                    <?php readfile("https://news.uthsc.edu/news-html/redesign-news-public-service.php"); ?>
                                 </div>
                             </div>
                         </div>
@@ -817,7 +817,7 @@
                                 </h3>
                             </div>
                             <div class="columns small-12">
-                                <?php readfile("http://news.uthsc.edu/news-html/redesign-news-education.php"); ?>
+                                <?php readfile("https://news.uthsc.edu/news-html/redesign-news-education.php"); ?>
                             </div>
                         </div>
                     </div>
@@ -945,7 +945,7 @@
                                 </h3>
                             </div>
                             <div class="columns small-12">
-                                <?php readfile("http://news.uthsc.edu/news-html/redesign-news-research.php"); ?>
+                                <?php readfile("https://news.uthsc.edu/news-html/redesign-news-research.php"); ?>
                             </div>
                         </div>
                     </div>
@@ -986,7 +986,7 @@
                                 </h3>
                             </div>
                             <div class="columns small-12">
-                                <?php readfile("http://news.uthsc.edu/news-html/redesign-news-clinical-care.php"); ?>
+                                <?php readfile("https://news.uthsc.edu/news-html/redesign-news-clinical-care.php"); ?>
                             </div>
                         </div>
                     </div>
@@ -1027,7 +1027,7 @@
                                 </h3>
                             </div>
                             <div class="columns small-12">
-                                <?php readfile("http://news.uthsc.edu/news-html/redesign-news-public-service.php"); ?>
+                                <?php readfile("https://news.uthsc.edu/news-html/redesign-news-public-service.php"); ?>
                             </div>
                         </div>
                     </div>
@@ -1203,28 +1203,28 @@
         <!--******************-->
         <div class="row hide-for-print">
             <div class="columns text-center uthsc-social-icons" aria-label="UTHSC on social media">
-                <a href="http://facebook.com/uthsc" aria-label="facebook">
+                <a href="https://facebook.com/uthsc" aria-label="facebook">
                     <span class="fa fa-facebook fa-2x fa-inverse"></span>
                     <span class="show-for-sr">facebook</span>
                 </a>
-                <a href="http://twitter.com/uthsc" aria-label="twitter">
+                <a href="https://twitter.com/uthsc" aria-label="twitter">
                     <span class="fa fa-twitter fa-2x fa-inverse"></span>
                     <span class="show-for-sr">twitter</span>
                 </a>
-                <a href="http://instagram.com/uthsc" aria-label="instagram">
+                <a href="https://instagram.com/uthsc" aria-label="instagram">
                     <span class="fa fa-instagram fa-2x fa-inverse"></span>
                     <span class="show-for-sr">instagram</span>
                 </a>
-                <a href="http://linkedin.com/company/university-of-tennessee-health-science-center"
+                <a href="https://linkedin.com/company/university-of-tennessee-health-science-center"
                    aria-label="linked in">
                     <span class="fa fa-linkedin fa-2x fa-inverse"></span>
                     <span class="show-for-sr">linked in</span>
                 </a>
-                <a href="http://youtube.com/user/uthsc" aria-label="youtube">
+                <a href="https://youtube.com/user/uthsc" aria-label="youtube">
                     <span class="fa fa-youtube fa-2x fa-inverse"></span>
                     <span class="show-for-sr">You-tube</span>
                 </a>
-                <a href="http://pinterest.com/uthsc/" aria-label="pinterest">
+                <a href="https://pinterest.com/uthsc/" aria-label="pinterest">
                     <span class="fa fa-pinterest fa-2x fa-inverse"></span>
                     <span class="show-for-sr">pinterest</span>
                 </a>
@@ -1499,7 +1499,7 @@
     <div class="off-canvas-search">
         <!--Search form-->
         <form class="input-group" aria-label="Search the UTHSC site"
-              action="http://uthsc.edu/search/" method="get" style="margin-bottom:0;">
+              action="/search/" method="get" style="margin-bottom:0;">
             <input type="search" aria-label="Search the UTHSC site" role="search" name="s"
                    placeholder="search" style="margin-right:0;">
             <div class="input-group-button">
@@ -1616,7 +1616,7 @@
     <div class="off-canvas-search">
         <!--Search form-->
         <form class="input-group" aria-label="Search the UTHSC site"
-              action="http://uthsc.edu/search/" method="get" style="margin-bottom:0;">
+              action="/search/" method="get" style="margin-bottom:0;">
             <input type="search" aria-label="Search the UTHSC site" role="search" name="s"
                    placeholder="search" style="margin-right:0;">
             <div class="input-group-button">
