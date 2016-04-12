@@ -1331,12 +1331,14 @@
                 <div class="columns medium-6 large-4 social-site">
                     <h5><span class="fa fa-facebook fa-2x"> Facebook</span></h5>
                     <div data-href="https://www.facebook.com/uthsc"
-                         data-width="300" data-hide-cover="true"
+                         data-width="300"
+                         data-height="680"
+                         data-hide-cover="true"
                          data-show-facepile="false"
                          data-show-posts="true"
                          data-equalizer-watch="homepage-social"
                          class="fb-page"
-                    data-small-header="true">
+                         data-small-header="true">
                         <div class="fb-xfbml-parse-ignore">
                             <blockquote cite="https://www.facebook.com/uthsc">
                                 <a href="https://www.facebook.com/uthsc">University of Tennessee Health Science Center</a>
@@ -1354,7 +1356,7 @@
                        class="twitter-timeline"
                        data-chrome="noheader noborders nofooter noscrollbar"
                        width="300"
-                       height="500"
+                       height="680"
                        data-aria-polite="assertive">
                         Tweets by @uthsc
                         <script>
