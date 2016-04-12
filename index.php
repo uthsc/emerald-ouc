@@ -248,7 +248,7 @@
                     </ul>
                 </li>
                 <li><a href="/give/"><span class="fa fa-gift"></span> Make a Gift</a></li>
-                <li><a href="template.html"><span class="fa fa-road"></span> Take a Tour</a></li>
+                <li><a href="template.php"><span class="fa fa-road"></span> Take a Tour</a></li>
                 <li>
                     <div class="show-for-large">
                         <!--Search form-->
@@ -1723,14 +1723,14 @@
      aria-hidden="true">
     <!--Breadcrumbs-->
     <div class="uthsc-off-canvas-breadcrumbs button-group">
-        <a href="index.html" class="button home-button"><span class="fa fa-home"></span></a>
+        <a href="index.php" class="button home-button"><span class="fa fa-home"></span></a>
         <button class="button breadcrumbs-button dropdown" type="button" data-toggle="left-breadcrumbs-dropdown">
             Breadcrumbs Back Home
         </button>
         <div class="dropdown-pane bottom" id="left-breadcrumbs-dropdown" data-dropdown="data-dropdown"
              data-v-offset="0" data-auto-focus="true">
             <ul class="uthsc-off-canvas-breadcrumbs-list">
-                <li><a href="index.html" title="Home">Back to the Homepage</a></li>
+                <li><a href="index.php" title="Home">Back to the Homepage</a></li>
                 <li><a href="#" title="College of Medicine">College of Medicine</a></li>
                 <li><a href="#" title="Office of Medical Education">Office of Medical Education</a></li>
                 <li><a href="#" title="Clerkships">Clerkships</a></li>
@@ -1840,14 +1840,14 @@
 
     <!--Breadcrumbs-->
     <div class="uthsc-off-canvas-breadcrumbs button-group">
-        <a href="index.html" class="button home-button"><span class="fa fa-home"></span></a>
+        <a href="index.php" class="button home-button"><span class="fa fa-home"></span></a>
         <button class="button breadcrumbs-button dropdown" type="button" data-toggle="right-breadcrumbs-dropdown">
             Breadcrumbs Back Home
         </button>
         <div class="dropdown-pane bottom" id="right-breadcrumbs-dropdown" data-dropdown="data-dropdown"
              data-v-offset="0" data-auto-focus="true">
             <ul class="uthsc-off-canvas-breadcrumbs-list">
-                <li><a href="index.html" title="Home">Back to the Homepage</a></li>
+                <li><a href="index.php" title="Home">Back to the Homepage</a></li>
                 <li><a href="#" title="College of Medicine">College of Medicine</a></li>
                 <li><a href="#" title="Office of Medical Education">Office of Medical Education</a></li>
                 <li><a href="#" title="Clerkships">Clerkships</a></li>
@@ -1888,7 +1888,7 @@
     </div>
 
     <a href="#" class="call-to-action-link"><span class="fa fa-gift"></span>&emsp;Make a Gift</a>
-    <a href="template.html" class="call-to-action-link"><span class="fa fa-road"></span>&emsp;Take a Tour</a>
+    <a href="template.php" class="call-to-action-link"><span class="fa fa-road"></span>&emsp;Take a Tour</a>
 
     <ul>
         <li><span class="link-heading">Information for...</span>
