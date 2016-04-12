@@ -23,6 +23,38 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
           href="http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
+    <?php
+    function get_uthsc_instagram (
+        $user_id='302960952',
+        $access_token='302960952.a74da0d.1d808ab911114752b305e9877884d51c',
+        $count='9'
+    ){
+
+        $url = 'https://api.instagram.com/v1/users/'.$user_id.'/media/recent/?access_token='.$access_token.'&count='.$count;
+
+        // Cache the results
+        $cache = './'.sha1($url).'.json';
+        if(file_exists($cache) && filemtime($cache) > time() - 60*60){
+            // If a cache file exists, and it is newer than 1 hour, use it
+            $jsonData = json_decode(file_get_contents($cache));
+        } else {
+            $jsonData = json_decode((file_get_contents($url)));
+            file_put_contents($cache,json_encode($jsonData));
+        }
+
+        foreach ($jsonData->data as $key=>$value) {
+            $uthsc_feed .= "\t".'
+                                    <div class="column">
+                                        <a href="'.$value->link.'">
+                                            <img class="thumbnail" src="'.$value->images->thumbnail->url.'" alt="'.$value->caption->text.'" title="'.$value->caption->text.'" />
+                                        </a>
+                                    </div>
+                                '.PHP_EOL;
+        }
+
+        return $uthsc_feed;
+    }
+    ?>
 </head>
 <body class="homepage">
 
@@ -248,7 +280,7 @@
                     </ul>
                 </li>
                 <li><a href="/give/"><span class="fa fa-gift"></span> Make a Gift</a></li>
-                <li><a href="template.html"><span class="fa fa-road"></span> Take a Tour</a></li>
+                <li><a href="template.php"><span class="fa fa-road"></span> Take a Tour</a></li>
                 <li>
                     <div class="show-for-large">
                         <!--Search form-->
@@ -526,57 +558,7 @@
                                         <span class="news-box-for">for Academics</span></span></h3>
                                 </div>
                                 <div class="columns small-12">
-                                    <a href="http://news.uthsc.edu/15886-2/">
-                                        <div class = "row collapse">
-                                            <div class = "columns small-4 medium-12">
-                                                <figure>
-                                                    <img width="300"
-                                                         height="300"
-                                                         src="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/03/PhilWenk-smaller-file-size.jpg?resize=300%2C300"
-                                                         class="attachment-thumbnail size-thumbnail wp-post-image" alt="Phil Wenk, DDS &#039;77" />
-                                                </figure>
-                                            </div>
-                                            <div class = "columns small-12 small-centered">
-                                                <p>
-                                                    <span class="anchortext">UTHSC College of Dentistry Honors Drs. Phil
-                                                        Wenk and Justin Towner With 2016 Outstanding Alumnus Awards</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <a href = "http://news.uthsc.edu/2016-live-summit-educates-supports-empowers-spreads-message-in-the-african-american-community-about-early-detection-and-treatment-for-breast-cancer/">
-                                        <div class = "row collapse">
-                                            <div class = "columns small-4 medium-12 large-5">
-                                                <figure>
-                                                    <img width="300"
-                                                         height="300"
-                                                         src="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=300%2C300"
-                                                         class="attachment-thumbnail size-thumbnail wp-post-image" alt="Alice and Tabitha Foxx"
-                                                         srcset="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=300%2C300 300w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=768%2C768 768w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=1024%2C1024 1024w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=320%2C320 320w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?w=1280 1280w"
-                                                         sizes="(max-width: 300px) 100vw, 300px" /></figure>
-                                            </div>
-                                            <div class = "columns small-12 small-centered medium-12 medium-uncentered large-7 large-push-1">
-                                                <p>
-                                                    <span class="anchortext">2016 LIVE! Summit Educates, Supports,
-                                                        Empowers; Spreads Message in the  African-American Community about
-                                                        Early Detection and Treatment for Breast Cancer</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a><a href = "http://news.uthsc.edu/ut-impact-dipietro-gives-first-state-ut-address/">
-                                        <div class = "row collapse">
-                                            <div class = "columns small-4 medium-12 large-5">
-                                                <figure><img width="300" height="300" src="http://i1.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Dr.-DiPietro-Speaks.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="UT President Joe DiPietro" /></figure>
-                                            </div>
-                                            <div class = "columns small-12 small-centered medium-12 medium-uncentered large-7 large-push-1">
-                                                <p>
-                                                    <span class="anchortext">UT President Joe DiPietro Gives First State
-                                                        of UT Address; System is Strong and Accomplishing More Every
-                                                        Day</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </a>
+                                    <?php readfile("http://news.uthsc.edu/news-html/redesign-news-education.php"); ?>
                                 </div>
                             </div>
                         </div>
@@ -614,34 +596,7 @@
                                     <span class="news-box-for">for Research</span></span></h3>
                                 </div>
                                 <div class="columns small-12">
-                                    <a href="http://news.uthsc.edu/research-team-led-by-dr-jim-bailey-receives-5-2-million-to-study-effectiveness-of-text-messaging-and-health-coaching-in-improving-outcomes-for-vulnerable-populations/">
-                                        <div class = "row collapse">
-                                            <div class = "columns small-4 medium-12">
-                                                <figure><img width="300" height="300" src="http://i0.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Dr.-Jim-Bailey-at-UTHSC.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Dr. Jim Bailey at UTHSC" /></figure>
-                                            </div>
-                                            <div class = "columns small-12 small-centered">
-                                                <p><span class="anchortext">Research Team Led by Dr. Jim Bailey Receives $5.2 Million to Study Effectiveness of Text Messaging and Health Coaching in Improving Outcomes for Vulnerable Populations</span></p>
-                                            </div>
-                                        </div>
-                                    </a><a href = "http://news.uthsc.edu/ut-impact-dipietro-gives-first-state-ut-address/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12 large-5">
-                                            <figure><img width="300" height="300" src="http://i1.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Dr.-DiPietro-Speaks.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="UT President Joe DiPietro" /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered medium-12 medium-uncentered large-7 large-push-1">
-                                            <p><span class="anchortext">UT President Joe DiPietro Gives First State of UT Address; System is Strong and Accomplishing More Every Day</span></p>
-                                        </div>
-                                    </div>
-                                </a><a href = "http://news.uthsc.edu/study-led-by-uthscs-robert-w-williams-phd-establishes-link-between-dna-and-disease-risk-lays-groundwork-for-precision-medicine/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12 large-5">
-                                            <figure><img width="300" height="300" src="http://i1.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Dr.-Robert-W.-Williams.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Dr. Robert W. Williams" /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered medium-12 medium-uncentered large-7 large-push-1">
-                                            <p><span class="anchortext">Study Led by UTHSC's Robert W. Williams, PhD, Establishes Link Between DNA and Disease Risk; Lays Groundwork for Precision Medicine</span></p>
-                                        </div>
-                                    </div>
-                                </a>
+                                    <?php readfile("http://news.uthsc.edu/news-html/redesign-news-research.php"); ?>
                                 </div>
                             </div>
                         </div>
@@ -677,34 +632,7 @@
                                     <span class="news-box-for">for Clinical Care</span></span></h3>
                                 </div>
                                 <div class="columns small-12">
-                                    <a href="http://newsdevl.uthsc.edu/college-pharmacy-researchers-dr-theodore-cory-santosh-kumar-working-together-battle-hiv-aids/">
-                                        <div class = "row collapse">
-                                            <div class = "columns small-4 medium-12">
-                                                <figure><img width="300" height="300" src="http://newsdevl.uthsc.edu/wp-content/uploads/2015/12/Dr.-Cory-and-Kumar1-300x300.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Teamwork is the ticket to successful research efforts for lab partners Drs. Theodore (Ted) Cory, left, and Santosh Kumar" /></figure>
-                                            </div>
-                                            <div class = "columns small-12 small-centered">
-                                                <p><span class="anchortext">College of Pharmacy Researchers Dr. Theodore Cory and Santosh Kumar Are Working Together to Battle HIV and AIDS</span></p>
-                                            </div>
-                                        </div>
-                                    </a><a href = "http://newsdevl.uthsc.edu/new-west-cancer-center-opens-bringing-new-day-comprehensive-multidisciplinary-cancer-care-mid-south/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12 large-5">
-                                            <figure><img width="300" height="300" src="http://newsdevl.uthsc.edu/wp-content/uploads/2015/11/West-Cancer-Center-Opening-300x300.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="West Cancer Center Opening" /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered medium-12 medium-uncentered large-7 large-push-1">
-                                            <p><span class="anchortext">New West Cancer Center Opens, Bringing 'New Day' in Comprehensive, Multidisciplinary Cancer Care to Mid-South</span></p>
-                                        </div>
-                                    </div>
-                                </a><a href = "http://newsdevl.uthsc.edu/methodist-le-bonheur-healthcare-university-tennessee-health-science-center-receive-40-million-gift/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12 large-5">
-                                            <figure><img width="300" height="300" src="http://newsdevl.uthsc.edu/wp-content/uploads/2015/11/Eason-Transplant-Surgery2-300x300.jpg" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Dr. James  Eason, center, in the  operating room." /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered medium-12 medium-uncentered large-7 large-push-1">
-                                            <p><span class="anchortext">Methodist Le Bonheur Healthcare and the University of Tennessee Health Science Center Receive $40 Million Gift</span></p>
-                                        </div>
-                                    </div>
-                                </a>
+                                    <?php readfile("http://news.uthsc.edu/news-html/redesign-news-clinical-care.php"); ?>
                                 </div>
                             </div>
                         </div>
@@ -739,34 +667,7 @@
                                     <span class="news-box-for">for Public Service</span></span></h3>
                                 </div>
                                 <div class="columns small-12">
-                                    <a href="http://news.uthsc.edu/2016-live-summit-educates-supports-empowers-spreads-message-in-the-african-american-community-about-early-detection-and-treatment-for-breast-cancer/">
-                                        <div class = "row collapse">
-                                            <div class = "columns small-4 medium-12">
-                                                <figure><img width="300" height="300" src="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Alice and Tabitha Foxx" srcset="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=300%2C300 300w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=768%2C768 768w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=1024%2C1024 1024w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=320%2C320 320w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?w=1280 1280w" sizes="(max-width: 300px) 100vw, 300px" /></figure>
-                                            </div>
-                                            <div class = "columns small-12 small-centered">
-                                                <p><span class="anchortext">2016 LIVE! Summit Educates, Supports, Empowers; Spreads Message in the  African-American Community about Early Detection and Treatment for Breast Cancer</span></p>
-                                            </div>
-                                        </div>
-                                    </a><a href = "http://news.uthsc.edu/ut-impact-dipietro-gives-first-state-ut-address/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12 large-5">
-                                            <figure><img width="300" height="300" src="http://i1.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Dr.-DiPietro-Speaks.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="UT President Joe DiPietro" /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered medium-12 medium-uncentered large-7 large-push-1">
-                                            <p><span class="anchortext">UT President Joe DiPietro Gives First State of UT Address; System is Strong and Accomplishing More Every Day</span></p>
-                                        </div>
-                                    </div>
-                                </a><a href = "http://news.uthsc.edu/pro-bono-pediatric-occupational-therapy-center-to-open-at-uthsc-in-memory-of-ot-student-who-died-in-2015/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12 large-5">
-                                            <figure><img width="300" height="300" src="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Rachel-Kay-Stevens.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Rachel Kay Stevens died suddenly shortly after beginning her Occupational Therapy training at UTHSC. A new pediatric OT clinic is opening at  UTHSC in her memory." /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered medium-12 medium-uncentered large-7 large-push-1">
-                                            <p><span class="anchortext">Pro Bono Pediatric Occupational Therapy Center to Open at UTHSC in Memory of OT Student Who Died in 2015</span></p>
-                                        </div>
-                                    </div>
-                                </a>
+                                    <?php readfile("http://news.uthsc.edu/news-html/redesign-news-public-service.php"); ?>
                                 </div>
                             </div>
                         </div>
@@ -859,41 +760,7 @@
 
             <!--Events-->
             <div id="events" class="row">
-                <div class="columns medium-6 large-3 events">
-                    <div class="event-date"><span>MAR</span><br /><span>12</span></div>
-                    <p class="event-title">
-                        <a href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=2844">
-                            Determined To Be A Doctor Someday
-                        </a>
-                    </p>
-                    <p class="event-time">9:00am</p>
-                </div>
-                <div class="columns medium-6 large-3 events">
-                    <div class="event-date"><span>MAR</span><br /><span>15</span></div>
-                    <p class="event-title">
-                        <a href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=2899">
-                            Molecular Bioinformatics Workshop Series
-                        </a>
-                    </p>
-                    <p class="event-time">12:00pm</p></div>
-                <div class="columns medium-6 large-3 events">
-                    <div class="event-date"><span>MAR</span><br /><span>17</span></div>
-                    <p class="event-title">
-                        <a href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=2911">
-                            VCR Distinguished Lecture Series
-                        </a>
-                    </p>
-                    <p class="event-time">1:00pm</p>
-                </div>
-                <div class="columns medium-6 large-3 events">
-                    <div class="event-date"><span>MAR</span><br /><span>18</span></div>
-                    <p class="event-title">
-                        <a href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=2830">
-                            UTHEI/Southern College of Optometry Joint Meeting
-                        </a>
-                    </p>
-                    <p class="event-time">12:00pm</p>
-                </div>
+                <?php readfile("http://events.uthsc.edu/widgets/uthsc_homepage_2015.php"); ?>
             </div>
             <!--/Events-->
 
@@ -950,34 +817,7 @@
                                 </h3>
                             </div>
                             <div class="columns small-12">
-                                <a href="http://news.uthsc.edu/15886-2/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12">
-                                            <figure><img width="300" height="300" src="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/03/PhilWenk-smaller-file-size.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Phil Wenk, DDS &#039;77" /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered">
-                                            <p><span class="anchortext">UTHSC College of Dentistry Honors Drs. Phil Wenk and Justin Towner With 2016 Outstanding Alumnus Awards</span></p>
-                                        </div>
-                                    </div>
-                                </a><a href = "http://news.uthsc.edu/2016-live-summit-educates-supports-empowers-spreads-message-in-the-african-american-community-about-early-detection-and-treatment-for-breast-cancer/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12 large-5">
-                                            <figure><img width="300" height="300" src="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Alice and Tabitha Foxx" srcset="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=300%2C300 300w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=768%2C768 768w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=1024%2C1024 1024w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=320%2C320 320w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?w=1280 1280w" sizes="(max-width: 300px) 100vw, 300px" /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered medium-12 medium-uncentered large-7 large-push-1">
-                                            <p><span class="anchortext">2016 LIVE! Summit Educates, Supports, Empowers; Spreads Message in the  African-American Community about Early Detection and Treatment for Breast Cancer</span></p>
-                                        </div>
-                                    </div>
-                                </a><a href = "http://news.uthsc.edu/ut-impact-dipietro-gives-first-state-ut-address/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12 large-5">
-                                            <figure><img width="300" height="300" src="http://i1.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Dr.-DiPietro-Speaks.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="UT President Joe DiPietro" /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered medium-12 medium-uncentered large-7 large-push-1">
-                                            <p><span class="anchortext">UT President Joe DiPietro Gives First State of UT Address; System is Strong and Accomplishing More Every Day</span></p>
-                                        </div>
-                                    </div>
-                                </a>
+                                <?php readfile("http://news.uthsc.edu/news-html/redesign-news-education.php"); ?>
                             </div>
                         </div>
                     </div>
@@ -1105,34 +945,7 @@
                                 </h3>
                             </div>
                             <div class="columns small-12">
-                                <a href="http://news.uthsc.edu/research-team-led-by-dr-jim-bailey-receives-5-2-million-to-study-effectiveness-of-text-messaging-and-health-coaching-in-improving-outcomes-for-vulnerable-populations/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12">
-                                            <figure><img width="300" height="300" src="http://i0.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Dr.-Jim-Bailey-at-UTHSC.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Dr. Jim Bailey at UTHSC" /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered">
-                                            <p><span class="anchortext">Research Team Led by Dr. Jim Bailey Receives $5.2 Million to Study Effectiveness of Text Messaging and Health Coaching in Improving Outcomes for Vulnerable Populations</span></p>
-                                        </div>
-                                    </div>
-                                </a><a href = "http://news.uthsc.edu/ut-impact-dipietro-gives-first-state-ut-address/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12 large-5">
-                                            <figure><img width="300" height="300" src="http://i1.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Dr.-DiPietro-Speaks.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="UT President Joe DiPietro" /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered medium-12 medium-uncentered large-7 large-push-1">
-                                            <p><span class="anchortext">UT President Joe DiPietro Gives First State of UT Address; System is Strong and Accomplishing More Every Day</span></p>
-                                        </div>
-                                    </div>
-                                </a><a href = "http://news.uthsc.edu/study-led-by-uthscs-robert-w-williams-phd-establishes-link-between-dna-and-disease-risk-lays-groundwork-for-precision-medicine/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12 large-5">
-                                            <figure><img width="300" height="300" src="http://i1.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Dr.-Robert-W.-Williams.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Dr. Robert W. Williams" /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered medium-12 medium-uncentered large-7 large-push-1">
-                                            <p><span class="anchortext">Study Led by UTHSC's Robert W. Williams, PhD, Establishes Link Between DNA and Disease Risk; Lays Groundwork for Precision Medicine</span></p>
-                                        </div>
-                                    </div>
-                                </a>
+                                <?php readfile("http://news.uthsc.edu/news-html/redesign-news-research.php"); ?>
                             </div>
                         </div>
                     </div>
@@ -1173,34 +986,7 @@
                                 </h3>
                             </div>
                             <div class="columns small-12">
-                                <a href="http://news.uthsc.edu/research-team-led-by-dr-jim-bailey-receives-5-2-million-to-study-effectiveness-of-text-messaging-and-health-coaching-in-improving-outcomes-for-vulnerable-populations/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12">
-                                            <figure><img width="300" height="300" src="http://i0.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Dr.-Jim-Bailey-at-UTHSC.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Dr. Jim Bailey at UTHSC" /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered">
-                                            <p><span class="anchortext">Research Team Led by Dr. Jim Bailey Receives $5.2 Million to Study Effectiveness of Text Messaging and Health Coaching in Improving Outcomes for Vulnerable Populations</span></p>
-                                        </div>
-                                    </div>
-                                </a><a href = "http://news.uthsc.edu/2016-live-summit-educates-supports-empowers-spreads-message-in-the-african-american-community-about-early-detection-and-treatment-for-breast-cancer/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12 large-5">
-                                            <figure><img width="300" height="300" src="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Alice and Tabitha Foxx" srcset="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=300%2C300 300w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=768%2C768 768w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=1024%2C1024 1024w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=320%2C320 320w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?w=1280 1280w" sizes="(max-width: 300px) 100vw, 300px" /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered medium-12 medium-uncentered large-7 large-push-1">
-                                            <p><span class="anchortext">2016 LIVE! Summit Educates, Supports, Empowers; Spreads Message in the  African-American Community about Early Detection and Treatment for Breast Cancer</span></p>
-                                        </div>
-                                    </div>
-                                </a><a href = "http://news.uthsc.edu/ut-impact-dipietro-gives-first-state-ut-address/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12 large-5">
-                                            <figure><img width="300" height="300" src="http://i1.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Dr.-DiPietro-Speaks.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="UT President Joe DiPietro" /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered medium-12 medium-uncentered large-7 large-push-1">
-                                            <p><span class="anchortext">UT President Joe DiPietro Gives First State of UT Address; System is Strong and Accomplishing More Every Day</span></p>
-                                        </div>
-                                    </div>
-                                </a>
+                                <?php readfile("http://news.uthsc.edu/news-html/redesign-news-clinical-care.php"); ?>
                             </div>
                         </div>
                     </div>
@@ -1241,34 +1027,7 @@
                                 </h3>
                             </div>
                             <div class="columns small-12">
-                                <a href="http://news.uthsc.edu/2016-live-summit-educates-supports-empowers-spreads-message-in-the-african-american-community-about-early-detection-and-treatment-for-breast-cancer/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12">
-                                            <figure><img width="300" height="300" src="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Alice and Tabitha Foxx" srcset="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=300%2C300 300w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=768%2C768 768w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=1024%2C1024 1024w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?resize=320%2C320 320w, http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Alice-and-Tabitha-Foxx-LIVE-2016.jpg?w=1280 1280w" sizes="(max-width: 300px) 100vw, 300px" /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered">
-                                            <p><span class="anchortext">2016 LIVE! Summit Educates, Supports, Empowers; Spreads Message in the  African-American Community about Early Detection and Treatment for Breast Cancer</span></p>
-                                        </div>
-                                    </div>
-                                </a><a href = "http://news.uthsc.edu/ut-impact-dipietro-gives-first-state-ut-address/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12 large-5">
-                                            <figure><img width="300" height="300" src="http://i1.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Dr.-DiPietro-Speaks.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="UT President Joe DiPietro" /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered medium-12 medium-uncentered large-7 large-push-1">
-                                            <p><span class="anchortext">UT President Joe DiPietro Gives First State of UT Address; System is Strong and Accomplishing More Every Day</span></p>
-                                        </div>
-                                    </div>
-                                </a><a href = "http://news.uthsc.edu/pro-bono-pediatric-occupational-therapy-center-to-open-at-uthsc-in-memory-of-ot-student-who-died-in-2015/">
-                                    <div class = "row collapse">
-                                        <div class = "columns small-4 medium-12 large-5">
-                                            <figure><img width="300" height="300" src="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/02/Rachel-Kay-Stevens.jpg?resize=300%2C300" class="attachment-thumbnail size-thumbnail wp-post-image" alt="Rachel Kay Stevens died suddenly shortly after beginning her Occupational Therapy training at UTHSC. A new pediatric OT clinic is opening at  UTHSC in her memory." /></figure>
-                                        </div>
-                                        <div class = "columns small-12 small-centered medium-12 medium-uncentered large-7 large-push-1">
-                                            <p><span class="anchortext">Pro Bono Pediatric Occupational Therapy Center to Open at UTHSC in Memory of OT Student Who Died in 2015</span></p>
-                                        </div>
-                                    </div>
-                                </a>
+                                <?php readfile("http://news.uthsc.edu/news-html/redesign-news-public-service.php"); ?>
                             </div>
                         </div>
                     </div>
@@ -1299,12 +1058,14 @@
                 <div class="columns medium-6 large-4 social-site">
                     <h5><span class="fa fa-facebook fa-2x"> Facebook</span></h5>
                     <div data-href="https://www.facebook.com/uthsc"
-                         data-width="300" data-hide-cover="true"
+                         data-width="300"
+                         data-height="680"
+                         data-hide-cover="true"
                          data-show-facepile="false"
                          data-show-posts="true"
                          data-equalizer-watch="homepage-social"
                          class="fb-page"
-                    data-small-header="true">
+                         data-small-header="true">
                         <div class="fb-xfbml-parse-ignore">
                             <blockquote cite="https://www.facebook.com/uthsc">
                                 <a href="https://www.facebook.com/uthsc">University of Tennessee Health Science Center</a>
@@ -1322,7 +1083,7 @@
                        class="twitter-timeline"
                        data-chrome="noheader noborders nofooter noscrollbar"
                        width="300"
-                       height="500"
+                       height="680"
                        data-aria-polite="assertive">
                         Tweets by @uthsc
                         <script>
@@ -1333,13 +1094,8 @@
 
                 <div class="columns large-4 social-site">
                     <h5><span class="fa fa-instagram fa-2x"> Instagram</span></h5>
-                    <div data-equalizer-watch="homepage-social" class="div">
-                        <iframe src="http://widget.websta.me/in/uthsc/?s=111&w=2&h=4&b=1&p=5"
-                                allowtransparency="true"
-                                frameborder="0" scrolling="no"
-                                style="border:none;overflow:hidden;width:270px;
-                                height: 600px" >
-                        </iframe> <!-- websta - web.stagram.com -->
+                    <div id="uthsc-instagram" class="row small-up-3 medium-up-4 large-up-2">
+                        <?php echo get_uthsc_instagram(); ?>
                     </div>
                 </div>
             </div>
@@ -1723,14 +1479,14 @@
      aria-hidden="true">
     <!--Breadcrumbs-->
     <div class="uthsc-off-canvas-breadcrumbs button-group">
-        <a href="index.html" class="button home-button"><span class="fa fa-home"></span></a>
+        <a href="index.php" class="button home-button"><span class="fa fa-home"></span></a>
         <button class="button breadcrumbs-button dropdown" type="button" data-toggle="left-breadcrumbs-dropdown">
             Breadcrumbs Back Home
         </button>
         <div class="dropdown-pane bottom" id="left-breadcrumbs-dropdown" data-dropdown="data-dropdown"
              data-v-offset="0" data-auto-focus="true">
             <ul class="uthsc-off-canvas-breadcrumbs-list">
-                <li><a href="index.html" title="Home">Back to the Homepage</a></li>
+                <li><a href="index.php" title="Home">Back to the Homepage</a></li>
                 <li><a href="#" title="College of Medicine">College of Medicine</a></li>
                 <li><a href="#" title="Office of Medical Education">Office of Medical Education</a></li>
                 <li><a href="#" title="Clerkships">Clerkships</a></li>
@@ -1840,14 +1596,14 @@
 
     <!--Breadcrumbs-->
     <div class="uthsc-off-canvas-breadcrumbs button-group">
-        <a href="index.html" class="button home-button"><span class="fa fa-home"></span></a>
+        <a href="index.php" class="button home-button"><span class="fa fa-home"></span></a>
         <button class="button breadcrumbs-button dropdown" type="button" data-toggle="right-breadcrumbs-dropdown">
             Breadcrumbs Back Home
         </button>
         <div class="dropdown-pane bottom" id="right-breadcrumbs-dropdown" data-dropdown="data-dropdown"
              data-v-offset="0" data-auto-focus="true">
             <ul class="uthsc-off-canvas-breadcrumbs-list">
-                <li><a href="index.html" title="Home">Back to the Homepage</a></li>
+                <li><a href="index.php" title="Home">Back to the Homepage</a></li>
                 <li><a href="#" title="College of Medicine">College of Medicine</a></li>
                 <li><a href="#" title="Office of Medical Education">Office of Medical Education</a></li>
                 <li><a href="#" title="Clerkships">Clerkships</a></li>
@@ -1888,7 +1644,7 @@
     </div>
 
     <a href="#" class="call-to-action-link"><span class="fa fa-gift"></span>&emsp;Make a Gift</a>
-    <a href="template.html" class="call-to-action-link"><span class="fa fa-road"></span>&emsp;Take a Tour</a>
+    <a href="template.php" class="call-to-action-link"><span class="fa fa-road"></span>&emsp;Take a Tour</a>
 
     <ul>
         <li><span class="link-heading">Information for...</span>
@@ -1956,6 +1712,11 @@
 <script src="-resources/2015/js/what-input.min.js"></script>
 <script src="-resources/2015/js/foundation.min.js"></script>
 <script src="-resources/2015/js/uthsc.min.js"></script>
+<!--instagram count fix-->
+<script>
+    $('#uthsc-instagram').find(':nth-child(9)').addClass("show-for-small-only")
+</script>
+<!--/instagram count fix-->
 <!--********-->
 <!--/Scripts-->
 <!--********-->

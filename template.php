@@ -189,7 +189,7 @@
         <div class="row">
             <ul class="breadcrumbs column">
                 <li>
-                    <a aria-label="go to UTHSC homepage" href="index.html">
+                    <a aria-label="go to UTHSC homepage" href="index.php">
                         <span class="uthsc-home-icon-breadcrumbs fa fa-home fa-2x"></span>
                     </a>
                     <span class="fa fa-chevron-right" aria-hidden="true"></span>
@@ -950,14 +950,14 @@
      aria-hidden="true">
     <!--Breadcrumbs-->
     <div class="uthsc-off-canvas-breadcrumbs button-group">
-        <a href="index.html" class="button home-button"><span class="fa fa-home"></span></a>
+        <a href="index.php" class="button home-button"><span class="fa fa-home"></span></a>
         <button class="button breadcrumbs-button dropdown" type="button" data-toggle="left-breadcrumbs-dropdown">
             Breadcrumbs Back Home
         </button>
         <div class="dropdown-pane bottom" id="left-breadcrumbs-dropdown" data-dropdown="data-dropdown"
              data-v-offset="0" data-auto-focus="true">
             <ul class="uthsc-off-canvas-breadcrumbs-list">
-                <li><a href="index.html" title="Home">Back to the Homepage</a></li>
+                <li><a href="index.php" title="Home">Back to the Homepage</a></li>
                 <li><a href="#" title="College of Medicine">College of Medicine</a></li>
                 <li><a href="#" title="Office of Medical Education">Office of Medical Education</a></li>
                 <li><a href="#" title="Clerkships">Clerkships</a></li>
@@ -1066,14 +1066,14 @@
 
     <!--Breadcrumbs-->
     <div class="uthsc-off-canvas-breadcrumbs button-group">
-        <a href="index.html" class="button home-button"><span class="fa fa-home"></span></a>
+        <a href="index.php" class="button home-button"><span class="fa fa-home"></span></a>
         <button class="button breadcrumbs-button dropdown" type="button" data-toggle="right-breadcrumbs-dropdown">
             Breadcrumbs Back Home
         </button>
         <div class="dropdown-pane bottom" id="right-breadcrumbs-dropdown" data-dropdown="data-dropdown"
              data-v-offset="0" data-auto-focus="true">
             <ul class="uthsc-off-canvas-breadcrumbs-list">
-                <li><a href="index.html" title="Home">Back to the Homepage</a></li>
+                <li><a href="index.php" title="Home">Back to the Homepage</a></li>
                 <li><a href="#" title="College of Medicine">College of Medicine</a></li>
                 <li><a href="#" title="Office of Medical Education">Office of Medical Education</a></li>
                 <li><a href="#" title="Clerkships">Clerkships</a></li>
