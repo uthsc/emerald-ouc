@@ -23,6 +23,38 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
           href="http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
+    <?php
+    function get_uthsc_instagram (
+        $user_id='302960952',
+        $access_token='302960952.a74da0d.1d808ab911114752b305e9877884d51c',
+        $count='9'
+    ){
+
+        $url = 'https://api.instagram.com/v1/users/'.$user_id.'/media/recent/?access_token='.$access_token.'&count='.$count;
+
+        // Cache the results
+        $cache = './'.sha1($url).'.json';
+        if(file_exists($cache) && filemtime($cache) > time() - 60*60){
+            // If a cache file exists, and it is newer than 1 hour, use it
+            $jsonData = json_decode(file_get_contents($cache));
+        } else {
+            $jsonData = json_decode((file_get_contents($url)));
+            file_put_contents($cache,json_encode($jsonData));
+        }
+
+        foreach ($jsonData->data as $key=>$value) {
+            $uthsc_feed .= "\t".'
+                                    <div class="column">
+                                        <a href="'.$value->link.'">
+                                            <img class="thumbnail" src="'.$value->images->thumbnail->url.'" alt="'.$value->caption->text.'" title="'.$value->caption->text.'" />
+                                        </a>
+                                    </div>
+                                '.PHP_EOL;
+        }
+
+        return $uthsc_feed;
+    }
+    ?>
 </head>
 <body class="homepage">
 
@@ -1333,13 +1365,8 @@
 
                 <div class="columns large-4 social-site">
                     <h5><span class="fa fa-instagram fa-2x"> Instagram</span></h5>
-                    <div data-equalizer-watch="homepage-social" class="div">
-                        <iframe src="http://widget.websta.me/in/uthsc/?s=111&w=2&h=4&b=1&p=5"
-                                allowtransparency="true"
-                                frameborder="0" scrolling="no"
-                                style="border:none;overflow:hidden;width:270px;
-                                height: 600px" >
-                        </iframe> <!-- websta - web.stagram.com -->
+                    <div id="uthsc-instagram" class="row small-up-3 medium-up-4 large-up-2">
+                        <?php echo get_uthsc_instagram(); ?>
                     </div>
                 </div>
             </div>
