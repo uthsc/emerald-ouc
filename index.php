@@ -1983,6 +1983,11 @@
 <script src="-resources/2015/js/what-input.min.js"></script>
 <script src="-resources/2015/js/foundation.min.js"></script>
 <script src="-resources/2015/js/uthsc.min.js"></script>
+<!--instagram count fix-->
+<script>
+    $('#uthsc-instagram').find(':nth-child(9)').addClass("show-for-small-only")
+</script>
+<!--/instagram count fix-->
 <!--********-->
 <!--/Scripts-->
 <!--********-->
