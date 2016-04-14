@@ -1717,6 +1717,41 @@
     $('#uthsc-instagram').find(':nth-child(9)').addClass("show-for-small-only")
 </script>
 <!--/instagram count fix-->
+
+<script>
+    /*
+     * Get posts from news site
+     */
+    function postsAjax(url) {
+
+        $.ajax({
+            type: "GET",
+            url: url,
+            dataType: "json",
+            success: function (data) {
+                posts = data
+                render()
+            }
+        });
+    }
+
+    function render() {
+        console.log(posts);
+    }
+
+    function renderEducationPosts() {
+        postsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts");
+    }
+
+
+    /*
+     * Render names on page load
+     */
+    $(document).ready(function(){
+        renderEducationPosts();
+    });
+</script>
+
 <!--********-->
 <!--/Scripts-->
 <!--********-->
