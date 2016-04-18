@@ -554,8 +554,11 @@
                                     <h3><span class="fa fa-newspaper-o"> News<br>
                                         <span class="news-box-for">for Academics</span></span></h3>
                                 </div>
-                                <div class="columns small-12">
-                                    <?php readfile("https://news.uthsc.edu/news-html/redesign-news-education.php"); ?>
+                                <div class="columns small-12 news-posts-academics">
+
+                                    <!--News Posts Academics Mobile-->
+
+
                                 </div>
                             </div>
                         </div>
@@ -592,8 +595,10 @@
                                     <h3><span class="fa fa-newspaper-o"> News<br>
                                     <span class="news-box-for">for Research</span></span></h3>
                                 </div>
-                                <div class="columns small-12">
-                                    <?php readfile("https://news.uthsc.edu/news-html/redesign-news-research.php"); ?>
+                                <div class="columns small-12 news-posts-research">
+
+                                    <!--News Posts Research Mobile-->
+
                                 </div>
                             </div>
                         </div>
@@ -628,8 +633,10 @@
                                     <h3><span class="fa fa-newspaper-o"> News<br>
                                     <span class="news-box-for">for Clinical Care</span></span></h3>
                                 </div>
-                                <div class="columns small-12">
-                                    <?php readfile("https://news.uthsc.edu/news-html/redesign-news-clinical-care.php"); ?>
+                                <div class="columns small-12 news-posts-clinical-care">
+
+                                    <!--News Posts Clinical Care Mobile-->
+
                                 </div>
                             </div>
                         </div>
@@ -663,8 +670,10 @@
                                     <h3><span class="fa fa-newspaper-o"> News<br>
                                     <span class="news-box-for">for Public Service</span></span></h3>
                                 </div>
-                                <div class="columns small-12">
-                                    <?php readfile("https://news.uthsc.edu/news-html/redesign-news-public-service.php"); ?>
+                                <div class="columns small-12 news-posts-public-service">
+
+                                    <!--News Posts Public Service Mobile-->
+
                                 </div>
                             </div>
                         </div>
@@ -813,8 +822,8 @@
                                     <span class="news-box-for">for Academics</span>
                                 </h3>
                             </div>
-                            <div class="columns small-12">
-                                <?php readfile("https://news.uthsc.edu/news-html/redesign-news-education.php"); ?>
+                            <div class="columns small-12 news-posts-academics">
+                                <!--News Posts Academics Desktop-->
                             </div>
                         </div>
                     </div>
@@ -941,8 +950,8 @@
                                     <span class="news-box-for">for Research</span>
                                 </h3>
                             </div>
-                            <div class="columns small-12">
-                                <?php readfile("https://news.uthsc.edu/news-html/redesign-news-research.php"); ?>
+                            <div class="columns small-12 news-posts-research">
+                                <!--News Posts Research Desktop-->
                             </div>
                         </div>
                     </div>
@@ -982,8 +991,8 @@
                                     <span class="news-box-for">for Clinical Care</span>
                                 </h3>
                             </div>
-                            <div class="columns small-12">
-                                <?php readfile("https://news.uthsc.edu/news-html/redesign-news-clinical-care.php"); ?>
+                            <div class="columns small-12 news-posts-clinical-care">
+                                <!--News Posts Clinical Care Desktop-->
                             </div>
                         </div>
                     </div>
@@ -1023,8 +1032,8 @@
                                     <span class="news-box-for">for Public Service</span>
                                 </h3>
                             </div>
-                            <div class="columns small-12">
-                                <?php readfile("https://news.uthsc.edu/news-html/redesign-news-public-service.php"); ?>
+                            <div class="columns small-12 news-posts-public-service">
+                                <!--News Posts Public Service Desktop-->
                             </div>
                         </div>
                     </div>
