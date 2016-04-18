@@ -48,7 +48,8 @@ gulp.task('buildjs', function() {
       './js/app.js',
       './js/partials/uthsc.off-canvas.js',
       './js/partials/uthsc.section-nav.js',
-      './js/partials/uthsc.safari-bottom-nav-fix.js'
+      './js/partials/uthsc.safari-bottom-nav-fix.js',
+      './js/partials/uthsc.homepage-news.js'
       ])
           .pipe($.concat('uthsc.js'))
           .pipe(gulp.dest('./-resources/2015/js'))
