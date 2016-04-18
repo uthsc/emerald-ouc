@@ -554,8 +554,11 @@
                                     <h3><span class="fa fa-newspaper-o"> News<br>
                                         <span class="news-box-for">for Academics</span></span></h3>
                                 </div>
-                                <div class="columns small-12">
-                                    <?php readfile("https://news.uthsc.edu/news-html/redesign-news-education.php"); ?>
+                                <div class="columns small-12 news-posts-academics">
+
+                                    <!--News Posts Academics Mobile-->
+
+
                                 </div>
                             </div>
                         </div>
@@ -592,8 +595,10 @@
                                     <h3><span class="fa fa-newspaper-o"> News<br>
                                     <span class="news-box-for">for Research</span></span></h3>
                                 </div>
-                                <div class="columns small-12">
-                                    <?php readfile("https://news.uthsc.edu/news-html/redesign-news-research.php"); ?>
+                                <div class="columns small-12 news-posts-research">
+
+                                    <!--News Posts Research Mobile-->
+
                                 </div>
                             </div>
                         </div>
@@ -628,8 +633,10 @@
                                     <h3><span class="fa fa-newspaper-o"> News<br>
                                     <span class="news-box-for">for Clinical Care</span></span></h3>
                                 </div>
-                                <div class="columns small-12">
-                                    <?php readfile("https://news.uthsc.edu/news-html/redesign-news-clinical-care.php"); ?>
+                                <div class="columns small-12 news-posts-clinical-care">
+
+                                    <!--News Posts Clinical Care Mobile-->
+
                                 </div>
                             </div>
                         </div>
@@ -663,8 +670,10 @@
                                     <h3><span class="fa fa-newspaper-o"> News<br>
                                     <span class="news-box-for">for Public Service</span></span></h3>
                                 </div>
-                                <div class="columns small-12">
-                                    <?php readfile("https://news.uthsc.edu/news-html/redesign-news-public-service.php"); ?>
+                                <div class="columns small-12 news-posts-public-service">
+
+                                    <!--News Posts Public Service Mobile-->
+
                                 </div>
                             </div>
                         </div>
@@ -813,8 +822,8 @@
                                     <span class="news-box-for">for Academics</span>
                                 </h3>
                             </div>
-                            <div class="columns small-12">
-                                <?php readfile("https://news.uthsc.edu/news-html/redesign-news-education.php"); ?>
+                            <div class="columns small-12 news-posts-academics">
+                                <!--News Posts Academics Desktop-->
                             </div>
                         </div>
                     </div>
@@ -941,8 +950,8 @@
                                     <span class="news-box-for">for Research</span>
                                 </h3>
                             </div>
-                            <div class="columns small-12">
-                                <?php readfile("https://news.uthsc.edu/news-html/redesign-news-research.php"); ?>
+                            <div class="columns small-12 news-posts-research">
+                                <!--News Posts Research Desktop-->
                             </div>
                         </div>
                     </div>
@@ -982,8 +991,8 @@
                                     <span class="news-box-for">for Clinical Care</span>
                                 </h3>
                             </div>
-                            <div class="columns small-12">
-                                <?php readfile("https://news.uthsc.edu/news-html/redesign-news-clinical-care.php"); ?>
+                            <div class="columns small-12 news-posts-clinical-care">
+                                <!--News Posts Clinical Care Desktop-->
                             </div>
                         </div>
                     </div>
@@ -1023,8 +1032,8 @@
                                     <span class="news-box-for">for Public Service</span>
                                 </h3>
                             </div>
-                            <div class="columns small-12">
-                                <?php readfile("https://news.uthsc.edu/news-html/redesign-news-public-service.php"); ?>
+                            <div class="columns small-12 news-posts-public-service">
+                                <!--News Posts Public Service Desktop-->
                             </div>
                         </div>
                     </div>
@@ -1719,36 +1728,97 @@
 <!--/instagram count fix-->
 
 <script>
+
+
+
+
+
     /*
      * Get posts from news site
      */
-    function postsAjax(url) {
-
+    function postsAjax(url, containerElement) {
         $.ajax({
             type: "GET",
             url: url,
             dataType: "json",
             success: function (data) {
-                posts = data
-                render()
+                posts = data;
+                render(containerElement);
             }
         });
     }
 
-    function render() {
+    function parseNewsPosts() {
+
+        var html = '';
+
+        for (var i=0;i<3;i++) {
+
+            var postLink = posts[i]['link'],
+                featuredImageLink = '',
+                postTitle = posts[i]['title']['rendered'],
+                imageVisibilityClass = '',
+                titleVisibilityClass = '',
+                imageAltText = ''
+
+            if (typeof posts[i]._embedded['https://api.w.org/featuredmedia'] !== 'undefined') {
+                featuredImageLink = posts[i]._embedded['https://api.w.org/featuredmedia'][0]['source_url'];
+                featuredImageLink = featuredImageLink.replace('.jpg', '-300x300.jpg')
+            }
+
+
+            if (i > 0) {
+                imageVisibilityClass = 'large-5';
+                titleVisibilityClass = 'medium-12 medium-uncentered large-7 large-push-1';
+            }
+
+            html += '<a href="' + postLink + '"><div class="row collapse">' +
+                        '<div class="columns small-4 medium-12' + imageVisibilityClass + '"> ' +
+                            '<figure> ' +
+                                '<img width="300" height="300" src="' + featuredImageLink + '"' +
+                                'class="attachment-thumbnail size-thumbnail wp-post-image" ' +
+                                'alt="Radhakrishna Feature"' +
+                            '</figure>' +
+                        '</div>' +
+                        '<div class="columns small-12 small-centered' + titleVisibilityClass + '">' +
+                        '<p><span class="anchortext">' + postTitle +'</span></p></div> ' +
+                    '</div></a>';
+        }
+
+        return html;
+
+    }
+
+    function render(element) {
+        $(element).empty();
+        $(element).html(parseNewsPosts);
         console.log(posts);
     }
 
     function renderEducationPosts() {
-        postsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts");
+        postsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts?categories=59&per_page=3&_embed", '.news-posts-academics');
     }
 
+    function renderResearchPosts() {
+        postsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts?categories=60&per_page=3&_embed", '.news-posts-research');
+    }
+
+    function renderClinicalCarePosts() {
+        postsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts?categories=61&per_page=3&_embed", '.news-posts-clinical-care');
+    }
+
+    function renderPublicServicePosts() {
+        postsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts?categories=331&per_page=3&_embed", '.news-posts-public-service');
+    }
 
     /*
      * Render names on page load
      */
     $(document).ready(function(){
         renderEducationPosts();
+        renderResearchPosts();
+        renderClinicalCarePosts();
+        renderPublicServicePosts();
     });
 </script>
 
