@@ -59,6 +59,11 @@ $uthsc-section-nav-border: scale-color($uthsc-breadcrumbs-background, $lightness
 
   #uthsc-section-navigation {
 
+    //Overide of foundation's float right last column to keep dropdowns with less than 6 items left aligned
+    .column.uthsc-navigation-column:last-child:not(:first-child), .columns.uthsc-navigation-column:last-child:not(:first-child) {
+      float: left;
+    }
+
     background-color: $uthsc-green;
 
     a {
