@@ -1523,7 +1523,7 @@
     </button>
 
     <ul>
-        <li><span class="link-heading">Menu Dropdown One</span>
+        <li><a href="#" class="link-heading">Menu Dropdown One</a>
             <ul>
                 <li><a href="#">First Item in Dropdown</a></li>
                 <li><a href="#">Second Item in Dropdown</a></li>
@@ -1532,7 +1532,7 @@
                 <li><a href="#">Fifth Item in Dropdown</a></li>
             </ul>
         </li>
-        <li><span class="link-heading">Menu Dropdown Two</span>
+        <li><a href="#" class="link-heading">Menu Dropdown Two</a>
             <ul>
                 <li><a href="#">First Item in Dropdown</a></li>
                 <li><a href="#">Second Item in Dropdown</a></li>
@@ -1540,7 +1540,7 @@
                 <li><a href="#">Fourth Item in Dropdown</a></li>
             </ul>
         </li>
-        <li><span class="link-heading">Menu Dropdown Three</span>
+        <li><a href="#" class="link-heading">Menu Dropdown Three</a>
             <ul>
                 <li><a href="#">First Item in Dropdown</a></li>
                 <li><a href="#">Second Item in Dropdown</a></li>
@@ -1555,7 +1555,7 @@
                 <li><a href="#">Eleventh Item in Dropdown</a></li>
             </ul>
         </li>
-        <li><span class="link-heading">Menu Dropdown Four</span>
+        <li><a href="#" class="link-heading">Menu Dropdown Four</a>
             <ul>
                 <li><a href="#">First Item in Dropdown</a></li>
                 <li><a href="#">Second Item in Dropdown</a></li>
@@ -1566,12 +1566,12 @@
                 <li><a href="#">Seventh Item in Dropdown</a></li>
             </ul>
         </li>
-        <li><span class="link-heading">Menu Dropdown Five</span>
+        <li><a href="#" class="link-heading">Menu Dropdown Five</a>
             <ul>
                 <li><a href="#">First Item in Dropdown</a></li>
             </ul>
         </li>
-        <li><span class="link-heading">Menu Dropdown Six</span>
+        <li><a href="#" class="link-heading">Menu Dropdown Six</a>
             <ul>
                 <li><a href="#">First Item in Dropdown</a></li>
                 <li><a href="#">Second Item in Dropdown</a></li>
