@@ -1161,14 +1161,14 @@
     <div class="mission-links">
         <h2 class="link-heading">Mission</h2>
 
-        <a href="/education/"><i class="fa fa-graduation-cap"></i>&emsp;Academics</a>
-        <a href="/research/"><i class="fa fa-flask"></i>&emsp;Research</a>
-        <a href="/clinicalcare/"><i class="fa fa-medkit"></i>&emsp;Clinical Care</a>
-        <a href="/publicservice/"><i class="fa fa-globe"></i>&emsp;Public Service</a>
+        <a href="/education/"><i class="uthsc-fa-centered fa fa-graduation-cap"></i>&emsp;Academics</a>
+        <a href="/research/"><i class="uthsc-fa-centered fa fa-flask"></i>&emsp;Research</a>
+        <a href="/clinicalcare/"><i class="uthsc-fa-centered fa fa-medkit"></i>&emsp;Clinical Care</a>
+        <a href="/publicservice/"><i class="uthsc-fa-centered fa fa-globe"></i>&emsp;Public Service</a>
     </div>
 
-    <a href="#" class="call-to-action-link"><i class="fa fa-gift"></i>&emsp;Make a Gift</a>
-    <a href="template.php" class="call-to-action-link"><i class="fa fa-road"></i>&emsp;Take a Tour</a>
+    <a href="#" class="call-to-action-link"><i class="uthsc-fa-centered fa fa-gift"></i>&emsp;Make a Gift</a>
+    <a href="template.php" class="call-to-action-link"><i class="uthsc-fa-centered fa fa-road"></i>&emsp;Take a Tour</a>
 
     <ul>
         <li><span class="link-heading">Information for...</span>
