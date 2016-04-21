@@ -440,8 +440,25 @@
                     sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
                     inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
                     voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-                    eos qui ratione voluptatem sequi nesciunt.</p><a href="#" class="button secondary radius">Apply
+                    eos qui ratione voluptatem sequi nesciunt.</p>
+
+                <!--**********-->
+                <!--Flex Video-->
+                <!--**********-->
+                <h4>Flex Video</h4>
+                <p> Flex video makes embedded content responsive</p>
+                <div class="flex-video widescreen">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QLJQRX5iQrs" frameborder="0"
+                            allowfullscreen="true">
+                    </iframe>
+                </div>
+                <!--***********-->
+                <!--/Flex Video-->
+                <!--***********-->
+
+                <a href="#" class="button secondary radius">Apply
                 Now&ensp;<span class="fa fa-graduation-cap"></span></a>
+
             </div>
             <div class="large-4 columns">
                 <h3>Full Width Content Row 2</h3>
