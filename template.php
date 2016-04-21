@@ -215,7 +215,7 @@
     <!--UTHSC Section Nav-->
     <!--*****************-->
     <nav id="uthsc-section-navigation" data-equalizer="nested-links" aria-label="Current section menu"
-         role="navigation" class="hide-for-print hide-class">
+         role="navigation" class="hide-for-print">
         <ul class="row collapse" data-equalizer="heading-links">
 
             <li class="uthsc-navigation-column small-2 columns">

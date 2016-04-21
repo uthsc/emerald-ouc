@@ -107,7 +107,18 @@ $uthsc-section-nav-border: scale-color($uthsc-breadcrumbs-background, $lightness
 
     //Inner Link List
     & > ul > li > ul {
-      //display: none;
+
+      //@include element-invisible;
+      //@include uthsc-element-invisible;
+      position: absolute;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+    }
+
+    &.show-menu ul li ul {
+      clip: auto;
+      position: relative;
+      display: none;
       margin-left: 0;
       margin-top: 0.2em;
       margin-bottom: 0.6em;
