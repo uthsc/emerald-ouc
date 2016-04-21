@@ -318,6 +318,43 @@
         <!--Content Row 1-->
         <div class="row">
             <div class="columns medium-9">
+
+
+                <!--************-->
+                <!--Orbit Slider-->
+                <!--************-->
+                <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit="data-orbit" >
+                    <ul class="orbit-container">
+                        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                        <li class="is-active orbit-slide">
+                            <img class="orbit-image" src="-resources/2015/images/slider-1.jpg" alt="Space">
+                            <figcaption class="orbit-caption">Space, the final frontier.</figcaption>
+                        </li>
+                        <li class="orbit-slide">
+                            <img class="orbit-image" src="-resources/2015/images/slider-2.jpg" alt="Space">
+                            <figcaption class="orbit-caption">Lets Rocket!</figcaption>
+                        </li>
+                        <li class="orbit-slide">
+                            <img class="orbit-image" src="-resources/2015/images/slider-3.jpg" alt="Space">
+                            <figcaption class="orbit-caption">Encapsulating</figcaption>
+                        </li>
+                        <li class="orbit-slide">
+                            <img class="orbit-image" src="-resources/2015/images/slider-4.jpg" alt="Space">
+                            <figcaption class="orbit-caption">Outta This World</figcaption>
+                        </li>
+                    </ul>
+                    <nav class="orbit-bullets">
+                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                    </nav>
+                </div>
+                <!--*************-->
+                <!--/Orbit Slider-->
+                <!--*************-->
+
                 <h3><strong><em>Content</em></strong> <b><i>Row</i></b> 1</h3>
                 <p>This is a full width row with columns inside of it.</p>
                 <p>Thanks to<a href="http://fortawesome.github.io/Font-Awesome/">
@@ -403,8 +440,25 @@
                     sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
                     inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
                     voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-                    eos qui ratione voluptatem sequi nesciunt.</p><a href="#" class="button secondary radius">Apply
+                    eos qui ratione voluptatem sequi nesciunt.</p>
+
+                <!--**********-->
+                <!--Flex Video-->
+                <!--**********-->
+                <h4>Flex Video</h4>
+                <p> Flex video makes embedded content responsive</p>
+                <div class="flex-video widescreen">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QLJQRX5iQrs" frameborder="0"
+                            allowfullscreen="true">
+                    </iframe>
+                </div>
+                <!--***********-->
+                <!--/Flex Video-->
+                <!--***********-->
+
+                <a href="#" class="button secondary radius">Apply
                 Now&ensp;<span class="fa fa-graduation-cap"></span></a>
+
             </div>
             <div class="large-4 columns">
                 <h3>Full Width Content Row 2</h3>
