@@ -233,25 +233,25 @@
                     <ul class="submenu menu vertical" data-submenu>
                         <li>
                             <a href="/education/">
-                                <span class="uthsc-fa-centered fa fa-graduation-cap"></span>
+                                <span class="fa fa-graduation-cap"></span>
                                 Academics
                             </a>
                         </li>
                         <li>
                             <a href="/research/">
-                                <span class="uthsc-fa-centered fa fa-flask"></span>
+                                <span class="fa fa-flask"></span>
                                 Research
                             </a>
                         </li>
                         <li>
                             <a href="/clinicalcare/">
-                                <span class="uthsc-fa-centered fa fa-medkit"></span>
+                                <span class="fa fa-medkit"></span>
                                 Clinical Care
                             </a>
                         </li>
                         <li>
                             <a href="/publicservice/">
-                                <span class="uthsc-fa-centered fa fa-globe"></span>
+                                <span class="fa fa-globe"></span>
                                 Public Service
                             </a>
                         </li>
@@ -1643,14 +1643,14 @@
     <div class="mission-links">
         <h2 class="link-heading">Mission</h2>
 
-        <a href="/education/"><span class="fa fa-graduation-cap"></span>&emsp;Academics</a>
-        <a href="/research/"><span class="fa fa-flask"></span>&emsp;Research</a>
-        <a href="/clinicalcare/"><span class="fa fa-medkit"></span>&emsp;Clinical Care</a>
-        <a href="/publicservice/"><span class="fa fa-globe"></span>&emsp;Public Service</a>
+        <a href="/education/"><span class="uthsc-fa-centered fa fa-graduation-cap"></span>&emsp;Academics</a>
+        <a href="/research/"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
+        <a href="/clinicalcare/"><span class="uthsc-fa-centered fa fa-medkit"></span>&emsp;Clinical Care</a>
+        <a href="/publicservice/"><span class="uthsc-fa-centered fa fa-globe"></span>&emsp;Public Service</a>
     </div>
 
-    <a href="#" class="call-to-action-link"><span class="fa fa-gift"></span>&emsp;Make a Gift</a>
-    <a href="template.php" class="call-to-action-link"><span class="fa fa-road"></span>&emsp;Take a Tour</a>
+    <a href="#" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift"></span>&emsp;Make a Gift</a>
+    <a href="template.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road"></span>&emsp;Take a Tour</a>
 
     <ul>
         <li><span class="link-heading">Information for...</span>
