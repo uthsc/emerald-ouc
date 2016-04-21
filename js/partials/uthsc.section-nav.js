@@ -53,14 +53,14 @@
     function openSubMenu() {
         //$('#uthsc-section-navigation').addClass('uthsc-navigation-active');
         clearTimer();
-        openTimer = setTimeout(expandMenu, 400);
+        openTimer = setTimeout(expandMenu, 500);
     }
 
     function closeSubMenu() {
         //$('#uthsc-section-navigation').removeClass('uthsc-navigation-active');
 
         clearTimer();
-        closeTimer = setTimeout(collapseMenu, 400);
+        closeTimer = setTimeout(collapseMenu, 600);
     }
 
     $("#uthsc-section-navigation").on( 'keyup', function( e ) {
