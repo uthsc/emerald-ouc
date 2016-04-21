@@ -115,7 +115,7 @@ $uthsc-section-nav-border: scale-color($uthsc-breadcrumbs-background, $lightness
       clip: rect(0, 0, 0, 0);
     }
 
-    &.show-class ul li ul {
+    &.show-menu ul li ul {
       clip: auto;
       position: relative;
       display: none;

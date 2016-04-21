@@ -37,7 +37,7 @@
 
     function expandMenu() {
         //$('#uthsc-section-navigation ul li ul').stop(true, true).slideDown(400);
-        $('#uthsc-section-navigation').addClass('show-class');
+        $('#uthsc-section-navigation').addClass('show-menu');
         $('#uthsc-section-navigation ul > li > ul').slideDown( "slow", function() {
             // Animation complete.
         });
@@ -46,7 +46,7 @@
     function collapseMenu() {
         //$('#uthsc-section-navigation ul li ul').stop(true, true).slideUp(400);
         $('#uthsc-section-navigation ul > li > ul').slideUp( "slow", function() {
-            $('#uthsc-section-navigation').removeClass('show-class');
+            $('#uthsc-section-navigation').removeClass('show-menu');
         });
 
     }
