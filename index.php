@@ -233,25 +233,25 @@
                     <ul class="submenu menu vertical" data-submenu>
                         <li>
                             <a href="/education/">
-                                <span class="uthsc-fa-centered fa fa-graduation-cap"></span>
+                                <span class="fa fa-graduation-cap"></span>
                                 Academics
                             </a>
                         </li>
                         <li>
                             <a href="/research/">
-                                <span class="uthsc-fa-centered fa fa-flask"></span>
+                                <span class="fa fa-flask"></span>
                                 Research
                             </a>
                         </li>
                         <li>
                             <a href="/clinicalcare/">
-                                <span class="uthsc-fa-centered fa fa-medkit"></span>
+                                <span class="fa fa-medkit"></span>
                                 Clinical Care
                             </a>
                         </li>
                         <li>
                             <a href="/publicservice/">
-                                <span class="uthsc-fa-centered fa fa-globe"></span>
+                                <span class="fa fa-globe"></span>
                                 Public Service
                             </a>
                         </li>
