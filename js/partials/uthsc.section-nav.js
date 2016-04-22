@@ -47,6 +47,7 @@
         //$('#uthsc-section-navigation ul li ul').stop(true, true).slideUp(400);
         $('#uthsc-section-navigation ul > li > ul').slideUp( "slow", function() {
             $('#uthsc-section-navigation').removeClass('show-menu');
+            $('#uthsc-section-navigation > ul > li > ul').css("display", "");
         });
 
     }
