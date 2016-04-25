@@ -293,6 +293,7 @@
         </ul>
     </nav>
     <div class="uthsc-section-nav-placeholder" data-equalizer-watch="heading-links"></div>
+    </div>
     <!--******************-->
     <!--/UTHSC Section Nav-->
     <!--******************-->
