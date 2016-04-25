@@ -214,9 +214,10 @@
     <!--*****************-->
     <!--UTHSC Section Nav-->
     <!--*****************-->
+    <div data-equalizer="heading-links">
     <nav id="uthsc-section-navigation" data-equalizer="nested-links" aria-label="Current section menu"
          role="navigation" class="hide-for-print">
-        <ul class="row collapse" data-equalizer="heading-links">
+        <ul class="row collapse" >
 
             <li class="uthsc-navigation-column small-2 columns">
                 <a href="#" data-equalizer-watch="heading-links">Menu Dropdown One<br />Menu Dropdown One</a>
