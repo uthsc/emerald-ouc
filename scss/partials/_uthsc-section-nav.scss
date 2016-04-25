@@ -147,28 +147,15 @@ $uthsc-section-nav-border: scale-color($uthsc-breadcrumbs-background, $lightness
 
     }
 
-    &.show-menu {
-      //position: fixed;
-      //width: 100%;
-      //left: 0;
-      //z-index: 100;
-    }
-
     &.show-menu ul li ul {
       clip: auto;
       position: relative;
       display: none;
       width:initial;
 
-      //height: 200px; //What are we going to do about this? It can't be fixed height.
-      //background: blue;
-
       li {
-        &:hover {
-          //background: $uthsc-bg-double-hover;
-        }
+        &:hover {}
       }
-
     }
 
     //hide hover-able nested links from view but remain visible to screen readers
@@ -179,59 +166,13 @@ $uthsc-section-nav-border: scale-color($uthsc-breadcrumbs-background, $lightness
 
     //hide entire navigation menu from view for medium down but remain visible to screen readers
     @include breakpoint(medium down) {
-
       //@include element-invisible;
       @include uthsc-element-invisible;
     }
 
-    .section-navigation-heading-link {
+    .section-navigation-heading-link {}
 
-    }
-
-    .uthsc-navigation-column > a {
-      //background: cadetblue;
-    }
-
-  }
-
-  @mixin old-nav {
-    // Top bar container
-    .uthsc-section-nav {
-      @include section-nav-container;
-
-      .section-navigation-link-heading .section-navigation-link-heading-text{
-        @include vertical-center-absolute;
-      }
-
-      .section-navigation-link-heading {
-        background: $uthsc-green;
-        color: #fff;
-        position:relative;
-      }
-
-
-      //top nav heading link padding
-      li {
-        //reset padding on li's
-        padding:0;
-        //add padding to outer li's
-        &:first-child { padding-left:0.9375rem; }
-        &:last-child { padding-right:0.9375rem; }
-      }
-
-    }
-
-    // Sub-sections
-    // Stack on small screens
-    //@include breakpoint(medium) {
-    //  .top-bar-left {
-    //    float: left;
-    //  }
-    //
-    //  .top-bar-right {
-    //    float: right
-    //  }
-    //}
+    .uthsc-navigation-column > a {}
 
   }
 
