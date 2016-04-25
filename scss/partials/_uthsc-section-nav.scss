@@ -46,25 +46,26 @@ $uthsc-section-nav-border: scale-color($uthsc-breadcrumbs-background, $lightness
 
 @mixin  uthsc-section-nav {
 
-  //this class is added to the section nav to
-  //make it stick to the top of the window
-  .uthsc-sticky {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    border-top: 0;
-  }
-
   #uthsc-section-navigation {
+
+    background-color: $uthsc-green;
+    position:absolute;
+    width:100%;
+    z-index: 100;
+
+    //this class is added to the section nav to
+    //make it stick to the top of the window
+    &.uthsc-sticky {
+      position: fixed;
+      left: 0;
+      top: 0;
+      border-top: 0;
+    }
 
     //Overide of foundation's float right last column to keep dropdowns with less than 6 items left aligned
     .column.uthsc-navigation-column:last-child:not(:first-child), .columns.uthsc-navigation-column:last-child:not(:first-child) {
       float: left;
     }
-
-    background-color: $uthsc-green;
 
     a {
       color: #fff;
@@ -159,15 +160,10 @@ $uthsc-section-nav-border: scale-color($uthsc-breadcrumbs-background, $lightness
       display: none;
       width:initial;
 
-
       //height: 200px; //What are we going to do about this? It can't be fixed height.
       //background: blue;
 
-
       li {
-
-
-
         &:hover {
           //background: $uthsc-bg-double-hover;
         }
