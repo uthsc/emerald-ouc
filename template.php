@@ -166,7 +166,7 @@
     <!--**********************-->
     <!--Emergency Notification-->
     <!--**********************-->
-    <div class="row expanded hide-for-print">
+    <div class="row expanded hide-for-print emergency-notification" style="display:none;">
         <div class="columns callout alert large-12" style="margin-bottom:0; padding:0;" data-closable>
             <div class="row">
                 <h2>Emergency Notification!</h2>
@@ -1237,6 +1237,14 @@
 <script src="-resources/2015/js/what-input.min.js"></script>
 <script src="-resources/2015/js/foundation.min.js"></script>
 <script src="-resources/2015/js/uthsc.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('h1').click(function(){
+            $('.emergency-notification').css('display', '');
+        });
+    });
+</script>
 <!--********-->
 <!--/Scripts-->
 <!--********-->
