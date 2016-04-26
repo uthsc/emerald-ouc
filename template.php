@@ -1237,14 +1237,6 @@
 <script src="-resources/2015/js/what-input.min.js"></script>
 <script src="-resources/2015/js/foundation.min.js"></script>
 <script src="-resources/2015/js/uthsc.min.js"></script>
-
-<script>
-    $(document).ready(function(){
-        $('h1').click(function(){
-            $('.emergency-notification').css('display', '');
-        });
-    });
-</script>
 <!--********-->
 <!--/Scripts-->
 <!--********-->
