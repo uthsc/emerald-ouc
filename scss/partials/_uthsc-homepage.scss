@@ -80,6 +80,27 @@
         font-size: .9rem;
         padding: 0 1rem 0 0;
       }
+
+      figure {
+        float:left;
+        margin-bottom: .25em;
+        margin-right: .75em;
+
+        img {
+          width:100px;
+          height:100px;
+        }
+      }
+
+      .post-01 {
+        @media #{$medium-up} {
+          img {
+            width: 100%;
+            height: inherit;
+          }
+        }
+      }
+
     }
     .hero-name-stripe {
       height: 7vh;
