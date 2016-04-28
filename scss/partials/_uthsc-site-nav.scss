@@ -43,6 +43,7 @@ $uthsc-site-nav-input-width: 160px !default;
 
   &, ul, .dropdown.menu .submenu, .button {
     background-color: $uthsc-site-nav-background;
+    z-index: 200;
   }
     li:hover, li ul li:hover, .button:hover {
       background-color: $uthsc-site-nav-background-hover;
