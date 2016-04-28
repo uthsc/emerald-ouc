@@ -27,6 +27,13 @@ $uthsc-site-nav-input-width: 160px !default;
 
 /// Adds styles for a uthsc-site-nav container.
 @mixin uthsc-site-nav-container {
+
+  @include breakpoint(medium down) {
+    @include element-invisible;
+  }
+
+  font-weight: bold;
+
   @include clearfix;
   padding: $uthsc-site-nav-padding;
 
@@ -36,6 +43,7 @@ $uthsc-site-nav-input-width: 160px !default;
 
   &, ul, .dropdown.menu .submenu, .button {
     background-color: $uthsc-site-nav-background;
+    z-index: 200;
   }
     li:hover, li ul li:hover, .button:hover {
       background-color: $uthsc-site-nav-background-hover;
@@ -72,12 +80,6 @@ $uthsc-site-nav-input-width: 160px !default;
 @mixin uthsc-site-nav {
   // uthsc-site-nav container
   .uthsc-site-nav {
-
-    @include breakpoint(medium down) {
-      @include element-invisible;
-    }
-
-    font-weight: bold;
 
     @include uthsc-site-nav-container;
 
