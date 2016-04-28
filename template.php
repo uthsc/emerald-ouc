@@ -250,10 +250,6 @@
                     <li><a href="#">Fifth Item in Dropdown</a></li>
                     <li><a href="#">Sixth Item in Dropdown</a></li>
                     <li><a href="#">Seventh Item in Dropdown</a></li>
-                    <li><a href="#">Eighth Item in Dropdown</a></li>
-                    <li><a href="#">Ninth Item in Dropdown</a></li>
-                    <li><a href="#">Tenth Item in Dropdown</a></li>
-                    <li><a href="#">Eleventh Item in Dropdown</a></li>
                 </ul>
             </li>
 
@@ -287,12 +283,11 @@
                     <li><a href="#">Fifth Item in Dropdown That Goes to Three Lines Because it Is Long</a></li>
                     <li><a href="#">Sixth Item in Dropdown</a></li>
                     <li><a href="#">Seventh Item in Dropdown</a></li>
-                    <li><a href="#">Eighth Item in Dropdown</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
-    <div class="uthsc-section-nav-placeholder" data-equalizer-watch="heading-links"></div>
+    <div class="uthsc-section-nav-placeholder show-for-large" data-equalizer-watch="heading-links"></div>
     </div>
     <!--******************-->
     <!--/UTHSC Section Nav-->
