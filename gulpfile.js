@@ -8,7 +8,9 @@ var sassPaths = [
 ];
 
 gulp.task('sass', function() {
-  return gulp.src('scss/app.scss')
+  //output unminified css and map
+  gulp.src('scss/app.scss')
+    .pipe($.rename('uthsc.scss'))
     .pipe($.sourcemaps.init())
       .pipe($.sass({
         //outputStyle: 'compressed',
@@ -19,6 +21,16 @@ gulp.task('sass', function() {
       browsers: ['last 2 versions', 'ie >= 9']
     }))
     .pipe($.sourcemaps.write('../css'))
+    .pipe(gulp.dest('./-resources/2015/css'));
+
+  //output minified sylesheet
+  gulp.src('scss/app.scss')
+    .pipe($.sass({
+      outputStyle: 'compressed',
+      includePaths: sassPaths
+    }))
+    .on('error', $.sass.logError)
+    .pipe($.rename('uthsc.min.css'))
     .pipe(gulp.dest('./-resources/2015/css'));
 });
 
