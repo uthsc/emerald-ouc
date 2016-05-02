@@ -18,7 +18,7 @@
     <!--****************-->
 
     <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="-resources/2015/css/app.css">
+    <link rel="stylesheet" href="-resources/2015/css/uthsc.css">
     <link rel="stylesheet" href="-resources/2015/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
