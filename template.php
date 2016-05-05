@@ -467,7 +467,7 @@
                     inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
                     voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
                     eos qui ratione voluptatem sequi nesciunt.</p><a href="#" class="button radius">Academic
-                Calendar&ensp;<i class="fa fa-calendar"></i></a>
+                Calendar&ensp;<span class="fa fa-calendar"></span></a>
             </div>
             <div class="large-4 columns">
                 <h3>Full Width Content Row 2</h3>
@@ -654,6 +654,42 @@
                     <a href="https://www.youtube.com/user/uthsc" class="uthsc-youtube">
                         <span class="fa fa-youtube-square fa-3x"></span>
                         <span class="show-for-sr">connect on youtube</span>
+                    </a>
+                    <a href="#" class="uthsc-linkedin">
+                        <span class="fa fa-linkedin-square fa-3x"></span>
+                        <span class="show-for-sr">connect on linkedin</span>
+                    </a>
+                    <a href="#" class="uthsc-pinterest">
+                        <span class="fa fa-pinterest-square fa-3x"></span>
+                        <span class="show-for-sr">connect on pinterest</span>
+                    </a>
+                    <a href="#" class="uthsc-google-plus">
+                        <span class="fa fa-google-plus-square fa-3x"></span>
+                        <span class="show-for-sr">connect on google plus</span>
+                    </a>
+                    <a href="#" class="uthsc-tumblr">
+                        <span class="fa fa-tumblr-square fa-3x"></span>
+                        <span class="show-for-sr">connect on tumblr</span>
+                    </a>
+                    <a href="#" class="uthsc-flickr">
+                        <span class="fa fa-flickr fa-3x"></span>
+                        <span class="show-for-sr">connect on flickr</span>
+                    </a>
+                    <a href="#" class="uthsc-reddit">
+                        <span class="fa fa-reddit-square fa-3x"></span>
+                        <span class="show-for-sr">connect on reddit</span>
+                    </a>
+                    <a href="#" class="uthsc-vine">
+                        <span class="uthsc-fa-vine"></span>
+                        <span class="show-for-sr">connect on vine</span>
+                    </a>
+                    <a href="#" class="uthsc-vimeo">
+                        <span class="fa fa-vimeo-square fa-3x"></span>
+                        <span class="show-for-sr">connect on vimeo</span>
+                    </a>
+                    <a href="#" class="uthsc-snapchat">
+                        <span class="fa fa-snapchat-square fa-3x"></span>
+                        <span class="show-for-sr">connect on snapchat</span>
                     </a>
                 </div>
             </div>
@@ -1036,7 +1072,7 @@
 
     <!--Close menu button-->
     <button class="uthsc-off-canvas-menu__close">
-        <i class="fa fa-chevron-left"></i>&emsp; Close Menu
+        <span class="fa fa-chevron-left"></span>&emsp; Close Menu
     </button>
 
     <ul>
@@ -1152,21 +1188,21 @@
 
     <!--Close menu button-->
     <button class="uthsc-off-canvas-menu__close">
-        Close Menu &emsp;<i class="fa fa-chevron-right"></i>
+        Close Menu &emsp;<span class="fa fa-chevron-right"></span>
     </button>
 
     <!--Mission links-->
     <div class="mission-links">
         <h2 class="link-heading">Mission</h2>
 
-        <a href="/education/"><i class="uthsc-fa-centered fa fa-graduation-cap"></i>&emsp;Academics</a>
-        <a href="/research/"><i class="uthsc-fa-centered fa fa-flask"></i>&emsp;Research</a>
-        <a href="/clinicalcare/"><i class="uthsc-fa-centered fa fa-medkit"></i>&emsp;Clinical Care</a>
-        <a href="/publicservice/"><i class="uthsc-fa-centered fa fa-globe"></i>&emsp;Public Service</a>
+        <a href="/education/"><span class="uthsc-fa-centered fa fa-graduation-cap"></span>&emsp;Academics</a>
+        <a href="/research/"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
+        <a href="/clinicalcare/"><span class="uthsc-fa-centered fa fa-medkit"></span>&emsp;Clinical Care</a>
+        <a href="/publicservice/"><span class="uthsc-fa-centered fa fa-globe"></span>&emsp;Public Service</a>
     </div>
 
-    <a href="#" class="call-to-action-link"><i class="uthsc-fa-centered fa fa-gift"></i>&emsp;Make a Gift</a>
-    <a href="template.php" class="call-to-action-link"><i class="uthsc-fa-centered fa fa-road"></i>&emsp;Take a Tour</a>
+    <a href="#" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift"></span>&emsp;Make a Gift</a>
+    <a href="template.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road"></span>&emsp;Take a Tour</a>
 
     <ul>
         <li><span class="link-heading">Information for...</span>
