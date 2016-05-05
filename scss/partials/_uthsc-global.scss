@@ -25,6 +25,7 @@ $uthsc-snapchat:    #FFFC00;
 @mixin uthsc-horizontal-spaced {
   display: flex;
   justify-content: space-around;
+  flex-flow: row wrap;
 }
 @mixin uthsc-horizontal-justify {
   display: flex;
