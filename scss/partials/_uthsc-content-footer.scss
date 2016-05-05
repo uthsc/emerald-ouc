@@ -47,6 +47,9 @@ $uthsc-content-footer-background: #EFEFEF !default;
 
   .uthsc-connect {
     @include uthsc-horizontal-spaced;
+    a {
+      padding: 0.2rem;
+    }
     .uthsc-twitter {
       color: $uthsc-twitter;
       &:hover {
