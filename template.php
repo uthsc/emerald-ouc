@@ -655,6 +655,38 @@
                         <span class="fa fa-youtube-square fa-3x"></span>
                         <span class="show-for-sr">connect on youtube</span>
                     </a>
+                    <a href="#" class="uthsc-linkedin">
+                        <span class="fa fa-linkedin-square fa-3x"></span>
+                        <span class="show-for-sr">connect on linkedin</span>
+                    </a>
+                    <a href="#" class="uthsc-pinterest">
+                        <span class="fa fa-pinterest-square fa-3x"></span>
+                        <span class="show-for-sr">connect on pinterest</span>
+                    </a>
+                    <a href="#" class="uthsc-google-plus">
+                        <span class="fa fa-google-plus-square fa-3x"></span>
+                        <span class="show-for-sr">connect on google plus</span>
+                    </a>
+                    <a href="#" class="uthsc-tumblr">
+                        <span class="fa fa-tumblr-square fa-3x"></span>
+                        <span class="show-for-sr">connect on tumblr</span>
+                    </a>
+                    <a href="#" class="uthsc-flickr">
+                        <span class="fa fa-flickr fa-3x"></span>
+                        <span class="show-for-sr">connect on flickr</span>
+                    </a>
+                    <a href="#" class="uthsc-reddit">
+                        <span class="fa fa-reddit-square fa-3x"></span>
+                        <span class="show-for-sr">connect on reddit</span>
+                    </a>
+                    <a href="#" class="uthsc-vimeo">
+                        <span class="fa fa-vimeo-square fa-3x"></span>
+                        <span class="show-for-sr">connect on vimeo</span>
+                    </a>
+                    <a href="#" class="uthsc-snapchat">
+                        <span class="fa fa-snapchat-square fa-3x"></span>
+                        <span class="show-for-sr">connect on snapchat</span>
+                    </a>
                 </div>
             </div>
         </div>
