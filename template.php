@@ -467,7 +467,7 @@
                     inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
                     voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
                     eos qui ratione voluptatem sequi nesciunt.</p><a href="#" class="button radius">Academic
-                Calendar&ensp;<i class="fa fa-calendar"></i></a>
+                Calendar&ensp;<span class="fa fa-calendar"></span></a>
             </div>
             <div class="large-4 columns">
                 <h3>Full Width Content Row 2</h3>
@@ -1072,7 +1072,7 @@
 
     <!--Close menu button-->
     <button class="uthsc-off-canvas-menu__close">
-        <i class="fa fa-chevron-left"></i>&emsp; Close Menu
+        <span class="fa fa-chevron-left"></span>&emsp; Close Menu
     </button>
 
     <ul>
@@ -1188,21 +1188,21 @@
 
     <!--Close menu button-->
     <button class="uthsc-off-canvas-menu__close">
-        Close Menu &emsp;<i class="fa fa-chevron-right"></i>
+        Close Menu &emsp;<span class="fa fa-chevron-right"></span>
     </button>
 
     <!--Mission links-->
     <div class="mission-links">
         <h2 class="link-heading">Mission</h2>
 
-        <a href="/education/"><i class="uthsc-fa-centered fa fa-graduation-cap"></i>&emsp;Academics</a>
-        <a href="/research/"><i class="uthsc-fa-centered fa fa-flask"></i>&emsp;Research</a>
-        <a href="/clinicalcare/"><i class="uthsc-fa-centered fa fa-medkit"></i>&emsp;Clinical Care</a>
-        <a href="/publicservice/"><i class="uthsc-fa-centered fa fa-globe"></i>&emsp;Public Service</a>
+        <a href="/education/"><span class="uthsc-fa-centered fa fa-graduation-cap"></span>&emsp;Academics</a>
+        <a href="/research/"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
+        <a href="/clinicalcare/"><span class="uthsc-fa-centered fa fa-medkit"></span>&emsp;Clinical Care</a>
+        <a href="/publicservice/"><span class="uthsc-fa-centered fa fa-globe"></span>&emsp;Public Service</a>
     </div>
 
-    <a href="#" class="call-to-action-link"><i class="uthsc-fa-centered fa fa-gift"></i>&emsp;Make a Gift</a>
-    <a href="template.php" class="call-to-action-link"><i class="uthsc-fa-centered fa fa-road"></i>&emsp;Take a Tour</a>
+    <a href="#" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift"></span>&emsp;Make a Gift</a>
+    <a href="template.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road"></span>&emsp;Take a Tour</a>
 
     <ul>
         <li><span class="link-heading">Information for...</span>
