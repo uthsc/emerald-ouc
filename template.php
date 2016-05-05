@@ -679,6 +679,10 @@
                         <span class="fa fa-reddit-square fa-3x"></span>
                         <span class="show-for-sr">connect on reddit</span>
                     </a>
+                    <a href="#" class="uthsc-vine">
+                        <span class="uthsc-fa-vine"></span>
+                        <span class="show-for-sr">connect on vine</span>
+                    </a>
                     <a href="#" class="uthsc-vimeo">
                         <span class="fa fa-vimeo-square fa-3x"></span>
                         <span class="show-for-sr">connect on vimeo</span>
