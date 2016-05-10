@@ -1,5 +1,7 @@
+//import emerald
 @import 'emerald';
 
+//import project components
 @import 'partials/uthsc-off-canvas';
 @import 'partials/uthsc-breadcrumbs';
 @import 'partials/uthsc-section-nav';
@@ -8,14 +10,56 @@
 @import 'partials/uthsc-global-footer';
 @import 'partials/uthsc-safari-bottom-nav-fix';
 
+//include foundation components
+@include foundation-global-styles;
+@include foundation-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+@include foundation-accordion;
+//@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+//@include foundation-label;
+@include foundation-media-object;
+@include foundation-menu;
+//@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+//@include foundation-progress-bar;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+//@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+//include emerald components
 @include uthsc-global;
 @include uthsc-site-nav;
 @include uthsc-anchortext;
 @include uthsc-banner;
+@include uthsc-hero;
+
+//include project components
 @include uthsc-off-canvas;
 @include uthsc-section-nav;
 @include uthsc-breadcrumbs;
-@include uthsc-hero;
 @include uthsc-homepage;
 @include uthsc-content-footer;
 @include uthsc-global-footer;
