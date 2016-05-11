@@ -2,13 +2,10 @@
 @import 'emerald';
 
 //import project components
-@import 'partials/uthsc-off-canvas';
 @import 'partials/uthsc-breadcrumbs';
 @import 'partials/uthsc-section-nav';
 @import 'partials/uthsc-homepage';
 @import 'partials/uthsc-content-footer';
-@import 'partials/uthsc-global-footer';
-@import 'partials/uthsc-safari-bottom-nav-fix';
 
 //include foundation components
 @include foundation-global-styles;
@@ -55,12 +52,12 @@
 @include uthsc-anchortext;
 @include uthsc-banner;
 @include uthsc-hero;
-
-//include project components
 @include uthsc-off-canvas;
+@include uthsc-global-footer;
+@include uthsc-safari-bottom-nav-fix;
+//include project components
+
 @include uthsc-section-nav;
 @include uthsc-breadcrumbs;
 @include uthsc-homepage;
 @include uthsc-content-footer;
-@include uthsc-global-footer;
-@include uthsc-safari-bottom-nav-fix;

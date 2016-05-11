@@ -59,9 +59,9 @@ gulp.task('copy-vendor-js', function() {
 gulp.task('buildjs', function() {
   return gulp.src ([
       './js/app.js',
-      './js/partials/uthsc.off-canvas.js',
-      './js/partials/uthsc.section-nav.js',
-      './js/partials/uthsc.safari-bottom-nav-fix.js',
+      './bower_components/emerald/js/partials/uthsc.off-canvas.js',
+      './bower_components/emerald/js/partials/uthsc.safari-bottom-nav-fix.js',
+			'./js/partials/uthsc.section-nav.js',
       './js/partials/uthsc.homepage-news.js'
       ])
           .pipe($.concat('uthsc.js'))
