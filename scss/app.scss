@@ -4,6 +4,7 @@
 //import project components
 @import 'partials/uthsc-homepage';
 @import 'partials/uthsc-content-footer';
+@import 'partials/uthsc-hero.scss';
 
 //include foundation components
 @include foundation-global-styles;
@@ -49,7 +50,7 @@
 @include uthsc-site-nav;
 @include uthsc-anchortext;
 @include uthsc-banner;
-@include uthsc-hero;
+@include uthsc-hero-dev;
 @include uthsc-off-canvas;
 @include uthsc-global-footer;
 @include uthsc-safari-bottom-nav-fix;
