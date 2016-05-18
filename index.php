@@ -371,13 +371,6 @@
             </div>
             <!--/Infographics-->
 
-            <!--Events-->
-            <div id="events" class="row">
-                <?php readfile("http://events.uthsc.edu/widgets/uthsc_homepage_2015.php"); ?>
-            </div>
-            <!--/Events-->
-
-
             <!--Blockquote-->
             <div class="row">
                 <div class="columns small-centered small-12 medium-8 ">
