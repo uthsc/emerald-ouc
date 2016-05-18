@@ -1651,6 +1651,8 @@
         <a href="/research/"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
         <a href="/clinicalcare/"><span class="uthsc-fa-centered fa fa-medkit"></span>&emsp;Clinical Care</a>
         <a href="/publicservice/"><span class="uthsc-fa-centered fa fa-globe"></span>&emsp;Public Service</a>
+        <a href="/aboututhsc/"><span class="uthsc-fa-centered fa fa-file-text-o"></span>&emsp;About UTHSC</a>
+        <a href="http://uthscalumni.com/"><span class="uthsc-fa-centered fa fa-users"></span>&emsp;Alumni &amp; Friends</a>
     </div>
 
     <a href="#" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift"></span>&emsp;Make a Gift</a>
