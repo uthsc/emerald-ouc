@@ -365,23 +365,27 @@
         <ul class="row collapse" data-equalizer="heading-links">
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#about" data-equalizer-watch="heading-links">About UTHSC</a>
+                <a href="/education/" data-equalizer-watch="heading-links"><span class="fa fa-graduation-cap"></span> Academics</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#academics" data-equalizer-watch="heading-links"><span class="fa fa-graduation-cap"></span> Academics</a>
+                <a href="/research/" data-equalizer-watch="heading-links"><span class="fa fa-flask"></span> Research</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#research" data-equalizer-watch="heading-links"><span class="fa fa-flask"></span> Research</a>
+                <a href="/clinicalcare/" data-equalizer-watch="heading-links"><span class="fa fa-medkit"></span>Clinical Care</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#clinical-care" data-equalizer-watch="heading-links"><span class="fa fa-medkit"></span>Clinical Care</a>
+                <a href="/publicservice/" data-equalizer-watch="heading-links"><span class="fa fa-globe"></span>Public Service</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#public-service" data-equalizer-watch="heading-links"><span class="fa fa-globe"></span>Public Service</a>
+                <a href="/aboututhsc/" data-equalizer-watch="heading-links"><span class="fa fa-file-text-o"></span>About UTHSC</a>
+            </li>
+
+            <li class="uthsc-navigation-column small-2 columns">
+                <a href="http://uthscalumni.com/" data-equalizer-watch="heading-links"><span class="fa fa-users"></span>Alumni &amp; Friends</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns"></li>
