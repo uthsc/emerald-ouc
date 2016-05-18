@@ -404,8 +404,6 @@
     <!--todo: move inline styles to scss-->
 
     <!--<div class="hero hero-one show-for-large hide-for-print"></div>-->
-    <div class="show-for-medium">
-        <div class="fullscreen"></div>
     </div>
     <!--***********-->
     <!--/Hero Image-->
