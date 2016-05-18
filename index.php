@@ -328,10 +328,6 @@
     <!--*******-->
     <div class="main-content" id="main-content" aria-label="Page content" role="main">
 
-        <!--***************-->
-        <!--Desktop Content-->
-        <!--***************-->
-
         <!--Research anchor link-->
         <a id="about" style="margin-top:-75px; height:1px; width:1px; position:absolute;"></a>
         <!--/Research anchor link-->
@@ -718,9 +714,6 @@
             </div>
             <!--/Social-->
         </div>
-        <!--****************-->
-        <!--/Desktop Content-->
-        <!--****************-->
 
     </div>
     <!--********-->
