@@ -402,19 +402,6 @@
     <!--todo: fullscreen may be too broad of a class name and is likely to cause conflicts. -->
     <!--todo: If we aren't going to use magellan, is background image necessary instead of a regular hero-->
     <!--todo: move inline styles to scss-->
-    <style>
-        .homepage .fullscreen {
-            height: calc(90vh - 105px);
-            background-image: url("-resources/2015/images/fullscreen-students.jpg");
-            background-size: cover;
-            background-position-x: 100%;
-            background-position-y: 80%;
-            background-repeat: no-repeat;
-        }
-        #map {
-            height: 100%;
-        }
-    </style>
 
     <!--<div class="hero hero-one show-for-large hide-for-print"></div>-->
     <div class="show-for-medium">
