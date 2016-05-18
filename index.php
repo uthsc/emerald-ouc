@@ -371,31 +371,6 @@
             </div>
             <!--/Infographics-->
 
-            <!--Blockquote-->
-            <div class="row">
-                <div class="columns small-centered small-12 medium-8 ">
-                    <div class="row blockquote collapse">
-                        <div class="columns small-2 medium-3">
-                            <h2><span class="fa fa-4x fa-quote-left quotemark"></span></h2>
-                        </div>
-                        <div class="columns small-10 medium-9">
-                            <blockquote>
-                                <p>
-                                    In five years, we're going to all be talking about what a wonderful job we did,
-                                    patting ourselves on the back about what we did to take this community into the
-                                    next millennium, or we could all be looking at each other ashamed of ourselves for
-                                    squandering the opportunity that we had.
-                                </p>
-                                <cite>
-                                    Ken Brown, executive vice chancellor and chief operations officer
-                                </cite>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/Blockquote-->
-
             <!--Hero Images for Mission Sets-->
             <div class="hide-for-small-only content-area">
 
