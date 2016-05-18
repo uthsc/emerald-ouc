@@ -45,6 +45,9 @@
       background-position-x: 100%;
       background-position-y: 80%;
       background-repeat: no-repeat;
+
+      @include uthsc-vertical-center;
+
     }
     // Flags
     //  .fullscreen {
