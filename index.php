@@ -404,6 +404,28 @@
     <!--todo: move inline styles to scss-->
 
     <!--<div class="hero hero-one show-for-large hide-for-print"></div>-->
+    <div class="fullscreen">
+        <div class="row">
+            <div class="columns small-11 medium-6 large-12 medium-uncentered small-centered uthsc-fullscreen-content">
+                <p>Bringing the benefits of the health sciences to the
+                    citizens of Tennessee and beyond through education,
+                    research, clinical care, and public service.</p>
+            </div>
+            <div class="columns medium-6 large-12">
+                <div class="row">
+                    <div class="columns small-6 medium-12 large-4 large-push-2">
+                        <a class="button secondary large expanded show-for-large"><span class="fa fa-road"></span> Take a Tour</a>
+                        <a class="button secondary expanded show-for-medium-only"><span class="fa fa-road"></span> Take a Tour</a>
+                        <a class="button secondary tiny expanded hide-for-medium"><span class="fa fa-road"></span> Take a Tour</a>
+                    </div>
+                    <div class="columns small-6 medium-12 large-4 large-pull-2">
+                        <a class="button secondary large expanded show-for-large"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
+                        <a class="button secondary expanded show-for-medium-only"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
+                        <a class="button secondary tiny expanded hide-for-medium"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--***********-->
     <!--/Hero Image-->
