@@ -48,6 +48,21 @@
 
       @include uthsc-vertical-center;
 
+      .uthsc-fullscreen-content {
+        color: #fff;
+        font-size: 1.2rem;
+        text-align: center;
+
+        p {
+          line-height: 1.2;
+        }
+
+        @include breakpoint(large) {
+          font-size: 2rem;
+        }
+
+      }
+
     }
     // Flags
     //  .fullscreen {
