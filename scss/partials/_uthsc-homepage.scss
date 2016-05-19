@@ -4,29 +4,6 @@
       margin-top: 1rem;
     }
 
-    //Homepage mobile tabs
-    ul.tabs {
-      margin-right: 0;
-      left: auto;
-
-      li {
-        width: 25%;
-        a {
-          padding: .5em;
-          text-align: center;
-
-          &:hover {
-            background-color: $uthsc-gray-light;
-          }
-        }
-        &.tabs-title > a[aria-selected='true'] {
-          background-color: $uthsc-gray-dark;
-        }
-      }
-    }
-
-    //End Homepage mobile tabs
-
     .columns.mission-image {
       margin-top: -15px;
     }
