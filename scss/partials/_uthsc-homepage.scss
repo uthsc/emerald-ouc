@@ -75,6 +75,53 @@
         font-size: 1rem;
       }
 
+      .uthsc-program-explorer-tabs {
+        .uthsc-program-explorer-heading {
+          text-align: center;
+          background: $uthsc-green;
+
+        }
+        ul.tabs {
+          margin-right: 0;
+          left: auto;
+
+          li {
+            width: 100%;
+            a {
+              padding: .5em;
+              font-size: 1.4rem;
+
+              @include breakpoint(medium only) {
+                padding: 0.4em;
+                font-size: 1.1rem;
+              }
+
+              &:hover {
+                color: #fff;
+                background-color: $uthsc-blue-dark;
+              }
+            }
+            &.tabs-title {
+              box-shadow: 0 1px 0 #ddd;
+              &> a[aria-selected='true'] {
+                color: #fff;
+                background-color: $uthsc-blue;
+              }
+            }
+          }
+        }
+        .uthsc-program-explorer-content {
+          border: 20px solid #ddd;
+          height: 100%;
+        }
+        .tabs-content.vertical {
+          border-left: 0;
+          @include breakpoint(medium) {
+            overflow: scroll;
+            height: 273px;
+          }
+        }
+      }
     }
     // Flags
     //  .fullscreen {
