@@ -331,7 +331,7 @@
         <!--todo: does this need to have the about class or should that be moved to something else-->
         <div class="content-area">
             <!-- Program Explorer-->
-            <div class="row uthsc-program-explorer">
+            <div class="row uthsc-program-explorer uthsc-row-space">
                 <div class="columns medium-8">
                     <div class="row uthsc-program-explorer-tabs">
                         <div class="columns uthsc-program-explorer-heading text-center">
@@ -339,7 +339,7 @@
                             <h2 class="subheader">Discover All that UTHSC has to Offer</h2>
                         </div>
                             <div class="row collapse">
-                                <div class="medium-3 columns">
+                                <div class="medium-5 columns">
                                     <ul class="tabs vertical" id="example-vert-tabs" data-tabs="data-tabs">
                                         <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Dentistry</a></li>
                                         <li class="tabs-title"><a href="#panel2v">Graduate Health Sciences</a></li>
@@ -349,7 +349,7 @@
                                         <li class="tabs-title"><a href="#panel4v">Pharmacy</a></li>
                                     </ul>
                                 </div>
-                                <div class="medium-9 columns uthsc-program-explorer-content">
+                                <div class="medium-7 columns uthsc-program-explorer-content">
                                     <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
                                         <div class="tabs-panel is-active" id="panel1v">
                                             <ul>
