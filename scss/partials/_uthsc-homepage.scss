@@ -68,8 +68,9 @@
           li {
             width: 100%;
             a {
-              padding: .5em;
+              padding: .9rem;
               font-size: 1.4rem;
+              font-weight: 300;
 
               @include breakpoint(medium only) {
                 padding: 0.4em;
@@ -82,23 +83,41 @@
               }
             }
             &.tabs-title {
-              box-shadow: 0 1px 0 #ddd;
+              border-bottom: 1px solid #bbb;
+              background-color: #eee;
+
+              a:after {
+                font-family: fontawesome;
+                content: '\f054\ ';
+                float: right;
+                font-size: 0.9rem;
+                margin-top: 0.2rem;
+              }
+
               &> a[aria-selected='true'] {
-                color: #fff;
-                background-color: $uthsc-blue;
+                color: #222;
+                background-color: #fff;
+                border-left: 4px solid $uthsc-orange;
+                padding-left: 7px;
+                &:after {
+                  color: $uthsc-orange;
+                }
               }
             }
           }
         }
         .uthsc-program-explorer-content {
-          border: 20px solid #ddd;
           height: 100%;
+
+          ul {
+            list-style-type: none;
+            line-height: 1.7rem;
+          }
         }
         .tabs-content.vertical {
           border-left: 0;
           @include breakpoint(medium) {
             overflow: scroll;
-            height: 273px;
           }
         }
       }
