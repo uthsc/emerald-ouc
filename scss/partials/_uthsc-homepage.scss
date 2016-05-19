@@ -122,6 +122,29 @@
           }
         }
       }
+      .uthsc-did-you-know {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35)), url("../images/pharmacy-grads.jpg");
+        background-size: cover;
+        background-position: 83%;
+        height: 100%;
+        color: #fff;
+        font-weight: bold;
+
+        h2 {
+          border-bottom: 0.4rem solid $uthsc-green;
+          padding: 1rem;
+        }
+        p {
+          font-size: 1.8rem;
+          &.uthsc-did-you-know-number {
+            font-size: 6rem;
+            color: #f77f00;
+            font-weight: bold;
+            margin: 0;
+            line-height: 0.9;
+          }
+        }
+      }
     }
     // Flags
     //  .fullscreen {
