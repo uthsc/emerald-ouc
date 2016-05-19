@@ -460,7 +460,7 @@
                 </div>
             </div>
             <!--/Program Explorer-->
-<br class="clearfix" />
+
             <!--  People Search-->
             <div class="row uthsc-people-search uthsc-row-space">
                 <div class="columns callout">
