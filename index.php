@@ -334,6 +334,11 @@
 
         <!--todo: does this need to have the about class or should that be moved to something else-->
         <div class="content-area">
+            <br class="clearfix" />
+            <!-- Program Explorer-->
+            <div class="row uthsc-program-explorer">
+            </div>
+            <!--/Program Explorer-->
 
             <!--Infographics-->
             <div class="uthsc-infographics row text-center" data-equalizer="homepage-stats">
