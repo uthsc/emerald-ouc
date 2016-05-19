@@ -330,7 +330,6 @@
 
         <!--todo: does this need to have the about class or should that be moved to something else-->
         <div class="content-area">
-            <br class="clearfix" />
             <!-- Program Explorer-->
             <div class="row uthsc-program-explorer">
                 <div class="columns medium-8">

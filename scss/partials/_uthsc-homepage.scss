@@ -1,4 +1,7 @@
 @mixin uthsc-homepage {
+  .row.uthsc-row-space {
+    margin-top: 2rem;
+  }
   .homepage {
     .hero {
       margin-top: 1rem;
