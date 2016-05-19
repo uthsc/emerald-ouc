@@ -460,6 +460,21 @@
                 </div>
             </div>
             <!--/Program Explorer-->
+<br class="clearfix" />
+            <!--  People Search-->
+            <div class="row uthsc-people-search uthsc-row-space">
+                <div class="columns callout">
+                    <!--Search form-->
+                    <div class="input-group">
+                        <input class="input-group-field" type="text" placeholder="People Search...">
+                        <div class="input-group-button">
+                            <input type="submit" class="button" value="Submit">
+                        </div>
+                    </div>
+                    <!--/Search form-->
+                </div>
+            </div>
+            <!--/ People Search-->
 
             <!--Infographics-->
             <div class="uthsc-infographics row text-center" data-equalizer="homepage-stats">

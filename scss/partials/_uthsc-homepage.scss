@@ -172,6 +172,20 @@
         }
       }
     }
+
+    .uthsc-people-search {
+      .input-group-field {
+        border-radius: 0;
+        /* height: 3.5rem; */
+        font-size: 1.2rem;
+        padding: 2rem;
+        font-style: italic;
+      }
+      .input-group-button a, .input-group-button input, .input-group-button button {
+        padding: 1.45rem 03rem;
+        font-size: 1.1rem;
+      }
+    }
     // Flags
     //  .fullscreen {
     //    width: 100%;
