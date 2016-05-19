@@ -328,10 +328,6 @@
     <!--*******-->
     <div class="main-content" id="main-content" aria-label="Page content" role="main">
 
-        <!--Research anchor link-->
-        <a id="about" style="margin-top:-75px; height:1px; width:1px; position:absolute;"></a>
-        <!--/Research anchor link-->
-
         <!--todo: does this need to have the about class or should that be moved to something else-->
         <div class="content-area">
             <br class="clearfix" />
