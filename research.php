@@ -285,268 +285,445 @@
     <!--Content-->
     <!--*******-->
     <div class="main-content" id="main-content" aria-label="Page content" role="main">
+
+
+        <!--**********-->
+        <!--Page title-->
+        <!--**********-->
         <div class="row">
             <div class="columns">
-                <h1>Welcome to Foundation</h1>
+                <h1 style="border-bottom:1px solid #ddd; padding: 1rem; text-align: center;">UTHSC Office of Research</h1>
             </div>
         </div>
 
-        <!--Content Row 1-->
-        <div class="row">
-            <div class="columns medium-9">
 
 
-                <!--************-->
-                <!--Orbit Slider-->
-                <!--************-->
-<!--                <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit="data-orbit" >-->
-<!--                    <ul class="orbit-container">-->
-<!--                        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>-->
-<!--                        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>-->
-<!--                        <li class="is-active orbit-slide">-->
-<!--                            <img class="orbit-image" src="-resources/2015/images/slider-1.jpg" alt="Space">-->
-<!--                            <figcaption class="orbit-caption">Space, the final frontier.</figcaption>-->
-<!--                        </li>-->
-<!--                        <li class="orbit-slide">-->
-<!--                            <img class="orbit-image" src="-resources/2015/images/slider-2.jpg" alt="Space">-->
-<!--                            <figcaption class="orbit-caption">Lets Rocket!</figcaption>-->
-<!--                        </li>-->
-<!--                        <li class="orbit-slide">-->
-<!--                            <img class="orbit-image" src="-resources/2015/images/slider-3.jpg" alt="Space">-->
-<!--                            <figcaption class="orbit-caption">Encapsulating</figcaption>-->
-<!--                        </li>-->
-<!--                        <li class="orbit-slide">-->
-<!--                            <img class="orbit-image" src="-resources/2015/images/slider-4.jpg" alt="Space">-->
-<!--                            <figcaption class="orbit-caption">Outta This World</figcaption>-->
-<!--                        </li>-->
-<!--                    </ul>-->
-<!--                    <nav class="orbit-bullets">-->
-<!--                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>-->
-<!--                        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>-->
-<!--                        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>-->
-<!--                        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>-->
-<!--                    </nav>-->
+        <div class="row expanded">
+            <div class="row">
+            <div class="columns">
+                <div class="page-opening" style="text-align:center; font-weight: bold;">
+
+                    <style>
+                        .page-intro {
+                            color:#006a4d;
+                            font-size: 1.5em;
+                            font-weight:bold;
+                            padding:1rem;
+                        }
+
+                        .page-lead {
+                            color:#777777;
+                            font-size: 1.1em;
+                            padding:1rem;
+                        }
+                    </style>
+
+                    <!--**********-->
+                    <!--Page intro-->
+                    <!--**********-->
+                    <h3 class="page-intro">Every year, UTHSC faculty and staff receive an average of $100 million in external funding for
+                        research and sponsored programs from a variety of government, foundation, and corporate sources.</h3>
+
+
+                    <!--*********-->
+                    <!--Page lead-->
+                    <!--*********-->
+                    <p  class="page-lead">Advancing research and economic development is at the core the University of Tennessee Health
+                        Sciences Center’s mission. This funding has directly contributed to UTHSC’s long record of accomplishments
+                        in basic science, applied clinical and translational research, and public health, allowing us to
+                        continue our contributions to the health of the Memphis-area community. Through collaborative
+                        relationships with health care facilities like St. Jude Children's Research Hospital and Methodist
+                        Le Bonheur Healthcare, we are well-positioned to pave the way for innovative patient-centered
+                        research and development with a clinical and translational focus.</p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <!--Columns highlight boxes-->
+        <div class="row expanded" style="background:rgba(66, 104, 173, 0.34);">
+            <div class="row">
+                <div class="columns">
+                    <!--<h2>Research Events</h2>-->
+                </div>
+
+                <div class="columns medium-6 large-4">
+                    <!--Highlight box-->
+                    <div class="highlight-box">
+                        <a>
+                            <img src="-resources/2015/images/research1.jpg">
+                            <h3 style="color:#00a5e3;">Office of Grants and Research Agreements</h3>
+                            <p>Supports faculty and staff across all UTHSC campuses who are working to obtain
+                                external
+                                funding while remaining in compliance with UT policy, sponsor policy, and the
+                                law. </p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="columns medium-6 large-4">
+                    <!--Highlight box-->
+                    <div class="highlight-box">
+
+                        <img src="-resources/2015/images/research2.jpg">
+                        <h3 style="color:#3ea22f;">Office of Research Compliance</h3>
+
+                        <p>Provides centralized administration and serves as the primary point of contact for
+                            research
+                            compliance related issues. </p>
+                    </div>
+                </div>
+
+                <div class="columns medium-6 large-4">
+                    <!--Highlight box-->
+                    <div class="highlight-box">
+                        <a>
+                            <img src="-resources/2015/images/research3.jpg">
+                            <h3 style="color:#7a68ae;">Research Contracts</h3>
+                            <p>Facilitates research contracts for faculty at UTHSC, including the Graduate School of
+                                Medicine in Knoxville and the Chattanooga Unit of the College of Medicine.</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row expanded" style="background:rgba(66, 104, 173, 0.34);">
+            <div class="row">
+                <div class="columns">
+                    <!--<h2>Research Events</h2>-->
+                </div>
+
+                <div class="columns medium-6 large-4">
+                    <!--Highlight box-->
+                    <div class="highlight-box">
+                        <a>
+                            <img src="-resources/2015/images/research4.jpg">
+                            <h3 style="color:#7a68ae;">Postdoctoral Office</h3>
+                            <p>Supports postdocs and their mentors.</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="columns medium-6 large-4">
+                    <!--Highlight box-->
+                    <div class="highlight-box">
+                        <a>
+                            <img src="-resources/2015/images/research5.jpg">
+                            <h3 style="color:#3ea22f;">Office of Student Research Fellowship and Training
+                                Programs</h3>
+                            <p>Facilitates student research and student research projects.</p>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class="columns medium-6 large-4">
+                    <!--Highlight box-->
+                    <div class="highlight-box">
+                        <a>
+                            <img src="-resources/2015/images/research6.jpg">
+                            <h3 style="color:#00a5e3;">Technology Transfer Office</h3>
+                            <p>Provides the interface between discoveries at UTHSC and the businesses who want to
+                                commercialize them.</p>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!--Block Grid highlight boxes-->
+        <div class="row expanded" style="background:rgba(0, 160, 114, 0.34);" >
+            <div class="row ">
+                <div class="columns"><h3>Title</h3></div>
+                <div class="columns" >
+
+                    <div class="row large-up-3">
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="highlight-box">
+                                <a>
+                                    <img src="-resources/2015/images/research4.jpg">
+                                    <h3 style="color:#7a68ae;">Postdoctoral Office</h3>
+                                    <p>Supports postdocs and their mentors.</p>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="highlight-box">
+                                <a>
+                                    <img src="-resources/2015/images/research5.jpg">
+                                    <h3 style="color:#3ea22f;">Office of Student Research Fellowship and Training
+                                        Programs</h3>
+                                    <p>Facilitates student research and student research projects.</p>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="highlight-box">
+                                <a>
+                                    <img src="-resources/2015/images/research6.jpg">
+                                    <h3 style="color:#00a5e3;">Technology Transfer Office</h3>
+                                    <p>Provides the interface between discoveries at UTHSC and the businesses who want to
+                                        commercialize them.</p>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+           </div>
+
+            </div>
+        </div>
+
+
+        <style>
+
+            .office-box {
+                background:#fff;
+                display:block;
+                padding:.5em;
+                margin: 1em 0;
+            }
+
+            .highlight-box {
+                background:#fff;
+                display:block;
+                padding:.5em;
+                margin: 1em 0;
+            }
+
+            .highlight-box h3 {
+                font-size:1.4em;
+                font-weight: bold;
+            }
+
+            .highlight-box a p {
+                color: #0a0a0a;
+                font-weight:normal;
+            }
+
+            .highlight-box:hover {
+                background: #4268AD;
+                transition: 500ms;
+
+            }
+
+            .highlight-box:hover a, .highlight-box:hover p {
+                color:#fff;
+                transition: 200ms;
+
+            }
+
+        </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    NEWS-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <style>
+
+
+
+            .news-box h4{
+                font-size:1em;;
+            }
+
+            .news-box {
+                background:#006a4d;
+                color:#fff;
+                padding:1em 0;
+                transition:500ms;
+                margin: .5em 0;
+            }
+
+            .news-box:hover {
+                background: #00533c;
+                transition:500ms;
+            }
+
+            .news-box a{
+                color:#fff;
+                display: block;
+            }
+
+            .news-box a p{
+                font-weight: 100;
+            }
+
+            .news-box h4{
+                font-weight: inherit;
+            }
+
+        </style>
+
+<!--        <div class="row expanded">-->
+<!--            <div class="row">-->
+<!--                <div class="columns">-->
+<!--                    <h3>Research News</h3>-->
 <!--                </div>-->
-                <!--*************-->
-                <!--/Orbit Slider-->
-                <!--*************-->
+<!---->
+<!--                <div data-equalizer="research-news" data-equalize-on="medium">-->
+<!--                    <div class="large-4 columns">-->
+<!--                        <div class="news-box">-->
+<!--                            <a data-equalizer-watch="research-news">-->
+<!--                                <div class="row">-->
+<!--                                    <div class="columns small-3 medium-2 large-4">-->
+<!--                                        <img src="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/05/ryan-slider.jpg?zoom=2&resize=160%2C160" />-->
+<!--                                    </div>-->
+<!--                                    <div class="columns small-9 medium-10 large-8">-->
+<!---->
+<!--                                        <h4>The Power of Addiction: A Five Part Spotlight Article</h4><p>May 9, 2016</p>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="large-4 columns">-->
+<!--                        <div class="news-box">-->
+<!--                            <a data-equalizer-watch="research-news">-->
+<!--                                <div class="row">-->
+<!--                                    <div class="columns small-3 medium-2 large-4">-->
+<!--                                        <img src="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/05/KarenJohnson-HomeSlider.jpg?zoom=2&resize=160%2C160" />-->
+<!--                                    </div>-->
+<!--                                    <div class="columns small-9 medium-10 large-8">-->
+<!--                                        <h4>Affect Aging in Individuals with Type 2 Diabetes</h4><p>May 9, 2016</p>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!---->
+<!--                    <div class="large-4 columns">-->
+<!--                        <div class="news-box">-->
+<!--                            <a data-equalizer-watch="research-news">-->
+<!--                                <div class="row">-->
+<!--                                    <div class="columns small-3 medium-2 large-4">-->
+<!--                                        <img src="http://i1.wp.com/news.uthsc.edu/wp-content/uploads/2016/05/artist-and-staff-crop.jpg?resize=300%2C300" />-->
+<!--                                    </div>-->
+<!--                                    <div class="columns small-9 medium-10 large-8">-->
+<!--                                        <h4>Dr. Karen C. Johnson of UTHSC Receives $2.3 Million Grant to Study How Weight Loss and Increased Physical Activity Affect Aging in Individuals with Type 2 Diabetes</h4><p>May 9, 2016</p>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </a>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!---->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
 
-                <h3><strong><em>Content</em></strong> <b><i>Row</i></b> 1</h3>
-                <p>This is a full width row with columns inside of it.</p>
-                <p>Thanks to<a href="http://fortawesome.github.io/Font-Awesome/">
-                    Fontawesome&nbsp;<span class="fa fa-flag"></span></a> we can use these handy icons anywhere.
-                    Here's an example of a<a href=""> pdf link&nbsp;<span class="fa fa-file-pdf-o"></span></a>.</p>
-                <div class="row">
-                    <div class="columns">
-                        <h4>Buttons</h4>
-                        <div class="row medium-text-center large-text-left">
-                            <div class="columns large-6 large-text-right">
-                                <a class="tiny button" href="#">Tiny</a>
-                                <a class="small button" href="#">Small</a>
-                                <a class="button" href="#">Basic</a>
-                                <a class="large button" href="#">Large</a>
-                            </div>
-                            <div class="columns large-6">
-                                <a class="large hollow button" href="#">Large</a>
-                                <a class="button hollow" href="#">Basic</a>
-                                <a class="small hollow button" href="#">Small</a>
-                                <a class="tiny hollow button" href="#">Tiny</a>
-                            </div>
-                            <div class="columns">
-                                <a class="expanded button" href="#">Basic Expand</a>
-                                <a class="small expanded button" href="#">Small Expand</a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="columns large-6">
-                                <div class="row">
-                                    <div class="columns small-4 medium-3 large-4">
-                                        <button class="button secondary">Secondary</button>
-                                    </div>
-                                    <div class="columns small-8 medium-9 large-8">
-                                        <button class="button secondary expanded">Secondary</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="columns large-6">
-                                <div class="row">
-                                    <div class="columns small-7 medium-9 large-8">
-                                        <button class="button secondary hollow expanded">Secondary</button>
-                                    </div>
-                                    <div class="columns small-5 medium-3 large-4">
-                                        <button class="button secondary hollow expanded">Secondary</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+
+<!--Here's our row-->
+    <div class="row expanded">
+        <div class="row">
+            <div class="columns">
+                <!--Here's where our title goes-->
+                <h3>Research News</h3>
             </div>
-            <div class="columns medium-3">
-                <div class="row">
-                    <h3><strong><em>Content</em></strong> <b><i>Row</i></b> 1</h3>
-                    <h4>Callouts</h4>
-                    <div class="callout columns">
-                        <h5>Callout</h5>
-                    </div>
-                    <div class="callout secondary columns">
-                        <h5>Secondary Callout</h5>
-                    </div>
-                    <div class="callout success columns">
-                        <h5>Success Callout</h5>
-                    </div>
-                    <div class="callout warning columns">
-                        <h5>Warning Callout</h5>
-                    </div>
-                    <div class="callout alert columns">
-                        <h5>Alert Callout</h5>
-                    </div>
-                </div>
+
+            <div class="news-snippet"></div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    /NEWS-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <div class="row">
+
+            <div class="columns">
+                <h3>Research Events</h3>
             </div>
+
         </div>
 
 
-        <!-- Content Row 2-->
-        <div class="row ">
-            <div class="large-4 columns">
-                <h3>Full Width Content Row 2</h3>
-                <h5>One Third</h5>
-
-                <p><strong>This is a three column layout</strong> Sed ut perspiciatis unde omnis iste natus error
-                    sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-                    eos qui ratione voluptatem sequi nesciunt.</p>
-
-                <!--**********-->
-                <!--Flex Video-->
-                <!--**********-->
-                <h4>Flex Video</h4>
-                <p> Flex video makes embedded content responsive</p>
-                <div class="flex-video widescreen">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QLJQRX5iQrs" frameborder="0"
-                            allowfullscreen="true">
-                    </iframe>
-                </div>
-                <!--***********-->
-                <!--/Flex Video-->
-                <!--***********-->
-
-                <a href="#" class="button secondary radius">Apply
-                Now&ensp;<span class="fa fa-graduation-cap"></span></a>
-
-            </div>
-            <div class="large-4 columns">
-                <h3>Full Width Content Row 2</h3>
-                <h5>One Third</h5>
-
-                <p><strong>This is a three column layout</strong> Sed ut perspiciatis unde omnis iste natus error
-                    sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-                    eos qui ratione voluptatem sequi nesciunt.</p><a href="#" class="button radius">Academic
-                Calendar&ensp;<span class="fa fa-calendar"></span></a>
-            </div>
-            <div class="large-4 columns">
-                <h3>Full Width Content Row 2</h3>
-                <h5>UT President Joe DiPietro describes challenges facing higher ed and its role in preparing the
-                    workforce of the future</h5>
-                <figure class="left image-40">
-                    <img src="http://news.uthsc.edu/wp-content/uploads/2014/09/Dr.-Dipietro2.jpg"
-                         alt="UT President Joe DiPietro addresses panel members
-                         about the role of higher education in workforce preparedness." />
-                    <figcaption>UT <strong>President Joe DiPietro</strong> addresses panel members about the role of
-                        higher education in workforce preparedness.
-                    </figcaption>
-                </figure>
-                <br class="clearfix"/>
-                <p><strong>This is a three column layout</strong> Sed ut perspiciatis unde omnis iste natus error
-                    sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-                    eos qui ratione voluptatem sequi nesciunt.</p>
-                <ol>
-                    <li><a href="#">Nunc dignissim <strong>risus id metus</strong></a></li>
-                    <li>Cras ornare tristique elit
-                        <ul>
-                            <li>Lorem ipsum dolor sit amet, consectetuer <a href="#">adipiscing</a> elit.</li>
-                            <li>Aliquam tincidunt mauris eu risus.</li>
-                            <li>Vestibulum auctor dapibus neque.</li>
-                            <li>Nunc dignissim <strong>risus id metus</strong>.</li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Vivamus vestibulum nulla nec ante</a></li>
-                </ol>
-                <a href="#" class="button radius">
-                    Get Directions&ensp;<span class="fa fa-map-marker"></span>
-                </a>
-            </div>
-        </div>
-
-        <!-- Content Row 3-->
         <div class="row">
             <div class="large-4 columns">
-                <h3>Content Row 3</h3>
-                <h5>One Third</h5>
-                <figure class="right image-40"><img
-                        src="http://news.uthsc.edu/wp-content/uploads/2014/12/Top-Workplace-HomePageSlider.jpg"
-                        alt="the arches on union avenue">
-                    <figcaption>UTHSC named one of the <a href="#">2014 Top Workplaces</a> in Memphis.</figcaption>
-                </figure>
-                <p><strong>This is a <em>two</em> column layout</strong> Sed ut perspiciatis unde omnis iste natus
-                    error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-                    eos qui ratione voluptatem sequi nesciunt.</p>
+                <h4>Event Item 1 Headline</h4>
+                <p>Event item 1 teaser copy would go here more</p>
             </div>
-            <div class="large-8 columns">
-                <h3>Content Row 3</h3>
-                <h5>Two Thirds</h5>
 
-                <div class="left"><img src="http://uthsc.edu/redesign/_resources/2015/images/bridge.jpg"></div>
-                <p><strong>This is a two column layout</strong> Sed ut perspiciatis unde omnis iste natus error sit
-                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-                    eos qui ratione voluptatem sequi nesciunt.</p>
-                <ul>
-                    <li><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</a></li>
-                    <li><a href="#">Aliquam <em>tincidunt</em> mauris eu risus</a>
-                        <ul>
-                            <li><a href="#">Nunc dignissim <strong>risus id metus</strong></a></li>
-                            <li>Cras ornare tristique elit
-                                <ol>
-                                    <li>Cras ornare tristique elit
-                                        <ol>
-                                            <li>Vestibulum auctor dapibus neque.
-                                                <ol>
-                                                    <li>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi,
-                                                        euismod
-                                                        in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
-                                                    </li>
-                                                    <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas
-                                                        augue,
-                                                        eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui
-                                                        mi,
-                                                        tincidunt quis, accumsan porttitor, facilisis luctus, metus.
-                                                    </li>
-                                                </ol>
-                                            </li>
-                                            <li>Nunc dignissim <strong>risus id metus</strong>.</li>
-                                        </ol>
-                                    </li>
-                                    <li><a href="#">Vivamus vestibulum nulla nec ante</a></li>
-                                </ol>
-                            </li>
-                            <li><a href="#">Vivamus vestibulum nulla nec ante</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Vestibulum auctor dapibus neque</a></li>
-                    <li><a href="#">Nunc dignissim <strong>risus id metus</strong></a></li>
-                    <li>Cras ornare tristique elit</li>
-                    <li><a href="#">Vivamus vestibulum nulla nec ante</a></li>
-                </ul>
+            <div class="large-4 columns">
+                <h4>Event Item 2 Headline</h4>
+                <p>Event item 2 teaser copy would go here more</p>
             </div>
+
+
+
+            <div class="large-4 columns">
+                <h4>Event Item 3 Headline</h4>
+                <p>Event item 3 teaser copy would go here more</p>
+            </div>
+
         </div>
     </div>
     <!--********-->
@@ -566,24 +743,27 @@
             <div class="medium-4 columns footer-box">
                 <h4>Contact Us</h4>
 
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                    doloremquelaudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-                    quasi architecto beatae vitaedicta sunt explicabo.</p>
+                <p>Steven R. Goodman, Ph.D.<br />
+                    Vice Chancellor for Research</p>
+                <p>Office of Research<br />
+                    910 Madison, Suite 608<br />
+                    Memphis, TN 38163<br />
+                    Phone: (901) 448-7125<br />
+                    Fax: (901) 448-7133<br />
+                    research@uthsc.edu</p>
             </div>
             <div class="medium-4 columns footer-box">
-                <h4>Links</h4>
+                <h4>Learn More</h4>
 
                 <ul>
-                    <li>Lorem ipsum dolor sit amet, consectetuer <a href="#">adipiscing</a> elit.</li>
-                    <li>Aliquam tincidunt mauris eu risus.</li>
-                    <li>Vestibulum auctor dapibus neque.</li>
-                    <li>Nunc dignissim <strong>risus id metus</strong>.</li>
-                    <li>Cras ornare tristique elit.</li>
-                    <li>Vivamus <a href="#">vestibulum nulla</a> nec ante.</li>
-                    <li>Praesent placerat risus quis eros.</li>
-                    <li>Fusce pellentesque suscipit nibh.</li>
-                    <li>Integer vitae libero ac risus egestas placerat.</li>
-                    <li>Vestibulum commodo felis quis tortor.</li>
+                    <li><a>Research Administration</a></li>
+                    <li><a>Research Compliance</a></li>
+                    <li><a>Institutional Review Board</a></li>
+                    <li><a>Grants & Research Agreements</a></li>
+                    <li><a>Student Research</a></li>
+                    <li><a>Technology Transfer</a></li>
+                    <li><a>Facilities</a></li>
+                    <li><a>Specialized Core Resources</a></li>
                 </ul>
             </div>
             <div class="medium-4 columns footer-box hide-for-print">
@@ -1246,6 +1426,62 @@
 <script src="-resources/2015/js/what-input.min.js"></script>
 <script src="-resources/2015/js/foundation.min.js"></script>
 <script src="-resources/2015/js/uthsc.min.js"></script>
+<script src="-resources/2015/js/uthsc-news.js"></script>
+
+<script>
+    function parseNewsPosts() {
+
+        var html = '';
+        html += '<div data-equalizer="news-boxes" data-equalize-on-stack="false" data-equalize-on="large">'
+
+        for (var i=0;i<3;i++) {
+
+            var postLink = posts[i]['link'],
+                featuredImageLink = '',
+                postTitle = posts[i]['title']['rendered'];
+
+            if (typeof posts[i]._embedded['wp:featuredmedia'] !== 'undefined') {
+                featuredImageLink = posts[i]._embedded['wp:featuredmedia'][0]['source_url'];
+                featuredImageLink = featuredImageLink.replace('.jpg', '-300x300.jpg')
+            } else {
+                featuredImageLink = '-resources/2015/images/homepage-news-featured-image-place-holder.jpg';
+            }
+
+            html += '<div class="large-4 columns">' +
+            '<div class="news-box ' + 'post-0' + (i + 1) + '">' +
+            '<a data-equalizer-watch="news-boxes" ' + 'href="' + postLink + '">' +
+            '<div class="row">' +
+
+            '<div class="columns small-3 medium-2 large-4">' +
+            '<img src="' + featuredImageLink + '" />' +
+            '</div>' +
+
+            '<div class="columns small-9 medium-10 large-8">' +
+            '<h4>' + postTitle +'</h4>' +
+            '<p>May 9, 2016</p>' +
+            '</div>' +
+
+            '</div>' +
+            '</a>' +
+            '</div>' +
+            '</div>';
+        }
+
+        html += '</div>'
+
+        return html;
+
+    }
+
+
+    /*
+     * Render names on page load
+     */
+    $(document).ready(function(){
+        newsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts?categories=60&per_page=3&_embed", '.news-snippet');
+    });
+</script>
+
 <!--********-->
 <!--/Scripts-->
 <!--********-->
