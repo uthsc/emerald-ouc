@@ -196,11 +196,7 @@
                     <span class="fa fa-chevron-right" aria-hidden="true"></span>
                 </li>
                 <li>
-                    <a aria-label="go to parent section - College of medicine" href="#">College of Medicine </a>
-                    <span class="fa fa-chevron-right" aria-hidden="true"></span>
-                </li>
-                <li>
-                    <a aria-label="go to parent section - College of medicine - Students" href="#">Students </a>
+                    <a aria-label="go to parent section - Research" href="#">Research</a>
                     <span class="fa fa-chevron-right" aria-hidden="true"></span>
                 </li>
                 <li class="disabled" aria-hidden="true">Current Page</li>
