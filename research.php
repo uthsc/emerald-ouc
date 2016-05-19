@@ -217,70 +217,51 @@
         <ul class="row collapse" >
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Menu Dropdown One<br />Menu Dropdown One</a>
+                <a href="#" data-equalizer-watch="heading-links">About</a>
                 <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">First Item in Dropdown</a></li>
-                    <li><a href="#">Second Item in Dropdown</a></li>
-                    <li><a href="#">Third Item in Dropdown</a></li>
-                    <li><a href="#">Fourth Item in Dropdown</a></li>
-                    <li><a href="#">Fifth Item in Dropdown</a></li>
+                    <li><a href="#">Mission & Vision </a></li>
+                    <li><a href="#">Vice Chancellor for Research </a></li>
+                    <li><a href="#">Reports and Publications </a></li>
+                    <li><a href="#">Organizational Chart</a></li>
+                    <li><a href="#">News & Events</a></li>
                 </ul>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Menu Dropdown Two</a>
+                <a href="#" data-equalizer-watch="heading-links">Proposals, Grants, & Contracts </a>
+                <ul data-equalizer-watch="nested-links"></ul>
+            </li>
+
+            <li class="uthsc-navigation-column small-2 columns">
+                <a href="#" data-equalizer-watch="heading-links">Institutional Cores</a>
                 <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">First Item in Dropdown</a></li>
-                    <li><a href="#">Second Item in Dropdown</a></li>
-                    <li><a href="#">Third Item in Dropdown That Goes to Two Lines</a></li>
-                    <li><a href="#">Fourth Item in Dropdown</a></li>
+                    <li><a href="#">Mission & Vision </a></li>
+                    <li><a href="#">Core List </a></li>
                 </ul>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Menu Dropdown Three</a>
+                <a href="#" data-equalizer-watch="heading-links">Centers & Institutes</a>
                 <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">First Item in Dropdown</a></li>
-                    <li><a href="#">Second Item in Dropdown</a></li>
-                    <li><a href="#">Third Item in Dropdown</a></li>
-                    <li><a href="#">Fourth Item in Dropdown</a></li>
-                    <li><a href="#">Fifth Item in Dropdown</a></li>
-                    <li><a href="#">Sixth Item in Dropdown</a></li>
-                    <li><a href="#">Seventh Item in Dropdown</a></li>
+
                 </ul>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Menu Dropdown Four</a>
+                <a href="#" data-equalizer-watch="heading-links">Compliance </a>
                 <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">First Item in Dropdown</a></li>
-                    <li><a href="#">Second Item in Dropdown</a></li>
-                    <li><a href="#">Third Item in Dropdown</a></li>
-                    <li><a href="#">Fourth Item in Dropdown</a></li>
-                    <li><a href="#">Fifth Item in Dropdown</a></li>
-                    <li><a href="#">Sixth Item in Dropdown</a></li>
-                    <li><a href="#">Seventh Item in Dropdown</a></li>
+                    <li><a href="#">IRB Administration </a></li>
+                    <li><a href="#">Animal Care & Use (IACUC)</a></li>
+                    <li><a href="#">Institutional Biosafety Committee</a></li>
+                    <li><a href="#">Biomedical Materials Inventory </a></li>
+                    <li><a href="#">Export Control</a></li>
+                    <li><a href="#">Radiation Safety Committee </a></li>
                 </ul>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Menu Dropdown Five</a>
-                <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">First Item in Dropdown</a></li>
-                </ul>
-            </li>
-
-            <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Menu Dropdown Six</a>
-                <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">First Item in Dropdown</a></li>
-                    <li><a href="#">Second Item in Dropdown</a></li>
-                    <li><a href="#">Third Item in Dropdown</a></li>
-                    <li><a href="#">Fourth Item in Dropdown</a></li>
-                    <li><a href="#">Fifth Item in Dropdown That Goes to Three Lines Because it Is Long</a></li>
-                    <li><a href="#">Sixth Item in Dropdown</a></li>
-                    <li><a href="#">Seventh Item in Dropdown</a></li>
-                </ul>
+                <a href="#" data-equalizer-watch="heading-links">Offices & Resources</a>
+                <ul data-equalizer-watch="nested-links"></ul>
             </li>
         </ul>
     </nav>
