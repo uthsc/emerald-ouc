@@ -710,12 +710,25 @@
         <!--************-->
         <!--Contact Info-->
         <!--************-->
-        <div class="row">
-            <div class="columns text-center uthsc-copy-block" aria-label="UTHSC contact information">
+        <div class="row uthsc-copy-block collapse">
+            <div class="columns medium-3 text-right" aria-label="UTHSC links">
+                <ul>
+                    <li><a href="#">Give</a></li>
+                    <li><a href="#">Employment</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="columns medium-3" aria-label="UTHSC links">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Online Disclosure Statement</a></li>
+                </ul>
+            </div>
+            <div class="columns medium-6" aria-label="UTHSC contact information">
                 <p>
                     &copy; 2016
-                    The University of Tennessee<br />
-                    Health Science Center<br />
+                    The University of Tennessee Health Science Center<br />
                     Memphis, Tennessee 38163<br />
                     Main: (901) 448-5500<br />
                     TDD: (901) 448-7382
