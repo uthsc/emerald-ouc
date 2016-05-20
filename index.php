@@ -603,6 +603,37 @@
             <!--todo: Consider using more specific name than social-row and class instead of id-->
             <div id="social-row" data-equalizer="homepage-social" class="row collapse text-center">
 
+                <div class="columns uthsc-row-title">
+                    <h3>About UTHSC</h3>
+                </div>
+
+                <div class="row">
+                    <div class="columns medium-3">
+                        <h3>UTHSC Now</h3>
+                    </div>
+                    <div class="columns medium-3 text-right">
+                        <p>Filter by:</p>
+                    </div>
+                    <div class="columns medium-3">
+
+                        <div class="input-group">
+                            <input class="input-group-field" type="text" placeholder="Programs" style="height: 2.8rem;">
+                            <div class="input-group-button">
+                                <input type="submit" class="fa button" value="&#xf078">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="columns medium-3">
+                        <div class="input-group">
+                            <input class="input-group-field" type="text" placeholder="Resource Type" style="height: 2.8rem;">
+                            <div class="input-group-button">
+                                <input type="submit" class="fa button" value="&#xf078">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="columns medium-6 large-4 social-site">
                     <h5><span class="fa fa-facebook fa-2x"> Facebook</span></h5>
                     <div data-href="https://www.facebook.com/uthsc"
