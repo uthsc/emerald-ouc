@@ -559,10 +559,12 @@
 
             <!--Infographics-->
             <div class="uthsc-infographics row text-center" data-equalizer="homepage-stats">
-                <div data-equalizer-watch="homepage-stats" class="columns uthsc-infographic medium-3">
-                    <h2>$2.7</h2>
-                    <p>Billion</p>
-                    <p>contributed to the<br><span class="uthsc-infographic-highlight">Tennessee economy</span></p>
+                <div data-equalizer-watch="homepage-stats" class="columns medium-3">
+                    <div class="uthsc-infographic billions">
+                        <h2>$2.7</h2>
+                        <p>Billion</p>
+                        <p>contributed to the<br><span class="uthsc-infographic-highlight">Tennessee economy</span></p>
+                    </div>
                 </div>
 
                 <div data-equalizer-watch="homepage-stats" class="columns medium-6">
@@ -585,10 +587,12 @@
                     <p><span class="uthsc-infographic-highlight" style="position: relative; top: -2.7rem;">Across Tennessee</span>
                 </div>
 
-                <div data-equalizer-watch="homepage-stats" class="columns medium-3 uthsc-infographic">
-                    <h2>$200</h2>
-                    <p>Million</p>
-                    <p>in sponsored programs<br><span class="uthsc-infographic-highlight">in fiscal 2014</span></p>
+                <div data-equalizer-watch="homepage-stats" class="columns medium-3">
+                    <div class="uthsc-infographic millions">
+                        <h2>$200</h2>
+                        <p>Million</p>
+                        <p>in sponsored programs<br><span class="uthsc-infographic-highlight">in fiscal 2014</span></p>
+                    </div>
                 </div>
             </div>
             <!--/Infographics-->
