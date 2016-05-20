@@ -66,3 +66,25 @@
   padding: .5rem;
   margin-bottom: 1rem;
 }
+
+.uthsc-copy-block {
+
+  @include uthsc-vertical-center;
+
+ ul, p {
+   color: #fff;
+   margin: 2rem;
+  }
+  ul {
+    list-style: none;
+    font-weight: 700;
+  }
+}
+.uthsc-global-footer {
+  a {
+    color: #fff;
+    &:hover {
+      color: $uthsc-blue-dark;
+    }
+  }
+}
