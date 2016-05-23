@@ -82,115 +82,6 @@
 <!--/Facebook SDK for JavaScript-->
 <!--****************************-->
 
-<!--***************-->
-<!--Google Maps API-->
-<!--***************-->
-<script>
-    var marker;
-
-    function initMap() {
-        var myLatLng = {lat: 35.1393278, lng: -90.0320579};
-
-        var map = new google.maps.Map(document.getElementById('map'), {
-            center: myLatLng,
-            zoom: 15,
-            scrollwheel:  false
-        });
-
-        var infowindow = new google.maps.InfoWindow({
-            content: 'Lamar Alexander Building',
-            maxWidth: 200
-        });
-
-        marker = new google.maps.Marker({
-            position: {lat:35.140173, lng:-90.031881},
-            map: map,
-            title: 'Lamar Alexander Building'
-        });
-        marker.addListener('click', function() {
-            infowindow.open(map, marker);
-        });
-
-        // Define the LatLng coordinates for the polygon's path.
-        var uthscCoords = [
-            {lat:35.1349486, lng: -90.0296545},
-            {lat:35.1381116, lng: -90.0295204},
-            {lat:35.1379625, lng: -90.0281686},
-            {lat:35.1382827, lng: -90.0281631},
-            {lat:35.1384406, lng: -90.0281847},
-            {lat:35.1386205, lng: -90.0282598},
-            {lat:35.1387653, lng: -90.0283348},
-            {lat:35.1388881, lng: -90.0283455},
-            {lat:35.1390241, lng: -90.0282919},
-            {lat:35.1400155, lng: -90.0281525},
-            {lat:35.1409455, lng: -90.0277877},
-            {lat:35.1413446, lng: -90.0277501},
-            {lat:35.1412218, lng: -90.0266987},
-            {lat:35.1418886, lng: -90.0265807},
-            {lat:35.1419325, lng: -90.0272298},
-            {lat:35.1421913, lng: -90.0272137},
-            {lat:35.1422176, lng: -90.0276321},
-            {lat:35.1426563, lng: -90.0275731},
-            {lat:35.1428798, lng: -90.0295472},
-            {lat:35.1428054, lng: -90.0300139},
-            {lat:35.1421386, lng: -90.0300944},
-            {lat:35.1422088, lng: -90.0308829},
-            {lat:35.1412832, lng: -90.0309849},
-            {lat:35.1410332, lng: -90.0311244},
-            {lat:35.1403663, lng: -90.0312263},
-            {lat:35.1404419, lng: -90.0323859},
-            {lat:35.1412131, lng: -90.0323045},
-            {lat:35.1412876, lng: -90.0327390},
-            {lat:35.1404629, lng: -90.0327980},
-            {lat:35.1404989, lng: -90.0334740},
-            {lat:35.1424808, lng: -90.0331682},
-            {lat:35.1427659, lng: -90.0302446},
-            {lat:35.1430467, lng: -90.0302339},
-            {lat:35.1434108, lng: -90.0312969},
-            {lat:35.1435731, lng: -90.0330340},
-            {lat:35.1426168, lng: -90.0331682},
-            {lat:35.1428098, lng: -90.0352818},
-            {lat:35.1433713, lng: -90.0374168},
-            {lat:35.1435818, lng: -90.0380552},
-            {lat:35.1424501, lng: -90.0384521},
-            {lat:35.1420685, lng: -90.0368965},
-            {lat:35.1407437, lng: -90.0375348},
-            {lat:35.1401208, lng: -90.0378835},
-            {lat:35.1399628, lng: -90.0373363},
-            {lat:35.1389627, lng: -90.0376850},
-            {lat:35.1387389, lng: -90.0358772},
-            {lat:35.1386161, lng: -90.0347829},
-            {lat:35.1375807, lng: -90.0348687},
-            {lat:35.1376158, lng: -90.0350617},
-            {lat:35.1375633, lng: -90.0353837},
-            {lat:35.1371772, lng: -90.0358772},
-            {lat:35.1367034, lng: -90.0352979},
-            {lat:35.1363525, lng: -90.0349769},
-            {lat:35.1358436, lng: -90.0348687},
-            {lat:35.1355979, lng: -90.0332808},
-            {lat:35.1352479, lng: -90.0310278},
-            {lat:35.1349486, lng: -90.0296545}
-        ];
-
-
-        // Construct the polygon.
-        var uthscPolygon = new google.maps.Polygon({
-            paths: uthscCoords,
-            strokeColor: '#f77f00',
-            strokeOpacity: 0.8,
-            strokeWeight: 4,
-            fillColor: '#006a4d',
-            fillOpacity: 0.35
-        });
-        uthscPolygon.setMap(map);
-    }
-
-</script>
-
-<!--****************-->
-<!--/Google Maps API-->
-<!--****************-->
-
 <!--******************-->
 <!--Google Tag Manager-->
 <!--******************-->
@@ -365,23 +256,27 @@
         <ul class="row collapse" data-equalizer="heading-links">
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#about" data-equalizer-watch="heading-links">About UTHSC</a>
+                <a href="/education/" data-equalizer-watch="heading-links"><span class="fa fa-graduation-cap"></span> Academics</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#academics" data-equalizer-watch="heading-links"><span class="fa fa-graduation-cap"></span> Academics</a>
+                <a href="/research/" data-equalizer-watch="heading-links"><span class="fa fa-flask"></span> Research</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#research" data-equalizer-watch="heading-links"><span class="fa fa-flask"></span> Research</a>
+                <a href="/clinicalcare/" data-equalizer-watch="heading-links"><span class="fa fa-medkit"></span>Clinical Care</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#clinical-care" data-equalizer-watch="heading-links"><span class="fa fa-medkit"></span>Clinical Care</a>
+                <a href="/publicservice/" data-equalizer-watch="heading-links"><span class="fa fa-globe"></span>Public Service</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#public-service" data-equalizer-watch="heading-links"><span class="fa fa-globe"></span>Public Service</a>
+                <a href="/aboututhsc/" data-equalizer-watch="heading-links"><span class="fa fa-file-text-o"></span>About UTHSC</a>
+            </li>
+
+            <li class="uthsc-navigation-column small-2 columns">
+                <a href="http://uthscalumni.com/" data-equalizer-watch="heading-links"><span class="fa fa-users"></span>Alumni &amp; Friends</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns"></li>
@@ -398,23 +293,30 @@
     <!--todo: fullscreen may be too broad of a class name and is likely to cause conflicts. -->
     <!--todo: If we aren't going to use magellan, is background image necessary instead of a regular hero-->
     <!--todo: move inline styles to scss-->
-    <style>
-        .homepage .fullscreen {
-            height: calc(90vh - 105px);
-            background-image: url("-resources/2015/images/fullscreen-students.jpg");
-            background-size: cover;
-            background-position-x: 100%;
-            background-position-y: 80%;
-            background-repeat: no-repeat;
-        }
-        #map {
-            height: 100%;
-        }
-    </style>
 
     <!--<div class="hero hero-one show-for-large hide-for-print"></div>-->
-    <div class="show-for-medium">
-        <div class="fullscreen"></div>
+    <div class="fullscreen">
+        <div class="row">
+            <div class="columns small-11 medium-6 large-12 medium-uncentered small-centered uthsc-fullscreen-content">
+                <p>Bringing the benefits of the health sciences to the
+                    citizens of Tennessee and beyond through education,
+                    research, clinical care, and public service.</p>
+            </div>
+            <div class="columns medium-6 large-12">
+                <div class="row">
+                    <div class="columns small-6 medium-12 large-4 large-push-2">
+                        <a class="button secondary large expanded show-for-large"><span class="fa fa-road"></span> Take a Tour</a>
+                        <a class="button secondary expanded show-for-medium-only"><span class="fa fa-road"></span> Take a Tour</a>
+                        <a class="button secondary tiny expanded hide-for-medium"><span class="fa fa-road"></span> Take a Tour</a>
+                    </div>
+                    <div class="columns small-6 medium-12 large-4 large-pull-2">
+                        <a class="button secondary large expanded show-for-large"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
+                        <a class="button secondary expanded show-for-medium-only"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
+                        <a class="button secondary tiny expanded hide-for-medium"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--***********-->
     <!--/Hero Image-->
@@ -426,287 +328,243 @@
     <!--*******-->
     <div class="main-content" id="main-content" aria-label="Page content" role="main">
 
-        <!--**************-->
-        <!--Mobile Content-->
-        <!--**************-->
-        <div class="row hide-for-medium">
-
-            <!--****-->
-            <!--Tabs-->
-            <!--****-->
-            <ul class="tabs" data-tabs id="mobile-tabs">
-                <!--Academics tab-->
-                <li class="tabs-title is-active">
-                    <a href="#panel1"><span class="fa fa-graduation-cap fa-2x"></span></a>
-                </li>
-                <!--Academics tab-->
-
-                <!--Research tab-->
-                <li class="tabs-title">
-                    <a href="#panel2"><span class="fa fa-flask fa-2x"></span></a>
-                </li>
-                <!--/Research tab-->
-
-                <!--Clinical care tab-->
-                <li class="tabs-title">
-                    <a href="#panel3"><span class="fa fa-medkit fa-2x"></span></a>
-                </li>
-                <!--/Clinical care tab-->
-
-                <!--Public service tab-->
-                <li class="tabs-title">
-                    <a href="#panel4"><span class="fa fa-globe fa-2x"></span></a>
-                </li>
-                <!--/Public service tab-->
-            </ul>
-            <!--*****-->
-            <!--/Tabs-->
-            <!--*****-->
-
-            <!--***********-->
-            <!--Tab Contents-->
-            <!--***********-->
-            <div class="tabs-content" data-tabs-content="mobile-tabs">
-                <!--Academics tab content-->
-                <div class="tabs-panel is-active" id="panel1">
-                    <div class="row collapse">
-                        <div class="columns mission-image">
-                            <img src="-resources/2015/images/mission-academics.jpg" alt="xxxx">
+        <!--todo: does this need to have the about class or should that be moved to something else-->
+        <div class="content-area">
+            <!-- Program Explorer-->
+            <div class="row uthsc-program-explorer uthsc-row-space">
+                <div class="columns medium-8">
+                    <div class="row uthsc-program-explorer-tabs">
+                        <div class="columns uthsc-program-explorer-heading text-center">
+                            <h2>Program Explorer</h2>
+                            <h2 class="subheader">Discover all that UTHSC has to offer</h2>
                         </div>
-
-                        <div class="columns mission-name">
-                            <h2 class="tab-header">Academics</h2>
-                        </div>
-
-                        <div class="columns medium-9">
-
-                            <img class="" src="-resources/2015/images/numbers.png">
-
-                            <!--This doesn't seem like the best way to do this-->
-                            <!--Recommendation: give image class and add padding with a media query-->
-                            <!--<div class="show-for-small-only"><img src="-resources/2015/images/numbers.png"></div>-->
-                            <!--<div class="show-for-medium">-->
-                            <!--<img src="-resources/2015/images/numbers.png" style="padding: 2vw 6vw 0;">-->
-                            <!--</div>-->
-
-                            <hr style="width: 80%;margin: 3% 10%;">
-
-                            <div class="row">
-                                <div class="columns medium-10 medium-centered">
-                                    <h3>Students</h3>
-                                    <div class="row">
-                                        <div class="columns medium-4">
-                                            <h4>Future</h4>
+                            <div class="row collapse">
+                                <div class="medium-7 large-5 columns">
+                                    <ul class="tabs vertical" id="example-vert-tabs" data-tabs="data-tabs">
+                                        <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Dentistry</a></li>
+                                        <li class="tabs-title"><a href="#panel2v">Graduate Health Sciences</a></li>
+                                        <li class="tabs-title"><a href="#panel3v">Health Professions</a></li>
+                                        <li class="tabs-title"><a href="#panel4v">Medicine</a></li>
+                                        <li class="tabs-title"><a href="#panel5v">Nursing</a></li>
+                                        <li class="tabs-title"><a href="#panel6v">Pharmacy</a></li>
+                                    </ul>
+                                </div>
+                                <div class="medium-5 large-7 columns uthsc-program-explorer-content">
+                                    <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
+                                        <div class="tabs-panel is-active" id="panel1v">
                                             <ul>
-                                                <li><a href="/admissions/">Admissions</a></li>
-                                                <li><a href="/admissions/application-deadlines.php">
-                                                        Application Deadlines</a></li>
-                                                <li><a href="/admissions/degrees-offered.php">Degrees Offered</a></li>
-                                                <li><a href="/finaid/">Financial Aid</a></li>
-                                                <li><a href="/maps/">Maps and Directions</a></li>
-                                                <li><a href="/international/">International Students</a></li>
-                                                <li><a href="/futurestudents/">More...</a></li>
+                                                <li><a href="/dentistry/Fac_Depts/bidx.php">Diagnostic Sciences &amp; Oral Medicine</a></li>
+                                                <li><a href="/dentistry/omds/">Oral and Maxillofacial Diagnostic Services</a></li>
+                                                <li><a href="/dentistry/dental-hygiene/">Dental Hygiene, Entry Level (B.S. Degree)</a></li>
+                                                <li><a href="/dentistry/dental-hygiene/masters/index.php">Dental Hygiene, Graduate Program (MDH Degree)</a></li>
+                                                <li><a href="/dentistry/Fac_Depts/endo.php">Endodontics</a></li>
+                                                <li><a href="/dentistry/Fac_Depts/general-practice-staff.php">General Practice</a></li>
+                                                <li><a href="/dentistry/Fac_Depts/oms.php">Oral &amp; Maxillofacial Surgery</a></li>
+                                                <li><a href="/dentistry/Fac_Depts/ortho.php">Orthodontics</a></li>
+                                                <li><a href="/dentistry/Fac_Depts/pedocoh.php">Pediatric Dentistry &amp; Community Oral Health</a></li>
+                                                <li><a href="/dentistry/Fac_Depts/perio.php">Periodontology</a></li>
+                                                <li><a href="/dentistry/Fac_Depts/rest.php">Prosthodontics</a></li>
+                                                <li><a href="/dentistry/research/">Bioscience Research</a></li>
+                                                <li><a href="/dentistry/Fac_Depts/newrest.php">Restorative</a></li>
                                             </ul>
                                         </div>
-                                        <div class="columns medium-4">
-                                            <h4>Current</h4>
+                                        <div class="tabs-panel" id="panel2v">
                                             <ul>
-                                                <li><a href="/registrar/academic_calendar.php">
-                                                        Academic Calendar</a></li>
-                                                <li><a href="/registrar/students.php#catalogs">
-                                                        Academic Catalog</a></li>
-                                                <li><a href="/banner/">Banner Self-Service</a></li>
-                                                <li><a href="/centerscope/">CenterScope</a></li>
-                                                <li><a href="/oss/">One Stop Shop</a></li>
-                                                <li><a href="/studentlife/">Student Life/SGAEC</a></li>
-                                                <li><a href="/volshop/">VolShop</a></li>
-                                                <li><a href="/registrar/">Registrar</a></li>
-                                                <li><a href="/finance/bursar/">Bursar&rsquo;s Office</a></li>
-                                                <li><a href="/students/">More...</a></li>
+                                                <li><a href="/grad/Programs/index.php?page=BIOM">Biomedical Engineering and Imaging</a></li>
+                                                <li><a href="/grad/Programs/index.php?page=DSCI">Dental Science (Masters only)</a>
+                                                </li>
+                                                <li><a href="/grad/Programs/index.php?page=BIOE">Epidemiology (Masters only)</a>
+                                                </li>
+                                                <li><a href="/grad/Programs/index.php?page=HOPR">Health Outcomes and Policy Research</a></li>
+                                                <li><a href="/grad/PROGRAMS/BCLRMMO.php">Biomedical Sciences (Masters only)</a>
+                                                </li>
+                                                <li><a href="/grad/IBS/">Integrated Program in Biomedical Sciences (PhD only)</a>
+                                                </li>
+                                                <li><a href="/grad/Programs/index.php?page=NSG">Nursing</a></li>
+                                                <li><a href="/grad/Programs/index.php?page=PharmSci">Pharmaceutical Sciences</a></li>
+                                                <li><a href="/grad/Programs/index.php?page=PharmacologyMS">Pharmacology (Masters only)</a>
+                                                </li>
+                                                <li><a href="/health-professions/asp/phd/index.php">Speech and Hearing Science</a></li>
                                             </ul>
                                         </div>
-                                        <div class="columns medium-4">
-                                            <h4>Residents</h4>
+                                        <div class="tabs-panel" id="panel3v">
                                             <ul>
-                                                <li><a href="/GME/">Graduate Medical Education (GME)</a></li>
-                                                <li><a href="/dentistry/Grad/programs.php">Dentistry</a></li>
-                                                <li><a href="/pharmacy/dcp/residencyfellowship/cprp/">Pharmacy</a></li>
-                                                <li><a href="/hospitals/">Affiliated Hospitals</a></li>
-                                                <li><a href="/residency/">More...</a></li>
+                                                <li><a href="/health-professions/asp/index.php">Audiology &amp; Speech Pathology</a></li>
+                                                <li><a href="/health-professions/cls/index.php">Clinical Laboratory Sciences</a></li>
+                                                <li><a href="/health-professions/cls/ct/index.php">Cytotechnology &amp; Histotechnology </a></li>
+                                                <li><a href="/health-professions/him/index.php">Health Informatics &amp; Information Management</a></li>
+                                                <li><a href="/health-professions/cls/mls/index.php">Medical Laboratory Science</a></li>
+                                                <li><a href="/health-professions/ot/index.php">Occupational Therapy</a></li>
+                                                <li><a href="/health-professions/pa/index.php">Physician Assistant</a></li>
+                                                <li><a href="/health-professions/pt/index.php">Physical Therapy, Entry Level (DPT Degree)</a></li>
+                                                <li><a href="/health-professions/pt/programs/pt-graduate/index.php">Physical Therapy, Graduate Program (MSPT Degree)</a></li>
+                                                <li><a href="/health-professions/pt/programs/pt-graduate/index.php">Physical Therapy, Graduate Program (ScDPT Degree)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tabs-panel" id="panel4v">
+                                            <ul>
+                                                <li><a href="/anatomy-neurobiology/">Anatomy &amp; Neurobiology</a></li>
+                                                <li><a href="/anesthesiology/">Anesthesiology</a></li>
+                                                <li><a href="/compmed/">Comparative Medicine</a></li>
+                                                <li><a href="/dermatology/">Dermatology</a></li>
+                                                <li><a href="/fammed/">Family Medicine</a></li>
+                                                <li><a href="/internalmedicine/">Medicine</a></li>
+                                                <li><a href="/molecular_sciences/">Microbiology, Immunology and Biochemistry</a></li>
+                                                <li><a href="/neurology/">Neurology</a></li>
+                                                <li><a href="/neurosurgery/">Neurosurgery</a></li>
+                                                <li><a href="/obgyn/">Obstetrics and Gynecology</a></li>
+                                                <li><a href="/eye/">Ophthalmology</a></li>
+                                                <li><a href="/ortho/">Orthopaedic Surgery &amp; Biomedical Engineering</a></li>
+                                                <li><a href="/otolaryngology/">Otolaryngology - Head and Neck Surgery</a></li>
+                                                <li><a href="/pathology/">Pathology and Laboratory Medicine</a></li>
+                                                <li><a href="/pediatrics/">Pediatrics</a></li>
+                                                <li><a href="/pharmacology/">Pharmacology</a></li>
+                                                <li><a href="/physiology/">Physiology</a></li>
+                                                <li><a href="/plasticsurgery/">Plastic Surgery</a></li>
+                                                <li><a href="/prevmed/">Preventive Medicine</a></li>
+                                                <li><a href="/psych/">Psychiatry</a></li>
+                                                <li><a href="/radiology/">Radiology</a></li>
+                                                <li><a href="/surgery/">Surgery</a></li>
+                                                <li><a href="/urology/">Urology</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tabs-panel" id="panel5v">
+                                            <ul>
+                                                <li><a href="/nursing/academic-programs/index.php">Academic Programs</a></li>
+                                                <li><a href="/nursing/continuing-education/index.php">Continuing Education</a></li>
+                                                <li><a href="/nursing/practice-programs/index.php">Practice Programs</a></li>
+                                                <li><a href="/nursing/research-programs/index.php">Research Programs</a></li>
+                                                <li><a href="/nursing/academic-programs/BSN/index.php">Bachelor of Science in Nursing (BSN)</a></li>
+                                                <li><a href="/nursing/academic-programs/MSN/index.php">Clinical Nurse Leader (CNL)</a></li>
+                                                <li><a href="/nursing/academic-programs/DNP/index.php">Doctor of Nursing Practice (DNP)</a></li>
+                                                <li><a href="/nursing/academic-programs/DNP/nurse_anesthesia/index.php">Nurse Anesthesia (DNP)</a></li>
+                                                <li><a href="/nursing/academic-programs/PhD/index.php">Doctor of Philosophy (PhD)</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="tabs-panel" id="panel6v">
+                                            <ul>
+                                                <li><a href="/pharmacy/dcp/">Department of Clinical Pharmacy</a></li>
+                                                <li><a href="/pharmacy/pharmsci/">Department of Pharmaceutical Sciences</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="columns collapse college-image">
-                            <h3>Colleges</h3>
-                            <a href="/dentistry/"><img src="-resources/2015/images/colleges-arches-01.jpg"></a>
-                            <a href="/grad/"><img src="-resources/2015/images/colleges-arches-02.jpg"></a>
-                            <a href="/health-professions/"><img src="-resources/2015/images/colleges-arches-03.jpg"></a>
-                            <a href="/medicine/"><img src="-resources/2015/images/colleges-arches-04.jpg"></a>
-                            <a href="/nursing/"><img src="-resources/2015/images/colleges-arches-05.jpg"></a>
-                            <a href="/pharmacy/"><img src="-resources/2015/images/colleges-arches-06.jpg"></a>
-                        </div>
-                        <div class="columns medium-3 news-box">
-                            <div class="row">
-                                <div class="columns small-11">
-                                    <h3><span class="fa fa-newspaper-o"> News<br>
-                                        <span class="news-box-for">for Academics</span></span></h3>
-                                </div>
-                                <div class="columns small-12 news-posts-academics">
-
-                                    <!--News Posts Academics Mobile-->
-
-
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-                <!--/Academics tab content-->
-
-                <!--Research tab content-->
-                <div class="tabs-panel" id="panel2">
-                    <div class="row collapse">
-                        <div class="columns mission-image">
-                            <img src="-resources/2015/images/mission-research.jpg"alt="xxxx">
-                        </div>
-
-                        <div class="columns mission-name">
-                            <h2 class="tab-header">Research</h2>
-                        </div>
-
-                        <div style="padding: 40vh 0;
-                             text-align: center;
-                             margin-top: 15px;
-                             background-image: url('-resources/2015/images/flask.png');
-                             background-repeat: no-repeat;
-                             background-size: 50%;
-                             background-position: 50%;"
-                             class="columns medium-9 panel">
-                            <p>Research specific content will be in this space.<br>
-                                See the<a href="#academics"> Academics</a> section for example.</p>
-                        </div>
-
-                        <div class="columns medium-3 news-box">
-                            <div class="row">
-                                <div class="columns small-11">
-                                    <h3><span class="fa fa-newspaper-o"> News<br>
-                                    <span class="news-box-for">for Research</span></span></h3>
-                                </div>
-                                <div class="columns small-12 news-posts-research">
-
-                                    <!--News Posts Research Mobile-->
-
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+                <div class="columns medium-4 uthsc-did-you-know text-center">
+                    <h2><span class="fa fa-lightbulb-o"></span> Did you know...</h2>
+                    <p>UTHSC is ranked</p>
+                    <p class="uthsc-did-you-know-number"><sup>#</sup>17</p>
+                    <p>nationally among US pharmacy schools</p>
                 </div>
-                <!--/Research tab content-->
-
-                <!--Clinical care tab content-->
-                <div class="tabs-panel" id="panel3">
-                    <div class="row collapse">
-                        <div class="columns mission-image">
-                            <img src="-resources/2015/images/mission-clinical-care.jpg" alt="xxxx">
-                        </div>
-                        <div class="columns mission-name">
-                            <h2 class="tab-header">Clinical Care</h2>
-                        </div>
-
-                        <div style="padding: 40vh 0;
-                             text-align: center;
-                             margin-top: 15px;
-                             background-image: url('-resources/2015/images/medkit.png');
-                             background-repeat: no-repeat;background-size: 50%;
-                             background-position: 50%;"
-                             class="columns medium-9 panel">
-                            <p>Clinical Care specific content will be in this space.<br>
-                                See the<a href="#academics"> Academics</a> section for example.</p>
-                        </div>
-                        <div class="columns medium-3 news-box">
-                            <div class="row">
-                                <div class="columns small-11">
-                                    <h3><span class="fa fa-newspaper-o"> News<br>
-                                    <span class="news-box-for">for Clinical Care</span></span></h3>
-                                </div>
-                                <div class="columns small-12 news-posts-clinical-care">
-
-                                    <!--News Posts Clinical Care Mobile-->
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/Clinical care tab content-->
-
-                <!--Public service tab content-->
-                <div class="tabs-panel" id="panel4">
-                    <div class="row collapse">
-                        <div class="columns mission-image">
-                            <img src="-resources/2015/images/mission-public-service.jpg" alt="xxxx">
-                        </div>
-                        <div class="columns mission-name">
-                            <h2 class="tab-header">Public Service</h2>
-                        </div>
-                        <div style="padding: 40vh 0;
-                             text-align: center;
-                             margin-top: 15px;
-                             background-image: url('-resources/2015/images/globe.png');
-                             background-repeat: no-repeat;
-                             background-size: 50%;
-                             background-position: 50%;"
-                             class="columns medium-9 panel">
-                            <p>Public Service specific content will be in this space.<br>
-                                See the<a href="#academics"> Academics</a> section for example.</p>
-                        </div>
-                        <div class="columns medium-3 news-box">
-                            <div class="row">
-                                <div class="columns small-11">
-                                    <h3><span class="fa fa-newspaper-o"> News<br>
-                                    <span class="news-box-for">for Public Service</span></span></h3>
-                                </div>
-                                <div class="columns small-12 news-posts-public-service">
-
-                                    <!--News Posts Public Service Mobile-->
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--/Public service tab content-->
             </div>
-            <!--***********-->
-            <!--/Tab Content-->
-            <!--***********-->
+            <!--/Program Explorer-->
 
-        </div>
-        <!--************-->
-        <!--/Mobile Tabs-->
-        <!--************-->
+            <!--  People Search-->
+            <div class="row uthsc-people-search uthsc-row-space">
+                <div class="columns callout">
+                    <!--Search form-->
+                    <div class="input-group">
+                        <input class="input-group-field" type="text" placeholder="Search ...">
+                        <div class="input-group-button">
+                            <input type="submit" class="button" value="Submit">
+                        </div>
+                    </div>
+                    <!--/Search form-->
+                </div>
+            </div>
+            <!--/ People Search-->
 
-        <!--***************-->
-        <!--Desktop Content-->
-        <!--***************-->
-
-        <!--Research anchor link-->
-        <a id="about" style="margin-top:-75px; height:1px; width:1px; position:absolute;"></a>
-        <!--/Research anchor link-->
-
-        <!--todo: does this need to have the about class or should that be moved to something else-->
-        <div class="content-area">
+            <!--  Mission Row-->
+            <div class="row uthsc-row-space medium-up-2 large-up-4">
+                <div class="columns">
+                    <img src="-resources/2015/images/mission-academics.jpg" class="uthsc-mission-image">
+                    <h2>Academics</h2>
+                    <p>Since 1911, the University of Tennessee
+                        Health Sciences Center has been training
+                        health care scientists and caregivers
+                        through education, research, clinical care,
+                        and public service. Today, our colleges of
+                        Dentistry, Graduate Health Sciences,
+                        Medicine, Nursing, Pharmacy, and Health
+                        Professions serve over 3,000 students and
+                        1,200 residents across four campuses.</p>
+                    <ul>
+                        <li><a href="#">Academic Calendar</a></li>
+                        <li><a href="#">Academic Catalog</a></li>
+                        <li><a href="#">Registrar</a></li>
+                        <li><a href="#">Bursar's Office</a></li>
+                    </ul>
+                    <hr />
+                    <a class="button hollow small" href="#"><span class="fa fa-plus-circle"></span> Learn More...</a>
+                </div>
+                <div class="columns">
+                    <img src="-resources/2015/images/mission-research.jpg" class="uthsc-mission-image">
+                    <h2>Research</h2>
+                    <p>UTHSC has a long and rich tradition of
+                        accomplishments in basic, clinical, and
+                        translational research in a wide variety of
+                        disciplines focused on the kinds of
+                        contemporary health issues that impact our
+                        community, our region, the state of
+                        Tennessee, and the world.</p>
+                    <ul>
+                        <li><a href="#">Graduate Medical Education (GME)</a></li>
+                        <li><a href="#">Dentistry</a></li>
+                        <li><a href="#">Pharmacy</a></li>
+                        <li><a href="#">Affiliated Hospitals</a></li>
+                    </ul>
+                    <hr />
+                    <a class="button hollow small" href="#"><span class="fa fa-plus-circle"></span> Learn More...</a>
+                </div>
+                <div class="columns">
+                    <img src="-resources/2015/images/mission-clinical-care.jpg" class="uthsc-mission-image">
+                    <h2>Clinical Care</h2>
+                    <p>UTHSC's faculty and students provide
+                        health care to the community through our
+                        network of hospitals, practice groups,
+                        specialty care clinics, and mobile healthcare
+                        facilities.</p>
+                    <ul>
+                        <li><a href="#">Graduate Medical Education (GME)</a></li>
+                        <li><a href="#">Dentistry</a></li>
+                        <li><a href="#">Pharmacy</a></li>
+                        <li><a href="#">Affiliated Hospitals</a></li>
+                    </ul>
+                    <hr />
+                    <a class="button hollow small" href="#"><span class="fa fa-plus-circle"></span> Learn More...</a>
+                </div>
+                <div class="columns">
+                    <img src="-resources/2015/images/mission-public-service.jpg" class="uthsc-mission-image">
+                    <h2>Public Service</h2>
+                    <p>Public service is central to our mission.
+                        Every year, thousands of faculty, staff, and
+                        volunteers across 4 campuses located in
+                        Memphis, Knoxville, Chattanooga, and
+                        Nashville provide clinical care, health
+                        literacy training, and preventative care
+                        programs to the people of Tennessee.</p>
+                    <ul>
+                        <li><a href="#">Academic Calendar</a></li>
+                        <li><a href="#">Academic Catalog</a></li>
+                        <li><a href="#">Registrar</a></li>
+                        <li><a href="#">Bursar's Office</a></li>
+                    </ul>
+                    <hr />
+                    <a class="button hollow small" href="#"><span class="fa fa-plus-circle"></span> Learn More...</a>
+                </div>
+            </div>
+            <!--/ Mission Row-->
 
             <!--Infographics-->
-            <div class="uthsc-infographics row text-center" data-equalizer="homepage-stats">
-                <div data-equalizer-watch="homepage-stats" class="columns uthsc-infographic medium-3">
-                    <h2>$2.7</h2>
-                    <p>Billion</p>
-                    <p>contributed to the<br><span class="uthsc-infographic-highlight">Tennessee economy</span></p>
+            <div class="uthsc-infographics row text-center" data-equalizer="homepage-stats" data-equalize-on-stack="false">
+                <div data-equalizer-watch="homepage-stats" class="columns medium-3">
+                    <div class="uthsc-infographic millions">
+                        <h2>$200</h2>
+                        <p>Million</p>
+                        <p>in sponsored programs<br><span class="uthsc-infographic-highlight">in fiscal 2014</span></p>
+                    </div>
                 </div>
 
                 <div data-equalizer-watch="homepage-stats" class="columns medium-6">
@@ -729,387 +587,58 @@
                     <p><span class="uthsc-infographic-highlight" style="position: relative; top: -2.7rem;">Across Tennessee</span>
                 </div>
 
-                <div data-equalizer-watch="homepage-stats" class="columns medium-3 uthsc-infographic">
-                    <h2>$200</h2>
-                    <p>Million</p>
-                    <p>in sponsored programs<br><span class="uthsc-infographic-highlight">in fiscal 2014</span></p>
+                <div data-equalizer-watch="homepage-stats" class="columns medium-3">
+                    <div class="uthsc-infographic billions">
+                        <h2>$2.7</h2>
+                        <p>Billion</p>
+                        <p>contributed to the<br><span class="uthsc-infographic-highlight">Tennessee economy</span></p>
+                    </div>
                 </div>
             </div>
             <!--/Infographics-->
 
-            <!--Map area-->
-
-            <!--Call to Action Buttons-->
-            <div class="row">
-                <div class="columns small-centered medium-8 large-7">
-                    <div class="row">
-                        <div class="columns medium-6">
-                            <a class="button large expanded"><span class="fa fa-road"></span> Take a Tour</a>
-                        </div>
-                        <div class="columns medium-6">
-                            <a class="button large expanded"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/Call to Action Buttons-->
-
-            <!--Map-->
-            <div class="row">
-                <div class="columns small-centered medium-12" style="width:100%; height: 275px">
-                    <div id="map" style="width: 100%; height: 100%"></div>
-                </div>
-            </div>
-            <!--/Map-->
-
-            <!--/Map area-->
-
-            <!--Events-->
-            <div id="events" class="row">
-                <?php readfile("http://events.uthsc.edu/widgets/uthsc_homepage_2015.php"); ?>
-            </div>
-            <!--/Events-->
-
-
-            <!--Blockquote-->
-            <div class="row">
-                <div class="columns small-centered small-12 medium-8 ">
-                    <div class="row blockquote collapse">
-                        <div class="columns small-2 medium-3">
-                            <h2><span class="fa fa-4x fa-quote-left quotemark"></span></h2>
-                        </div>
-                        <div class="columns small-10 medium-9">
-                            <blockquote>
-                                <p>
-                                    In five years, we're going to all be talking about what a wonderful job we did,
-                                    patting ourselves on the back about what we did to take this community into the
-                                    next millennium, or we could all be looking at each other ashamed of ourselves for
-                                    squandering the opportunity that we had.
-                                </p>
-                                <cite>
-                                    Ken Brown, executive vice chancellor and chief operations officer
-                                </cite>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/Blockquote-->
-
-            <!--Hero Images for Mission Sets-->
-            <div class="hide-for-small-only content-area">
-
-                <!-- Academics-->
-
-                <!--Academics anchor link-->
-                <a id="academics" style="margin-top:-40px; height:1px; width:1px; position:absolute;"></a>
-                <!--/Academics anchor link-->
-
-                <div class="hero">
-                    <img src="-resources/2015/images/mission-academics.jpg" alt="xxxx">
-                </div>
-
-                <div class="hero-name-stripe"></div>
-
-                <div class="row">
-                    <h2 class="hero-text">Academics</h2>
-
-                    <div class="columns medium-3 news-box">
-                        <div class="row">
-                            <div class="columns small-11">
-                                <h3>
-                                    <span class="fa fa-newspaper-o"></span> News<br>
-                                    <span class="news-box-for">for Academics</span>
-                                </h3>
-                            </div>
-                            <div class="columns small-12 news-posts-academics">
-                                <!--News Posts Academics Desktop-->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="columns medium-9">
-
-                        <div class="row">
-                            <div class="columns medium-10 medium-centered">
-                                <h3>Students</h3>
-                                <div class="row">
-                                    <div class="columns medium-4">
-                                        <h4>Future</h4>
-                                        <ul>
-                                            <li><a href="/admissions/">Admissions</a></li>
-                                            <li><a href="/admissions/application-deadlines.php">Application Deadlines</a></li>
-                                            <li><a href="/admissions/degrees-offered.php">Degrees Offered</a></li>
-                                            <li><a href="/finaid/">Financial Aid</a></li>
-                                            <li><a href="/maps/">Maps and Directions</a></li>
-                                            <li><a href="/international/">International Students</a></li>
-                                            <li><a href="/futurestudents/">More...</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="columns medium-4">
-                                        <h4>Current</h4>
-                                        <ul>
-                                            <li><a href="/registrar/academic_calendar.php">Academic Calendar</a></li>
-                                            <li><a href="/registrar/students.php#catalogs">Academic Catalog</a></li>
-                                            <li><a href="/banner/">Banner Self-Service</a></li>
-                                            <li><a href="/centerscope/">CenterScope</a></li>
-                                            <li><a href="/oss/">One Stop Shop</a></li>
-                                            <li><a href="/studentlife/">Student Life/SGAEC</a></li>
-                                            <li><a href="/volshop/">VolShop</a></li>
-                                            <li><a href="/registrar/">Registrar</a></li>
-                                            <li><a href="/finance/bursar/">Bursar&rsquo;s Office</a></li>
-                                            <li><a href="/students/">More...</a></li>
-                                        </ul>
-                                    </div>
-
-                                    <div class="columns medium-4">
-                                        <h4>Residents</h4>
-                                        <ul>
-                                            <li><a href="/GME/">Graduate Medical Education (GME)</a></li>
-                                            <li><a href="/dentistry/Grad/programs.php">Dentistry</a></li>
-                                            <li><a href="/pharmacy/dcp/residencyfellowship/cprp/">Pharmacy</a></li>
-                                            <li><a href="/hospitals/">Affiliated Hospitals</a></li>
-                                            <li><a href="/residency/">More...</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--Hero images for colleges-->
-                <div id="colleges" class="hero callout">
-                    <div class="row colleges">
-                        <div class="columns">
-                            <h2>Colleges</h2>
-                        </div>
-
-
-                        <!--Colleges block-grid-->
-                        <div class="row small-up-2 medium-up-3">
-                            <div class="column">
-                                <a href="/dentistry/">
-                                    <img src="-resources/2015/images/cod1.jpg" class="thumbnail" alt="College of Dentistry">
-                                </a>
-                            </div>
-                            <div class="column">
-                                <a href="/grad/">
-                                    <img src="-resources/2015/images/cghs1.jpg" class="thumbnail" alt="College of Graduate Health Sciences">
-                                </a>
-                            </div>
-                            <div class="column">
-                                <a href="/health-professions/">
-                                    <img src="-resources/2015/images/chp1.jpg" class="thumbnail" alt="College of Health Professions">
-                                </a>
-                            </div>
-                            <div class="column">
-                                <a href="/medicine/">
-                                    <img src="-resources/2015/images/com1.jpg" class="thumbnail" alt="College of Medicine">
-                                </a>
-                            </div>
-                            <div class="column">
-                                <a href="/nursing/">
-                                    <img src="-resources/2015/images/con1.jpg" class="thumbnail" alt="College of Nursing">
-                                </a>
-                            </div>
-                            <div class="column">
-                                <a href="/pharmacy/">
-                                    <img src="-resources/2015/images/cop1.jpg" class="thumbnail" alt="College of Pharmacy">
-                                </a>
-                            </div>
-                        </div>
-                        <!--Colleges block-grid-->
-
-                    </div>
-                </div>
-                <!--/Hero images for colleges-->
-                <!--/Academics-->
-
-                <!--Research-->
-
-                <!--Research anchor link-->
-                <a id="research" style="margin-top:-25px; height:1px; width:1px; position:absolute;"></a>
-                <!--/Research anchor link-->
-
-                <div class="hero">
-                    <img src="-resources/2015/images/mission-research.jpg" alt="xxxx">
-                </div>
-
-                <div class="hero-name-stripe"></div>
-
-                <div class="row">
-                    <h2 class="hero-text">Research</h2>
-
-                    <div class="columns medium-3 news-box">
-                        <div class="row">
-                            <div class="columns small-11">
-                                <h3>
-                                    <span class="fa fa-newspaper-o"></span> News<br>
-                                    <span class="news-box-for">for Research</span>
-                                </h3>
-                            </div>
-                            <div class="columns small-12 news-posts-research">
-                                <!--News Posts Research Desktop-->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="padding: 40vh 0;text-align: center;
-                         margin-top: 15px;
-                         background-image: url('-resources/2015/images/flask.png');
-                         background-repeat: no-repeat;
-                         background-size: 50%;background-position: 50%;"
-                         class="columns medium-9 panel">
-                        <p>Research specific content will be in this space.<br>
-                            See the <a href="#academics">Academics</a> section for example.</p>
-                    </div>
-                </div>
-                <!--/Research-->
-
-                <!--Clinical Care-->
-
-                <!--Clinical Care Anchor Link-->
-                <a id="clinical-care" style="margin-top:-24px; height:1px; width:1px; position:absolute;"></a>
-                <!--/Clinical Care Anchor Link-->
-
-                <div class="hero">
-                    <img src="-resources/2015/images/mission-clinical-care.jpg" alt="xxxx"/>
-                </div>
-
-                <div class="hero-name-stripe"></div>
-
-                <div class="row">
-                    <h2 class="hero-text">Clinical Care</h2>
-
-                    <div class="columns medium-3 news-box">
-                        <div class="row">
-                            <div class="columns small-11">
-                                <h3>
-                                    <span class="fa fa-newspaper-o"></span> News<br>
-                                    <span class="news-box-for">for Clinical Care</span>
-                                </h3>
-                            </div>
-                            <div class="columns small-12 news-posts-clinical-care">
-                                <!--News Posts Clinical Care Desktop-->
-                            </div>
-                        </div>
-                    </div>
-                    <div style="padding: 40vh 0;text-align: center;
-                         margin-top: 15px;
-                         background-image: url('-resources/2015/images/medkit.png');
-                         background-repeat: no-repeat;background-size: 50%;
-                         background-position: 50%;"
-                         class="columns medium-9 panel">
-                        <p>Clinical Care specific content will be in this space.<br>
-                            See the<a href="#academics"> Academics</a> section for example.</p>
-                    </div>
-                </div>
-                <!--/Clinical Care-->
-
-                <!--Public Service-->
-
-                <!--Public Service Anchor Link-->
-                <a id="public-service" style="margin-top:-24px; height:1px; width:1px; position:absolute;"></a>
-                <!--/Public Service Anchor Link-->
-
-                <!--todo: Alt tag is just xxxx-->
-                <div class="hero">
-                    <img src="-resources/2015/images/mission-public-service.jpg" alt="xxxx"/>
-                </div>
-
-                <div class="hero-name-stripe"></div>
-
-                <div class="row">
-                    <h2 class="hero-text">Public Service</h2>
-
-                    <div class="columns medium-3 news-box">
-                        <div class="row">
-                            <div class="columns small-11">
-                                <h3>
-                                    <span class="fa fa-newspaper-o"></span> News<br>
-                                    <span class="news-box-for">for Public Service</span>
-                                </h3>
-                            </div>
-                            <div class="columns small-12 news-posts-public-service">
-                                <!--News Posts Public Service Desktop-->
-                            </div>
-                        </div>
-                    </div>
-
-                    <div style="padding: 40vh 0;
-                         text-align: center;
-                         margin-top: 15px;
-                         background-image: url('-resources/2015/images/globe.png');
-                         background-repeat: no-repeat;
-                         background-size: 50%;
-                         background-position: 50%;"
-                         class="columns medium-9 panel">
-                        <p>Public Service specific content will be in this space.<br>
-                            See the<a href="#academics"> Academics</a> section for example.</p>
-                    </div>
-                </div>
-                <!--/Public Service-->
-
-            </div>
-            <!--/Hero Images for Mission Sets-->
-
             <hr />
 
             <!--Social-->
-            <!--todo: Consider using more specific name than social-row and class instead of id-->
-            <div id="social-row" data-equalizer="homepage-social" class="row collapse text-center">
+            <div class="row uthsc-social-masonry">
+                <div class="columns uthsc-row-title">
+                    <h3>UTHSC Now</h3>
+                </div>
+                <div class="columns">
+                    <div id="container" class="small-up-2 medium-up-3">
 
-                <div class="columns medium-6 large-4 social-site">
-                    <h5><span class="fa fa-facebook fa-2x"> Facebook</span></h5>
-                    <div data-href="https://www.facebook.com/uthsc"
-                         data-width="300"
-                         data-height="680"
-                         data-hide-cover="true"
-                         data-show-facepile="false"
-                         data-show-posts="true"
-                         data-equalizer-watch="homepage-social"
-                         class="fb-page"
-                         data-small-header="true">
-                        <div class="fb-xfbml-parse-ignore">
-                            <blockquote cite="https://www.facebook.com/uthsc">
-                                <a href="https://www.facebook.com/uthsc">University of Tennessee Health Science Center</a>
-                            </blockquote>
+                        <div class="columns">
+                            <img src="http://news.uthsc.edu/wp-content/uploads/2016/05/ryan-slider-300x300.jpg">
+                            <p>Six Professors Receive UTAA Awards</p>
                         </div>
-                    </div>
-                </div>
-
-                <div class="columns medium-6 large-4 social-site">
-                    <h5><span class="fa fa-twitter fa-2x"> Twitter</span></h5>
-                    <a data-dnt="true"
-                       href="https://twitter.com/uthsc"
-                       data-widget-id="614465323593539584"
-                       data-equalizer-watch="homepage-social"
-                       class="twitter-timeline"
-                       data-chrome="noheader noborders nofooter noscrollbar"
-                       width="300"
-                       height="680"
-                       data-aria-polite="assertive">
-                        Tweets by @uthsc
-                        <script>
-                            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-                        </script>
-                    </a>
-                </div>
-
-                <div class="columns large-4 social-site">
-                    <h5><span class="fa fa-instagram fa-2x"> Instagram</span></h5>
-                    <div id="uthsc-instagram" class="row small-up-3 medium-up-4 large-up-2">
-                        <?php echo get_uthsc_instagram(); ?>
+                        <div class="columns">
+                            <img src="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/05/Karen-Johnson-NewsSlider.jpg?resize=960%2C500">
+                            <p>Dr. Karen C. Johnson of UTHSC Receives $2.3 Million Grant to Study How Weight Loss and Increased Physical Activity Affect Aging in Individuals with Type 2 Diabetes</p>
+                        </div>
+                        <div class="columns">
+                            <img src="http://news.uthsc.edu/wp-content/uploads/2016/05/Imhotep-Award-news-slider.jpg?resize=300%2C300">
+                            <p>Student Government Association Executive Council Honors Faculty and Student Leaders at Awards Banquet</p>
+                        </div>
+                        <div class="columns">
+                            <img src="https://scontent-dfw1-1.cdninstagram.com/l/t51.2885-15/s640x640/sh0.08/e35/c0.133.1080.1080/13267442_575587109312844_2057094071_n.jpg?ig_cache_key=MTI1NDYwNzQ1MTU1NjA3ODc1OA%3D%3D.2.c">
+                        </div>
+                        <div class="columns">
+                            <img src="https://scontent-dfw1-1.xx.fbcdn.net/t31.0-8/13248574_10153762268232753_1033086639117245032_o.jpg">
+                        </div>
+                        <div class="columns">
+                            <img src="https://pbs.twimg.com/media/Ci1XbDzWEAE4hbA.jpg:large">
+                        </div>
+                        <div class="columns">
+                            <p>Fun hike at Meeman-Shelby Forest State Park with Outdoor Recreation! For more info, contact erinjennings@uthsc.edu.</p>
+                        </div>
+                        <div class="columns">
+                            <p>UTHSC Communications and Marketing Department Receives Two Awards for Alumni Magazines in International Competition</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <!--/Social-->
         </div>
-        <!--****************-->
-        <!--/Desktop Content-->
-        <!--****************-->
 
     </div>
     <!--********-->
@@ -1140,12 +669,25 @@
         <!--************-->
         <!--Contact Info-->
         <!--************-->
-        <div class="row">
-            <div class="columns text-center uthsc-copy-block" aria-label="UTHSC contact information">
+        <div class="row uthsc-copy-block text-center medium-text-left collapse medium-uncollapse">
+            <div class="columns small-6 medium-3 text-right" aria-label="UTHSC links">
+                <ul>
+                    <li><a href="#">Give</a></li>
+                    <li><a href="#">Employment</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="columns small-6 medium-3 text-left" aria-label="UTHSC links">
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Policies</a></li>
+                    <li><a href="#">Online Disclosure Statement</a></li>
+                </ul>
+            </div>
+            <div class="columns medium-5" aria-label="UTHSC contact information">
                 <p>
                     &copy; 2016
-                    The University of Tennessee<br />
-                    Health Science Center<br />
+                    The University of Tennessee Health Science Center<br />
                     Memphis, Tennessee 38163<br />
                     Main: (901) 448-5500<br />
                     TDD: (901) 448-7382
@@ -1647,6 +1189,8 @@
         <a href="/research/"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
         <a href="/clinicalcare/"><span class="uthsc-fa-centered fa fa-medkit"></span>&emsp;Clinical Care</a>
         <a href="/publicservice/"><span class="uthsc-fa-centered fa fa-globe"></span>&emsp;Public Service</a>
+        <a href="/aboututhsc/"><span class="uthsc-fa-centered fa fa-file-text-o"></span>&emsp;About UTHSC</a>
+        <a href="http://uthscalumni.com/"><span class="uthsc-fa-centered fa fa-users"></span>&emsp;Alumni &amp; Friends</a>
     </div>
 
     <a href="#" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift"></span>&emsp;Make a Gift</a>
@@ -1721,6 +1265,7 @@
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLV5PU6hBErfU5GOc9Jy4-6bWud2iaVj8&callback=initMap">
 </script>
+
 <!--instagram count fix-->
 <script>
     $('#uthsc-instagram').find(':nth-child(9)').addClass("show-for-small-only")
@@ -1786,6 +1331,24 @@
 </script>
 
 <!--/instagram count fix-->
+
+<!--  Masonry-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.0/masonry.pkgd.min.js"></script>
+<script>
+
+    $(window).load(function(){
+
+        $('#container').masonry({
+
+            itemSelector: '#container .columns'
+
+        });
+
+    });
+
+</script>
+<!--/ Masonry-->
+
 <!--********-->
 <!--/Scripts-->
 <!--********-->
