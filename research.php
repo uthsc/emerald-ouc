@@ -215,7 +215,6 @@
     <nav id="uthsc-section-navigation" data-equalizer="nested-links" aria-label="Current section menu"
          role="navigation" class="hide-for-print">
         <ul class="row collapse" >
-
             <li class="uthsc-navigation-column small-2 columns">
                 <a href="#" data-equalizer-watch="heading-links">About</a>
                 <ul data-equalizer-watch="nested-links">
@@ -228,7 +227,7 @@
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Proposals, Grants, & Contracts </a>
+                <a href="#" data-equalizer-watch="heading-links">Proposals, Grants, <br />& Contracts </a>
                 <ul data-equalizer-watch="nested-links"></ul>
             </li>
 
@@ -275,7 +274,10 @@
     <!--**********-->
     <!--Hero Image-->
     <!--**********-->
-    <div class="hero hero-one hide-for-print"></div>
+    <div class="hero hero-one hide-for-print" style="
+    background:url('http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/research-hero.jpg');
+    background-position: 50%;
+    background-size: cover;"></div>
     <!--***********-->
     <!--/Hero Image-->
     <!--***********-->
@@ -291,440 +293,258 @@
         <!--Page title-->
         <!--**********-->
         <div class="row">
-            <div class="columns">
-                <h1 style="border-bottom:1px solid #ddd; padding: 1rem; text-align: center;">UTHSC Office of Research</h1>
+            <div class="columns uthsc-row-title">
+                <h1>UTHSC Office of Research</h1>
             </div>
         </div>
+        <!--***********-->
+        <!--/Page title-->
+        <!--***********-->
 
-
-
+        <!--******************-->
+        <!--UTHSC Page-opening-->
+        <!--******************-->
         <div class="row expanded">
             <div class="row">
+                <div class="columns">
+                    <div class="uthsc-page-opening">
+
+                        <!--**********-->
+                        <!--Page intro-->
+                        <!--**********-->
+                        <h3 class="page-intro">Each fiscal year, UT Health Science Center faculty and staff receive
+                            nearly $100 million in research funding, including support from National Institutes of
+                            Health grants and private foundations. </h3>
+
+
+                        <!--*********-->
+                        <!--Page lead-->
+                        <!--*********-->
+                        <p class="page-lead">Advancing research and economic development is at the core the University
+                            of Tennessee Health Science Center's mission. Research funding has directly contributed to
+                            UTHSC's long record of accomplishments in basic science, applied clinical and translational
+                            research, and public health, allowing us to continue our contributions to the health of the
+                            Memphis-area community. Through collaborative relationships with health care partnerships
+                            like St. Jude Children's Research Hospital and Methodist Le Bonheur Healthcare, we are
+                            well-positioned to pave the way for innovative patient-centered research and development
+                            with a clinical and translational focus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--*******************-->
+        <!--/UTHSC Page-opening-->
+        <!--*******************-->
+
+
+        <div class="row">
+            <div class="columns uthsc-row-title">
+                <h2>Research Resources</h2>
+            </div>
+
             <div class="columns">
-                <div class="page-opening" style="text-align:center; font-weight: bold;">
-
-                    <style>
-                        .page-intro {
-                            color:#006a4d;
-                            font-size: 1.5em;
-                            font-weight:bold;
-                            padding:1rem;
-                        }
-
-                        .page-lead {
-                            color:#777777;
-                            font-size: 1.1em;
-                            padding:1rem;
-                        }
-                    </style>
-
-                    <!--**********-->
-                    <!--Page intro-->
-                    <!--**********-->
-                    <h3 class="page-intro">Every year, UTHSC faculty and staff receive an average of $100 million in external funding for
-                        research and sponsored programs from a variety of government, foundation, and corporate sources.</h3>
-
-
-                    <!--*********-->
-                    <!--Page lead-->
-                    <!--*********-->
-                    <p  class="page-lead">Advancing research and economic development is at the core the University of Tennessee Health
-                        Sciences Center’s mission. This funding has directly contributed to UTHSC’s long record of accomplishments
-                        in basic science, applied clinical and translational research, and public health, allowing us to
-                        continue our contributions to the health of the Memphis-area community. Through collaborative
-                        relationships with health care facilities like St. Jude Children's Research Hospital and Methodist
-                        Le Bonheur Healthcare, we are well-positioned to pave the way for innovative patient-centered
-                        research and development with a clinical and translational focus.</p>
-                </div>
-            </div>
-        </div>
-        </div>
-
-
-        <!--Columns highlight boxes-->
-        <div class="row expanded" style="background:rgba(66, 104, 173, 0.34);">
-            <div class="row">
-                <div class="columns">
-                    <!--<h2>Research Events</h2>-->
-                </div>
-
-                <div class="columns medium-6 large-4">
-                    <!--Highlight box-->
-                    <div class="highlight-box">
-                        <a>
-                            <img src="-resources/2015/images/research1.jpg">
-                            <h3 style="color:#00a5e3;">Office of Grants and Research Agreements</h3>
-                            <p>Supports faculty and staff across all UTHSC campuses who are working to obtain
-                                external
-                                funding while remaining in compliance with UT policy, sponsor policy, and the
-                                law. </p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="columns medium-6 large-4">
-                    <!--Highlight box-->
-                    <div class="highlight-box">
-
-                        <img src="-resources/2015/images/research2.jpg">
-                        <h3 style="color:#3ea22f;">Office of Research Compliance</h3>
-
-                        <p>Provides centralized administration and serves as the primary point of contact for
-                            research
-                            compliance related issues. </p>
-                    </div>
-                </div>
-
-                <div class="columns medium-6 large-4">
-                    <!--Highlight box-->
-                    <div class="highlight-box">
-                        <a>
-                            <img src="-resources/2015/images/research3.jpg">
-                            <h3 style="color:#7a68ae;">Research Contracts</h3>
-                            <p>Facilitates research contracts for faculty at UTHSC, including the Graduate School of
-                                Medicine in Knoxville and the Chattanooga Unit of the College of Medicine.</p>
-                        </a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="row expanded" style="background:rgba(66, 104, 173, 0.34);">
-            <div class="row">
-                <div class="columns">
-                    <!--<h2>Research Events</h2>-->
-                </div>
-
-                <div class="columns medium-6 large-4">
-                    <!--Highlight box-->
-                    <div class="highlight-box">
-                        <a>
-                            <img src="-resources/2015/images/research4.jpg">
-                            <h3 style="color:#7a68ae;">Postdoctoral Office</h3>
-                            <p>Supports postdocs and their mentors.</p>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="columns medium-6 large-4">
-                    <!--Highlight box-->
-                    <div class="highlight-box">
-                        <a>
-                            <img src="-resources/2015/images/research5.jpg">
-                            <h3 style="color:#3ea22f;">Office of Student Research Fellowship and Training
-                                Programs</h3>
-                            <p>Facilitates student research and student research projects.</p>
-                        </a>
-                    </div>
-                </div>
-
-
-                <div class="columns medium-6 large-4">
-                    <!--Highlight box-->
-                    <div class="highlight-box">
-                        <a>
-                            <img src="-resources/2015/images/research6.jpg">
-                            <h3 style="color:#00a5e3;">Technology Transfer Office</h3>
-                            <p>Provides the interface between discoveries at UTHSC and the businesses who want to
-                                commercialize them.</p>
-                        </a>
-                    </div>
-                </div>
+                <p style="text-align:center;">
+                    <a class="button" href="https://www.uthsc.edu/CRC/">Clinical Research</a>
+                    <a class="button" href="">Research Development</a>
+                    <a class="button" href="">Research Integrity Officer</a>
+                    <a class="button" href="">Governor’s Chair</a>
+                </p>
 
             </div>
         </div>
 
 
-        <!--Block Grid highlight boxes-->
-        <div class="row expanded" style="background:rgba(0, 160, 114, 0.34);" >
+        <!--******************************************-->
+        <!--Background stripe row with highlight boxes-->
+        <!--******************************************-->
+        <div class="row expanded background-stripe"
+             style="background: linear-gradient( rgba(255, 255, 255, 0.60), rgba(0, 0, 0, 0.60) ),
+                 url(http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/fullscreen-students.jpg);">
             <div class="row ">
-                <div class="columns"><h3>Title</h3></div>
-                <div class="columns" >
-
-                    <div class="row large-up-3">
+                <div class="columns"></div>
+                <div class="columns">
+                    <div class="row medium-up-2 large-up-3">
                         <div class="columns">
                             <!--Highlight box-->
-                            <div class="highlight-box">
+                            <div class="uthsc-highlight-box uthsc-highlight-box-purple">
                                 <a>
-                                    <img src="-resources/2015/images/research4.jpg">
-                                    <h3 style="color:#7a68ae;">Postdoctoral Office</h3>
-                                    <p>Supports postdocs and their mentors.</p>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="-resources/2015/images/research1.jpg">
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>Office of Grants and Research Agreements</p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p>Supports faculty and staff across all UTHSC campuses who are working to
+                                            obtain external funding while remaining in compliance with UT policy,
+                                            sponsor policy, and the law. </p>
+                                    </div>
                                 </a>
                             </div>
                         </div>
 
                         <div class="columns">
                             <!--Highlight box-->
-                            <div class="highlight-box">
-                                <a>
-                                    <img src="-resources/2015/images/research5.jpg">
-                                    <h3 style="color:#3ea22f;">Office of Student Research Fellowship and Training
-                                        Programs</h3>
-                                    <p>Facilitates student research and student research projects.</p>
-                                </a>
+                            <div class="uthsc-highlight-box">
+                                <div class="uthsc-highlight-box-image">
+                                    <img src="-resources/2015/images/research2.jpg"/>
+                                </div>
+                                <div class="uthsc-highlight-box-title">
+                                    <p>Office of Research Compliance</p>
+                                </div>
+
+                                <div class="uthsc-highlight-box-description">
+                                    <p>Provides centralized administration and serves as the primary point of contact
+                                        for research compliance related issues. </p>
+                                </div>
                             </div>
                         </div>
-
 
                         <div class="columns">
                             <!--Highlight box-->
-                            <div class="highlight-box">
+                            <div class="uthsc-highlight-box uthsc-highlight-box-green">
                                 <a>
-                                    <img src="-resources/2015/images/research6.jpg">
-                                    <h3 style="color:#00a5e3;">Technology Transfer Office</h3>
-                                    <p>Provides the interface between discoveries at UTHSC and the businesses who want to
-                                        commercialize them.</p>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="-resources/2015/images/research3.jpg"/>
+                                    </div>
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>Research Contracts</p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p>Facilitates research contracts for faculty at UTHSC, including the Graduate
+                                            School of Medicine in Knoxville and the Chattanooga Unit of the College of
+                                            Medicine.</p>
+                                    </div>
                                 </a>
                             </div>
                         </div>
 
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box">
+                                <a>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="-resources/2015/images/research4.jpg"/>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>Postdoctoral Office</p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p>Supports postdocs and their mentors.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box uthsc-highlight-box-green">
+                                <a>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="-resources/2015/images/research5.jpg"/>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>Office of Student Research Fellowship and Training Programs</p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p>Facilitates student research and student research projects.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box  uthsc-highlight-box-purple">
+                                <a>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="-resources/2015/images/research6.jpg">
+                                    </div>
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>Technology Transfer Office</p>
+                                    </div>
+                                    <div class="uthsc-highlight-box-description">
+                                        <p>Provides the interface between discoveries at UTHSC and the businesses who
+                                            want to
+                                            commercialize them.</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
 
                     </div>
-
                 </div>
-           </div>
+            </div>
+        </div>
+        <!--*******************************************-->
+        <!--/Background stripe row with highlight boxes-->
+        <!--*******************************************-->
+
+
+        <!--*************-->
+        <!--Research News-->
+        <!--*************-->
+        <div class="row expanded">
+            <div class="row">
+                <div class="columns uthsc-row-title">
+                    <h3>Research News</h3>
+                </div>
+
+                <div class="news-snippet" data-equalizer="news-boxes" data-equalize-on="large"></div>
 
             </div>
         </div>
+        <!--**************-->
+        <!--/Research News-->
+        <!--**************-->
 
 
-        <style>
-
-            .office-box {
-                background:#fff;
-                display:block;
-                padding:.5em;
-                margin: 1em 0;
-            }
-
-            .highlight-box {
-                background:#fff;
-                display:block;
-                padding:.5em;
-                margin: 1em 0;
-            }
-
-            .highlight-box h3 {
-                font-size:1.4em;
-                font-weight: bold;
-            }
-
-            .highlight-box a p {
-                color: #0a0a0a;
-                font-weight:normal;
-            }
-
-            .highlight-box:hover {
-                background: #4268AD;
-                transition: 500ms;
-
-            }
-
-            .highlight-box:hover a, .highlight-box:hover p {
-                color:#fff;
-                transition: 200ms;
-
-            }
-
-        </style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--    NEWS-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <style>
-
-
-
-            .news-box h4{
-                font-size:1em;;
-            }
-
-            .news-box {
-                background:#006a4d;
-                color:#fff;
-                padding:1em 0;
-                transition:500ms;
-                margin: .5em 0;
-            }
-
-            .news-box:hover {
-                background: #00533c;
-                transition:500ms;
-            }
-
-            .news-box a{
-                color:#fff;
-                display: block;
-            }
-
-            .news-box a p{
-                font-weight: 100;
-            }
-
-            .news-box h4{
-                font-weight: inherit;
-            }
-
-        </style>
-
-<!--        <div class="row expanded">-->
-<!--            <div class="row">-->
-<!--                <div class="columns">-->
-<!--                    <h3>Research News</h3>-->
-<!--                </div>-->
-<!---->
-<!--                <div data-equalizer="research-news" data-equalize-on="medium">-->
-<!--                    <div class="large-4 columns">-->
-<!--                        <div class="news-box">-->
-<!--                            <a data-equalizer-watch="research-news">-->
-<!--                                <div class="row">-->
-<!--                                    <div class="columns small-3 medium-2 large-4">-->
-<!--                                        <img src="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/05/ryan-slider.jpg?zoom=2&resize=160%2C160" />-->
-<!--                                    </div>-->
-<!--                                    <div class="columns small-9 medium-10 large-8">-->
-<!---->
-<!--                                        <h4>The Power of Addiction: A Five Part Spotlight Article</h4><p>May 9, 2016</p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!---->
-<!--                    <div class="large-4 columns">-->
-<!--                        <div class="news-box">-->
-<!--                            <a data-equalizer-watch="research-news">-->
-<!--                                <div class="row">-->
-<!--                                    <div class="columns small-3 medium-2 large-4">-->
-<!--                                        <img src="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/05/KarenJohnson-HomeSlider.jpg?zoom=2&resize=160%2C160" />-->
-<!--                                    </div>-->
-<!--                                    <div class="columns small-9 medium-10 large-8">-->
-<!--                                        <h4>Affect Aging in Individuals with Type 2 Diabetes</h4><p>May 9, 2016</p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!---->
-<!--                    <div class="large-4 columns">-->
-<!--                        <div class="news-box">-->
-<!--                            <a data-equalizer-watch="research-news">-->
-<!--                                <div class="row">-->
-<!--                                    <div class="columns small-3 medium-2 large-4">-->
-<!--                                        <img src="http://i1.wp.com/news.uthsc.edu/wp-content/uploads/2016/05/artist-and-staff-crop.jpg?resize=300%2C300" />-->
-<!--                                    </div>-->
-<!--                                    <div class="columns small-9 medium-10 large-8">-->
-<!--                                        <h4>Dr. Karen C. Johnson of UTHSC Receives $2.3 Million Grant to Study How Weight Loss and Increased Physical Activity Affect Aging in Individuals with Type 2 Diabetes</h4><p>May 9, 2016</p>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </a>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!---->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-
-
-
-<!--Here's our row-->
-    <div class="row expanded">
+        <!--***************-->
+        <!--Research Events-->
+        <!--***************-->
         <div class="row">
-            <div class="columns">
-                <!--Here's where our title goes-->
-                <h3>Research News</h3>
-            </div>
-
-            <div class="news-snippet"></div>
-
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--    /NEWS-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="row">
-
             <div class="columns">
                 <h3>Research Events</h3>
             </div>
 
+            <div id="events" class="row">
+                <div class="columns medium-6 large-3 events">
+                    <div class="event-date"><span>MAY</span><br><span>23</span></div>
+                    <p class="event-title"><a
+                            href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=3049">Making Quality
+                            Matter</a></p>
+                    <p class="event-time">8:30am</p></div>
+                <div class="columns medium-6 large-3 events">
+                    <div class="event-date"><span>MAY</span><br><span>23</span></div>
+                    <p class="event-title"><a
+                            href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=3027">Designing Your
+                            Online Course</a></p>
+                    <p class="event-time">1:00pm</p></div>
+                <div class="columns medium-6 large-3 events">
+                    <div class="event-date"><span>MAY</span><br><span>24</span></div>
+                    <p class="event-title"><a
+                            href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=3066">Hot Topics in
+                            Research </a></p>
+                    <p class="event-time">12:00pm</p></div>
+                <div class="columns medium-6 large-3 events">
+                    <div class="event-date"><span>JUN</span><br><span>1</span></div>
+                    <p class="event-title"><a
+                            href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=3030">The Truth About
+                            Flipped Classrooms</a></p>
+                    <p class="event-time">2:00pm</p></div>
+            </div>
         </div>
+        <!--****************-->
+        <!--/Research Events-->
+        <!--****************-->
 
-
-        <div class="row">
-            <div class="large-4 columns">
-                <h4>Event Item 1 Headline</h4>
-                <p>Event item 1 teaser copy would go here more</p>
-            </div>
-
-            <div class="large-4 columns">
-                <h4>Event Item 2 Headline</h4>
-                <p>Event item 2 teaser copy would go here more</p>
-            </div>
-
-
-
-            <div class="large-4 columns">
-                <h4>Event Item 3 Headline</h4>
-                <p>Event item 3 teaser copy would go here more</p>
-            </div>
-
-        </div>
     </div>
     <!--********-->
     <!--/Content-->
@@ -743,7 +563,7 @@
             <div class="medium-4 columns footer-box">
                 <h4>Contact Us</h4>
 
-                <p>Steven R. Goodman, Ph.D.<br />
+                <p>Steven R. Goodman, PhD.<br />
                     Vice Chancellor for Research</p>
                 <p>Office of Research<br />
                     910 Madison, Suite 608<br />
@@ -753,7 +573,7 @@
                     research@uthsc.edu</p>
             </div>
             <div class="medium-4 columns footer-box">
-                <h4>Learn More</h4>
+                <h4>Office Links</h4>
 
                 <ul>
                     <li><a>Research Administration</a></li>
@@ -1188,7 +1008,6 @@
 <!--/Off canvas wrapper-->
 <!--*******************-->
 
-
 <!--********************-->
 <!--Left off canvas menu-->
 <!--********************-->
@@ -1234,64 +1053,43 @@
     </button>
 
     <ul>
-        <li><a href="#" class="link-heading">Menu Dropdown One</a>
+        <li><a href="#" class="link-heading">About</a>
             <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
-                <li><a href="#">Second Item in Dropdown</a></li>
-                <li><a href="#">Third Item in Dropdown</a></li>
-                <li><a href="#">Fourth Item in Dropdown</a></li>
-                <li><a href="#">Fifth Item in Dropdown</a></li>
+                <li><a href="#">Mission & Vision </a></li>
+                <li><a href="#">Vice Chancellor for Research </a></li>
+                <li><a href="#">Reports and Publications </a></li>
+                <li><a href="#">Organizational Chart</a></li>
+                <li><a href="#">News & Events</a></li>
             </ul>
         </li>
-        <li><a href="#" class="link-heading">Menu Dropdown Two</a>
+        <li><a href="#" class="link-heading">Proposals, Grants, <br />& Contracts </a>
             <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
-                <li><a href="#">Second Item in Dropdown</a></li>
-                <li><a href="#">Third Item in Dropdown That Goes to Two Lines</a></li>
-                <li><a href="#">Fourth Item in Dropdown</a></li>
             </ul>
         </li>
-        <li><a href="#" class="link-heading">Menu Dropdown Three</a>
+        <li><a href="#" class="link-heading">Institutional Cores</a>
             <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
-                <li><a href="#">Second Item in Dropdown</a></li>
-                <li><a href="#">Third Item in Dropdown</a></li>
-                <li><a href="#">Fourth Item in Dropdown</a></li>
-                <li><a href="#">Fifth Item in Dropdown</a></li>
-                <li><a href="#">Sixth Item in Dropdown</a></li>
-                <li><a href="#">Seventh Item in Dropdown</a></li>
-                <li><a href="#">Eighth Item in Dropdown</a></li>
-                <li><a href="#">Ninth Item in Dropdown</a></li>
-                <li><a href="#">Tenth Item in Dropdown</a></li>
-                <li><a href="#">Eleventh Item in Dropdown</a></li>
+                <li><a href="#">Mission & Vision </a></li>
+                <li><a href="#">Core List </a></li>
             </ul>
         </li>
-        <li><a href="#" class="link-heading">Menu Dropdown Four</a>
+        <li><a href="#" class="link-heading">Centers & Institutes</a>
             <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
-                <li><a href="#">Second Item in Dropdown</a></li>
-                <li><a href="#">Third Item in Dropdown</a></li>
-                <li><a href="#">Fourth Item in Dropdown</a></li>
-                <li><a href="#">Fifth Item in Dropdown</a></li>
-                <li><a href="#">Sixth Item in Dropdown</a></li>
-                <li><a href="#">Seventh Item in Dropdown</a></li>
+
             </ul>
         </li>
-        <li><a href="#" class="link-heading">Menu Dropdown Five</a>
+        <li><a href="#" class="link-heading">Compliance</a>
             <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
+                <li><a href="#">IRB Administration </a></li>
+                <li><a href="#">Animal Care & Use (IACUC)</a></li>
+                <li><a href="#">Institutional Biosafety Committee</a></li>
+                <li><a href="#">Biomedical Materials Inventory </a></li>
+                <li><a href="#">Export Control</a></li>
+                <li><a href="#">Radiation Safety Committee </a></li>
             </ul>
         </li>
-        <li><a href="#" class="link-heading">Menu Dropdown Six</a>
+        <li><a href="#" class="link-heading">Offices & Resources</a>
             <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
-                <li><a href="#">Second Item in Dropdown</a></li>
-                <li><a href="#">Third Item in Dropdown</a></li>
-                <li><a href="#">Fourth Item in Dropdown</a></li>
-                <li><a href="#">Fifth Item in Dropdown That Goes to Three Lines Because it Is Very Long</a></li>
-                <li><a href="#">Sixth Item in Dropdown</a></li>
-                <li><a href="#">Seventh Item in Dropdown</a></li>
-                <li><a href="#">Eighth Item in Dropdown</a></li>
+
             </ul>
         </li>
     </ul>
@@ -1432,7 +1230,6 @@
     function parseNewsPosts() {
 
         var html = '';
-        html += '<div data-equalizer="news-boxes" data-equalize-on-stack="false" data-equalize-on="large">'
 
         for (var i=0;i<3;i++) {
 
@@ -1448,7 +1245,7 @@
             }
 
             html += '<div class="large-4 columns">' +
-            '<div class="news-box ' + 'post-0' + (i + 1) + '">' +
+            '<div class="uthsc-news-box ' + 'post-0' + (i + 1) + '">' +
             '<a data-equalizer-watch="news-boxes" ' + 'href="' + postLink + '">' +
             '<div class="row">' +
 
@@ -1467,12 +1264,8 @@
             '</div>';
         }
 
-        html += '</div>'
-
         return html;
-
     }
-
 
     /*
      * Render names on page load
