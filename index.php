@@ -339,17 +339,17 @@
                             <h2 class="subheader">Discover all that UTHSC has to offer</h2>
                         </div>
                             <div class="row collapse">
-                                <div class="medium-5 columns">
+                                <div class="medium-7 large-5 columns">
                                     <ul class="tabs vertical" id="example-vert-tabs" data-tabs="data-tabs">
                                         <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Dentistry</a></li>
                                         <li class="tabs-title"><a href="#panel2v">Graduate Health Sciences</a></li>
                                         <li class="tabs-title"><a href="#panel3v">Health Professions</a></li>
                                         <li class="tabs-title"><a href="#panel4v">Medicine</a></li>
-                                        <li class="tabs-title"><a href="#panel3v">Nursing</a></li>
-                                        <li class="tabs-title"><a href="#panel4v">Pharmacy</a></li>
+                                        <li class="tabs-title"><a href="#panel5v">Nursing</a></li>
+                                        <li class="tabs-title"><a href="#panel6v">Pharmacy</a></li>
                                     </ul>
                                 </div>
-                                <div class="medium-7 columns uthsc-program-explorer-content">
+                                <div class="medium-5 large-7 columns uthsc-program-explorer-content">
                                     <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
                                         <div class="tabs-panel is-active" id="panel1v">
                                             <ul>
