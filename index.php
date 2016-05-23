@@ -371,18 +371,18 @@
                                         <div class="tabs-panel" id="panel2v">
                                             <ul>
                                                 <li><a href="/grad/Programs/index.php?page=BIOM">Biomedical Engineering and Imaging</a></li>
-                                                <li><a href="/grad/Programs/index.php?page=DSCI">Dental Science</a> (Masters only)
+                                                <li><a href="/grad/Programs/index.php?page=DSCI">Dental Science (Masters only)</a>
                                                 </li>
-                                                <li><a href="/grad/Programs/index.php?page=BIOE">Epidemiology</a>(Masters only)
+                                                <li><a href="/grad/Programs/index.php?page=BIOE">Epidemiology (Masters only)</a>
                                                 </li>
                                                 <li><a href="/grad/Programs/index.php?page=HOPR">Health Outcomes and Policy Research</a></li>
-                                                <li><a href="/grad/PROGRAMS/BCLRMMO.php">Biomedical Sciences</a> (Masters only)
+                                                <li><a href="/grad/PROGRAMS/BCLRMMO.php">Biomedical Sciences (Masters only)</a>
                                                 </li>
-                                                <li><a href="/grad/IBS/">Integrated Program in Biomedical Sciences</a> (PhD only)
+                                                <li><a href="/grad/IBS/">Integrated Program in Biomedical Sciences (PhD only)</a>
                                                 </li>
                                                 <li><a href="/grad/Programs/index.php?page=NSG">Nursing</a></li>
                                                 <li><a href="/grad/Programs/index.php?page=PharmSci">Pharmaceutical Sciences</a></li>
-                                                <li><a href="/grad/Programs/index.php?page=PharmacologyMS">Pharmacology</a> (Masters only)
+                                                <li><a href="/grad/Programs/index.php?page=PharmacologyMS">Pharmacology (Masters only)</a>
                                                 </li>
                                                 <li><a href="/health-professions/asp/phd/index.php">Speech and Hearing Science</a></li>
                                             </ul>
