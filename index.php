@@ -1265,11 +1265,30 @@
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLV5PU6hBErfU5GOc9Jy4-6bWud2iaVj8&callback=initMap">
 </script>
+
 <!--instagram count fix-->
 <script>
     $('#uthsc-instagram').find(':nth-child(9)').addClass("show-for-small-only")
 </script>
 <!--/instagram count fix-->
+
+<!--  Masonry-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.0/masonry.pkgd.min.js"></script>
+<script>
+
+    $(window).load(function(){
+
+        $('#container').masonry({
+
+            itemSelector: '#container .columns'
+
+        });
+
+    });
+
+</script>
+<!--/ Masonry-->
+
 <!--********-->
 <!--/Scripts-->
 <!--********-->
