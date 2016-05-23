@@ -66,7 +66,7 @@ gulp.task('buildjs', function() {
       ])
           .pipe($.concat('uthsc.js'))
           .pipe(gulp.dest('./-resources/2015/js'))
-          //.pipe($.uglify())
+          .pipe($.uglify())
           .pipe($.rename('uthsc.min.js'))
           .pipe(gulp.dest('./-resources/2015/js'));
 });
