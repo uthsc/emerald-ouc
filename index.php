@@ -669,22 +669,22 @@
         <!--************-->
         <!--Contact Info-->
         <!--************-->
-        <div class="row uthsc-copy-block collapse">
-            <div class="columns medium-3 text-right" aria-label="UTHSC links">
+        <div class="row uthsc-copy-block text-center medium-text-left collapse medium-uncollapse">
+            <div class="columns small-6 medium-3 text-right" aria-label="UTHSC links">
                 <ul>
                     <li><a href="#">Give</a></li>
                     <li><a href="#">Employment</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
-            <div class="columns medium-3" aria-label="UTHSC links">
+            <div class="columns small-6 medium-3 text-left" aria-label="UTHSC links">
                 <ul>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Policies</a></li>
                     <li><a href="#">Online Disclosure Statement</a></li>
                 </ul>
             </div>
-            <div class="columns medium-6" aria-label="UTHSC contact information">
+            <div class="columns medium-5" aria-label="UTHSC contact information">
                 <p>
                     &copy; 2016
                     The University of Tennessee Health Science Center<br />
