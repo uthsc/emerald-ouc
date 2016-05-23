@@ -600,81 +600,40 @@
             <hr />
 
             <!--Social-->
-            <!--todo: Consider using more specific name than social-row and class instead of id-->
-            <div id="social-row" data-equalizer="homepage-social" class="row collapse text-center">
-
+            <div class="row uthsc-social-masonry">
                 <div class="columns uthsc-row-title">
-                    <h3>About UTHSC</h3>
+                    <h3>UTHSC Now</h3>
                 </div>
+                <div class="columns">
+                    <div id="container" class="small-up-2 medium-up-3">
 
-                <div class="row">
-                    <div class="columns medium-3">
-                        <h3>UTHSC Now</h3>
-                    </div>
-                    <div class="columns medium-3 text-right">
-                        <p>Filter by:</p>
-                    </div>
-                    <div class="columns medium-3">
-
-                        <div class="input-group">
-                            <input class="input-group-field" type="text" placeholder="Programs" style="height: 2.8rem;">
-                            <div class="input-group-button">
-                                <input type="submit" class="fa button" value="&#xf078">
-                            </div>
+                        <div class="columns">
+                            <img src="http://news.uthsc.edu/wp-content/uploads/2016/05/ryan-slider-300x300.jpg">
+                            <p>Six Professors Receive UTAA Awards</p>
                         </div>
-
-                    </div>
-                    <div class="columns medium-3">
-                        <div class="input-group">
-                            <input class="input-group-field" type="text" placeholder="Resource Type" style="height: 2.8rem;">
-                            <div class="input-group-button">
-                                <input type="submit" class="fa button" value="&#xf078">
-                            </div>
+                        <div class="columns">
+                            <img src="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/05/Karen-Johnson-NewsSlider.jpg?resize=960%2C500">
+                            <p>Dr. Karen C. Johnson of UTHSC Receives $2.3 Million Grant to Study How Weight Loss and Increased Physical Activity Affect Aging in Individuals with Type 2 Diabetes</p>
                         </div>
-                    </div>
-                </div>
-
-                <div class="columns medium-6 large-4 social-site">
-                    <h5><span class="fa fa-facebook fa-2x"> Facebook</span></h5>
-                    <div data-href="https://www.facebook.com/uthsc"
-                         data-width="300"
-                         data-height="680"
-                         data-hide-cover="true"
-                         data-show-facepile="false"
-                         data-show-posts="true"
-                         data-equalizer-watch="homepage-social"
-                         class="fb-page"
-                         data-small-header="true">
-                        <div class="fb-xfbml-parse-ignore">
-                            <blockquote cite="https://www.facebook.com/uthsc">
-                                <a href="https://www.facebook.com/uthsc">University of Tennessee Health Science Center</a>
-                            </blockquote>
+                        <div class="columns">
+                            <img src="http://news.uthsc.edu/wp-content/uploads/2016/05/Imhotep-Award-news-slider.jpg?resize=300%2C300">
+                            <p>Student Government Association Executive Council Honors Faculty and Student Leaders at Awards Banquet</p>
                         </div>
-                    </div>
-                </div>
-
-                <div class="columns medium-6 large-4 social-site">
-                    <h5><span class="fa fa-twitter fa-2x"> Twitter</span></h5>
-                    <a data-dnt="true"
-                       href="https://twitter.com/uthsc"
-                       data-widget-id="614465323593539584"
-                       data-equalizer-watch="homepage-social"
-                       class="twitter-timeline"
-                       data-chrome="noheader noborders nofooter noscrollbar"
-                       width="300"
-                       height="680"
-                       data-aria-polite="assertive">
-                        Tweets by @uthsc
-                        <script>
-                            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
-                        </script>
-                    </a>
-                </div>
-
-                <div class="columns large-4 social-site">
-                    <h5><span class="fa fa-instagram fa-2x"> Instagram</span></h5>
-                    <div id="uthsc-instagram" class="row small-up-3 medium-up-4 large-up-2">
-                        <?php echo get_uthsc_instagram(); ?>
+                        <div class="columns">
+                            <img src="https://scontent-dfw1-1.cdninstagram.com/l/t51.2885-15/s640x640/sh0.08/e35/c0.133.1080.1080/13267442_575587109312844_2057094071_n.jpg?ig_cache_key=MTI1NDYwNzQ1MTU1NjA3ODc1OA%3D%3D.2.c">
+                        </div>
+                        <div class="columns">
+                            <img src="https://scontent-dfw1-1.xx.fbcdn.net/t31.0-8/13248574_10153762268232753_1033086639117245032_o.jpg">
+                        </div>
+                        <div class="columns">
+                            <img src="https://pbs.twimg.com/media/Ci1XbDzWEAE4hbA.jpg:large">
+                        </div>
+                        <div class="columns">
+                            <p>Fun hike at Meeman-Shelby Forest State Park with Outdoor Recreation! For more info, contact erinjennings@uthsc.edu.</p>
+                        </div>
+                        <div class="columns">
+                            <p>UTHSC Communications and Marketing Department Receives Two Awards for Alumni Magazines in International Competition</p>
+                        </div>
                     </div>
                 </div>
             </div>
