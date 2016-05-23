@@ -563,7 +563,7 @@
             <div class="medium-4 columns footer-box">
                 <h4>Contact Us</h4>
 
-                <p>Steven R. Goodman, PhD.<br />
+                <p>Steven R. Goodman, PhD<br />
                     Vice Chancellor for Research</p>
                 <p>Office of Research<br />
                     910 Madison, Suite 608<br />
