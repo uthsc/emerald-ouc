@@ -491,10 +491,10 @@
                         Professions serve over 3,000 students and
                         1,200 residents across four campuses.</p>
                     <ul>
-                        <li>Academic Calendar</li>
-                        <li>Academic Catalog</li>
-                        <li>Registrar</li>
-                        <li>Bursar's Office</li>
+                        <li><a href="#">Academic Calendar</a></li>
+                        <li><a href="#">Academic Catalog</a></li>
+                        <li><a href="#">Registrar</a></li>
+                        <li><a href="#">Bursar's Office</a></li>
                     </ul>
                     <hr />
                     <a class="button hollow small" href="#"><span class="fa fa-plus-circle"></span> Learn More...</a>
@@ -510,10 +510,10 @@
                         community, our region, the state of
                         Tennessee, and the world.</p>
                     <ul>
-                        <li>Graduate Medical Education (GME)</li>
-                        <li>Dentistry</li>
-                        <li>Pharmacy</li>
-                        <li>Affiliated Hospitals</li>
+                        <li><a href="#">Graduate Medical Education (GME)</a></li>
+                        <li><a href="#">Dentistry</a></li>
+                        <li><a href="#">Pharmacy</a></li>
+                        <li><a href="#">Affiliated Hospitals</a></li>
                     </ul>
                     <hr />
                     <a class="button hollow small" href="#"><span class="fa fa-plus-circle"></span> Learn More...</a>
@@ -527,10 +527,10 @@
                         specialty care clinics, and mobile healthcare
                         facilities.</p>
                     <ul>
-                        <li>Graduate Medical Education (GME)</li>
-                        <li>Dentistry</li>
-                        <li>Pharmacy</li>
-                        <li>Affiliated Hospitals</li>
+                        <li><a href="#">Graduate Medical Education (GME)</a></li>
+                        <li><a href="#">Dentistry</a></li>
+                        <li><a href="#">Pharmacy</a></li>
+                        <li><a href="#">Affiliated Hospitals</a></li>
                     </ul>
                     <hr />
                     <a class="button hollow small" href="#"><span class="fa fa-plus-circle"></span> Learn More...</a>
@@ -546,10 +546,10 @@
                         literacy training, and preventative care
                         programs to the people of Tennessee.</p>
                     <ul>
-                        <li>Academic Calendar</li>
-                        <li>Academic Catalog</li>
-                        <li>Registrar</li>
-                        <li>Bursar's Office</li>
+                        <li><a href="#">Academic Calendar</a></li>
+                        <li><a href="#">Academic Catalog</a></li>
+                        <li><a href="#">Registrar</a></li>
+                        <li><a href="#">Bursar's Office</a></li>
                     </ul>
                     <hr />
                     <a class="button hollow small" href="#"><span class="fa fa-plus-circle"></span> Learn More...</a>
