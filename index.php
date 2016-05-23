@@ -558,7 +558,7 @@
             <!--/ Mission Row-->
 
             <!--Infographics-->
-            <div class="uthsc-infographics row text-center" data-equalizer="homepage-stats">
+            <div class="uthsc-infographics row text-center" data-equalizer="homepage-stats" data-equalize-on-stack="false">
                 <div data-equalizer-watch="homepage-stats" class="columns medium-3">
                     <div class="uthsc-infographic billions">
                         <h2>$2.7</h2>
