@@ -453,7 +453,7 @@
                     </div>
                 </div>
                 <div class="columns medium-4 uthsc-did-you-know text-center">
-                    <h2><span class="fa fa-lightbulb-o"></span> Did you Know...</h2>
+                    <h2><span class="fa fa-lightbulb-o"></span> Did you know...</h2>
                     <p>UTHSC is ranked</p>
                     <p class="uthsc-did-you-know-number"><sup>#</sup>17</p>
                     <p>nationally among US pharmacy schools</p>
