@@ -466,7 +466,7 @@
                 <div class="columns callout">
                     <!--Search form-->
                     <div class="input-group">
-                        <input class="input-group-field" type="text" placeholder="Search People...">
+                        <input class="input-group-field" type="text" placeholder="Search ...">
                         <div class="input-group-button">
                             <input type="submit" class="button" value="Submit">
                         </div>
