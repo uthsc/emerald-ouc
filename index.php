@@ -336,7 +336,7 @@
                     <div class="row uthsc-program-explorer-tabs">
                         <div class="columns uthsc-program-explorer-heading text-center">
                             <h2>Program Explorer</h2>
-                            <h2 class="subheader">Discover All that UTHSC has to Offer</h2>
+                            <h2 class="subheader">Discover all that UTHSC has to offer</h2>
                         </div>
                             <div class="row collapse">
                                 <div class="medium-5 columns">
