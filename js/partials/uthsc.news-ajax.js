@@ -16,10 +16,12 @@ function newsAjax(url, containerElement) {
 function reFlowNews() {
 	//equalizer re-flow
 	//$('.news-snippet').foundation();
-	var elem = new Foundation.Equalizer($(".news-snippet"), {
-		equalizeOnStack: false
-	});
+	// var elem = new Foundation.Equalizer($(".news-snippet"), {
+	// 	equalizeOnStack: false
+	// });
 	//Foundation.reInit('equalizer');
+ 	$('.news-snippet').foundation();
+	var foo = new Foundation.Equalizer($('.news-snippet'), {equalizeOnStack:false});
 }
 
 function renderNewsPosts(containerElement, reFlowNews) {
@@ -28,4 +30,3 @@ function renderNewsPosts(containerElement, reFlowNews) {
 
 	if ( reFlowNews &&  ( typeof(reFlowNews) === 'function' ) ) reFlowNews();
 }
-
