@@ -186,6 +186,14 @@
         font-size: 1.1rem;
       }
     }
+
+    .uthsc-social-masonry {
+
+      #container > .columns {
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+    }
     // Flags
     //  .fullscreen {
     //    width: 100%;
