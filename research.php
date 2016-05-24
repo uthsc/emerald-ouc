@@ -475,7 +475,7 @@
                             <div class="uthsc-highlight-box">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/research-highlight-1.jpg"/>
+                                        <img src="-resources/2015/images/research-compliance.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -494,7 +494,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
                                 <a href="https://www.uthsc.edu/research/research_compliance/irb/">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/research-highlight-2.jpg"/>
+                                        <img src="-resources/2015/images/research-irb.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -516,7 +516,7 @@
                             <div class="uthsc-highlight-box  uthsc-highlight-box-purple">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/research-highlight-3.jpg">
+                                        <img src="-resources/2015/images/research-grants-research.jpg">
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>Grants & Research Agreements</p>
