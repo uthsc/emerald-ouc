@@ -227,8 +227,26 @@
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Proposals, Grants, <br />& Contracts </a>
-                <ul data-equalizer-watch="nested-links"></ul>
+                <a href="#" data-equalizer-watch="heading-links">Grants & Research<br /> Agreements</a>
+                <ul data-equalizer-watch="nested-links">
+                    <li><a href="https://tennessee.cayuse424.com/">Evisions/Cayuse SP</a></li>
+                    <li><a href="http://uthsc.edu/research/research_administration/FAQ.php">FAQs</a></li>
+                    <li><a href="http://uthsc.edu/research/research_administration/research_grants.php">Grants</a></li>
+                    <li><a href="http://uthsc.edu/research/research_administration/research_contracts/index.php">Forms & Information</a></li>
+                    <li><a href="http://uthsc.edu/research/research_administration/staff.php">About</a></li>
+                </ul>
+            </li>
+
+            <li class="uthsc-navigation-column small-2 columns">
+                <a href="#" data-equalizer-watch="heading-links">Compliance </a>
+                <ul data-equalizer-watch="nested-links">
+                    <li><a href="#">IRB Administration </a></li>
+                    <li><a href="#">Animal Care & Use (IACUC)</a></li>
+                    <li><a href="#">Institutional Biosafety Committee</a></li>
+                    <li><a href="#">Biomedical Materials Inventory </a></li>
+                    <li><a href="#">Export Control</a></li>
+                    <li><a href="#">Radiation Safety Committee </a></li>
+                </ul>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
@@ -243,18 +261,6 @@
                 <a href="#" data-equalizer-watch="heading-links">Centers & Institutes</a>
                 <ul data-equalizer-watch="nested-links">
 
-                </ul>
-            </li>
-
-            <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Compliance </a>
-                <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">IRB Administration </a></li>
-                    <li><a href="#">Animal Care & Use (IACUC)</a></li>
-                    <li><a href="#">Institutional Biosafety Committee</a></li>
-                    <li><a href="#">Biomedical Materials Inventory </a></li>
-                    <li><a href="#">Export Control</a></li>
-                    <li><a href="#">Radiation Safety Committee </a></li>
                 </ul>
             </li>
 
@@ -336,6 +342,39 @@
         <!--/UTHSC Page-opening-->
         <!--*******************-->
 
+        <div class="row">
+
+            <div class="columns large-3">&nbsp;</div>
+
+            <div class="columns large-3">
+                <div class="uthsc-badge-box">
+                    <div class="uthsc-badge-box-icon">
+                        <span class="fa fa-certificate fa-5x"></span>
+                    </div>
+
+                    <div class="uthsc-badge-box-text">
+                        <p style="text-align:center;">Statewide, over 1,166 residents and fellows receive training in
+                            85 programs certified by the Accreditation Council for Graduate Medical Education in FY2015
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns large-3">
+                <div class="uthsc-badge-box">
+                    <div class="uthsc-badge-box-icon">
+                        <span class="fa fa-graduation-cap fa-5x"></span>
+                    </div>
+
+                    <div class="uthsc-badge-box-text">
+                        <p style="text-align:center;">Established in 1911, UTHSC is Tennessee’s only public, statewide,
+                            academic, health system</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns large-3">&nbsp;</div>
+        </div>
 
         <div class="row">
             <div class="columns uthsc-row-title">
@@ -437,7 +476,7 @@
                                     </div>
 
                                     <div class="uthsc-highlight-box-description">
-                                        <p>Establishes a framework for legal compliance to be used by UTHSC.</p>
+                                        <p>Provides centralized administration and serves as the primary point of contact for research compliance related issues. </p>
                                     </div>
                                 </a>
                             </div>
@@ -519,32 +558,39 @@
                 <h3>Research Events</h3>
             </div>
 
-            <div id="events" class="row">
-                <div class="columns medium-6 large-3 events">
-                    <div class="event-date"><span>MAY</span><br><span>23</span></div>
-                    <p class="event-title"><a
-                            href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=3049">Making Quality
-                            Matter</a></p>
-                    <p class="event-time">8:30am</p></div>
-                <div class="columns medium-6 large-3 events">
-                    <div class="event-date"><span>MAY</span><br><span>23</span></div>
-                    <p class="event-title"><a
-                            href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=3027">Designing Your
-                            Online Course</a></p>
-                    <p class="event-time">1:00pm</p></div>
-                <div class="columns medium-6 large-3 events">
-                    <div class="event-date"><span>MAY</span><br><span>24</span></div>
-                    <p class="event-title"><a
-                            href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=3066">Hot Topics in
-                            Research </a></p>
-                    <p class="event-time">12:00pm</p></div>
-                <div class="columns medium-6 large-3 events">
-                    <div class="event-date"><span>JUN</span><br><span>1</span></div>
-                    <p class="event-title"><a
-                            href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=3030">The Truth About
-                            Flipped Classrooms</a></p>
-                    <p class="event-time">2:00pm</p></div>
+            <div class="columns">
+                <div class="row uthsc-events medium-up-2 large-up-4">
+                    <div class="columns uthsc-event">
+                        <div class="uthsc-event-date"><span class="uthsc-event-month">JUN</span><br><span
+                                class="uthsc-event-day">1</span></div>
+                        <p class="uthsc-event-title"><a
+                                href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=3030">The Truth About
+                                Flipped Classrooms</a></p>
+                        <p class="uthsc-event-time">2:00pm</p></div>
+                    <div class="columns uthsc-event">
+                        <div class="uthsc-event-date"><span class="uthsc-event-month">JUN</span><br><span
+                                class="uthsc-event-day">3</span></div>
+                        <p class="uthsc-event-title"><a
+                                href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=2820">First Friday Food
+                                Truck Day</a></p>
+                        <p class="uthsc-event-time">11:00am</p></div>
+                    <div class="columns uthsc-event">
+                        <div class="uthsc-event-date"><span class="uthsc-event-month">JUN</span><br><span
+                                class="uthsc-event-day">4</span></div>
+                        <p class="uthsc-event-title"><a
+                                href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=2847">Determined To Be A
+                                Doctor Someday</a></p>
+                        <p class="uthsc-event-time">1:00pm</p></div>
+                    <div class="columns uthsc-event">
+                        <div class="uthsc-event-date"><span class="uthsc-event-month">JUN</span><br><span
+                                class="uthsc-event-day">16</span></div>
+                        <p class="uthsc-event-title"><a
+                                href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=2913">VCR Distinguished
+                                Lecture Series</a></p>
+                        <p class="uthsc-event-time">1:00pm</p></div>
+                </div>
             </div>
+
         </div>
         <!--****************-->
         <!--/Research Events-->
@@ -578,17 +624,16 @@
                     research@uthsc.edu</p>
             </div>
             <div class="medium-4 columns footer-box">
-                <h4>Office Links</h4>
-
-                <ul>
-                    <li><a>Research Administration</a></li>
-                    <li><a>Research Compliance</a></li>
-                    <li><a>Institutional Review Board</a></li>
-                    <li><a>Grants & Research Agreements</a></li>
-                    <li><a>Student Research</a></li>
-                    <li><a>Technology Transfer</a></li>
-                    <li><a>Facilities</a></li>
-                    <li><a>Specialized Core Resources</a></li>
+                <h4>Office Links</h4><ul>
+                    <li><a href="http://uthsc.edu/research/about.php">About the Office of Research </a></li>
+                    <li><a href="http://uthsc.edu/research/research_administration/index.php">Grants & Research Agreements </a></li>
+                    <li><a href="(linked to Research Development landing page)">Research Development</a></li>
+                    <li><a href="http://uthsc.edu/research/research_compliance/index.php">Research Compliance</a></li>
+                    <li><a href="http://uthsc.edu/research/research_resources/index.php">Institutional Cores</a></li>
+                    <li><a href="http://uthsc.edu/research/research_programs/index.php">Centers & Institutes </a></li>
+                    <li><a href="http://uthsc.edu/research/research_compliance/irb/">Institutional Review Board </a></li>
+                    <li><a href="http://utrf.tennessee.edu">Technology Transfer & Licensing </a></li>
+                    <li><a href="(linked to Offices & Resources landing page)">Offices & Resources</a></li>
                 </ul>
             </div>
             <div class="medium-4 columns footer-box hide-for-print">
