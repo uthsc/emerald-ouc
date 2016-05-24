@@ -424,7 +424,7 @@
 
                                     <div class="uthsc-highlight-box-description">
                                         <p><em>"The Cellular Uptake of Pharmaceutical Drugs is Transporter-mediated, and
-                                            Thus a Problem Not of Biophysics but of Systems Biology."</em></p>
+                                            Thus a Problem Not of Biophysics but of Systems Biology"</em></p>
                                         <p>June 16, 2016 from 1-2pm<br />
                                             College of Pharmacy, Room 101</p>
                                     </div>
@@ -1139,7 +1139,6 @@
                 <li><a href="#">IRB Administration </a></li>
                 <li><a href="#">Animal Care & Use (IACUC)</a></li>
                 <li><a href="#">Institutional Biosafety Committee</a></li>
-                <li><a href="#">Biomedical Materials Inventory </a></li>
                 <li><a href="#">Export Control</a></li>
                 <li><a href="#">Radiation Safety Committee </a></li>
             </ul>
