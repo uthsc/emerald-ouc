@@ -561,7 +561,7 @@
         <!--Research Events-->
         <!--***************-->
         <div class="row">
-            <div class="columns">
+            <div class="columns uthsc-row-title">
                 <h3>Nursing Events</h3>
             </div>
 
