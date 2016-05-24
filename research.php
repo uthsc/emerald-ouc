@@ -229,11 +229,12 @@
             <li class="uthsc-navigation-column small-2 columns">
                 <a href="#" data-equalizer-watch="heading-links">Grants & Research<br /> Agreements</a>
                 <ul data-equalizer-watch="nested-links">
-                    <li><a href="https://tennessee.cayuse424.com/">Evisions/Cayuse SP</a></li>
-                    <li><a href="http://uthsc.edu/research/research_administration/FAQ.php">FAQs</a></li>
-                    <li><a href="http://uthsc.edu/research/research_administration/research_grants.php">Grants</a></li>
-                    <li><a href="http://uthsc.edu/research/research_administration/research_contracts/index.php">Forms & Information</a></li>
                     <li><a href="http://uthsc.edu/research/research_administration/staff.php">About</a></li>
+                    <li><a href="https://tennessee.cayuse424.com/">Evisions/Cayuse SP</a></li>
+                    <li><a href="http://uthsc.edu/research/research_administration/research_grants.php">Grants</a></li>
+                    <li><a href="">Research Agreements</a></li>
+                    <li><a href="http://uthsc.edu/research/research_administration/research_contracts/index.php">Forms & Information</a></li>
+                    <li><a href="http://uthsc.edu/research/research_administration/FAQ.php">FAQs</a></li>
                 </ul>
             </li>
 
@@ -243,7 +244,6 @@
                     <li><a href="#">IRB Administration </a></li>
                     <li><a href="#">Animal Care & Use (IACUC)</a></li>
                     <li><a href="#">Institutional Biosafety Committee</a></li>
-                    <li><a href="#">Biomedical Materials Inventory </a></li>
                     <li><a href="#">Export Control</a></li>
                     <li><a href="#">Radiation Safety Committee </a></li>
                 </ul>
@@ -343,24 +343,7 @@
         <!--*******************-->
 
         <div class="row">
-
-            <div class="columns large-3">&nbsp;</div>
-
-            <div class="columns large-3">
-                <div class="uthsc-badge-box">
-                    <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-certificate fa-5x"></span>
-                    </div>
-
-                    <div class="uthsc-badge-box-text">
-                        <p style="text-align:center;">Statewide, over 1,166 residents and fellows receive training in
-                            85 programs certified by the Accreditation Council for Graduate Medical Education in FY2015
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="columns large-3">
+            <div class="columns large-4">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
                         <span class="fa fa-graduation-cap fa-5x"></span>
@@ -373,9 +356,33 @@
                 </div>
             </div>
 
-            <div class="columns large-3">&nbsp;</div>
-        </div>
+            <div class="columns large-4">
+                <div class="uthsc-badge-box">
+                    <div class="uthsc-badge-box-icon">
+                        <span class="fa fa-flask fa-5x"></span>
+                    </div>
 
+                    <div class="uthsc-badge-box-text">
+                        <p style="text-align:center;">325 investigators actively performing research at UTHSC in FY2015</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns large-4">
+                <div class="uthsc-badge-box">
+                    <div class="uthsc-badge-box-icon">
+                        <span class="fa fa-certificate fa-5x"></span>
+                    </div>
+
+                    <div class="uthsc-badge-box-text">
+                        <p style="text-align:center;">Statewide, over 1,166 residents and fellows receive training in
+                            85 programs certified by the Accreditation Council for Graduate Medical Education in FY2015
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div class="row">
             <div class="columns uthsc-row-title">
                 <h2>Research Resources</h2>
@@ -417,7 +424,7 @@
 
                                     <div class="uthsc-highlight-box-description">
                                         <p><em>"The Cellular Uptake of Pharmaceutical Drugs is Transporter-mediated, and
-                                            Thus a Problem Not of Biophysics but of Systems Biology."</em></p>
+                                            Thus a Problem Not of Biophysics but of Systems Biology"</em></p>
                                         <p>June 16, 2016 from 1-2pm<br />
                                             College of Pharmacy, Room 101</p>
                                     </div>
@@ -468,7 +475,7 @@
                             <div class="uthsc-highlight-box">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/research-highlight-1.jpg"/>
+                                        <img src="-resources/2015/images/research-compliance.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -487,7 +494,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
                                 <a href="https://www.uthsc.edu/research/research_compliance/irb/">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/research-highlight-2.jpg"/>
+                                        <img src="-resources/2015/images/research-irb.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -509,7 +516,7 @@
                             <div class="uthsc-highlight-box  uthsc-highlight-box-purple">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/research-highlight-3.jpg">
+                                        <img src="-resources/2015/images/research-grants-research.jpg">
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>Grants & Research Agreements</p>
@@ -554,7 +561,7 @@
         <!--Research Events-->
         <!--***************-->
         <div class="row">
-            <div class="columns">
+            <div class="columns uthsc-row-title">
                 <h3>Research Events</h3>
             </div>
 
@@ -1132,7 +1139,6 @@
                 <li><a href="#">IRB Administration </a></li>
                 <li><a href="#">Animal Care & Use (IACUC)</a></li>
                 <li><a href="#">Institutional Biosafety Committee</a></li>
-                <li><a href="#">Biomedical Materials Inventory </a></li>
                 <li><a href="#">Export Control</a></li>
                 <li><a href="#">Radiation Safety Committee </a></li>
             </ul>
