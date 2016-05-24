@@ -343,24 +343,7 @@
         <!--*******************-->
 
         <div class="row">
-
-            <div class="columns large-3">&nbsp;</div>
-
-            <div class="columns large-3">
-                <div class="uthsc-badge-box">
-                    <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-certificate fa-5x"></span>
-                    </div>
-
-                    <div class="uthsc-badge-box-text">
-                        <p style="text-align:center;">Statewide, over 1,166 residents and fellows receive training in
-                            85 programs certified by the Accreditation Council for Graduate Medical Education in FY2015
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="columns large-3">
+            <div class="columns large-4">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
                         <span class="fa fa-graduation-cap fa-5x"></span>
@@ -373,9 +356,33 @@
                 </div>
             </div>
 
-            <div class="columns large-3">&nbsp;</div>
-        </div>
+            <div class="columns large-4">
+                <div class="uthsc-badge-box">
+                    <div class="uthsc-badge-box-icon">
+                        <span class="fa fa-flask fa-5x"></span>
+                    </div>
 
+                    <div class="uthsc-badge-box-text">
+                        <p style="text-align:center;">325 investigators actively performing research at UTHSC in FY2015</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns large-4">
+                <div class="uthsc-badge-box">
+                    <div class="uthsc-badge-box-icon">
+                        <span class="fa fa-certificate fa-5x"></span>
+                    </div>
+
+                    <div class="uthsc-badge-box-text">
+                        <p style="text-align:center;">Statewide, over 1,166 residents and fellows receive training in
+                            85 programs certified by the Accreditation Council for Graduate Medical Education in FY2015
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
         <div class="row">
             <div class="columns uthsc-row-title">
                 <h2>Research Resources</h2>
