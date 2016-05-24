@@ -437,7 +437,7 @@
                                     </div>
 
                                     <div class="uthsc-highlight-box-description">
-                                        <p>Establishes a framework for legal compliance to be used by UTHSC.</p>
+                                        <p>Provides centralized administration and serves as the primary point of contact for research compliance related issues. </p>
                                     </div>
                                 </a>
                             </div>
