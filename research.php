@@ -312,7 +312,7 @@
                         <!--**********-->
                         <!--Page intro-->
                         <!--**********-->
-                        <h3 class="page-intro">Each fiscal year, UT Health Science Center faculty and staff receive
+                        <h3 class="page-intro">Each fiscal year, our faculty and staff receive
                             nearly $100 million in research funding, including support from National Institutes of
                             Health grants and private foundations. </h3>
 
@@ -320,9 +320,9 @@
                         <!--*********-->
                         <!--Page lead-->
                         <!--*********-->
-                        <p class="page-lead">Advancing research and economic development is at the core the University
-                            of Tennessee Health Science Center's mission. Research funding has directly contributed to
-                            UTHSC's long record of accomplishments in basic science, applied clinical and translational
+                        <p class="page-lead">Advancing research and economic development is at the core of our mission.
+                            Research funding has directly contributed to UTHSC's long record of accomplishments in basic
+                            science, applied clinical and translational
                             research, and public health, allowing us to continue our contributions to the health of the
                             Memphis-area community. Through collaborative relationships with health care partnerships
                             like St. Jude Children's Research Hospital and Methodist Le Bonheur Healthcare, we are
@@ -369,17 +369,18 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-purple">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/research1.jpg">
+                                        <img src="-resources/2015/images/research-kell-landscape.jpg">
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
-                                        <p>Office of Grants and Research Agreements</p>
+                                        <p>The VCR Distinguished Lecture Series Featuring Prof. Douglas B. Kell</p>
                                     </div>
 
                                     <div class="uthsc-highlight-box-description">
-                                        <p>Supports faculty and staff across all UTHSC campuses who are working to
-                                            obtain external funding while remaining in compliance with UT policy,
-                                            sponsor policy, and the law. </p>
+                                        <p><em>"The Cellular Uptake of Pharmaceutical Drugs is Transporter-mediated, and
+                                            Thus a Problem Not of Biophysics but of Systems Biology."</em></p>
+                                        <p>June 16, 2016 from 1-2pm<br />
+                                            College of Pharmacy, Room 101</p>
                                     </div>
                                 </a>
                             </div>
@@ -389,15 +390,18 @@
                             <!--Highlight box-->
                             <div class="uthsc-highlight-box">
                                 <div class="uthsc-highlight-box-image">
-                                    <img src="-resources/2015/images/research2.jpg"/>
+                                    <img src="-resources/2015/images/research-morrow-landscape.jpg"/>
                                 </div>
                                 <div class="uthsc-highlight-box-title">
-                                    <p>Office of Research Compliance</p>
+                                    <p>Hot Topics in Research Featuring Dr. Casey D. Morrow, Director, UAB</p>
                                 </div>
 
                                 <div class="uthsc-highlight-box-description">
-                                    <p>Provides centralized administration and serves as the primary point of contact
-                                        for research compliance related issues. </p>
+                                    <p><em>"UAB Microbiome Resource: Precision Medicine to Repair Dysbiotic Microbial
+                                        Communities"</em></p>
+                                    <p>June 28, 2016 from 12-1pm <br />
+                                        GEB A302
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -407,16 +411,14 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/research3.jpg"/>
+                                        <img src="-resources/2015/images/research-goodman.jpg"/>
                                     </div>
                                     <div class="uthsc-highlight-box-title">
-                                        <p>Research Contracts</p>
+                                        <p>Vice Chancellor for Research, Dr. Steven R. Goodman's Second Research Town Hall Meeting </p>
                                     </div>
 
                                     <div class="uthsc-highlight-box-description">
-                                        <p>Facilitates research contracts for faculty at UTHSC, including the Graduate
-                                            School of Medicine in Knoxville and the Chattanooga Unit of the College of
-                                            Medicine.</p>
+                                        <p></p>
                                     </div>
                                 </a>
                             </div>
@@ -427,15 +429,15 @@
                             <div class="uthsc-highlight-box">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/research4.jpg"/>
+                                        <img src="-resources/2015/images/research-highlight-1.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
-                                        <p>Postdoctoral Office</p>
+                                        <p>Office of Compliance</p>
                                     </div>
 
                                     <div class="uthsc-highlight-box-description">
-                                        <p>Supports postdocs and their mentors.</p>
+                                        <p>Establishes a framework for legal compliance to be used by UTHSC.</p>
                                     </div>
                                 </a>
                             </div>
@@ -444,17 +446,20 @@
                         <div class="columns">
                             <!--Highlight box-->
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
-                                <a>
+                                <a href="https://www.uthsc.edu/research/research_compliance/irb/">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/research5.jpg"/>
+                                        <img src="-resources/2015/images/research-highlight-2.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
-                                        <p>Office of Student Research Fellowship and Training Programs</p>
+                                        <p>Institutional Review Board</p>
                                     </div>
 
                                     <div class="uthsc-highlight-box-description">
-                                        <p>Facilitates student research and student research projects.</p>
+                                        <p>Responsible for the review of research involving human
+                                            subjects for UTHSC, Le Bonheur Children's Hospital, Methodist
+                                            Healthcare-Memphis Hospitals, Regional One Health, and UT Medical Group,
+                                            Inc. </p>
                                     </div>
                                 </a>
                             </div>
@@ -465,15 +470,15 @@
                             <div class="uthsc-highlight-box  uthsc-highlight-box-purple">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/research6.jpg">
+                                        <img src="-resources/2015/images/research-highlight-3.jpg">
                                     </div>
                                     <div class="uthsc-highlight-box-title">
-                                        <p>Technology Transfer Office</p>
+                                        <p>Grants & Research Agreements</p>
                                     </div>
                                     <div class="uthsc-highlight-box-description">
-                                        <p>Provides the interface between discoveries at UTHSC and the businesses who
-                                            want to
-                                            commercialize them.</p>
+                                        <p>Provides support for UTHSC faculty and staff seeking external funding for
+                                            research and other sponsored projects, while ensuring compliance with UT
+                                            policy, sponsor policy, and applicable law.</p>
                                     </div>
                                 </a>
                             </div>
