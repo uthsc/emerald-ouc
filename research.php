@@ -591,17 +591,16 @@
                     research@uthsc.edu</p>
             </div>
             <div class="medium-4 columns footer-box">
-                <h4>Office Links</h4>
-
-                <ul>
-                    <li><a>Research Administration</a></li>
-                    <li><a>Research Compliance</a></li>
-                    <li><a>Institutional Review Board</a></li>
-                    <li><a>Grants & Research Agreements</a></li>
-                    <li><a>Student Research</a></li>
-                    <li><a>Technology Transfer</a></li>
-                    <li><a>Facilities</a></li>
-                    <li><a>Specialized Core Resources</a></li>
+                <h4>Office Links</h4><ul>
+                    <li><a href="http://uthsc.edu/research/about.php">About the Office of Research </a></li>
+                    <li><a href="http://uthsc.edu/research/research_administration/index.php">Grants & Research Agreements </a></li>
+                    <li><a href="(linked to Research Development landing page)">Research Development</a></li>
+                    <li><a href="http://uthsc.edu/research/research_compliance/index.php">Research Compliance</a></li>
+                    <li><a href="http://uthsc.edu/research/research_resources/index.php">Institutional Cores</a></li>
+                    <li><a href="http://uthsc.edu/research/research_programs/index.php">Centers & Institutes </a></li>
+                    <li><a href="http://uthsc.edu/research/research_compliance/irb/">Institutional Review Board </a></li>
+                    <li><a href="http://utrf.tennessee.edu">Technology Transfer & Licensing </a></li>
+                    <li><a href="(linked to Offices & Resources landing page)">Offices & Resources</a></li>
                 </ul>
             </div>
             <div class="medium-4 columns footer-box hide-for-print">
