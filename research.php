@@ -227,8 +227,26 @@
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Proposals, Grants, <br />& Contracts </a>
-                <ul data-equalizer-watch="nested-links"></ul>
+                <a href="#" data-equalizer-watch="heading-links">Grants & Research<br /> Agreements</a>
+                <ul data-equalizer-watch="nested-links">
+                    <li><a href="https://tennessee.cayuse424.com/">Evisions/Cayuse SP</a></li>
+                    <li><a href="http://uthsc.edu/research/research_administration/FAQ.php">FAQs</a></li>
+                    <li><a href="http://uthsc.edu/research/research_administration/research_grants.php">Grants</a></li>
+                    <li><a href="http://uthsc.edu/research/research_administration/research_contracts/index.php">Forms & Information</a></li>
+                    <li><a href="http://uthsc.edu/research/research_administration/staff.php">About</a></li>
+                </ul>
+            </li>
+
+            <li class="uthsc-navigation-column small-2 columns">
+                <a href="#" data-equalizer-watch="heading-links">Compliance </a>
+                <ul data-equalizer-watch="nested-links">
+                    <li><a href="#">IRB Administration </a></li>
+                    <li><a href="#">Animal Care & Use (IACUC)</a></li>
+                    <li><a href="#">Institutional Biosafety Committee</a></li>
+                    <li><a href="#">Biomedical Materials Inventory </a></li>
+                    <li><a href="#">Export Control</a></li>
+                    <li><a href="#">Radiation Safety Committee </a></li>
+                </ul>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
@@ -243,18 +261,6 @@
                 <a href="#" data-equalizer-watch="heading-links">Centers & Institutes</a>
                 <ul data-equalizer-watch="nested-links">
 
-                </ul>
-            </li>
-
-            <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Compliance </a>
-                <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">IRB Administration </a></li>
-                    <li><a href="#">Animal Care & Use (IACUC)</a></li>
-                    <li><a href="#">Institutional Biosafety Committee</a></li>
-                    <li><a href="#">Biomedical Materials Inventory </a></li>
-                    <li><a href="#">Export Control</a></li>
-                    <li><a href="#">Radiation Safety Committee </a></li>
                 </ul>
             </li>
 
