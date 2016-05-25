@@ -494,21 +494,15 @@
                 <div class="columns">
                     <img src="-resources/2015/images/mission-research.jpg" class="uthsc-mission-image">
                     <h2>Research</h2>
-                    <p>UTHSC has a long and rich tradition of
-                        accomplishments in basic, clinical, and
-                        translational research in a wide variety of
-                        disciplines focused on the kinds of
-                        contemporary health issues that impact our
-                        community, our region, the state of
-                        Tennessee, and the world.</p>
+                    <p>UTHSC has a long and rich tradition of accomplishments in basic, clinical and translational research in a wide variety of disciplines focused on the health issues that impact our community, our region, the state of Tennessee and the world.</p>
                     <ul>
-                        <li><a href="#">Graduate Medical Education (GME)</a></li>
-                        <li><a href="#">Dentistry</a></li>
-                        <li><a href="#">Pharmacy</a></li>
-                        <li><a href="#">Affiliated Hospitals</a></li>
+                        <li><a href="/research/research_administration/clinical_trials/">Clinical Trials</a></li>
+                        <li><a href="/research/research_compliance/">Compliance</a></li>
+                        <li><a href="/research/research_administration/">Grants and Research Agreements</a></li>
+                        <li><a href="/research/">Office of Research</a></li>
                     </ul>
                     <hr />
-                    <a class="button hollow small" href="#"><span class="fa fa-plus-circle"></span> Learn More...</a>
+                    <a class="button hollow small" href="/research/"><span class="fa fa-plus-circle"></span> Learn More...</a>
                 </div>
                 <div class="columns">
                     <img src="-resources/2015/images/mission-clinical-care.jpg" class="uthsc-mission-image">
