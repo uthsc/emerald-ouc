@@ -507,19 +507,15 @@
                 <div class="columns">
                     <img src="-resources/2015/images/mission-clinical-care.jpg" class="uthsc-mission-image">
                     <h2>Clinical Care</h2>
-                    <p>UTHSC's faculty and students provide
-                        health care to the community through our
-                        network of hospitals, practice groups,
-                        specialty care clinics, and mobile healthcare
-                        facilities.</p>
+                    <p>Our faculty and students provide health care to the community through our network of hospitals, practice groups, specialty care clinics, and mobile health care facilities.</p>
                     <ul>
-                        <li><a href="#">Graduate Medical Education (GME)</a></li>
-                        <li><a href="#">Dentistry</a></li>
-                        <li><a href="#">Pharmacy</a></li>
-                        <li><a href="#">Affiliated Hospitals</a></li>
+                        <li><a href="/bcdd/">Boling Center</a></li>
+                        <li><a href="/dentistry/Patients/">Dental Clinic</a></li>
+                        <li><a href="/rkstc/">Rachel Kay Stevens Therapy Center</a></li>
+                        <li><a href="/ULPS/">UT Le Bonheur Pediatric Specialists</a></li>
                     </ul>
                     <hr />
-                    <a class="button hollow small" href="#"><span class="fa fa-plus-circle"></span> Learn More...</a>
+                    <a class="button hollow small" href="/clinicalcare/"><span class="fa fa-plus-circle"></span> Learn More...</a>
                 </div>
                 <div class="columns">
                     <img src="-resources/2015/images/mission-public-service.jpg" class="uthsc-mission-image">
