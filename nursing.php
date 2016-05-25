@@ -328,57 +328,62 @@
         <!--/UTHSC Page-opening-->
         <!--*******************-->
 
-<!--        badges-->
-<!--        <div class="row">-->
-<!---->
-<!--            <div class="columns large-3">&nbsp;</div>-->
-<!---->
-<!--            <div class="columns large-3">-->
-<!--                <div class="uthsc-badge-box">-->
-<!--                    <div class="uthsc-badge-box-icon">-->
-<!--                        <span class="fa fa-certificate fa-5x"></span>-->
-<!--                    </div>-->
-<!---->
-<!--                    <div class="uthsc-badge-box-text">-->
-<!--                        <p style="text-align:center;">Statewide, over 1,166 residents and fellows receive training in-->
-<!--                            85 programs certified by the Accreditation Council for Graduate Medical Education in FY2015-->
-<!--                        </p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!---->
-<!--            <div class="columns large-3">-->
-<!--                <div class="uthsc-badge-box">-->
-<!--                    <div class="uthsc-badge-box-icon">-->
-<!--                        <span class="fa fa-graduation-cap fa-5x"></span>-->
-<!--                    </div>-->
-<!---->
-<!--                    <div class="uthsc-badge-box-text">-->
-<!--                        <p style="text-align:center;">Established in 1911, UTHSC is Tennessee’s only public, statewide,-->
-<!--                            academic, health system</p>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!---->
-<!--            <div class="columns large-3">&nbsp;</div>-->
-<!--        </div>-->
+        <!--badges-->
+        <div class="row">
+            <div class="columns large-4">
+                <div class="uthsc-badge-box">
+                    <div class="uthsc-badge-box-icon">
+                        <span class="fa fa-graduation-cap fa-5x"></span>
+                    </div>
 
-<!--        Resources-->
-<!--        <div class="row">-->
-<!--            <div class="columns uthsc-row-title">-->
-<!--                <h2>Research Resources</h2>-->
-<!--            </div>-->
-<!---->
-<!--            <div class="columns">-->
-<!--                <p style="text-align:center;">-->
-<!--                    <a class="button" href="https://www.uthsc.edu/CRC/">Clinical Research</a>-->
-<!--                    <a class="button" href="">Research Development</a>-->
-<!--                    <a class="button" href="">Research Integrity Officer</a>-->
-<!--                    <a class="button" href="">Governor’s Chair</a>-->
-<!--                </p>-->
-<!---->
-<!--            </div>-->
-<!--        </div>-->
+                    <div class="uthsc-badge-box-text">
+                        <p style="text-align:center;">100% NCLEX pass rate for BSN students in 2015 and 2016</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns large-4">
+                <div class="uthsc-badge-box">
+                    <div class="uthsc-badge-box-icon">
+                        <span class="fa fa-map-marker fa-5x"></span>
+                    </div>
+
+                    <div class="uthsc-badge-box-text">
+                        <p style="text-align:center;">Discounted out-of-state tuition for students who reside within 50 miles of Memphis.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns large-4">
+                <div class="uthsc-badge-box">
+                    <div class="uthsc-badge-box-icon">
+                        <span class="fa fa-laptop fa-5x"></span>
+                    </div>
+
+                    <div class="uthsc-badge-box-text">
+                        <p style="text-align:center;">RN-BSN program is now offered completely online</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Resources-->
+        <!--<div class="row">-->
+        <!--    <div class="columns uthsc-row-title">-->
+        <!--        <h2>Research Resources</h2>-->
+        <!--    </div>-->
+        <!---->
+        <!--    <div class="columns">-->
+        <!--        <p style="text-align:center;">-->
+        <!--            <a class="button" href="https://www.uthsc.edu/CRC/">Clinical Research</a>-->
+        <!--            <a class="button" href="">Research Development</a>-->
+        <!--            <a class="button" href="">Research Integrity Officer</a>-->
+        <!--            <a class="button" href="">Governor’s Chair</a>-->
+        <!--        </p>-->
+        <!---->
+        <!--    </div>-->
+        <!--</div>-->
 
 
         <!--******************************************-->
@@ -394,22 +399,43 @@
                         <div class="columns">
                             <!--Highlight box-->
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
-                                <a>
+                                <a href="https://www.uthsc.edu/nursing/future-students/admissions/bsn_req.php">
                                     <div class="uthsc-highlight-box-image">
                                         <img src="-resources/2015/images/nursing-bsn.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
-                                        <p>Bachelor of Science Programs </p>
+                                        <p>Bachelor of Science in Nursing Program</p>
                                     </div>
 
                                     <div class="uthsc-highlight-box-description">
-                                        <p>Our BSN program will prepare you for registered nurse licensure in just 17
-                                            months and our flexible RN-BSN program is designed for working RNs</p>
+                                        <p>Our accelerated BSN program will prepare you for registered nurse licensure
+                                            in just 17 months</p>
                                     </div>
                                 </a>
                             </div>
                         </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box uthsc-highlight-box-purple">
+                                <a href="https://www.uthsc.edu/nursing/future-students/admissions/rn-bsn-req.php">
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="-resources/2015/images/nursing-rn-bsn.jpg"/>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>RN Bachelor of Science in Nursing Program</p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p>You can earn your BSN with our flexible programs designed for
+                                            working RNs in mind</p>
+                                    </div>
+                                </a href="">
+                            </div>
+                        </div>
+
 
                         <div class="columns">
                             <!--Highlight box-->
@@ -434,8 +460,26 @@
 
                         <div class="columns">
                             <!--Highlight box-->
-                            <div class="uthsc-highlight-box  uthsc-highlight-box-purple">
-                                <a>
+                            <div class="uthsc-highlight-box">
+                                <a href="https://www.uthsc.edu/nursing/future-students/admissions/phd_req.php">
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="-resources/2015/images/nursing-phd.jpg">
+                                    </div>
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>PhD in Nursing Program</p>
+                                    </div>
+                                    <div class="uthsc-highlight-box-description">
+                                        <p>The PhD in Nursing curriculum is taught using traditional face-to-face
+                                            seminars and Web-enhanced learning opportunities</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box  uthsc-highlight-box-green">
+                                <a href="https://www.uthsc.edu/nursing/future-students/admissions/dnp_anesthesia_req.php">
                                     <div class="uthsc-highlight-box-image">
                                         <img src="-resources/2015/images/nursing-crna.jpg">
                                     </div>
@@ -452,8 +496,8 @@
 
                         <div class="columns">
                             <!--Highlight box-->
-                            <div class="uthsc-highlight-box  uthsc-highlight-box-purple">
-                                <a>
+                            <div class="uthsc-highlight-box uthsc-highlight-box-purple">
+                                <a href="">
                                     <div class="uthsc-highlight-box-image">
                                         <img src="-resources/2015/images/nursing-ag-acnp.jpg">
                                     </div>
@@ -507,7 +551,7 @@
 
             <div class="columns">
                 <div class="row uthsc-events">
-                    <?php readfile("http://events.uthsc.edu/widgets/uthsc-events-feed.php"); ?>
+                    <?php readfile("http://events.uthsc.edu/widgets/uthsc-events-feed-nursing.php"); ?>
                 </div>
             </div>
 
@@ -542,7 +586,7 @@
                 </p>
             </div>
             <div class="medium-4 columns footer-box">
-                <h4>Office Links</h4><ul>
+                <h4>College Links</h4><ul>
                     <li><a href="">View an Info Session</a></li>
                     <li><a href="">Apply Online</a></li>
                     <li><a href="">Tuition & Fees</a></li>
@@ -698,10 +742,7 @@
              data-v-offset="0" data-auto-focus="true">
             <ul class="uthsc-off-canvas-breadcrumbs-list">
                 <li><a href="index.php" title="Home">Back to the Homepage</a></li>
-                <li><a href="#" title="College of Medicine">College of Medicine</a></li>
-                <li><a href="#" title="Office of Medical Education">Office of Medical Education</a></li>
-                <li><a href="#" title="Clerkships">Clerkships</a></li>
-                <li><a href="#" title="Core Clerkship Directors">Core Clerkship Directors</a></li>
+                <li><a href="#" title="College of Medicine">College of Nursing</a></li>
                 <li class="disabled"><strong>Current Page</strong></li>
             </ul>
         </div>
@@ -730,41 +771,40 @@
     <ul>
         <li><a href="#" class="link-heading">About</a>
             <ul>
-                <li><a href="#">Mission & Vision </a></li>
-                <li><a href="#">Vice Chancellor for Research </a></li>
-                <li><a href="#">Reports and Publications </a></li>
-                <li><a href="#">Organizational Chart</a></li>
-                <li><a href="#">News & Events</a></li>
+                <li><a href="http://uthsc.edu/nursing/about-the-college/mission.php">Mission & Philosophy</a></li>
+                <li><a href="http://uthsc.edu/nursing/news/annual-reports.php">Annual Report</a></li>
+                <li><a href="http://uthsc.edu/nursing/about-the-college/history.php">History</a></li>
+                <li><a href="http://uthsc.edu/nursing/about-the-college/accreditation.php">Accreditation</a></li>
+                <li><a href="http://uthsc.edu/nursing/documents/strategic-map-12-16-15.pdf">Strategic Map</a></li>
             </ul>
         </li>
-        <li><a href="#" class="link-heading">Proposals, Grants, <br />& Contracts </a>
+
+        <li><a href="#" class="link-heading">Students</a>
+            <ul>
+                <li><a href="http://uthsc.edu/nursing/future-students/index.php">Future Students</a></li>
+                <li><a href="http://uthsc.edu/nursing/acceptedstudents.php">Accepted Students</a></li>
+                <li><a href="http://uthsc.edu/nursing/current-students/index.php">Current Students</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#" class="link-heading">Academic Programs </a>
             <ul>
             </ul>
         </li>
-        <li><a href="#" class="link-heading">Institutional Cores</a>
-            <ul>
-                <li><a href="#">Mission & Vision </a></li>
-                <li><a href="#">Core List </a></li>
-            </ul>
-        </li>
-        <li><a href="#" class="link-heading">Centers & Institutes</a>
+
+        <li><a href="#" class="link-heading">Research Programs</a>
             <ul>
 
             </ul>
         </li>
-        <li><a href="#" class="link-heading">Compliance</a>
-            <ul>
-                <li><a href="#">IRB Administration </a></li>
-                <li><a href="#">Animal Care & Use (IACUC)</a></li>
-                <li><a href="#">Institutional Biosafety Committee</a></li>
-                <li><a href="#">Biomedical Materials Inventory </a></li>
-                <li><a href="#">Export Control</a></li>
-                <li><a href="#">Radiation Safety Committee </a></li>
-            </ul>
-        </li>
-        <li><a href="#" class="link-heading">Offices & Resources</a>
+        <li><a href="#" class="link-heading">Practice Programs</a>
             <ul>
 
+            </ul>
+        </li>
+        <li><a href="#" class="link-heading">Continuing Education</a>
+            <ul>
+                <li><a href="http://uthsc.edu/nursing/jobs.php">Job Opportunities</a></li>
             </ul>
         </li>
     </ul>
@@ -793,10 +833,7 @@
              data-v-offset="0" data-auto-focus="true">
             <ul class="uthsc-off-canvas-breadcrumbs-list">
                 <li><a href="index.php" title="Home">Back to the Homepage</a></li>
-                <li><a href="#" title="College of Medicine">College of Medicine</a></li>
-                <li><a href="#" title="Office of Medical Education">Office of Medical Education</a></li>
-                <li><a href="#" title="Clerkships">Clerkships</a></li>
-                <li><a href="#" title="Core Clerkship Directors">Core Clerkship Directors</a></li>
+                <li><a href="#" title="College of Medicine">College of Nursing</a></li>
                 <li class="disabled"><strong>Current Page</strong></li>
             </ul>
         </div>
@@ -881,7 +918,7 @@
 <!--Off canvas buttons-->
 <!--******************-->
 <div aria-hidden="true" id="mobile-navigation" class="hide-for-large hide-for-print">
-    <button id="uthsc-off-canvas-button--slide-left" class="toggle-slide-left button"></button>
+    <button id="uthsc-off-canvas-button--slide-left" class="toggle-slide-left button" style="background-image: url('-resources/2015/images/nav-toggler-left-college.png')"></button>
     <button id="uthsc-off-canvas-button--slide-right" class="toggle-slide-right button"></button>
 
     <!--Safari bottom nav fix-->

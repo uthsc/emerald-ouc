@@ -281,8 +281,9 @@
     <!--Hero Image-->
     <!--**********-->
     <div class="hero hero-one hide-for-print" style="
-    background:url('http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/research-hero.jpg');
+    background:url('http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/research-hero-3.jpg');
     background-position: 50%;
+    background-position-y: 50%;
     background-size: cover;"></div>
     <!--***********-->
     <!--/Hero Image-->
@@ -342,11 +343,11 @@
         <!--/UTHSC Page-opening-->
         <!--*******************-->
 
-        <div class="row">
-            <div class="columns large-4">
+        <div class="row medium-up-2 large-up-4">
+            <div class="columns">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-graduation-cap fa-5x"></span>
+                        <span class="fa fa-university fa-5x"></span>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -356,7 +357,7 @@
                 </div>
             </div>
 
-            <div class="columns large-4">
+            <div class="columns">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
                         <span class="fa fa-flask fa-5x"></span>
@@ -368,15 +369,30 @@
                 </div>
             </div>
 
-            <div class="columns large-4">
+            <div class="columns">
+                <div class="uthsc-badge-box">
+                    <div class="uthsc-badge-box-icon">
+                        <span class="fa fa-graduation-cap fa-5x"></span>
+                    </div>
+
+                    <div class="uthsc-badge-box-text">
+                        <p style="text-align:center;">1,166 residents and
+                            fellows along with 156
+                            post-docs accounted for
+                            at UTHSC in FY2015</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="columns">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
                         <span class="fa fa-certificate fa-5x"></span>
                     </div>
 
                     <div class="uthsc-badge-box-text">
-                        <p style="text-align:center;">Statewide, over 1,166 residents and fellows receive training in
-                            85 programs certified by the Accreditation Council for Graduate Medical Education in FY2015
+                        <p style="text-align:center;">
+                            85 programs certified by the Accreditation Council for Graduate Medical Education
                         </p>
                     </div>
                 </div>
@@ -567,7 +583,7 @@
 
             <div class="columns">
                 <div class="row uthsc-events">
-                    <?php readfile("http://events.uthsc.edu/widgets/uthsc-events-feed.php"); ?>
+                    <?php readfile("http://events.uthsc.edu/widgets/uthsc-events-feed-research.php"); ?>
                 </div>
             </div>
 
@@ -803,8 +819,23 @@
                 <li><a href="#">News & Events</a></li>
             </ul>
         </li>
-        <li><a href="#" class="link-heading">Proposals, Grants, <br />& Contracts </a>
+        <li><a href="#" class="link-heading">Grants & Research Agreements</a>
             <ul>
+                <li><a href="http://uthsc.edu/research/research_administration/staff.php">About</a></li>
+                <li><a href="https://tennessee.cayuse424.com/">Evisions/Cayuse SP</a></li>
+                <li><a href="http://uthsc.edu/research/research_administration/research_grants.php">Grants</a></li>
+                <li><a href="">Research Agreements</a></li>
+                <li><a href="http://uthsc.edu/research/research_administration/research_contracts/index.php">Forms & Information</a></li>
+                <li><a href="http://uthsc.edu/research/research_administration/FAQ.php">FAQs</a></li>
+            </ul>
+        </li>
+        <li><a href="#" class="link-heading">Compliance</a>
+            <ul>
+                <li><a href="#">IRB Administration </a></li>
+                <li><a href="#">Animal Care & Use (IACUC)</a></li>
+                <li><a href="#">Institutional Biosafety Committee</a></li>
+                <li><a href="#">Export Control</a></li>
+                <li><a href="#">Radiation Safety Committee </a></li>
             </ul>
         </li>
         <li><a href="#" class="link-heading">Institutional Cores</a>
@@ -818,15 +849,7 @@
 
             </ul>
         </li>
-        <li><a href="#" class="link-heading">Compliance</a>
-            <ul>
-                <li><a href="#">IRB Administration </a></li>
-                <li><a href="#">Animal Care & Use (IACUC)</a></li>
-                <li><a href="#">Institutional Biosafety Committee</a></li>
-                <li><a href="#">Export Control</a></li>
-                <li><a href="#">Radiation Safety Committee </a></li>
-            </ul>
-        </li>
+
         <li><a href="#" class="link-heading">Offices & Resources</a>
             <ul>
 
