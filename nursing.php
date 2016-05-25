@@ -391,66 +391,6 @@
                 <div class="columns"></div>
                 <div class="columns">
                     <div class="row medium-up-2 large-up-3">
-<!--                        <div class="columns">-->
-<!--                            <!--Highlight box-->
-<!--                            <div class="uthsc-highlight-box uthsc-highlight-box-purple">-->
-<!--                                <a>-->
-<!--                                    <div class="uthsc-highlight-box-image">-->
-<!--                                        <img src="-resources/2015/images/research-kell-landscape.jpg">-->
-<!--                                    </div>-->
-
-<!--                                    <div class="uthsc-highlight-box-title">-->
-<!--                                        <p>The VCR Distinguished Lecture Series Featuring Prof. Douglas B. Kell</p>-->
-<!--                                    </div>-->
-
-<!--                                    <div class="uthsc-highlight-box-description">-->
-<!--                                        <p><em>"The Cellular Uptake of Pharmaceutical Drugs is Transporter-mediated, and-->
-<!--                                            Thus a Problem Not of Biophysics but of Systems Biology."</em></p>-->
-<!--                                        <p>June 16, 2016 from 1-2pm<br />-->
-<!--                                            College of Pharmacy, Room 101</p>-->
-<!--                                    </div>-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                        <div class="columns">-->
-<!--                            <!--Highlight box-->
-<!--                            <div class="uthsc-highlight-box">-->
-<!--                                <div class="uthsc-highlight-box-image">-->
-<!--                                    <img src="-resources/2015/images/research-morrow-landscape.jpg"/>-->
-<!--                                </div>-->
-<!--                                <div class="uthsc-highlight-box-title">-->
-<!--                                    <p>Hot Topics in Research Featuring Dr. Casey D. Morrow, Director, UAB</p>-->
-<!--                                </div>-->
-
-<!--                                <div class="uthsc-highlight-box-description">-->
-<!--                                    <p><em>"UAB Microbiome Resource: Precision Medicine to Repair Dysbiotic Microbial-->
-<!--                                        Communities"</em></p>-->
-<!--                                    <p>June 28, 2016 from 12-1pm <br />-->
-<!--                                        GEB A302-->
-<!--                                    </p>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
-<!--                        <div class="columns">-->
-<!--                            <!--Highlight box-->
-<!--                            <div class="uthsc-highlight-box uthsc-highlight-box-green">-->
-<!--                                <a>-->
-<!--                                    <div class="uthsc-highlight-box-image">-->
-<!--                                        <img src="-resources/2015/images/research-goodman.jpg"/>-->
-<!--                                    </div>-->
-<!--                                    <div class="uthsc-highlight-box-title">-->
-<!--                                        <p>Vice Chancellor for Research, Dr. Steven R. Goodman's Second Research Town Hall Meeting </p>-->
-<!--                                    </div>-->
-
-<!--                                    <div class="uthsc-highlight-box-description">-->
-<!--                                        <p></p>-->
-<!--                                    </div>-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-
                         <div class="columns">
                             <!--Highlight box-->
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
