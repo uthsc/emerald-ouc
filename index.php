@@ -492,7 +492,7 @@
                     <a class="button hollow small" href="/education/"><span class="fa fa-plus-circle"></span> Learn More...</a>
                 </div>
                 <div class="columns">
-                    <img src="-resources/2015/images/mission-research.jpg" class="uthsc-mission-image">
+                    <img src="-resources/2015/images/mission-research-homepage.jpg" class="uthsc-mission-image">
                     <h2>Research</h2>
                     <p>UTHSC has a long and rich tradition of accomplishments in basic, clinical and translational research in a wide variety of disciplines focused on the health issues that impact our community, our region, the state of Tennessee and the world.</p>
                     <ul>
