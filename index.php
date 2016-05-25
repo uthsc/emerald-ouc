@@ -481,23 +481,15 @@
                 <div class="columns">
                     <img src="-resources/2015/images/mission-academics.jpg" class="uthsc-mission-image">
                     <h2>Academics</h2>
-                    <p>Since 1911, the University of Tennessee
-                        Health Sciences Center has been training
-                        health care scientists and caregivers
-                        through education, research, clinical care,
-                        and public service. Today, our colleges of
-                        Dentistry, Graduate Health Sciences,
-                        Medicine, Nursing, Pharmacy, and Health
-                        Professions serve over 3,000 students and
-                        1,200 residents across four campuses.</p>
+                    <p>Since 1911, we have been training health care professionals through education, research, clinical care and public service. Today, our Colleges of Dentistry, Graduate Health Sciences, Health Professions , Medicine, Nursing and Pharmacy serve more than 3,000 students and 1,300 residents, post docs and fellows across four campuses.</p>
                     <ul>
-                        <li><a href="#">Academic Calendar</a></li>
-                        <li><a href="#">Academic Catalog</a></li>
-                        <li><a href="#">Registrar</a></li>
-                        <li><a href="#">Bursar's Office</a></li>
+                        <li><a href="/admissions/">Admissions</a></li>
+                        <li><a href="/registrar/academic_calendar.php">Academic Calendar</a></li>
+                        <li><a href="/registrar/">Registrar</a></li>
+                        <li><a href="/residency/">Residencies and Fellowships</a></li>
                     </ul>
                     <hr />
-                    <a class="button hollow small" href="#"><span class="fa fa-plus-circle"></span> Learn More...</a>
+                    <a class="button hollow small" href="/education/"><span class="fa fa-plus-circle"></span> Learn More...</a>
                 </div>
                 <div class="columns">
                     <img src="-resources/2015/images/mission-research.jpg" class="uthsc-mission-image">
