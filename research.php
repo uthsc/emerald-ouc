@@ -347,7 +347,7 @@
             <div class="columns">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-university fa-5x"></span>
+                        <span class="fa fa-university fa-5x" style="color:#ced0b4"></span>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -360,7 +360,7 @@
             <div class="columns">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-flask fa-5x"></span>
+                        <span class="fa fa-flask fa-5x" style="color:#0084b6"></span>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -387,7 +387,7 @@
             <div class="columns">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-certificate fa-5x"></span>
+                        <span class="fa fa-certificate fa-5x" style="color:#e8cf00"></span>
                     </div>
 
                     <div class="uthsc-badge-box-text">
