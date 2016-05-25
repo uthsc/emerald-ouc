@@ -577,40 +577,9 @@
 
 
             <!--Social-->
-            <div class="row uthsc-social-masonry">
                 <div class="columns uthsc-row-title">
                     <h3>UTHSC Now</h3>
                 </div>
-                <div class="columns">
-                    <div id="container" class="small-up-2 medium-up-3">
-
-                        <div class="columns">
-                            <img src="http://news.uthsc.edu/wp-content/uploads/2016/05/ryan-slider-300x300.jpg">
-                            <p>Six Professors Receive UTAA Awards</p>
-                        </div>
-                        <div class="columns">
-                            <img src="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/05/Karen-Johnson-NewsSlider.jpg?resize=960%2C500">
-                            <p>Dr. Karen C. Johnson of UTHSC Receives $2.3 Million Grant to Study How Weight Loss and Increased Physical Activity Affect Aging in Individuals with Type 2 Diabetes</p>
-                        </div>
-                        <div class="columns">
-                            <img src="http://news.uthsc.edu/wp-content/uploads/2016/05/Imhotep-Award-news-slider.jpg?resize=300%2C300">
-                            <p>Student Government Association Executive Council Honors Faculty and Student Leaders at Awards Banquet</p>
-                        </div>
-                        <div class="columns">
-                            <img src="https://scontent-dfw1-1.cdninstagram.com/l/t51.2885-15/s640x640/sh0.08/e35/c0.133.1080.1080/13267442_575587109312844_2057094071_n.jpg?ig_cache_key=MTI1NDYwNzQ1MTU1NjA3ODc1OA%3D%3D.2.c">
-                        </div>
-                        <div class="columns">
-                            <img src="https://scontent-dfw1-1.xx.fbcdn.net/t31.0-8/13248574_10153762268232753_1033086639117245032_o.jpg">
-                        </div>
-                        <div class="columns">
-                            <img src="https://pbs.twimg.com/media/Ci1XbDzWEAE4hbA.jpg:large">
-                        </div>
-                        <div class="columns">
-                            <p>Fun hike at Meeman-Shelby Forest State Park with Outdoor Recreation! For more info, contact erinjennings@uthsc.edu.</p>
-                        </div>
-                        <div class="columns">
-                            <p>UTHSC Communications and Marketing Department Receives Two Awards for Alumni Magazines in International Competition</p>
-                        </div>
                     </div>
                 </div>
             </div>
