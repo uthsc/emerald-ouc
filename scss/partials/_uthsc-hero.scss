@@ -1,0 +1,29 @@
+////
+/// @group uthsc-hero-image
+////
+
+@mixin uthsc-hero-dev {
+  .hero {
+    img {
+      width: 100%;
+    }
+    &.hero-one {
+      background-image: url('http://uthsc.edu/redesign/_resources/2015/images/uthsc-campus-mooney.jpg');
+      width: 100%;
+      background-position: 50%;
+      background-size: cover;
+
+
+      @media #{$small-up} {
+        height: 10vh;
+      }
+      @media #{$medium-up} {
+        height: 25vh;
+      }
+      @media #{$large-up} {
+        height: 50vh;
+      }
+
+    }
+  }
+}
