@@ -533,6 +533,8 @@
             </div>
             <!--/ Mission Row-->
 
+            <hr />
+
             <!--Infographics-->
             <div class="uthsc-infographics row text-center" data-equalizer="homepage-stats" data-equalize-on-stack="false">
                 <div data-equalizer-watch="homepage-stats" class="columns medium-3">
@@ -573,7 +575,6 @@
             </div>
             <!--/Infographics-->
 
-            <hr />
 
             <!--Social-->
             <div class="row uthsc-social-masonry">
