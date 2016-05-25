@@ -540,7 +540,7 @@
 
 
         <!--*************-->
-        <!--Research News-->
+        <!--Nursing News-->
         <!--*************-->
         <div class="row expanded">
             <div class="row">
@@ -553,12 +553,12 @@
             </div>
         </div>
         <!--**************-->
-        <!--/Research News-->
+        <!--/Nursing News-->
         <!--**************-->
 
 
         <!--***************-->
-        <!--Research Events-->
+        <!--Nursing Events-->
         <!--***************-->
         <div class="row">
             <div class="columns uthsc-row-title">
@@ -566,41 +566,14 @@
             </div>
 
             <div class="columns">
-                <div class="row uthsc-events medium-up-2 large-up-4">
-                    <div class="columns uthsc-event">
-                        <div class="uthsc-event-date"><span class="uthsc-event-month">JUN</span><br><span
-                                class="uthsc-event-day">1</span></div>
-                        <p class="uthsc-event-title"><a
-                                href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=3030">The Truth About
-                                Flipped Classrooms</a></p>
-                        <p class="uthsc-event-time">2:00pm</p></div>
-                    <div class="columns uthsc-event">
-                        <div class="uthsc-event-date"><span class="uthsc-event-month">JUN</span><br><span
-                                class="uthsc-event-day">3</span></div>
-                        <p class="uthsc-event-title"><a
-                                href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=2820">First Friday Food
-                                Truck Day</a></p>
-                        <p class="uthsc-event-time">11:00am</p></div>
-                    <div class="columns uthsc-event">
-                        <div class="uthsc-event-date"><span class="uthsc-event-month">JUN</span><br><span
-                                class="uthsc-event-day">4</span></div>
-                        <p class="uthsc-event-title"><a
-                                href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=2847">Determined To Be A
-                                Doctor Someday</a></p>
-                        <p class="uthsc-event-time">1:00pm</p></div>
-                    <div class="columns uthsc-event">
-                        <div class="uthsc-event-date"><span class="uthsc-event-month">JUN</span><br><span
-                                class="uthsc-event-day">16</span></div>
-                        <p class="uthsc-event-title"><a
-                                href="http://events.uthsc.edu/events/index.php?com=detail&amp;eID=2913">VCR Distinguished
-                                Lecture Series</a></p>
-                        <p class="uthsc-event-time">1:00pm</p></div>
+                <div class="row uthsc-events">
+                    <?php readfile("http://events.uthsc.edu/widgets/uthsc-events-feed.php"); ?>
                 </div>
             </div>
 
         </div>
         <!--****************-->
-        <!--/Research Events-->
+        <!--/Nursing Events-->
         <!--****************-->
 
     </div>
