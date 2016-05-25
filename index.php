@@ -520,21 +520,15 @@
                 <div class="columns">
                     <img src="-resources/2015/images/mission-public-service.jpg" class="uthsc-mission-image">
                     <h2>Public Service</h2>
-                    <p>Public service is central to our mission.
-                        Every year, thousands of faculty, staff, and
-                        volunteers across 4 campuses located in
-                        Memphis, Knoxville, Chattanooga, and
-                        Nashville provide clinical care, health
-                        literacy training, and preventative care
-                        programs to the people of Tennessee.</p>
+                    <p>Public service is central to our mission. Every year, thousands of faculty, staff and volunteers across four campuses located in Memphis, Knoxville, Chattanooga and Nashville provide clinical care, health education and preventive care programs to the people of Tennessee.</p>
                     <ul>
-                        <li><a href="#">Academic Calendar</a></li>
-                        <li><a href="#">Academic Catalog</a></li>
-                        <li><a href="#">Registrar</a></li>
-                        <li><a href="#">Bursar's Office</a></li>
+                        <li><a href="/ciao/">CIAO</a></li>
+                        <li><a href="/publicservice/clinica_esperanza.pdf">Clinica Esperanza (Clinic of Hope)</a></li>
+                        <li><a href="/fooddrive/">Food Drive</a></li>
+                        <li><a href="/hcp/">Health Career Programs</a></li>
                     </ul>
                     <hr />
-                    <a class="button hollow small" href="#"><span class="fa fa-plus-circle"></span> Learn More...</a>
+                    <a class="button hollow small" href="/publicservice/"><span class="fa fa-plus-circle"></span> Learn More...</a>
                 </div>
             </div>
             <!--/ Mission Row-->
