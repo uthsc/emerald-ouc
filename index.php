@@ -300,7 +300,7 @@
             <div class="columns small-11 medium-6 large-12 medium-uncentered small-centered uthsc-fullscreen-content">
                 <p>Bringing the benefits of the health sciences to the
                     citizens of Tennessee and beyond through education,
-                    research, clinical care, and public service.</p>
+                    research, clinical care and public service.</p>
             </div>
             <div class="columns medium-6 large-12">
                 <div class="row">
@@ -338,118 +338,118 @@
                             <h2>Program Explorer</h2>
                             <h2 class="subheader">Discover all that UTHSC has to offer</h2>
                         </div>
-                            <div class="row collapse">
-                                <div class="medium-7 large-5 columns">
-                                    <ul class="tabs vertical" id="example-vert-tabs" data-tabs="data-tabs">
-                                        <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Dentistry</a></li>
-                                        <li class="tabs-title"><a href="#panel2v">Graduate Health Sciences</a></li>
-                                        <li class="tabs-title"><a href="#panel3v">Health Professions</a></li>
-                                        <li class="tabs-title"><a href="#panel4v">Medicine</a></li>
-                                        <li class="tabs-title"><a href="#panel5v">Nursing</a></li>
-                                        <li class="tabs-title"><a href="#panel6v">Pharmacy</a></li>
-                                    </ul>
-                                </div>
-                                <div class="medium-5 large-7 columns uthsc-program-explorer-content">
-                                    <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
-                                        <div class="tabs-panel is-active" id="panel1v">
-                                            <ul>
-                                                <li><a href="/dentistry/Fac_Depts/bidx.php">Diagnostic Sciences &amp; Oral Medicine</a></li>
-                                                <li><a href="/dentistry/omds/">Oral and Maxillofacial Diagnostic Services</a></li>
-                                                <li><a href="/dentistry/dental-hygiene/">Dental Hygiene, Entry Level (B.S. Degree)</a></li>
-                                                <li><a href="/dentistry/dental-hygiene/masters/index.php">Dental Hygiene, Graduate Program (MDH Degree)</a></li>
-                                                <li><a href="/dentistry/Fac_Depts/endo.php">Endodontics</a></li>
-                                                <li><a href="/dentistry/Fac_Depts/general-practice-staff.php">General Practice</a></li>
-                                                <li><a href="/dentistry/Fac_Depts/oms.php">Oral &amp; Maxillofacial Surgery</a></li>
-                                                <li><a href="/dentistry/Fac_Depts/ortho.php">Orthodontics</a></li>
-                                                <li><a href="/dentistry/Fac_Depts/pedocoh.php">Pediatric Dentistry &amp; Community Oral Health</a></li>
-                                                <li><a href="/dentistry/Fac_Depts/perio.php">Periodontology</a></li>
-                                                <li><a href="/dentistry/Fac_Depts/rest.php">Prosthodontics</a></li>
-                                                <li><a href="/dentistry/research/">Bioscience Research</a></li>
-                                                <li><a href="/dentistry/Fac_Depts/newrest.php">Restorative</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="tabs-panel" id="panel2v">
-                                            <ul>
-                                                <li><a href="/grad/Programs/index.php?page=BIOM">Biomedical Engineering and Imaging</a></li>
-                                                <li><a href="/grad/Programs/index.php?page=DSCI">Dental Science (Masters only)</a>
-                                                </li>
-                                                <li><a href="/grad/Programs/index.php?page=BIOE">Epidemiology (Masters only)</a>
-                                                </li>
-                                                <li><a href="/grad/Programs/index.php?page=HOPR">Health Outcomes and Policy Research</a></li>
-                                                <li><a href="/grad/PROGRAMS/BCLRMMO.php">Biomedical Sciences (Masters only)</a>
-                                                </li>
-                                                <li><a href="/grad/IBS/">Integrated Program in Biomedical Sciences (PhD only)</a>
-                                                </li>
-                                                <li><a href="/grad/Programs/index.php?page=NSG">Nursing</a></li>
-                                                <li><a href="/grad/Programs/index.php?page=PharmSci">Pharmaceutical Sciences</a></li>
-                                                <li><a href="/grad/Programs/index.php?page=PharmacologyMS">Pharmacology (Masters only)</a>
-                                                </li>
-                                                <li><a href="/health-professions/asp/phd/index.php">Speech and Hearing Science</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="tabs-panel" id="panel3v">
-                                            <ul>
-                                                <li><a href="/health-professions/asp/index.php">Audiology &amp; Speech Pathology</a></li>
-                                                <li><a href="/health-professions/cls/index.php">Clinical Laboratory Sciences</a></li>
-                                                <li><a href="/health-professions/cls/ct/index.php">Cytotechnology &amp; Histotechnology </a></li>
-                                                <li><a href="/health-professions/him/index.php">Health Informatics &amp; Information Management</a></li>
-                                                <li><a href="/health-professions/cls/mls/index.php">Medical Laboratory Science</a></li>
-                                                <li><a href="/health-professions/ot/index.php">Occupational Therapy</a></li>
-                                                <li><a href="/health-professions/pa/index.php">Physician Assistant</a></li>
-                                                <li><a href="/health-professions/pt/index.php">Physical Therapy, Entry Level (DPT Degree)</a></li>
-                                                <li><a href="/health-professions/pt/programs/pt-graduate/index.php">Physical Therapy, Graduate Program (MSPT Degree)</a></li>
-                                                <li><a href="/health-professions/pt/programs/pt-graduate/index.php">Physical Therapy, Graduate Program (ScDPT Degree)</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="tabs-panel" id="panel4v">
-                                            <ul>
-                                                <li><a href="/anatomy-neurobiology/">Anatomy &amp; Neurobiology</a></li>
-                                                <li><a href="/anesthesiology/">Anesthesiology</a></li>
-                                                <li><a href="/compmed/">Comparative Medicine</a></li>
-                                                <li><a href="/dermatology/">Dermatology</a></li>
-                                                <li><a href="/fammed/">Family Medicine</a></li>
-                                                <li><a href="/internalmedicine/">Medicine</a></li>
-                                                <li><a href="/molecular_sciences/">Microbiology, Immunology and Biochemistry</a></li>
-                                                <li><a href="/neurology/">Neurology</a></li>
-                                                <li><a href="/neurosurgery/">Neurosurgery</a></li>
-                                                <li><a href="/obgyn/">Obstetrics and Gynecology</a></li>
-                                                <li><a href="/eye/">Ophthalmology</a></li>
-                                                <li><a href="/ortho/">Orthopaedic Surgery &amp; Biomedical Engineering</a></li>
-                                                <li><a href="/otolaryngology/">Otolaryngology - Head and Neck Surgery</a></li>
-                                                <li><a href="/pathology/">Pathology and Laboratory Medicine</a></li>
-                                                <li><a href="/pediatrics/">Pediatrics</a></li>
-                                                <li><a href="/pharmacology/">Pharmacology</a></li>
-                                                <li><a href="/physiology/">Physiology</a></li>
-                                                <li><a href="/plasticsurgery/">Plastic Surgery</a></li>
-                                                <li><a href="/prevmed/">Preventive Medicine</a></li>
-                                                <li><a href="/psych/">Psychiatry</a></li>
-                                                <li><a href="/radiology/">Radiology</a></li>
-                                                <li><a href="/surgery/">Surgery</a></li>
-                                                <li><a href="/urology/">Urology</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="tabs-panel" id="panel5v">
-                                            <ul>
-                                                <li><a href="/nursing/academic-programs/index.php">Academic Programs</a></li>
-                                                <li><a href="/nursing/continuing-education/index.php">Continuing Education</a></li>
-                                                <li><a href="/nursing/practice-programs/index.php">Practice Programs</a></li>
-                                                <li><a href="/nursing/research-programs/index.php">Research Programs</a></li>
-                                                <li><a href="/nursing/academic-programs/BSN/index.php">Bachelor of Science in Nursing (BSN)</a></li>
-                                                <li><a href="/nursing/academic-programs/MSN/index.php">Clinical Nurse Leader (CNL)</a></li>
-                                                <li><a href="/nursing/academic-programs/DNP/index.php">Doctor of Nursing Practice (DNP)</a></li>
-                                                <li><a href="/nursing/academic-programs/DNP/nurse_anesthesia/index.php">Nurse Anesthesia (DNP)</a></li>
-                                                <li><a href="/nursing/academic-programs/PhD/index.php">Doctor of Philosophy (PhD)</a></li>
-                                            </ul>
-                                        </div>
-                                        <div class="tabs-panel" id="panel6v">
-                                            <ul>
-                                                <li><a href="/pharmacy/dcp/">Department of Clinical Pharmacy</a></li>
-                                                <li><a href="/pharmacy/pharmsci/">Department of Pharmaceutical Sciences</a></li>
-                                            </ul>
-                                        </div>
+                        <div class="row collapse">
+                            <div class="medium-7 large-5 columns">
+                                <ul class="tabs vertical" id="example-vert-tabs" data-tabs="data-tabs">
+                                    <li class="tabs-title is-active"><a href="#panel1v" aria-selected="true">Dentistry</a></li>
+                                    <li class="tabs-title"><a href="#panel2v">Graduate Health Sciences</a></li>
+                                    <li class="tabs-title"><a href="#panel3v">Health Professions</a></li>
+                                    <li class="tabs-title"><a href="#panel4v">Medicine</a></li>
+                                    <li class="tabs-title"><a href="#panel5v">Nursing</a></li>
+                                    <li class="tabs-title"><a href="#panel6v">Pharmacy</a></li>
+                                </ul>
+                            </div>
+                            <div class="medium-5 large-7 columns uthsc-program-explorer-content">
+                                <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
+                                    <div class="tabs-panel is-active" id="panel1v">
+                                        <ul>
+                                            <li><a href="/dentistry/Fac_Depts/bidx.php">Diagnostic Sciences &amp; Oral Medicine</a></li>
+                                            <li><a href="/dentistry/omds/">Oral and Maxillofacial Diagnostic Services</a></li>
+                                            <li><a href="/dentistry/dental-hygiene/">Dental Hygiene, Entry Level (B.S. Degree)</a></li>
+                                            <li><a href="/dentistry/dental-hygiene/masters/index.php">Dental Hygiene, Graduate Program (MDH Degree)</a></li>
+                                            <li><a href="/dentistry/Fac_Depts/endo.php">Endodontics</a></li>
+                                            <li><a href="/dentistry/Fac_Depts/general-practice-staff.php">General Practice</a></li>
+                                            <li><a href="/dentistry/Fac_Depts/oms.php">Oral &amp; Maxillofacial Surgery</a></li>
+                                            <li><a href="/dentistry/Fac_Depts/ortho.php">Orthodontics</a></li>
+                                            <li><a href="/dentistry/Fac_Depts/pedocoh.php">Pediatric Dentistry &amp; Community Oral Health</a></li>
+                                            <li><a href="/dentistry/Fac_Depts/perio.php">Periodontology</a></li>
+                                            <li><a href="/dentistry/Fac_Depts/rest.php">Prosthodontics</a></li>
+                                            <li><a href="/dentistry/research/">Bioscience Research</a></li>
+                                            <li><a href="/dentistry/Fac_Depts/newrest.php">Restorative</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tabs-panel" id="panel2v">
+                                        <ul>
+                                            <li><a href="/grad/Programs/index.php?page=BIOM">Biomedical Engineering and Imaging</a></li>
+                                            <li><a href="/grad/Programs/index.php?page=DSCI">Dental Science (Masters only)</a>
+                                            </li>
+                                            <li><a href="/grad/Programs/index.php?page=BIOE">Epidemiology (Masters only)</a>
+                                            </li>
+                                            <li><a href="/grad/Programs/index.php?page=HOPR">Health Outcomes and Policy Research</a></li>
+                                            <li><a href="/grad/PROGRAMS/BCLRMMO.php">Biomedical Sciences (Masters only)</a>
+                                            </li>
+                                            <li><a href="/grad/IBS/">Integrated Program in Biomedical Sciences (PhD only)</a>
+                                            </li>
+                                            <li><a href="/grad/Programs/index.php?page=NSG">Nursing</a></li>
+                                            <li><a href="/grad/Programs/index.php?page=PharmSci">Pharmaceutical Sciences</a></li>
+                                            <li><a href="/grad/Programs/index.php?page=PharmacologyMS">Pharmacology (Masters only)</a>
+                                            </li>
+                                            <li><a href="/health-professions/asp/phd/index.php">Speech and Hearing Science</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tabs-panel" id="panel3v">
+                                        <ul>
+                                            <li><a href="/health-professions/asp/index.php">Audiology &amp; Speech Pathology</a></li>
+                                            <li><a href="/health-professions/cls/index.php">Clinical Laboratory Sciences</a></li>
+                                            <li><a href="/health-professions/cls/ct/index.php">Cytotechnology &amp; Histotechnology </a></li>
+                                            <li><a href="/health-professions/him/index.php">Health Informatics &amp; Information Management</a></li>
+                                            <li><a href="/health-professions/cls/mls/index.php">Medical Laboratory Science</a></li>
+                                            <li><a href="/health-professions/ot/index.php">Occupational Therapy</a></li>
+                                            <li><a href="/health-professions/pa/index.php">Physician Assistant</a></li>
+                                            <li><a href="/health-professions/pt/index.php">Physical Therapy, Entry Level (DPT Degree)</a></li>
+                                            <li><a href="/health-professions/pt/programs/pt-graduate/index.php">Physical Therapy, Graduate Program (MSPT Degree)</a></li>
+                                            <li><a href="/health-professions/pt/programs/pt-graduate/index.php">Physical Therapy, Graduate Program (ScDPT Degree)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tabs-panel" id="panel4v">
+                                        <ul>
+                                            <li><a href="/anatomy-neurobiology/">Anatomy &amp; Neurobiology</a></li>
+                                            <li><a href="/anesthesiology/">Anesthesiology</a></li>
+                                            <li><a href="/compmed/">Comparative Medicine</a></li>
+                                            <li><a href="/dermatology/">Dermatology</a></li>
+                                            <li><a href="/fammed/">Family Medicine</a></li>
+                                            <li><a href="/internalmedicine/">Medicine</a></li>
+                                            <li><a href="/molecular_sciences/">Microbiology, Immunology and Biochemistry</a></li>
+                                            <li><a href="/neurology/">Neurology</a></li>
+                                            <li><a href="/neurosurgery/">Neurosurgery</a></li>
+                                            <li><a href="/obgyn/">Obstetrics and Gynecology</a></li>
+                                            <li><a href="/eye/">Ophthalmology</a></li>
+                                            <li><a href="/ortho/">Orthopaedic Surgery &amp; Biomedical Engineering</a></li>
+                                            <li><a href="/otolaryngology/">Otolaryngology - Head and Neck Surgery</a></li>
+                                            <li><a href="/pathology/">Pathology and Laboratory Medicine</a></li>
+                                            <li><a href="/pediatrics/">Pediatrics</a></li>
+                                            <li><a href="/pharmacology/">Pharmacology</a></li>
+                                            <li><a href="/physiology/">Physiology</a></li>
+                                            <li><a href="/plasticsurgery/">Plastic Surgery</a></li>
+                                            <li><a href="/prevmed/">Preventive Medicine</a></li>
+                                            <li><a href="/psych/">Psychiatry</a></li>
+                                            <li><a href="/radiology/">Radiology</a></li>
+                                            <li><a href="/surgery/">Surgery</a></li>
+                                            <li><a href="/urology/">Urology</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tabs-panel" id="panel5v">
+                                        <ul>
+                                            <li><a href="/nursing/academic-programs/index.php">Academic Programs</a></li>
+                                            <li><a href="/nursing/continuing-education/index.php">Continuing Education</a></li>
+                                            <li><a href="/nursing/practice-programs/index.php">Practice Programs</a></li>
+                                            <li><a href="/nursing/research-programs/index.php">Research Programs</a></li>
+                                            <li><a href="/nursing/academic-programs/BSN/index.php">Bachelor of Science in Nursing (BSN)</a></li>
+                                            <li><a href="/nursing/academic-programs/MSN/index.php">Clinical Nurse Leader (CNL)</a></li>
+                                            <li><a href="/nursing/academic-programs/DNP/index.php">Doctor of Nursing Practice (DNP)</a></li>
+                                            <li><a href="/nursing/academic-programs/DNP/nurse_anesthesia/index.php">Nurse Anesthesia (DNP)</a></li>
+                                            <li><a href="/nursing/academic-programs/PhD/index.php">Doctor of Philosophy (PhD)</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="tabs-panel" id="panel6v">
+                                        <ul>
+                                            <li><a href="/pharmacy/dcp/">Department of Clinical Pharmacy</a></li>
+                                            <li><a href="/pharmacy/pharmsci/">Department of Pharmaceutical Sciences</a></li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
                 <div class="columns medium-4 uthsc-did-you-know text-center">
@@ -481,81 +481,59 @@
                 <div class="columns">
                     <img src="-resources/2015/images/mission-academics.jpg" class="uthsc-mission-image">
                     <h2>Academics</h2>
-                    <p>Since 1911, the University of Tennessee
-                        Health Sciences Center has been training
-                        health care scientists and caregivers
-                        through education, research, clinical care,
-                        and public service. Today, our colleges of
-                        Dentistry, Graduate Health Sciences,
-                        Medicine, Nursing, Pharmacy, and Health
-                        Professions serve over 3,000 students and
-                        1,200 residents across four campuses.</p>
+                    <p>Since 1911, we have been training health care professionals through education, research, clinical care and public service. Today, our Colleges of Dentistry, Graduate Health Sciences, Health Professions , Medicine, Nursing and Pharmacy serve more than 3,000 students and 1,300 residents, post docs and fellows across four campuses.</p>
                     <ul>
-                        <li><a href="#">Academic Calendar</a></li>
-                        <li><a href="#">Academic Catalog</a></li>
-                        <li><a href="#">Registrar</a></li>
-                        <li><a href="#">Bursar's Office</a></li>
+                        <li><a href="/admissions/">Admissions</a></li>
+                        <li><a href="/registrar/academic_calendar.php">Academic Calendar</a></li>
+                        <li><a href="/registrar/">Registrar</a></li>
+                        <li><a href="/residency/">Residencies and Fellowships</a></li>
                     </ul>
                     <hr />
-                    <a class="button hollow small" href="#"><span class="fa fa-plus-circle"></span> Learn More...</a>
+                    <a class="button hollow small" href="/education/"><span class="fa fa-plus-circle"></span> Learn More...</a>
                 </div>
                 <div class="columns">
-                    <img src="-resources/2015/images/mission-research.jpg" class="uthsc-mission-image">
+                    <img src="-resources/2015/images/mission-research-homepage.jpg" class="uthsc-mission-image">
                     <h2>Research</h2>
-                    <p>UTHSC has a long and rich tradition of
-                        accomplishments in basic, clinical, and
-                        translational research in a wide variety of
-                        disciplines focused on the kinds of
-                        contemporary health issues that impact our
-                        community, our region, the state of
-                        Tennessee, and the world.</p>
+                    <p>UTHSC has a long and rich tradition of accomplishments in basic, clinical and translational research in a wide variety of disciplines focused on the health issues that impact our community, our region, the state of Tennessee and the world.</p>
                     <ul>
-                        <li><a href="#">Graduate Medical Education (GME)</a></li>
-                        <li><a href="#">Dentistry</a></li>
-                        <li><a href="#">Pharmacy</a></li>
-                        <li><a href="#">Affiliated Hospitals</a></li>
+                        <li><a href="/research/research_administration/clinical_trials/">Clinical Trials</a></li>
+                        <li><a href="/research/research_compliance/">Compliance</a></li>
+                        <li><a href="/research/research_administration/">Grants and Research Agreements</a></li>
+                        <li><a href="/research/">Office of Research</a></li>
                     </ul>
                     <hr />
-                    <a class="button hollow small" href="#"><span class="fa fa-plus-circle"></span> Learn More...</a>
+                    <a class="button hollow small" href="/research/"><span class="fa fa-plus-circle"></span> Learn More...</a>
                 </div>
                 <div class="columns">
                     <img src="-resources/2015/images/mission-clinical-care.jpg" class="uthsc-mission-image">
                     <h2>Clinical Care</h2>
-                    <p>UTHSC's faculty and students provide
-                        health care to the community through our
-                        network of hospitals, practice groups,
-                        specialty care clinics, and mobile healthcare
-                        facilities.</p>
+                    <p>Our faculty and students provide health care to the community through our network of hospitals, practice groups, specialty care clinics, and mobile health care facilities.</p>
                     <ul>
-                        <li><a href="#">Graduate Medical Education (GME)</a></li>
-                        <li><a href="#">Dentistry</a></li>
-                        <li><a href="#">Pharmacy</a></li>
-                        <li><a href="#">Affiliated Hospitals</a></li>
+                        <li><a href="/bcdd/">Boling Center</a></li>
+                        <li><a href="/dentistry/Patients/">Dental Clinic</a></li>
+                        <li><a href="/rkstc/">Rachel Kay Stevens Therapy Center</a></li>
+                        <li><a href="/ULPS/">UT Le Bonheur Pediatric Specialists</a></li>
                     </ul>
                     <hr />
-                    <a class="button hollow small" href="#"><span class="fa fa-plus-circle"></span> Learn More...</a>
+                    <a class="button hollow small" href="/clinicalcare/"><span class="fa fa-plus-circle"></span> Learn More...</a>
                 </div>
                 <div class="columns">
                     <img src="-resources/2015/images/mission-public-service.jpg" class="uthsc-mission-image">
                     <h2>Public Service</h2>
-                    <p>Public service is central to our mission.
-                        Every year, thousands of faculty, staff, and
-                        volunteers across 4 campuses located in
-                        Memphis, Knoxville, Chattanooga, and
-                        Nashville provide clinical care, health
-                        literacy training, and preventative care
-                        programs to the people of Tennessee.</p>
+                    <p>Public service is central to our mission. Every year, thousands of faculty, staff and volunteers across four campuses located in Memphis, Knoxville, Chattanooga and Nashville provide clinical care, health education and preventive care programs to the people of Tennessee.</p>
                     <ul>
-                        <li><a href="#">Academic Calendar</a></li>
-                        <li><a href="#">Academic Catalog</a></li>
-                        <li><a href="#">Registrar</a></li>
-                        <li><a href="#">Bursar's Office</a></li>
+                        <li><a href="/ciao/">CIAO</a></li>
+                        <li><a href="/publicservice/clinica_esperanza.pdf">Clinica Esperanza (Clinic of Hope)</a></li>
+                        <li><a href="/fooddrive/">Food Drive</a></li>
+                        <li><a href="/hcp/">Health Career Programs</a></li>
                     </ul>
                     <hr />
-                    <a class="button hollow small" href="#"><span class="fa fa-plus-circle"></span> Learn More...</a>
+                    <a class="button hollow small" href="/publicservice/"><span class="fa fa-plus-circle"></span> Learn More...</a>
                 </div>
             </div>
             <!--/ Mission Row-->
+
+            <hr />
 
             <!--Infographics-->
             <div class="uthsc-infographics row text-center" data-equalizer="homepage-stats" data-equalize-on-stack="false">
@@ -597,46 +575,64 @@
             </div>
             <!--/Infographics-->
 
-            <hr />
 
             <!--Social-->
-            <div class="row uthsc-social-masonry">
+
+            <div class="row uthsc-social">
                 <div class="columns uthsc-row-title">
                     <h3>UTHSC Now</h3>
                 </div>
-                <div class="columns">
-                    <div id="container" class="small-up-2 medium-up-3">
-
-                        <div class="columns">
-                            <img src="http://news.uthsc.edu/wp-content/uploads/2016/05/ryan-slider-300x300.jpg">
-                            <p>Six Professors Receive UTAA Awards</p>
-                        </div>
-                        <div class="columns">
-                            <img src="http://i2.wp.com/news.uthsc.edu/wp-content/uploads/2016/05/Karen-Johnson-NewsSlider.jpg?resize=960%2C500">
-                            <p>Dr. Karen C. Johnson of UTHSC Receives $2.3 Million Grant to Study How Weight Loss and Increased Physical Activity Affect Aging in Individuals with Type 2 Diabetes</p>
-                        </div>
-                        <div class="columns">
-                            <img src="http://news.uthsc.edu/wp-content/uploads/2016/05/Imhotep-Award-news-slider.jpg?resize=300%2C300">
-                            <p>Student Government Association Executive Council Honors Faculty and Student Leaders at Awards Banquet</p>
-                        </div>
-                        <div class="columns">
-                            <img src="https://scontent-dfw1-1.cdninstagram.com/l/t51.2885-15/s640x640/sh0.08/e35/c0.133.1080.1080/13267442_575587109312844_2057094071_n.jpg?ig_cache_key=MTI1NDYwNzQ1MTU1NjA3ODc1OA%3D%3D.2.c">
-                        </div>
-                        <div class="columns">
-                            <img src="https://scontent-dfw1-1.xx.fbcdn.net/t31.0-8/13248574_10153762268232753_1033086639117245032_o.jpg">
-                        </div>
-                        <div class="columns">
-                            <img src="https://pbs.twimg.com/media/Ci1XbDzWEAE4hbA.jpg:large">
-                        </div>
-                        <div class="columns">
-                            <p>Fun hike at Meeman-Shelby Forest State Park with Outdoor Recreation! For more info, contact erinjennings@uthsc.edu.</p>
-                        </div>
-                        <div class="columns">
-                            <p>UTHSC Communications and Marketing Department Receives Two Awards for Alumni Magazines in International Competition</p>
-                        </div>
+                <div class="columns medium-6 large-4">
+                    <div class="row uthsc-social-boxs">
+                        <a href="http://news.uthsc.edu/six-professors-receive-utaa-awards/">
+                            <div class="columns">
+                                <img src="-resources/2015/images/uthsc-social-news-1.jpg">
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="columns">
+                                <img src="-resources/2015/images/uthsc-social-instagram-1.jpg">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="columns medium-6 large-8">
+                    <div class="row uthsc-social-boxs small-centered" data-equalizer="social-2" data-equalize-by-row="true">
+                        <a href="http://news.uthsc.edu/uthsc-communications-marketing-department-receives-two-awards-alumni-magazines-international-competition/">
+                            <div class="columns medium-12 large-6" data-equalizer-watch="social-2">
+                                <img src="-resources/2015/images/uthsc-social-news-2.jpg" class="uthsc-social-box-no-image">
+                            </div>
+                        </a>
+                        <a href="https://www.facebook.com/uthsc/posts/10153762268232753">
+                            <div class="columns medium-12 large-6" data-equalizer-watch="social-2">
+                                <img src="-resources/2015/images/uthsc-social-facebook-1.jpg">
+                            </div>
+                        </a>
+                        <a href="http://news.uthsc.edu/student-government-association-executive-council-honors-faculty-student-leaders-awards-banquet/">
+                            <div class="columns medium-12 large-6" data-equalizer-watch="social-2">
+                                <img src="-resources/2015/images/uthsc-social-news-4.jpg">
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/uthsc/status/733338438401937408">
+                            <div class="columns medium-12 large-6 show-for-large" data-equalizer-watch="social-2">
+                                <img src="-resources/2015/images/uthsc-social-twitter-1.jpg">
+                            </div>
+                        </a>
+                        <a href="http://news.uthsc.edu/dr-karen-c-johnson-uthsc-receives-2-3-million-grant-study-weight-loss-increased-physical-activity-affect-aging-individuals-type-2-diabetes/">
+                            <div class="columns medium-12 large-6 show-for-large" data-equalizer-watch="social-2">
+                                <img src="-resources/2015/images/uthsc-social-news-3.jpg">
+                            </div>
+                        </a>
+                        <a href="https://twitter.com/uthsc/status/732671713792655360">
+                            <div class="columns medium-12 large-6 show-for-large" data-equalizer-watch="social-2">
+                                <img src="-resources/2015/images/uthsc-social-twitter-2.jpg" class="uthsc-social-box-no-image">
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
+
+
             <!--/Social-->
         </div>
 
