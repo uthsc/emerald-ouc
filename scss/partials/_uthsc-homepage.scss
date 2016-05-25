@@ -204,7 +204,7 @@
         filter: brightness(.9);
       }
     }
-    
+
     // Flags
     //  .fullscreen {
     //    width: 100%;
@@ -304,21 +304,7 @@
       font-size: 1rem;
       font-variant-ligatures: no-common-ligatures;
     }
-    #events {
-      .event-list p:before {
-        content: '\f073\ ';
-        font-family: fontawesome;
-      }
-      .event-list p {
-        font-size: 11px;
-      }
-      .events {
-        margin: 5px 0;
-      }
-      .inline-list {
-        margin: 0 !important;
-      }
-    }
+
     .blockquote {
       .quotemark {
         color: $gainsboro;
@@ -339,35 +325,6 @@
       }
     }
 
-    #events {
-      margin: 1.7rem auto;
-      .events:last-of-type {
-        float: left;
-      }
-    }
-    .event-date {
-      border: 1px solid #bbb;
-      padding: .5rem;
-      width: 4.5rem;
-      height: 4.4rem;
-      font-size: 1.4rem;
-      text-align: center;
-      line-height: 1.7rem;
-      border-radius: 7px;
-      background-color: lightgrey;
-      color: #444;
-      font-weight: bold;
-      float: left;
-      margin-right: 0.7rem;
-    }
-    .events p {
-      margin: 0;
-      line-height: 1.2rem;
-      font-size: .85rem;
-    }
-    p.event-title {
-      padding-top: 0.5rem;
-    }
     .uthsc-infographic {
       background-size: contain !important;
       background-repeat: no-repeat !important;
