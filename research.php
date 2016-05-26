@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://uthsc.edu/xxxx">
     <!--/unfurling-->
 
-    <title>Foundation for Sites</title>
+    <title>Office of Research | UTHSC</title>
     <link rel="stylesheet" href="-resources/2015/css/uthsc.css">
     <link rel="stylesheet" href="-resources/2015/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300">
@@ -617,7 +617,7 @@
                     Memphis, TN 38163<br />
                     Phone: (901) 448-7125<br />
                     Fax: (901) 448-7133<br />
-                    research@uthsc.edu</p>
+                    <a href="mailto:research@uthsc.edu">research@uthsc.edu</a></p>
             </div>
             <div class="medium-4 columns footer-box">
                 <h4>Office Links</h4><ul>
@@ -780,10 +780,7 @@
              data-v-offset="0" data-auto-focus="true">
             <ul class="uthsc-off-canvas-breadcrumbs-list">
                 <li><a href="index.php" title="Home">Back to the Homepage</a></li>
-                <li><a href="#" title="College of Medicine">College of Medicine</a></li>
-                <li><a href="#" title="Office of Medical Education">Office of Medical Education</a></li>
-                <li><a href="#" title="Clerkships">Clerkships</a></li>
-                <li><a href="#" title="Core Clerkship Directors">Core Clerkship Directors</a></li>
+                <li><a href="#" title="Core Clerkship Directors">Office of Research</a></li>
                 <li class="disabled"><strong>Current Page</strong></li>
             </ul>
         </div>
@@ -881,10 +878,7 @@
              data-v-offset="0" data-auto-focus="true">
             <ul class="uthsc-off-canvas-breadcrumbs-list">
                 <li><a href="index.php" title="Home">Back to the Homepage</a></li>
-                <li><a href="#" title="College of Medicine">College of Medicine</a></li>
-                <li><a href="#" title="Office of Medical Education">Office of Medical Education</a></li>
-                <li><a href="#" title="Clerkships">Clerkships</a></li>
-                <li><a href="#" title="Core Clerkship Directors">Core Clerkship Directors</a></li>
+                <li><a href="#" title="College of Medicine">Office of Research</a></li>
                 <li class="disabled"><strong>Current Page</strong></li>
             </ul>
         </div>
@@ -969,7 +963,7 @@
 <!--Off canvas buttons-->
 <!--******************-->
 <div aria-hidden="true" id="mobile-navigation" class="hide-for-large hide-for-print">
-    <button id="uthsc-off-canvas-button--slide-left" class="toggle-slide-left button"></button>
+    <button id="uthsc-off-canvas-button--slide-left" class="toggle-slide-left button" style="background-image: url('-resources/2015/images/nav-toggler-left-office.png');"></button>
     <button id="uthsc-off-canvas-button--slide-right" class="toggle-slide-right button"></button>
 
     <!--Safari bottom nav fix-->

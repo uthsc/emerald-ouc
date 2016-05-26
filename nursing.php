@@ -14,7 +14,7 @@
     <meta property="og:image" content="https://uthsc.edu/xxxx">
     <!--/unfurling-->
 
-    <title>Foundation for Sites</title>
+    <title>College of Nursing | UTHSC</title>
     <link rel="stylesheet" href="-resources/2015/css/uthsc.css">
     <link rel="stylesheet" href="-resources/2015/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300">
@@ -582,7 +582,7 @@
                     920 Madison, #1020<br />
                     Memphis, TN 38163<br />
                     901-448-6125<br />
-                    nurse.recruit@uthsc.edu
+                    <a href="mailto:nurse.recruit@uthsc.edu">nurse.recruit@uthsc.edu</a>
                 </p>
             </div>
             <div class="medium-4 columns footer-box">
