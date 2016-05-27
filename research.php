@@ -347,7 +347,12 @@
             <div class="columns">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-university fa-5x" style="color:#ced0b4"></span>
+                        <span class="fa fa-university fa-5x" style="color:#ced0b4">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                            <polygon points="200,0 0,200 200,200 "/>
+                        </span>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -360,7 +365,12 @@
             <div class="columns">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-flask fa-5x" style="color:#0084b6"></span>
+                        <span class="fa fa-flask fa-5x" style="background:#0084b6; color:#fff; border-radius: 500px;">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                            <polygon points="200,0 0,200 200,200 "/>
+                        </span>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -372,7 +382,12 @@
             <div class="columns">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-graduation-cap fa-5x"></span>
+                        <span class="fa fa-graduation-cap fa-5x">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                            <polygon points="200,0 0,200 200,200 "/>
+                        </span>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -387,7 +402,12 @@
             <div class="columns">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-certificate fa-5x" style="color:#e8cf00"></span>
+                        <span class="fa fa-certificate fa-5x" style="color:#e8cf00">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                            <polygon points="200,0 0,200 200,200 "/>
+                        </span>
                     </div>
 
                     <div class="uthsc-badge-box-text">

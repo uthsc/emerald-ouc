@@ -333,7 +333,13 @@
             <div class="columns large-4">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-graduation-cap fa-5x"></span>
+                        <span class="fa fa-graduation-cap fa-5x">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                            <polygon points="200,0 0,200 200,200 "/>
+                        </svg>
+                        </span>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -345,7 +351,12 @@
             <div class="columns large-4">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-map-marker fa-5x"></span>
+                        <span class="fa fa-map-marker fa-5x">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                            <polygon points="200,0 0,200 200,200 "/>
+                        </span>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -357,7 +368,12 @@
             <div class="columns large-4">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-laptop fa-5x"></span>
+                        <span class="fa fa-laptop fa-5x">
+                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                            <polygon points="200,0 0,200 200,200 "/>
+                        </span>
                     </div>
 
                     <div class="uthsc-badge-box-text">
