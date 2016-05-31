@@ -353,98 +353,129 @@
                                 <div class="tabs-content vertical" data-tabs-content="example-vert-tabs">
                                     <div class="tabs-panel is-active" id="panel1v">
                                         <ul>
-                                            <li><a href="/dentistry/Fac_Depts/bidx.php">Diagnostic Sciences &amp; Oral Medicine</a></li>
-                                            <li><a href="/dentistry/omds/">Oral and Maxillofacial Diagnostic Services</a></li>
-                                            <li><a href="/dentistry/dental-hygiene/">Dental Hygiene, Entry Level (B.S. Degree)</a></li>
-                                            <li><a href="/dentistry/dental-hygiene/masters/index.php">Dental Hygiene, Graduate Program (MDH Degree)</a></li>
-                                            <li><a href="/dentistry/Fac_Depts/endo.php">Endodontics</a></li>
-                                            <li><a href="/dentistry/Fac_Depts/general-practice-staff.php">General Practice</a></li>
-                                            <li><a href="/dentistry/Fac_Depts/oms.php">Oral &amp; Maxillofacial Surgery</a></li>
-                                            <li><a href="/dentistry/Fac_Depts/ortho.php">Orthodontics</a></li>
-                                            <li><a href="/dentistry/Fac_Depts/pedocoh.php">Pediatric Dentistry &amp; Community Oral Health</a></li>
-                                            <li><a href="/dentistry/Fac_Depts/perio.php">Periodontology</a></li>
-                                            <li><a href="/dentistry/Fac_Depts/rest.php">Prosthodontics</a></li>
-                                            <li><a href="/dentistry/research/">Bioscience Research</a></li>
-                                            <li><a href="/dentistry/Fac_Depts/newrest.php">Restorative</a></li>
+                                            <li>
+                                                <a href="/dentistry/">College of Dentistry</a>
+                                                <ul>
+                                                    <li><a href="/dentistry/Fac_Depts/bidx.php">Diagnostic Sciences &amp; Oral Medicine</a></li>
+                                                    <li><a href="/dentistry/omds/">Oral and Maxillofacial Diagnostic Services</a></li>
+                                                    <li><a href="/dentistry/dental-hygiene/">Dental Hygiene, Entry Level (B.S. Degree)</a></li>
+                                                    <li><a href="/dentistry/dental-hygiene/masters/index.php">Dental Hygiene, Graduate Program (MDH Degree)</a></li>
+                                                    <li><a href="/dentistry/Fac_Depts/endo.php">Endodontics</a></li>
+                                                    <li><a href="/dentistry/Fac_Depts/general-practice-staff.php">General Practice</a></li>
+                                                    <li><a href="/dentistry/Fac_Depts/oms.php">Oral &amp; Maxillofacial Surgery</a></li>
+                                                    <li><a href="/dentistry/Fac_Depts/ortho.php">Orthodontics</a></li>
+                                                    <li><a href="/dentistry/Fac_Depts/pedocoh.php">Pediatric Dentistry &amp; Community Oral Health</a></li>
+                                                    <li><a href="/dentistry/Fac_Depts/perio.php">Periodontology</a></li>
+                                                    <li><a href="/dentistry/Fac_Depts/rest.php">Prosthodontics</a></li>
+                                                    <li><a href="/dentistry/research/">Bioscience Research</a></li>
+                                                    <li><a href="/dentistry/Fac_Depts/newrest.php">Restorative</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
+
                                     </div>
                                     <div class="tabs-panel" id="panel2v">
                                         <ul>
-                                            <li><a href="/grad/Programs/index.php?page=BIOM">Biomedical Engineering and Imaging</a></li>
-                                            <li><a href="/grad/Programs/index.php?page=DSCI">Dental Science (Masters only)</a>
+                                            <li>
+                                                <a href="/grad/">College of Graduate Health Sciences</a>
+                                                <ul>
+                                                    <li><a href="/grad/Programs/index.php?page=BIOM">Biomedical Engineering and Imaging</a></li>
+                                                    <li><a href="/grad/Programs/index.php?page=DSCI">Dental Science (Masters only)</a>
+                                                    </li>
+                                                    <li><a href="/grad/Programs/index.php?page=BIOE">Epidemiology (Masters only)</a>
+                                                    </li>
+                                                    <li><a href="/grad/Programs/index.php?page=HOPR">Health Outcomes and Policy Research</a></li>
+                                                    <li><a href="/grad/PROGRAMS/BCLRMMO.php">Biomedical Sciences (Masters only)</a>
+                                                    </li>
+                                                    <li><a href="/grad/IBS/">Integrated Program in Biomedical Sciences (PhD only)</a>
+                                                    </li>
+                                                    <li><a href="/grad/Programs/index.php?page=NSG">Nursing</a></li>
+                                                    <li><a href="/grad/Programs/index.php?page=PharmSci">Pharmaceutical Sciences</a></li>
+                                                    <li><a href="/grad/Programs/index.php?page=PharmacologyMS">Pharmacology (Masters only)</a>
+                                                    </li>
+                                                    <li><a href="/health-professions/asp/phd/index.php">Speech and Hearing Science</a></li>
+                                                </ul>
                                             </li>
-                                            <li><a href="/grad/Programs/index.php?page=BIOE">Epidemiology (Masters only)</a>
-                                            </li>
-                                            <li><a href="/grad/Programs/index.php?page=HOPR">Health Outcomes and Policy Research</a></li>
-                                            <li><a href="/grad/PROGRAMS/BCLRMMO.php">Biomedical Sciences (Masters only)</a>
-                                            </li>
-                                            <li><a href="/grad/IBS/">Integrated Program in Biomedical Sciences (PhD only)</a>
-                                            </li>
-                                            <li><a href="/grad/Programs/index.php?page=NSG">Nursing</a></li>
-                                            <li><a href="/grad/Programs/index.php?page=PharmSci">Pharmaceutical Sciences</a></li>
-                                            <li><a href="/grad/Programs/index.php?page=PharmacologyMS">Pharmacology (Masters only)</a>
-                                            </li>
-                                            <li><a href="/health-professions/asp/phd/index.php">Speech and Hearing Science</a></li>
                                         </ul>
                                     </div>
                                     <div class="tabs-panel" id="panel3v">
                                         <ul>
-                                            <li><a href="/health-professions/asp/index.php">Audiology &amp; Speech Pathology</a></li>
-                                            <li><a href="/health-professions/cls/index.php">Clinical Laboratory Sciences</a></li>
-                                            <li><a href="/health-professions/cls/ct/index.php">Cytotechnology &amp; Histotechnology </a></li>
-                                            <li><a href="/health-professions/him/index.php">Health Informatics &amp; Information Management</a></li>
-                                            <li><a href="/health-professions/cls/mls/index.php">Medical Laboratory Science</a></li>
-                                            <li><a href="/health-professions/ot/index.php">Occupational Therapy</a></li>
-                                            <li><a href="/health-professions/pa/index.php">Physician Assistant</a></li>
-                                            <li><a href="/health-professions/pt/index.php">Physical Therapy, Entry Level (DPT Degree)</a></li>
-                                            <li><a href="/health-professions/pt/programs/pt-graduate/index.php">Physical Therapy, Graduate Program (MSPT Degree)</a></li>
-                                            <li><a href="/health-professions/pt/programs/pt-graduate/index.php">Physical Therapy, Graduate Program (ScDPT Degree)</a></li>
+                                            <li>
+                                                <a href="/health-professions/">College of Health Professions</a>
+                                                <ul>
+                                                    <li><a href="/health-professions/asp/index.php">Audiology &amp; Speech Pathology</a></li>
+                                                    <li><a href="/health-professions/cls/index.php">Clinical Laboratory Sciences</a></li>
+                                                    <li><a href="/health-professions/cls/ct/index.php">Cytotechnology &amp; Histotechnology </a></li>
+                                                    <li><a href="/health-professions/him/index.php">Health Informatics &amp; Information Management</a></li>
+                                                    <li><a href="/health-professions/cls/mls/index.php">Medical Laboratory Science</a></li>
+                                                    <li><a href="/health-professions/ot/index.php">Occupational Therapy</a></li>
+                                                    <li><a href="/health-professions/pa/index.php">Physician Assistant</a></li>
+                                                    <li><a href="/health-professions/pt/index.php">Physical Therapy, Entry Level (DPT Degree)</a></li>
+                                                    <li><a href="/health-professions/pt/programs/pt-graduate/index.php">Physical Therapy, Graduate Program (MSPT Degree)</a></li>
+                                                    <li><a href="/health-professions/pt/programs/pt-graduate/index.php">Physical Therapy, Graduate Program (ScDPT Degree)</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="tabs-panel" id="panel4v">
                                         <ul>
-                                            <li><a href="/anatomy-neurobiology/">Anatomy &amp; Neurobiology</a></li>
-                                            <li><a href="/anesthesiology/">Anesthesiology</a></li>
-                                            <li><a href="/compmed/">Comparative Medicine</a></li>
-                                            <li><a href="/dermatology/">Dermatology</a></li>
-                                            <li><a href="/fammed/">Family Medicine</a></li>
-                                            <li><a href="/internalmedicine/">Medicine</a></li>
-                                            <li><a href="/molecular_sciences/">Microbiology, Immunology and Biochemistry</a></li>
-                                            <li><a href="/neurology/">Neurology</a></li>
-                                            <li><a href="/neurosurgery/">Neurosurgery</a></li>
-                                            <li><a href="/obgyn/">Obstetrics and Gynecology</a></li>
-                                            <li><a href="/eye/">Ophthalmology</a></li>
-                                            <li><a href="/ortho/">Orthopaedic Surgery &amp; Biomedical Engineering</a></li>
-                                            <li><a href="/otolaryngology/">Otolaryngology - Head and Neck Surgery</a></li>
-                                            <li><a href="/pathology/">Pathology and Laboratory Medicine</a></li>
-                                            <li><a href="/pediatrics/">Pediatrics</a></li>
-                                            <li><a href="/pharmacology/">Pharmacology</a></li>
-                                            <li><a href="/physiology/">Physiology</a></li>
-                                            <li><a href="/plasticsurgery/">Plastic Surgery</a></li>
-                                            <li><a href="/prevmed/">Preventive Medicine</a></li>
-                                            <li><a href="/psych/">Psychiatry</a></li>
-                                            <li><a href="/radiology/">Radiology</a></li>
-                                            <li><a href="/surgery/">Surgery</a></li>
-                                            <li><a href="/urology/">Urology</a></li>
+                                            <li>
+                                                <a href="/medicine/">College of Medicine</a>
+                                                <ul>
+                                                    <li><a href="/anatomy-neurobiology/">Anatomy &amp; Neurobiology</a></li>
+                                                    <li><a href="/anesthesiology/">Anesthesiology</a></li>
+                                                    <li><a href="/compmed/">Comparative Medicine</a></li>
+                                                    <li><a href="/dermatology/">Dermatology</a></li>
+                                                    <li><a href="/fammed/">Family Medicine</a></li>
+                                                    <li><a href="/internalmedicine/">Medicine</a></li>
+                                                    <li><a href="/molecular_sciences/">Microbiology, Immunology and Biochemistry</a></li>
+                                                    <li><a href="/neurology/">Neurology</a></li>
+                                                    <li><a href="/neurosurgery/">Neurosurgery</a></li>
+                                                    <li><a href="/obgyn/">Obstetrics and Gynecology</a></li>
+                                                    <li><a href="/eye/">Ophthalmology</a></li>
+                                                    <li><a href="/ortho/">Orthopaedic Surgery &amp; Biomedical Engineering</a></li>
+                                                    <li><a href="/otolaryngology/">Otolaryngology - Head and Neck Surgery</a></li>
+                                                    <li><a href="/pathology/">Pathology and Laboratory Medicine</a></li>
+                                                    <li><a href="/pediatrics/">Pediatrics</a></li>
+                                                    <li><a href="/pharmacology/">Pharmacology</a></li>
+                                                    <li><a href="/physiology/">Physiology</a></li>
+                                                    <li><a href="/plasticsurgery/">Plastic Surgery</a></li>
+                                                    <li><a href="/prevmed/">Preventive Medicine</a></li>
+                                                    <li><a href="/psych/">Psychiatry</a></li>
+                                                    <li><a href="/radiology/">Radiology</a></li>
+                                                    <li><a href="/surgery/">Surgery</a></li>
+                                                    <li><a href="/urology/">Urology</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="tabs-panel" id="panel5v">
                                         <ul>
-                                            <li><a href="/nursing/academic-programs/index.php">Academic Programs</a></li>
-                                            <li><a href="/nursing/continuing-education/index.php">Continuing Education</a></li>
-                                            <li><a href="/nursing/practice-programs/index.php">Practice Programs</a></li>
-                                            <li><a href="/nursing/research-programs/index.php">Research Programs</a></li>
-                                            <li><a href="/nursing/academic-programs/BSN/index.php">Bachelor of Science in Nursing (BSN)</a></li>
-                                            <li><a href="/nursing/academic-programs/MSN/index.php">Clinical Nurse Leader (CNL)</a></li>
-                                            <li><a href="/nursing/academic-programs/DNP/index.php">Doctor of Nursing Practice (DNP)</a></li>
-                                            <li><a href="/nursing/academic-programs/DNP/nurse_anesthesia/index.php">Nurse Anesthesia (DNP)</a></li>
-                                            <li><a href="/nursing/academic-programs/PhD/index.php">Doctor of Philosophy (PhD)</a></li>
+                                            <li>
+                                                <a href="nursing.php">College of Nursing</a>
+                                                <ul>
+                                                    <li><a href="/nursing/academic-programs/index.php">Academic Programs</a></li>
+                                                    <li><a href="/nursing/continuing-education/index.php">Continuing Education</a></li>
+                                                    <li><a href="/nursing/practice-programs/index.php">Practice Programs</a></li>
+                                                    <li><a href="/nursing/research-programs/index.php">Research Programs</a></li>
+                                                    <li><a href="/nursing/academic-programs/BSN/index.php">Bachelor of Science in Nursing (BSN)</a></li>
+                                                    <li><a href="/nursing/academic-programs/MSN/index.php">Clinical Nurse Leader (CNL)</a></li>
+                                                    <li><a href="/nursing/academic-programs/DNP/index.php">Doctor of Nursing Practice (DNP)</a></li>
+                                                    <li><a href="/nursing/academic-programs/DNP/nurse_anesthesia/index.php">Nurse Anesthesia (DNP)</a></li>
+                                                    <li><a href="/nursing/academic-programs/PhD/index.php">Doctor of Philosophy (PhD)</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="tabs-panel" id="panel6v">
                                         <ul>
-                                            <li><a href="/pharmacy/dcp/">Department of Clinical Pharmacy</a></li>
-                                            <li><a href="/pharmacy/pharmsci/">Department of Pharmaceutical Sciences</a></li>
+                                            <li>
+                                                <a href="/pharmacy/">College of Pharmacy</a>
+                                                <ul>
+                                                    <li><a href="/pharmacy/dcp/">Department of Clinical Pharmacy</a></li>
+                                                    <li><a href="/pharmacy/pharmsci/">Department of Pharmaceutical Sciences</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
@@ -693,24 +724,6 @@
 <!--********************-->
 <nav id="uthsc-off-canvas-menu--slide-left" class="uthsc-off-canvas-menu uthsc-off-canvas-menu--slide-left hide-for-print"
      aria-hidden="true">
-    <!--Breadcrumbs-->
-    <div class="uthsc-off-canvas-breadcrumbs button-group">
-        <a href="index.php" class="button home-button"><span class="fa fa-home"></span></a>
-        <button class="button breadcrumbs-button dropdown" type="button" data-toggle="left-breadcrumbs-dropdown">
-            Breadcrumbs Back Home
-        </button>
-        <div class="dropdown-pane bottom" id="left-breadcrumbs-dropdown" data-dropdown="data-dropdown"
-             data-v-offset="0" data-auto-focus="true">
-            <ul class="uthsc-off-canvas-breadcrumbs-list">
-                <li><a href="index.php" title="Home">Back to the Homepage</a></li>
-                <li><a href="#" title="College of Medicine">College of Medicine</a></li>
-                <li><a href="#" title="Office of Medical Education">Office of Medical Education</a></li>
-                <li><a href="#" title="Clerkships">Clerkships</a></li>
-                <li><a href="#" title="Core Clerkship Directors">Core Clerkship Directors</a></li>
-                <li class="disabled"><strong>Current Page</strong></li>
-            </ul>
-        </div>
-    </div>
 
     <div class="off-canvas-search">
         <!--Search form-->
@@ -733,66 +746,12 @@
     </button>
 
     <ul>
-        <li><a href="#" class="link-heading">Menu Dropdown One</a>
-            <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
-                <li><a href="#">Second Item in Dropdown</a></li>
-                <li><a href="#">Third Item in Dropdown</a></li>
-                <li><a href="#">Fourth Item in Dropdown</a></li>
-                <li><a href="#">Fifth Item in Dropdown</a></li>
-            </ul>
-        </li>
-        <li><a href="#" class="link-heading">Menu Dropdown Two</a>
-            <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
-                <li><a href="#">Second Item in Dropdown</a></li>
-                <li><a href="#">Third Item in Dropdown That Goes to Two Lines</a></li>
-                <li><a href="#">Fourth Item in Dropdown</a></li>
-            </ul>
-        </li>
-        <li><a href="#" class="link-heading">Menu Dropdown Three</a>
-            <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
-                <li><a href="#">Second Item in Dropdown</a></li>
-                <li><a href="#">Third Item in Dropdown</a></li>
-                <li><a href="#">Fourth Item in Dropdown</a></li>
-                <li><a href="#">Fifth Item in Dropdown</a></li>
-                <li><a href="#">Sixth Item in Dropdown</a></li>
-                <li><a href="#">Seventh Item in Dropdown</a></li>
-                <li><a href="#">Eighth Item in Dropdown</a></li>
-                <li><a href="#">Ninth Item in Dropdown</a></li>
-                <li><a href="#">Tenth Item in Dropdown</a></li>
-                <li><a href="#">Eleventh Item in Dropdown</a></li>
-            </ul>
-        </li>
-        <li><a href="#" class="link-heading">Menu Dropdown Four</a>
-            <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
-                <li><a href="#">Second Item in Dropdown</a></li>
-                <li><a href="#">Third Item in Dropdown</a></li>
-                <li><a href="#">Fourth Item in Dropdown</a></li>
-                <li><a href="#">Fifth Item in Dropdown</a></li>
-                <li><a href="#">Sixth Item in Dropdown</a></li>
-                <li><a href="#">Seventh Item in Dropdown</a></li>
-            </ul>
-        </li>
-        <li><a href="#" class="link-heading">Menu Dropdown Five</a>
-            <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
-            </ul>
-        </li>
-        <li><a href="#" class="link-heading">Menu Dropdown Six</a>
-            <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
-                <li><a href="#">Second Item in Dropdown</a></li>
-                <li><a href="#">Third Item in Dropdown</a></li>
-                <li><a href="#">Fourth Item in Dropdown</a></li>
-                <li><a href="#">Fifth Item in Dropdown That Goes to Three Lines Because it Is Very Long</a></li>
-                <li><a href="#">Sixth Item in Dropdown</a></li>
-                <li><a href="#">Seventh Item in Dropdown</a></li>
-                <li><a href="#">Eighth Item in Dropdown</a></li>
-            </ul>
-        </li>
+        <li><a href="/education/" class="link-heading">Academics</a></li>
+        <li><a href="research.php" class="link-heading">Research</a></li>
+        <li><a href="/clinicalcare/" class="link-heading">Clinical Care</a></li>
+        <li><a href="/publicservice/" class="link-heading">Public Service</a></li>
+        <li><a href="/aboututhsc/" class="link-heading">About UTHSC</a></li>
+        <li><a href="http://uthscalumni.com/" class="link-heading">Alumni &amp; Friends</a></li>
     </ul>
 
     <!--Safari bottom nav fix-->
@@ -807,34 +766,13 @@
 <!--*********************-->
 <!--Right off canvas menu-->
 <!--*********************-->
-<nav id="uthsc-off-canvas-menu--slide-right" class="uthsc-off-canvas-menu uthsc-off-canvas-menu--slide-right hide-for-print"
-     aria-hidden="true">
 
-    <!--Breadcrumbs-->
-    <div class="uthsc-off-canvas-breadcrumbs button-group">
-        <a href="index.php" class="button home-button"><span class="fa fa-home"></span></a>
-        <button class="button breadcrumbs-button dropdown" type="button" data-toggle="right-breadcrumbs-dropdown">
-            Breadcrumbs Back Home
-        </button>
-        <div class="dropdown-pane bottom" id="right-breadcrumbs-dropdown" data-dropdown="data-dropdown"
-             data-v-offset="0" data-auto-focus="true">
-            <ul class="uthsc-off-canvas-breadcrumbs-list">
-                <li><a href="index.php" title="Home">Back to the Homepage</a></li>
-                <li><a href="#" title="College of Medicine">College of Medicine</a></li>
-                <li><a href="#" title="Office of Medical Education">Office of Medical Education</a></li>
-                <li><a href="#" title="Clerkships">Clerkships</a></li>
-                <li><a href="#" title="Core Clerkship Directors">Core Clerkship Directors</a></li>
-                <li class="disabled"><strong>Current Page</strong></li>
-            </ul>
-        </div>
-    </div>
+<nav id="uthsc-off-canvas-menu--slide-right" class="uthsc-off-canvas-menu uthsc-off-canvas-menu--slide-right hide-for-print" aria-hidden="true">
 
     <div class="off-canvas-search">
         <!--Search form-->
-        <form class="input-group" aria-label="Search the UTHSC site"
-              action="/search/" method="get" style="margin-bottom:0;">
-            <input type="search" aria-label="Search the UTHSC site" role="search" name="s"
-                   placeholder="search" style="margin-right:0;">
+        <form class="input-group" aria-label="Search the UTHSC site" action="/search/" method="get" style="margin-bottom:0;">
+            <input type="search" aria-label="Search the UTHSC site" role="search" name="s" placeholder="search" style="margin-right:0;">
             <div class="input-group-button">
                 <button type="submit" class="button" aria-label="Submit search form">
                     <span class="fa fa-search"></span>
@@ -854,37 +792,35 @@
         <h2 class="link-heading">Mission</h2>
 
         <a href="/education/"><span class="uthsc-fa-centered fa fa-graduation-cap"></span>&emsp;Academics</a>
-        <a href="/research/"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
+        <a href="research.php"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
         <a href="/clinicalcare/"><span class="uthsc-fa-centered fa fa-medkit"></span>&emsp;Clinical Care</a>
         <a href="/publicservice/"><span class="uthsc-fa-centered fa fa-globe"></span>&emsp;Public Service</a>
-        <a href="/aboututhsc/"><span class="uthsc-fa-centered fa fa-file-text-o"></span>&emsp;About UTHSC</a>
-        <a href="http://uthscalumni.com/"><span class="uthsc-fa-centered fa fa-users"></span>&emsp;Alumni &amp; Friends</a>
     </div>
 
-    <a href="#" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift"></span>&emsp;Make a Gift</a>
-    <a href="template.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road"></span>&emsp;Take a Tour</a>
+    <a href="/give/" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift"></span>&emsp;Make a Gift</a>
+    <a href="/admissions/visit-uthsc.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road"></span>&emsp;Take a Tour</a>
 
     <ul>
         <li><span class="link-heading">Information for...</span>
             <ul>
-                <li><a href="#">Students</a></li>
-                <li><a href="#">Faculty &amp; Staff</a></li>
-                <li><a href="#">Alumni</a></li>
-                <li><a href="#">Visitors</a></li>
-                <li><a href="#">Patients</a></li>
+                <li><a href="/students/">Students</a></li>
+                <li><a href="/faculty/">Faculty &amp; Staff</a></li>
+                <li><a href="/alumni/">Alumni</a></li>
+                <li><a href="/visitors/">Visitors</a></li>
+                <li><a href="/clinicalcare/">Patients</a></li>
             </ul>
         </li>
         <li><span class="link-heading">Resources</span>
             <ul>
-                <li><a href="#">Banner</a></li>
-                <li><a href="#">Blackboard</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Career Opportunities</a></li>
-                <li><a href="#">iLogin</a></li>
-                <li><a href="#">Maps</a></li>
-                <li><a href="#">MyUT</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Webmail</a></li>
+                <li><a href="/banner/info/">Banner</a></li>
+                <li><a href="http://courses.uthsc.edu/">Blackboard</a></li>
+                <li><a href="http://events.uthsc.edu/">Calendar</a></li>
+                <li><a href="http://uthsc.edu/hr/employment/">Career Opportunities</a></li>
+                <li><a href="/ilogin/">iLogin</a></li>
+                <li><a href="/map/">Maps</a></li>
+                <li><a href="http://utap.tennessee.edu/">MyUT</a></li>
+                <li><a href="http://news.uthsc.edu/">News</a></li>
+                <li><a href="/email/">Webmail</a></li>
             </ul>
         </li>
     </ul>
@@ -893,6 +829,7 @@
     <div class="safari-bottom-nav-fix"></div>
     <!--Safari bottom nav fix-->
 </nav>
+
 <!--**********************-->
 <!--/Right off canvas menu-->
 <!--**********************-->
@@ -911,7 +848,7 @@
 <!--Off canvas buttons-->
 <!--******************-->
 <div aria-hidden="true" id="mobile-navigation" class="hide-for-large hide-for-print">
-    <button id="uthsc-off-canvas-button--slide-left" class="toggle-slide-left button"></button>
+    <button id="uthsc-off-canvas-button--slide-left" class="toggle-slide-left button" style="background-image: url('/-resources/2015/images/section-button-images/nav-toggler-left-home-page.png');"></button>
     <button id="uthsc-off-canvas-button--slide-right" class="toggle-slide-right button"></button>
 
     <!--Safari bottom nav fix-->

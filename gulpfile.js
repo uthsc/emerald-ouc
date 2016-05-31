@@ -43,7 +43,7 @@ gulp.task('copy-fonts', function() {
 });
 
 gulp.task('copy-images', function() {
-    gulp.src('./images/*')
+    gulp.src('./images/**/*')
         .pipe(gulp.dest('./-resources/2015/images'));
 });
 

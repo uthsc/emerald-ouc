@@ -15,8 +15,8 @@
     <!--/unfurling-->
 
     <title>Office of Research | UTHSC</title>
-    <link rel="stylesheet" href="-resources/2015/css/uthsc.css">
-    <link rel="stylesheet" href="-resources/2015/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/-resources/2015/css/uthsc.css">
+    <link rel="stylesheet" href="/-resources/2015/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
           href="http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
@@ -138,7 +138,7 @@
         <div class="row">
             <div class="medium-10 large-8 small-centered columns">
                 <a href="http://uthsc.edu">
-                    <img src="-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
+                    <img src="/-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
                 </a>
             </div>
         </div>
@@ -190,7 +190,7 @@
         <div class="row">
             <ul class="breadcrumbs column">
                 <li>
-                    <a aria-label="go to UTHSC homepage" href="index.php">
+                    <a aria-label="go to UTHSC homepage" href="/">
                         <span class="uthsc-home-icon-breadcrumbs fa fa-home fa-2x"></span>
                     </a>
                     <span class="fa fa-chevron-right" aria-hidden="true"></span>
@@ -347,12 +347,12 @@
             <div class="columns">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-university fa-5x" style="color:#ced0b4">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-                            <polygon points="200,0 0,200 200,200 "/>
-                        </span>
+                        <span class="fa fa-university fa-5x" style="color:#ced0b4"></span>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                <polygon points="200,0 0,200 200,200 "/>
+                            </svg>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -364,13 +364,13 @@
 
             <div class="columns">
                 <div class="uthsc-badge-box">
-                    <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-flask fa-5x" style="background:#0084b6; color:#fff; border-radius: 500px;">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-                            <polygon points="200,0 0,200 200,200 "/>
-                        </span>
+                    <div class="uthsc-badge-box-icon" style="background:#0084b6; color:#fff;">
+                        <span class="fa fa-flask fa-5x" style="font-size:4em;"></span>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                <polygon points="200,0 0,200 200,200 "/>
+                            </svg>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -382,12 +382,12 @@
             <div class="columns">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-graduation-cap fa-5x">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                        <span class="fa fa-graduation-cap fa-5x"></span>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
                             <polygon points="200,0 0,200 200,200 "/>
-                        </span>
+                        </svg>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -401,13 +401,13 @@
 
             <div class="columns">
                 <div class="uthsc-badge-box">
-                    <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-certificate fa-5x" style="color:#e8cf00">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-                            <polygon points="200,0 0,200 200,200 "/>
-                        </span>
+                    <div class="uthsc-badge-box-icon" style="background: orange;color:#e8cf00; ">
+                        <span class="fa fa-certificate fa-5x" ></span>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                <polygon points="200,0 0,200 200,200 "/>
+                            </svg>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -451,7 +451,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-purple">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/research-kell-landscape.jpg">
+                                        <img src="/-resources/2015/images/research-kell-landscape.jpg">
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -472,7 +472,7 @@
                             <!--Highlight box-->
                             <div class="uthsc-highlight-box">
                                 <div class="uthsc-highlight-box-image">
-                                    <img src="-resources/2015/images/research-morrow-landscape.jpg"/>
+                                    <img src="/-resources/2015/images/research-morrow-landscape.jpg"/>
                                 </div>
                                 <div class="uthsc-highlight-box-title">
                                     <p>Hot Topics in Research Featuring Dr. Casey D. Morrow, Director, UAB</p>
@@ -493,7 +493,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/research-goodman.jpg"/>
+                                        <img src="/-resources/2015/images/research-goodman.jpg"/>
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>Vice Chancellor for Research, Dr. Steven R. Goodman's Second Research Town Hall Meeting </p>
@@ -511,7 +511,7 @@
                             <div class="uthsc-highlight-box">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/research-compliance.jpg"/>
+                                        <img src="/-resources/2015/images/research-compliance.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -530,7 +530,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
                                 <a href="https://www.uthsc.edu/research/research_compliance/irb/">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/research-irb.jpg"/>
+                                        <img src="/-resources/2015/images/research-irb.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -552,7 +552,7 @@
                             <div class="uthsc-highlight-box  uthsc-highlight-box-purple">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/research-grants-research.jpg">
+                                        <img src="/-resources/2015/images/research-grants-research.jpg">
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>Grants & Research Agreements</p>
@@ -758,7 +758,7 @@
     <!--*************-->
     <!--Global Footer-->
     <!--*************-->
-    <?php include('uthsc-global-footer.php') ?>
+    <?php include('../uthsc-global-footer.php') ?>
     <!--**************-->
     <!--/Global Footer-->
     <!--**************-->
@@ -983,7 +983,7 @@
 <!--Off canvas buttons-->
 <!--******************-->
 <div aria-hidden="true" id="mobile-navigation" class="hide-for-large hide-for-print">
-    <button id="uthsc-off-canvas-button--slide-left" class="toggle-slide-left button" style="background-image: url('-resources/2015/images/nav-toggler-left-office.png');"></button>
+    <button id="uthsc-off-canvas-button--slide-left" class="toggle-slide-left button" style="background-image: url('/-resources/2015/images/nav-toggler-left-office.png');"></button>
     <button id="uthsc-off-canvas-button--slide-right" class="toggle-slide-right button"></button>
 
     <!--Safari bottom nav fix-->
@@ -997,11 +997,11 @@
 <!--*******-->
 <!--Scripts-->
 <!--*******-->
-<script src="-resources/2015/js/jquery.min.js"></script>
-<script src="-resources/2015/js/what-input.min.js"></script>
-<script src="-resources/2015/js/foundation.min.js"></script>
-<script src="-resources/2015/js/uthsc.min.js"></script>
-<script src="-resources/2015/js/uthsc-news.js"></script>
+<script src="/-resources/2015/js/jquery.min.js"></script>
+<script src="/-resources/2015/js/what-input.min.js"></script>
+<script src="/-resources/2015/js/foundation.min.js"></script>
+<script src="/-resources/2015/js/uthsc.min.js"></script>
+<script src="/-resources/2015/js/uthsc-news.js"></script>
 
 <script>
     function parseNewsPosts() {
