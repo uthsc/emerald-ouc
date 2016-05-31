@@ -14,7 +14,7 @@ gulp.task('sass', function() {
     .pipe($.rename('uthsc.scss'))
     .pipe($.sourcemaps.init())
       .pipe($.sass({
-        //outputStyle: 'compressed',
+        outputStyle: 'compressed',
         includePaths: sassPaths
       })
         .on('error', $.sass.logError))
