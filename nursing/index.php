@@ -15,8 +15,8 @@
     <!--/unfurling-->
 
     <title>College of Nursing | UTHSC</title>
-    <link rel="stylesheet" href="-resources/2015/css/uthsc.css">
-    <link rel="stylesheet" href="-resources/2015/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/-resources/2015/css/uthsc.css">
+    <link rel="stylesheet" href="/-resources/2015/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
           href="http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
@@ -138,7 +138,7 @@
         <div class="row">
             <div class="medium-10 large-8 small-centered columns">
                 <a href="http://uthsc.edu">
-                    <img src="-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
+                    <img src="/-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
                 </a>
             </div>
         </div>
@@ -190,7 +190,7 @@
         <div class="row">
             <ul class="breadcrumbs column">
                 <li>
-                    <a aria-label="go to UTHSC homepage" href="index.php">
+                    <a aria-label="go to UTHSC homepage" href="/">
                         <span class="uthsc-home-icon-breadcrumbs fa fa-home fa-2x"></span>
                     </a>
                     <span class="fa fa-chevron-right" aria-hidden="true"></span>
@@ -333,13 +333,12 @@
             <div class="columns large-4">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-graduation-cap fa-5x">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-                            <polygon points="200,0 0,200 200,200 "/>
-                        </svg>
-                        </span>
+                        <span class="fa fa-graduation-cap fa-5x"></span>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                <polygon points="200,0 0,200 200,200 "></polygon>
+                            </svg>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -350,13 +349,13 @@
 
             <div class="columns large-4">
                 <div class="uthsc-badge-box">
-                    <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-map-marker fa-5x">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-                            <polygon points="200,0 0,200 200,200 "/>
-                        </span>
+                    <div class="uthsc-badge-box-icon" style="color:#b5121b; ">
+                        <span class="fa fa-map-marker fa-5x"></span>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                <polygon points="200,0 0,200 200,200 "></polygon>
+                            </svg>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -367,13 +366,13 @@
 
             <div class="columns large-4">
                 <div class="uthsc-badge-box">
-                    <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-laptop fa-5x">
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                 viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-                            <polygon points="200,0 0,200 200,200 "/>
-                        </span>
+                    <div class="uthsc-badge-box-icon" style="background: #00a5e3;color:#fff; ">
+                        <span class="fa fa-laptop fa-5x" style="font-size:4em;"></span>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
+                                <polygon points="200,0 0,200 200,200 "></polygon>
+                            </svg>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -417,7 +416,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
                                 <a href="https://www.uthsc.edu/nursing/future-students/admissions/bsn_req.php">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/nursing-bsn.jpg"/>
+                                        <img src="/-resources/2015/images/nursing-bsn.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -437,7 +436,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-purple">
                                 <a href="https://www.uthsc.edu/nursing/future-students/admissions/rn-bsn-req.php">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/nursing-rn-bsn.jpg"/>
+                                        <img src="/-resources/2015/images/nursing-rn-bsn.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -458,7 +457,7 @@
                             <div class="uthsc-highlight-box">
                                 <a href="https://www.uthsc.edu/research/research_compliance/irb/">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/nursing-dnp.jpg"/>
+                                        <img src="/-resources/2015/images/nursing-dnp.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -479,7 +478,7 @@
                             <div class="uthsc-highlight-box">
                                 <a href="https://www.uthsc.edu/nursing/future-students/admissions/phd_req.php">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/nursing-phd.jpg">
+                                        <img src="/-resources/2015/images/nursing-phd.jpg">
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>PhD in Nursing Program</p>
@@ -497,7 +496,7 @@
                             <div class="uthsc-highlight-box  uthsc-highlight-box-green">
                                 <a href="https://www.uthsc.edu/nursing/future-students/admissions/dnp_anesthesia_req.php">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/nursing-crna.jpg">
+                                        <img src="/-resources/2015/images/nursing-crna.jpg">
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>Nurse Anesthesia Program</p>
@@ -515,7 +514,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-purple">
                                 <a href="">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="-resources/2015/images/nursing-ag-acnp.jpg">
+                                        <img src="/-resources/2015/images/nursing-ag-acnp.jpg">
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>Certificate Programs</p>
@@ -716,7 +715,7 @@
     <!--*************-->
     <!--Global Footer-->
     <!--*************-->
-    <?php include('uthsc-global-footer.php') ?>
+    <?php include('../uthsc-global-footer.php') ?>
     <!--**************-->
     <!--/Global Footer-->
     <!--**************-->
@@ -934,7 +933,7 @@
 <!--Off canvas buttons-->
 <!--******************-->
 <div aria-hidden="true" id="mobile-navigation" class="hide-for-large hide-for-print">
-    <button id="uthsc-off-canvas-button--slide-left" class="toggle-slide-left button" style="background-image: url('-resources/2015/images/nav-toggler-left-college.png')"></button>
+    <button id="uthsc-off-canvas-button--slide-left" class="toggle-slide-left button" style="background-image: url('/-resources/2015/images/nav-toggler-left-college.png')"></button>
     <button id="uthsc-off-canvas-button--slide-right" class="toggle-slide-right button"></button>
 
     <!--Safari bottom nav fix-->
@@ -948,11 +947,11 @@
 <!--*******-->
 <!--Scripts-->
 <!--*******-->
-<script src="-resources/2015/js/jquery.min.js"></script>
-<script src="-resources/2015/js/what-input.min.js"></script>
-<script src="-resources/2015/js/foundation.min.js"></script>
-<script src="-resources/2015/js/uthsc.min.js"></script>
-<script src="-resources/2015/js/uthsc-news.js"></script>
+<script src="/-resources/2015/js/jquery.min.js"></script>
+<script src="/-resources/2015/js/what-input.min.js"></script>
+<script src="/-resources/2015/js/foundation.min.js"></script>
+<script src="/-resources/2015/js/uthsc.min.js"></script>
+<script src="/-resources/2015/js/uthsc-news.js"></script>
 
 <script>
     function parseNewsPosts() {
