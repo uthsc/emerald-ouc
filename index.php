@@ -17,12 +17,13 @@
     <!--/Open Graph Tags-->
     <!--****************-->
 
-    <title>Foundation for Sites</title>
+    <title>The University of Tennessee Health Science Center - UTHSC</title>
     <link rel="stylesheet" href="-resources/2015/css/uthsc.css">
     <link rel="stylesheet" href="-resources/2015/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
+
     <?php
     function get_uthsc_instagram (
         $user_id='302960952',
@@ -129,7 +130,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/research/">
+                            <a href="research/">
                                 <span class="fa fa-flask"></span>
                                 Research
                             </a>
@@ -260,7 +261,7 @@
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="/research/" data-equalizer-watch="heading-links"><span class="fa fa-flask"></span> Research</a>
+                <a href="research/" data-equalizer-watch="heading-links"><span class="fa fa-flask"></span> Research</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
@@ -452,7 +453,7 @@
                                     <div class="tabs-panel" id="panel5v">
                                         <ul>
                                             <li>
-                                                <a href="nursing.php">College of Nursing</a>
+                                                <a href="/nursing">College of Nursing</a>
                                                 <ul>
                                                     <li><a href="/nursing/academic-programs/index.php">Academic Programs</a></li>
                                                     <li><a href="/nursing/continuing-education/index.php">Continuing Education</a></li>
@@ -527,13 +528,13 @@
                     <h2>Research</h2>
                     <p>UTHSC has a long and rich tradition of accomplishments in basic, clinical and translational research in a wide variety of disciplines focused on the health issues that impact our community, our region, the state of Tennessee and the world.</p>
                     <ul>
-                        <li><a href="/research/research_administration/clinical_trials/">Clinical Trials</a></li>
-                        <li><a href="/research/research_compliance/">Compliance</a></li>
-                        <li><a href="/research/research_administration/">Grants and Research Agreements</a></li>
-                        <li><a href="/research/">Office of Research</a></li>
+                        <li><a href="research/research_administration/clinical_trials/">Clinical Trials</a></li>
+                        <li><a href="research/research_compliance/">Compliance</a></li>
+                        <li><a href="research/research_administration/">Grants and Research Agreements</a></li>
+                        <li><a href="research/">Office of Research</a></li>
                     </ul>
                     <hr />
-                    <a class="button hollow small" href="/research/"><span class="fa fa-plus-circle"></span> Learn More...</a>
+                    <a class="button hollow small" href="research/"><span class="fa fa-plus-circle"></span> Learn More...</a>
                 </div>
                 <div class="columns">
                     <img src="-resources/2015/images/mission-clinical-care.jpg" class="uthsc-mission-image">
@@ -747,7 +748,7 @@
 
     <ul>
         <li><a href="/education/" class="link-heading">Academics</a></li>
-        <li><a href="research.php" class="link-heading">Research</a></li>
+        <li><a href="research/" class="link-heading">Research</a></li>
         <li><a href="/clinicalcare/" class="link-heading">Clinical Care</a></li>
         <li><a href="/publicservice/" class="link-heading">Public Service</a></li>
         <li><a href="/aboututhsc/" class="link-heading">About UTHSC</a></li>
@@ -792,7 +793,7 @@
         <h2 class="link-heading">Mission</h2>
 
         <a href="/education/"><span class="uthsc-fa-centered fa fa-graduation-cap"></span>&emsp;Academics</a>
-        <a href="research.php"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
+        <a href="research"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
         <a href="/clinicalcare/"><span class="uthsc-fa-centered fa fa-medkit"></span>&emsp;Clinical Care</a>
         <a href="/publicservice/"><span class="uthsc-fa-centered fa fa-globe"></span>&emsp;Public Service</a>
     </div>

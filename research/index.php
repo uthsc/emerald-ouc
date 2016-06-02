@@ -15,8 +15,8 @@
     <!--/unfurling-->
 
     <title>Office of Research | UTHSC</title>
-    <link rel="stylesheet" href="/-resources/2015/css/uthsc.css">
-    <link rel="stylesheet" href="/-resources/2015/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../-resources/2015/css/uthsc.css">
+    <link rel="stylesheet" href="../-resources/2015/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
           href="http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
@@ -67,7 +67,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/research/">
+                            <a href="research/">
                                 <span class="fa fa-flask"></span>
                                 Research
                             </a>
@@ -138,7 +138,7 @@
         <div class="row">
             <div class="medium-10 large-8 small-centered columns">
                 <a href="http://uthsc.edu">
-                    <img src="/-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
+                    <img src="../-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
                 </a>
             </div>
         </div>
@@ -190,7 +190,7 @@
         <div class="row">
             <ul class="breadcrumbs column">
                 <li>
-                    <a aria-label="go to UTHSC homepage" href="/">
+                    <a aria-label="go to UTHSC homepage" href="/redesign/">
                         <span class="uthsc-home-icon-breadcrumbs fa fa-home fa-2x"></span>
                     </a>
                     <span class="fa fa-chevron-right" aria-hidden="true"></span>
@@ -451,7 +451,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-purple">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="/-resources/2015/images/research-kell-landscape.jpg">
+                                        <img src="../-resources/2015/images/research-kell-landscape.jpg">
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -472,7 +472,7 @@
                             <!--Highlight box-->
                             <div class="uthsc-highlight-box">
                                 <div class="uthsc-highlight-box-image">
-                                    <img src="/-resources/2015/images/research-morrow-landscape.jpg"/>
+                                    <img src="../-resources/2015/images/research-morrow-landscape.jpg"/>
                                 </div>
                                 <div class="uthsc-highlight-box-title">
                                     <p>Hot Topics in Research Featuring Dr. Casey D. Morrow, Director, UAB</p>
@@ -493,7 +493,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="/-resources/2015/images/research-goodman.jpg"/>
+                                        <img src="../-resources/2015/images/research-goodman.jpg"/>
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>Vice Chancellor for Research, Dr. Steven R. Goodman's Second Research Town Hall Meeting </p>
@@ -511,7 +511,7 @@
                             <div class="uthsc-highlight-box">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="/-resources/2015/images/research-compliance.jpg"/>
+                                        <img src="../-resources/2015/images/research-compliance.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -530,7 +530,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
                                 <a href="https://www.uthsc.edu/research/research_compliance/irb/">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="/-resources/2015/images/research-irb.jpg"/>
+                                        <img src="../-resources/2015/images/research-irb.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -552,7 +552,7 @@
                             <div class="uthsc-highlight-box  uthsc-highlight-box-purple">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="/-resources/2015/images/research-grants-research.jpg">
+                                        <img src="../-resources/2015/images/research-grants-research.jpg">
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>Grants & Research Agreements</p>
@@ -799,7 +799,7 @@
         <div class="dropdown-pane bottom" id="left-breadcrumbs-dropdown" data-dropdown="data-dropdown"
              data-v-offset="0" data-auto-focus="true">
             <ul class="uthsc-off-canvas-breadcrumbs-list">
-                <li><a href="index.php" title="Home">Back to the Homepage</a></li>
+                <li><a href="/redesign/" title="Home">Back to the Homepage</a></li>
                 <li><a href="#" title="Core Clerkship Directors">Office of Research</a></li>
                 <li class="disabled"><strong>Current Page</strong></li>
             </ul>
@@ -890,14 +890,14 @@
 
     <!--Breadcrumbs-->
     <div class="uthsc-off-canvas-breadcrumbs button-group">
-        <a href="index.php" class="button home-button"><span class="fa fa-home"></span></a>
+        <a href="/redesign/" class="button home-button"><span class="fa fa-home"></span></a>
         <button class="button breadcrumbs-button dropdown" type="button" data-toggle="right-breadcrumbs-dropdown">
             Breadcrumbs Back Home
         </button>
         <div class="dropdown-pane bottom" id="right-breadcrumbs-dropdown" data-dropdown="data-dropdown"
              data-v-offset="0" data-auto-focus="true">
             <ul class="uthsc-off-canvas-breadcrumbs-list">
-                <li><a href="index.php" title="Home">Back to the Homepage</a></li>
+                <li><a href="/redesign/" title="Home">Back to the Homepage</a></li>
                 <li><a href="#" title="College of Medicine">Office of Research</a></li>
                 <li class="disabled"><strong>Current Page</strong></li>
             </ul>
@@ -929,7 +929,7 @@
         <h2 class="link-heading">Mission</h2>
 
         <a href="/education/"><span class="uthsc-fa-centered fa fa-graduation-cap"></span>&emsp;Academics</a>
-        <a href="/research/"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
+        <a href="research/"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
         <a href="/clinicalcare/"><span class="uthsc-fa-centered fa fa-medkit"></span>&emsp;Clinical Care</a>
         <a href="/publicservice/"><span class="uthsc-fa-centered fa fa-globe"></span>&emsp;Public Service</a>
     </div>
@@ -997,11 +997,10 @@
 <!--*******-->
 <!--Scripts-->
 <!--*******-->
-<script src="/-resources/2015/js/jquery.min.js"></script>
-<script src="/-resources/2015/js/what-input.min.js"></script>
-<script src="/-resources/2015/js/foundation.min.js"></script>
-<script src="/-resources/2015/js/uthsc.min.js"></script>
-<script src="/-resources/2015/js/uthsc-news.js"></script>
+<script src="../-resources/2015/js/jquery.min.js"></script>
+<script src="../-resources/2015/js/what-input.min.js"></script>
+<script src="../-resources/2015/js/foundation.min.js"></script>
+<script src="../-resources/2015/js/uthsc.min.js"></script>
 
 <script>
     function parseNewsPosts() {
