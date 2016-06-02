@@ -15,8 +15,8 @@
     <!--/unfurling-->
 
     <title>College of Nursing | UTHSC</title>
-    <link rel="stylesheet" href="/-resources/2015/css/uthsc.css">
-    <link rel="stylesheet" href="/-resources/2015/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../-resources/2015/css/uthsc.css">
+    <link rel="stylesheet" href="../-resources/2015/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
           href="http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
@@ -138,7 +138,7 @@
         <div class="row">
             <div class="medium-10 large-8 small-centered columns">
                 <a href="http://uthsc.edu">
-                    <img src="/-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
+                    <img src="../-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
                 </a>
             </div>
         </div>
@@ -190,7 +190,7 @@
         <div class="row">
             <ul class="breadcrumbs column">
                 <li>
-                    <a aria-label="go to UTHSC homepage" href="/redesign/">
+                    <a aria-label="go to UTHSC homepage" href="/">
                         <span class="uthsc-home-icon-breadcrumbs fa fa-home fa-2x"></span>
                     </a>
                     <span class="fa fa-chevron-right" aria-hidden="true"></span>
@@ -416,7 +416,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
                                 <a href="https://www.uthsc.edu/nursing/future-students/admissions/bsn_req.php">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="/-resources/2015/images/nursing-bsn.jpg"/>
+                                        <img src="../-resources/2015/images/nursing-bsn.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -436,7 +436,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-purple">
                                 <a href="https://www.uthsc.edu/nursing/future-students/admissions/rn-bsn-req.php">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="/-resources/2015/images/nursing-rn-bsn.jpg"/>
+                                        <img src="../-resources/2015/images/nursing-rn-bsn.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -457,7 +457,7 @@
                             <div class="uthsc-highlight-box">
                                 <a href="https://www.uthsc.edu/research/research_compliance/irb/">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="/-resources/2015/images/nursing-dnp.jpg"/>
+                                        <img src="../-resources/2015/images/nursing-dnp.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -478,7 +478,7 @@
                             <div class="uthsc-highlight-box">
                                 <a href="https://www.uthsc.edu/nursing/future-students/admissions/phd_req.php">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="/-resources/2015/images/nursing-phd.jpg">
+                                        <img src="../-resources/2015/images/nursing-phd.jpg">
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>PhD in Nursing Program</p>
@@ -496,7 +496,7 @@
                             <div class="uthsc-highlight-box  uthsc-highlight-box-green">
                                 <a href="https://www.uthsc.edu/nursing/future-students/admissions/dnp_anesthesia_req.php">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="/-resources/2015/images/nursing-crna.jpg">
+                                        <img src="../-resources/2015/images/nursing-crna.jpg">
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>Nurse Anesthesia Program</p>
@@ -514,7 +514,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-purple">
                                 <a href="">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="/-resources/2015/images/nursing-ag-acnp.jpg">
+                                        <img src="../-resources/2015/images/nursing-ag-acnp.jpg">
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>Certificate Programs</p>
@@ -749,14 +749,14 @@
      aria-hidden="true">
     <!--Breadcrumbs-->
     <div class="uthsc-off-canvas-breadcrumbs button-group">
-        <a href="/redesign/" class="button home-button"><span class="fa fa-home"></span></a>
+        <a href="/" class="button home-button"><span class="fa fa-home"></span></a>
         <button class="button breadcrumbs-button dropdown" type="button" data-toggle="left-breadcrumbs-dropdown">
             Breadcrumbs Back Home
         </button>
         <div class="dropdown-pane bottom" id="left-breadcrumbs-dropdown" data-dropdown="data-dropdown"
              data-v-offset="0" data-auto-focus="true">
             <ul class="uthsc-off-canvas-breadcrumbs-list">
-                <li><a href="/redesign/" title="Home">Back to the Homepage</a></li>
+                <li><a href="/" title="Home">Back to the Homepage</a></li>
                 <li><a href="#" title="College of Medicine">College of Nursing</a></li>
                 <li class="disabled"><strong>Current Page</strong></li>
             </ul>
@@ -840,14 +840,14 @@
 
     <!--Breadcrumbs-->
     <div class="uthsc-off-canvas-breadcrumbs button-group">
-        <a href="/redesign/" class="button home-button"><span class="fa fa-home"></span></a>
+        <a href="/" class="button home-button"><span class="fa fa-home"></span></a>
         <button class="button breadcrumbs-button dropdown" type="button" data-toggle="right-breadcrumbs-dropdown">
             Breadcrumbs Back Home
         </button>
         <div class="dropdown-pane bottom" id="right-breadcrumbs-dropdown" data-dropdown="data-dropdown"
              data-v-offset="0" data-auto-focus="true">
             <ul class="uthsc-off-canvas-breadcrumbs-list">
-                <li><a href="/redesign/" title="Home">Back to the Homepage</a></li>
+                <li><a href="/" title="Home">Back to the Homepage</a></li>
                 <li><a href="#" title="College of Medicine">College of Nursing</a></li>
                 <li class="disabled"><strong>Current Page</strong></li>
             </ul>
@@ -947,11 +947,10 @@
 <!--*******-->
 <!--Scripts-->
 <!--*******-->
-<script src="/-resources/2015/js/jquery.min.js"></script>
-<script src="/-resources/2015/js/what-input.min.js"></script>
-<script src="/-resources/2015/js/foundation.min.js"></script>
-<script src="/-resources/2015/js/uthsc.min.js"></script>
-<script src="/-resources/2015/js/uthsc-news.js"></script>
+<script src="../-resources/2015/js/jquery.min.js"></script>
+<script src="../-resources/2015/js/what-input.min.js"></script>
+<script src="../-resources/2015/js/foundation.min.js"></script>
+<script src="../-resources/2015/js/uthsc.min.js"></script>
 
 <script>
     function parseNewsPosts() {
