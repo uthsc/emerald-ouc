@@ -75,14 +75,11 @@
             margin-left: initial;
 
             a {
-              padding: .9rem;
-              font-size: 1.4rem;
+              padding: .97rem;
+              font-size: 1.3rem;
               font-weight: 300;
 
-              @include breakpoint(medium only) {
-                padding: 0.4em;
-                font-size: 1.1rem;
-              }
+
 
               &:hover {
                 color: #fff;
