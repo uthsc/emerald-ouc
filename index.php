@@ -811,9 +811,6 @@
 <script src="-resources/2015/js/what-input.min.js"></script>
 <script src="-resources/2015/js/foundation.min.js"></script>
 <script src="-resources/2015/js/uthsc.min.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLV5PU6hBErfU5GOc9Jy4-6bWud2iaVj8&callback=initMap">
-</script>
 <!--  Masonry-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.0/masonry.pkgd.min.js"></script>
 <script>
