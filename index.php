@@ -112,7 +112,7 @@
                     </ul>
                 </li>
                 <li><a href="/give/"><span class="fa fa-gift"></span> Make a Gift</a></li>
-                <li><a href="template.php"><span class="fa fa-road"></span> Take a Tour</a></li>
+                <li><a href="/admissions/visit-uthsc.php"><span class="fa fa-road"></span> Take a Tour</a></li>
                 <li>
                     <div class="show-for-large">
                         <!--Search form-->
@@ -249,14 +249,14 @@
             <div class="columns medium-6 large-12">
                 <div class="row">
                     <div class="columns small-6 medium-12 large-4 large-push-2">
-                        <a class="button secondary large expanded show-for-large"><span class="fa fa-road"></span> Take a Tour</a>
-                        <a class="button secondary expanded show-for-medium-only"><span class="fa fa-road"></span> Take a Tour</a>
-                        <a class="button secondary tiny expanded hide-for-medium"><span class="fa fa-road"></span> Take a Tour</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary large expanded show-for-large"><span class="fa fa-road"></span> Take a Tour</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary expanded show-for-medium-only"><span class="fa fa-road"></span> Take a Tour</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary tiny expanded hide-for-medium"><span class="fa fa-road"></span> Take a Tour</a>
                     </div>
                     <div class="columns small-6 medium-12 large-4 large-pull-2">
-                        <a class="button secondary large expanded show-for-large"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
-                        <a class="button secondary expanded show-for-medium-only"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
-                        <a class="button secondary tiny expanded hide-for-medium"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary large expanded show-for-large"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary expanded show-for-medium-only"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary tiny expanded hide-for-medium"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
                     </div>
                 </div>
             </div>
@@ -526,10 +526,10 @@
                             <h2>4<span class="fa fa-map-marker"></span></h2>
                             <p>Campuses</p>
                             <p>
-                                <a href="#">Memphis |</a>
-                                <a href="#"> Knoxville |</a>
-                                <a href="#"> Nashville |</a>
-                                <a href="#"> Chattanooga</a>
+                                <a href="/aboututhsc/ourcampuses.php#memphis">Memphis |</a>
+                                <a href="/aboututhsc/ourcampuses.php#knoxville"> Knoxville |</a>
+                                <a href="/aboututhsc/ourcampuses.php#nashville"> Nashville |</a>
+                                <a href="/aboututhsc/ourcampuses.php#chattanooga"> Chattanooga</a>
                             </p>
                         </div>
                         <div class="columns medium-6">
@@ -564,7 +564,7 @@
                                 <img src="-resources/2015/images/uthsc-social-news-1.jpg">
                             </div>
                         </a>
-                        <a href="">
+                        <a href="https://www.instagram.com/p/BFpQtR6juSm/">
                             <div class="columns">
                                 <img src="-resources/2015/images/uthsc-social-instagram-1.jpg">
                             </div>
