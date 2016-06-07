@@ -50,23 +50,30 @@
       h2 {
         color:#fff;
         font-size: 2.4rem;
-      }
-      h2.subheader {
-        font-size: 1rem;
+
+        &.subheader {
+          font-size: 1rem;
+        }
       }
 
       .uthsc-program-explorer-tabs {
         .uthsc-program-explorer-heading {
           text-align: center;
           background: $uthsc-green;
-
         }
+
         ul.tabs {
           margin-right: 0;
           left: auto;
+          margin-left: initial;
+          text-indent: initial;
 
           li {
             width: 100%;
+            line-height: initial;
+            padding: initial;
+            margin-left: initial;
+
             a {
               padding: .9rem;
               font-size: 1.4rem;
@@ -103,6 +110,10 @@
                   color: $uthsc-orange;
                 }
               }
+            }
+
+            &:before {
+              content: "";
             }
           }
         }
