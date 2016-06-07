@@ -23,39 +23,6 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
-
-    <?php
-    function get_uthsc_instagram (
-        $user_id='302960952',
-        $access_token='302960952.a74da0d.1d808ab911114752b305e9877884d51c',
-        $count='9'
-    ){
-
-        $url = 'https://api.instagram.com/v1/users/'.$user_id.'/media/recent/?access_token='.$access_token.'&count='.$count;
-
-        // Cache the results
-        $cache = './'.sha1($url).'.json';
-        if(file_exists($cache) && filemtime($cache) > time() - 60*60){
-            // If a cache file exists, and it is newer than 1 hour, use it
-            $jsonData = json_decode(file_get_contents($cache));
-        } else {
-            $jsonData = json_decode((file_get_contents($url)));
-            file_put_contents($cache,json_encode($jsonData));
-        }
-
-        foreach ($jsonData->data as $key=>$value) {
-            $uthsc_feed .= "\t".'
-                                    <div class="column">
-                                        <a href="'.$value->link.'">
-                                            <img class="thumbnail" src="'.$value->images->thumbnail->url.'" alt="'.$value->caption->text.'" title="'.$value->caption->text.'" />
-                                        </a>
-                                    </div>
-                                '.PHP_EOL;
-        }
-
-        return $uthsc_feed;
-    }
-    ?>
 </head>
 <body class="homepage">
 
@@ -871,9 +838,6 @@
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLV5PU6hBErfU5GOc9Jy4-6bWud2iaVj8&callback=initMap">
 </script>
-
-<!--/instagram count fix-->
-
 <!--  Masonry-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.0/masonry.pkgd.min.js"></script>
 <script>
