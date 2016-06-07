@@ -23,65 +23,8 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
-
-    <?php
-    function get_uthsc_instagram (
-        $user_id='302960952',
-        $access_token='302960952.a74da0d.1d808ab911114752b305e9877884d51c',
-        $count='9'
-    ){
-
-        $url = 'https://api.instagram.com/v1/users/'.$user_id.'/media/recent/?access_token='.$access_token.'&count='.$count;
-
-        // Cache the results
-        $cache = './'.sha1($url).'.json';
-        if(file_exists($cache) && filemtime($cache) > time() - 60*60){
-            // If a cache file exists, and it is newer than 1 hour, use it
-            $jsonData = json_decode(file_get_contents($cache));
-        } else {
-            $jsonData = json_decode((file_get_contents($url)));
-            file_put_contents($cache,json_encode($jsonData));
-        }
-
-        foreach ($jsonData->data as $key=>$value) {
-            $uthsc_feed .= "\t".'
-                                    <div class="column">
-                                        <a href="'.$value->link.'">
-                                            <img class="thumbnail" src="'.$value->images->thumbnail->url.'" alt="'.$value->caption->text.'" title="'.$value->caption->text.'" />
-                                        </a>
-                                    </div>
-                                '.PHP_EOL;
-        }
-
-        return $uthsc_feed;
-    }
-    ?>
 </head>
 <body class="homepage">
-
-<!--***************************-->
-<!--Facebook SDK for JavaScript-->
-<!--***************************-->
-<script>
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId      : 'your-app-id',
-            xfbml      : true,
-            version    : 'v2.5'
-        });
-    };
-
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
-<!--****************************-->
-<!--/Facebook SDK for JavaScript-->
-<!--****************************-->
 
 <!--******************-->
 <!--Google Tag Manager-->
@@ -119,10 +62,10 @@
         </div>
 
         <div class="uthsc-site-nav-right">
-            <ul class="dropdown menu" data-dropdown-menu>
+            <ul class="dropdown menu" data-dropdown-menu="data-dropdown-menu">
                 <li class="has-submenu">
                     <a href="#">Our Mission</a>
-                    <ul class="submenu menu vertical" data-submenu>
+                    <ul class="submenu menu vertical" data-submenu="data-submenu">
                         <li>
                             <a href="/education/">
                                 <span class="fa fa-graduation-cap"></span>
@@ -169,7 +112,7 @@
                     </ul>
                 </li>
                 <li><a href="/give/"><span class="fa fa-gift"></span> Make a Gift</a></li>
-                <li><a href="template.php"><span class="fa fa-road"></span> Take a Tour</a></li>
+                <li><a href="/admissions/visit-uthsc.php"><span class="fa fa-road"></span> Take a Tour</a></li>
                 <li>
                     <div class="show-for-large">
                         <!--Search form-->
@@ -314,14 +257,14 @@
             <div class="columns medium-6 large-12">
                 <div class="row">
                     <div class="columns small-6 medium-12 large-4 large-push-2">
-                        <a class="button secondary large expanded show-for-large"><span class="fa fa-road"></span> Take a Tour</a>
-                        <a class="button secondary expanded show-for-medium-only"><span class="fa fa-road"></span> Take a Tour</a>
-                        <a class="button secondary tiny expanded hide-for-medium"><span class="fa fa-road"></span> Take a Tour</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary large expanded show-for-large"><span class="fa fa-road"></span> Take a Tour</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary expanded show-for-medium-only"><span class="fa fa-road"></span> Take a Tour</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary tiny expanded hide-for-medium"><span class="fa fa-road"></span> Take a Tour</a>
                     </div>
                     <div class="columns small-6 medium-12 large-4 large-pull-2">
-                        <a class="button secondary large expanded show-for-large"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
-                        <a class="button secondary expanded show-for-medium-only"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
-                        <a class="button secondary tiny expanded hide-for-medium"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary large expanded show-for-large"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary expanded show-for-medium-only"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary tiny expanded hide-for-medium"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
                     </div>
                 </div>
             </div>
@@ -597,10 +540,10 @@
                             <h2>4<span class="fa fa-map-marker"></span></h2>
                             <p>Campuses</p>
                             <p>
-                                <a href="#">Memphis |</a>
-                                <a href="#"> Knoxville |</a>
-                                <a href="#"> Nashville |</a>
-                                <a href="#"> Chattanooga</a>
+                                <a href="/aboututhsc/ourcampuses.php#memphis">Memphis |</a>
+                                <a href="/aboututhsc/ourcampuses.php#knoxville"> Knoxville |</a>
+                                <a href="/aboututhsc/ourcampuses.php#nashville"> Nashville |</a>
+                                <a href="/aboututhsc/ourcampuses.php#chattanooga"> Chattanooga</a>
                             </p>
                         </div>
                         <div class="columns medium-6">
@@ -635,7 +578,7 @@
                                 <img src="-resources/2015/images/uthsc-social-news-1.jpg">
                             </div>
                         </a>
-                        <a href="">
+                        <a href="https://www.instagram.com/p/BFpQtR6juSm/">
                             <div class="columns">
                                 <img src="-resources/2015/images/uthsc-social-instagram-1.jpg">
                             </div>
@@ -696,7 +639,7 @@
     <!--Last Published-->
     <!--**************-->
     <div class="uthsc-last-published text-center">
-        <p><small>Last Published: February 1, 2016</small></p>
+        <p><small>Last Published: June 7, 2016</small></p>
     </div>
     <!--***************-->
     <!--/Last Published-->
@@ -759,10 +702,11 @@
         <!--/Search form-->
     </div>
 
-    <!--Close menu button-->
+    <!--  Close menu button-->
     <button class="uthsc-off-canvas-menu__close">
         <span class="fa fa-chevron-left"></span>&emsp; Close Menu
     </button>
+    <!--/ Close menu button-->
 
     <ul>
         <li><a href="/education/" class="link-heading">Academics</a></li>
@@ -805,10 +749,12 @@
         <!--/Search form-->
     </div>
 
-    <!--Close menu button-->
+    <!--  Close menu button-->
     <button class="uthsc-off-canvas-menu__close">
         Close Menu &emsp;<span class="fa fa-chevron-right"></span>
     </button>
+    <!--/ Close menu button-->
+
 
     <!--Mission links-->
     <div class="mission-links">
@@ -890,29 +836,6 @@
 <script src="-resources/2015/js/what-input.min.js"></script>
 <script src="-resources/2015/js/foundation.min.js"></script>
 <script src="-resources/2015/js/uthsc.min.js"></script>
-<script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLV5PU6hBErfU5GOc9Jy4-6bWud2iaVj8&callback=initMap">
-</script>
-
-<!--/instagram count fix-->
-
-<!--  Masonry-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.0/masonry.pkgd.min.js"></script>
-<script>
-
-    $(window).load(function(){
-
-        $('#container').masonry({
-
-            itemSelector: '#container .columns'
-
-        });
-
-    });
-
-</script>
-<!--/ Masonry-->
-
 <!--********-->
 <!--/Scripts-->
 <!--********-->
