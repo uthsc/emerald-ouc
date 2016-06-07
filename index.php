@@ -586,34 +586,34 @@
                     </div>
                 </div>
                 <div class="columns medium-6 large-8">
-                    <div class="row uthsc-social-boxs small-centered" data-equalizer="social-2" data-equalize-by-row="true">
+                    <div class="row uthsc-social-boxs small-centered">
                         <a href="http://news.uthsc.edu/uthsc-communications-marketing-department-receives-two-awards-alumni-magazines-international-competition/">
-                            <div class="columns medium-12 large-6" data-equalizer-watch="social-2">
+                            <div class="columns medium-12 large-6">
                                 <img src="-resources/2015/images/uthsc-social-news-2.jpg" class="uthsc-social-box-no-image">
                             </div>
                         </a>
                         <a href="https://www.facebook.com/uthsc/posts/10153762268232753">
-                            <div class="columns medium-12 large-6" data-equalizer-watch="social-2">
+                            <div class="columns medium-12 large-6">
                                 <img src="-resources/2015/images/uthsc-social-facebook-1.jpg">
                             </div>
                         </a>
                         <a href="http://news.uthsc.edu/student-government-association-executive-council-honors-faculty-student-leaders-awards-banquet/">
-                            <div class="columns medium-12 large-6" data-equalizer-watch="social-2">
+                            <div class="columns medium-12 large-6">
                                 <img src="-resources/2015/images/uthsc-social-news-4.jpg">
                             </div>
                         </a>
                         <a href="https://twitter.com/uthsc/status/733338438401937408">
-                            <div class="columns medium-12 large-6 show-for-large" data-equalizer-watch="social-2">
+                            <div class="columns medium-12 large-6 show-for-large">
                                 <img src="-resources/2015/images/uthsc-social-twitter-1.jpg">
                             </div>
                         </a>
                         <a href="http://news.uthsc.edu/dr-karen-c-johnson-uthsc-receives-2-3-million-grant-study-weight-loss-increased-physical-activity-affect-aging-individuals-type-2-diabetes/">
-                            <div class="columns medium-12 large-6 show-for-large" data-equalizer-watch="social-2">
+                            <div class="columns medium-12 large-6 show-for-large">
                                 <img src="-resources/2015/images/uthsc-social-news-3.jpg">
                             </div>
                         </a>
                         <a href="https://twitter.com/uthsc/status/732671713792655360">
-                            <div class="columns medium-12 large-6 show-for-large" data-equalizer-watch="social-2">
+                            <div class="columns medium-12 large-6 show-for-large">
                                 <img src="-resources/2015/images/uthsc-social-twitter-2.jpg" class="uthsc-social-box-no-image">
                             </div>
                         </a>
