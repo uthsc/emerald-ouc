@@ -62,10 +62,10 @@
         </div>
 
         <div class="uthsc-site-nav-right">
-            <ul class="dropdown menu" data-dropdown-menu>
+            <ul class="dropdown menu" data-dropdown-menu="data-dropdown-menu">
                 <li class="has-submenu">
                     <a href="#">Our Mission</a>
-                    <ul class="submenu menu vertical" data-submenu>
+                    <ul class="submenu menu vertical" data-submenu="data-submenu">
                         <li>
                             <a href="/education/">
                                 <span class="fa fa-graduation-cap"></span>
