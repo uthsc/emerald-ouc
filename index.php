@@ -684,10 +684,11 @@
         <!--/Search form-->
     </div>
 
-    <!--Close menu button-->
+    <!--  Close menu button-->
     <button class="uthsc-off-canvas-menu__close">
         <span class="fa fa-chevron-left"></span>&emsp; Close Menu
     </button>
+    <!--/ Close menu button-->
 
     <ul>
         <li><a href="/education/" class="link-heading">Academics</a></li>
@@ -726,10 +727,12 @@
         <!--/Search form-->
     </div>
 
-    <!--Close menu button-->
+    <!--  Close menu button-->
     <button class="uthsc-off-canvas-menu__close">
         Close Menu &emsp;<span class="fa fa-chevron-right"></span>
     </button>
+    <!--/ Close menu button-->
+
 
     <!--Mission links-->
     <div class="mission-links">
