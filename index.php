@@ -625,7 +625,7 @@
     <!--Last Published-->
     <!--**************-->
     <div class="uthsc-last-published text-center">
-        <p><small>Last Published: February 1, 2016</small></p>
+        <p><small>Last Published: June 7, 2016</small></p>
     </div>
     <!--***************-->
     <!--/Last Published-->
