@@ -811,23 +811,6 @@
 <script src="-resources/2015/js/what-input.min.js"></script>
 <script src="-resources/2015/js/foundation.min.js"></script>
 <script src="-resources/2015/js/uthsc.min.js"></script>
-<!--  Masonry-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.1.0/masonry.pkgd.min.js"></script>
-<script>
-
-    $(window).load(function(){
-
-        $('#container').masonry({
-
-            itemSelector: '#container .columns'
-
-        });
-
-    });
-
-</script>
-<!--/ Masonry-->
-
 <!--********-->
 <!--/Scripts-->
 <!--********-->
