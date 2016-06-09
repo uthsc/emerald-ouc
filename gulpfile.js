@@ -51,7 +51,8 @@ gulp.task('copy-vendor-js', function() {
     return gulp.src ([
         './bower_components/jquery/dist/jquery.min.js',
         './bower_components/what-input/what-input.min.js',
-        './bower_components/foundation-sites/dist/foundation.min.js'
+        './bower_components/foundation-sites/dist/foundation.min.js',
+				'./bower_components/masonry/dist/masonry.pkgd.min.js'
     ])
         .pipe(gulp.dest('./-resources/2015/js'));
 });
