@@ -65,3 +65,118 @@
 //include project components
 @include uthsc-homepage;
 @include uthsc-content-footer;
+
+.grid-sizer,
+.grid-item {
+  width: 25%;
+  padding: .5em;
+}
+
+@mixin uthsc-now-colors($service-name, $service-color, $no-image-text-color) {
+  .uthsc-now--no-image {
+    &.#{$service-name} .uthsc-now--container {
+      background: $service-color;
+      p, span {
+        color: $no-image-text-color;
+      }
+    }
+  }
+
+  .uthsc-now--image.#{$service-name} {
+    .uthsc-now--container {
+      transition: .3s;
+    }
+
+    .uthsc-now--service .fa:before {
+      color: $service-color;
+    }
+
+    &:hover {
+      .uthsc-now--container {
+        background: $service-color;
+
+
+
+        p, span {
+          color: $no-image-text-color;
+        }
+        transition: .3s;
+      }
+
+      .uthsc-now--service .fa:before {
+        color: $no-image-text-color;
+      }
+    }
+  }
+}
+
+@include uthsc-now-colors('twitter', $uthsc-twitter, #fff);
+@include uthsc-now-colors('facebook', $uthsc-facebook, #fff);
+@include uthsc-now-colors('uthsc_news', $uthsc-green, #fff);
+@include uthsc-now-colors('instagram', $uthsc-instagram, #fff);
+
+.uthsc-now--item {
+
+  cursor: pointer;
+  cursor: hand;
+
+  &.uthsc-now--no-image {
+    .uthsc-now--container {
+      border: none;
+      border-radius:0;
+    }
+  }
+
+
+  .uthsc-now--container {
+
+
+    border: 1px solid #dcdcdc;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    border-radius:3px;
+    overflow:hidden;
+
+    .uthsc-now--image {
+
+    }
+
+    .uthsc-now--message {
+      padding:.5em;
+      font-size: 1em;
+      color: #6b6b6b;
+      font-weight:normal;
+      line-height:1.4em;
+    }
+
+    .uthsc-now--footer {
+
+      .uthsc-now--service {
+        display:inline;
+        padding-left:.5em;
+        color: $dark-gray;
+        float:left;
+      }
+
+      .uthsc-now--date {
+
+        float:right;
+        display:inline;
+        padding-right:.5em;
+        color: $dark-gray;
+        font-weight:normal;
+        p {
+          font-size:.8em;
+          margin-bottom:0;
+        }
+
+      }
+    }
+  }
+
+
+
+
+
+
+}
