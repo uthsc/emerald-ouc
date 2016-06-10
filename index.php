@@ -564,6 +564,13 @@
             </div>
             <!--/Infographics-->
 
+            <div class="row">
+                <div class="uthsc-now grid">
+
+                </div>
+
+
+            </div>
 
             <!--Social-->
 
@@ -836,6 +843,116 @@
 <script src="-resources/2015/js/what-input.min.js"></script>
 <script src="-resources/2015/js/foundation.min.js"></script>
 <script src="-resources/2015/js/uthsc.min.js"></script>
+<script src="-resources/2015/js/masonry.pkgd.min.js"></script>
+<script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
+
+<script>
+
+    var url = 'http://uthsc.edu/test/gspake1/emerald-ouc/uthsc-now.php';
+
+    function renderNewsPosts(containerElement, data) {
+
+        console.log(data)
+
+        //$(containerElement).empty();
+        $(containerElement).html(parseUthscNowPosts(data));
+
+    }
+
+    function limitCaptionChars(string, limit) {
+        if(!!string && string.length > limit){
+
+            var trimmedString = string.substr(0, limit);
+            trimmedString = trimmedString.substr(0, Math.min(trimmedString.length, trimmedString.lastIndexOf(" ")));
+            trimmedString += '&nbsp;&hellip;';
+            return trimmedString;
+        }
+
+        return string;
+    }
+
+
+
+    function parseUthscNowPosts(data) {
+
+        var html = '<div class="grid-sizer"></div>';
+
+        for (var i=0;i<50;i++) {
+
+            var postService = data[i]['service'],
+                postLink = data[i]['link'],
+                postTitle = data[i]['caption'],
+                postDate = data[i]['date'],
+                postIcon = data[i]['service_icon'],
+                postImage = data[i]['image'],
+                imageClass;
+
+            if (postImage == null) {
+                imageClass = 'uthsc-now--no-image'
+            } else {
+                imageClass = 'uthsc-now--image'
+            }
+
+            html += '<a ' + 'href="' + postLink + '" ' + 'class="grid-item uthsc-now--item ' + imageClass + ' ' + postService + ' ' + 'post-0' + (i + 1) + ' ">' +
+
+                '<div class="uthsc-now--container">';
+
+
+            if (postImage == null) {
+                html += '<div class="uthsc-now--message">' +
+                        '<p>' + limitCaptionChars(postTitle, 100) +'</p>' +
+                        '</div>';
+            } else {
+                html += '<div class="uthsc-now--image">' +
+                        '<img src="' + postImage + '" style="width:100%"/>' +
+                        '</div>' +
+
+                        '<div class="uthsc-now--message">' +
+                        '<p>' + limitCaptionChars(postTitle, 100) +'</p>' +
+                        '</div>';
+            }
+
+            html += '<div class="uthsc-now--footer">' +
+                '<div class="uthsc-now--service">' +
+                '<span class="' + postIcon +'">&nbsp;' + postService + '</span>' +
+                '</div>' +
+                '<div class="uthsc-now--date">' +
+                '<p>' + postDate +'</p>' +
+                '</div>'+
+                '</div>';
+
+            html +=
+                    '</div>' +
+                    '</a>';
+        }
+
+        return html;
+    }
+
+    $.ajax({
+        type: "GET",
+        url: url,
+        dataType: "json",
+        success: function (data) {
+            posts = data;
+            renderNewsPosts('.uthsc-now',posts);
+
+
+            var $grid = $('.grid').imagesLoaded( function(){
+                $grid.masonry({
+                    // set itemSelector so .grid-sizer is not used in layout
+                    itemSelector: '.grid-item',
+                    // use element for option
+                    columnWidth: '.grid-sizer',
+                    percentPosition: true
+                });
+            });
+        }
+    });
+
+
+</script>
+
 <!--********-->
 <!--/Scripts-->
 <!--********-->
