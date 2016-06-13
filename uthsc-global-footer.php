@@ -6,16 +6,16 @@
     <div class="row uthsc-copy-block text-center medium-text-left collapse medium-uncollapse">
         <div class="columns small-6 medium-3 text-right" aria-label="UTHSC links">
             <ul>
-                <li><a href="#">Give</a></li>
-                <li><a href="#">Employment</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/give/">Give</a></li>
+                <li><a href="/hr/employment">Employment</a></li>
+                <li><a href="/contacts/">Contact</a></li>
             </ul>
         </div>
         <div class="columns small-6 medium-3 text-left" aria-label="UTHSC links">
             <ul>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Policies</a></li>
-                <li><a href="#">Online Disclosure Statement</a></li>
+                <li><a href="/compliance/">Privacy Policy</a></li>
+                <li><a href="/policies/">Policies</a></li>
+                <li><a href="/students/consumer_info.php">Online Disclosure Statement</a></li>
             </ul>
         </div>
         <div class="columns medium-5" aria-label="UTHSC contact information">

@@ -112,8 +112,12 @@
                         <!--Search form-->
                         <form class="input-group" aria-label="Search the UTHSC site"
                               action="http://uthsc.edu/search/" method="get" style="margin-bottom:0;">
-                            <input type="search" aria-label="Search the UTHSC site" role="search" name="s"
-                                   placeholder="search" style="margin-right:0;">
+                            <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
+                                   placeholder="search" style="margin-right:0;" />
+                            <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
+                            <input type="hidden" name="cof" value="FORID:11" />
+                            <input type="hidden" name="ie" value="UTF-8" />
+                            <input type="hidden" name="col" value="uthsc" />
                             <div class="input-group-button">
                                 <button type="submit" class="button" aria-label="Submit search form">
                                     <span class="fa fa-search"></span>
@@ -148,8 +152,12 @@
                 <!--Search form-->
                 <form class="input-group" aria-label="Search the UTHSC site"
                       action="http://uthsc.edu/search/" method="get" style="margin-bottom:0;">
-                    <input type="search" aria-label="Search the UTHSC site" role="search" name="s"
+                    <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
                            placeholder="search" style="margin-right:0;">
+                    <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
+                    <input type="hidden" name="cof" value="FORID:11" />
+                    <input type="hidden" name="ie" value="UTF-8" />
+                    <input type="hidden" name="col" value="uthsc" />
                     <div class="input-group-button">
                         <button type="submit" class="button" aria-label="Submit search form">
                             <span class="fa fa-search"></span>
@@ -810,8 +818,12 @@
         <!--Search form-->
         <form class="input-group" aria-label="Search the UTHSC site"
               action="http://uthsc.edu/search/" method="get" style="margin-bottom:0;">
-            <input type="search" aria-label="Search the UTHSC site" role="search" name="s"
+            <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
                    placeholder="search" style="margin-right:0;">
+            <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
+            <input type="hidden" name="cof" value="FORID:11" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="hidden" name="col" value="uthsc" />
             <div class="input-group-button">
                 <button type="submit" class="button" aria-label="Submit search form">
                     <span class="fa fa-search"></span>
@@ -908,8 +920,12 @@
         <!--Search form-->
         <form class="input-group" aria-label="Search the UTHSC site"
               action="http://uthsc.edu/search/" method="get" style="margin-bottom:0;">
-            <input type="search" aria-label="Search the UTHSC site" role="search" name="s"
-                   placeholder="search" style="margin-right:0;">
+            <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
+                   placeholder="search" style="margin-right:0;" />
+            <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
+            <input type="hidden" name="cof" value="FORID:11" />
+            <input type="hidden" name="ie" value="UTF-8" />
+            <input type="hidden" name="col" value="uthsc" />
             <div class="input-group-button">
                 <button type="submit" class="button" aria-label="Submit search form">
                     <span class="fa fa-search"></span>
@@ -1011,6 +1027,15 @@
 
             var postLink = posts[i]['link'],
                 featuredImageLink = '',
+                date = new Date( posts[i]['date'] ),
+                monthNames = [
+                    "January", "February", "March",
+                    "April", "May", "June", "July",
+                    "August", "September", "October",
+                    "November", "December"
+                ],
+                monthIndex = date.getMonth(),
+                postDate = monthNames[monthIndex] + ' ' + date.getDate() + ', ' + date.getFullYear(),
                 postTitle = posts[i]['title']['rendered'];
 
             if (typeof posts[i]._embedded['wp:featuredmedia'] !== 'undefined') {
@@ -1026,12 +1051,12 @@
             '<div class="row">' +
 
             '<div class="columns small-3 medium-2 large-4">' +
-            '<img src="' + featuredImageLink + '" />' +
+            '<img alt="" src="' + featuredImageLink + '" />' +
             '</div>' +
 
             '<div class="columns small-9 medium-10 large-8">' +
             '<h4>' + postTitle +'</h4>' +
-            '<p>May 9, 2016</p>' +
+            '<p>' + postDate +'</p>' +
             '</div>' +
 
             '</div>' +
