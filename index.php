@@ -801,15 +801,40 @@
 
 <script>
 
-    var url = 'http://uthsc.edu/test/gspake1/emerald-ouc/uthsc-now.php';
+    var url = 'http://uthsc.edu/test/gspake1/emerald-ouc/uthsc-now.php',
+        loadPostsFirst = 0,
+        loadPostsLast = 14;
 
     function renderNewsPosts(containerElement, data) {
+        $(containerElement).append(parseUthscNowPosts(data));
 
-        console.log(data)
+        var $grid = $('.uthsc-now').imagesLoaded( function(){
+            $grid.masonry({
+                // set itemSelector so .grid-sizer is not used in layout
+                itemSelector: '.grid-item',
+                // use element for option
+                columnWidth: '.grid-sizer',
+                percentPosition: true
+            });
+        });
+    }
 
-        //$(containerElement).empty();
-        $(containerElement).html(parseUthscNowPosts(data));
+    function renderMorePosts(containerElement, data){
 
+        $(containerElement).append(parseUthscNowPosts(data));
+
+        var $grid = $('.uthsc-now').imagesLoaded( function(){
+            $grid.masonry({
+                // set itemSelector so .grid-sizer is not used in layout
+                itemSelector: '.grid-item',
+                // use element for option
+                columnWidth: '.grid-sizer',
+                percentPosition: true
+            });
+        });
+
+        $('.uthsc-now').masonry('reloadItems');
+        $('.uthsc-now').masonry();
     }
 
     function limitCaptionChars(string, limit) {
@@ -825,12 +850,11 @@
     }
 
 
-
     function parseUthscNowPosts(data) {
 
-        var html = '<div class="grid-sizer"></div>';
+        var html = "";
 
-        for (var i=0;i<50;i++) {
+        for (var i=loadPostsFirst;i<loadPostsLast;i++) {
 
             var postService = data[i]['service'],
                 postLink = data[i]['link'],
@@ -847,9 +871,7 @@
             }
 
             html += '<a ' + 'href="' + postLink + '" ' + 'class="grid-item uthsc-now--item ' + imageClass + ' ' + postService + ' ' + 'post-0' + (i + 1) + ' ">' +
-
-                '<div class="uthsc-now--container">';
-
+                    '<div class="uthsc-now--container">';
 
             if (postImage == null) {
                 html += '<div class="uthsc-now--message">' +
@@ -874,13 +896,19 @@
                 '</div>'+
                 '</div>';
 
-            html +=
-                    '</div>' +
+            html += '</div>' +
                     '</a>';
         }
 
+        loadPostsFirst += 15;
+        loadPostsLast += 15;
+
+        console.log(loadPostsFirst);
+        console.log(loadPostsLast);
+
         return html;
     }
+
 
     $.ajax({
         type: "GET",
@@ -889,19 +917,14 @@
         success: function (data) {
             posts = data;
             renderNewsPosts('.uthsc-now',posts);
-
-
-            var $grid = $('.grid').imagesLoaded( function(){
-                $grid.masonry({
-                    // set itemSelector so .grid-sizer is not used in layout
-                    itemSelector: '.grid-item',
-                    // use element for option
-                    columnWidth: '.grid-sizer',
-                    percentPosition: true
-                });
-            });
         }
     });
+
+
+    $('.load-more-uthsc-now').click( function(){
+        renderMorePosts('.uthsc-now',posts)
+    });
+
 
 
 </script>
