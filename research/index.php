@@ -327,7 +327,7 @@
                         <!--**********-->
                         <!--Page intro-->
                         <!--**********-->
-                        <h3 class="page-intro">Each fiscal year, our faculty and staff receive
+                        <h3 class="uthsc-page-intro">Each fiscal year, our faculty and staff receive
                             nearly $100 million in research funding, including support from National Institutes of
                             Health grants and private foundations. </h3>
 
@@ -335,7 +335,7 @@
                         <!--*********-->
                         <!--Page lead-->
                         <!--*********-->
-                        <p class="page-lead">Advancing research and economic development is at the core of our mission.
+                        <p class="uthsc-page-lead">Advancing research and economic development is at the core of our mission.
                             Research funding has directly contributed to UTHSC's long record of accomplishments in basic
                             science, applied clinical and translational
                             research, and public health, allowing us to continue our contributions to the health of the
