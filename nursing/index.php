@@ -316,14 +316,14 @@
                         <!--**********-->
                         <!--Page intro-->
                         <!--**********-->
-                        <h3 class="page-intro">Since our founding in 1887 the UTHSC College of Nursing (CON) has been
+                        <h3 class="uthsc-page-intro">Since our founding in 1887 the UTHSC College of Nursing (CON) has been
                             at the forefront of nursing education, scholarship, and innovation.</h3>
 
 
                         <!--*********-->
                         <!--Page lead-->
                         <!--*********-->
-                        <p class="page-lead">We were the first nursing school in the Mid-South. We have lead the way by
+                        <p class="uthsc-page-lead">We were the first nursing school in the Mid-South. We have lead the way by
                             focusing on the science and practice of nursing. Our rigorous and supportive
                             multidisciplinary environment offers the full spectrum of academic nursing training. We
                             provide graduate degrees and specialized certifications to prepare you for a career in
