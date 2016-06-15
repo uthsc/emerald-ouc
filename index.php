@@ -468,7 +468,8 @@
             <!--  Mission Row-->
             <div class="row uthsc-row-space medium-up-2 large-up-4">
                 <div class="columns">
-                    <img src="-resources/2015/images/homepage-academics.jpg" class="uthsc-mission-image">
+                    <img src="-resources/2015/images/mission-academics.jpg" alt="" class="uthsc-mission-image show-for-large">
+                    <img src="-resources/2015/images/mission-academics-mobile.jpg" alt="" class="uthsc-mission-image hide-for-large">
                     <h2>Academics</h2>
                     <p>Since 1911, we have been training health care professionals through education, research, clinical care and public service. Today, our Colleges of Dentistry, Graduate Health Sciences, Health Professions , Medicine, Nursing and Pharmacy serve more than 3,000 students and 1,300 residents, post docs and fellows across four campuses.</p>
                     <ul>
@@ -477,11 +478,13 @@
                         <li><a href="/registrar/">Registrar</a></li>
                         <li><a href="/residency/">Residencies and Fellowships</a></li>
                     </ul>
-                    <hr />
+
                     <a class="button hollow small" href="/education/"><span class="fa fa-plus-circle"></span> Learn More...</a>
                 </div>
+
                 <div class="columns">
-                    <img src="-resources/2015/images/homepage-research.jpg" class="uthsc-mission-image">
+                    <img src="-resources/2015/images/mission-research.jpg" alt="" class="uthsc-mission-image show-for-large">
+                    <img src="-resources/2015/images/mission-research-mobile.jpg" alt="" class="uthsc-mission-image hide-for-large">
                     <h2>Research</h2>
                     <p>UTHSC has a long and rich tradition of accomplishments in basic, clinical and translational research in a wide variety of disciplines focused on the health issues that impact our community, our region, the state of Tennessee and the world.</p>
                     <ul>
@@ -490,11 +493,13 @@
                         <li><a href="research/research_administration/">Grants and Research Agreements</a></li>
                         <li><a href="research/">Office of Research</a></li>
                     </ul>
-                    <hr />
+
                     <a class="button hollow small" href="research/"><span class="fa fa-plus-circle"></span> Learn More...</a>
                 </div>
+
                 <div class="columns">
-                    <img src="-resources/2015/images/homepage-clinical-care.jpg" class="uthsc-mission-image">
+                    <img src="-resources/2015/images/mission-clinical-care.jpg" alt="" class="uthsc-mission-image show-for-large">
+                    <img src="-resources/2015/images/mission-clinical-care-mobile.jpg" alt="" class="uthsc-mission-image hide-for-large">
                     <h2>Clinical Care</H2>
                     <p>Our faculty and students provide health care to the community through our network of hospitals, practice groups, specialty care clinics, and mobile health care facilities.</p>
                     <ul>
@@ -503,11 +508,13 @@
                         <li><a href="/rkstc/">Rachel Kay Stevens Therapy Center</a></li>
                         <li><a href="/ULPS/">UT Le Bonheur Pediatric Specialists</a></li>
                     </ul>
-                    <hr />
+
                     <a class="button hollow small" href="/clinicalcare/"><span class="fa fa-plus-circle"></span> Learn More...</a>
                 </div>
+
                 <div class="columns">
-                    <img src="-resources/2015/images/homepage-public-service.jpg" class="uthsc-mission-image">
+                    <img src="-resources/2015/images/mission-public-service.jpg" alt="" class="uthsc-mission-image show-for-large">
+                    <img src="-resources/2015/images/mission-public-service-mobile.jpg" alt="" class="uthsc-mission-image hide-for-large">
                     <h2>Public Service</h2>
                     <p>Public service is central to our mission. Every year, thousands of faculty, staff and volunteers across four campuses located in Memphis, Knoxville, Chattanooga and Nashville provide clinical care, health education and preventive care programs to the people of Tennessee.</p>
                     <ul>
@@ -516,7 +523,7 @@
                         <li><a href="/fooddrive/">Food Drive</a></li>
                         <li><a href="/hcp/">Health Career Programs</a></li>
                     </ul>
-                    <hr />
+
                     <a class="button hollow small" href="/publicservice/"><span class="fa fa-plus-circle"></span> Learn More...</a>
                 </div>
             </div>
@@ -564,63 +571,25 @@
             </div>
             <!--/Infographics-->
 
-
             <!--Social-->
 
             <div class="row uthsc-social">
                 <div class="columns uthsc-row-title">
                     <h3>UTHSC Now</h3>
                 </div>
-                <div class="columns medium-6 large-4">
-                    <div class="row uthsc-social-boxs">
-                        <a href="http://news.uthsc.edu/six-professors-receive-utaa-awards/">
-                            <div class="columns">
-                                <img src="-resources/2015/images/uthsc-social-news-1.jpg">
-                            </div>
-                        </a>
-                        <a href="https://www.instagram.com/p/BFpQtR6juSm/">
-                            <div class="columns">
-                                <img src="-resources/2015/images/uthsc-social-instagram-1.jpg">
-                            </div>
-                        </a>
-                    </div>
+            </div>
+
+            <div class="row">
+                <div class="uthsc-now-loader" style="color:#006a4d; text-align:center;">
+                    <img src="-resources/2015/images/uthsc-loader.gif" />&nbsp;Loading UTHSC Now
                 </div>
-                <div class="columns medium-6 large-8">
-                    <div class="row uthsc-social-boxs small-centered">
-                        <a href="http://news.uthsc.edu/uthsc-communications-marketing-department-receives-two-awards-alumni-magazines-international-competition/">
-                            <div class="columns medium-12 large-6">
-                                <img src="-resources/2015/images/uthsc-social-news-2.jpg" class="uthsc-social-box-no-image">
-                            </div>
-                        </a>
-                        <a href="https://www.facebook.com/uthsc/posts/10153762268232753">
-                            <div class="columns medium-12 large-6">
-                                <img src="-resources/2015/images/uthsc-social-facebook-1.jpg">
-                            </div>
-                        </a>
-                        <a href="http://news.uthsc.edu/student-government-association-executive-council-honors-faculty-student-leaders-awards-banquet/">
-                            <div class="columns medium-12 large-6">
-                                <img src="-resources/2015/images/uthsc-social-news-4.jpg">
-                            </div>
-                        </a>
-                        <a href="https://twitter.com/uthsc/status/733338438401937408">
-                            <div class="columns medium-12 large-6 show-for-large">
-                                <img src="-resources/2015/images/uthsc-social-twitter-1.jpg">
-                            </div>
-                        </a>
-                        <a href="http://news.uthsc.edu/dr-karen-c-johnson-uthsc-receives-2-3-million-grant-study-weight-loss-increased-physical-activity-affect-aging-individuals-type-2-diabetes/">
-                            <div class="columns medium-12 large-6 show-for-large">
-                                <img src="-resources/2015/images/uthsc-social-news-3.jpg">
-                            </div>
-                        </a>
-                        <a href="https://twitter.com/uthsc/status/732671713792655360">
-                            <div class="columns medium-12 large-6 show-for-large">
-                                <img src="-resources/2015/images/uthsc-social-twitter-2.jpg" class="uthsc-social-box-no-image">
-                            </div>
-                        </a>
-                    </div>
+
+                <div class="uthsc-now grid">
+                    <div class="grid-sizer"></div>
                 </div>
             </div>
 
+            <div class="uthsc-now-more" style="text-align:center;"></div>
 
             <!--/Social-->
         </div>
@@ -836,6 +805,9 @@
 <script src="-resources/2015/js/what-input.min.js"></script>
 <script src="-resources/2015/js/foundation.min.js"></script>
 <script src="-resources/2015/js/uthsc.min.js"></script>
+<script src="-resources/2015/js/masonry.pkgd.min.js"></script>
+<script src="-resources/2015/js/imagesloaded.pkgd.min.js"></script>
+<script src="-resources/2015/js/uthsc-now-homepage.min.js"></script>
 <!--********-->
 <!--/Scripts-->
 <!--********-->
