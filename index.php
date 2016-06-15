@@ -586,12 +586,10 @@
 
                 <div class="uthsc-now grid">
                     <div class="grid-sizer"></div>
-
                 </div>
             </div>
 
-            <div class="button load-more-uthsc-now">Load More</div>
-
+            <div class="uthsc-now-more" style="text-align:center;"></div>
 
             <!--/Social-->
         </div>
