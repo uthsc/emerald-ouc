@@ -120,7 +120,6 @@
                                  action="../search/" method="get" style="margin-bottom:0;">
                                <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
                                       placeholder="search" style="margin-right:0;">
-                               <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
                                <input type="hidden" name="cof" value="FORID:11" />
                                <input type="hidden" name="ie" value="UTF-8" />
                                <input type="hidden" name="col" value="uthsc" />
@@ -161,7 +160,6 @@
                          action="../search/" method="get" style="margin-bottom:0;">
                        <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
                               placeholder="<?php echo $_GET['q'] ?  $_GET['q'] : 'Search &hellip;'?>" style="margin-right:0;">
-                       <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
                        <input type="hidden" name="cof" value="FORID:11" />
                        <input type="hidden" name="ie" value="UTF-8" />
                        <input type="hidden" name="col" value="uthsc" />
@@ -258,7 +256,6 @@
                            <div class="input-group">
                                <input class="input-group-field" type="text" placeholder="Search &hellip;" value="<?php echo $_GET['q'] ?  $_GET['q'] : ''?>" type="search"
                                       aria-label="Search the UTHSC site" role="search" name="q"/>
-                               <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy"/>
                                <input type="hidden" name="cof" value="FORID:11"/>
                                <input type="hidden" name="ie" value="UTF-8"/>
                                <input type="hidden" name="col" value="uthsc"/>
@@ -437,7 +434,6 @@
                      action="search/" method="get" style="margin-bottom:0;">
                    <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
                           placeholder="search" style="margin-right:0;">
-                   <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
                    <input type="hidden" name="cof" value="FORID:11" />
                    <input type="hidden" name="ie" value="UTF-8" />
                    <input type="hidden" name="col" value="uthsc" />
@@ -484,7 +480,6 @@
                <!--Search form-->
                <form class="input-group" aria-label="Search the UTHSC site" action="/search/" method="get" style="margin-bottom:0;">
                    <input type="search" aria-label="Search the UTHSC site" role="search" name="q" placeholder="search" style="margin-right:0;">
-                   <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
                    <input type="hidden" name="cof" value="FORID:11" />
                    <input type="hidden" name="ie" value="UTF-8" />
                    <input type="hidden" name="col" value="uthsc" />
