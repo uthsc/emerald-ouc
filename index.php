@@ -117,7 +117,7 @@
                     <div class="show-for-large">
                         <!--Search form-->
                         <form class="input-group" aria-label="Search the UTHSC site"
-                              action="/search/" method="get" style="margin-bottom:0;">
+                              action="search/" method="get" style="margin-bottom:0;">
                             <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
                                    placeholder="search" style="margin-right:0;">
                             <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
@@ -158,7 +158,7 @@
             <div class="hide-for-large columns small-collapse">
                 <!--Search form-->
                 <form class="input-group" aria-label="Search the UTHSC site"
-                      action="/search/" method="get" style="margin-bottom:0;">
+                      action="search/" method="get" style="margin-bottom:0;">
                     <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
                            placeholder="search" style="margin-right:0;">
                     <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
@@ -655,7 +655,7 @@
     <div class="off-canvas-search">
         <!--Search form-->
         <form class="input-group" aria-label="Search the UTHSC site"
-              action="/search/" method="get" style="margin-bottom:0;">
+              action="search/" method="get" style="margin-bottom:0;">
             <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
                    placeholder="search" style="margin-right:0;">
             <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
@@ -703,7 +703,7 @@
 
     <div class="off-canvas-search">
         <!--Search form-->
-        <form class="input-group" aria-label="Search the UTHSC site" action="/search/" method="get" style="margin-bottom:0;">
+        <form class="input-group" aria-label="Search the UTHSC site" action="search/" method="get" style="margin-bottom:0;">
             <input type="search" aria-label="Search the UTHSC site" role="search" name="q" placeholder="search" style="margin-right:0;">
             <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
             <input type="hidden" name="cof" value="FORID:11" />
