@@ -286,18 +286,51 @@
 
                            <div class="tabs-content" data-tabs-content="example-tabs">
                                <div class="tabs-panel is-active" id="panel1">
-                                   <div id="campus-search-results" class="flex-video" style="height:1100px;">Loading Results</div>
+
+                                   <!--*********************-->
+                                   <!--Campus Search Results-->
+                                   <!--*********************-->
+                                   <script>
+                                       (function() {
+                                           var cx = '016646383533466001202:yuqszdu02uw';
+                                           var gcse = document.createElement('script');
+                                           gcse.type = 'text/javascript';
+                                           gcse.async = true;
+                                           gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                           var s = document.getElementsByTagName('script')[0];
+                                           s.parentNode.insertBefore(gcse, s);
+                                       })();
+                                   </script>
+                                   <gcse:search></gcse:search>
+                                   <!--**********************-->
+                                   <!--/Campus Search Results-->
+                                   <!--**********************-->
+
                                </div>
                                <div class="tabs-panel" id="panel2">
-                                   <div id="system-search-results" class="flex-video" style="height:1100px;">Loading Results</div>
+
+                                   <!--*********************-->
+                                   <!--System Search Results-->
+                                   <!--*********************-->
+                                   <script>
+                                       (function() {
+                                           var cx = '016646383533466001202:yuqszdu02uw';
+                                           var gcse = document.createElement('script');
+                                           gcse.type = 'text/javascript';
+                                           gcse.async = true;
+                                           gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+                                           var s = document.getElementsByTagName('script')[0];
+                                           s.parentNode.insertBefore(gcse, s);
+                                       })();
+                                   </script>
+                                   <gcse:search></gcse:search>
+                                   <!--*********************-->
+                                   <!--System Search Results-->
+                                   <!--*********************-->
+
                                </div>
                            </div>
-
-
-
                        </div>
-
-
 
                        <div class="columns large-6">
                            <h2>People Search</h2>
@@ -333,49 +366,12 @@
                                    </tr>
                                    </tbody>
                                </table>
-
                            </div>
                        </div>
-
                    </div>
-
-
-                   <!--******-->
-                   <!--Campus-->
-                   <!--******-->
-                   <script type="text/javascript"
-                           src="http://www.google.com/coop/cse/brand?form=campus-search-box&amp;lang=en"></script>
-
-                       <script type="text/javascript">
-                           var googleSearchIframeName = "campus-search-results";
-                           var googleSearchFormName = "campus-search-box";
-                           var googleSearchFrameWidth = 700;
-                           var googleSearchDomain = "www.google.com";
-                           var googleSearchResizeIframe = true;
-                           var googleSearchPath = "/cse";
-                       </script>
-
-                       <script type="text/javascript" src="http://www.google.com/afsonline/show_afs_search.js"></script>
-
-
-
                    <!--******-->
                    <!--System-->
                    <!--******-->
-                   <script type="text/javascript"
-                           src="../-resources/2015/js/uthsc_google-search.js"></script>
-
-                   <script type="text/javascript">
-                       var uthscgoogleSearchIframeName = "system-search-results";
-                       var uthscgoogleSearchFormName = "system-search-box";
-                       var uthscgoogleSearchFrameWidth = 700;
-                       var uthscgoogleSearchDomain = "www.google.com";
-                       var uthscgoogleSearchResizeIframe = true;
-                       var uthscgoogleSearchPath = "/cse";
-                   </script>
-
-                   <script type="text/javascript" src="../-resources/2015/js/uthsc_show_afs_search.js"></script>
-
 
 
                </div>
