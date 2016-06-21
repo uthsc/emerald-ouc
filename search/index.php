@@ -266,8 +266,8 @@
                            <h2>Campus Search Results</h2>
 
                            <div class="tabs" data-tabs id="example-tabs">
-                               <div class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></div>
-                               <div class="tabs-title"><a href="#panel2">Tab 2</a></div>
+                               <div class="tabs-title is-active"><a href="#panel1" aria-selected="true">Campus</a></div>
+                               <div class="tabs-title"><a href="#panel2">System</a></div>
                            </div>
 
                            <div class="tabs-content" data-tabs-content="example-tabs">
