@@ -9,7 +9,9 @@
   "license": "MIT",
   "homepage": "http://uthsc.edu",
   "dependencies": {
-    "emerald": "git@github.com:uthsc/emerald.git"
+    "emerald": "uthsc/emerald",
+    "masonry": "^4.1.0",
+    "imagesloaded": "^4.1.0"
   },
   "ignore": [
     "**/.*",

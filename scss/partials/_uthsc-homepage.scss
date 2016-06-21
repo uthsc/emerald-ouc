@@ -1,66 +1,218 @@
 @mixin uthsc-homepage {
+  .row.uthsc-row-space {
+    margin-top: 2rem;
+  }
   .homepage {
     .hero {
       margin-top: 1rem;
     }
-    .tabs {
-      margin-top: -2px;
-    }
-    .tabs dd > a, .tabs .tab-title > a {
-      padding: 0;
-      padding-bottom: .75rem;
-    }
-    h2.tab-header {
-      color: $secondary-color;
-    }
-    ul.tabs li {
-      width: 25%;
-      padding-top: 1rem;
-      &.tab-title.active {
-        background-color: #f5f5f5;
-        position: relative;
-        top: 2px;
-        border: 2px solid #00a5e3;
-        border-bottom: none;
-        border-top: none;
-        a {
-          background-color: transparent;
-        }
-      }
-    }
-    .tabs-content {
-      border: 2px solid #00a5e3;
-      background-color: #f5f5f5;
-      .college-image {
-        margin-bottom: 2rem;
-      }
-      .small-news .news-box {
-        padding: 0 !important;
-      }
-    }
-    .tabs-content .columns:not(.mission-image):not(.college-image) {
-      padding: 0 1rem;
-    }
+
     .columns.mission-image {
       margin-top: -15px;
     }
-    #mobile-navigation {
-      button {
-        width: 100%;
-      }
-    }
+
     .toggle-push-right {
       background-image: url("../images/full-width-menu-button.png");
       background-repeat: no-repeat;
     }
     .fullscreen {
       height: calc(90vh - 105px);
-      background-image: url("../images/fullscreen-students.jpg");
+      background-image: linear-gradient(
+                      rgba(0, 0, 0, 0.65),
+                      rgba(0, 0, 0, 0.45)
+      ),url("../images/fullscreen-students.jpg");
       background-size: cover;
       background-position-x: 100%;
       background-position-y: 80%;
       background-repeat: no-repeat;
+
+      @include uthsc-vertical-center;
+
+      .uthsc-fullscreen-content {
+        color: #fff;
+        font-size: 1.2rem;
+        text-align: center;
+
+        p {
+          line-height: 1.2;
+        }
+
+        @include breakpoint(large) {
+          font-size: 2rem;
+        }
+
+      }
+
     }
+    .uthsc-program-explorer {
+      height:407px;
+
+      h2 {
+        color:#fff;
+        font-size: 2.4rem;
+
+        &.subheader {
+          font-size: 1rem;
+        }
+      }
+
+      .uthsc-program-explorer-tabs {
+        .uthsc-program-explorer-heading {
+          text-align: center;
+          background: $uthsc-green;
+        }
+
+        ul.tabs {
+          margin-right: 0;
+          left: auto;
+          margin-left: initial;
+          text-indent: initial;
+
+          li {
+            width: 100%;
+            line-height: initial;
+            padding: initial;
+            margin-left: initial;
+
+            a {
+              padding: .97rem;
+              font-size: 1.3rem;
+              font-weight: 300;
+
+
+
+              &:hover {
+                color: #fff;
+                background-color: $uthsc-blue-dark;
+              }
+            }
+            &.tabs-title {
+              border-bottom: 1px solid #bbb;
+              background-color: #eee;
+
+              a:after {
+                font-family: fontawesome;
+                content: '\f054\ ';
+                float: right;
+                font-size: 0.9rem;
+                margin-top: 0.2rem;
+              }
+
+              &> a[aria-selected='true'] {
+                color: #222;
+                background-color: #fff;
+                border-left: 4px solid $uthsc-orange;
+                padding-left: 7px;
+                &:after {
+                  color: $uthsc-orange;
+                }
+              }
+            }
+
+            &:before {
+              content: "";
+            }
+          }
+        }
+        .uthsc-program-explorer-content {
+          height: 100%;
+
+          ul {
+            list-style-type: none;
+            line-height: 1.7rem;
+          }
+        }
+        .tabs-content.vertical {
+          border-left: 0;
+          @include breakpoint(medium) {
+            overflow: scroll;
+            -ms-overflow-style: scrollbar;
+            -ms-scroll-limit-x-max: 0;
+            overflow-x: hidden;
+            overflow-x: visible;
+            height: 313px;
+          }
+        }
+
+
+        /* Scrollbar styles */
+        ::-webkit-scrollbar {
+          width: 15px;
+          height: 0;
+        }
+
+        ::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 10px #ddd;
+          border-radius: 30px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+          border-radius: 30px;
+          background: #ddd;
+          //box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+        }
+      }
+      .uthsc-did-you-know {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35)), url("../images/pharmacy-grads.jpg");
+        background-size: cover;
+        background-position: 83%;
+        height: 100%;
+        color: #fff;
+        font-weight: bold;
+
+        @include breakpoint(medium) {
+          border-left: 2rem solid #fff;
+        }
+
+        h2 {
+          border-bottom: 0.4rem solid $uthsc-green;
+          padding: 1rem;
+        }
+        p {
+          font-size: 1.8rem;
+          &.uthsc-did-you-know-number {
+            font-size: 6rem;
+            color: #f77f00;
+            font-weight: bold;
+            margin: 0;
+            line-height: 0.9;
+          }
+        }
+      }
+    }
+
+    .uthsc-people-search {
+      .input-group-field {
+        border-radius: 0;
+        /* height: 3.5rem; */
+        font-size: 1.2rem;
+        padding: 2rem;
+        font-style: italic;
+      }
+      .input-group-button a, .input-group-button input, .input-group-button button {
+        padding: 1.45rem 03rem;
+        font-size: 1.1rem;
+      }
+    }
+    .uthsc-social-boxs {
+      .columns {
+        img {
+          width:100%;
+        }
+        margin-bottom: 1.7rem;
+      }
+      img:not(.uthsc-social-box-no-image) {
+        filter: sepia(.4);
+        &:hover {
+          filter: sepia(0);
+          transition: all 0.5s ease;
+        }
+      }
+      img.uthsc-social-box-no-image:hover {
+        filter: brightness(.9);
+      }
+    }
+
     // Flags
     //  .fullscreen {
     //    width: 100%;
@@ -77,8 +229,10 @@
         .news-box-for {
           font-size: 0.8rem;
           float: left;
-          padding-left: 67px;
-          color: $steel;
+          padding-left: 46px;
+          color: #666666;
+          line-height: 0;
+          margin-bottom: 13px;
         }
       }
       a {
@@ -96,6 +250,27 @@
         font-size: .9rem;
         padding: 0 1rem 0 0;
       }
+
+      figure {
+        float:left;
+        margin-bottom: .25em;
+        margin-right: .75em;
+
+        img {
+          width:100px;
+          height:100px;
+        }
+      }
+
+      .post-01 {
+        @media #{$medium-up} {
+          img {
+            width: 100%;
+            height: inherit;
+          }
+        }
+      }
+
     }
     .hero-name-stripe {
       height: 7vh;
@@ -111,7 +286,7 @@
       margin-bottom: -17vh;
       text-align: center;
     }
-    #numbers h2 {
+    .uthsc-infographics h2 {
       font-weight: bolder;
       font-size: 4rem;
       font-family: inherit;
@@ -121,37 +296,23 @@
       color: #ced0b4;
       margin: 0;
     }
-    #numbers p {
+    .uthsc-infographics p {
       font-size: 0.75rem;
       font-weight: lighter;
     }
-    #numbers p:first-of-type {
+    .uthsc-infographics p:first-of-type {
       font-size: 1.5rem;
       font-weight: bold;
       margin: 0;
     }
-    #numbers span {
+    .uthsc-infographics .uthsc-infographic-highlight {
       font-weight: bold;
       color: #b06010;
       letter-spacing: 6px;
       font-size: 1rem;
       font-variant-ligatures: no-common-ligatures;
     }
-    #events {
-      .event-list p:before {
-        content: '\f073\ ';
-        font-family: fontawesome;
-      }
-      .event-list p {
-        font-size: 11px;
-      }
-      .events {
-        margin: 5px 0;
-      }
-      .inline-list {
-        margin: 0 !important;
-      }
-    }
+
     .blockquote {
       .quotemark {
         color: $gainsboro;
@@ -161,7 +322,6 @@
         p {
           font-size: 1.7vw;
           letter-spacing: 0;
-          line-height: 3.6vw !important;
           @media #{$small-only} {
             font-size: 5vw;
             line-height: 6vw !important;
@@ -173,58 +333,35 @@
       }
     }
 
-    #events {
-      margin: 1.7rem auto;
-      .events:last-of-type {
-        float: left;
-      }
-    }
-    .event-date {
-      border: 1px solid #bbb;
-      padding: .5rem;
-      width: 4.5rem;
-      height: 4.4rem;
-      font-size: 1.4rem;
-      text-align: center;
-      line-height: 1.7rem;
-      border-radius: 7px;
-      background-color: lightgrey;
-      color: #444;
-      font-weight: bold;
-      float: left;
-      margin-right: 0.7rem;
-    }
-    .events p {
-      margin: 0;
-      line-height: 1.2rem;
-      font-size: .85rem;
-    }
-    p.event-title {
-      padding-top: 0.5rem;
-    }
-    .numbers {
+    .uthsc-infographic {
       background-size: contain !important;
       background-repeat: no-repeat !important;
       background-position: center !important;
       margin: 1.5rem 0px !important;
+      padding: 0.5rem;
       &.tennessee {
-        background: url("http://uthsc.edu/test/redesign/nwinn1/_resources/2015/images/uthsc-tennessee-gray.png");
+        background: url("../images/uthsc-tennessee-gray.png");
         &:hover {
-          background: url("http://uthsc.edu/test/redesign/nwinn1/_resources/2015/images/uthsc-tennessee-color.png");
+          background: url("../images/uthsc-tennessee-color.png");
         }
       }
       &.pharmacy {
-        background: url("http://uthsc.edu/test/redesign/nwinn1/_resources/2015/images/numbers-pharmacy-seal.png");
+        background: url("../images/numbers-pharmacy-seal.png");
       }
       &.foam-hand {
-        background: url("http://uthsc.edu/test/redesign/nwinn1/_resources/2015/images/numbers-foam-hand.png");
+        background: url("../images/numbers-foam-hand.png");
       }
       &.billions {
-        background: url("http://uthsc.edu/test/redesign/nwinn1/_resources/2015/images/numbers-billion-b.png");
+        background: url("../images/numbers-billion-b.png");
       }
       &.millions {
-        background: url("http://uthsc.edu/test/redesign/nwinn1/_resources/2015/images/numbers-million-m.png");
+        background: url("../images/numbers-million-m.png");
       }
     }
+    .uthsc-center-graphic {
+      display: block;
+      margin: 1rem auto 0;
+    }
+
   }
 }
