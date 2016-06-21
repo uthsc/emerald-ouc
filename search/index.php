@@ -1,5 +1,3 @@
-<?php include("/var/www/html/_resources/includes/virthosts.php"); ?>
-<!doctype html>
 <html class="no-js" lang="en">
 <head>
     <meta charset="utf-8">
@@ -19,80 +17,24 @@
     <!--****************-->
 
     <title>Search - UTHSC</title>
+
     <link rel="stylesheet" href="../-resources/2015/css/uthsc.css">
     <link rel="stylesheet" href="../-resources/2015/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
+    <link rel="shortcut icon" href="/images/favicon.ico?v=083012-1411" />
 
-
-
-
-      <link rel="shortcut icon" href="/images/favicon.ico?v=083012-1411" /><script type="text/javascript">
-			var page_id="http://www.uthsc.edu/search/index.php";
-		</script><script type="text/javascript">
-       		var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-1243033-1']);
-			_gaq.push(['_setDomainName', 'uthsc.edu']);
-			_gaq.push(['_trackPageview']);
-			
-			(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-			})();
-		</script>
-
-
-    <?php if ($_GET['col'] == "ldap" || $_GET['searchtype'] == "ldap") {
-header("location:http://oracle.uthsc.edu/directory.php?action=SEARCH&p_search=". ($_GET['q']));
-}
-// value for uthsc search 		= "010196583402354315885:vfumswlexgy"
-// value for ut system search = "010196583402354315885:khq6oqhed8g";
-
-$cxvalue = "010196583402354315885:vfumswlexgy";
-if ($_GET['cx'] != "") $cxvalue = $_GET['cx'];
-?><style type="text/css" media="all">
-			#main_content #cse-search-results iframe {width:480px;}
-			#main_content #cse-search-box {margin-bottom:10px;}
-		</style><script type="text/javascript">
-			function changeRadio(searchType){
-				if (searchType == 1)
-					document.getElementById('cxvalue1').value = "010196583402354315885:vfumswlexgy";
-				else if (searchType == 2)
-					document.getElementById('cxvalue1').value = "010196583402354315885:khq6oqhed8g";
-			}
-
-		</script><script type="text/javascript" src="/_resources/scripts/directedit.js"></script><script type="text/javascript">
-					$(document).ready(function(){ directedit(); });
-				</script><script type="text/javascript" src="/_resources/scripts/nested-navigation.js"></script><script type="text/javascript" src="/_resources/scripts/email.js"></script><link rel="stylesheet" href="/_resources/styles/css/jquery-ui-1.10.1.custom.css"
-            type="text/css"
-            media="screen, projection" />
-
-
-<script type="text/javascript">
-		/*  */
-	
-	function changeType(searchType){
-		// value for uthsc search 		= "010196583402354315885:vfumswlexgy"
-  	// value for ut system search = "010196583402354315885:khq6oqhed8g";
-		if (searchType == "uthsc")
-			document.getElementById('cxvalue').value = "010196583402354315885:vfumswlexgy";
-		else if (searchType == "utsys")
-			document.getElementById('cxvalue').value = "010196583402354315885:khq6oqhed8g";
-	}
-	
-	function clearBox(){
-		document.getElementById('some_name').value = '';
-		document.getElementById('some_name').style.background = '#ffffff';
-	}
-	
-	function addLogo(value){
-		if(!value) document.getElementById('some_name').style.background = '#ffffff url(/images/google_custom_search_watermark.gif) no-repeat left';
-	}
-	/*  */
-	</script>
-
+    <?php
+//        if ($_GET['col'] == "ldap" || $_GET['searchtype'] == "ldap") {
+//            header("location:http://oracle.uthsc.edu/directory.php?action=SEARCH&p_search=" . ($_GET['q']));
+//        }
+//        // value for uthsc search 		= "010196583402354315885:vfumswlexgy"
+//        // value for ut system search = "010196583402354315885:khq6oqhed8g";
+//
+//        $cxvalue = "010196583402354315885:vfumswlexgy";
+//        if ($_GET['cx'] != "") $cxvalue = $_GET['cx'];
+//    ?>
 </head>
 
    <body>
@@ -335,22 +277,20 @@ if ($_GET['cx'] != "") $cxvalue = $_GET['cx'];
 
 
                        <div class="columns large-6">
-
-
-
-
                            <h2>Campus Search Results</h2>
 
-                           <ul class="tabs" data-tabs id="example-tabs">
-                               <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
-                               <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
-                           </ul>
+                           <div class="tabs" data-tabs id="example-tabs">
+                               <div class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></div>
+                               <div class="tabs-title"><a href="#panel2">Tab 2</a></div>
+                           </div>
 
                            <div class="tabs-content" data-tabs-content="example-tabs">
                                <div class="tabs-panel is-active" id="panel1">
-                                   <div id="cse-search-results" class="flex-video" style="height:1100px;">Loading Results</div>                               </div>
+                                   <div id="campus-search-results" class="flex-video" style="height:1100px;">Loading Results</div>
+                               </div>
                                <div class="tabs-panel" id="panel2">
-                                   <div id="cse-search-results" class="flex-video" style="height:1100px;">Loading Results</div>                               </div>
+                                   <div id="system-search-results" class="flex-video" style="height:1100px;">Loading Results</div>
+                               </div>
                            </div>
 
 
@@ -399,15 +339,16 @@ if ($_GET['cx'] != "") $cxvalue = $_GET['cx'];
 
                    </div>
 
+
+                   <!--******-->
+                   <!--Campus-->
+                   <!--******-->
                    <script type="text/javascript"
-                           src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
-
-
-
+                           src="http://www.google.com/coop/cse/brand?form=campus-search-box&amp;lang=en"></script>
 
                        <script type="text/javascript">
-                           var googleSearchIframeName = "cse-search-results";
-                           var googleSearchFormName = "cse-search-box";
+                           var googleSearchIframeName = "campus-search-results";
+                           var googleSearchFormName = "campus-search-box";
                            var googleSearchFrameWidth = 700;
                            var googleSearchDomain = "www.google.com";
                            var googleSearchResizeIframe = true;
@@ -415,6 +356,26 @@ if ($_GET['cx'] != "") $cxvalue = $_GET['cx'];
                        </script>
 
                        <script type="text/javascript" src="http://www.google.com/afsonline/show_afs_search.js"></script>
+
+
+
+                   <!--******-->
+                   <!--System-->
+                   <!--******-->
+                   <script type="text/javascript"
+                           src="../-resources/2015/js/uthsc_google-search.js"></script>
+
+                   <script type="text/javascript">
+                       var uthscgoogleSearchIframeName = "system-search-results";
+                       var uthscgoogleSearchFormName = "system-search-box";
+                       var uthscgoogleSearchFrameWidth = 700;
+                       var uthscgoogleSearchDomain = "www.google.com";
+                       var uthscgoogleSearchResizeIframe = true;
+                       var uthscgoogleSearchPath = "/cse";
+                   </script>
+
+                   <script type="text/javascript" src="../-resources/2015/js/uthsc_show_afs_search.js"></script>
+
 
 
                </div>
@@ -627,14 +588,28 @@ if ($_GET['cx'] != "") $cxvalue = $_GET['cx'];
        <script src="../-resources/2015/js/what-input.min.js"></script>
        <script src="../-resources/2015/js/foundation.min.js"></script>
        <script src="../-resources/2015/js/uthsc.min.js"></script>
-       <script src="../-resources/2015/js/masonry.pkgd.min.js"></script>
-       <script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
-       <script src="../-resources/2015/js/imagesloaded.pkgd.min.js"></script>
-       <script src="../-resources/2015/js/uthsc-now.min.js"></script>
-
        <!--********-->
        <!--/Scripts-->
        <!--********-->
 
+<!--       <script type="text/javascript">-->
+<!--           function changeRadio(searchType) {-->
+<!--               if (searchType == 1)-->
+<!--                   document.getElementById('cxvalue1').value = "010196583402354315885:vfumswlexgy";-->
+<!--               else if (searchType == 2)-->
+<!--                   document.getElementById('cxvalue1').value = "010196583402354315885:khq6oqhed8g";-->
+<!--           }-->
+<!--       </script>-->
+
+<!--       <script type="text/javascript">-->
+<!--           function changeType(searchType) {-->
+<!--               // value for uthsc search 		= "010196583402354315885:vfumswlexgy"-->
+<!--               // value for ut system search = "010196583402354315885:khq6oqhed8g";-->
+<!--               if (searchType == "uthsc")-->
+<!--                   document.getElementById('cxvalue').value = "010196583402354315885:vfumswlexgy";-->
+<!--               else if (searchType == "utsys")-->
+<!--                   document.getElementById('cxvalue').value = "010196583402354315885:khq6oqhed8g";-->
+<!--           }-->
+<!--       </script>-->
    </body>
 </html>
