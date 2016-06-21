@@ -233,7 +233,6 @@
        <!--Content-->
        <!--*******-->
        <div class="main-content" id="main-content" aria-label="Page content" role="main">
-
            <div class="row">
                <div class="columns">
                    <h1>UTHSC Search</h1>
@@ -241,7 +240,7 @@
                    <!--Search form-->
                    <form class="row uthsc-people-search uthsc-row-space show-for-large" aria-label="Search the UTHSC site"
                          action="../search/" method="get">
-                       <div class="columns callout">
+                       <div class="columns">
                            <div class="input-group">
                                <input class="input-group-field" type="text" placeholder="Search &hellip;" value="<?php echo $_GET['q'] ?  $_GET['q'] : ''?>" type="search"
                                       aria-label="Search the UTHSC site" role="search" name="q"/>
@@ -250,119 +249,91 @@
                                <input type="hidden" name="col" value="uthsc"/>
                                <div class="input-group-button">
                                    <button type="submit" class="button" aria-label="Submit search form">
-                                       <span class="fa fa-search"></span>
+                                       Search <span class="fa fa-search"></span>
                                    </button>
                                </div>
                            </div>
                        </div>
                    </form>
                    <!--/Search form-->
-
-                   <div class="row">
-
-
-
-                       <div class="columns large-6">
-                           <h2>Campus Search Results</h2>
-
-                           <div class="tabs" data-tabs id="example-tabs">
-                               <div class="tabs-title is-active"><a href="#panel1" aria-selected="true">Campus</a></div>
-                               <div class="tabs-title"><a href="#panel2">System</a></div>
-                           </div>
-
-                           <div class="tabs-content" data-tabs-content="example-tabs">
-                               <div class="tabs-panel is-active" id="panel1">
-
-                                   <!--*********************-->
-                                   <!--Campus Search Results-->
-                                   <!--*********************-->
-                                   <script>
-                                       (function() {
-                                           var cx = '016646383533466001202:yuqszdu02uw';
-                                           var gcse = document.createElement('script');
-                                           gcse.type = 'text/javascript';
-                                           gcse.async = true;
-                                           gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                                           var s = document.getElementsByTagName('script')[0];
-                                           s.parentNode.insertBefore(gcse, s);
-                                       })();
-                                   </script>
-                                   <gcse:search></gcse:search>
-                                   <!--**********************-->
-                                   <!--/Campus Search Results-->
-                                   <!--**********************-->
-
-                               </div>
-                               <div class="tabs-panel" id="panel2">
-
-                                   <!--*********************-->
-                                   <!--System Search Results-->
-                                   <!--*********************-->
-                                   <script>
-                                       (function() {
-                                           var cx = '016646383533466001202:yuqszdu02uw';
-                                           var gcse = document.createElement('script');
-                                           gcse.type = 'text/javascript';
-                                           gcse.async = true;
-                                           gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-                                           var s = document.getElementsByTagName('script')[0];
-                                           s.parentNode.insertBefore(gcse, s);
-                                       })();
-                                   </script>
-                                   <gcse:search></gcse:search>
-                                   <!--*********************-->
-                                   <!--System Search Results-->
-                                   <!--*********************-->
-
-                               </div>
-                           </div>
-                       </div>
-
-                       <div class="columns large-6">
-                           <h2>People Search</h2>
-                           <div class="callout">
-
-                               <table>
-                                   <thead>
-                                   <tr>
-                                       <th width="200">Name</th>
-                                       <th>NetID</th>
-                                       <th width="150">Phone</th>
-                                       <th width="150">Department/College</th>
-                                   </tr>
-                                   </thead>
-                                   <tbody>
-                                   <tr>
-                                       <td>Spake, George P</td>
-                                       <td>gspake1</td>
-                                       <td>(901) 448-1888</td>
-                                       <td>ITS Web Services</td>
-                                   </tr>
-                                   <tr>
-                                       <td>Content Goes Here</td>
-                                       <td>gspake1</td>
-                                       <td>Content Goes Here</td>
-                                       <td>Content Goes Here</td>
-                                   </tr>
-                                   <tr>
-                                       <td>Content Goes Here</td>
-                                       <td>gspake1</td>
-                                       <td>Content Goes Here</td>
-                                       <td>Content Goes Here</td>
-                                   </tr>
-                                   </tbody>
-                               </table>
-                           </div>
-                       </div>
-                   </div>
-                   <!--******-->
-                   <!--System-->
-                   <!--******-->
-
-
                </div>
            </div>
 
+           <div class="row">
+               <div class="columns large-6">
+                   <ul class="tabs" data-tabs id="example-tabs">
+                       <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Campus</a></li>
+                       <li class="tabs-title"><a href="#panel2">System</a></li>
+                   </ul>
+
+                   <div class="tabs-content" data-tabs-content="example-tabs">
+                       <div class="tabs-panel is-active" id="panel1">
+
+                           <!--*********************-->
+                           <!--Campus Search Results-->
+                           <!--*********************-->
+                           <div class="flex-video" style="height:1350px;">
+                               <iframe frameBorder="0" src="campus-search.html?q=<?php echo $_GET["q"] ?>"></iframe>
+                           </div>
+
+                           <!--**********************-->
+                           <!--/Campus Search Results-->
+                           <!--**********************-->
+
+                       </div>
+                       <div class="tabs-panel" id="panel2">
+
+                           <!--*********************-->
+                           <!--System Search Results-->
+                           <!--*********************-->
+                           <div class="flex-video" style="height:1350px;">
+                               <iframe frameBorder="0" src="system-search.html?q=<?php echo $_GET["q"] ?>"></iframe>
+                           </div>
+                           <!--*********************-->
+                           <!--System Search Results-->
+                           <!--*********************-->
+
+                       </div>
+                   </div>
+               </div>
+
+               <div class="columns large-6">
+                   <h2>People Search</h2>
+                   <div class="callout">
+
+                       <table>
+                           <thead>
+                           <tr>
+                               <th width="200">Name</th>
+                               <th>NetID</th>
+                               <th width="150">Phone</th>
+                               <th width="150">Department/College</th>
+                           </tr>
+                           </thead>
+                           <tbody>
+                           <tr>
+                               <td>Spake, George P</td>
+                               <td>gspake1</td>
+                               <td>(901) 448-1888</td>
+                               <td>ITS Web Services</td>
+                           </tr>
+                           <tr>
+                               <td>Content Goes Here</td>
+                               <td>gspake1</td>
+                               <td>Content Goes Here</td>
+                               <td>Content Goes Here</td>
+                           </tr>
+                           <tr>
+                               <td>Content Goes Here</td>
+                               <td>gspake1</td>
+                               <td>Content Goes Here</td>
+                               <td>Content Goes Here</td>
+                           </tr>
+                           </tbody>
+                       </table>
+                   </div>
+               </div>
+           </div>
        </div>
 
            <!--******-->
