@@ -24,17 +24,6 @@
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
     <link rel="shortcut icon" href="/images/favicon.ico?v=083012-1411" />
-
-    <?php
-//        if ($_GET['col'] == "ldap" || $_GET['searchtype'] == "ldap") {
-//            header("location:http://oracle.uthsc.edu/directory.php?action=SEARCH&p_search=" . ($_GET['q']));
-//        }
-//        // value for uthsc search 		= "010196583402354315885:vfumswlexgy"
-//        // value for ut system search = "010196583402354315885:khq6oqhed8g";
-//
-//        $cxvalue = "010196583402354315885:vfumswlexgy";
-//        if ($_GET['cx'] != "") $cxvalue = $_GET['cx'];
-//    ?>
 </head>
 
    <body>
@@ -582,25 +571,5 @@
        <!--********-->
        <!--/Scripts-->
        <!--********-->
-
-<!--       <script type="text/javascript">-->
-<!--           function changeRadio(searchType) {-->
-<!--               if (searchType == 1)-->
-<!--                   document.getElementById('cxvalue1').value = "010196583402354315885:vfumswlexgy";-->
-<!--               else if (searchType == 2)-->
-<!--                   document.getElementById('cxvalue1').value = "010196583402354315885:khq6oqhed8g";-->
-<!--           }-->
-<!--       </script>-->
-
-<!--       <script type="text/javascript">-->
-<!--           function changeType(searchType) {-->
-<!--               // value for uthsc search 		= "010196583402354315885:vfumswlexgy"-->
-<!--               // value for ut system search = "010196583402354315885:khq6oqhed8g";-->
-<!--               if (searchType == "uthsc")-->
-<!--                   document.getElementById('cxvalue').value = "010196583402354315885:vfumswlexgy";-->
-<!--               else if (searchType == "utsys")-->
-<!--                   document.getElementById('cxvalue').value = "010196583402354315885:khq6oqhed8g";-->
-<!--           }-->
-<!--       </script>-->
    </body>
 </html>
