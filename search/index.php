@@ -235,11 +235,13 @@
        <div class="main-content" id="main-content" aria-label="Page content" role="main">
            <div class="row">
                <div class="columns">
-                   <h1>UTHSC Search</h1>
+                   <div class="columns uthsc-row-title" style="border:0; margin-bottom:0; margin-top:2em;">
+                       <h1>Search UTHSC</h1>
+                   </div>
 
                    <!--Search form-->
-                   <form class="row uthsc-people-search uthsc-row-space show-for-large" aria-label="Search the UTHSC site"
-                         action="../search/" method="get">
+                   <form class="row uthsc-people-search show-for-large" aria-label="Search the UTHSC site"
+                         action="../search/" method="get" <?php echo($_GET['q'] ? '' : 'style="margin-bottom:30em;"') ?>>
                        <div class="columns">
                            <div class="input-group">
                                <input class="input-group-field" type="text" placeholder="Search &hellip;" value="<?php echo $_GET['q'] ?  $_GET['q'] : ''?>" type="search"
@@ -259,7 +261,7 @@
                </div>
            </div>
 
-           <div class="row">
+           <div class="row" <?php echo($_GET['q'] ? '' : 'style="display:none;"') ?>>
                <div class="columns large-6">
                    <ul class="tabs" data-tabs id="example-tabs">
                        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Campus</a></li>
