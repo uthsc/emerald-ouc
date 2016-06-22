@@ -340,16 +340,6 @@
            <!--Footer-->
            <!--******-->
 
-           <!--**************-->
-           <!--Last Published-->
-           <!--**************-->
-           <div class="uthsc-last-published text-center">
-               <p><small>Last Published: June 7, 2016</small></p>
-           </div>
-           <!--***************-->
-           <!--/Last Published-->
-           <!--***************-->
-
 
            <!--*************-->
            <!--Global Footer-->
