@@ -39,9 +39,7 @@
          */
         echo $_GET['col'] ?  '<script>var searchUthscType = "' . $_GET['col'] . '"</script>' : '';
     ?>
-</head>
 
-   <body>
 
     <style>
         .uthsc-banner form {
@@ -56,7 +54,9 @@
     <!--*************************-->
     <!--Headcode for Search UTHSC-->
     <!--*************************-->
+</head>
 
+<body>
 
    <a href="#main-content" class="show-on-focus">Skip to content</a>
 
@@ -136,11 +136,14 @@
                            <!--Search form-->
                            <form class="input-group" aria-label="Search the UTHSC site"
                                  action="../search/" method="get" style="margin-bottom:0;">
-                               <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
-                                      placeholder="search" style="margin-right:0;">
-                               <input type="hidden" name="cof" value="FORID:11" />
-                               <input type="hidden" name="ie" value="UTF-8" />
-                               <input type="hidden" name="col" value="uthsc" />
+                               <input type="search"
+                                      placeholder="Search &hellip;"
+                                      value="<?php echo trim($_GET['q']); ?>"
+                                      type="search"
+                                      aria-label="Search the UTHSC site"
+                                      role="search"
+                                      name="q"
+                                      style="margin-right:0;"/>
                                <div class="input-group-button">
                                    <button type="submit" class="button" aria-label="Submit search form">
                                        <span class="fa fa-search"></span>
@@ -172,15 +175,11 @@
            </div>
 
            <div class="row">
-               <div class="columns small-collapse hide-for-large">
+               <div class="columns small-collapse">
                    <!--Search form-->
                    <form class="input-group" aria-label="Search the UTHSC site"
                          action="../search/" method="get" style="margin-bottom:0;">
-                       <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
-                              placeholder="<?php echo $_GET['q'] ?  $_GET['q'] : 'Search &hellip;'?>" style="margin-right:0;">
-                       <input type="hidden" name="cof" value="FORID:11" />
-                       <input type="hidden" name="ie" value="UTF-8" />
-                       <input type="hidden" name="col" value="uthsc" />
+                       <?php echo '<input class="input-group-field" type="search" placeholder="Search &hellip;" value="' . trim($_GET['q']) .  '" type="search" aria-label="Search the UTHSC site" role="search" name="q"/>'; ?>
                        <div class="input-group-button">
                            <button type="submit" class="button" aria-label="Submit search form">
                                <span class="fa fa-search"></span>
@@ -251,22 +250,30 @@
        <!--Content-->
        <!--*******-->
        <div class="main-content" id="main-content" aria-label="Page content" role="main">
+
+
+           <!--title-->
            <div class="row">
                <div class="columns">
-                   <div class="columns uthsc-row-title" style="border:0; margin-bottom:0; margin-top:2em;">
+                   <div class="columns uthsc-row-title">
                        <h1>Search UTHSC</h1>
                    </div>
+               </div>
+           </div>
+           <!--/title-->
 
-                   <!--Search form-->
-                   <form class="row uthsc-people-search show-for-large" aria-label="Search the UTHSC site"
-                         action="../search/" method="get" <?php echo($_GET['q'] ? '' : 'style="margin-bottom:30em;"') ?>>
+
+           <!--row-->
+           <div class="row expanded">
+               <div class="columns">
+
+                   <!--*****************-->
+                   <!--UTHSC search form-->
+                   <!--*****************-->
+                   <?php echo '<form class="row" aria-label="Search the UTHSC site" action="../search/" method="get" ' . ($_GET['q'] ? '' : 'style="margin-bottom:30em;"') . '>'; ?>
                        <div class="columns">
                            <div class="input-group">
-                               <input class="input-group-field" type="text" placeholder="Search &hellip;" value="<?php echo $_GET['q'] ?  $_GET['q'] : ''?>" type="search"
-                                      aria-label="Search the UTHSC site" role="search" name="q"/>
-                               <input type="hidden" name="cof" value="FORID:11"/>
-                               <input type="hidden" name="ie" value="UTF-8"/>
-                               <input type="hidden" name="col" value="uthsc"/>
+                               <?php echo '<input class="input-group-field" type="search" placeholder="Search &hellip;" value="' . trim($_GET['q']) .  '" type="search" aria-label="Search the UTHSC site" role="search" name="q"/>'; ?>
                                <div class="input-group-button">
                                    <button type="submit" class="button" aria-label="Submit search form">
                                        Search <span class="fa fa-search"></span>
@@ -274,117 +281,136 @@
                                </div>
                            </div>
                        </div>
-                   </form>
-                   <!--/Search form-->
+                   <?php echo '</form>'; ?>
+                   <!--******************-->
+                   <!--/UTHSC search form-->
+                   <!--******************-->
+
                </div>
            </div>
+           <!--/row-->
 
-           <div class="row search-uthsc-results" style="display:none;">
-               <div class="columns large-6">
-                   <ul class="tabs" data-tabs id="example-tabs">
-                       <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Campus</a></li>
-                       <li class="tabs-title"><a href="#panel2">System</a></li>
-                   </ul>
+           <!--row-->
+           <div class="row expanded">
+               <div class="columns">
 
-                   <div class="tabs-content" data-tabs-content="example-tabs">
-                       <div class="tabs-panel is-active" id="panel1">
+                   <!--********************-->
+                   <!--UTHSC search results-->
+                   <!--********************-->
+                   <div class="row search-uthsc-results" style="display:none;">
+                       <div class="columns large-6">
+                           <ul class="tabs" data-tabs id="example-tabs">
+                               <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Campus</a></li>
+                               <li class="tabs-title"><a href="#panel2">System</a></li>
+                           </ul>
 
-                           <!--*********************-->
-                           <!--Campus Search Results-->
-                           <!--*********************-->
-                           <div class="flex-video" style="height:1350px;">
-                               <iframe frameBorder="0" src="campus-search.html?q=<?php echo $_GET["q"] ?>"></iframe>
+                           <div class="tabs-content" data-tabs-content="example-tabs">
+                               <div class="tabs-panel is-active" id="panel1">
+
+                                   <!--*********************-->
+                                   <!--Campus Search Results-->
+                                   <!--*********************-->
+                                   <div class="flex-video" style="height:1350px;">
+                                       <iframe frameBorder="0" src="campus-search.html?q=<?php echo $_GET["q"] ?>"></iframe>
+                                   </div>
+
+                                   <!--**********************-->
+                                   <!--/Campus Search Results-->
+                                   <!--**********************-->
+
+                               </div>
+                               <div class="tabs-panel" id="panel2">
+
+                                   <!--*********************-->
+                                   <!--System Search Results-->
+                                   <!--*********************-->
+                                   <div class="flex-video" style="height:1350px;">
+                                       <iframe frameBorder="0" src="system-search.html?q=<?php echo $_GET["q"] ?>"></iframe>
+                                   </div>
+                                   <!--*********************-->
+                                   <!--System Search Results-->
+                                   <!--*********************-->
+
+                               </div>
                            </div>
-
-                           <!--**********************-->
-                           <!--/Campus Search Results-->
-                           <!--**********************-->
-
                        </div>
-                       <div class="tabs-panel" id="panel2">
 
-                           <!--*********************-->
-                           <!--System Search Results-->
-                           <!--*********************-->
-                           <div class="flex-video" style="height:1350px;">
-                               <iframe frameBorder="0" src="system-search.html?q=<?php echo $_GET["q"] ?>"></iframe>
+                       <div class="columns large-6">
+                           <h2>People Search</h2>
+                           <div class="callout">
+
+                               <table>
+                                   <thead>
+                                   <tr>
+                                       <th width="200">Name</th>
+                                       <th>NetID</th>
+                                       <th width="150">Phone</th>
+                                       <th width="150">Department/College</th>
+                                   </tr>
+                                   </thead>
+                                   <tbody>
+                                   <tr>
+                                       <td>Spake, George P</td>
+                                       <td>gspake1</td>
+                                       <td>(901) 448-1888</td>
+                                       <td>ITS Web Services</td>
+                                   </tr>
+                                   <tr>
+                                       <td>Content Goes Here</td>
+                                       <td>gspake1</td>
+                                       <td>Content Goes Here</td>
+                                       <td>Content Goes Here</td>
+                                   </tr>
+                                   <tr>
+                                       <td>Content Goes Here</td>
+                                       <td>gspake1</td>
+                                       <td>Content Goes Here</td>
+                                       <td>Content Goes Here</td>
+                                   </tr>
+                                   </tbody>
+                               </table>
                            </div>
-                           <!--*********************-->
-                           <!--System Search Results-->
-                           <!--*********************-->
-
                        </div>
                    </div>
-               </div>
+                   <!--*********************-->
+                   <!--/UTHSC search results-->
+                   <!--*********************-->
 
-               <div class="columns large-6">
-                   <h2>People Search</h2>
-                   <div class="callout">
-
-                       <table>
-                           <thead>
-                           <tr>
-                               <th width="200">Name</th>
-                               <th>NetID</th>
-                               <th width="150">Phone</th>
-                               <th width="150">Department/College</th>
-                           </tr>
-                           </thead>
-                           <tbody>
-                           <tr>
-                               <td>Spake, George P</td>
-                               <td>gspake1</td>
-                               <td>(901) 448-1888</td>
-                               <td>ITS Web Services</td>
-                           </tr>
-                           <tr>
-                               <td>Content Goes Here</td>
-                               <td>gspake1</td>
-                               <td>Content Goes Here</td>
-                               <td>Content Goes Here</td>
-                           </tr>
-                           <tr>
-                               <td>Content Goes Here</td>
-                               <td>gspake1</td>
-                               <td>Content Goes Here</td>
-                               <td>Content Goes Here</td>
-                           </tr>
-                           </tbody>
-                       </table>
-                   </div>
                </div>
            </div>
+           <!--row-->
+
        </div>
 
-           <!--******-->
-           <!--Footer-->
-           <!--******-->
+       <!--******-->
+       <!--Footer-->
+       <!--******-->
 
 
-           <!--*************-->
-           <!--Global Footer-->
-           <!--*************-->
-           <?php include('../uthsc-global-footer.php') ?>
-           <!--**************-->
-           <!--/Global Footer-->
-           <!--**************-->
+       <!--*************-->
+       <!--Global Footer-->
+       <!--*************-->
+       <?php include('../uthsc-global-footer.php') ?>
+       <!--**************-->
+       <!--/Global Footer-->
+       <!--**************-->
 
-           <!--*******-->
-           <!--/Footer-->
-           <!--*******-->
+       <!--*******-->
+       <!--/Footer-->
+       <!--*******-->
 
 
-           <!--************************************-->
-           <!--Mobile navigation bottom spacing fix-->
-           <!--************************************-->
-           <div class="mobile-nav-bottom-spacing-fix hide-for-large"></div>
+       <!--************************************-->
+       <!--Mobile navigation bottom spacing fix-->
+       <!--************************************-->
+       <div class="mobile-nav-bottom-spacing-fix hide-for-large"></div>
 
-           <!--Safari bottom nav fix-->
-           <div class="safari-bottom-nav-fix"></div>
-           <!--Safari bottom nav fix-->
-           <!--*************************************-->
-           <!--/Mobile navigation bottom spacing fix-->
-           <!--*************************************-->
+       <!--Safari bottom nav fix-->
+       <div class="safari-bottom-nav-fix"></div>
+       <!--Safari bottom nav fix-->
+       <!--*************************************-->
+       <!--/Mobile navigation bottom spacing fix-->
+       <!--*************************************-->
 
        </div>
        <!--*******************-->
@@ -401,12 +427,9 @@
            <div class="off-canvas-search">
                <!--Search form-->
                <form class="input-group" aria-label="Search the UTHSC site"
-                     action="search/" method="get" style="margin-bottom:0;">
-                   <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
-                          placeholder="search" style="margin-right:0;">
-                   <input type="hidden" name="cof" value="FORID:11" />
-                   <input type="hidden" name="ie" value="UTF-8" />
-                   <input type="hidden" name="col" value="uthsc" />
+                     action="../search/" method="get" style="margin-bottom:0;">
+                   <?php echo '<input class="input-group-field" type="search" placeholder="Search &hellip;" value="' . trim($_GET['q']) .  '" type="search" aria-label="Search the UTHSC site" role="search" name="q"/>'; ?>
+
                    <div class="input-group-button">
                        <button type="submit" class="button" aria-label="Submit search form">
                            <span class="fa fa-search"></span>
@@ -448,11 +471,9 @@
 
            <div class="off-canvas-search">
                <!--Search form-->
-               <form class="input-group" aria-label="Search the UTHSC site" action="/search/" method="get" style="margin-bottom:0;">
-                   <input type="search" aria-label="Search the UTHSC site" role="search" name="q" placeholder="search" style="margin-right:0;">
-                   <input type="hidden" name="cof" value="FORID:11" />
-                   <input type="hidden" name="ie" value="UTF-8" />
-                   <input type="hidden" name="col" value="uthsc" />
+               <form class="input-group" aria-label="Search the UTHSC site" action="../search/" method="get" style="margin-bottom:0;">
+                   <?php echo '<input class="input-group-field" type="search" placeholder="Search &hellip;" value="' . trim($_GET['q']) .  '" type="search" aria-label="Search the UTHSC site" role="search" name="q"/>'; ?>
+
                    <div class="input-group-button">
                        <button type="submit" class="button" aria-label="Submit search form">
                            <span class="fa fa-search"></span>
@@ -560,7 +581,7 @@
        <!--*************************-->
        <script>
            /*
-            * If the searchUTHSCVariable is defined, remove the style attribute from search results
+            * If the searchUthscVariable is defined, remove the style attribute from search results
             */
            $(document).ready(function(){
                if (typeof searchUthscQuery !== 'undefined') {
@@ -580,8 +601,9 @@
                }
            });
        </script>
-       <!--********-->
-       <!--/Scripts-->
-       <!--********-->
+       <!--**************************-->
+       <!--/Footcode for Search UTHSC-->
+       <!--**************************-->
+
    </body>
 </html>
