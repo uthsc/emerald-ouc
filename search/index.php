@@ -136,14 +136,7 @@
                            <!--Search form-->
                            <form class="input-group" aria-label="Search the UTHSC site"
                                  action="../search/" method="get" style="margin-bottom:0;">
-                               <input type="search"
-                                      placeholder="Search &hellip;"
-                                      value="<?php echo trim($_GET['q']); ?>"
-                                      type="search"
-                                      aria-label="Search the UTHSC site"
-                                      role="search"
-                                      name="q"
-                                      style="margin-right:0;"/>
+                               <?php echo '<input class="input-group-field" type="search" placeholder="Search &hellip;" value="' . trim($_GET['q']) .  '" type="search" aria-label="Search the UTHSC site" role="search" name="q"/>'; ?>
                                <div class="input-group-button">
                                    <button type="submit" class="button" aria-label="Submit search form">
                                        <span class="fa fa-search"></span>
