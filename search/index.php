@@ -563,7 +563,7 @@
        <script src="../-resources/2015/js/what-input.min.js"></script>
        <script src="../-resources/2015/js/foundation.min.js"></script>
        <script src="../-resources/2015/js/uthsc.min.js"></script>
-       <script src="http://www.uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/js/uthsc-emergency-notification.min.js"></script>
+       <script src="../-resources/2015/js/uthsc-emergency-notification.min.js"></script>
        <!--********-->
        <!--/Scripts-->
        <!--********-->
