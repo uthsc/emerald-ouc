@@ -24,11 +24,20 @@
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
     <link rel="shortcut icon" href="/images/favicon.ico?v=083012-1411" />
+
+    <!--*************************-->
+    <!--Headcode for Search UTHSC-->
+    <!--*************************-->
     <?php
         /*
          * Assign search query to global js variable
          */
         echo $_GET['q'] ?  '<script>var searchUthscQuery = "' . $_GET['q'] . '"</script>' : '';
+
+        /*
+         * Assign search type to global js variable
+         */
+        echo $_GET['col'] ?  '<script>var searchUthscType = "' . $_GET['col'] . '"</script>' : '';
     ?>
 </head>
 
@@ -542,6 +551,18 @@
            $(document).ready(function(){
                if (typeof searchUthscQuery !== 'undefined') {
                    $('.search-uthsc-results').removeAttr("style");
+               }
+           });
+
+           /*
+            * If the searchUthscType is utsys, make the System tab active
+            */
+           $(document).ready(function(){
+               if (typeof searchUthscType !== 'undefined') {
+                   if (searchUthscType == 'utsys') {
+                       console.log(searchUthscType)
+                       $('.tabs #panel2-label').click();
+                   }
                }
            });
        </script>
