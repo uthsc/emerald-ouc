@@ -24,6 +24,12 @@
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
     <link rel="shortcut icon" href="/images/favicon.ico?v=083012-1411" />
+    <?php
+        /*
+         * Assign search query to global js variable
+         */
+        echo $_GET['q'] ?  '<script>var searchUthscQuery = "' . $_GET['q'] . '"</script>' : '';
+    ?>
 </head>
 
    <body>
@@ -261,7 +267,7 @@
                </div>
            </div>
 
-           <div class="row" <?php echo($_GET['q'] ? '' : 'style="display:none;"') ?>>
+           <div class="row search-uthsc-results" style="display:none;">
                <div class="columns large-6">
                    <ul class="tabs" data-tabs id="example-tabs">
                        <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Campus</a></li>
@@ -531,6 +537,16 @@
        <script src="../-resources/2015/js/what-input.min.js"></script>
        <script src="../-resources/2015/js/foundation.min.js"></script>
        <script src="../-resources/2015/js/uthsc.min.js"></script>
+       <script>
+           /*
+            * If the searchUTHSCVariable is defined, remove the style attribute from search results
+            */
+           $(document).ready(function(){
+               if (typeof searchUthscQuery !== 'undefined') {
+                   $('.search-uthsc-results').removeAttr("style");
+               }
+           });
+       </script>
        <!--********-->
        <!--/Scripts-->
        <!--********-->
