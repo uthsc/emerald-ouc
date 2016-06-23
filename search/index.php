@@ -526,6 +526,15 @@
        <script src="../-resources/2015/js/what-input.min.js"></script>
        <script src="../-resources/2015/js/foundation.min.js"></script>
        <script src="../-resources/2015/js/uthsc.min.js"></script>
+       <script src="http://www.uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/js/uthsc-emergency-notification.min.js"></script>
+       <!--********-->
+       <!--/Scripts-->
+       <!--********-->
+
+
+       <!--*************************-->
+       <!--Footcode for Search UTHSC-->
+       <!--*************************-->
        <script>
            /*
             * If the searchUTHSCVariable is defined, remove the style attribute from search results
