@@ -176,18 +176,7 @@
        <!--**********************-->
        <!--Emergency Notification-->
        <!--**********************-->
-       <!--<div class="row expanded hide-for-print">-->
-       <!--<div class="columns callout alert large-12" style="margin-bottom:0; padding:0;" data-closable>-->
-       <!--<div class="row">-->
-       <!--<h2>Emergency Notification!</h2>-->
-       <!--<p>This section will be used for emergency notifications.</p>-->
-
-       <!--<button class="close-button" aria-label="Dismiss alert" type="button" data-close>-->
-       <!--<span aria-hidden="true">&times;</span>-->
-       <!--</button>-->
-       <!--</div>-->
-       <!--</div>-->
-       <!--</div>-->
+       <div class="row expanded hide-for-print uthsc-emergency-notification"></div>
        <!--***********************-->
        <!--/Emergency Notification-->
        <!--***********************-->
