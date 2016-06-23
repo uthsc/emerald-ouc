@@ -43,6 +43,20 @@
 
    <body>
 
+    <style>
+        .uthsc-banner form {
+            display:none;
+        }
+
+        .uthsc-row-title {
+            border:0;
+            margin-bottom:0;
+        }
+    </style>
+    <!--*************************-->
+    <!--Headcode for Search UTHSC-->
+    <!--*************************-->
+
 
    <a href="#main-content" class="show-on-focus">Skip to content</a>
 
