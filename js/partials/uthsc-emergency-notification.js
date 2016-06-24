@@ -22,7 +22,7 @@ function renderUthscAlert(uthscAlert) {
 
 		//generate html
 		html += '<div class="columns callout large-12 ' + callOutColor + '"' +
-			'style="margin-bottom:0; padding:0;" data-closable="">' +
+			'style="margin-bottom:0; padding-top: 0; padding-bottom: 0;" data-closable="">' +
 			'<div class="row">' +
 			'<h2>' + uthscAlert['event'] + '</h2>' +
 			'<p><strong>' + uthscAlert['headline'] + '</strong></p>' +
