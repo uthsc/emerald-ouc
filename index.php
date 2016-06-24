@@ -581,7 +581,7 @@
 
             <div class="row">
                 <div class="uthsc-now-loader" style="color:#006a4d; text-align:center;">
-                    <img src="-resources/2015/images/uthsc-loader.gif" />&nbsp;Loading UTHSC Now
+                    <span class="fa fa-spinner fa-spin" aria-hidden="true"></span>&nbsp;Loading UTHSC Now
                 </div>
 
                 <div class="uthsc-now grid">
