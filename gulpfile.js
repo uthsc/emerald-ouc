@@ -76,6 +76,15 @@ gulp.task('uthsc-now-js', function() {
 		.pipe(gulp.dest('./-resources/2015/js'));
 });
 
+gulp.task('uthsc-emergency-notification', function() {
+	return gulp.src ([
+		'./js/partials/uthsc-emergency-notification.js'
+	])
+		.pipe($.uglify())
+		.pipe($.rename('uthsc-emergency-notification.min.js'))
+		.pipe(gulp.dest('./-resources/2015/js'));
+});
+
 gulp.task('uthsc-js', function() {
   return gulp.src ([
       './js/app.js',
@@ -91,7 +100,7 @@ gulp.task('uthsc-js', function() {
           .pipe(gulp.dest('./-resources/2015/js'));
 });
 
-gulp.task('buildjs', ['uthsc-now-js','uthsc-now-js','uthsc-js', 'copy-vendor-js']);
+gulp.task('buildjs', ['uthsc-now-js','uthsc-now-js','uthsc-js', 'copy-vendor-js', 'uthsc-emergency-notification']);
 
 gulp.task('build', ['sass','copy-fonts', 'copy-images', 'buildjs']);
 
