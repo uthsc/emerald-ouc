@@ -86,25 +86,25 @@
                        <ul class="submenu menu vertical" data-submenu="data-submenu">
                            <li>
                                <a href="/education/">
-                                   <span class="fa fa-graduation-cap"></span>
+                                   <span aria-hidden="true" class="fa fa-graduation-cap"></span>
                                    Academics
                                </a>
                            </li>
                            <li>
                                <a href="research/">
-                                   <span class="fa fa-flask"></span>
+                                   <span aria-hidden="true" class="fa fa-flask"></span>
                                    Research
                                </a>
                            </li>
                            <li>
                                <a href="/clinicalcare/">
-                                   <span class="fa fa-medkit"></span>
+                                   <span aria-hidden="true" class="fa fa-medkit"></span>
                                    Clinical Care
                                </a>
                            </li>
                            <li>
                                <a href="/publicservice/">
-                                   <span class="fa fa-globe"></span>
+                                   <span aria-hidden="true" class="fa fa-globe"></span>
                                    Public Service
                                </a>
                            </li>
@@ -129,8 +129,8 @@
                            <li><a href="/email/">Webmail</a></li>
                        </ul>
                    </li>
-                   <li><a href="/give/"><span class="fa fa-gift"></span> Make a Gift</a></li>
-                   <li><a href="/admissions/visit-uthsc.php"><span class="fa fa-road"></span> Take a Tour</a></li>
+                   <li><a href="/give/"><span aria-hidden="true" class="fa fa-gift"></span> Make a Gift</a></li>
+                   <li><a href="/admissions/visit-uthsc.php"><span aria-hidden="true" class="fa fa-road"></span> Take a Tour</a></li>
                    <li>
                        <div class="show-for-large">
                            <!--Search form-->
@@ -139,7 +139,7 @@
                                <?php echo '<input class="input-group-field" type="search" placeholder="Search &hellip;" value="' . trim($_GET['q']) .  '" type="search" aria-label="Search the UTHSC site" role="search" name="q"/>'; ?>
                                <div class="input-group-button">
                                    <button type="submit" class="button" aria-label="Submit search form">
-                                       <span class="fa fa-search"></span>
+                                       <span aria-hidden="true" class="fa fa-search"></span>
                                    </button>
                                </div>
                            </form>
@@ -175,7 +175,7 @@
                        <?php echo '<input class="input-group-field" type="search" placeholder="Search &hellip;" value="' . trim($_GET['q']) .  '" type="search" aria-label="Search the UTHSC site" role="search" name="q"/>'; ?>
                        <div class="input-group-button">
                            <button type="submit" class="button" aria-label="Submit search form">
-                               <span class="fa fa-search"></span>
+                               <span aria-hidden="true" class="fa fa-search"></span>
                            </button>
                        </div>
                    </form>
@@ -206,27 +206,27 @@
                <ul class="row collapse" data-equalizer="heading-links">
 
                    <li class="uthsc-navigation-column small-2 columns">
-                       <a href="/education/" data-equalizer-watch="heading-links"><span class="fa fa-graduation-cap"></span> Academics</a>
+                       <a href="/education/" data-equalizer-watch="heading-links"><span aria-hidden="true" class="fa fa-graduation-cap"></span> Academics</a>
                    </li>
 
                    <li class="uthsc-navigation-column small-2 columns">
-                       <a href="research/" data-equalizer-watch="heading-links"><span class="fa fa-flask"></span> Research</a>
+                       <a href="research/" data-equalizer-watch="heading-links"><span aria-hidden="true" class="fa fa-flask"></span> Research</a>
                    </li>
 
                    <li class="uthsc-navigation-column small-2 columns">
-                       <a href="/clinicalcare/" data-equalizer-watch="heading-links"><span class="fa fa-medkit"></span>Clinical Care</a>
+                       <a href="/clinicalcare/" data-equalizer-watch="heading-links"><span aria-hidden="true" class="fa fa-medkit"></span>Clinical Care</a>
                    </li>
 
                    <li class="uthsc-navigation-column small-2 columns">
-                       <a href="/publicservice/" data-equalizer-watch="heading-links"><span class="fa fa-globe"></span>Public Service</a>
+                       <a href="/publicservice/" data-equalizer-watch="heading-links"><span aria-hidden="true" class="fa fa-globe"></span>Public Service</a>
                    </li>
 
                    <li class="uthsc-navigation-column small-2 columns">
-                       <a href="/aboututhsc/" data-equalizer-watch="heading-links"><span class="fa fa-file-text-o"></span>About UTHSC</a>
+                       <a href="/aboututhsc/" data-equalizer-watch="heading-links"><span aria-hidden="true" class="fa fa-file-text-o"></span>About UTHSC</a>
                    </li>
 
                    <li class="uthsc-navigation-column small-2 columns">
-                       <a href="http://uthscalumni.com/" data-equalizer-watch="heading-links"><span class="fa fa-users"></span>Alumni &amp; Friends</a>
+                       <a href="http://uthscalumni.com/" data-equalizer-watch="heading-links"><span aria-hidden="true" class="fa fa-users"></span>Alumni &amp; Friends</a>
                    </li>
 
                    <li class="uthsc-navigation-column small-2 columns"></li>
@@ -269,7 +269,7 @@
                                <?php echo '<input class="input-group-field" type="search" placeholder="Search &hellip;" value="' . trim($_GET['q']) .  '" type="search" aria-label="Search the UTHSC site" role="search" name="q"/>'; ?>
                                <div class="input-group-button">
                                    <button type="submit" class="button" aria-label="Submit search form">
-                                       Search <span class="fa fa-search"></span>
+                                       Search <span aria-hidden="true" class="fa fa-search"></span>
                                    </button>
                                </div>
                            </div>
@@ -425,7 +425,7 @@
 
                    <div class="input-group-button">
                        <button type="submit" class="button" aria-label="Submit search form">
-                           <span class="fa fa-search"></span>
+                           <span aria-hidden="true" class="fa fa-search"></span>
                        </button>
                    </div>
                </form>
@@ -434,7 +434,7 @@
 
            <!--  Close menu button-->
            <button class="uthsc-off-canvas-menu__close">
-               <span class="fa fa-chevron-left"></span>&emsp; Close Menu
+               <span aria-hidden="true" class="fa fa-chevron-left"></span>&emsp; Close Menu
            </button>
            <!--/ Close menu button-->
 
@@ -469,7 +469,7 @@
 
                    <div class="input-group-button">
                        <button type="submit" class="button" aria-label="Submit search form">
-                           <span class="fa fa-search"></span>
+                           <span aria-hidden="true" class="fa fa-search"></span>
                        </button>
                    </div>
                </form>
@@ -478,7 +478,7 @@
 
            <!--  Close menu button-->
            <button class="uthsc-off-canvas-menu__close">
-               Close Menu &emsp;<span class="fa fa-chevron-right"></span>
+               Close Menu &emsp;<span aria-hidden="true" class="fa fa-chevron-right"></span>
            </button>
            <!--/ Close menu button-->
 
@@ -487,14 +487,14 @@
            <div class="mission-links">
                <h2 class="link-heading">Mission</h2>
 
-               <a href="/education/"><span class="uthsc-fa-centered fa fa-graduation-cap"></span>&emsp;Academics</a>
-               <a href="research"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
-               <a href="/clinicalcare/"><span class="uthsc-fa-centered fa fa-medkit"></span>&emsp;Clinical Care</a>
-               <a href="/publicservice/"><span class="uthsc-fa-centered fa fa-globe"></span>&emsp;Public Service</a>
+               <a href="/education/"><span aria-hidden="true" class="uthsc-fa-centered fa fa-graduation-cap"></span>&emsp;Academics</a>
+               <a href="research"><span aria-hidden="true" class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
+               <a href="/clinicalcare/"><span aria-hidden="true" class="uthsc-fa-centered fa fa-medkit"></span>&emsp;Clinical Care</a>
+               <a href="/publicservice/"><span aria-hidden="true" class="uthsc-fa-centered fa fa-globe"></span>&emsp;Public Service</a>
            </div>
 
-           <a href="/give/" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift"></span>&emsp;Make a Gift</a>
-           <a href="/admissions/visit-uthsc.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road"></span>&emsp;Take a Tour</a>
+           <a href="/give/" class="call-to-action-link"><span aria-hidden="true" class="uthsc-fa-centered fa fa-gift"></span>&emsp;Make a Gift</a>
+           <a href="/admissions/visit-uthsc.php" class="call-to-action-link"><span aria-hidden="true" class="uthsc-fa-centered fa fa-road"></span>&emsp;Take a Tour</a>
 
            <ul>
                <li><span class="link-heading">Information for...</span>
