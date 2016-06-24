@@ -5,6 +5,9 @@ function renderUthscAlert(uthscAlert) {
 		expireDate = new Date(uthscAlert['expires']),
 		alertIsLive = effectiveDate.getTime() < currentDate.getTime() < expireDate.getTime();
 
+	//var effectiveDateTest = uthscAlert['effective'],
+	//	  expireDateTest = new uthscAlert['expires'];
+
 	//console.log(uthscAlert);
 	//console.log(Date());
 	//console.log(effectiveDate);
