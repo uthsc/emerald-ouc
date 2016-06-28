@@ -374,8 +374,11 @@
 
             <div class="columns large-4">
                 <div class="uthsc-badge-box">
-                    <div class="uthsc-badge-box-icon" style="background: #00a5e3;color:#fff; ">
-                        <span class="fa fa-laptop fa-5x" style="font-size:4em;"></span>
+                    <div class="uthsc-badge-box-icon">
+                        <span class="fa-stack fa-4x">
+                            <span class="fa fa-circle fa-stack-2x" style="color:#00a5e3"></span>
+                            <span class="fa fa-laptop fa-stack-1x fa-inverse"></span>
+                        </span>
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">

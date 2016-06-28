@@ -359,8 +359,8 @@
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-                                <polygon points="200,0 0,200 200,200 "/>
-                            </svg>
+                             <polygon points="200,0 0,200 200,200 "/>
+                        </svg>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -372,13 +372,18 @@
 
             <div class="columns">
                 <div class="uthsc-badge-box">
-                    <div class="uthsc-badge-box-icon" style="background:#0084b6; color:#fff;">
-                        <span class="fa fa-flask fa-5x" style="font-size:4em;"></span>
+                    <div class="uthsc-badge-box-icon">
+                        <span class="fa-stack fa-4x">
+                            <span class="fa fa-circle fa-stack-2x"  style="color:#0084b6"></span>
+                            <span class="fa fa-flask fa-stack-1x fa-inverse"></span>
+                        </span>
+
+                        <!--<span class="fa fa-flask fa-5x" style="font-size:4em;"></span>-->
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-                                <polygon points="200,0 0,200 200,200 "/>
-                            </svg>
+                             <polygon points="200,0 0,200 200,200 "/>
+                        </svg>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -409,13 +414,16 @@
 
             <div class="columns">
                 <div class="uthsc-badge-box">
-                    <div class="uthsc-badge-box-icon" style="background: orange;color:#e8cf00; ">
-                        <span class="fa fa-certificate fa-5x" ></span>
+                    <div class="uthsc-badge-box-icon">
+                        <span class="fa-stack fa-4x">
+                            <span class="fa fa-circle fa-stack-2x" style="color:orange"></span>
+                            <span class="fa fa-certificate fa-stack-1x fa-inverse" style="color:#e8cf00;"></span>
+                        </span>
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-                                <polygon points="200,0 0,200 200,200 "/>
-                            </svg>
+                             <polygon points="200,0 0,200 200,200 "/>
+                        </svg>
                     </div>
 
                     <div class="uthsc-badge-box-text">
@@ -439,7 +447,6 @@
                     <a class="button" href="">Research Integrity Officer</a>
                     <a class="button" href="">Governor’s Chair</a>
                 </p>
-
             </div>
         </div>
 
