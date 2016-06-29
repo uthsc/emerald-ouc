@@ -698,7 +698,6 @@
 <!--*********************-->
 <!--Right off canvas menu-->
 <!--*********************-->
-
 <nav id="uthsc-off-canvas-menu--slide-right" class="uthsc-off-canvas-menu uthsc-off-canvas-menu--slide-right hide-for-print" aria-hidden="true">
 
     <div class="off-canvas-search">
@@ -767,7 +766,6 @@
     <div class="safari-bottom-nav-fix"></div>
     <!--Safari bottom nav fix-->
 </nav>
-
 <!--**********************-->
 <!--/Right off canvas menu-->
 <!--**********************-->
