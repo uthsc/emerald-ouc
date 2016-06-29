@@ -3,7 +3,7 @@ function renderUthscAlert(uthscAlert) {
 	var currentDate = new Date(),
 		effectiveDate = new Date(uthscAlert['effective']),
 		expireDate = new Date(uthscAlert['expires']),
-		alertIsLive = effectiveDate.getTime() < currentDate.getTime() < expireDate.getTime();
+		alertIsLive = (effectiveDate.getTime() < currentDate.getTime() < expireDate.getTime());
 
 	//var effectiveDateTest = uthscAlert['effective'],
 	//	  expireDateTest = new uthscAlert['expires'];

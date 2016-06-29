@@ -134,9 +134,15 @@
                    <li>
                        <div class="show-for-large">
                            <!--Search form-->
-                           <form class="input-group" aria-label="Search the UTHSC site"
+                           <form class="input-group search-form" aria-label="Search the UTHSC site"
                                  action="../search/" method="get" style="margin-bottom:0;">
-                               <?php echo '<input class="input-group-field" type="search" placeholder="Search &hellip;" value="' . trim($_GET['q']) .  '" type="search" aria-label="Search the UTHSC site" role="search" name="q"/>'; ?>
+                               <input class="input-group-field search-input"
+                                      placeholder="Search &hellip;"
+                                      value=""
+                                      type="search"
+                                      aria-label="Search the UTHSC site"
+                                      role="search"
+                                      name="q"/>
                                <div class="input-group-button">
                                    <button type="submit" class="button" aria-label="Submit search form">
                                        <span aria-hidden="true" class="fa fa-search"></span>
@@ -170,9 +176,17 @@
            <div class="row">
                <div class="columns small-collapse">
                    <!--Search form-->
-                   <form class="input-group" aria-label="Search the UTHSC site"
+                   <form class="input-group search-form" aria-label="Search the UTHSC site"
                          action="../search/" method="get" style="margin-bottom:0;">
-                       <?php echo '<input class="input-group-field" type="search" placeholder="Search &hellip;" value="' . trim($_GET['q']) .  '" type="search" aria-label="Search the UTHSC site" role="search" name="q"/>'; ?>
+                       <input class="input-group-field search-input"
+                              placeholder="Search &hellip;"
+                              value=""
+                              type="search"
+                              aria-label="Search the UTHSC site"
+                              role="search"
+                              name="q"/>
+
+
                        <div class="input-group-button">
                            <button type="submit" class="button" aria-label="Submit search form">
                                <span aria-hidden="true" class="fa fa-search"></span>
@@ -263,10 +277,16 @@
                    <!--*****************-->
                    <!--UTHSC search form-->
                    <!--*****************-->
-                   <?php echo '<form class="row" aria-label="Search the UTHSC site" action="../search/" method="get" ' . ($_GET['q'] ? '' : 'style="margin-bottom:30em;"') . '>'; ?>
+                   <form class="row search-form" aria-label="Search the UTHSC site" action="../search/" method="get">
                        <div class="columns">
                            <div class="input-group">
-                               <?php echo '<input class="input-group-field" type="search" placeholder="Search &hellip;" value="' . trim($_GET['q']) .  '" type="search" aria-label="Search the UTHSC site" role="search" name="q"/>'; ?>
+                               <input class="input-group-field search-input"
+                                      placeholder="Search &hellip;"
+                                      value=""
+                                      type="search"
+                                      aria-label="Search the UTHSC site"
+                                      role="search"
+                                      name="q"/>
                                <div class="input-group-button">
                                    <button type="submit" class="button" aria-label="Submit search form">
                                        Search <span aria-hidden="true" class="fa fa-search"></span>
@@ -274,7 +294,7 @@
                                </div>
                            </div>
                        </div>
-                   <?php echo '</form>'; ?>
+                   </form>
                    <!--******************-->
                    <!--/UTHSC search form-->
                    <!--******************-->
@@ -419,10 +439,15 @@
 
            <div class="off-canvas-search">
                <!--Search form-->
-               <form class="input-group" aria-label="Search the UTHSC site"
+               <form class="input-group search-form" aria-label="Search the UTHSC site"
                      action="../search/" method="get" style="margin-bottom:0;">
-                   <?php echo '<input class="input-group-field" type="search" placeholder="Search &hellip;" value="' . trim($_GET['q']) .  '" type="search" aria-label="Search the UTHSC site" role="search" name="q"/>'; ?>
-
+                   <input class="input-group-field search-input"
+                          placeholder="Search &hellip;"
+                          value=""
+                          type="search"
+                          aria-label="Search the UTHSC site"
+                          role="search"
+                          name="q"/>
                    <div class="input-group-button">
                        <button type="submit" class="button" aria-label="Submit search form">
                            <span aria-hidden="true" class="fa fa-search"></span>
@@ -464,9 +489,14 @@
 
            <div class="off-canvas-search">
                <!--Search form-->
-               <form class="input-group" aria-label="Search the UTHSC site" action="../search/" method="get" style="margin-bottom:0;">
-                   <?php echo '<input class="input-group-field" type="search" placeholder="Search &hellip;" value="' . trim($_GET['q']) .  '" type="search" aria-label="Search the UTHSC site" role="search" name="q"/>'; ?>
-
+               <form class="input-group search-form" aria-label="Search the UTHSC site" action="../search/" method="get" style="margin-bottom:0;">
+                   <input class="input-group-field search-input"
+                          placeholder="Search &hellip;"
+                          value=""
+                          type="search"
+                          aria-label="Search the UTHSC site"
+                          role="search"
+                          name="q"/>
                    <div class="input-group-button">
                        <button type="submit" class="button" aria-label="Submit search form">
                            <span aria-hidden="true" class="fa fa-search"></span>
@@ -563,7 +593,6 @@
        <script src="../-resources/2015/js/what-input.min.js"></script>
        <script src="../-resources/2015/js/foundation.min.js"></script>
        <script src="../-resources/2015/js/uthsc.min.js"></script>
-       <script src="../-resources/2015/js/uthsc-emergency-notification.min.js"></script>
        <!--********-->
        <!--/Scripts-->
        <!--********-->
@@ -573,27 +602,29 @@
        <!--Footcode for Search UTHSC-->
        <!--*************************-->
        <script>
-           /*
-            * If the searchUthscVariable is defined, remove the style attribute from search results
-            */
            $(document).ready(function(){
+               //check for query
                if (typeof searchUthscQuery !== 'undefined') {
+                   //un-hide search results
                    $('.search-uthsc-results').removeAttr("style");
+                   //set value of search input to query
+                   $('form.search-form .search-input').attr({value: searchUthscQuery});
+               } else {
+                   //add bottom-margin to input
+                   $('.main-content .search-form').attr({style:"margin-bottom:30em;"})
                }
-           });
 
-           /*
-            * If the searchUthscType is utsys, make the System tab active
-            */
-           $(document).ready(function(){
+               //check for search type
                if (typeof searchUthscType !== 'undefined') {
+                   //check search type for utsys
                    if (searchUthscType == 'utsys') {
-                       console.log(searchUthscType)
+                       //make the System tab active
                        $('.tabs #panel2-label').click();
                    }
                }
            });
        </script>
+        <script src="../-resources/2015/js/uthsc-emergency-notification.min.js"></script>
        <!--**************************-->
        <!--/Footcode for Search UTHSC-->
        <!--**************************-->
