@@ -394,24 +394,6 @@
         </div>
 
 
-        <!--Resources-->
-        <!--<div class="row">-->
-        <!--    <div class="columns uthsc-row-title">-->
-        <!--        <h2>Research Resources</h2>-->
-        <!--    </div>-->
-        <!---->
-        <!--    <div class="columns">-->
-        <!--        <p style="text-align:center;">-->
-        <!--            <a class="button" href="https://www.uthsc.edu/CRC/">Clinical Research</a>-->
-        <!--            <a class="button" href="">Research Development</a>-->
-        <!--            <a class="button" href="">Research Integrity Officer</a>-->
-        <!--            <a class="button" href="">Governor’s Chair</a>-->
-        <!--        </p>-->
-        <!---->
-        <!--    </div>-->
-        <!--</div>-->
-
-
         <!--******************************************-->
         <!--Background stripe row with highlight boxes-->
         <!--******************************************-->
