@@ -357,8 +357,8 @@
                 <h3><strong><em>Content</em></strong> <b><i>Row</i></b> 1</h3>
                 <p>This is a full width row with columns inside of it.</p>
                 <p>Thanks to<a href="http://fortawesome.github.io/Font-Awesome/">
-                    Fontawesome&nbsp;<span class="fa fa-flag"></span></a> we can use these handy icons anywhere.
-                    Here's an example of a<a href=""> pdf link&nbsp;<span class="fa fa-file-pdf-o"></span></a>.</p>
+                    Fontawesome&nbsp;<span class="fa fa-flag" aria-hidden="true"></span></a> we can use these handy icons anywhere.
+                    Here's an example of a<a href=""> pdf link&nbsp;<span class="fa fa-file-pdf-o" aria-hidden="true"></span></a>.</p>
                 <div class="row">
                     <div class="columns">
                         <h4>Buttons</h4>
@@ -456,7 +456,7 @@
                 <!--***********-->
 
                 <a href="#" class="button secondary radius">Apply
-                Now&ensp;<span class="fa fa-graduation-cap"></span></a>
+                Now&ensp;<span class="fa fa-graduation-cap" aria-hidden="true"></span></a>
 
             </div>
             <div class="large-4 columns">
@@ -468,7 +468,7 @@
                     inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
                     voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
                     eos qui ratione voluptatem sequi nesciunt.</p><a href="#" class="button radius">Academic
-                Calendar&ensp;<span class="fa fa-calendar"></span></a>
+                Calendar&ensp;<span class="fa fa-calendar" aria-hidden="true"></span></a>
             </div>
             <div class="large-4 columns">
                 <h3>Full Width Content Row 2</h3>
@@ -501,7 +501,7 @@
                     <li><a href="#">Vivamus vestibulum nulla nec ante</a></li>
                 </ol>
                 <a href="#" class="button radius">
-                    Get Directions&ensp;<span class="fa fa-map-marker"></span>
+                    Get Directions&ensp;<span class="fa fa-map-marker" aria-hidden="true"></span>
                 </a>
             </div>
         </div>
@@ -614,11 +614,11 @@
                 <h5>Share</h5>
                 <div class="expanded button-group stacked-for-small small uthsc-share">
                     <a href="https://twitter.com/intent/tweet?text=Read%20this.&url=http://uthsc.edu/aboututhsc/utmission.php&via=uthsc&original_referer=https://uthsc.edu/&hashtags=Education,Research,Clinical-Care,PublicService&related=uthscadmissions%3AUTHSC%20Admissions,UTHSCRefDesk%3AUTHSC%20Library" class="button uthsc-twitter">
-                        <span class="fa fa-twitter"></span> Tweet
+                        <span class="fa fa-twitter" aria-hidden="true"></span> Tweet
                         <span class="show-for-sr">on twitter</span>
                     </a>
                     <a href="http://www.facebook.com/sharer.php?u=http://uthsc.edu/aboututhsc/utmission.php" class="button uthsc-facebook">
-                        <span class="fa fa-facebook"></span> Share
+                        <span class="fa fa-facebook" aria-hidden="true"></span> Share
                         <span class="show-for-sr">on facebook</span>
                     </a>
                     <a href="https://plus.google.com/share?url=http://uthsc.edu/aboututhsc/utmission.php" class="button uthsc-google-plus">

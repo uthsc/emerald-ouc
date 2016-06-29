@@ -62,25 +62,25 @@
                     <ul class="submenu menu vertical" data-submenu="data-submenu">
                         <li>
                             <a href="/education/">
-                                <span class="fa fa-graduation-cap"></span>
+                                <span class="fa fa-graduation-cap" aria-hidden="true"></span>
                                 Academics
                             </a>
                         </li>
                         <li>
                             <a href="/research/">
-                                <span class="fa fa-flask"></span>
+                                <span class="fa fa-flask" aria-hidden="true"></span>
                                 Research
                             </a>
                         </li>
                         <li>
                             <a href="/clinicalcare/">
-                                <span class="fa fa-medkit"></span>
+                                <span class="fa fa-medkit" aria-hidden="true"></span>
                                 Clinical Care
                             </a>
                         </li>
                         <li>
                             <a href="/publicservice/">
-                                <span class="fa fa-globe"></span>
+                                <span class="fa fa-globe" aria-hidden="true"></span>
                                 Public Service
                             </a>
                         </li>
@@ -105,8 +105,8 @@
                         <li><a href="/email/">Webmail</a></li>
                     </ul>
                 </li>
-                <li><a href="/give/"><span class="fa fa-gift"></span> Make a Gift</a></li>
-                <li><a href="/admissions/visit-uthsc.php"><span class="fa fa-road"></span> Take a Tour</a></li>
+                <li><a href="/give/"><span class="fa fa-gift" aria-hidden="true"></span> Make a Gift</a></li>
+                <li><a href="/admissions/visit-uthsc.php"><span class="fa fa-road" aria-hidden="true"></span> Take a Tour</a></li>
                 <li>
                     <div class="show-for-large">
                         <!--Search form-->
@@ -120,7 +120,7 @@
                             <input type="hidden" name="col" value="uthsc" />
                             <div class="input-group-button">
                                 <button type="submit" class="button" aria-label="Submit search form">
-                                    <span class="fa fa-search"></span>
+                                    <span class="fa fa-search" aria-hidden="true"></span>
                                 </button>
                             </div>
                         </form>
@@ -160,7 +160,7 @@
                     <input type="hidden" name="col" value="uthsc" />
                     <div class="input-group-button">
                         <button type="submit" class="button" aria-label="Submit search form">
-                            <span class="fa fa-search"></span>
+                            <span class="fa fa-search" aria-hidden="true"></span>
                         </button>
                     </div>
                 </form>
@@ -199,7 +199,7 @@
             <ul class="breadcrumbs column">
                 <li>
                     <a aria-label="go to UTHSC homepage" href="/">
-                        <span class="uthsc-home-icon-breadcrumbs fa fa-home fa-2x"></span>
+                        <span class="uthsc-home-icon-breadcrumbs fa fa-home fa-2x" aria-hidden="true"></span>
                     </a>
                     <span class="fa fa-chevron-right" aria-hidden="true"></span>
                 </li>
@@ -341,7 +341,7 @@
             <div class="columns large-4">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-graduation-cap fa-5x"></span>
+                        <span class="fa fa-graduation-cap fa-5x" aria-hidden="true"></span>
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
@@ -358,7 +358,7 @@
             <div class="columns large-4">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon" style="color:#b5121b; ">
-                        <span class="fa fa-map-marker fa-5x"></span>
+                        <span class="fa fa-map-marker fa-5x" aria-hidden="true"></span>
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                              viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
@@ -375,9 +375,9 @@
             <div class="columns large-4">
                 <div class="uthsc-badge-box">
                     <div class="uthsc-badge-box-icon">
-                        <span class="fa-stack fa-4x">
-                            <span class="fa fa-circle fa-stack-2x" style="color:#00a5e3"></span>
-                            <span class="fa fa-laptop fa-stack-1x fa-inverse"></span>
+                        <span class="fa-stack fa-4x" aria-hidden="true">
+                            <span class="fa fa-circle fa-stack-2x" style="color:#00a5e3"  aria-hidden="true"></span>
+                            <span class="fa fa-laptop fa-stack-1x fa-inverse"  aria-hidden="true"></span>
                         </span>
                         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -607,82 +607,82 @@
                 <h5>Share</h5>
                 <div class="expanded button-group stacked-for-small small uthsc-share">
                     <a href="https://twitter.com/intent/tweet?text=Read%20this.&url=http://uthsc.edu/aboututhsc/utmission.php&via=uthsc&original_referer=https://uthsc.edu/&hashtags=Education,Research,Clinical-Care,PublicService&related=uthscadmissions%3AUTHSC%20Admissions,UTHSCRefDesk%3AUTHSC%20Library" class="button uthsc-twitter">
-                        <span class="fa fa-twitter"></span> Tweet
+                        <span class="fa fa-twitter" aria-hidden="true"></span> Tweet
                         <span class="show-for-sr">on twitter</span>
                     </a>
                     <a href="http://www.facebook.com/sharer.php?u=http://uthsc.edu/aboututhsc/utmission.php" class="button uthsc-facebook">
-                        <span class="fa fa-facebook"></span> Share
+                        <span class="fa fa-facebook" aria-hidden="true"></span> Share
                         <span class="show-for-sr">on facebook</span>
                     </a>
                     <a href="https://plus.google.com/share?url=http://uthsc.edu/aboututhsc/utmission.php" class="button uthsc-google-plus">
-                        <span class="fa fa-google-plus"></span> Share
+                        <span class="fa fa-google-plus" aria-hidden="true"></span> Share
                         <span class="show-for-sr">on google plus</span>
                     </a>
                 </div>
                 <div class="expanded button-group stacked-for-small small uthsc-share">
                     <a href="https://www.linkedin.com/shareArticle?mini=true&url=http://uthsc.edu/aboututhsc/utmission.php&title=University%20of%20Tennessee%20Mission%20Statements&summary=Read%20this.&source=UTHSC" class="button uthsc-linkedin">
-                        <span class="fa fa-linkedin"></span> Share
+                        <span class="fa fa-linkedin" aria-hidden="true"></span> Share
                         <span class="show-for-sr">on linked in</span>
                     </a>
                     <a href="mailto:?body=Read%20this.%20http://uthsc.edu/aboututhsc/utmission.php.&amp;subject=University%20of%20Tennessee%20Mission%20Statements" class="button">
-                        <span class="fa fa-envelope"></span> email
+                        <span class="fa fa-envelope" aria-hidden="true"></span> email
                     </a>
-                    <a href="javascript:window.print()"" class="button uthsc-print">
-                    <span class="fa fa-print"></span> print
+                    <a href="javascript:window.print()" class="button uthsc-print">
+                    <span class="fa fa-print" aria-hidden="true"></span> print
                     </a>
                 </div>
                 <h5>Connect</h5>
                 <div class="uthsc-connect">
                     <a href="https://twitter.com/uthsc" class="uthsc-twitter">
-                        <span class="fa fa-twitter-square fa-3x"></span>
+                        <span class="fa fa-twitter-square fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on twitter</span>
                     </a>
                     <a href="https://www.facebook.com/uthsc#" class="uthsc-facebook">
-                        <span class="fa fa-facebook-square fa-3x"></span>
+                        <span class="fa fa-facebook-square fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on facebook</span>
                     </a>
                     <a href="https://www.instagram.com/uthsc/" class="uthsc-instagram">
-                        <span class="fa fa-instagram fa-3x"></span>
+                        <span class="fa fa-instagram fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on instagram</span>
                     </a>
                     <a href="https://www.youtube.com/user/uthsc" class="uthsc-youtube">
-                        <span class="fa fa-youtube-square fa-3x"></span>
+                        <span class="fa fa-youtube-square fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on youtube</span>
                     </a>
                     <a href="#" class="uthsc-linkedin">
-                        <span class="fa fa-linkedin-square fa-3x"></span>
+                        <span class="fa fa-linkedin-square fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on linkedin</span>
                     </a>
                     <a href="#" class="uthsc-pinterest">
-                        <span class="fa fa-pinterest-square fa-3x"></span>
+                        <span class="fa fa-pinterest-square fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on pinterest</span>
                     </a>
                     <a href="#" class="uthsc-google-plus">
-                        <span class="fa fa-google-plus-square fa-3x"></span>
+                        <span class="fa fa-google-plus-square fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on google plus</span>
                     </a>
                     <a href="#" class="uthsc-tumblr">
-                        <span class="fa fa-tumblr-square fa-3x"></span>
+                        <span class="fa fa-tumblr-square fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on tumblr</span>
                     </a>
                     <a href="#" class="uthsc-flickr">
-                        <span class="fa fa-flickr fa-3x"></span>
+                        <span class="fa fa-flickr fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on flickr</span>
                     </a>
                     <a href="#" class="uthsc-reddit">
-                        <span class="fa fa-reddit-square fa-3x"></span>
+                        <span class="fa fa-reddit-square fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on reddit</span>
                     </a>
                     <a href="#" class="uthsc-vine">
-                        <span class="uthsc-fa-vine"></span>
+                        <span class="uthsc-fa-vine" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on vine</span>
                     </a>
                     <a href="#" class="uthsc-vimeo">
-                        <span class="fa fa-vimeo-square fa-3x"></span>
+                        <span class="fa fa-vimeo-square fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on vimeo</span>
                     </a>
                     <a href="#" class="uthsc-snapchat">
-                        <span class="fa fa-snapchat-square fa-3x"></span>
+                        <span class="fa fa-snapchat-square fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on snapchat</span>
                     </a>
                 </div>
@@ -742,7 +742,7 @@
      aria-hidden="true">
     <!--Breadcrumbs-->
     <div class="uthsc-off-canvas-breadcrumbs button-group">
-        <a href="/" class="button home-button"><span class="fa fa-home"></span></a>
+        <a href="/" class="button home-button"><span class="fa fa-home" aria-hidden="true"></span></a>
         <button class="button breadcrumbs-button dropdown" type="button" data-toggle="left-breadcrumbs-dropdown">
             Breadcrumbs Back Home
         </button>
@@ -768,7 +768,7 @@
             <input type="hidden" name="col" value="uthsc" />
             <div class="input-group-button">
                 <button type="submit" class="button" aria-label="Submit search form">
-                    <span class="fa fa-search"></span>
+                    <span class="fa fa-search" aria-hidden="true"></span>
                 </button>
             </div>
         </form>
@@ -777,7 +777,7 @@
 
     <!--Close menu button-->
     <button class="uthsc-off-canvas-menu__close">
-        <span class="fa fa-chevron-left"></span>&emsp; Close Menu
+        <span class="fa fa-chevron-left" aria-hidden="true"></span>&emsp; Close Menu
     </button>
 
     <ul>
@@ -837,7 +837,7 @@
 
     <!--Breadcrumbs-->
     <div class="uthsc-off-canvas-breadcrumbs button-group">
-        <a href="/" class="button home-button"><span class="fa fa-home"></span></a>
+        <a href="/" class="button home-button"><span class="fa fa-home" aria-hidden="true"></span></a>
         <button class="button breadcrumbs-button dropdown" type="button" data-toggle="right-breadcrumbs-dropdown">
             Breadcrumbs Back Home
         </button>
@@ -863,7 +863,7 @@
             <input type="hidden" name="col" value="uthsc" />
             <div class="input-group-button">
                 <button type="submit" class="button" aria-label="Submit search form">
-                    <span class="fa fa-search"></span>
+                    <span class="fa fa-search" aria-hidden="true"></span>
                 </button>
             </div>
         </form>
@@ -872,21 +872,21 @@
 
     <!--Close menu button-->
     <button class="uthsc-off-canvas-menu__close">
-        Close Menu &emsp;<span class="fa fa-chevron-right"></span>
+        Close Menu &emsp;<span class="fa fa-chevron-right" aria-hidden="true"></span>
     </button>
 
     <!--Mission links-->
     <div class="mission-links">
         <h2 class="link-heading">Mission</h2>
 
-        <a href="/education/"><span class="uthsc-fa-centered fa fa-graduation-cap"></span>&emsp;Academics</a>
-        <a href="/research/"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
-        <a href="/clinicalcare/"><span class="uthsc-fa-centered fa fa-medkit"></span>&emsp;Clinical Care</a>
-        <a href="/publicservice/"><span class="uthsc-fa-centered fa fa-globe"></span>&emsp;Public Service</a>
+        <a href="/education/"><span class="uthsc-fa-centered fa fa-graduation-cap" aria-hidden="true"></span>&emsp;Academics</a>
+        <a href="/research/"><span class="uthsc-fa-centered fa fa-flask" aria-hidden="true"></span>&emsp;Research</a>
+        <a href="/clinicalcare/"><span class="uthsc-fa-centered fa fa-medkit" aria-hidden="true"></span>&emsp;Clinical Care</a>
+        <a href="/publicservice/"><span class="uthsc-fa-centered fa fa-globe" aria-hidden="true"></span>&emsp;Public Service</a>
     </div>
 
-    <a href="#" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift"></span>&emsp;Make a Gift</a>
-    <a href="template.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road"></span>&emsp;Take a Tour</a>
+    <a href="#" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift" aria-hidden="true"></span>&emsp;Make a Gift</a>
+    <a href="template.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road" aria-hidden="true"></span>&emsp;Take a Tour</a>
 
     <ul>
         <li><span class="link-heading">Information for...</span>
