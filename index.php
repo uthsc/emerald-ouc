@@ -366,10 +366,6 @@
                     <div class="input-group">
                         <input class="input-group-field" type="text" placeholder="Search ..." type="search"
                                aria-label="Search the UTHSC site" role="search" name="q" />
-                        <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
-                        <input type="hidden" name="cof" value="FORID:11" />
-                        <input type="hidden" name="ie" value="UTF-8" />
-                        <input type="hidden" name="col" value="uthsc" />
                         <div class="input-group-button">
                             <button type="submit" class="button" aria-label="Submit search form">
                                 <span class="fa fa-search" aria-hidden="true"></span>
