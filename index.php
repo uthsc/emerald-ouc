@@ -567,22 +567,7 @@
      aria-hidden="true">
 
     <div class="off-canvas-search">
-        <!--Search form-->
-        <form class="input-group" aria-label="Search the UTHSC site"
-              action="search/" method="get" style="margin-bottom:0;">
-            <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
-                   placeholder="search" style="margin-right:0;">
-            <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
-            <input type="hidden" name="cof" value="FORID:11" />
-            <input type="hidden" name="ie" value="UTF-8" />
-            <input type="hidden" name="col" value="uthsc" />
-            <div class="input-group-button">
-                <button type="submit" class="button" aria-label="Submit search form">
-                    <span class="fa fa-search"></span>
-                </button>
-            </div>
-        </form>
-        <!--/Search form-->
+        <?php include('../off-canvas-search-form.php'); ?>
     </div>
 
     <!--  Close menu button-->
@@ -615,20 +600,7 @@
 <nav id="uthsc-off-canvas-menu--slide-right" class="uthsc-off-canvas-menu uthsc-off-canvas-menu--slide-right hide-for-print" aria-hidden="true">
 
     <div class="off-canvas-search">
-        <!--Search form-->
-        <form class="input-group" aria-label="Search the UTHSC site" action="search/" method="get" style="margin-bottom:0;">
-            <input type="search" aria-label="Search the UTHSC site" role="search" name="q" placeholder="search" style="margin-right:0;">
-            <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
-            <input type="hidden" name="cof" value="FORID:11" />
-            <input type="hidden" name="ie" value="UTF-8" />
-            <input type="hidden" name="col" value="uthsc" />
-            <div class="input-group-button">
-                <button type="submit" class="button" aria-label="Submit search form">
-                    <span class="fa fa-search"></span>
-                </button>
-            </div>
-        </form>
-        <!--/Search form-->
+        <?php include('../off-canvas-search-form.php'); ?>
     </div>
 
     <!--  Close menu button-->

@@ -687,86 +687,22 @@
     </div>
 
     <div class="off-canvas-search">
-        <!--Search form-->
-        <form class="input-group" aria-label="Search the UTHSC site"
-              action="http://uthsc.edu/search/" method="get" style="margin-bottom:0;">
-            <input type="search" aria-label="Search the UTHSC site" role="search" name="s"
-                   placeholder="search" style="margin-right:0;">
-            <div class="input-group-button">
-                <button type="submit" class="button" aria-label="Submit search form">
-                    <span class="fa fa-search"></span>
-                </button>
-            </div>
-        </form>
-        <!--/Search form-->
+        <?php include('off-canvas-search-form.php'); ?>
     </div>
 
-    <!--Close menu button-->
+    <!--  Close menu button-->
     <button class="uthsc-off-canvas-menu__close">
         <span class="fa fa-chevron-left"></span>&emsp; Close Menu
     </button>
+    <!--/ Close menu button-->
 
     <ul>
-        <li><a href="#" class="link-heading">Menu Dropdown One</a>
-            <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
-                <li><a href="#">Second Item in Dropdown</a></li>
-                <li><a href="#">Third Item in Dropdown</a></li>
-                <li><a href="#">Fourth Item in Dropdown</a></li>
-                <li><a href="#">Fifth Item in Dropdown</a></li>
-            </ul>
-        </li>
-        <li><a href="#" class="link-heading">Menu Dropdown Two</a>
-            <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
-                <li><a href="#">Second Item in Dropdown</a></li>
-                <li><a href="#">Third Item in Dropdown That Goes to Two Lines</a></li>
-                <li><a href="#">Fourth Item in Dropdown</a></li>
-            </ul>
-        </li>
-        <li><a href="#" class="link-heading">Menu Dropdown Three</a>
-            <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
-                <li><a href="#">Second Item in Dropdown</a></li>
-                <li><a href="#">Third Item in Dropdown</a></li>
-                <li><a href="#">Fourth Item in Dropdown</a></li>
-                <li><a href="#">Fifth Item in Dropdown</a></li>
-                <li><a href="#">Sixth Item in Dropdown</a></li>
-                <li><a href="#">Seventh Item in Dropdown</a></li>
-                <li><a href="#">Eighth Item in Dropdown</a></li>
-                <li><a href="#">Ninth Item in Dropdown</a></li>
-                <li><a href="#">Tenth Item in Dropdown</a></li>
-                <li><a href="#">Eleventh Item in Dropdown</a></li>
-            </ul>
-        </li>
-        <li><a href="#" class="link-heading">Menu Dropdown Four</a>
-            <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
-                <li><a href="#">Second Item in Dropdown</a></li>
-                <li><a href="#">Third Item in Dropdown</a></li>
-                <li><a href="#">Fourth Item in Dropdown</a></li>
-                <li><a href="#">Fifth Item in Dropdown</a></li>
-                <li><a href="#">Sixth Item in Dropdown</a></li>
-                <li><a href="#">Seventh Item in Dropdown</a></li>
-            </ul>
-        </li>
-        <li><a href="#" class="link-heading">Menu Dropdown Five</a>
-            <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
-            </ul>
-        </li>
-        <li><a href="#" class="link-heading">Menu Dropdown Six</a>
-            <ul>
-                <li><a href="#">First Item in Dropdown</a></li>
-                <li><a href="#">Second Item in Dropdown</a></li>
-                <li><a href="#">Third Item in Dropdown</a></li>
-                <li><a href="#">Fourth Item in Dropdown</a></li>
-                <li><a href="#">Fifth Item in Dropdown That Goes to Three Lines Because it Is Very Long</a></li>
-                <li><a href="#">Sixth Item in Dropdown</a></li>
-                <li><a href="#">Seventh Item in Dropdown</a></li>
-                <li><a href="#">Eighth Item in Dropdown</a></li>
-            </ul>
-        </li>
+        <li><a href="/education/" class="link-heading">Academics</a></li>
+        <li><a href="research/" class="link-heading">Research</a></li>
+        <li><a href="/clinicalcare/" class="link-heading">Clinical Care</a></li>
+        <li><a href="/publicservice/" class="link-heading">Public Service</a></li>
+        <li><a href="/aboututhsc/" class="link-heading">About UTHSC</a></li>
+        <li><a href="http://uthscalumni.com/" class="link-heading">Alumni &amp; Friends</a></li>
     </ul>
 
     <!--Safari bottom nav fix-->
@@ -803,18 +739,7 @@
     </div>
 
     <div class="off-canvas-search">
-        <!--Search form-->
-        <form class="input-group" aria-label="Search the UTHSC site"
-              action="http://uthsc.edu/search/" method="get" style="margin-bottom:0;">
-            <input type="search" aria-label="Search the UTHSC site" role="search" name="s"
-                   placeholder="search" style="margin-right:0;">
-            <div class="input-group-button">
-                <button type="submit" class="button" aria-label="Submit search form">
-                    <span class="fa fa-search"></span>
-                </button>
-            </div>
-        </form>
-        <!--/Search form-->
+        <?php include('off-canvas-search-form.php'); ?>
     </div>
 
     <!--Close menu button-->
