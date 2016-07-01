@@ -7,12 +7,16 @@
 
     <!--***************-->
     <!--Open Graph Tags-->
+    <!--Takes care of Facebook, Twitter, Google+, and LinkedIn (the four we are using)-->
     <!--***************-->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://uthsc.edu/">
-    <meta property="og:title" content="xxxx">
+    <meta property="og:title" content="xxxxFromPageTitlexxxx">
     <meta property="og:description" content="xxxx">
-    <meta property="og:image" content="https://uthsc.edu/xxxx">
+    <meta property="og:image" content="http://xxxx.jpg">
+    <meta property="og:url" content="http://xxxx.htm">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="og:site_name" content="xxxxFromPageTitlexxxx">
+    <meta name="twitter:image:alt" content="Alt text for image">
     <!--****************-->
     <!--/Open Graph Tags-->
     <!--****************-->
