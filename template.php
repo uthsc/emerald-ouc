@@ -571,6 +571,30 @@
                 </ul>
             </div>
         </div>
+        <div class="row">
+            <div class="columns">
+                <h4>Accordion</h4>
+                <ul class="accordion" data-accordion>
+                    <li class="accordion-item is-active" data-accordion-item>
+                        <a href="#" class="accordion-title">Accordion 1</a>
+                        <div class="accordion-content" data-tab-content>
+                            One
+                        </div>
+                    </li>
+                    <li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">Accordion 1</a>
+                        <div class="accordion-content" data-tab-content>
+                            Two
+                        </div>
+                    </li><li class="accordion-item" data-accordion-item>
+                        <a href="#" class="accordion-title">Accordion 1</a>
+                        <div class="accordion-content" data-tab-content>
+                            Three
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
     <!--********-->
     <!--/Content-->
