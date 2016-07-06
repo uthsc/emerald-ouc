@@ -431,7 +431,7 @@
                     inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
                     voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
                     eos qui ratione voluptatem sequi nesciunt.</p>
-                <ol>
+                <ul>
                     <li><a href="#">Nunc dignissim <strong>risus id metus</strong></a></li>
                     <li>Cras ornare tristique elit
                         <ul>
@@ -442,7 +442,7 @@
                         </ul>
                     </li>
                     <li><a href="#">Vivamus vestibulum nulla nec ante</a></li>
-                </ol>
+                </ul>
                 <a href="#" class="button radius">
                     Get Directions&ensp;<span class="fa fa-map-marker" aria-hidden="true"></span>
                 </a>
