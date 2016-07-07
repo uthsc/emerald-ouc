@@ -718,6 +718,99 @@
         <!--/Row 4-->
         <!--******-->
 
+        <!--*****-->
+        <!--Row 5-->
+        <!--*****-->
+        <div class="row expanded">
+
+            <div class="row">
+                <div class="columns uthsc-row-title">
+                    <h3>Template FAQ</h3>
+                </div>
+            </div>
+
+        <div class="row">
+            <div class="columns large-3"></div>
+            <div class="columns large-6 large-centered">
+                <div class="uthsc-faq">
+                    <div class="uthsc-faq-questions">
+                        <ul>
+                            <li><a href="#q1">What is your name?</a></li>
+                            <li><a href="#q2">What is your favorite color?</a></li>
+                            <li><a href="#q3">What is your the weight of an unladen swallow?</a></li>
+                        </ul>
+                    </div>
+
+                    <hr />
+
+                    <div class="uthsc-faq-answers">
+                        <h4 id="q1"><a href="#q1">What is your name?</a></h4>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                            architecto beat</p>
+
+                        <h4 id="q2"><a href="#q2">What is your favorite color?</a></h4>
+                        <p>sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                            quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                            non numquam eius modi</p>
+
+                        <h4 id="q3"><a href="#q3">What is your the weight of an unladen swallow?</a></h4>
+                        <p>ncidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
+                            quis nostrumexercitationem ullam corporis suscipit laboriosam, nisi
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                 tempora
+                iut aliquid ex ea commodi consequatur? Quis
+                autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
+                illum qui dolorem eum fugiat quo voluptas nulla pariatur?<br /><br /><br />
+            </div>
+            <div class="columns large-3"> </div>
+        </div>
+        </div>
+        <!--*****-->
+        <!--/Row 5-->
+        <!--*****-->
+
+        <!--*****-->
+        <!--Row 6-->
+        <!--*****-->
+        <div class="row expanded">
+
+            <div class="row">
+                <div class="columns uthsc-row-title">
+                    <h3>Center Column</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="columns large-2"></div>
+                <div class="columns large-8 large-centered">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                    sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                    dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                    incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+                    exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+                    autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
+                    illum qui dolorem eum fugiat quo voluptas nulla pariatur?
+                </div>
+                <div class="columns large-7"> </div>
+            </div>
+        </div>
+        <!--*****-->
+        <!--Row 6-->
+        <!--*****-->
+
         <div class="row">
             <div class="columns">
                 <h4>Accordion</h4>
