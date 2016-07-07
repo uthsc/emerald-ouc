@@ -44,6 +44,11 @@
 
     include 'results.php';
 
+    echo '<script>';
+    echo 'var peopleSearchResults = ' . $people_search;
+    echo '</script>';
+
+
     $person = array(
         'name' => '',
         'campus' => '',
@@ -259,6 +264,38 @@
                    <!--UTHSC search results-->
                    <!--********************-->
                    <div class="row search-uthsc-results" style="display:none;">
+
+                       <table class="stack">
+                           <thead>
+                           <tr>
+                               <th>Cookies</th>
+                               <th>Taste</th>
+                               <th>Calories</th>
+                               <th>Overall</th>
+                           </tr>
+                           </thead>
+                           <tbody>
+                           <tr>
+                               <td>Chocolate Chip</td>
+                               <td>Tastey</td>
+                               <td>120cal</td>
+                               <td>7.5/10</td>
+                           </tr>
+                           <tr>
+                               <td>Snickerdoodle</td>
+                               <td>Delicious</td>
+                               <td>95cal</td>
+                               <td>8/10</td>
+                           </tr>
+                           <tr>
+                               <td>Oatmeal Raisin</td>
+                               <td>Superb</td>
+                               <td>10cal</td>
+                               <td>11/10</td>
+                           </tr>
+                           </tbody>
+                       </table>
+
                        <div class="columns large-6">
                            <ul class="tabs" data-tabs id="example-tabs">
                                <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Campus</a></li>
@@ -299,6 +336,8 @@
 
                            <h2>People</h2>
 
+
+
                            <ul class="tabs" data-tabs id="people-search-tabs">
                                <li class="tabs-title is-active"><a href="#people-search-campus" aria-selected="true">Campus</a></li>
                                <li class="tabs-title"><a href="#people-search-system">System</a></li>
@@ -307,49 +346,10 @@
                            <div class="tabs-content" data-tabs-content="people-search-tabs">
                                <div class="tabs-panel is-active" id="people-search-campus">
 
-                                   <!--*********************-->
-                                   <!--Campus Search Results-->
-                                   <!--*********************-->
-                                   <table>
-                                       <thead>
-                                       <tr>
-                                           <th width="200">Name</th>
-                                           <th>NetID</th>
-                                           <th width="180">Phone</th>
-                                           <th >Department/College</th>
-                                       </tr>
-                                       </thead>
-                                       <tbody>
-                                       <?php echo people_search_rows($people_search['campus']); ?>
-                                       </tbody>
-                                   </table>
-                                   <!--**********************-->
-                                   <!--/Campus Search Results-->
-                                   <!--**********************-->
+
 
                                </div>
-                               <div class="tabs-panel" id="people-search-system">
-
-                                   <!--*********************-->
-                                   <!--System Search Results-->
-                                   <!--*********************-->
-                                   <table>
-                                       <thead>
-                                       <tr>
-                                           <th width="200">Name</th>
-                                           <th>NetID</th>
-                                           <th width="180">Phone</th>
-                                           <th >Department/College</th>
-                                       </tr>
-                                       </thead>
-                                       <tbody>
-                                       <?php echo people_search_rows($people_search['system']); ?>
-                                       </tbody>
-                                   </table>
-                                   <!--**********************-->
-                                   <!--/System Search Results-->
-                                   <!--**********************-->
-                               </div>
+                               <div class="tabs-panel" id="people-search-system"></div>
                            </div>
 
                            <div class="row">
@@ -572,6 +572,75 @@
        <!--**************************-->
        <!--/Footcode for Search UTHSC-->
        <!--**************************-->
+
+
+   <style>
+       #people-search-system table td, #people-search-campus table td{
+           font-size:.8em;
+       }
+   </style>
+
+   <script>
+
+           function peopleSearchTable(data, el) {
+
+               var html = '';
+
+               html += "<table class=\"stack\">";
+               html += "<thead>";
+               html += "<tr>";
+               html += "<th width=\"200\">Name</th>";
+               html += "<th>NetID</th>";
+               html += "<th width=\"180\">Phone</th>";
+               html += "<th>Department/College</th>";
+               html += "</tr>";
+               html += "</thead>";
+               html += "<tbody>";
+
+               for (var person in data) {
+
+                   html += "<tr>";
+                   html += "<td>";
+                   html += "<a href=#\"" + data[person]['id'] + "\">";
+                   html += data[person]['name'];
+                   html += "</a>";
+                   html += "</td>";
+                   html += "<td>" + person + "</td>";
+                   html += "<td>" + data[person]['phone'] + "</td>";
+                   html += "<td>" + data[person]['dept'] + "</td>";
+                   html += "</tr>";
+               }
+
+               html += "</tbody>";
+               html += "</table>";
+
+               $(el).html(html);
+           }
+
+
+       $(document).ready(function(){
+           var campusResultsCount = peopleSearchResults['meta']['memphis_count'],
+               systemResultsCount = peopleSearchResults['meta']['system_count'],
+               campusResults = peopleSearchResults['campus'],
+               systemResults = peopleSearchResults['system'];
+
+           if(campusResultsCount > 0) {
+
+               peopleSearchTable(campusResults, '#people-search-campus');
+
+           } else {
+               $('#people-search-campus').html('no results')
+           }
+
+           if(systemResultsCount > 0) {
+
+               peopleSearchTable(systemResults, '#people-search-system');
+
+           } else {
+               $('#people-search-system').html('no results')
+           }
+       })
+   </script>
 
    </body>
 </html>
