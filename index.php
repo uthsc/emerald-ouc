@@ -7,12 +7,19 @@
 
     <!--***************-->
     <!--Open Graph Tags-->
+    <!--Takes care of Facebook, Twitter, Google+, and LinkedIn (the four we are using)-->
     <!--***************-->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://uthsc.edu/">
-    <meta property="og:title" content="xxxx">
+    <meta property="og:title" content="xxxxFromPageTitlexxxx">
     <meta property="og:description" content="xxxx">
-    <meta property="og:image" content="https://uthsc.edu/xxxx">
+    <meta property="og:image" content="http://xxxx.jpg"> <!--FB Large 1200 x 630 and 8MB, Small 600 x 315 - Twitter less than 1MB-->
+    <meta property="og:url" content="http://xxxx.htm">
+    <meta name="og:site_name" content="xxxxFromPageTitlexxxx">
+    <meta property="fb:app_id" content="286629201725123" /> <!--uses the uthsc FB app id for analytics on facebook-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image:alt" content="xxxx"> <!--Alt text for image-->
+    <meta name="twitter:site" content="@uthsc" /> <!--main uthsc twitter account for analytics on twitter-->
+    <meta name="twitter:creator" content="@uthscits" /> <!--extended twitter account-->
     <!--****************-->
     <!--/Open Graph Tags-->
     <!--****************-->
