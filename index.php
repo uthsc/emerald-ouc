@@ -57,92 +57,7 @@
     <!--*****************-->
     <!--UTHSC site nav-->
     <!--*****************-->
-    <nav class="uthsc-site-nav hide-for-print" aria-label="UTHSC site menu" role="navigation">
-        <div class="uthsc-site-nav-left">
-            <ul class="menu">
-                <li><a href="/students/">Students</a></li>
-                <li><a href="/faculty/">Faculty &amp; Staff</a></li>
-                <li><a href="/alumni/">Alumni</a></li>
-                <li><a href="/visitors/">Visitors</a></li>
-                <li><a href="/clinicalcare/">Patients</a></li>
-            </ul>
-        </div>
-
-        <div class="uthsc-site-nav-right">
-            <ul class="dropdown menu" data-dropdown-menu="data-dropdown-menu">
-                <li class="has-submenu">
-                    <a href="#">Our Mission</a>
-                    <ul class="submenu menu vertical" data-submenu="data-submenu">
-                        <li>
-                            <a href="/education/">
-                                <span class="fa fa-graduation-cap"></span>
-                                Academics
-                            </a>
-                        </li>
-                        <li>
-                            <a href="research/">
-                                <span class="fa fa-flask"></span>
-                                Research
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/clinicalcare/">
-                                <span class="fa fa-medkit"></span>
-                                Clinical Care
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/publicservice/">
-                                <span class="fa fa-globe"></span>
-                                Public Service
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/aboututhsc/utmission.php">
-                                Mission Statement
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="has-submenu">
-                    <a href="#">Resources</a>
-                    <ul class="submenu menu vertical" data-submenu>
-                        <li><a href="/banner/info/">Banner</a></li>
-                        <li><a href="https://courses.uthsc.edu/">Blackboard</a></li>
-                        <li><a href="http://events.uthsc.edu/">Calendar</a></li>
-                        <li><a href="/hr/employment/">Career Opportunities</a></li>
-                        <li><a href="/ilogin/">iLogin</a></li>
-                        <li><a href="/map/">Maps</a></li>
-                        <li><a href="https://utap.tennessee.edu/">MyUT</a></li>
-                        <li><a href="https://news.uthsc.edu/">News</a></li>
-                        <li><a href="/email/">Webmail</a></li>
-                    </ul>
-                </li>
-                <li><a href="/give/"><span class="fa fa-gift"></span> Make a Gift</a></li>
-                <li><a href="/admissions/visit-uthsc.php"><span class="fa fa-road"></span> Take a Tour</a></li>
-                <li>
-                    <div class="show-for-large">
-                        <!--Search form-->
-                        <form class="input-group" aria-label="Search the UTHSC site"
-                              action="search/" method="get" style="margin-bottom:0;">
-                            <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
-                                   placeholder="search" style="margin-right:0;">
-                            <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
-                            <input type="hidden" name="cof" value="FORID:11" />
-                            <input type="hidden" name="ie" value="UTF-8" />
-                            <input type="hidden" name="col" value="uthsc" />
-                            <div class="input-group-button">
-                                <button type="submit" class="button" aria-label="Submit search form">
-                                    <span class="fa fa-search"></span>
-                                </button>
-                            </div>
-                        </form>
-                        <!--/Search form-->
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    <?php include('uthsc-site-nav.php'); ?>
     <!--******************-->
     <!--/UTHSC site nav-->
     <!--******************-->
@@ -174,7 +89,7 @@
                     <input type="hidden" name="col" value="uthsc" />
                     <div class="input-group-button">
                         <button type="submit" class="button" aria-label="Submit search form">
-                            <span class="fa fa-search"></span>
+                            <span class="fa fa-search" aria-hidden="true"></span>
                         </button>
                     </div>
                 </form>
@@ -215,7 +130,7 @@
         <ul class="row collapse" data-equalizer="heading-links">
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="/education/" data-equalizer-watch="heading-links"><span class="fa fa-graduation-cap"></span> Academics</a>
+                <a href="/education/" data-equalizer-watch="heading-links"><span class="fa fa-graduation-cap" aria-hidden="true"></span> Academics</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
@@ -223,7 +138,7 @@
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="/clinicalcare/" data-equalizer-watch="heading-links"><span class="fa fa-medkit"></span>Clinical Care</a>
+                <a href="/clinicalcare/" data-equalizer-watch="heading-links"><span class="fa fa-medkit" aria-hidden="true"></span>Clinical Care</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
@@ -235,7 +150,7 @@
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="http://uthscalumni.com/" data-equalizer-watch="heading-links"><span class="fa fa-users"></span>Alumni &amp; Friends</a>
+                <a href="http://uthscalumni.com/" data-equalizer-watch="heading-links"><span class="fa fa-users" aria-hidden="true"></span>Alumni &amp; Friends</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns"></li>
@@ -264,14 +179,14 @@
             <div class="columns medium-6 large-12">
                 <div class="row">
                     <div class="columns small-6 medium-12 large-4 large-push-2">
-                        <a href="/admissions/visit-uthsc.php" class="button secondary large expanded show-for-large"><span class="fa fa-road"></span> Take a Tour</a>
-                        <a href="/admissions/visit-uthsc.php" class="button secondary expanded show-for-medium-only"><span class="fa fa-road"></span> Take a Tour</a>
-                        <a href="/admissions/visit-uthsc.php" class="button secondary tiny expanded hide-for-medium"><span class="fa fa-road"></span> Take a Tour</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary large expanded show-for-large"><span class="fa fa-road" aria-hidden="true"></span> Take a Tour</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary expanded show-for-medium-only"><span class="fa fa-road" aria-hidden="true"></span> Take a Tour</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary tiny expanded hide-for-medium"><span class="fa fa-road" aria-hidden="true"></span> Take a Tour</a>
                     </div>
                     <div class="columns small-6 medium-12 large-4 large-pull-2">
-                        <a href="/admissions/visit-uthsc.php" class="button secondary large expanded show-for-large"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
-                        <a href="/admissions/visit-uthsc.php" class="button secondary expanded show-for-medium-only"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
-                        <a href="/admissions/visit-uthsc.php" class="button secondary tiny expanded hide-for-medium"><span class="fa fa-clock-o"></span> Schedule a Visit</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary large expanded show-for-large"><span class="fa fa-clock-o" aria-hidden="true"></span> Schedule a Visit</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary expanded show-for-medium-only"><span class="fa fa-clock-o" aria-hidden="true"></span> Schedule a Visit</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary tiny expanded hide-for-medium"><span class="fa fa-clock-o" aria-hidden="true"></span> Schedule a Visit</a>
                     </div>
                 </div>
             </div>
@@ -443,7 +358,7 @@
                     </div>
                 </div>
                 <div class="columns medium-4 uthsc-did-you-know text-center">
-                    <h2><span class="fa fa-lightbulb-o"></span> Did you know...</h2>
+                    <h2><span class="fa fa-lightbulb-o" aria-hidden="true"></span> Did you know...</h2>
                     <p>UTHSC is ranked</p>
                     <p class="uthsc-did-you-know-number"><sup>#</sup>17</p>
                     <p>nationally among US pharmacy schools</p>
@@ -458,13 +373,9 @@
                     <div class="input-group">
                         <input class="input-group-field" type="text" placeholder="Search ..." type="search"
                                aria-label="Search the UTHSC site" role="search" name="q" />
-                        <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
-                        <input type="hidden" name="cof" value="FORID:11" />
-                        <input type="hidden" name="ie" value="UTF-8" />
-                        <input type="hidden" name="col" value="uthsc" />
                         <div class="input-group-button">
                             <button type="submit" class="button" aria-label="Submit search form">
-                                <span class="fa fa-search"></span>
+                                <span class="fa fa-search" aria-hidden="true"></span>
                             </button>
                         </div>
                     </div>
@@ -486,7 +397,7 @@
                         <li><a href="/residency/">Residencies and Fellowships</a></li>
                     </ul>
 
-                    <a class="button hollow small" href="/education/"><span class="fa fa-plus-circle"></span> Learn More...</a>
+                    <a class="button hollow small" href="/education/"><span class="fa fa-plus-circle" aria-hidden="true"></span> Learn More...</a>
                 </div>
 
                 <div class="columns">
@@ -501,7 +412,7 @@
                         <li><a href="research/">Office of Research</a></li>
                     </ul>
 
-                    <a class="button hollow small" href="research/"><span class="fa fa-plus-circle"></span> Learn More...</a>
+                    <a class="button hollow small" href="research/"><span class="fa fa-plus-circle" aria-hidden="true"></span> Learn More...</a>
                 </div>
 
                 <div class="columns">
@@ -515,8 +426,7 @@
                         <li><a href="/rkstc/">Rachel Kay Stevens Therapy Center</a></li>
                         <li><a href="/ULPS/">UT Le Bonheur Pediatric Specialists</a></li>
                     </ul>
-
-                    <a class="button hollow small" href="/clinicalcare/"><span class="fa fa-plus-circle"></span> Learn More...</a>
+                    <a class="button hollow small" href="/clinicalcare/"><span class="fa fa-plus-circle" aria-hidden="true"></span> Learn More...</a>
                 </div>
 
                 <div class="columns">
@@ -531,7 +441,7 @@
                         <li><a href="/hcp/">Health Career Programs</a></li>
                     </ul>
 
-                    <a class="button hollow small" href="/publicservice/"><span class="fa fa-plus-circle"></span> Learn More...</a>
+                    <a class="button hollow small" href="/publicservice/"><span class="fa fa-plus-circle" aria-hidden="true"></span> Learn More...</a>
                 </div>
             </div>
             <!--/ Mission Row-->
@@ -551,7 +461,7 @@
                 <div data-equalizer-watch="homepage-stats" class="columns medium-6">
                     <div class="row uthsc-infographic tennessee">
                         <div class="columns medium-6">
-                            <h2>4<span class="fa fa-map-marker"></span></h2>
+                            <h2>4<span class="fa fa-map-marker" aria-hidden="true"></span></h2>
                             <p>Campuses</p>
                             <p>
                                 <a href="/aboututhsc/ourcampuses.php#memphis">Memphis |</a>
@@ -660,27 +570,12 @@
      aria-hidden="true">
 
     <div class="off-canvas-search">
-        <!--Search form-->
-        <form class="input-group" aria-label="Search the UTHSC site"
-              action="search/" method="get" style="margin-bottom:0;">
-            <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
-                   placeholder="search" style="margin-right:0;">
-            <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
-            <input type="hidden" name="cof" value="FORID:11" />
-            <input type="hidden" name="ie" value="UTF-8" />
-            <input type="hidden" name="col" value="uthsc" />
-            <div class="input-group-button">
-                <button type="submit" class="button" aria-label="Submit search form">
-                    <span class="fa fa-search"></span>
-                </button>
-            </div>
-        </form>
-        <!--/Search form-->
+        <?php include('../off-canvas-search-form.php'); ?>
     </div>
 
     <!--  Close menu button-->
     <button class="uthsc-off-canvas-menu__close">
-        <span class="fa fa-chevron-left"></span>&emsp; Close Menu
+        <span class="fa fa-chevron-left" aria-hidden="true"></span>&emsp; Close Menu
     </button>
     <!--/ Close menu button-->
 
@@ -705,29 +600,15 @@
 <!--*********************-->
 <!--Right off canvas menu-->
 <!--*********************-->
-
 <nav id="uthsc-off-canvas-menu--slide-right" class="uthsc-off-canvas-menu uthsc-off-canvas-menu--slide-right hide-for-print" aria-hidden="true">
 
     <div class="off-canvas-search">
-        <!--Search form-->
-        <form class="input-group" aria-label="Search the UTHSC site" action="search/" method="get" style="margin-bottom:0;">
-            <input type="search" aria-label="Search the UTHSC site" role="search" name="q" placeholder="search" style="margin-right:0;">
-            <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
-            <input type="hidden" name="cof" value="FORID:11" />
-            <input type="hidden" name="ie" value="UTF-8" />
-            <input type="hidden" name="col" value="uthsc" />
-            <div class="input-group-button">
-                <button type="submit" class="button" aria-label="Submit search form">
-                    <span class="fa fa-search"></span>
-                </button>
-            </div>
-        </form>
-        <!--/Search form-->
+        <?php include('../off-canvas-search-form.php'); ?>
     </div>
 
     <!--  Close menu button-->
     <button class="uthsc-off-canvas-menu__close">
-        Close Menu &emsp;<span class="fa fa-chevron-right"></span>
+        Close Menu &emsp;<span class="fa fa-chevron-right" aria-hidden="true"></span>
     </button>
     <!--/ Close menu button-->
 
@@ -736,14 +617,14 @@
     <div class="mission-links">
         <h2 class="link-heading">Mission</h2>
 
-        <a href="/education/"><span class="uthsc-fa-centered fa fa-graduation-cap"></span>&emsp;Academics</a>
-        <a href="research"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
-        <a href="/clinicalcare/"><span class="uthsc-fa-centered fa fa-medkit"></span>&emsp;Clinical Care</a>
-        <a href="/publicservice/"><span class="uthsc-fa-centered fa fa-globe"></span>&emsp;Public Service</a>
+        <a href="/education/"><span class="uthsc-fa-centered fa fa-graduation-cap" aria-hidden="true"></span>&emsp;Academics</a>
+        <a href="research"><span class="uthsc-fa-centered fa fa-flask" aria-hidden="true"></span>&emsp;Research</a>
+        <a href="/clinicalcare/"><span class="uthsc-fa-centered fa fa-medkit" aria-hidden="true"></span>&emsp;Clinical Care</a>
+        <a href="/publicservice/"><span class="uthsc-fa-centered fa fa-globe" aria-hidden="true"></span>&emsp;Public Service</a>
     </div>
 
-    <a href="/give/" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift"></span>&emsp;Make a Gift</a>
-    <a href="/admissions/visit-uthsc.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road"></span>&emsp;Take a Tour</a>
+    <a href="/give/" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift" aria-hidden="true"></span>&emsp;Make a Gift</a>
+    <a href="/admissions/visit-uthsc.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road" aria-hidden="true"></span>&emsp;Take a Tour</a>
 
     <ul>
         <li><span class="link-heading">Information for...</span>
@@ -774,7 +655,6 @@
     <div class="safari-bottom-nav-fix"></div>
     <!--Safari bottom nav fix-->
 </nav>
-
 <!--**********************-->
 <!--/Right off canvas menu-->
 <!--**********************-->

@@ -40,6 +40,40 @@
         echo $_GET['col'] ?  '<script>var searchUthscType = "' . $_GET['col'] . '"</script>' : '';
     ?>
 
+    <?php
+
+    include 'results.php';
+
+    $person = array(
+        'name' => '',
+        'campus' => '',
+        'department' => '',
+        'address' => '',
+        'location' => '',
+        'phone' => '',
+        'designation' => '',
+        'title' => '',
+        'netid' => '',
+        'email' => ''
+    );
+
+    function people_search_rows($people){
+
+        $row = '';
+
+        foreach($people as $netid => $person) {
+            $row .= '<tr>';
+            $row .= '<td><a>' . $person['name'] . '</a></td>';
+            $row .= '<td>' . $netid . '</td>';
+            $row .= '<td>' . $person['phone'] . '</td>';
+            $row .= '<td>' . $person['dept'] . '</td>';
+            $row .= '</tr>';
+        }
+
+        return $row;
+    }
+
+    ?>
 
     <style>
         .uthsc-banner form {
@@ -68,93 +102,7 @@
        <!--*****************-->
        <!--UTHSC site nav-->
        <!--*****************-->
-       <nav class="uthsc-site-nav hide-for-print" aria-label="UTHSC site menu" role="navigation">
-           <div class="uthsc-site-nav-left">
-               <ul class="menu">
-                   <li><a href="/students/">Students</a></li>
-                   <li><a href="/faculty/">Faculty &amp; Staff</a></li>
-                   <li><a href="/alumni/">Alumni</a></li>
-                   <li><a href="/visitors/">Visitors</a></li>
-                   <li><a href="/clinicalcare/">Patients</a></li>
-               </ul>
-           </div>
-
-           <div class="uthsc-site-nav-right">
-               <ul class="dropdown menu" data-dropdown-menu="data-dropdown-menu">
-                   <li class="has-submenu">
-                       <a href="#">Our Mission</a>
-                       <ul class="submenu menu vertical" data-submenu="data-submenu">
-                           <li>
-                               <a href="/education/">
-                                   <span aria-hidden="true" class="fa fa-graduation-cap"></span>
-                                   Academics
-                               </a>
-                           </li>
-                           <li>
-                               <a href="research/">
-                                   <span aria-hidden="true" class="fa fa-flask"></span>
-                                   Research
-                               </a>
-                           </li>
-                           <li>
-                               <a href="/clinicalcare/">
-                                   <span aria-hidden="true" class="fa fa-medkit"></span>
-                                   Clinical Care
-                               </a>
-                           </li>
-                           <li>
-                               <a href="/publicservice/">
-                                   <span aria-hidden="true" class="fa fa-globe"></span>
-                                   Public Service
-                               </a>
-                           </li>
-                           <li>
-                               <a href="/aboututhsc/utmission.php">
-                                   Mission Statement
-                               </a>
-                           </li>
-                       </ul>
-                   </li>
-                   <li class="has-submenu">
-                       <a href="#">Resources</a>
-                       <ul class="submenu menu vertical" data-submenu>
-                           <li><a href="/banner/info/">Banner</a></li>
-                           <li><a href="https://courses.uthsc.edu/">Blackboard</a></li>
-                           <li><a href="http://events.uthsc.edu/">Calendar</a></li>
-                           <li><a href="/hr/employment/">Career Opportunities</a></li>
-                           <li><a href="/ilogin/">iLogin</a></li>
-                           <li><a href="/map/">Maps</a></li>
-                           <li><a href="https://utap.tennessee.edu/">MyUT</a></li>
-                           <li><a href="https://news.uthsc.edu/">News</a></li>
-                           <li><a href="/email/">Webmail</a></li>
-                       </ul>
-                   </li>
-                   <li><a href="/give/"><span aria-hidden="true" class="fa fa-gift"></span> Make a Gift</a></li>
-                   <li><a href="/admissions/visit-uthsc.php"><span aria-hidden="true" class="fa fa-road"></span> Take a Tour</a></li>
-                   <li>
-                       <div class="show-for-large">
-                           <!--Search form-->
-                           <form class="input-group search-form" aria-label="Search the UTHSC site"
-                                 action="../search/" method="get" style="margin-bottom:0;">
-                               <input class="input-group-field search-input"
-                                      placeholder="Search &hellip;"
-                                      value=""
-                                      type="search"
-                                      aria-label="Search the UTHSC site"
-                                      role="search"
-                                      name="q"/>
-                               <div class="input-group-button">
-                                   <button type="submit" class="button" aria-label="Submit search form">
-                                       <span aria-hidden="true" class="fa fa-search"></span>
-                                   </button>
-                               </div>
-                           </form>
-                           <!--/Search form-->
-                       </div>
-                   </li>
-               </ul>
-           </div>
-       </nav>
+       <?php include('../uthsc-site-nav.php'); ?>
        <!--******************-->
        <!--/UTHSC site nav-->
        <!--******************-->
@@ -326,7 +274,6 @@
                                    <div class="flex-video" style="height:1350px;">
                                        <iframe frameBorder="0" src="campus-search.html?q=<?php echo $_GET["q"] ?>"></iframe>
                                    </div>
-
                                    <!--**********************-->
                                    <!--/Campus Search Results-->
                                    <!--**********************-->
@@ -349,39 +296,67 @@
                        </div>
 
                        <div class="columns large-6">
-                           <h2>People Search</h2>
-                           <div class="callout">
 
-                               <table>
-                                   <thead>
-                                   <tr>
-                                       <th width="200">Name</th>
-                                       <th>NetID</th>
-                                       <th width="150">Phone</th>
-                                       <th width="150">Department/College</th>
-                                   </tr>
-                                   </thead>
-                                   <tbody>
-                                   <tr>
-                                       <td>Spake, George P</td>
-                                       <td>gspake1</td>
-                                       <td>(901) 448-1888</td>
-                                       <td>ITS Web Services</td>
-                                   </tr>
-                                   <tr>
-                                       <td>Content Goes Here</td>
-                                       <td>gspake1</td>
-                                       <td>Content Goes Here</td>
-                                       <td>Content Goes Here</td>
-                                   </tr>
-                                   <tr>
-                                       <td>Content Goes Here</td>
-                                       <td>gspake1</td>
-                                       <td>Content Goes Here</td>
-                                       <td>Content Goes Here</td>
-                                   </tr>
-                                   </tbody>
-                               </table>
+                           <h2>People</h2>
+
+                           <ul class="tabs" data-tabs id="people-search-tabs">
+                               <li class="tabs-title is-active"><a href="#people-search-campus" aria-selected="true">Campus</a></li>
+                               <li class="tabs-title"><a href="#people-search-system">System</a></li>
+                           </ul>
+
+                           <div class="tabs-content" data-tabs-content="people-search-tabs">
+                               <div class="tabs-panel is-active" id="people-search-campus">
+
+                                   <!--*********************-->
+                                   <!--Campus Search Results-->
+                                   <!--*********************-->
+                                   <table>
+                                       <thead>
+                                       <tr>
+                                           <th width="200">Name</th>
+                                           <th>NetID</th>
+                                           <th width="180">Phone</th>
+                                           <th >Department/College</th>
+                                       </tr>
+                                       </thead>
+                                       <tbody>
+                                       <?php echo people_search_rows($people_search['campus']); ?>
+                                       </tbody>
+                                   </table>
+                                   <!--**********************-->
+                                   <!--/Campus Search Results-->
+                                   <!--**********************-->
+
+                               </div>
+                               <div class="tabs-panel" id="people-search-system">
+
+                                   <!--*********************-->
+                                   <!--System Search Results-->
+                                   <!--*********************-->
+                                   <table>
+                                       <thead>
+                                       <tr>
+                                           <th width="200">Name</th>
+                                           <th>NetID</th>
+                                           <th width="180">Phone</th>
+                                           <th >Department/College</th>
+                                       </tr>
+                                       </thead>
+                                       <tbody>
+                                       <?php echo people_search_rows($people_search['system']); ?>
+                                       </tbody>
+                                   </table>
+                                   <!--**********************-->
+                                   <!--/System Search Results-->
+                                   <!--**********************-->
+                               </div>
+                           </div>
+
+                           <div class="row">
+                               <div class="columns">
+                                   <p>Legal Disclaimer</p>
+                                   <p>This directory is for official University use and also for communication of a personal nature between students, faculty, and staff listed herein. Use of this directory for any other purpose, including but not limited to reproduction and storage in a retreival system by any means, electronic or mechanical, photocopying or use of the addresses or other information contained in this directory for any mailing, is strictly prohibited.</p>
+                               </div>
                            </div>
                        </div>
                    </div>
@@ -438,23 +413,7 @@
             aria-hidden="true">
 
            <div class="off-canvas-search">
-               <!--Search form-->
-               <form class="input-group search-form" aria-label="Search the UTHSC site"
-                     action="../search/" method="get" style="margin-bottom:0;">
-                   <input class="input-group-field search-input"
-                          placeholder="Search &hellip;"
-                          value=""
-                          type="search"
-                          aria-label="Search the UTHSC site"
-                          role="search"
-                          name="q"/>
-                   <div class="input-group-button">
-                       <button type="submit" class="button" aria-label="Submit search form">
-                           <span aria-hidden="true" class="fa fa-search"></span>
-                       </button>
-                   </div>
-               </form>
-               <!--/Search form-->
+               <?php include('../off-canvas-search-form.php'); ?>
            </div>
 
            <!--  Close menu button-->
@@ -488,22 +447,7 @@
        <nav id="uthsc-off-canvas-menu--slide-right" class="uthsc-off-canvas-menu uthsc-off-canvas-menu--slide-right hide-for-print" aria-hidden="true">
 
            <div class="off-canvas-search">
-               <!--Search form-->
-               <form class="input-group search-form" aria-label="Search the UTHSC site" action="../search/" method="get" style="margin-bottom:0;">
-                   <input class="input-group-field search-input"
-                          placeholder="Search &hellip;"
-                          value=""
-                          type="search"
-                          aria-label="Search the UTHSC site"
-                          role="search"
-                          name="q"/>
-                   <div class="input-group-button">
-                       <button type="submit" class="button" aria-label="Submit search form">
-                           <span aria-hidden="true" class="fa fa-search"></span>
-                       </button>
-                   </div>
-               </form>
-               <!--/Search form-->
+               <?php include('../off-canvas-search-form.php'); ?>
            </div>
 
            <!--  Close menu button-->

@@ -199,15 +199,74 @@
     <!--/UTHSC Section Nav-->
     <!--******************-->
 
+    <style>
+        .image-navigation {
+            background-image: url('http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/random_grey_variations.png');
+            display:flex;
+
+
+
+        }
+
+        .image-navigation img {
+            padding:1em;
+        }
+
+        .image-navigation .word {
+            position: absolute;
+            left:0;
+            bottom:0;
+            padding-left:1.25em;
+            color: #fcf8e3;
+            font-weight: bold;
+
+        }
+
+    </style>
 
     <!--**********-->
     <!--Hero Image-->
     <!--**********-->
-    <div class="hero hero-one hide-for-print" style="
-    background:url('http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/research-hero-3.jpg');
-    background-position: 50%;
-    background-position-y: 50%;
-    background-size: cover;"></div>
+    <div class="row expanded image-navigation">
+        <div class="row ">
+            <div class="columns large-7">
+                <img src="http://lorempixel.com/1000/400/nature/" />
+                <div class="word">
+                    <p>Some Link</p>
+                </div>
+            </div>
+
+            <div class="columns large-5 " style="position:relative;">
+                <div class="row small-up-2 collapse">
+                    <div class="column" style="position:relative;">
+                        <img src="http://lorempixel.com/1000/552/nature/" />
+                        <div class="word">
+                            <p>This is too long</p>
+                        </div>
+                    </div>
+                    <div class="column" style="position:relative;">
+                        <img src="http://lorempixel.com/1000/551/nature/" />
+                        <div class="word">
+                            <p>Two Words</p>
+                        </div>
+                    </div>
+                    <div class="column" style="position:relative;">
+                        <img src="http://lorempixel.com/1000/550/nature/" />
+                        <div class="word">
+                            <p>Insights</p>
+                        </div>
+                    </div>
+                    <div class="column" style="position:relative;">
+                        <img src="http://lorempixel.com/1000/549/nature/" />
+                        <div class="word">
+                            <p>Links</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
     <!--***********-->
     <!--/Hero Image-->
     <!--***********-->
@@ -224,7 +283,7 @@
         <!--**********-->
         <div class="row">
             <div class="columns uthsc-row-title">
-                <h1>UTHSC Office of Research</h1>
+                <h1>Research IRB</h1>
             </div>
         </div>
         <!--***********-->

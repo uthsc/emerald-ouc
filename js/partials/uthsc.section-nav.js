@@ -8,23 +8,27 @@
     // allows foundation's sticky class to be used elsewhere.
     $(document).ready(function() {
 
-        var stickyNavTop = $('#uthsc-section-navigation').offset().top;
+			var sectionNav = $('#uthsc-section-navigation');
 
-        var stickyNav = function(){
-            var scrollTop = $(window).scrollTop();
+			if (sectionNav.length) {
+				var stickyNavTop = sectionNav.offset().top;
 
-            if (scrollTop > stickyNavTop) {
-                $('#uthsc-section-navigation').addClass('uthsc-sticky');
-            } else {
-                $('#uthsc-section-navigation').removeClass('uthsc-sticky');
-            }
-        };
+				function stickyNav() {
+					var scrollTop = $(window).scrollTop();
 
-        stickyNav();
+					if (scrollTop > stickyNavTop) {
+						sectionNav.addClass('uthsc-sticky');
+					} else {
+						sectionNav.removeClass('uthsc-sticky');
+					}
+				}
 
-        $(window).scroll(function() {
-            stickyNav();
-        });
+				stickyNav();
+
+				$(window).scroll(function() {
+					stickyNav();
+				});
+			}
     });
 
     //expanding menu

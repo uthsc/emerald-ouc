@@ -41,7 +41,7 @@
             <a href="mailto:webmaster@uthsc.edu" class="button expanded uthsc-footer-button">
                 <div class="row collapse">
                     <div class="columns small-5 text-right">
-                        <p><span class="fa fa-envelope fa-3x"></span>&emsp;</p>
+                        <p><span class="fa fa-envelope fa-3x" aria-hidden="true"></span>&emsp;</p>
                     </div>
                     <div class="columns small-7 text-left">
                         <p>
@@ -63,7 +63,7 @@
             <a href="/password/" class="button expanded uthsc-footer-button">
                 <div class="row collapse">
                     <div class="columns small-5 text-right">
-                        <p><span class="fa fa-key fa-3x"></span>&emsp;</p>
+                        <p><span class="fa fa-key fa-3x" aria-hidden="true"></span>&emsp;</p>
                     </div>
                     <div class="columns small-7 text-left">
                         <p>
@@ -86,28 +86,28 @@
     <div class="row hide-for-print">
         <div class="columns text-center uthsc-social-icons" aria-label="UTHSC on social media">
             <a href="https://facebook.com/uthsc" aria-label="facebook">
-                <span class="fa fa-facebook fa-2x fa-inverse"></span>
+                <span class="fa fa-facebook fa-2x fa-inverse" aria-hidden="true"></span>
                 <span class="show-for-sr">facebook</span>
             </a>
             <a href="https://twitter.com/uthsc" aria-label="twitter">
-                <span class="fa fa-twitter fa-2x fa-inverse"></span>
+                <span class="fa fa-twitter fa-2x fa-inverse" aria-hidden="true"></span>
                 <span class="show-for-sr">twitter</span>
             </a>
             <a href="https://instagram.com/uthsc" aria-label="instagram">
-                <span class="fa fa-instagram fa-2x fa-inverse"></span>
+                <span class="fa fa-instagram fa-2x fa-inverse" aria-hidden="true"></span>
                 <span class="show-for-sr">instagram</span>
             </a>
             <a href="https://linkedin.com/company/university-of-tennessee-health-science-center"
                aria-label="linked in">
-                <span class="fa fa-linkedin fa-2x fa-inverse"></span>
+                <span class="fa fa-linkedin fa-2x fa-inverse" aria-hidden="true"></span>
                 <span class="show-for-sr">linked in</span>
             </a>
             <a href="https://youtube.com/user/uthsc" aria-label="youtube">
-                <span class="fa fa-youtube fa-2x fa-inverse"></span>
+                <span class="fa fa-youtube fa-2x fa-inverse" aria-hidden="true"></span>
                 <span class="show-for-sr">You-tube</span>
             </a>
             <a href="https://pinterest.com/uthsc/" aria-label="pinterest">
-                <span class="fa fa-pinterest fa-2x fa-inverse"></span>
+                <span class="fa fa-pinterest fa-2x fa-inverse" aria-hidden="true"></span>
                 <span class="show-for-sr">pinterest</span>
             </a>
         </div>
@@ -127,7 +127,7 @@
                 <a href="/univheal/emergencies.php" class="alert button expanded">
                     <div class="row">
                         <div class="columns large-5 medium-4 text-right">
-                            <span class="fa fa-phone fa-flip-horizontal fa-3x"></span>
+                            <span class="fa fa-phone fa-flip-horizontal fa-3x" aria-hidden="true"></span>
                         </div>
 
                         <div class="columns large-7 medium-8 text-left">
@@ -146,7 +146,7 @@
         <!--Mobile Emergency Numbers Links-->
         <div id="uthsc-emergency-mobile" class="columns hide-for-medium">
             <h2 class="text-center">
-                <span class="fa fa-phone fa-flip-horizontal fa-2x"></span>&emsp;
+                <span class="fa fa-phone fa-flip-horizontal fa-2x" aria-hidden="true"></span>&emsp;
                 Emergency Numbers
             </h2>
 
@@ -161,7 +161,7 @@
                     <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
                     <a href="#panel1d" role="tab" class="accordion-title" id="panel1d-heading"
                        aria-controls="panel1d">
-                        <span class="fa fa-info-circle"></span> Medical/Behavioral
+                        <span class="fa fa-info-circle" aria-hidden="true"></span> Medical/Behavioral
                     </a>
 
                     <!-- The content pane needs an ID that matches the above href, role="tabpanel",
@@ -171,7 +171,7 @@
 
                         <a href="tel:911" class="button expanded"
                            aria-label="Call police at 911">
-                            <span class="fa fa-phone fa-2x fa-flip-horizontal"></span>
+                            <span class="fa fa-phone fa-2x fa-flip-horizontal" aria-hidden="true"></span>
                             &emsp;911
                         </a>
 
@@ -179,7 +179,7 @@
 
                         <a href="tel:901-448-4444" class="button expanded"
                            aria-label="Call campus police at 901-448-4444">
-                            <span class="fa fa-phone fa-2x fa-flip-horizontal"></span>
+                            <span class="fa fa-phone fa-2x fa-flip-horizontal" aria-hidden="true"></span>
                             &emsp;(901) 448-4444
                         </a>
                     </div>
@@ -195,7 +195,7 @@
                     <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
                     <a href="#panel2d" role="tab" class="accordion-title" id="panel2d-heading"
                        aria-controls="panel2d">
-                        <span class="fa fa-info-circle"></span> Medical Urgent Care
+                        <span class="fa fa-info-circle" aria-hidden="true"></span> Medical Urgent Care
                     </a>
 
                     <!-- The content pane needs an ID that matches the above href, role="tabpanel",
@@ -204,7 +204,7 @@
                          aria-labelledby="panel2d-heading">
                         <a href="tel:901-448-5630" class="button expanded"
                            aria-label="Call medical urgent care at 901-448-5630">
-                            <span class="fa fa-phone fa-2x fa-flip-horizontal"></span>
+                            <span class="fa fa-phone fa-2x fa-flip-horizontal" aria-hidden="true"></span>
                             &emsp;(901) 448-5630
                         </a>
                     </div>
@@ -220,7 +220,7 @@
                     <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
                     <a href="#panel3d" role="tab" class="accordion-title" id="panel3d-heading"
                        aria-controls="panel3d">
-                        <span class="fa fa-info-circle"></span> Behavioral Health Urgent Care
+                        <span class="fa fa-info-circle" aria-hidden="true"></span> Behavioral Health Urgent Care
                     </a>
 
                     <!-- The content pane needs an ID that matches the above href, role="tabpanel",
@@ -229,7 +229,7 @@
                          aria-labelledby="panel2d-heading">
                         <a href="tel:901-448-5064" class="button expanded"
                            aria-label="Call behavioral health urgent care at 901-448-448-5064">
-                            <span class="fa fa-phone fa-2x fa-flip-horizontal"></span>
+                            <span class="fa fa-phone fa-2x fa-flip-horizontal" aria-hidden="true"></span>
                             &emsp;(901) 448-5064
                         </a>
                     </div>
@@ -245,7 +245,7 @@
                     <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
                     <a href="#panel4d" role="tab" class="accordion-title" id="panel4d-heading"
                        aria-controls="panel4d">
-                        <span class="fa fa-info-circle"></span> Student Assistance Program
+                        <span class="fa fa-info-circle" aria-hidden="true"></span> Student Assistance Program
                     </a>
 
                     <!-- The content pane needs an ID that matches the above href, role="tabpanel",
@@ -255,7 +255,7 @@
 
                         <a href="tel:800-327-2255" class="button expanded"
                            aria-label="Call student assistance program at 800-327-2255">
-                            <span class="fa fa-phone fa-2x fa-flip-horizontal"></span>
+                            <span class="fa fa-phone fa-2x fa-flip-horizontal" aria-hidden="true"></span>
                             &emsp;(800) 327-2255<br />
                             (Option 3)
                         </a>
@@ -272,7 +272,7 @@
                     <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
                     <a href="#panel5d" role="tab" class="accordion-title" id="panel5d-heading"
                        aria-controls="panel5d">
-                        <span class="fa fa-info-circle"></span> Employee Assistance Program
+                        <span class="fa fa-info-circle" aria-hidden="true"></span> Employee Assistance Program
                     </a>
 
                     <!-- The content pane needs an ID that matches the above href, role="tabpanel",
@@ -282,7 +282,7 @@
 
                         <a href="tel:855-437-3486" class="button expanded"
                            aria-label="Call employee assistance program at 855-437-3486">
-                            <span class="fa fa-phone fa-2x fa-flip-horizontal"></span>
+                            <span class="fa fa-phone fa-2x fa-flip-horizontal" aria-hidden="true"></span>
                             &emsp;(855) 437-3486
                         </a>
                     </div>
@@ -298,7 +298,7 @@
                     <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
                     <a href="#panel6d" role="tab" class="accordion-title" id="panel6d-heading"
                        aria-controls="panel6d">
-                        <span class="fa fa-info-circle"></span> After Hours Medical/Behavioral
+                        <span class="fa fa-info-circle" aria-hidden="true"></span> After Hours Medical/Behavioral
                     </a>
 
                     <!-- The content pane needs an ID that matches the above href, role="tabpanel",
@@ -308,7 +308,7 @@
 
                         <a href="tel:901-541-5654" class="button expanded"
                            aria-label="Call after hours medical behavioral at 901-541-5654">
-                            <span class="fa fa-phone fa-2x fa-flip-horizontal"></span>
+                            <span class="fa fa-phone fa-2x fa-flip-horizontal" aria-hidden="true"></span>
                             &emsp;(901) 541-5654
                         </a>
                     </div>
