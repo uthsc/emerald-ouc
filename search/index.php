@@ -470,105 +470,13 @@
        <!--********-->
 
 
-       <!--*************************-->
-       <!--Footcode for Search UTHSC-->
-       <!--*************************-->
-       <script>
-           $(document).ready(function(){
-               //check for query
-               if (typeof searchUthscQuery !== 'undefined') {
-                   //un-hide search results
-                   $('.search-uthsc-results').removeAttr("style");
-                   //set value of search input to query
-                   $('form.search-form .search-input').attr({value: searchUthscQuery});
-               } else {
-                   //add bottom-margin to input
-                   $('.main-content .search-form').attr({style:"margin-bottom:30em;"})
-               }
-
-               //check for search type
-               if (typeof searchUthscType !== 'undefined') {
-                   //check search type for utsys
-                   if (searchUthscType == 'utsys') {
-                       //make the System tab active
-                       $('.tabs #panel2-label').click();
-                   }
-               }
-           });
-       </script>
-        <script src="../-resources/2015/js/uthsc-emergency-notification.min.js"></script>
-       <!--**************************-->
-       <!--/Footcode for Search UTHSC-->
-       <!--**************************-->
-
-
-   <style>
-       #people-search-system table td, #people-search-campus table td{
-           font-size:.8em;
-       }
-   </style>
-
-   <script>
-
-           function peopleSearchTable(data, el) {
-
-               var html = '';
-
-               html += "<table class=\"stack\">";
-               html += "<thead>";
-               html += "<tr>";
-               html += "<th width=\"200\">Name</th>";
-               html += "<th>NetID</th>";
-               html += "<th width=\"180\">Phone</th>";
-               html += "<th>Department/College</th>";
-               html += "</tr>";
-               html += "</thead>";
-               html += "<tbody>";
-
-               for (var person in data) {
-
-                   html += "<tr>";
-                   html += "<td>";
-                   html += "<a href=#\"" + data[person]['id'] + "\">";
-                   html += data[person]['name'];
-                   html += "</a>";
-                   html += "</td>";
-                   html += "<td>" + person + "</td>";
-                   html += "<td>" + data[person]['phone'] + "</td>";
-                   html += "<td>" + data[person]['dept'] + "</td>";
-                   html += "</tr>";
-               }
-
-               html += "</tbody>";
-               html += "</table>";
-
-               $(el).html(html);
-           }
-
-
-       $(document).ready(function(){
-           var campusResultsCount = peopleSearchResults['meta']['memphis_count'],
-               systemResultsCount = peopleSearchResults['meta']['system_count'],
-               campusResults = peopleSearchResults['campus'],
-               systemResults = peopleSearchResults['system'];
-
-           if(campusResultsCount > 0) {
-
-               peopleSearchTable(campusResults, '#people-search-campus');
-
-           } else {
-               $('#people-search-campus').html('no results')
-           }
-
-           if(systemResultsCount > 0) {
-
-               peopleSearchTable(systemResults, '#people-search-system');
-
-           } else {
-               $('#people-search-system').html('no results')
-           }
-       })
-   </script>
-
+   <!--*************************-->
+   <!--Footcode for Search UTHSC-->
+   <!--*************************-->
+   <script src="../-resources/2015/js/uthsc-emergency-notification.min.js"></script>
+   <script src="../-resources/2015/js/uthsc-search.min.js"></script>
+   <!--**************************-->
+   <!--/Footcode for Search UTHSC-->
+   <!--**************************-->
    </body>
 </html>
