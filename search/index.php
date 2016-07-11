@@ -39,57 +39,16 @@
          * Assign search type to global js variable
          */
         echo $_GET['col'] ?  '<script>var searchUthscType = "' . $_GET['col'] . '"</script>' : '';
-    ?>
 
-    <?php
+        include '/var/www/html/search/scripts/lookup.php';
 
-    include 'results.php';
-
-    echo '<script>';
-    echo 'var peopleSearchResults = ' . $people_search;
-    echo '</script>';
-
-
-    $person = array(
-        'name' => '',
-        'campus' => '',
-        'department' => '',
-        'address' => '',
-        'location' => '',
-        'phone' => '',
-        'designation' => '',
-        'title' => '',
-        'netid' => '',
-        'email' => ''
-    );
-
-    function people_search_rows($people){
-
-        $row = '';
-
-        foreach($people as $netid => $person) {
-            $row .= '<tr>';
-            $row .= '<td><a>' . $person['name'] . '</a></td>';
-            $row .= '<td>' . $netid . '</td>';
-            $row .= '<td>' . $person['phone'] . '</td>';
-            $row .= '<td>' . $person['dept'] . '</td>';
-            $row .= '</tr>';
-        }
-
-        return $row;
-    }
-
+        echo '<script>var peopleSearchResults = ' . $people_search . '</script>';
     ?>
 
     <style>
-        .uthsc-banner form {
-            display:none;
-        }
-
-        .uthsc-row-title {
-            border:0;
-            margin-bottom:0;
-        }
+        .uthsc-banner form { display:none; }
+        .uthsc-row-title { border:0; margin-bottom:0; }
+        #people-search-results-system table td, #people-search-results-campus table td{ font-size:.8em; }
     </style>
     <!--*************************-->
     <!--Headcode for Search UTHSC-->
@@ -265,46 +224,14 @@
                    <!--UTHSC search results-->
                    <!--********************-->
                    <div class="row search-uthsc-results" style="display:none;">
-
-                       <table class="stack">
-                           <thead>
-                           <tr>
-                               <th>Cookies</th>
-                               <th>Taste</th>
-                               <th>Calories</th>
-                               <th>Overall</th>
-                           </tr>
-                           </thead>
-                           <tbody>
-                           <tr>
-                               <td>Chocolate Chip</td>
-                               <td>Tastey</td>
-                               <td>120cal</td>
-                               <td>7.5/10</td>
-                           </tr>
-                           <tr>
-                               <td>Snickerdoodle</td>
-                               <td>Delicious</td>
-                               <td>95cal</td>
-                               <td>8/10</td>
-                           </tr>
-                           <tr>
-                               <td>Oatmeal Raisin</td>
-                               <td>Superb</td>
-                               <td>10cal</td>
-                               <td>11/10</td>
-                           </tr>
-                           </tbody>
-                       </table>
-
                        <div class="columns large-6">
-                           <ul class="tabs" data-tabs id="example-tabs">
-                               <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Campus</a></li>
-                               <li class="tabs-title"><a href="#panel2">System</a></li>
+                           <ul class="tabs" data-tabs id="custom-search-tabs">
+                               <li class="tabs-title is-active"><a href="#custom-search-results-campus" aria-selected="true">Campus</a></li>
+                               <li class="tabs-title"><a href="#custom-search-results-system">System</a></li>
                            </ul>
 
-                           <div class="tabs-content" data-tabs-content="example-tabs">
-                               <div class="tabs-panel is-active" id="panel1">
+                           <div class="tabs-content" data-tabs-content="custom-search-tabs">
+                               <div class="tabs-panel is-active" id="custom-search-results-campus">
 
                                    <!--*********************-->
                                    <!--Campus Search Results-->
@@ -317,7 +244,7 @@
                                    <!--**********************-->
 
                                </div>
-                               <div class="tabs-panel" id="panel2">
+                               <div class="tabs-panel" id="custom-search-results-system">
 
                                    <!--*********************-->
                                    <!--System Search Results-->
@@ -337,26 +264,26 @@
 
                            <h2>People</h2>
 
-
-
                            <ul class="tabs" data-tabs id="people-search-tabs">
-                               <li class="tabs-title is-active"><a href="#people-search-campus" aria-selected="true">Campus</a></li>
-                               <li class="tabs-title"><a href="#people-search-system">System</a></li>
+                               <li class="tabs-title is-active"><a href="#people-search-results-campus" aria-selected="true">Campus</a></li>
+                               <li class="tabs-title"><a href="#people-search-results-system">System</a></li>
                            </ul>
 
                            <div class="tabs-content" data-tabs-content="people-search-tabs">
-                               <div class="tabs-panel is-active" id="people-search-campus">
-
-
-
-                               </div>
-                               <div class="tabs-panel" id="people-search-system"></div>
+                               <div class="tabs-panel is-active" id="people-search-results-campus"></div>
+                               <div class="tabs-panel" id="people-search-results-system"></div>
                            </div>
 
                            <div class="row">
                                <div class="columns">
-                                   <p>Legal Disclaimer</p>
-                                   <p>This directory is for official University use and also for communication of a personal nature between students, faculty, and staff listed herein. Use of this directory for any other purpose, including but not limited to reproduction and storage in a retreival system by any means, electronic or mechanical, photocopying or use of the addresses or other information contained in this directory for any mailing, is strictly prohibited.</p>
+                                   <small>Legal Disclaimer<br/>
+                                       This directory is for official University use and also for communication of a
+                                       personal nature between students, faculty, and staff listed herein. Use of this
+                                       directory for any other purpose, including but not limited to reproduction and
+                                       storage in a retreival system by any means, electronic or mechanical,
+                                       photocopying or use of the addresses or other information contained in this
+                                       directory for any mailing, is strictly prohibited.
+                                   </small><br /><br />
                                </div>
                            </div>
                        </div>
