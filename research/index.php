@@ -279,7 +279,7 @@
                     </div>
 
                     <div class="uthsc-badge-box-text">
-                        <p style="text-align:center;">Established in 1911, UTHSC is Tennessee’s only public, statewide,
+                        <p>Established in 1911, UTHSC is Tennessee’s only public, statewide,
                             academic, health system</p>
                     </div>
                 </div>
@@ -302,7 +302,7 @@
                     </div>
 
                     <div class="uthsc-badge-box-text">
-                        <p style="text-align:center;">325 investigators actively performing research at UTHSC in FY2015</p>
+                        <p>325 investigators actively performing research at UTHSC in FY2015</p>
                     </div>
                 </div>
             </div>
@@ -319,7 +319,7 @@
                     </div>
 
                     <div class="uthsc-badge-box-text">
-                        <p style="text-align:center;">1,166 residents and
+                        <p>1,166 residents and
                             fellows along with 156
                             post-docs accounted for
                             at UTHSC in FY2015</p>
