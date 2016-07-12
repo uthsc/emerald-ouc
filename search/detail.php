@@ -39,16 +39,25 @@
          * Assign search type to global js variable
          */
         echo $_GET['col'] ?  '<script>var searchUthscType = "' . $_GET['col'] . '"</script>' : '';
+    ?>
 
-        include '/var/www/html/search/scripts/lookup.php';
+    <?php
 
-        echo '<script>var peopleSearchResults = ' . $people_search . '</script>';
+    include '/var/www/html/search/scripts/lookup.php';
+
+    echo '<script>var peopleSearchResults = ' . $people_search . '</script>';
+
     ?>
 
     <style>
-        .uthsc-banner form { display:none; }
-        .uthsc-row-title { border:0; margin-bottom:0; }
-        #people-search-results-system table td, #people-search-results-campus table td{ font-size:.8em; }
+        .uthsc-banner form {
+            display:none;
+        }
+
+        .uthsc-row-title {
+            border:0;
+            margin-bottom:0;
+        }
     </style>
     <!--*************************-->
     <!--Headcode for Search UTHSC-->
@@ -88,7 +97,25 @@
 
            <div class="row">
                <div class="columns small-collapse">
-                   <?php include('../uthsc-search-form.php'); ?>
+                   <!--Search form-->
+                   <form class="input-group search-form" aria-label="Search the UTHSC site"
+                         action="../search/" method="get" style="margin-bottom:0;">
+                       <input class="input-group-field search-input"
+                              placeholder="Search &hellip;"
+                              value=""
+                              type="search"
+                              aria-label="Search the UTHSC site"
+                              role="search"
+                              name="q"/>
+
+
+                       <div class="input-group-button">
+                           <button type="submit" class="button" aria-label="Submit search form">
+                               <span aria-hidden="true" class="fa fa-search"></span>
+                           </button>
+                       </div>
+                   </form>
+                   <!--/Search form-->
                </div>
            </div>
        </header>
@@ -165,103 +192,13 @@
            <!--/title-->
 
 
-           <!--row-->
-           <div class="row expanded">
-               <div class="columns">
 
-                   <!--*****************-->
-                   <!--UTHSC search form-->
-                   <!--*****************-->
-                   <div class="row expanded">
-                       <div class="row">
-                           <div class="columns">
-                               <?php include('../uthsc-search-form.php'); ?>
-                           </div>
-                       </div>
-                   </div><br />
-                   <!--******************-->
-                   <!--/UTHSC search form-->
-                   <!--******************-->
-
-               </div>
-           </div>
-           <!--/row-->
 
            <!--row-->
            <div class="row expanded">
                <div class="columns">
 
-                   <!--********************-->
-                   <!--UTHSC search results-->
-                   <!--********************-->
-                   <div class="row search-uthsc-results" style="display:none;">
-                       <div class="columns large-6">
-                           <ul class="tabs" data-tabs id="custom-search-tabs">
-                               <li class="tabs-title is-active"><a href="#custom-search-results-campus" aria-selected="true">Campus</a></li>
-                               <li class="tabs-title"><a href="#custom-search-results-system">System</a></li>
-                           </ul>
 
-                           <div class="tabs-content" data-tabs-content="custom-search-tabs">
-                               <div class="tabs-panel is-active" id="custom-search-results-campus">
-
-                                   <!--*********************-->
-                                   <!--Campus Search Results-->
-                                   <!--*********************-->
-                                   <div class="flex-video" style="height:1350px;">
-                                       <iframe frameBorder="0" src="campus-search.html?q=<?php echo $_GET["q"] ?>"></iframe>
-                                   </div>
-                                   <!--**********************-->
-                                   <!--/Campus Search Results-->
-                                   <!--**********************-->
-
-                               </div>
-                               <div class="tabs-panel" id="custom-search-results-system">
-
-                                   <!--*********************-->
-                                   <!--System Search Results-->
-                                   <!--*********************-->
-                                   <div class="flex-video" style="height:1350px;">
-                                       <iframe frameBorder="0" src="system-search.html?q=<?php echo $_GET["q"] ?>"></iframe>
-                                   </div>
-                                   <!--*********************-->
-                                   <!--System Search Results-->
-                                   <!--*********************-->
-
-                               </div>
-                           </div>
-                       </div>
-
-                       <div class="columns large-6">
-
-                           <h2>People</h2>
-
-                           <ul class="tabs" data-tabs id="people-search-tabs">
-                               <li class="tabs-title is-active"><a href="#people-search-results-campus" aria-selected="true">Campus</a></li>
-                               <li class="tabs-title"><a href="#people-search-results-system">System</a></li>
-                           </ul>
-
-                           <div class="tabs-content" data-tabs-content="people-search-tabs">
-                               <div class="tabs-panel is-active" id="people-search-results-campus"></div>
-                               <div class="tabs-panel" id="people-search-results-system"></div>
-                           </div>
-
-                           <div class="row">
-                               <div class="columns">
-                                   <small>Legal Disclaimer<br/>
-                                       This directory is for official University use and also for communication of a
-                                       personal nature between students, faculty, and staff listed herein. Use of this
-                                       directory for any other purpose, including but not limited to reproduction and
-                                       storage in a retreival system by any means, electronic or mechanical,
-                                       photocopying or use of the addresses or other information contained in this
-                                       directory for any mailing, is strictly prohibited.
-                                   </small><br /><br />
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-                   <!--*********************-->
-                   <!--/UTHSC search results-->
-                   <!--*********************-->
 
                </div>
            </div>
@@ -312,7 +249,7 @@
             aria-hidden="true">
 
            <div class="off-canvas-search">
-               <?php include('../uthsc-search-form.php'); ?>
+               <?php include('../off-canvas-search-form.php'); ?>
            </div>
 
            <!--  Close menu button-->
@@ -346,7 +283,7 @@
        <nav id="uthsc-off-canvas-menu--slide-right" class="uthsc-off-canvas-menu uthsc-off-canvas-menu--slide-right hide-for-print" aria-hidden="true">
 
            <div class="off-canvas-search">
-               <?php include('../uthsc-search-form.php'); ?>
+               <?php include('../off-canvas-search-form.php'); ?>
            </div>
 
            <!--  Close menu button-->
@@ -440,14 +377,12 @@
        <!--/Scripts-->
        <!--********-->
 
-
-   <!--*************************-->
-   <!--Footcode for Search UTHSC-->
-   <!--*************************-->
-   <script src="../-resources/2015/js/uthsc-emergency-notification.min.js"></script>
-   <script src="../-resources/2015/js/uthsc-search.min.js"></script>
-   <!--**************************-->
-   <!--/Footcode for Search UTHSC-->
-   <!--**************************-->
+       <!--*************************-->
+       <!--Footcode for Search UTHSC-->
+       <!--*************************-->
+        <script src="../-resources/2015/js/uthsc-emergency-notification.min.js"></script>
+       <!--**************************-->
+       <!--/Footcode for Search UTHSC-->
+       <!--**************************-->
    </body>
 </html>

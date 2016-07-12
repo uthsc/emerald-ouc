@@ -65,20 +65,7 @@
         <div class="row">
             <div class="hide-for-large columns small-collapse">
                 <!--Search form-->
-                <form class="input-group" aria-label="Search the UTHSC site"
-                      action="http://uthsc.edu/search/" method="get" style="margin-bottom:0;">
-                    <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
-                           placeholder="search" style="margin-right:0;">
-                    <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
-                    <input type="hidden" name="cof" value="FORID:11" />
-                    <input type="hidden" name="ie" value="UTF-8" />
-                    <input type="hidden" name="col" value="uthsc" />
-                    <div class="input-group-button">
-                        <button type="submit" class="button" aria-label="Submit search form">
-                            <span class="fa fa-search"></span>
-                        </button>
-                    </div>
-                </form>
+                <?php include('../uthsc-search-form.php'); ?>
                 <!--/Search form-->
             </div>
         </div>
@@ -279,7 +266,7 @@
                     </div>
 
                     <div class="uthsc-badge-box-text">
-                        <p style="text-align:center;">Established in 1911, UTHSC is Tennessee’s only public, statewide,
+                        <p>Established in 1911, UTHSC is Tennessee’s only public, statewide,
                             academic, health system</p>
                     </div>
                 </div>
@@ -302,7 +289,7 @@
                     </div>
 
                     <div class="uthsc-badge-box-text">
-                        <p style="text-align:center;">325 investigators actively performing research at UTHSC in FY2015</p>
+                        <p>325 investigators actively performing research at UTHSC in FY2015</p>
                     </div>
                 </div>
             </div>
@@ -319,7 +306,7 @@
                     </div>
 
                     <div class="uthsc-badge-box-text">
-                        <p style="text-align:center;">1,166 residents and
+                        <p>1,166 residents and
                             fellows along with 156
                             post-docs accounted for
                             at UTHSC in FY2015</p>
@@ -737,7 +724,7 @@
     </div>
 
     <div class="off-canvas-search">
-        <?php include('../off-canvas-search-form.php'); ?>
+        <?php include('../uthsc-search-form.php'); ?>
     </div>
 
     <!--Close menu button-->
@@ -824,7 +811,7 @@
     </div>
 
     <div class="off-canvas-search">
-        <?php include('../off-canvas-search-form.php'); ?>
+        <?php include('../uthsc-search-form.php'); ?>
     </div>
 
     <!--Close menu button-->

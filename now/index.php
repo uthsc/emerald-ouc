@@ -116,20 +116,7 @@
                 <li>
                     <div class="show-for-large">
                         <!--Search form-->
-                        <form class="input-group" aria-label="Search the UTHSC site"
-                              action="/search/" method="get" style="margin-bottom:0;">
-                            <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
-                                   placeholder="search" style="margin-right:0;">
-                            <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
-                            <input type="hidden" name="cof" value="FORID:11" />
-                            <input type="hidden" name="ie" value="UTF-8" />
-                            <input type="hidden" name="col" value="uthsc" />
-                            <div class="input-group-button">
-                                <button type="submit" class="button" aria-label="Submit search form">
-                                    <span class="fa fa-search"></span>
-                                </button>
-                            </div>
-                        </form>
+                        <?php include('../uthsc-search-form.php'); ?>
                         <!--/Search form-->
                     </div>
                 </li>
@@ -157,20 +144,7 @@
         <div class="row">
             <div class="hide-for-large columns small-collapse">
                 <!--Search form-->
-                <form class="input-group" aria-label="Search the UTHSC site"
-                      action="/search/" method="get" style="margin-bottom:0;">
-                    <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
-                           placeholder="search" style="margin-right:0;">
-                    <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
-                    <input type="hidden" name="cof" value="FORID:11" />
-                    <input type="hidden" name="ie" value="UTF-8" />
-                    <input type="hidden" name="col" value="uthsc" />
-                    <div class="input-group-button">
-                        <button type="submit" class="button" aria-label="Submit search form">
-                            <span class="fa fa-search"></span>
-                        </button>
-                    </div>
-                </form>
+                <?php include('../uthsc-search-form.php'); ?>
                 <!--/Search form-->
             </div>
         </div>
@@ -355,20 +329,7 @@
 
     <div class="off-canvas-search">
         <!--Search form-->
-        <form class="input-group" aria-label="Search the UTHSC site"
-              action="/search/" method="get" style="margin-bottom:0;">
-            <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
-                   placeholder="search" style="margin-right:0;">
-            <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
-            <input type="hidden" name="cof" value="FORID:11" />
-            <input type="hidden" name="ie" value="UTF-8" />
-            <input type="hidden" name="col" value="uthsc" />
-            <div class="input-group-button">
-                <button type="submit" class="button" aria-label="Submit search form">
-                    <span class="fa fa-search"></span>
-                </button>
-            </div>
-        </form>
+        <?php include('../uthsc-search-form.php'); ?>
         <!--/Search form-->
     </div>
 
@@ -404,18 +365,7 @@
 
     <div class="off-canvas-search">
         <!--Search form-->
-        <form class="input-group" aria-label="Search the UTHSC site" action="/search/" method="get" style="margin-bottom:0;">
-            <input type="search" aria-label="Search the UTHSC site" role="search" name="q" placeholder="search" style="margin-right:0;">
-            <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
-            <input type="hidden" name="cof" value="FORID:11" />
-            <input type="hidden" name="ie" value="UTF-8" />
-            <input type="hidden" name="col" value="uthsc" />
-            <div class="input-group-button">
-                <button type="submit" class="button" aria-label="Submit search form">
-                    <span class="fa fa-search"></span>
-                </button>
-            </div>
-        </form>
+        <?php include('../uthsc-search-form.php'); ?>
         <!--/Search form-->
     </div>
 

@@ -70,18 +70,7 @@
 
         <div class="row">
             <div class="hide-for-large columns small-collapse">
-                <!--Search form-->
-                <form class="input-group" aria-label="Search the UTHSC site"
-                      action="http://uthsc.edu/search/" method="get" style="margin-bottom:0;">
-                    <input type="search" aria-label="Search the UTHSC site" role="search" name="s"
-                           placeholder="search" style="margin-right:0;">
-                    <div class="input-group-button">
-                        <button type="submit" class="button" aria-label="Submit search form">
-                            <span class="fa fa-search"></span>
-                        </button>
-                    </div>
-                </form>
-                <!--/Search form-->
+                <?php include('uthsc-search-form.php'); ?>
             </div>
         </div>
     </header>
@@ -1032,7 +1021,7 @@
     </div>
 
     <div class="off-canvas-search">
-        <?php include('off-canvas-search-form.php'); ?>
+        <?php include('uthsc-search-form.php'); ?>
     </div>
 
     <!--  Close menu button-->
@@ -1085,7 +1074,7 @@
     </div>
 
     <div class="off-canvas-search">
-        <?php include('off-canvas-search-form.php'); ?>
+        <?php include('uthsc-search-form.php'); ?>
     </div>
 
     <!--  Close menu button-->

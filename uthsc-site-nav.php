@@ -63,24 +63,7 @@
             <li><a href="/admissions/visit-uthsc.php"><span aria-hidden="true" class="fa fa-road"></span> Take a Tour</a></li>
             <li>
                 <div class="show-for-large">
-                    <!--Search form-->
-                    <form class="input-group search-form" aria-label="Search the UTHSC site"
-                          action="../search/" method="get" style="margin-bottom:0;">
-                        <input class="input-group-field search-input"
-                               placeholder="Search &hellip;"
-                               value=""
-                               type="search"
-                               aria-label="Search the UTHSC site"
-                               role="search"
-                               name="q"
-                               style="margin-right:0;"/>
-                        <div class="input-group-button">
-                            <button type="submit" class="button" aria-label="Submit search form">
-                                <span aria-hidden="true" class="fa fa-search"></span>
-                            </button>
-                        </div>
-                    </form>
-                    <!--/Search form-->
+                    <?php include('uthsc-search-form.php'); ?>
                 </div>
             </li>
         </ul>
