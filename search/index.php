@@ -51,6 +51,8 @@
         #people-search-results-system table td, #people-search-results-campus table td{ font-size:.8em; }
         iframe{width: 100%;border: 0}
     </style>
+    <script src="../bower_components/iframe-resizer/js/iframeResizer.min.js"></script>
+
     <!--*************************-->
     <!--Headcode for Search UTHSC-->
     <!--*************************-->
