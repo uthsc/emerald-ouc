@@ -49,7 +49,10 @@
         .uthsc-banner form { display:none; }
         .uthsc-row-title { border:0; margin-bottom:0; }
         #people-search-results-system table td, #people-search-results-campus table td{ font-size:.8em; }
+        iframe{width: 100%;border: 0}
     </style>
+    <script src="../bower_components/iframe-resizer/js/iframeResizer.min.js"></script>
+
     <!--*************************-->
     <!--Headcode for Search UTHSC-->
     <!--*************************-->
@@ -207,9 +210,11 @@
                                    <!--*********************-->
                                    <!--Campus Search Results-->
                                    <!--*********************-->
-                                   <div class="flex-video" style="height:1350px;">
-                                       <iframe frameBorder="0" src="campus-search.html?q=<?php echo $_GET["q"] ?>"></iframe>
-                                   </div>
+
+                                   <iframe id="uthsc-campus-search" src="campus-search.html?q=<?php echo $_GET["q"] ?>" scrolling="no"></iframe>
+
+
+
                                    <!--**********************-->
                                    <!--/Campus Search Results-->
                                    <!--**********************-->
@@ -220,9 +225,11 @@
                                    <!--*********************-->
                                    <!--System Search Results-->
                                    <!--*********************-->
-                                   <div class="flex-video" style="height:1350px;">
-                                       <iframe frameBorder="0" src="system-search.html?q=<?php echo $_GET["q"] ?>"></iframe>
-                                   </div>
+
+                                   <iframe id="uthsc-system-search" src="system-search.html?q=<?php echo $_GET["q"] ?>" scrolling="no"></iframe>
+
+
+
                                    <!--*********************-->
                                    <!--System Search Results-->
                                    <!--*********************-->
@@ -446,6 +453,7 @@
    <!--*************************-->
    <script src="../-resources/2015/js/uthsc-emergency-notification.min.js"></script>
    <script src="../-resources/2015/js/uthsc-search.min.js"></script>
+   <script>iFrameResize({log:true})</script>
    <!--**************************-->
    <!--/Footcode for Search UTHSC-->
    <!--**************************-->
