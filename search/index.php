@@ -208,9 +208,7 @@
                                    <!--*********************-->
                                    <!--Campus Search Results-->
                                    <!--*********************-->
-                                   <div class="flex-video" style="height:1350px;">
                                        <iframe frameBorder="0" src="campus-search.html?q=<?php echo $_GET["q"] ?>"></iframe>
-                                   </div>
                                    <!--**********************-->
                                    <!--/Campus Search Results-->
                                    <!--**********************-->
@@ -221,9 +219,7 @@
                                    <!--*********************-->
                                    <!--System Search Results-->
                                    <!--*********************-->
-                                   <div class="flex-video" style="height:1350px;">
                                        <iframe frameBorder="0" src="system-search.html?q=<?php echo $_GET["q"] ?>"></iframe>
-                                   </div>
                                    <!--*********************-->
                                    <!--System Search Results-->
                                    <!--*********************-->
