@@ -44,8 +44,6 @@
 
         echo '<script>var peopleSearchResults = ' . $people_search . '</script>';
     ?>
-    <script src="../-resources/2015/js/iframeResizer.min.js"></script>
-
     <!--*************************-->
     <!--Headcode for Search UTHSC-->
     <!--*************************-->
@@ -442,6 +440,7 @@
    <!--*************************-->
    <script src="../-resources/2015/js/uthsc-emergency-notification.min.js"></script>
    <script src="../-resources/2015/js/uthsc-search.min.js"></script>
+   <script src="../-resources/2015/js/iframeResizer.min.js"></script>
    <script>iFrameResize({log:true})</script>
    <!--**************************-->
    <!--/Footcode for Search UTHSC-->
