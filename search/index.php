@@ -33,7 +33,7 @@
         /*
          * Assign search query to global js variable
          */
-        echo $_GET['q'] ?  '<script>var searchUthscQuery = "' . $_GET['q'] . '"</script>' : '';
+        echo $_GET['q'] ?  '<script>var searchUthscQuery = "' . addslashes($_GET['q']) . '"</script>' : '';
 
         /*
          * Assign search type to global js variable
