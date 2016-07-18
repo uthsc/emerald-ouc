@@ -491,7 +491,6 @@
         <!--/Background stripe row with highlight boxes-->
         <!--*******************************************-->
 
-
         <!--*************-->
         <!--Research News-->
         <!--*************-->
@@ -501,12 +500,46 @@
                     <h3>Research News</h3>
                 </div>
 
-                <div class="news-snippet" data-equalizer="news-boxes" data-equalize-on="large"></div>
+                <!--Snippet-->
+                <div class="news-snippet-1234 row medium-up-2 large-up-3" data-equalizer="news-boxes-1234" data-equalize-on="large"></div>
+                <?php
+                $uthsc_news['1234'] = array(
+                    'post_count' => '6',
+                    'categories' => '60,331'
+                );
+                ?>
+                <!--Snippet-->
 
             </div>
         </div>
         <!--**************-->
         <!--/Research News-->
+        <!--**************-->
+
+
+        <!--*************-->
+        <!--Research News 2-->
+        <!--*************-->
+        <div class="row expanded">
+            <div class="row">
+                <div class="columns uthsc-row-title">
+                    <h3>Public Service News</h3>
+                </div>
+
+                <!--Snippet-->
+                <div class="news-snippet-5678 uthsc-news-box-dark row medium-up-2 large-up-3" data-equalizer="news-boxes-5678" data-equalize-on="large"></div>
+                <?php
+                $uthsc_news['5678'] = array(
+                    'post_count' => '3',
+                    'categories' => '331'
+                );
+                ?>
+                <!--Snippet-->
+
+            </div>
+        </div>
+        <!--**************-->
+        <!--/Research News 2-->
         <!--**************-->
 
 
@@ -889,6 +922,7 @@
 <!--/Off canvas buttons-->
 <!--*******************-->
 
+
 <!--*******-->
 <!--Scripts-->
 <!--*******-->
@@ -902,6 +936,13 @@
 
 <!--snippet-->
 <script src="../-resources/2015/js/uthsc-news-ajax.min.js"></script>
+<script>
+$(document).ready(function(){
+<?php foreach ($uthsc_news as $key => $posts) {
+echo 'newsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts?categories=' . $posts['categories'] . '&per_page=' . $posts['post_count'] . '&_embed", ' . '\'' . $key . '\',' . $posts['post_count'] .');' . "\r\n";
+} ?>
+});
+</script>
 <!--snippet-->
 
 </body>
