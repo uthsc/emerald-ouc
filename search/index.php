@@ -44,6 +44,12 @@
 
         echo '<script>var peopleSearchResults = ' . $people_search . '</script>';
     ?>
+    <style>
+        iframe.uthsc-search-results{width: 100%;border: 0}
+        .uthsc-banner form { display:none; }
+        .uthsc-row-title { border:0; margin-bottom:0; }
+        #people-search-results-system table td, #people-search-results-campus table td{ font-size:.8em; }
+    </style>
     <!--*************************-->
     <!--Headcode for Search UTHSC-->
     <!--*************************-->
@@ -441,7 +447,7 @@
    <script src="../-resources/2015/js/uthsc-emergency-notification.min.js"></script>
    <script src="../-resources/2015/js/uthsc-search.min.js"></script>
    <script src="../-resources/2015/js/iframeResizer.min.js"></script>
-   <script>iFrameResize({log:true})</script>
+   <script>iFrameResize()</script>
    <!--**************************-->
    <!--/Footcode for Search UTHSC-->
    <!--**************************-->
