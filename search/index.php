@@ -50,7 +50,7 @@
         .uthsc-row-title { border:0; margin-bottom:0; }
         #people-search-results-system table td, #people-search-results-campus table td{ font-size:.8em; }
     </style>
-    <script src="../bower_components/iframe-resizer/js/iframeResizer.min.js"></script>
+    <script src="../-resources/2015/js/iframeResizer.min.js"></script>
 
     <!--*************************-->
     <!--Headcode for Search UTHSC-->
@@ -210,9 +210,7 @@
                                    <!--Campus Search Results-->
                                    <!--*********************-->
 
-                                   <iframe id="uthsc-campus-search" src="campus-search.html?q=<?php echo $_GET["q"] ?>" scrolling="no"></iframe>
-
-
+                                   <iframe class="uthsc-search-results" id="uthsc-campus-search" src="campus-search.html?q=<?php echo $_GET["q"] ?>" scrolling="no"></iframe>
 
                                    <!--**********************-->
                                    <!--/Campus Search Results-->
@@ -225,9 +223,7 @@
                                    <!--System Search Results-->
                                    <!--*********************-->
 
-                                   <iframe id="uthsc-system-search" src="system-search.html?q=<?php echo $_GET["q"] ?>" scrolling="no"></iframe>
-
-
+                                   <iframe class="uthsc-search-results" id="uthsc-system-search" src="system-search.html?q=<?php echo $_GET["q"] ?>" scrolling="no"></iframe>
 
                                    <!--*********************-->
                                    <!--System Search Results-->
