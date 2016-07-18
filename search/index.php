@@ -44,12 +44,6 @@
 
         echo '<script>var peopleSearchResults = ' . $people_search . '</script>';
     ?>
-
-    <style>
-        .uthsc-banner form { display:none; }
-        .uthsc-row-title { border:0; margin-bottom:0; }
-        #people-search-results-system table td, #people-search-results-campus table td{ font-size:.8em; }
-    </style>
     <script src="../-resources/2015/js/iframeResizer.min.js"></script>
 
     <!--*************************-->
