@@ -43,11 +43,11 @@ function parseNewsPosts(postCount, oucSnippetId) {
 			'<a data-equalizer-watch="news-boxes-' + oucSnippetId + '" ' + 'href="' + postLink + '">' +
 			'<div class="row">' +
 
-			'<div class="columns small-3 medium-2 large-4">' +
+			'<div class="columns small-3 large-4">' +
 			'<img alt="" src="' + featuredImageLink + '" />' +
 			'</div>' +
 
-			'<div class="columns small-9 medium-10 large-8">' +
+			'<div class="columns small-9 large-8">' +
 			'<h4>' + postTitle +'</h4>' +
 			'<p>' + postDate +'</p>' +
 			'</div>' +
