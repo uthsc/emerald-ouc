@@ -357,7 +357,7 @@
         <!--Background stripe row with highlight boxes-->
         <!--******************************************-->
         <div class="row expanded background-stripe"
-             style="background: linear-gradient( rgba(255, 255, 255, 0.30), rgba(0, 0, 0, 0.40) ),
+             style="background: linear-gradient( rgba(255, 255, 255, 0.60), rgba(0, 0, 0, 0.60) ),
                  url(http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/fullscreen-students.jpg);">
             <div class="row ">
                 <div class="columns"></div>
