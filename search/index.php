@@ -453,6 +453,7 @@
    <!--*************************-->
    <script src="../-resources/2015/js/uthsc-emergency-notification.min.js"></script>
    <script src="../-resources/2015/js/uthsc-search.min.js"></script>
+   <script>iFrameResize({log:true})</script>
    <!--**************************-->
    <!--/Footcode for Search UTHSC-->
    <!--**************************-->
