@@ -47,7 +47,14 @@ function peopleSearchTable(data, count, el, offCampus, soundsLike, lichterman) {
 	html += "<div class=\"search-results-count\">";
 	html += "<p>";
 	html += offCampus ? "Showing <strong>" + countPeople(data) + "</strong> of " : "";
-	html += "<strong>" + count + "</strong> people";
+
+	//use person if there is only one result
+	if (count == 1) {
+		html += "<strong>" + count + "</strong> person";
+	} else {
+		html += "<strong>" + count + "</strong> people";
+	}
+
 	html += "</small>";
 	html += "</p>";
 
