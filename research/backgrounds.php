@@ -256,9 +256,7 @@
         <!--******************************************-->
         <!--Background stripe row with highlight boxes-->
         <!--******************************************-->
-        <div class="row expanded background-stripe"
-             style="background: linear-gradient( rgba(255, 255, 255, 0.30), rgba(0, 0, 0, 0.50) ),
-                 url(http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/uthsc-cork-purple.png);">
+        <div class="row expanded background-stripe uthsc-row-bg-1">
             <div class="row ">
                 <div class="columns"></div>
                 <div class="columns">
@@ -410,9 +408,7 @@
         <!--******************************************-->
         <!--Background stripe row with highlight boxes-->
         <!--******************************************-->
-        <div class="row expanded background-stripe"
-             style="background: linear-gradient( rgba(255, 255, 255, 0.30), rgba(0, 0, 0, 0.50) ),
-                 url(http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/uthsc-cork-green.png);">
+        <div class="row expanded background-stripe uthsc-row-bg-2">
             <div class="row ">
                 <div class="columns"></div>
                 <div class="columns">
@@ -505,9 +501,7 @@
         <!--******************************************-->
         <!--Background stripe row with highlight boxes-->
         <!--******************************************-->
-        <div class="row expanded background-stripe"
-             style="background: linear-gradient( rgba(255, 255, 255, 0.30), rgba(0, 0, 0, 0.50) ),
-                 url(http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/uthsc-cork-blue.png);">
+        <div class="row expanded background-stripe uthsc-row-bg-3">
             <div class="row ">
                 <div class="columns"></div>
                 <div class="columns">
@@ -603,105 +597,7 @@
         <!--******************************************-->
         <!--Background stripe row with highlight boxes-->
         <!--******************************************-->
-        <div class="row expanded background-stripe"
-             style="background: linear-gradient( rgba(255, 255, 255, 0.30), rgba(0, 0, 0, 0.50) ),
-                 url(http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/uthsc-lodyas-green.png);">
-            <div class="row ">
-                <div class="columns"></div>
-                <div class="columns">
-                    <div class="row medium-up-2 large-up-3">
-                        <div class="columns">
-                            <!--Highlight box-->
-                            <div class="uthsc-highlight-box uthsc-highlight-box-purple">
-                                <a>
-                                    <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/research-kell-landscape.jpg">
-                                    </div>
-
-                                    <div class="uthsc-highlight-box-title">
-                                        <p>The VCR Distinguished Lecture Series Featuring Prof. Douglas B. Kell</p>
-                                    </div>
-
-                                    <div class="uthsc-highlight-box-description">
-                                        <p><em>"The Cellular Uptake of Pharmaceutical Drugs is Transporter-mediated, and
-                                                Thus a Problem Not of Biophysics but of Systems Biology"</em></p>
-                                        <p>June 16, 2016 from 1-2pm<br />
-                                            College of Pharmacy, Room 101</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="columns">
-                            <!--Highlight box-->
-                            <div class="uthsc-highlight-box">
-                                <div class="uthsc-highlight-box-image">
-                                    <img src="../-resources/2015/images/research-morrow-landscape.jpg"/>
-                                </div>
-                                <div class="uthsc-highlight-box-title">
-                                    <p>Hot Topics in Research Featuring Dr. Casey D. Morrow, Director, UAB</p>
-                                </div>
-
-                                <div class="uthsc-highlight-box-description">
-                                    <p><em>"UAB Microbiome Resource: Precision Medicine to Repair Dysbiotic Microbial
-                                            Communities"</em></p>
-                                    <p>June 28, 2016 from 12-1pm <br />
-                                        GEB A302
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="columns">
-                            <!--Highlight box-->
-                            <div class="uthsc-highlight-box uthsc-highlight-box-green">
-                                <a>
-                                    <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/research-goodman.jpg"/>
-                                    </div>
-                                    <div class="uthsc-highlight-box-title">
-                                        <p>Vice Chancellor for Research, Dr. Steven R. Goodman's Second Research Town Hall Meeting </p>
-                                    </div>
-
-                                    <div class="uthsc-highlight-box-description">
-                                        <p></p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--*******************************************-->
-        <!--/Background stripe row with highlight boxes-->
-        <!--*******************************************-->
-
-
-        <div class="row expanded">
-            <div class="row">
-                <div class="columns">
-                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
-                        to corporate strategy foster collaborative thinking to further the overall value proposition.
-                        Organically grow the holistic world view of disruptive innovation via workplace diversity and
-                        empowerment.</p>
-
-                    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the
-                        day, going forward, a new normal that has evolved from generation X is on the runway heading towards
-                        a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for
-                        offshoring.</p>
-                </div>
-            </div>
-        </div>
-
-        <!--******************************************-->
-        <!--Background stripe row with highlight boxes-->
-        <!--******************************************-->
-        <div class="row expanded background-stripe"
-             style="background: linear-gradient( rgba(255, 255, 255, 0.30), rgba(0, 0, 0, 0.50) ),
-                 url(http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/uthsc-lodyas-purple.png);">
+        <div class="row expanded background-stripe uthsc-row-bg-4">
             <div class="row ">
                 <div class="columns"></div>
                 <div class="columns">
@@ -795,9 +691,101 @@
         <!--******************************************-->
         <!--Background stripe row with highlight boxes-->
         <!--******************************************-->
-        <div class="row expanded background-stripe"
-             style="background: linear-gradient( rgba(255, 255, 255, 0.30), rgba(0, 0, 0, 0.50) ),
-                 url(http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/uthsc-lodyas-black.png);">
+        <div class="row expanded background-stripe uthsc-row-bg-5">
+            <div class="row ">
+                <div class="columns"></div>
+                <div class="columns">
+                    <div class="row medium-up-2 large-up-3">
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box uthsc-highlight-box-purple">
+                                <a>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="../-resources/2015/images/research-kell-landscape.jpg">
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>The VCR Distinguished Lecture Series Featuring Prof. Douglas B. Kell</p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p><em>"The Cellular Uptake of Pharmaceutical Drugs is Transporter-mediated, and
+                                                Thus a Problem Not of Biophysics but of Systems Biology"</em></p>
+                                        <p>June 16, 2016 from 1-2pm<br />
+                                            College of Pharmacy, Room 101</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box">
+                                <div class="uthsc-highlight-box-image">
+                                    <img src="../-resources/2015/images/research-morrow-landscape.jpg"/>
+                                </div>
+                                <div class="uthsc-highlight-box-title">
+                                    <p>Hot Topics in Research Featuring Dr. Casey D. Morrow, Director, UAB</p>
+                                </div>
+
+                                <div class="uthsc-highlight-box-description">
+                                    <p><em>"UAB Microbiome Resource: Precision Medicine to Repair Dysbiotic Microbial
+                                            Communities"</em></p>
+                                    <p>June 28, 2016 from 12-1pm <br />
+                                        GEB A302
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box uthsc-highlight-box-green">
+                                <a>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="../-resources/2015/images/research-goodman.jpg"/>
+                                    </div>
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>Vice Chancellor for Research, Dr. Steven R. Goodman's Second Research Town Hall Meeting </p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--*******************************************-->
+        <!--/Background stripe row with highlight boxes-->
+        <!--*******************************************-->
+
+
+        <div class="row expanded">
+            <div class="row">
+                <div class="columns">
+                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
+                        to corporate strategy foster collaborative thinking to further the overall value proposition.
+                        Organically grow the holistic world view of disruptive innovation via workplace diversity and
+                        empowerment.</p>
+
+                    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the
+                        day, going forward, a new normal that has evolved from generation X is on the runway heading towards
+                        a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for
+                        offshoring.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--******************************************-->
+        <!--Background stripe row with highlight boxes-->
+        <!--******************************************-->
+        <div class="row expanded background-stripe uthsc-row-bg-6">
             <div class="row ">
                 <div class="columns"></div>
                 <div class="columns">
@@ -894,9 +882,7 @@
         <!--******************************************-->
         <!--Background stripe row with highlight boxes-->
         <!--******************************************-->
-        <div class="row expanded background-stripe"
-             style="background: linear-gradient( rgba(255, 255, 255, 0.30), rgba(0, 0, 0, 0.50) ),
-                 url(http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/uthsc-paper-purple.jpg);">
+        <div class="row expanded background-stripe uthsc-row-bg-7">
             <div class="row ">
                 <div class="columns"></div>
                 <div class="columns">
