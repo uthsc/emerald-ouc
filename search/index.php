@@ -49,6 +49,8 @@
         .uthsc-banner form { display:none; }
         .uthsc-row-title { border:0; margin-bottom:0; }
         #people-search-results-system table td, #people-search-results-campus table td{ font-size:.8em; }
+        .tabs-content {margin-bottom: 2em;}
+        small {margin-bottom:1em; display:block;}
     </style>
     <!--*************************-->
     <!--Headcode for Search UTHSC-->
