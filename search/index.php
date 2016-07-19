@@ -207,9 +207,11 @@
                                    <!--*********************-->
                                    <!--Campus Search Results-->
                                    <!--*********************-->
-
-                                   <iframe class="uthsc-search-results" id="uthsc-campus-search" src='campus-search.html?q=<?php echo $_GET["q"] ?>' scrolling="no"></iframe>
-
+                                   <iframe class="uthsc-search-results"
+                                           id="uthsc-campus-search"
+                                           src="campus-search.html?q=<?php echo urlencode( addslashes($_GET["q"]) ) ?>"
+                                           scrolling="no">
+                                   </iframe>
                                    <!--**********************-->
                                    <!--/Campus Search Results-->
                                    <!--**********************-->
@@ -220,9 +222,11 @@
                                    <!--*********************-->
                                    <!--System Search Results-->
                                    <!--*********************-->
-
-                                   <iframe class="uthsc-search-results" id="uthsc-system-search" src='system-search.html?q=<?php echo $_GET["q"] ?>'scrolling="no"></iframe>
-
+                                   <iframe class="uthsc-search-results"
+                                           id="uthsc-system-search"
+                                           src="system-search.html?q=<?php echo urlencode( addslashes($_GET["q"]) ) ?>"
+                                           scrolling="no">
+                                   </iframe>
                                    <!--*********************-->
                                    <!--System Search Results-->
                                    <!--*********************-->
