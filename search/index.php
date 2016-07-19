@@ -209,7 +209,7 @@
                                    <!--*********************-->
                                    <iframe class="uthsc-search-results"
                                            id="uthsc-campus-search"
-                                           src="campus-search.html?q=<?php echo urlencode( addslashes($_GET["q"]) ) ?>"
+                                           src="campus-search.html?q=<?php echo urlencode( $_GET["q"] ) ?>"
                                            scrolling="no">
                                    </iframe>
                                    <!--**********************-->
@@ -224,7 +224,7 @@
                                    <!--*********************-->
                                    <iframe class="uthsc-search-results"
                                            id="uthsc-system-search"
-                                           src="system-search.html?q=<?php echo urlencode( addslashes($_GET["q"]) ) ?>"
+                                           src="system-search.html?q=<?php echo urlencode( $_GET["q"] ) ?>"
                                            scrolling="no">
                                    </iframe>
                                    <!--*********************-->
