@@ -260,7 +260,7 @@
                                        storage in a retreival system by any means, electronic or mechanical,
                                        photocopying or use of the addresses or other information contained in this
                                        directory for any mailing, is strictly prohibited.
-                                   </small><br /><br />
+                                   </small><br />
                                </div>
                            </div>
                        </div>
