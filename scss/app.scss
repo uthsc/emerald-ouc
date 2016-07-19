@@ -6,6 +6,7 @@
 @import 'partials/uthsc-content-footer';
 @import 'partials/uthsc-hero.scss';
 @import 'partials/uthsc-now.scss';
+@import 'partials/uthsc-backgrounds.scss';
 
 //include foundation components
 @include foundation-global-styles;
@@ -69,3 +70,4 @@
 @include uthsc-homepage;
 @include uthsc-content-footer;
 @include uthsc-now;
+@include uthsc-backgrounds;

@@ -1,0 +1,22 @@
+////
+/// @group uthsc-backgrounds
+////
+
+@mixin background($n, $image) {
+  .uthsc-row-bg-#{$n} {
+    background: linear-gradient( rgba(255, 255, 255, 0.30), rgba(0, 0, 0, 0.50) ),
+    url(http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/#{$image} );
+  }
+}
+
+@mixin uthsc-backgrounds {
+  @include background('1', 'uthsc-cork-purple.png');    //cork purple
+  @include background('2', 'uthsc-cork-green.png');     //cork green
+  @include background('3', 'uthsc-cork-blue.png');      //cork blue
+
+  @include background('4', 'uthsc-lodyas-green.png');   //geometric-green
+  @include background('5', 'uthsc-lodyas-purple.png');  //geometric-purple
+  @include background('6', 'uthsc-lodyas-black.png');   //geometric-black
+
+  @include background('7', 'uthsc-paper-purple.jpg');   //paper-purple
+}

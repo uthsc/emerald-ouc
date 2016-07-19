@@ -253,112 +253,10 @@
         <!--/UTHSC Page-opening-->
         <!--*******************-->
 
-        <div class="row medium-up-2 large-up-4">
-            <div class="columns">
-                <div class="uthsc-badge-box">
-                    <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-university fa-5x" style="color:#ced0b4"></span>
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-                             <polygon points="200,0 0,200 200,200 "/>
-                        </svg>
-                    </div>
-
-                    <div class="uthsc-badge-box-text">
-                        <p>Established in 1911, UTHSC is Tennessee’s only public, statewide,
-                            academic, health system</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="columns">
-                <div class="uthsc-badge-box">
-                    <div class="uthsc-badge-box-icon">
-                        <span class="fa-stack fa-4x">
-                            <span class="fa fa-circle fa-stack-2x"  style="color:#0084b6"></span>
-                            <span class="fa fa-flask fa-stack-1x fa-inverse"></span>
-                        </span>
-
-                        <!--<span class="fa fa-flask fa-5x" style="font-size:4em;"></span>-->
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-                             <polygon points="200,0 0,200 200,200 "/>
-                        </svg>
-                    </div>
-
-                    <div class="uthsc-badge-box-text">
-                        <p>325 investigators actively performing research at UTHSC in FY2015</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="columns">
-                <div class="uthsc-badge-box">
-                    <div class="uthsc-badge-box-icon">
-                        <span class="fa fa-graduation-cap fa-5x"></span>
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-                            <polygon points="200,0 0,200 200,200 "/>
-                        </svg>
-                    </div>
-
-                    <div class="uthsc-badge-box-text">
-                        <p>1,166 residents and
-                            fellows along with 156
-                            post-docs accounted for
-                            at UTHSC in FY2015</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="columns">
-                <div class="uthsc-badge-box">
-                    <div class="uthsc-badge-box-icon">
-                        <span class="fa-stack fa-4x">
-                            <span class="fa fa-circle fa-stack-2x" style="color:orange"></span>
-                            <span class="fa fa-certificate fa-stack-1x fa-inverse" style="color:#e8cf00;"></span>
-                        </span>
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                             viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve">
-                             <polygon points="200,0 0,200 200,200 "/>
-                        </svg>
-                    </div>
-
-                    <div class="uthsc-badge-box-text">
-                        <p style="text-align:center;">
-                            85 programs certified by the Accreditation Council for Graduate Medical Education
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="columns uthsc-row-title">
-                <h2>Research Resources</h2>
-            </div>
-
-            <div class="columns">
-                <p style="text-align:center;">
-                    <a class="button" href="https://www.uthsc.edu/CRC/">Clinical Research</a>
-                    <a class="button" href="">Research Development</a>
-                    <a class="button" href="">Research Integrity Officer</a>
-                    <a class="button" href="">Governor’s Chair</a>
-                </p>
-            </div>
-        </div>
-
-
         <!--******************************************-->
         <!--Background stripe row with highlight boxes-->
         <!--******************************************-->
-        <div class="row expanded background-stripe"
-             style="background: linear-gradient( rgba(255, 255, 255, 0.60), rgba(0, 0, 0, 0.60) ),
-                 url(http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/fullscreen-students.jpg);">
+        <div class="row expanded background-stripe uthsc-row-bg-1">
             <div class="row ">
                 <div class="columns"></div>
                 <div class="columns">
@@ -491,6 +389,575 @@
         <!--/Background stripe row with highlight boxes-->
         <!--*******************************************-->
 
+        <div class="row expanded">
+            <div class="row">
+                <div class="columns">
+                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
+                        to corporate strategy foster collaborative thinking to further the overall value proposition.
+                        Organically grow the holistic world view of disruptive innovation via workplace diversity and
+                        empowerment.</p>
+
+                    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the
+                        day, going forward, a new normal that has evolved from generation X is on the runway heading towards
+                        a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for
+                        offshoring.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--******************************************-->
+        <!--Background stripe row with highlight boxes-->
+        <!--******************************************-->
+        <div class="row expanded background-stripe uthsc-row-bg-2">
+            <div class="row ">
+                <div class="columns"></div>
+                <div class="columns">
+                    <div class="row medium-up-2 large-up-3">
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box uthsc-highlight-box-purple">
+                                <a>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="../-resources/2015/images/research-kell-landscape.jpg">
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>The VCR Distinguished Lecture Series Featuring Prof. Douglas B. Kell</p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p><em>"The Cellular Uptake of Pharmaceutical Drugs is Transporter-mediated, and
+                                                Thus a Problem Not of Biophysics but of Systems Biology"</em></p>
+                                        <p>June 16, 2016 from 1-2pm<br />
+                                            College of Pharmacy, Room 101</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box">
+                                <div class="uthsc-highlight-box-image">
+                                    <img src="../-resources/2015/images/research-morrow-landscape.jpg"/>
+                                </div>
+                                <div class="uthsc-highlight-box-title">
+                                    <p>Hot Topics in Research Featuring Dr. Casey D. Morrow, Director, UAB</p>
+                                </div>
+
+                                <div class="uthsc-highlight-box-description">
+                                    <p><em>"UAB Microbiome Resource: Precision Medicine to Repair Dysbiotic Microbial
+                                            Communities"</em></p>
+                                    <p>June 28, 2016 from 12-1pm <br />
+                                        GEB A302
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box uthsc-highlight-box-green">
+                                <a>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="../-resources/2015/images/research-goodman.jpg"/>
+                                    </div>
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>Vice Chancellor for Research, Dr. Steven R. Goodman's Second Research Town Hall Meeting </p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--*******************************************-->
+        <!--/Background stripe row with highlight boxes-->
+        <!--*******************************************-->
+
+        <div class="row expanded">
+            <div class="row">
+                <div class="columns">
+                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
+                        to corporate strategy foster collaborative thinking to further the overall value proposition.
+                        Organically grow the holistic world view of disruptive innovation via workplace diversity and
+                        empowerment.</p>
+
+                    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the
+                        day, going forward, a new normal that has evolved from generation X is on the runway heading towards
+                        a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for
+                        offshoring.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--******************************************-->
+        <!--Background stripe row with highlight boxes-->
+        <!--******************************************-->
+        <div class="row expanded background-stripe uthsc-row-bg-3">
+            <div class="row ">
+                <div class="columns"></div>
+                <div class="columns">
+                    <div class="row medium-up-2 large-up-3">
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box uthsc-highlight-box-purple">
+                                <a>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="../-resources/2015/images/research-kell-landscape.jpg">
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>The VCR Distinguished Lecture Series Featuring Prof. Douglas B. Kell</p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p><em>"The Cellular Uptake of Pharmaceutical Drugs is Transporter-mediated, and
+                                                Thus a Problem Not of Biophysics but of Systems Biology"</em></p>
+                                        <p>June 16, 2016 from 1-2pm<br />
+                                            College of Pharmacy, Room 101</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box">
+                                <div class="uthsc-highlight-box-image">
+                                    <img src="../-resources/2015/images/research-morrow-landscape.jpg"/>
+                                </div>
+                                <div class="uthsc-highlight-box-title">
+                                    <p>Hot Topics in Research Featuring Dr. Casey D. Morrow, Director, UAB</p>
+                                </div>
+
+                                <div class="uthsc-highlight-box-description">
+                                    <p><em>"UAB Microbiome Resource: Precision Medicine to Repair Dysbiotic Microbial
+                                            Communities"</em></p>
+                                    <p>June 28, 2016 from 12-1pm <br />
+                                        GEB A302
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box uthsc-highlight-box-green">
+                                <a>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="../-resources/2015/images/research-goodman.jpg"/>
+                                    </div>
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>Vice Chancellor for Research, Dr. Steven R. Goodman's Second Research Town Hall Meeting </p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--*******************************************-->
+        <!--/Background stripe row with highlight boxes-->
+        <!--*******************************************-->
+
+
+
+
+        <div class="row expanded">
+            <div class="row">
+                <div class="columns">
+                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
+                        to corporate strategy foster collaborative thinking to further the overall value proposition.
+                        Organically grow the holistic world view of disruptive innovation via workplace diversity and
+                        empowerment.</p>
+
+                    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the
+                        day, going forward, a new normal that has evolved from generation X is on the runway heading towards
+                        a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for
+                        offshoring.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--******************************************-->
+        <!--Background stripe row with highlight boxes-->
+        <!--******************************************-->
+        <div class="row expanded background-stripe uthsc-row-bg-4">
+            <div class="row ">
+                <div class="columns"></div>
+                <div class="columns">
+                    <div class="row medium-up-2 large-up-3">
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box uthsc-highlight-box-purple">
+                                <a>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="../-resources/2015/images/research-kell-landscape.jpg">
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>The VCR Distinguished Lecture Series Featuring Prof. Douglas B. Kell</p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p><em>"The Cellular Uptake of Pharmaceutical Drugs is Transporter-mediated, and
+                                                Thus a Problem Not of Biophysics but of Systems Biology"</em></p>
+                                        <p>June 16, 2016 from 1-2pm<br />
+                                            College of Pharmacy, Room 101</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box">
+                                <div class="uthsc-highlight-box-image">
+                                    <img src="../-resources/2015/images/research-morrow-landscape.jpg"/>
+                                </div>
+                                <div class="uthsc-highlight-box-title">
+                                    <p>Hot Topics in Research Featuring Dr. Casey D. Morrow, Director, UAB</p>
+                                </div>
+
+                                <div class="uthsc-highlight-box-description">
+                                    <p><em>"UAB Microbiome Resource: Precision Medicine to Repair Dysbiotic Microbial
+                                            Communities"</em></p>
+                                    <p>June 28, 2016 from 12-1pm <br />
+                                        GEB A302
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box uthsc-highlight-box-green">
+                                <a>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="../-resources/2015/images/research-goodman.jpg"/>
+                                    </div>
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>Vice Chancellor for Research, Dr. Steven R. Goodman's Second Research Town Hall Meeting </p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--*******************************************-->
+        <!--/Background stripe row with highlight boxes-->
+        <!--*******************************************-->
+
+
+        <div class="row expanded">
+            <div class="row">
+                <div class="columns">
+                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
+                        to corporate strategy foster collaborative thinking to further the overall value proposition.
+                        Organically grow the holistic world view of disruptive innovation via workplace diversity and
+                        empowerment.</p>
+
+                    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the
+                        day, going forward, a new normal that has evolved from generation X is on the runway heading towards
+                        a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for
+                        offshoring.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--******************************************-->
+        <!--Background stripe row with highlight boxes-->
+        <!--******************************************-->
+        <div class="row expanded background-stripe uthsc-row-bg-5">
+            <div class="row ">
+                <div class="columns"></div>
+                <div class="columns">
+                    <div class="row medium-up-2 large-up-3">
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box uthsc-highlight-box-purple">
+                                <a>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="../-resources/2015/images/research-kell-landscape.jpg">
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>The VCR Distinguished Lecture Series Featuring Prof. Douglas B. Kell</p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p><em>"The Cellular Uptake of Pharmaceutical Drugs is Transporter-mediated, and
+                                                Thus a Problem Not of Biophysics but of Systems Biology"</em></p>
+                                        <p>June 16, 2016 from 1-2pm<br />
+                                            College of Pharmacy, Room 101</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box">
+                                <div class="uthsc-highlight-box-image">
+                                    <img src="../-resources/2015/images/research-morrow-landscape.jpg"/>
+                                </div>
+                                <div class="uthsc-highlight-box-title">
+                                    <p>Hot Topics in Research Featuring Dr. Casey D. Morrow, Director, UAB</p>
+                                </div>
+
+                                <div class="uthsc-highlight-box-description">
+                                    <p><em>"UAB Microbiome Resource: Precision Medicine to Repair Dysbiotic Microbial
+                                            Communities"</em></p>
+                                    <p>June 28, 2016 from 12-1pm <br />
+                                        GEB A302
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box uthsc-highlight-box-green">
+                                <a>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="../-resources/2015/images/research-goodman.jpg"/>
+                                    </div>
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>Vice Chancellor for Research, Dr. Steven R. Goodman's Second Research Town Hall Meeting </p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--*******************************************-->
+        <!--/Background stripe row with highlight boxes-->
+        <!--*******************************************-->
+
+
+        <div class="row expanded">
+            <div class="row">
+                <div class="columns">
+                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
+                        to corporate strategy foster collaborative thinking to further the overall value proposition.
+                        Organically grow the holistic world view of disruptive innovation via workplace diversity and
+                        empowerment.</p>
+
+                    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the
+                        day, going forward, a new normal that has evolved from generation X is on the runway heading towards
+                        a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for
+                        offshoring.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--******************************************-->
+        <!--Background stripe row with highlight boxes-->
+        <!--******************************************-->
+        <div class="row expanded background-stripe uthsc-row-bg-6">
+            <div class="row ">
+                <div class="columns"></div>
+                <div class="columns">
+                    <div class="row medium-up-2 large-up-3">
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box uthsc-highlight-box-purple">
+                                <a>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="../-resources/2015/images/research-kell-landscape.jpg">
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>The VCR Distinguished Lecture Series Featuring Prof. Douglas B. Kell</p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p><em>"The Cellular Uptake of Pharmaceutical Drugs is Transporter-mediated, and
+                                                Thus a Problem Not of Biophysics but of Systems Biology"</em></p>
+                                        <p>June 16, 2016 from 1-2pm<br />
+                                            College of Pharmacy, Room 101</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box">
+                                <div class="uthsc-highlight-box-image">
+                                    <img src="../-resources/2015/images/research-morrow-landscape.jpg"/>
+                                </div>
+                                <div class="uthsc-highlight-box-title">
+                                    <p>Hot Topics in Research Featuring Dr. Casey D. Morrow, Director, UAB</p>
+                                </div>
+
+                                <div class="uthsc-highlight-box-description">
+                                    <p><em>"UAB Microbiome Resource: Precision Medicine to Repair Dysbiotic Microbial
+                                            Communities"</em></p>
+                                    <p>June 28, 2016 from 12-1pm <br />
+                                        GEB A302
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box uthsc-highlight-box-green">
+                                <a>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="../-resources/2015/images/research-goodman.jpg"/>
+                                    </div>
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>Vice Chancellor for Research, Dr. Steven R. Goodman's Second Research Town Hall Meeting </p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--*******************************************-->
+        <!--/Background stripe row with highlight boxes-->
+        <!--*******************************************-->
+
+
+
+
+
+        <div class="row expanded">
+            <div class="row">
+                <div class="columns">
+                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches
+                        to corporate strategy foster collaborative thinking to further the overall value proposition.
+                        Organically grow the holistic world view of disruptive innovation via workplace diversity and
+                        empowerment.</p>
+
+                    <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of the
+                        day, going forward, a new normal that has evolved from generation X is on the runway heading towards
+                        a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for
+                        offshoring.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--******************************************-->
+        <!--Background stripe row with highlight boxes-->
+        <!--******************************************-->
+        <div class="row expanded background-stripe uthsc-row-bg-7">
+            <div class="row ">
+                <div class="columns"></div>
+                <div class="columns">
+                    <div class="row medium-up-2 large-up-3">
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box uthsc-highlight-box-purple">
+                                <a>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="../-resources/2015/images/research-kell-landscape.jpg">
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>The VCR Distinguished Lecture Series Featuring Prof. Douglas B. Kell</p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p><em>"The Cellular Uptake of Pharmaceutical Drugs is Transporter-mediated, and
+                                                Thus a Problem Not of Biophysics but of Systems Biology"</em></p>
+                                        <p>June 16, 2016 from 1-2pm<br />
+                                            College of Pharmacy, Room 101</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box">
+                                <div class="uthsc-highlight-box-image">
+                                    <img src="../-resources/2015/images/research-morrow-landscape.jpg"/>
+                                </div>
+                                <div class="uthsc-highlight-box-title">
+                                    <p>Hot Topics in Research Featuring Dr. Casey D. Morrow, Director, UAB</p>
+                                </div>
+
+                                <div class="uthsc-highlight-box-description">
+                                    <p><em>"UAB Microbiome Resource: Precision Medicine to Repair Dysbiotic Microbial
+                                            Communities"</em></p>
+                                    <p>June 28, 2016 from 12-1pm <br />
+                                        GEB A302
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="columns">
+                            <!--Highlight box-->
+                            <div class="uthsc-highlight-box uthsc-highlight-box-green">
+                                <a>
+                                    <div class="uthsc-highlight-box-image">
+                                        <img src="../-resources/2015/images/research-goodman.jpg"/>
+                                    </div>
+                                    <div class="uthsc-highlight-box-title">
+                                        <p>Vice Chancellor for Research, Dr. Steven R. Goodman's Second Research Town Hall Meeting </p>
+                                    </div>
+
+                                    <div class="uthsc-highlight-box-description">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--*******************************************-->
+        <!--/Background stripe row with highlight boxes-->
+        <!--*******************************************-->
+
+
+
         <!--*************-->
         <!--Research News-->
         <!--*************-->
@@ -500,46 +967,12 @@
                     <h3>Research News</h3>
                 </div>
 
-                <!--Snippet-->
-                <div class="news-snippet-1234 row medium-up-2 large-up-3" data-equalizer="news-boxes-1234" data-equalize-on="large"></div>
-                <?php
-                $uthsc_news['1234'] = array(
-                    'post_count' => '6',
-                    'categories' => '60,331'
-                );
-                ?>
-                <!--Snippet-->
+                <div class="news-snippet" data-equalizer="news-boxes" data-equalize-on="large"></div>
 
             </div>
         </div>
         <!--**************-->
         <!--/Research News-->
-        <!--**************-->
-
-
-        <!--*************-->
-        <!--Research News 2-->
-        <!--*************-->
-        <div class="row expanded">
-            <div class="row">
-                <div class="columns uthsc-row-title">
-                    <h3>Public Service News</h3>
-                </div>
-
-                <!--Snippet-->
-                <div class="news-snippet-5678 uthsc-news-box-dark row medium-up-2 large-up-3" data-equalizer="news-boxes-5678" data-equalize-on="large"></div>
-                <?php
-                $uthsc_news['5678'] = array(
-                    'post_count' => '3',
-                    'categories' => '331'
-                );
-                ?>
-                <!--Snippet-->
-
-            </div>
-        </div>
-        <!--**************-->
-        <!--/Research News 2-->
         <!--**************-->
 
 
@@ -922,7 +1355,6 @@
 <!--/Off canvas buttons-->
 <!--*******************-->
 
-
 <!--*******-->
 <!--Scripts-->
 <!--*******-->
@@ -930,20 +1362,68 @@
 <script src="../-resources/2015/js/what-input.min.js"></script>
 <script src="../-resources/2015/js/foundation.min.js"></script>
 <script src="../-resources/2015/js/uthsc.min.js"></script>
+
+<script>
+    function parseNewsPosts() {
+
+        var html = '';
+
+        for (var i=0;i<3;i++) {
+
+            var postLink = posts[i]['link'],
+                featuredImageLink = '',
+                date = new Date( posts[i]['date'] ),
+                monthNames = [
+                    "January", "February", "March",
+                    "April", "May", "June", "July",
+                    "August", "September", "October",
+                    "November", "December"
+                ],
+                monthIndex = date.getMonth(),
+                postDate = monthNames[monthIndex] + ' ' + date.getDate() + ', ' + date.getFullYear(),
+                postTitle = posts[i]['title']['rendered'];
+
+            if (typeof posts[i]._embedded['wp:featuredmedia'] !== 'undefined') {
+                featuredImageLink = posts[i]._embedded['wp:featuredmedia'][0]['source_url'];
+                featuredImageLink = featuredImageLink.replace('.jpg', '-300x300.jpg')
+            } else {
+                featuredImageLink = '../-resources/2015/images/homepage-news-featured-image-place-holder.jpg';
+            }
+
+            html += '<div class="large-4 columns">' +
+            '<div class="uthsc-news-box ' + 'post-0' + (i + 1) + '">' +
+            '<a data-equalizer-watch="news-boxes" ' + 'href="' + postLink + '">' +
+            '<div class="row">' +
+
+            '<div class="columns small-3 medium-2 large-4">' +
+            '<img alt="" src="' + featuredImageLink + '" />' +
+            '</div>' +
+
+            '<div class="columns small-9 medium-10 large-8">' +
+            '<h4>' + postTitle +'</h4>' +
+            '<p>' + postDate +'</p>' +
+            '</div>' +
+
+            '</div>' +
+            '</a>' +
+            '</div>' +
+            '</div>';
+        }
+
+        return html;
+    }
+
+    /*
+     * Render names on page load
+     */
+    $(document).ready(function(){
+        newsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts?categories=60&per_page=3&_embed", '.news-snippet');
+    });
+</script>
+
 <!--********-->
 <!--/Scripts-->
 <!--********-->
-
-<!--snippet-->
-<script src="../-resources/2015/js/uthsc-news-ajax.min.js"></script>
-<script>
-$(document).ready(function(){
-<?php foreach ($uthsc_news as $key => $posts) {
-echo 'newsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts?categories=' . $posts['categories'] . '&per_page=' . $posts['post_count'] . '&_embed", ' . '\'' . $key . '\',' . $posts['post_count'] .');' . "\r\n";
-} ?>
-});
-</script>
-<!--snippet-->
 
 </body>
 </html>
