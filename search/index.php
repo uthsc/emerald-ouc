@@ -33,7 +33,7 @@
         /*
          * Assign search query to global js variable
          */
-        echo $_GET['q'] ?  '<script>var searchUthscQuery = "' . $_GET['q'] . '"</script>' : '';
+        echo $_GET['q'] ?  '<script>var searchUthscQuery = "' . addslashes($_GET['q']) . '"</script>' : '';
 
         /*
          * Assign search type to global js variable
@@ -44,8 +44,8 @@
 
         echo '<script>var peopleSearchResults = ' . $people_search . '</script>';
     ?>
-
     <style>
+        iframe.uthsc-search-results{width: 100%;border: 0}
         .uthsc-banner form { display:none; }
         .uthsc-row-title { border:0; margin-bottom:0; }
         #people-search-results-system table td, #people-search-results-campus table td{ font-size:.8em; }
@@ -207,9 +207,11 @@
                                    <!--*********************-->
                                    <!--Campus Search Results-->
                                    <!--*********************-->
-                                   <div class="flex-video" style="height:1350px;">
-                                       <iframe frameBorder="0" src="campus-search.html?q=<?php echo $_GET["q"] ?>"></iframe>
-                                   </div>
+                                   <iframe class="uthsc-search-results"
+                                           id="uthsc-campus-search"
+                                           src="campus-search.html?q=<?php echo urlencode( $_GET["q"] ) ?>"
+                                           scrolling="no">
+                                   </iframe>
                                    <!--**********************-->
                                    <!--/Campus Search Results-->
                                    <!--**********************-->
@@ -220,9 +222,11 @@
                                    <!--*********************-->
                                    <!--System Search Results-->
                                    <!--*********************-->
-                                   <div class="flex-video" style="height:1350px;">
-                                       <iframe frameBorder="0" src="system-search.html?q=<?php echo $_GET["q"] ?>"></iframe>
-                                   </div>
+                                   <iframe class="uthsc-search-results"
+                                           id="uthsc-system-search"
+                                           src="system-search.html?q=<?php echo urlencode( $_GET["q"] ) ?>"
+                                           scrolling="no">
+                                   </iframe>
                                    <!--*********************-->
                                    <!--System Search Results-->
                                    <!--*********************-->
@@ -446,6 +450,8 @@
    <!--*************************-->
    <script src="../-resources/2015/js/uthsc-emergency-notification.min.js"></script>
    <script src="../-resources/2015/js/uthsc-search.min.js"></script>
+   <script src="../-resources/2015/js/iframeResizer.min.js"></script>
+   <script>iFrameResize()</script>
    <!--**************************-->
    <!--/Footcode for Search UTHSC-->
    <!--**************************-->

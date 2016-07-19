@@ -1,6 +1,6 @@
 <!--Search form-->
-<form class="input-group search-form" aria-label="Search the UTHSC site"
-      action="https://uthsc.edu/test/gspake1/emerald-ouc/search/" method="get">
+<!--For PROD add [action="/search/"] as attribute in <form>-->
+<form class="input-group search-form" aria-label="Search the UTHSC site" method="get">
     <input class="input-group-field search-input"
            placeholder="Search &hellip;"
            value=""
