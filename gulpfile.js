@@ -119,7 +119,7 @@ gulp.task('uthsc-js', function() {
           .pipe(gulp.dest('./-resources/2015/js'));
 });
 
-gulp.task('buildjs', ['uthsc-now-js','uthsc-now-js','uthsc-js', 'copy-vendor-js', 'uthsc-emergency-notification', 'uthsc-search', 'uthsc-news-ajax']);
+gulp.task('buildjs', ['uthsc-now-js','uthsc-now-homepage-js','uthsc-js', 'copy-vendor-js', 'uthsc-emergency-notification', 'uthsc-search', 'uthsc-news-ajax']);
 
 gulp.task('build', ['sass','copy-fonts', 'copy-images', 'buildjs']);
 
