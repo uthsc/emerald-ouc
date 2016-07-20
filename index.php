@@ -178,15 +178,10 @@
             </div>
             <div class="columns medium-6 large-12">
                 <div class="row">
-                    <div class="columns small-6 medium-12 large-4 large-push-2">
-                        <a href="/admissions/visit-uthsc.php" class="button secondary large expanded show-for-large"><span class="fa fa-road" aria-hidden="true"></span> Take a Tour</a>
-                        <a href="/admissions/visit-uthsc.php" class="button secondary expanded show-for-medium-only"><span class="fa fa-road" aria-hidden="true"></span> Take a Tour</a>
-                        <a href="/admissions/visit-uthsc.php" class="button secondary tiny expanded hide-for-medium"><span class="fa fa-road" aria-hidden="true"></span> Take a Tour</a>
-                    </div>
-                    <div class="columns small-6 medium-12 large-4 large-pull-2">
-                        <a href="/admissions/visit-uthsc.php" class="button secondary large expanded show-for-large"><span class="fa fa-clock-o" aria-hidden="true"></span> Schedule a Visit</a>
-                        <a href="/admissions/visit-uthsc.php" class="button secondary expanded show-for-medium-only"><span class="fa fa-clock-o" aria-hidden="true"></span> Schedule a Visit</a>
-                        <a href="/admissions/visit-uthsc.php" class="button secondary tiny expanded hide-for-medium"><span class="fa fa-clock-o" aria-hidden="true"></span> Schedule a Visit</a>
+                    <div class="columns large-6 large-push-3">
+                        <a href="/admissions/visit-uthsc.php" class="button secondary large expanded show-for-large"><span class="fa fa-clock-o" aria-hidden="true"></span> Schedule a visit to take a tour</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary expanded show-for-medium-only"><span class="fa fa-clock-o" aria-hidden="true"></span> Schedule a visit to take a tour</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary expanded hide-for-medium"><span class="fa fa-clock-o" aria-hidden="true"></span> Schedule a visit to take a tour</a>
                     </div>
                 </div>
             </div>
@@ -283,7 +278,6 @@
                                                     <li><a href="/health-professions/him/index.php">Health Informatics &amp; Information Management</a></li>
                                                     <li><a href="/health-professions/cls/mls/index.php">Medical Laboratory Science</a></li>
                                                     <li><a href="/health-professions/ot/index.php">Occupational Therapy</a></li>
-                                                    <li><a href="/health-professions/pa/index.php">Physician Assistant</a></li>
                                                     <li><a href="/health-professions/pt/index.php">Physical Therapy, Entry Level (DPT Degree)</a></li>
                                                     <li><a href="/health-professions/pt/programs/pt-graduate/index.php">Physical Therapy, Graduate Program (MSPT Degree)</a></li>
                                                     <li><a href="/health-professions/pt/programs/pt-graduate/index.php">Physical Therapy, Graduate Program (ScDPT Degree)</a></li>
@@ -312,6 +306,7 @@
                                                     <li><a href="/pathology/">Pathology and Laboratory Medicine</a></li>
                                                     <li><a href="/pediatrics/">Pediatrics</a></li>
                                                     <li><a href="/pharmacology/">Pharmacology</a></li>
+                                                    <li><a href="/physician-assistant/">Physician Assistant</a></li>
                                                     <li><a href="/physiology/">Physiology</a></li>
                                                     <li><a href="/plasticsurgery/">Plastic Surgery</a></li>
                                                     <li><a href="/prevmed/">Preventive Medicine</a></li>
@@ -326,7 +321,7 @@
                                     <div class="tabs-panel" id="panel5v">
                                         <ul>
                                             <li>
-                                                <a href="/nursing">College of Nursing</a>
+                                                <a href="nursing/">College of Nursing</a>
                                                 <ul>
                                                     <li><a href="/nursing/academic-programs/index.php">Academic Programs</a></li>
                                                     <li><a href="/nursing/continuing-education/index.php">Continuing Education</a></li>
@@ -406,9 +401,9 @@
                     <h2>Research</h2>
                     <p>UTHSC has a long and rich tradition of accomplishments in basic, clinical and translational research in a wide variety of disciplines focused on the health issues that impact our community, our region, the state of Tennessee and the world.</p>
                     <ul>
-                        <li><a href="research/research_administration/clinical_trials/">Clinical Trials</a></li>
-                        <li><a href="research/research_compliance/">Compliance</a></li>
-                        <li><a href="research/research_administration/">Grants and Research Agreements</a></li>
+                        <li><a href="/research/research_administration/clinical_trials/">Clinical Trials</a></li>
+                        <li><a href="/research/research_compliance/">Compliance</a></li>
+                        <li><a href="/research/research_administration/">Grants and Research Agreements</a></li>
                         <li><a href="research/">Office of Research</a></li>
                     </ul>
 
