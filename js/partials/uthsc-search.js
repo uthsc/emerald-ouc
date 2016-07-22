@@ -95,7 +95,7 @@ function peopleSearchTable(data, count, el, offCampus, soundsLike, lichterman) {
 	for (var person in data) {
 		html += "<tr>";
 		html += "<td>";
-		html += "<a href=\"http://oracle.uthsc.edu/directory.php?action=DETAIL&id=" + data[person]['id'] + "\">";
+		html += "<a href=\"http://uthsc.edu/test/gspake1/emerald-ouc/search/detail.php?id=" + data[person]['id'] + "\">";
 		html += data[person]['name'];
 		html += "</a>";
 		html += "</td>";
