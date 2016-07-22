@@ -53,7 +53,7 @@ gulp.task('copy-vendor-js', function() {
         './bower_components/what-input/what-input.min.js',
         './bower_components/foundation-sites/dist/foundation.min.js',
         './bower_components/masonry/dist/masonry.pkgd.min.js',
-		'./bower_components/imagesloaded/imagesloaded.pkgd.min.js',
+				'./bower_components/imagesloaded/imagesloaded.pkgd.min.js',
         './bower_components/iframe-resizer/js/iframeResizer.min.js',
         './bower_components/iframe-resizer/js/iframeResizer.contentWindow.min.js'
     ])
