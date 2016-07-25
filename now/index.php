@@ -73,7 +73,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="research/">
+                            <a href="../research/">
                                 <span class="fa fa-flask"></span>
                                 Research
                             </a>
