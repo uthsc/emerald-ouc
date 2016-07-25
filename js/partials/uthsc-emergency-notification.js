@@ -3,23 +3,16 @@ function renderUthscAlert(uthscAlert) {
 	var currentDate = new Date(),
 		effectiveDate = new Date(uthscAlert['effective']),
 		expireDate = new Date(uthscAlert['expires']),
-		alertIsLive = (effectiveDate.getTime() < currentDate.getTime() < expireDate.getTime());
-
-	//var effectiveDateTest = uthscAlert['effective'],
-	//	  expireDateTest = new uthscAlert['expires'];
-
-	//console.log(uthscAlert);
-	//console.log(Date());
-	//console.log(effectiveDate);
-	//console.log(expireDate);
-	//console.log( alertIsLive );
+		isEffective = effectiveDate.getTime() < currentDate.getTime(),
+		isExpired = currentDate.getTime() > expireDate.getTime(),
+		alertIsLive = ( isEffective && !isExpired );
 
 	if (alertIsLive) { //check if alert is live
 
 		var callOutColor = "success", //set call out color class to success (green)
 			html = "";
 
-		if (uthscAlert['type'].toLowerCase() != 'allclear' ) { //if type is not "all clear",
+		if (uthscAlert['type'].toLowerCase() != 'allclear') { //if type is not "all clear",
 			callOutColor = 'alert'; //set call out color class to alert (red)
 		}
 
