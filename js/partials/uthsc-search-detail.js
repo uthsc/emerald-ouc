@@ -15,7 +15,7 @@ function parsePersonDetails(data) {
 				html += "<p>" + person.name + " has already been nominated for the Lichterman Award!</p>";
 			} else {
 				html += "<p>" + person.name + " might be eligible for the Lichterman Award!</p>";
-				html += "<a href=\"\" ><span class=\"fa fa-trophy\" aria-hidden=\"true\"></span>&nbsp;Nominate " + person.name + "</a>";
+				html += "<a href=\"" + meta.lichterman_nominate_url + "\" ><span class=\"fa fa-trophy\" aria-hidden=\"true\"></span>&nbsp;Nominate " + person.name + "</a>";
 			}
 
 			html += "</div>";
