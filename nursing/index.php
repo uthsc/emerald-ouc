@@ -455,7 +455,15 @@
                     <h3>Nursing News</h3>
                 </div>
 
-                <div class="news-snippet" data-equalizer="news-boxes" data-equalize-on="large"></div>
+                <!--Snippet-->
+                <div class="news-snippet-1234 row medium-up-2 large-up-3" data-equalizer="news-boxes-1234" data-equalize-on="large"></div>
+                <?php
+                $uthsc_news['1234'] = array(
+                    'post_count' => '3',
+                    'categories' => '153'
+                );
+                ?>
+                <!--Snippet-->
 
             </div>
         </div>
