@@ -3,30 +3,37 @@ function parsePersonDetails(data) {
 		meta = data.meta,
 		html = "";
 
-	if (meta.lichterman_eligible) {
-		html += "<div class=\"callout\">";
-		html += "<div class=\"row\">";
-		html += "<div class=\"columns small-2\">";
-		html += "<img src=\"http://devel.uthsc.edu/images/w932_lichterman.jpg\" alt=\"\" />";
-		html += "</div>";
-		html += "<div class=\"columns small-10\">";
-		html += "<p>" + person.name + " might be eligible for the Lichterman Award!</p>";
-		html += "<a href=\"\" ><span class=\"fa fa-trophy\" aria-hidden=\"true\"></span>&nbsp;Nominate " + person.name + "</a>";
-		html += "</div>";
-		html += "</div>";
-		html += "</div>";
-	} else {
-		html += "<div class=\"callout\">";;
-		html += "<div class=\"row\">";
-		html += "<div class=\"columns small-2\">";
-		html += "<img src=\"http://devel.uthsc.edu/images/w932_lichterman.jpg\" alt=\"\" />";
-		html += "</div>";
-		html += "<div class=\"columns small-10\">";
-		html += "<p>" + person.name + " is not eligible for the Lichterman Award. Only full-time,";
-		html += "non-exempt employees with three years of service are eligible.</p>";
-		html += "</div>";
-		html += "</div>";
-		html += "</div>";
+	if (meta.lichterman) {
+		if (meta.lichterman_eligible) {
+			html += "<div class=\"callout\">";
+			html += "<div class=\"row\">";
+			html += "<div class=\"columns small-2\">";
+			html += "<img src=\"http://devel.uthsc.edu/images/w932_lichterman.jpg\" alt=\"\" />";
+			html += "</div>";
+			html += "<div class=\"columns small-10\">";
+			if (meta.lichterman_nominated) {
+				html += "<p>" + person.name + " has already been nominated for the Lichterman Award!</p>";
+			} else {
+				html += "<p>" + person.name + " might be eligible for the Lichterman Award!</p>";
+				html += "<a href=\"\" ><span class=\"fa fa-trophy\" aria-hidden=\"true\"></span>&nbsp;Nominate " + person.name + "</a>";
+			}
+
+			html += "</div>";
+			html += "</div>";
+			html += "</div>";
+		} else {
+			html += "<div class=\"callout\">";
+			html += "<div class=\"row\">";
+			html += "<div class=\"columns small-2\">";
+			html += "<img src=\"http://devel.uthsc.edu/images/w932_lichterman.jpg\" alt=\"\" />";
+			html += "</div>";
+			html += "<div class=\"columns small-10\">";
+			html += "<p>" + person.name + " is not eligible for the Lichterman Award. Only full-time,";
+			html += "non-exempt employees with three years of service are eligible.</p>";
+			html += "</div>";
+			html += "</div>";
+			html += "</div>";
+		}
 	}
 
 	html += "<table>";
