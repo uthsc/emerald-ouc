@@ -519,10 +519,10 @@
             <div class="medium-4 columns footer-box">
                 <h4>College Links</h4><ul>
                     <li><a href="">View an Info Session</a></li>
-                    <li><a href="">Apply Online</a></li>
-                    <li><a href="">Tuition & Fees</a></li>
-                    <li><a href="">Scholarships</a></li>
-                    <li><a href="">Financial Aid</a></li>
+                    <li><a href="/nursing/future-students/admissions/index.php">Apply Online</a></li>
+                    <li><a href="/finaid/cost/college-of-nursing.php">Tuition & Fees</a></li>
+                    <li><a href="/nursing/future-students/scholarship_information.php">Scholarships</a></li>
+                    <li><a href="/finaid/">Financial Aid</a></li>
                 </ul>
             </div>
             <div class="medium-4 columns footer-box hide-for-print">
