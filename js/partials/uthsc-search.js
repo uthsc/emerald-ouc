@@ -75,7 +75,7 @@ function peopleSearchTable(data, count, el, offCampus, soundsLike, lichterman) {
 	//lichterman
 	if (lichterman) {
 		html += "<small>";
-		html += lichterman ? "If you are using people search to nominate a UTHSC employee for the Lichterman Award, click on the name of the person you wish to nominate in the list." : "";
+		html += "If you are using people search to nominate a UTHSC employee for the Lichterman Award, click on the name of the person you wish to nominate in the list.";
 		html += "</small>";
 	}
 
