@@ -187,7 +187,7 @@
                 </li>
 
                 <li class="uthsc-navigation-column small-2 columns">
-                    <a href="research/" data-equalizer-watch="heading-links"><span class="fa fa-flask"></span> Research</a>
+                    <a href="../research/" data-equalizer-watch="heading-links"><span class="fa fa-flask"></span> Research</a>
                 </li>
 
                 <li class="uthsc-navigation-column small-2 columns">
