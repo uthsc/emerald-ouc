@@ -347,7 +347,6 @@
                     <a class="button" href="https://www.uthsc.edu/CRC/">Clinical Research</a>
                     <a class="button" href="">Research Development</a>
                     <a class="button" href="">Research Integrity Officer</a>
-                    <a class="button" href="">Governor’s Chair</a>
                 </p>
             </div>
         </div>
