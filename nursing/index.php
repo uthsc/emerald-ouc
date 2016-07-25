@@ -837,68 +837,20 @@
 <script src="../-resources/2015/js/what-input.min.js"></script>
 <script src="../-resources/2015/js/foundation.min.js"></script>
 <script src="../-resources/2015/js/uthsc.min.js"></script>
-
-<script>
-    function parseNewsPosts() {
-
-        var html = '';
-
-        for (var i=0;i<3;i++) {
-
-            var postLink = posts[i]['link'],
-                featuredImageLink = '',
-                date = new Date( posts[i]['date'] ),
-                monthNames = [
-                "January", "February", "March",
-                "April", "May", "June", "July",
-                "August", "September", "October",
-                "November", "December"
-                ],
-                monthIndex = date.getMonth(),
-                postDate = monthNames[monthIndex] + ' ' + date.getDate() + ', ' + date.getFullYear(),
-                postTitle = posts[i]['title']['rendered'];
-
-            if (typeof posts[i]._embedded['wp:featuredmedia'] !== 'undefined') {
-                featuredImageLink = posts[i]._embedded['wp:featuredmedia'][0]['source_url'];
-                featuredImageLink = featuredImageLink.replace('.jpg', '-300x300.jpg')
-            } else {
-                featuredImageLink = '../-resources/2015/images/homepage-news-featured-image-place-holder.jpg';
-            }
-
-            html += '<div class="large-4 columns">' +
-            '<div class="uthsc-news-box ' + 'post-0' + (i + 1) + '">' +
-            '<a data-equalizer-watch="news-boxes" ' + 'href="' + postLink + '">' +
-            '<div class="row">' +
-
-            '<div class="columns small-3 medium-2 large-4">' +
-            '<img alt="" src="' + featuredImageLink + '" />' +
-            '</div>' +
-
-            '<div class="columns small-9 medium-10 large-8">' +
-            '<h4>' + postTitle +'</h4>' +
-            '<p>' + postDate +'</p>' +
-            '</div>' +
-
-            '</div>' +
-            '</a>' +
-            '</div>' +
-            '</div>';
-        }
-
-        return html;
-    }
-
-    /*
-     * Render names on page load
-     */
-    $(document).ready(function(){
-        newsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts?categories=153&per_page=3&_embed", '.news-snippet');
-    });
-</script>
-
 <!--********-->
 <!--/Scripts-->
 <!--********-->
+
+<!--snippet-->
+<script src="../-resources/2015/js/uthsc-news-ajax.min.js"></script>
+<script>
+    $(document).ready(function(){
+        <?php foreach ($uthsc_news as $key => $posts) {
+        echo 'newsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts?categories=' . $posts['categories'] . '&per_page=' . $posts['post_count'] . '&_embed", ' . '\'' . $key . '\',' . $posts['post_count'] .');' . "\r\n";
+    } ?>
+    });
+</script>
+<!--snippet-->
 
 </body>
 </html>
