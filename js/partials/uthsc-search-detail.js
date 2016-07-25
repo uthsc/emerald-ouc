@@ -28,7 +28,7 @@ function parsePersonDetails(data) {
 			html += "<img src=\"http://devel.uthsc.edu/images/w932_lichterman.jpg\" alt=\"\" />";
 			html += "</div>";
 			html += "<div class=\"columns small-10\">";
-			html += "<p>" + person.name + " is not eligible for the Lichterman Award. Only full-time,";
+			html += "<p>" + person.name + " is not eligible for the Lichterman Award. Only full-time, ";
 			html += "non-exempt employees with three years of service are eligible.</p>";
 			html += "</div>";
 			html += "</div>";
