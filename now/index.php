@@ -108,7 +108,7 @@
                         <li><a href="/map/">Maps</a></li>
                         <li><a href="https://utap.tennessee.edu/">MyUT</a></li>
                         <li><a href="https://news.uthsc.edu/">News</a></li>
-                        <li><a href="/email/">Webmail</a></li>
+                        <li><a href="/email/transition/">Webmail</a></li>
                     </ul>
                 </li>
                 <li><a href="/give/"><span class="fa fa-gift"></span> Make a Gift</a></li>
