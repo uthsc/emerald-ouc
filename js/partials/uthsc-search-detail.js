@@ -83,4 +83,9 @@ $(document).ready(function () {
 		// 	console.log("complete");
 		// });
 	}
+	
+	//return to search results (history.back)
+	$('.back-to-search-results').on('click', function(){
+		history.back()
+	});
 });
