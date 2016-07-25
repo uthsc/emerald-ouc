@@ -347,7 +347,6 @@
                     <a class="button" href="https://www.uthsc.edu/CRC/">Clinical Research</a>
                     <a class="button" href="">Research Development</a>
                     <a class="button" href="">Research Integrity Officer</a>
-                    <a class="button" href="">Governor’s Chair</a>
                 </p>
             </div>
         </div>
@@ -504,8 +503,8 @@
                 <div class="news-snippet-1234 row medium-up-2 large-up-3" data-equalizer="news-boxes-1234" data-equalize-on="large"></div>
                 <?php
                 $uthsc_news['1234'] = array(
-                    'post_count' => '6',
-                    'categories' => '60,331'
+                    'post_count' => '3',
+                    'categories' => '60'
                 );
                 ?>
                 <!--Snippet-->
@@ -515,33 +514,6 @@
         <!--**************-->
         <!--/Research News-->
         <!--**************-->
-
-
-        <!--*************-->
-        <!--Research News 2-->
-        <!--*************-->
-        <div class="row expanded">
-            <div class="row">
-                <div class="columns uthsc-row-title">
-                    <h3>Public Service News</h3>
-                </div>
-
-                <!--Snippet-->
-                <div class="news-snippet-5678 uthsc-news-box-dark row medium-up-2 large-up-3" data-equalizer="news-boxes-5678" data-equalize-on="large"></div>
-                <?php
-                $uthsc_news['5678'] = array(
-                    'post_count' => '3',
-                    'categories' => '331'
-                );
-                ?>
-                <!--Snippet-->
-
-            </div>
-        </div>
-        <!--**************-->
-        <!--/Research News 2-->
-        <!--**************-->
-
 
         <!--***************-->
         <!--Research Events-->

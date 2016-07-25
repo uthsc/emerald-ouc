@@ -1,6 +1,6 @@
 <!--Search form-->
 <!--For PROD add [action="/search/"] as attribute in <form>-->
-<form class="input-group search-form" aria-label="Search the UTHSC site" method="get">
+<form class="input-group search-form" aria-label="Search the UTHSC site" method="get" action="../search/">
     <input class="input-group-field search-input"
            placeholder="Search &hellip;"
            value=""

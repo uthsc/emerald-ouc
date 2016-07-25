@@ -21,7 +21,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="research/">
+                        <a href="/redesign/research/">
                             <span aria-hidden="true" class="fa fa-flask"></span>
                             Research
                         </a>
