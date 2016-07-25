@@ -207,7 +207,7 @@
                        <a href="http://oracle.uthsc.edu/w201_phonebook.php" class="button expanded"><span class="fa fa-edit" aria-hidden="true"></span>&nbsp;Change information</a>
                    </div>
                    <div class="columns medium-6 large-3">
-                       <a href="" class="button expanded"><span class="fa fa-undo" aria-hidden="true"></span>&nbsp;Return to search results</a>
+                       <a href="" class="button expanded back-to-search-results"><span class="fa fa-undo" aria-hidden="true"></span>&nbsp;Return to search results</a>
                    </div>
                    <div class="columns large-3">
 
