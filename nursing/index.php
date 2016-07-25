@@ -363,7 +363,7 @@
                         <div class="columns">
                             <!--Highlight box-->
                             <div class="uthsc-highlight-box">
-                                <a href="https://www.uthsc.edu/research/research_compliance/irb/">
+                                <a href="/nursing/future-students/admissions/dnp_req.php">
                                     <div class="uthsc-highlight-box-image">
                                         <img src="../-resources/2015/images/nursing-dnp.jpg"/>
                                     </div>
@@ -420,7 +420,7 @@
                         <div class="columns">
                             <!--Highlight box-->
                             <div class="uthsc-highlight-box uthsc-highlight-box-purple">
-                                <a href="">
+                                <a href="/nursing/future-students/admissions/acnp-req.php">
                                     <div class="uthsc-highlight-box-image">
                                         <img src="../-resources/2015/images/nursing-ag-acnp.jpg">
                                     </div>
@@ -455,7 +455,15 @@
                     <h3>Nursing News</h3>
                 </div>
 
-                <div class="news-snippet" data-equalizer="news-boxes" data-equalize-on="large"></div>
+                <!--Snippet-->
+                <div class="news-snippet-1234 row medium-up-2 large-up-3" data-equalizer="news-boxes-1234" data-equalize-on="large"></div>
+                <?php
+                $uthsc_news['1234'] = array(
+                    'post_count' => '3',
+                    'categories' => '153'
+                );
+                ?>
+                <!--Snippet-->
 
             </div>
         </div>
@@ -511,10 +519,10 @@
             <div class="medium-4 columns footer-box">
                 <h4>College Links</h4><ul>
                     <li><a href="">View an Info Session</a></li>
-                    <li><a href="">Apply Online</a></li>
-                    <li><a href="">Tuition & Fees</a></li>
-                    <li><a href="">Scholarships</a></li>
-                    <li><a href="">Financial Aid</a></li>
+                    <li><a href="/nursing/future-students/admissions/index.php">Apply Online</a></li>
+                    <li><a href="/finaid/cost/college-of-nursing.php">Tuition & Fees</a></li>
+                    <li><a href="/nursing/future-students/scholarship_information.php">Scholarships</a></li>
+                    <li><a href="/finaid/">Financial Aid</a></li>
                 </ul>
             </div>
             <div class="medium-4 columns footer-box hide-for-print">
@@ -837,68 +845,20 @@
 <script src="../-resources/2015/js/what-input.min.js"></script>
 <script src="../-resources/2015/js/foundation.min.js"></script>
 <script src="../-resources/2015/js/uthsc.min.js"></script>
-
-<script>
-    function parseNewsPosts() {
-
-        var html = '';
-
-        for (var i=0;i<3;i++) {
-
-            var postLink = posts[i]['link'],
-                featuredImageLink = '',
-                date = new Date( posts[i]['date'] ),
-                monthNames = [
-                "January", "February", "March",
-                "April", "May", "June", "July",
-                "August", "September", "October",
-                "November", "December"
-                ],
-                monthIndex = date.getMonth(),
-                postDate = monthNames[monthIndex] + ' ' + date.getDate() + ', ' + date.getFullYear(),
-                postTitle = posts[i]['title']['rendered'];
-
-            if (typeof posts[i]._embedded['wp:featuredmedia'] !== 'undefined') {
-                featuredImageLink = posts[i]._embedded['wp:featuredmedia'][0]['source_url'];
-                featuredImageLink = featuredImageLink.replace('.jpg', '-300x300.jpg')
-            } else {
-                featuredImageLink = '../-resources/2015/images/homepage-news-featured-image-place-holder.jpg';
-            }
-
-            html += '<div class="large-4 columns">' +
-            '<div class="uthsc-news-box ' + 'post-0' + (i + 1) + '">' +
-            '<a data-equalizer-watch="news-boxes" ' + 'href="' + postLink + '">' +
-            '<div class="row">' +
-
-            '<div class="columns small-3 medium-2 large-4">' +
-            '<img alt="" src="' + featuredImageLink + '" />' +
-            '</div>' +
-
-            '<div class="columns small-9 medium-10 large-8">' +
-            '<h4>' + postTitle +'</h4>' +
-            '<p>' + postDate +'</p>' +
-            '</div>' +
-
-            '</div>' +
-            '</a>' +
-            '</div>' +
-            '</div>';
-        }
-
-        return html;
-    }
-
-    /*
-     * Render names on page load
-     */
-    $(document).ready(function(){
-        newsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts?categories=153&per_page=3&_embed", '.news-snippet');
-    });
-</script>
-
 <!--********-->
 <!--/Scripts-->
 <!--********-->
+
+<!--snippet-->
+<script src="../-resources/2015/js/uthsc-news-ajax.min.js"></script>
+<script>
+    $(document).ready(function(){
+        <?php foreach ($uthsc_news as $key => $posts) {
+        echo 'newsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts?categories=' . $posts['categories'] . '&per_page=' . $posts['post_count'] . '&_embed", ' . '\'' . $key . '\',' . $posts['post_count'] .');' . "\r\n";
+    } ?>
+    });
+</script>
+<!--snippet-->
 
 </body>
 </html>
