@@ -363,7 +363,7 @@
                         <div class="columns">
                             <!--Highlight box-->
                             <div class="uthsc-highlight-box">
-                                <a href="https://www.uthsc.edu/research/research_compliance/irb/">
+                                <a href="/nursing/future-students/admissions/dnp_req.php">
                                     <div class="uthsc-highlight-box-image">
                                         <img src="../-resources/2015/images/nursing-dnp.jpg"/>
                                     </div>
@@ -420,7 +420,7 @@
                         <div class="columns">
                             <!--Highlight box-->
                             <div class="uthsc-highlight-box uthsc-highlight-box-purple">
-                                <a href="">
+                                <a href="/nursing/future-students/admissions/acnp-req.php">
                                     <div class="uthsc-highlight-box-image">
                                         <img src="../-resources/2015/images/nursing-ag-acnp.jpg">
                                     </div>
