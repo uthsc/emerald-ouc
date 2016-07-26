@@ -69,13 +69,13 @@
 
 //@include uthsc-list-styles;
 .main-content, .uthsc-content-footer {
-  ul {
+  ul:not(ol) {
     list-style: none;
     left: 0;
     margin-left: 0;
-    //text-indent: -.7em;
+    text-indent: -.7em;
 
-    li {
+    & > li, & > ul li {
       line-height: 1.3em;
       padding: .3em;
       margin-left: .4em;
@@ -89,19 +89,19 @@
     }
 
     ol {
-      li {
-        line-height: initial;
-        //padding-left: .75em;
-        //padding: initial;
-        //margin-left: initial;
-        //left: 0;
-
-        &:before {
-          content: ""; //
-          list-style: none;
-          font-size: 1.2em;
-        }
-      }
+      //li {
+      //  line-height: initial;
+      //  //padding-left: .75em;
+      //  //padding: initial;
+      //  //margin-left: initial;
+      //  //left: 0;
+      //
+      //  &:before {
+      //    content: ""; //
+      //    list-style: none;
+      //    font-size: 1.2em;
+      //  }
+      //}
     }
 
     ul {
@@ -128,11 +128,11 @@
       //list-style-type: disc;
       //list-style-position: inside;
     }
-    ul ul {
-      list-style-type: circle;
-      list-style-position: inside;
-      margin-left: 15px;
-    }
+    //ul ul {
+    //  list-style-type: circle;
+    //  list-style-position: inside;
+    //  margin-left: 15px;
+    //}
 
   }
 
