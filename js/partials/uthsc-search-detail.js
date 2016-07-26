@@ -74,6 +74,9 @@ $(document).ready(function () {
 			dataType: "json",
 			success: function (data) {
 				RenderPersonDetails(data);
+
+				//change-info link
+				$('.change-information').attr('href', data.meta.change_info_url);
 			},
 			error: function (xhr, status, error) {
 				var err = eval("(" + xhr.responseText + ")");
