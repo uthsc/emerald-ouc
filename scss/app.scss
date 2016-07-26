@@ -66,6 +66,88 @@
 @include uthsc-background-stripe;
 @include uthsc-accordion;
 
+
+//@include uthsc-list-styles;
+.main-content, .uthsc-content-footer {
+  ul {
+    list-style: none;
+    left: 0;
+    margin-left: 0;
+    //text-indent: -.7em;
+
+    li {
+      line-height: 1.3em;
+      padding: .3em;
+      margin-left: .4em;
+      left: 0;
+
+      &:before {
+        content: "\203A \0020";
+        list-style: none;
+        font-size: 1.2em;
+      }
+    }
+
+    ol {
+      li {
+        line-height: initial;
+        //padding-left: .75em;
+        //padding: initial;
+        //margin-left: initial;
+        //left: 0;
+
+        &:before {
+          content: ""; //
+          list-style: none;
+          font-size: 1.2em;
+        }
+      }
+    }
+
+    ul {
+      //list-style: none;
+      //left: 0;
+      //margin-left: initial;
+      //text-indent: initial;
+
+      //li {
+      //  line-height: initial;
+      //  padding: initial;
+      //  margin-left: initial;
+      //  left: 0;
+      //
+      //  &:before {
+      //    content: ""; //
+      //    list-style: none;
+      //    font-size: 1.2em;
+      //  }
+      //}
+    }
+
+    ul {
+      //list-style-type: disc;
+      //list-style-position: inside;
+    }
+    ul ul {
+      list-style-type: circle;
+      list-style-position: inside;
+      margin-left: 15px;
+    }
+
+  }
+
+  ol ol {
+    list-style-type: lower-alpha;
+    ol {
+      list-style-type: lower-roman;
+    }
+  }
+}
+
+
+
+
+
 //include project components
 @include uthsc-homepage;
 @include uthsc-content-footer;
