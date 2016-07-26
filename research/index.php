@@ -57,7 +57,7 @@
         <div class="row">
             <div class="medium-10 large-8 small-centered columns">
                 <a href="http://uthsc.edu">
-                    <img src="../-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
+                    <img src="/-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
                 </a>
             </div>
         </div>
@@ -367,7 +367,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-purple">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/research-kell-landscape.jpg">
+                                        <img src="/-resources/2015/images/research-kell-landscape.jpg">
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -388,7 +388,7 @@
                             <!--Highlight box-->
                             <div class="uthsc-highlight-box">
                                 <div class="uthsc-highlight-box-image">
-                                    <img src="../-resources/2015/images/research-morrow-landscape.jpg"/>
+                                    <img src="/-resources/2015/images/research-morrow-landscape.jpg"/>
                                 </div>
                                 <div class="uthsc-highlight-box-title">
                                     <p>Hot Topics in Research Featuring Dr. Casey D. Morrow, Director, UAB</p>
@@ -409,7 +409,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/research-goodman.jpg"/>
+                                        <img src="/-resources/2015/images/research-goodman.jpg"/>
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>Vice Chancellor for Research, Dr. Steven R. Goodman's Second Research Town Hall Meeting </p>
@@ -427,7 +427,7 @@
                             <div class="uthsc-highlight-box">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/research-compliance.jpg"/>
+                                        <img src="/-resources/2015/images/research-compliance.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -446,7 +446,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
                                 <a href="https://www.uthsc.edu/research/research_compliance/irb/">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/research-irb.jpg"/>
+                                        <img src="/-resources/2015/images/research-irb.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -468,7 +468,7 @@
                             <div class="uthsc-highlight-box  uthsc-highlight-box-purple">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/research-grants-research.jpg">
+                                        <img src="/-resources/2015/images/research-grants-research.jpg">
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>Grants & Research Agreements</p>
@@ -829,35 +829,35 @@
         <h2 class="link-heading">Mission</h2>
 
         <a href="/education/"><span class="uthsc-fa-centered fa fa-graduation-cap"></span>&emsp;Academics</a>
-        <a href="research/"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
+        <a href="/redesign/research/"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
         <a href="/clinicalcare/"><span class="uthsc-fa-centered fa fa-medkit"></span>&emsp;Clinical Care</a>
         <a href="/publicservice/"><span class="uthsc-fa-centered fa fa-globe"></span>&emsp;Public Service</a>
     </div>
 
-    <a href="#" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift"></span>&emsp;Make a Gift</a>
-    <a href="template.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road"></span>&emsp;Take a Tour</a>
+    <a href="/give/" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift" aria-hidden="true"></span>&emsp;Make a Gift</a>
+    <a href="/admissions/visit-uthsc.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road" aria-hidden="true"></span>&emsp;Take a Tour</a>
 
     <ul>
         <li><span class="link-heading">Information for...</span>
             <ul>
-                <li><a href="#">Students</a></li>
-                <li><a href="#">Faculty &amp; Staff</a></li>
-                <li><a href="#">Alumni</a></li>
-                <li><a href="#">Visitors</a></li>
-                <li><a href="#">Patients</a></li>
+                <li><a href="/students/">Students</a></li>
+                <li><a href="/faculty/">Faculty &amp; Staff</a></li>
+                <li><a href="/alumni/">Alumni</a></li>
+                <li><a href="/visitors/">Visitors</a></li>
+                <li><a href="/clinicalcare/">Patients</a></li>
             </ul>
         </li>
         <li><span class="link-heading">Resources</span>
             <ul>
-                <li><a href="#">Banner</a></li>
-                <li><a href="#">Blackboard</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Career Opportunities</a></li>
-                <li><a href="#">iLogin</a></li>
-                <li><a href="#">Maps</a></li>
-                <li><a href="#">MyUT</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Webmail</a></li>
+                <li><a href="/banner/info/">Banner</a></li>
+                <li><a href="http://courses.uthsc.edu/">Blackboard</a></li>
+                <li><a href="http://events.uthsc.edu/">Calendar</a></li>
+                <li><a href="http://uthsc.edu/hr/employment/">Career Opportunities</a></li>
+                <li><a href="/ilogin/">iLogin</a></li>
+                <li><a href="/map/">Maps</a></li>
+                <li><a href="http://utap.tennessee.edu/">MyUT</a></li>
+                <li><a href="http://news.uthsc.edu/">News</a></li>
+                <li><a href="/email/transition/">Webmail</a></li>
             </ul>
         </li>
     </ul>
