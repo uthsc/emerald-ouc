@@ -20,6 +20,38 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
+    <link rel="stylesheet" type="text/css" media="screen" href="/templates/traditional/styles/uthsc_fullscreen.css" />
+
+    <!--*************************-->
+    <!--Headcode for Search UTHSC-->
+    <!--*************************-->
+    <?php include ("map-db-connection.php"); ?>
+
+    <!--************-->
+    <!--  Google Map-->
+    <!--************-->
+
+    <!--  Google Map API-->
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSINp44TI5M-qhfzNUWCX82uEoocmoWV0"></script>
+    <!--/ Google Map API-->
+
+    <!--  Google Map Scripts-->
+    <script src="js/directions.js"></script>
+    <script src="js/map-markers.js"></script>
+    <script src="js/toggle.js"></script>
+    <!--/ Google Map Scripts-->
+
+    <!--************-->
+    <!--/ Google Map-->
+    <!--************-->
+
+
+    <!--*************************-->
+    <!--Headcode for Search UTHSC-->
+    <!--*************************-->
+
+
 </head>
 <body>
 
@@ -31,27 +63,6 @@
         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PR6VFZ');</script>
-
-<!--************-->
-<!--  Google Map-->
-<!--************-->
-
-    <!--  Google Map API-->
-    <script type="text/javascript"
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSINp44TI5M-qhfzNUWCX82uEoocmoWV0"></script>
-    <!--/ Google Map API-->
-
-    <!--  Google Map Scripts-->
-        <script src="js/directions.js"></script>
-        <script src="js/map-markers.js"></script>
-        <script src="js/toggle.js"></script>
-    <!--/ Google Map Scripts-->
-
-<!--************-->
-<!--/ Google Map-->
-<!--************-->
-
-
 <!-- End Google Tag Manager -->
 
 
@@ -224,83 +235,91 @@
             <div class="columns uthsc-row-title">
                 <h1>UTHSC Campus Map</h1>
             </div>
+        </div>
+        <div class="row expanded">
             <div class="columns">
-                <ul class="vertical menu" data-drilldown style="width: 200px">
+<!--                ----->
+                <ul>
                     <li>
-                        <a href="#">Cars</a>
-                        <ul class="vertical menu">
-                            <li>
-                                <a href="#">Mahindra</a>
-                                <ul class="vertical menu">
-                                    <li><a href="#">Xylo</a></li>
-                                    <li><a href="#">Scorpio</a></li>
-                                    <li><a href="#">Bolero</a></li>
-                                    <li><a href="#">Quanto</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Ford</a></li>
-                            <li><a href="#">Skoda</a></li>
-                            <li><a href="#">Toyota</a></li>
-                            <li><a href="#">Renualt</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Sports</a>
-                        <ul class="vertical menu">
-                            <li><a href="#">Cricket</a></li>
-                            <li><a href="#">Football</a></li>
-                            <li><a href="#">Baseball</a></li>
-                            <li><a href="#">Hockey</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">Country</a>
-                        <ul class="vertical menu">
-                            <li><a href="#">India</a></li>
-                            <li><a href="#">Srilanka</a></li>
-                            <li><a href="#">Australia</a></li>
-                            <li><a href="#">England</a></li>
+                        <div class="bldg"><a href="#" class="button split tiny map_markers">&emsp;Buildings <span id="bldg_dropdown" data-dropdown="drop_bldg"> </span></a><br></div>
+                        <ul id="drop_bldg" class="f-dropdown" data-dropdown-content="true">
+                            <li>hey</li>
                         </ul>
                     </li>
                 </ul>
-            </div>
+<!--                ----->
+                <div class="uthsc-map" data-equalizer="data-eqaulizer-maps">
+                    <div class="columns uthsc-map-canvas" data-equalizer-watch="data-eqaulizer-watch-maps">
+                        <div id="map_canvas" style="width: 100%;height: 100%;"></div>
+                    </div>
+                    <div class="columns large-3 large-offset-1 uthsc-map-menu" data-equalizer-watch="data-eqaulizer-watch-maps" style="position: absolute;">
+                        <ul id="uthsc-map-menu-drilldown" class="vertical menu" data-drilldown>
+                            <li>
+                                <a href="#" id="uthsc-map-buildings"><span class="fa fa-building secondary" aria-hidden="true"></span>
+                                    &emsp;Buildings</a>
+                                <ul class="vertical menu uthsc-map-list uthsc-map-building-list">
 
-            <div class="columns">
-                <div class="button-group">
-                    <div class="button dropdown bldg">
-                        <span class="fa fa-building-o secondary" aria-hidden="true"></span>
-                        &emsp;Buildings
-                        <span id="bldg_dropdown" data-dropdown="drop_bldg"> </span>
-                    </div>
-                    <div class="button dropdown pkng">
-                        <span class="fa fa-car secondary" aria-hidden="true"></span>
-                        &emsp;Parking
-                        <span id="pkng_dropdown" data-dropdown="drop_pkng"></span>
-                    </div>
-                    <div class="button dropdown labs">
-                        <span class="fa fa-desktop secondary" aria-hidden="true"></span>
-                        &emsp;Student Computer Labs
-                        <span id="labs_dropdown"  class="drop_downs" data-dropdown="drop_labs"></span>
-                    </div>
-                    <div class="button dropdown" type="button" data-toggle="dropdown-print">
-                        <span class="fa fa-print secondary" aria-hidden="true"></span>
-                        &emsp;Printable Maps (PDF)
-                        <div class="dropdown-pane" id="dropdown-print" data-dropdown data-auto-focus="true">
-                            <ul>
-                                <li><a href="sitemap/campusmap.pdf">Memphis</a></li>
-                                <li><a href="https://gsm.utmck.edu/about/documents/utmc_campus_map2014.pdf">Knoxville</a></li>
-                                <li><a href="sitemap/chattanooga-map.pdf">Chattanooga</a></li>
-                            </ul>
-                        </div>
+                                    <div class="uthsc-map-icon-toggle-box">
+                                        <p>Buildings</p>
+                                        <div class="switch tiny">
+                                            <input class="switch-input" id="buildings-switch" type="checkbox" name="buildings-switch">
+                                            <label class="switch-paddle" for="buildings-switch">
+                                                <span class="switch-active" aria-hidden="true">On</span>
+                                                <span class="switch-inactive" aria-hidden="true">Off</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <?php echo $bldg_list; ?>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-car secondary" aria-hidden="true"></span>
+                                    &emsp;Parking</a>
+                                <ul class="vertical menu uthsc-map-list uthsc-map-parking-list">
+                                    <div class="uthsc-map-icon-toggle-box">
+                                        <p>Parking</p>
+                                        <div class="switch tiny">
+                                            <input class="switch-input" id="parking-switch" type="checkbox" name="parking-switch">
+                                            <label class="switch-paddle" for="parking-switch">
+                                                <span class="switch-active" aria-hidden="true">On</span>
+                                                <span class="switch-inactive" aria-hidden="true">Off</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <?php echo $pkng_list; ?>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-desktop secondary" aria-hidden="true"></span>
+                                    &emsp;Student Computer Labs</a>
+                                <ul class="vertical menu uthsc-map-list uthsc-map-labs-list">
+                                    <div class="uthsc-map-icon-toggle-box">
+                                        <p>Student Computer Labs</p>
+                                        <div class="switch tiny">
+                                            <input class="switch-input" id="labs-switch" type="checkbox" name="labs-switch">
+                                            <label class="switch-paddle" for="labs-switch">
+                                                <span class="switch-active" aria-hidden="true">On</span>
+                                                <span class="switch-inactive" aria-hidden="true">Off</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <?php echo $labs_list; ?>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-print secondary" aria-hidden="true"></span>
+                                    &emsp;Printable Maps (PDF)</a>
+                                <ul class="vertical menu uthsc-map-list uthsc-map-labs-list">
+                                    <li><a href="sitemap/campusmap.pdf">Memphis</a></li>
+                                    <li><a href="http://gsm.utmck.edu/about/documents/utmc_campus_map2014.pdf">Knoxville</a></li>
+                                    <li><a href="sitemap/chattanooga-map.pdf">Chattanooga</a></li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
 
-                    <noscript>
-                        <p><strong>JavaScript must be enabled in order for you to use Google Maps.</strong> However, it seems JavaScript is either disabled or not supported by your browser. To view Google Maps, enable JavaScript by changing your browser options, and then try again.</p>
-                    </noscript>
                 </div>
-            </div>
-            <div class="columns">
-                <div id="map_canvas" style="width: 100%;height: 500px;"></div>
+
             </div>
         </div>
         <!--***********-->
@@ -660,20 +679,20 @@
 <script src="../-resources/2015/js/what-input.min.js"></script>
 <script src="../-resources/2015/js/foundation.min.js"></script>
 <script src="../-resources/2015/js/uthsc.min.js"></script>
-
-<script src="js/campusmap-resize.js"></script>
-<script>
-    $('.f-dropdown').click(function() {
-        if ($(this).hasClass('open')) {
-            $('span[data-dropdown="'+$(this).attr('id')+'"]').trigger('click');
-            //alert("close");
-        }
-    });
-</script>
-
 <!--********-->
 <!--/Scripts-->
 <!--********-->
+
+<!--*************************-->
+<!--Footcode for Search UTHSC-->
+<!--*************************-->
+<script src="js/campusmap-resize.js"></script>
+<!--**************************-->
+<!--/Footcode for Search UTHSC-->
+<!--**************************-->
+<script>
+    $('#uthsc-map-buildings').trigger('click');
+</script>
 
 </body>
 </html>
