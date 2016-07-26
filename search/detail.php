@@ -161,26 +161,6 @@
            </div>
            <!--/title-->
 
-
-<!--           <div class="row expanded">-->
-<!--               <div class="row">-->
-<!--                   <div class="columns large-3">&nbsp;</div>-->
-<!--                   <div class="columns large-6">-->
-<!--                           <p><strong>Name:</strong> SPAKE, GEORGE P<br />-->
-<!--                           <strong>Campus:</strong> MEMPHIS<br />-->
-<!--                           <strong>Department:</strong> ITS WEB SERVICES<br />-->
-<!--                           <strong>Address:</strong> STE 763 ALEXANDER BUILDING<br />-->
-<!--                           <strong>Location:</strong> MEMPHIS TN 381632186<br />-->
-<!--                           <strong>Phone Number:</strong> (901)448-1888<br />-->
-<!--                           <strong>Designation:</strong> FACULTY/STAFF<br />-->
-<!--                           <strong>Title:</strong> IT ANALYST II<br />-->
-<!--                           <strong>NetID:</strong> gspake1<br />-->
-<!--                           <strong>E-Mail:</strong> <a href="mailto:gspake1@uthsc.edu">gspake1@uthsc.edu</a></p>-->
-<!--                   </div>-->
-<!--                   <div class="columns large-3">&nbsp;</div>-->
-<!--               </div>-->
-<!--           </div>-->
-
            <div class="row expanded">
                <div class="row">
                    <div class="columns large-3">&nbsp;</div>
@@ -214,10 +194,6 @@
                    </div>
                </div>
            </div>
-
-
-
-
        </div>
 
        <!--******-->
