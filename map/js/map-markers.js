@@ -1100,7 +1100,7 @@ function initialize() {
 
     jQuery(".buildings").click(function (evt) {
     // Set up locations check marks
-    alert("heelo");
+    alert("hello");
     // Prevent check marks from activating accordion
     evt.stopPropagation();
     // Get first class name of check mark
