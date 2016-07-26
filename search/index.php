@@ -83,7 +83,7 @@
            <div class="row">
                <div class="medium-10 large-8 small-centered columns">
                    <a href="/">
-                       <img src="../-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
+                       <img src="/-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
                    </a>
                </div>
            </div>
@@ -121,7 +121,7 @@
                    </li>
 
                    <li class="uthsc-navigation-column small-2 columns">
-                       <a href="research/" data-equalizer-watch="heading-links"><span aria-hidden="true" class="fa fa-flask"></span> Research</a>
+                       <a href="/redesign/research/" data-equalizer-watch="heading-links"><span aria-hidden="true" class="fa fa-flask"></span> Research</a>
                    </li>
 
                    <li class="uthsc-navigation-column small-2 columns">
@@ -329,7 +329,7 @@
 
            <ul>
                <li><a href="/education/" class="link-heading">Academics</a></li>
-               <li><a href="research/" class="link-heading">Research</a></li>
+               <li><a href="/redesign/research/" class="link-heading">Research</a></li>
                <li><a href="/clinicalcare/" class="link-heading">Clinical Care</a></li>
                <li><a href="/publicservice/" class="link-heading">Public Service</a></li>
                <li><a href="/aboututhsc/" class="link-heading">About UTHSC</a></li>
@@ -367,7 +367,7 @@
                <h2 class="link-heading">Mission</h2>
 
                <a href="/education/"><span aria-hidden="true" class="uthsc-fa-centered fa fa-graduation-cap"></span>&emsp;Academics</a>
-               <a href="research"><span aria-hidden="true" class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
+               <a href="/redesign/research"><span aria-hidden="true" class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
                <a href="/clinicalcare/"><span aria-hidden="true" class="uthsc-fa-centered fa fa-medkit"></span>&emsp;Clinical Care</a>
                <a href="/publicservice/"><span aria-hidden="true" class="uthsc-fa-centered fa fa-globe"></span>&emsp;Public Service</a>
            </div>
@@ -395,7 +395,7 @@
                        <li><a href="/map/">Maps</a></li>
                        <li><a href="http://utap.tennessee.edu/">MyUT</a></li>
                        <li><a href="http://news.uthsc.edu/">News</a></li>
-                       <li><a href="/email/">Webmail</a></li>
+                       <li><a href="/email/transition/">Webmail</a></li>
                    </ul>
                </li>
            </ul>
