@@ -204,8 +204,7 @@
                 <div class="columns medium-8">
                     <div class="row uthsc-program-explorer-tabs">
                         <div class="columns uthsc-program-explorer-heading text-center">
-                            <h2>Program Explorer</h2>
-                            <h2 class="subheader">Discover all that UTHSC has to offer</h2>
+                            <h2>Find Your Future</h2>
                         </div>
                         <div class="row collapse">
                             <div class="medium-7 large-5 columns">
