@@ -8,7 +8,7 @@ function parsePersonDetails(data) {
 			html += "<div class=\"callout\">";
 			html += "<div class=\"row\">";
 			html += "<div class=\"columns small-2\">";
-			html += "<img src=\"http://devel.uthsc.edu/images/w932_lichterman.jpg\" alt=\"\" />";
+			html += "<img src=\"/search/images/lichterman-portrait.jpg\" alt=\"\" />";
 			html += "</div>";
 			html += "<div class=\"columns small-10\">";
 			if (meta.lichterman_nominated) {
@@ -25,7 +25,7 @@ function parsePersonDetails(data) {
 			html += "<div class=\"callout\">";
 			html += "<div class=\"row\">";
 			html += "<div class=\"columns small-2\">";
-			html += "<img src=\"http://devel.uthsc.edu/images/w932_lichterman.jpg\" alt=\"\" />";
+			html += "<img src=\"/search/images/lichterman-portrait.jpg\" alt=\"\" />";
 			html += "</div>";
 			html += "<div class=\"columns small-10\">";
 			html += "<p>" + person.name + " is not eligible for the Lichterman Award. Only full-time, ";
