@@ -2,7 +2,7 @@
 /// @group uthsc-snippet-style-fixes
 ////
 
-@mixin snippet-half-columns{
+@mixin uthsc-snippet-half-columns{
   .uthsc-snippet-columns {
     .columns{
       &:first-child{padding-left:0;}
