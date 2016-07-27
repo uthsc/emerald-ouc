@@ -70,7 +70,7 @@ $(document).ready(function () {
 	if(peopleSearchId){
 		$.ajax({
 			type: "GET",
-			url: 'http://uthsc.edu/search/scripts/lookup-detail.php?id=' + peopleSearchId,
+			url: '/search/scripts/lookup-detail.php?id=' + peopleSearchId,
 			dataType: "json",
 			success: function (data) {
 				RenderPersonDetails(data);
