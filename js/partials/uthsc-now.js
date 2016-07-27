@@ -1,4 +1,4 @@
-var url = 'http://uthsc.edu/test/gspake1/emerald-ouc/uthsc-now.php',
+var url = '/now/uthsc-now.json',
 	loadPostsFirst = 0,
 	loadPostsLast = 20;
 
