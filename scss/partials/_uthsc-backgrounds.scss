@@ -10,13 +10,15 @@
 }
 
 @mixin uthsc-backgrounds {
-  @include background('cork-purple', 'uthsc-bg-cork-purple.png');  //cork purple
-  @include background('cork-green', 'uthsc-bg-cork-green.png');    //cork green
-  @include background('cork-blue', 'uthsc-bg-cork-blue.png');      //cork blue
+  @include background('cork-purple', 'uthsc-bg-cork-purple.png');            //pattern cork purple
+  @include background('cork-green', 'uthsc-bg-cork-green.png');              //pattern cork green
+  @include background('cork-blue', 'uthsc-bg-cork-blue.png');                //pattern cork blue
 
-  @include background('triangles-green', 'uthsc-bg-triangles-green.png');    //triangles-green
-  @include background('triangles-purple', 'uthsc-bg-triangles-purple.png');  //triangles-purple
-  @include background('triangles-black', 'uthsc-bg-triangles-black.png');    //triangles-black
+  @include background('triangles-green', 'uthsc-bg-triangles-green.png');    //pattern triangles-green
+  @include background('triangles-purple', 'uthsc-bg-triangles-purple.png');  //pattern triangles-purple
+  @include background('triangles-black', 'uthsc-bg-triangles-black.png');    //pattern triangles-black
 
-  @include background('paper-purple', 'uthsc-bg-paper-purple.jpg');   //paper-purple
+  @include background('paper-purple', 'uthsc-bg-paper-purple.jpg');          //pattern paper-purple
+
+  @include background('students-arch', 'uthsc-bg-students-arch.jpg');        //pattern students arch image
 }
