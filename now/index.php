@@ -293,7 +293,7 @@
     <!--*************-->
     <!--Global Footer-->
     <!--*************-->
-    <?php include('../uthsc-global-footer.php') ?>
+    <?php include('/now/uthsc-global-footer.php') ?>
     <!--**************-->
     <!--/Global Footer-->
     <!--**************-->
@@ -329,7 +329,7 @@
 
     <div class="off-canvas-search">
         <!--Search form-->
-        <?php include('../uthsc-search-form.php'); ?>
+        <?php include('/now/uthsc-search-form.php'); ?>
         <!--/Search form-->
     </div>
 
@@ -365,7 +365,7 @@
 
     <div class="off-canvas-search">
         <!--Search form-->
-        <?php include('../uthsc-search-form.php'); ?>
+        <?php include('/now/uthsc-search-form.php'); ?>
         <!--/Search form-->
     </div>
 
