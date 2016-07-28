@@ -5,7 +5,7 @@ var url = '/now/uthsc-now.json',
 function renderNewsPosts(containerElement, data, masonry) {
 	$(containerElement).append(parseUthscNowPosts(data));
 
-	var $grid = $('.uthsc-now').imagesLoaded( function(){
+	var $grid = $('.uthsc-now').imagesLoaded( function() {
 		$grid.masonry({
 			// set itemSelector so .grid-sizer is not used in layout
 			itemSelector: '.grid-item',
