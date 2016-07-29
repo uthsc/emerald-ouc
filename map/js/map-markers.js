@@ -980,13 +980,13 @@ function setMarkers(map, locations) {
 
 function getCenter(location) {
     for (var i = 0; i < locationsMarkers.length; i++) {
-    if (locationsMarkers[i].id == location) {
-    var center = locationsMarkers[i].position;
-    return center;
-} else {
-    var center = new google.maps.LatLng(35.1393278, -90.0320579);
-}
-}
+        if (locationsMarkers[i].id == location) {
+            var center = locationsMarkers[i].position;
+            return center;
+        } else {
+            var center = new google.maps.LatLng(35.139416, -90.034815);
+        }
+    }
     return center;
 }
 
