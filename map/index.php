@@ -889,9 +889,6 @@
 <!--**************************-->
 <!--/Footcode for Search UTHSC-->
 <!--**************************-->
-<script>
-    $('#uthsc-map-buildings').trigger('click');
-</script>
 
 </body>
 </html>
