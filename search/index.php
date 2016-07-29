@@ -395,7 +395,7 @@
                        <li><a href="/map/">Maps</a></li>
                        <li><a href="http://utap.tennessee.edu/">MyUT</a></li>
                        <li><a href="http://news.uthsc.edu/">News</a></li>
-                       <li><a href="/email/transition/">Webmail</a></li>
+                       <li><a href="http://o365.uthsc.edu/">Webmail</a></li>
                    </ul>
                </li>
            </ul>
