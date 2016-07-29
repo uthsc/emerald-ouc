@@ -1107,5 +1107,14 @@ var is_ios = /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
 if (is_ios) {
     $(' <link rel="stylesheet" type="text/css" href="/map/css/ios.css"/>').appendTo("head");
 }
-;
+
+
+$(document).on("click", ".uthsc-map-link", function () {
+    var uid = $(this).attr("id");
+    var $temp = $("<input>");
+    $("body").append($temp);
+    $temp.val("https://uthsc.edu/map/?" + uid).select();
+    document.execCommand("copy");
+    $temp.remove();
+});
 /* ]]> */
