@@ -428,23 +428,6 @@
                 <h1>UTHSC Campus Map</h1>
             </div>
         </div>
-        <div class="row expanded">
-            <div class="columns">
-<!--                ----->
-                <ul>
-                    <li>
-                        <div class="bldg"><a href="#" class="button split tiny map_markers">&emsp;Buildings <span id="bldg_dropdown" data-dropdown="drop_bldg"> </span></a><br></div>
-                        <ul id="drop_bldg" class="f-dropdown" data-dropdown-content="true">
-                            <li>hey</li>
-                        </ul>
-                    </li>
-                </ul>
-<!--                ----->
-                <div class="uthsc-map" data-equalizer="data-eqaulizer-maps">
-                    <div class="columns uthsc-map-canvas" data-equalizer-watch="data-eqaulizer-watch-maps">
-                        <div id="map_canvas" style="width: 100%;height: 100%;"></div>
-                    </div>
-                    <div class="columns large-3 large-offset-1 uthsc-map-menu" data-equalizer-watch="data-eqaulizer-watch-maps" style="position: absolute;">
                         <ul id="uthsc-map-menu-drilldown" class="vertical menu" data-drilldown>
                             <li>
                                 <a href="#" id="uthsc-map-buildings"><span class="fa fa-building secondary" aria-hidden="true"></span>
