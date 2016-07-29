@@ -1018,23 +1018,71 @@ function toggleLocations(which) {
 }
 }
 }
-
+var map = null;
 function initialize() {
     // Initialize new google map
-    map = new google.maps.Map(document.getElementById("map_canvas"));
-    // Set initial zoom level
-    map.setZoom(17);
-    // Set map type {roadmap, satellite, terrain}
-    map.setMapTypeId('roadmap');
+    var mapOptions = {
+        center: new google.maps.LatLng(35.139416,-90.034815),
+        zoom: 17, //campus
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+    map = new google.maps.Map(document.getElementById("uthsc-map-canvas"),
+    mapOptions);
+    google.maps.event.addDomListener(document.getElementById('uthsc-map-zoom-state'), 'click', function () {
+
+        map.setCenter(new google.maps.LatLng(35.7469228,-90.470092));
+        map.setZoom(7);
+        map.setMapTypeId(google.maps.MapTypeId.HYBRID);
+    });
+    google.maps.event.addDomListener(document.getElementById('uthsc-map-zoom-city'), 'click', function () {
+
+        map.setCenter(new google.maps.LatLng(35.1288636,-90.0408609));
+        map.setZoom(12);
+        map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
+    });
+    google.maps.event.addDomListener(document.getElementById('uthsc-map-zoom-campus'), 'click', function () {
+
+        map.setCenter(new google.maps.LatLng(35.139416,-90.034815));
+        map.setZoom(17);
+        map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
+
+    });
+    google.maps.event.addDomListener(document.getElementById('uthsc-map-zoom-3d'), 'click', function () {
+
+        map.setCenter(new google.maps.LatLng(35.139416,-90.034815));
+        map.setZoom(18);
+        map.setMapTypeId(google.maps.MapTypeId.HYBRID);
+        map.setTilt(45);
+    });
+    google.maps.event.addDomListener(document.getElementById('uthsc-map-zoom-state-mobile'), 'click', function () {
+
+        map.setCenter(new google.maps.LatLng(35.360074,-86.2664699));
+        map.setZoom(6);
+        map.setMapTypeId(google.maps.MapTypeId.HYBRID);
+    });
+    google.maps.event.addDomListener(document.getElementById('uthsc-map-zoom-city-mobile'), 'click', function () {
+
+        map.setCenter(new google.maps.LatLng(35.1288636,-89.9608609));
+        map.setZoom(11);
+        map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
+    });
+    google.maps.event.addDomListener(document.getElementById('uthsc-map-zoom-campus-mobile'), 'click', function () {
+
+        map.setCenter(new google.maps.LatLng(35.139416,-90.034815));
+        map.setZoom(16);
+        map.setMapTypeId(google.maps.MapTypeId.ROADMAP);
+
+    });
+    google.maps.event.addDomListener(document.getElementById('uthsc-map-zoom-3d-mobile'), 'click', function () {
+
+        map.setCenter(new google.maps.LatLng(35.138721,-90.032719));
+        map.setZoom(19);
+        map.setMapTypeId(google.maps.MapTypeId.HYBRID);
+        map.setTilt(45);
+    });
     // Set location markers
     setMarkers(map, locations);
     toggleLocations('labs');
-    // Get Querystring from the page URL
-    var locationID = unescape(location.search.substring(1));
-    // Get map center from default or querystring if present
-    var center = getCenter(locationID);
-    // Set map center
-    map.setCenter(center);
 
     if (navigator.geolocation) {
     var meMarker = null;
