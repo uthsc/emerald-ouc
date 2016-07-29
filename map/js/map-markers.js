@@ -852,55 +852,28 @@ function setMarkers(map, locations) {
     var uid = locations[i].id;
     var imageUrl = '';
     var desc = '';
-    var permalink = '<div class="permalink">' +
-    '<p>' +
-    '<label ' +
-    'id="permalink_label"' +
-    'onclick="_gaq.push(' +
-    '[' +
-    '"_trackEvent",' +
-    '"Map",' +
-    '"Info Window",' +
-    '"Permalink - Label - ' + locations[i].analytics_name + '"' +
-    ']' +
-    ');' +
-    '">Copy link below for direct link to this location' +
-    '<input ' +
-    'id="get_link" ' +
-    'readonly="readonly" ' +
-    'value="https://uthsc.edu/map/?' + uid + '" ' +
-    'onclick="_gaq.push(' +
-    '[' +
-    '"_trackEvent", ' +
-    '"Map", ' +
-    '"Info Window", ' +
-    '"Permalink - Input - ' + locations[i].analytics_name + '"' +
-    ']' +
-    ');' +
-    '">' +
-    '</label>' +
-    '</p>' +
-    '</div>';
+    var permalink = '<span title="Copy direct link to location" aria-label="Copy direct link to location" class="fa fa-link uthsc-map-link" id="' +
+        uid + '" ></span> ';
     if (locations[i].name) {
-    name = '<strong>' + locations[i].name + '</strong>'
+    name = '<h5>' + permalink + locations[i].name + '</h5><p>'
 }
     ;
     if (locations[i].type == "pkng") {
-    name = name + '<br />' + locations[i].description
+    name = name + locations[i].description
 }
     ;
     if (locations[i].type == "labs") {
-    name = name + '<br />' + locations[i].description
+    name = name + locations[i].description
 }
     ;
     if (locations[i].type == "bldg") {
-    name = name + '<br />' + locations[i].display_address
+    name = name + locations[i].display_address
 }
     ;
     if (locations[i].thumb_using_id) {
     imageUrl =
     '<img ' +
-    'class="border-photo uthsc-map-pop-up-image"' +
+    'class="uthsc-map-pop-up-image"' +
     'src="/map/images/buildings/thumbs/' + locations[i].thumb_using_id + '.jpg"' +
     ' />'
 }
@@ -910,22 +883,22 @@ function setMarkers(map, locations) {
 }
     ;
     address = '<div id="directions_container">' +
-    '<p>Get Directions:&emsp;' +
-    '<span ' +
+    '<p>Directions:&emsp;' +
+    '<a href="#" ' +
     'id="to_here_link" ' +
     'onclick="_gaq.push([' +
     '"_trackEvent", ' +
     '"Map", ' +
     '"Info Window", "To - ' + locations[i].analytics_name + '"' +
     ']);' +
-    '">To here</span>&emsp;|&emsp;' +
-    '<span id="from_here_link" ' +
+    '">To here</a>&emsp;|&emsp;' +
+    '<a href="#" id="from_here_link" ' +
     'onclick="_gaq.push([' +
     '"_trackEvent", ' +
     '"Map", ' +
     '"Info Window", "From - ' + locations[i].analytics_name + '"' +
     ']);' +
-    '">From here</span>' +
+    '">From here</a>' +
     '</p>' +
     '<div id="directions_form">' +
     '<form ' +
@@ -962,9 +935,9 @@ function setMarkers(map, locations) {
     clickable: true,
     draggable: false,
     map: map,
-    html: '<div style="width:365px;">' +
+    html: '<div style="width:326px;">' +
     '<div id="bodyContent">' + imageUrl +
-    '<p style="margin-top:0;">' + name + '</p>' + permalink + address + '' +
+    name + address + '' +
     '</div>' +
     '</div>',
     icon: new google.maps.MarkerImage(
@@ -1087,7 +1060,7 @@ function initialize() {
     details = new google.maps.InfoWindow({
     content: "loading...",
     // And max-width
-    maxWidth: 400
+    maxWidth: 350
 });
     // Open InfoWindow from URL
     scrollToMarker(locationID);
@@ -1100,7 +1073,6 @@ function initialize() {
 
     jQuery(".buildings").click(function (evt) {
     // Set up locations check marks
-    alert("hello");
     // Prevent check marks from activating accordion
     evt.stopPropagation();
     // Get first class name of check mark
@@ -1118,7 +1090,6 @@ function initialize() {
     toggleParking(which);
 });
 }
-
 
 //====================================================
 google.maps.event.addDomListener(window, 'load', initialize);
