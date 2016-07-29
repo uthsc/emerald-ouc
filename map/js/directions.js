@@ -1,7 +1,7 @@
 /* <![CDATA[ */
 $(document).ready(function () {
 
-    $("#from_here_link").live("click", function () {
+    $(document).on("click", "#from_here_link", function () {
         $("#visible_dir").attr({
             name: "daddr",
             placeholder: "End address"
@@ -10,7 +10,7 @@ $(document).ready(function () {
             name: "saddr"
         });
     });
-    $("#to_here_link").live("click", function () {
+    $(document).on("click", "#to_here_link", function () {
         $("#visible_dir").attr({
             name: "saddr",
             placeholder: "Start address"
