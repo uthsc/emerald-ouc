@@ -230,7 +230,8 @@
 
     <!--  Google Map API-->
     <script type="text/javascript"
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSINp44TI5M-qhfzNUWCX82uEoocmoWV0"></script>
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSINp44TI5M-qhfzNUWCX82uEoocmoWV0">
+    </script>
     <!--/ Google Map API-->
 
     <!--  Google Map Scripts-->
