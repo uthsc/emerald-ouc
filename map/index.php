@@ -428,6 +428,15 @@
                 <h1>UTHSC Campus Map</h1>
             </div>
         </div>
+        <div class="button-group secondary hide-for-small-only">
+            <a href="#main-content" class="button"><span class="fa fa-arrows-v"></span> Align Map</a>
+            <a class="button" id="uthsc-map-zoom-campus"><span class="fa fa-flag"></span> Campus</a>
+            <a class="button" id="uthsc-map-zoom-3d"><span class="fa fa-cube"></span> Campus 3D</a>
+            <a class="button" id="uthsc-map-zoom-city"><span class="fa fa-building-o"></span> Memphis</a>
+            <a class="button" id="uthsc-map-zoom-state"><span class="fa fa-map"></span> Tennessee</a>
+        </div>
+        <div id="uthsc-center-map-on-page-mobile" class="row expanded small-collapse" data-equalizer="data-eqaulizer-maps" data-equalize-on-stack="false">
+                    <div class="columns medium-3 medium-push-1 uthsc-map-menu" data-equalizer-watch="data-eqaulizer-maps">
                         <ul id="uthsc-map-menu-drilldown" class="vertical menu" data-drilldown>
                             <li>
                                 <a href="#" id="uthsc-map-buildings"><span class="fa fa-building secondary" aria-hidden="true"></span>
@@ -492,11 +501,19 @@
                             </li>
                         </ul>
                     </div>
-
-                </div>
-
+                    <div class="columns sm-1 show-for-small-only text-center uthsc-map-controls">
+                        <div class="button-group secondary tiny show-for-small-only">
+                            <a href="#uthsc-center-map-on-page-mobile" class="button"><span class="fa fa-arrows-v"></span> Align Map</a>
+                            <a class="button" id="uthsc-map-zoom-campus-mobile"><span class="fa fa-flag"></span> Campus</a>
+                            <a class="button" id="uthsc-map-zoom-3d-mobile"><span class="fa fa-cube"></span> Campus 3D</a>
+                            <a class="button" id="uthsc-map-zoom-city-mobile"><span class="fa fa-building-o"></span> Memphis</a>
+                            <a class="button" id="uthsc-map-zoom-state-mobile"><span class="fa fa-map"></span> Tennessee</a>
+                        </div>
+                    </div>
+                    <div class="columns uthsc-map" data-equalizer-watch="data-eqaulizer-maps">
+                        <div id="uthsc-map-canvas"></div>
+                    </div>
             </div>
-        </div>
         <!--***********-->
         <!--/Page title-->
         <!--***********-->
