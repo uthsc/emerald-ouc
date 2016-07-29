@@ -454,7 +454,7 @@
                                     <div class="uthsc-map-icon-toggle-box">
                                         <p>Buildings</p>
                                         <div class="switch tiny">
-                                            <input class="switch-input" id="buildings-switch" type="checkbox" name="buildings-switch">
+                                            <input class="switch-input" id="buildings-switch" type="checkbox" checked="checked" name="buildings-switch">
                                             <label class="switch-paddle" for="buildings-switch">
                                                 <span class="switch-active" aria-hidden="true">On</span>
                                                 <span class="switch-inactive" aria-hidden="true">Off</span>
@@ -471,7 +471,7 @@
                                     <div class="uthsc-map-icon-toggle-box">
                                         <p>Parking</p>
                                         <div class="switch tiny">
-                                            <input class="switch-input" id="parking-switch" type="checkbox" name="parking-switch">
+                                            <input class="switch-input" id="parking-switch" type="checkbox" checked="checked" name="parking-switch">
                                             <label class="switch-paddle" for="parking-switch">
                                                 <span class="switch-active" aria-hidden="true">On</span>
                                                 <span class="switch-inactive" aria-hidden="true">Off</span>
