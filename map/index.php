@@ -20,7 +20,6 @@
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
-    <link rel="stylesheet" type="text/css" media="screen" href="/templates/traditional/styles/uthsc_fullscreen.css" />
 
     <!--*************************-->
     <!--Headcode for Search UTHSC-->
