@@ -57,7 +57,7 @@
         <div class="row">
             <div class="medium-10 large-8 small-centered columns">
                 <a href="http://uthsc.edu">
-                    <img src="../-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
+                    <img src="/-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
                 </a>
             </div>
         </div>
@@ -126,48 +126,45 @@
          role="navigation" class="hide-for-print">
         <ul class="row collapse" >
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">About</a>
+                <a href="#" data-equalizer-watch="heading-links">Leadership</a>
                 <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">Mission & Vision </a></li>
-                    <li><a href="#">Vice Chancellor for Research </a></li>
-                    <li><a href="#">Reports and Publications </a></li>
+                    <li><a href="#">Mission &amp; Vision </a></li>
+                    <li><a href="/research/vc_research.php">Vice Chancellor for Research </a></li>
                     <li><a href="#">Organizational Chart</a></li>
-                    <li><a href="#">News & Events</a></li>
+                    <li><a href="#">Strategic Plans and Guides</a></li>
                 </ul>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Grants & Research<br /> Agreements</a>
+                <a href="/research/research_administration/index.php" data-equalizer-watch="heading-links">Grants & Research<br /> Agreements</a>
                 <ul data-equalizer-watch="nested-links">
-                    <li><a href="http://uthsc.edu/research/research_administration/staff.php">About</a></li>
+                    <li><a href="research/research_administration/staff.php">About</a></li>
                     <li><a href="https://tennessee.cayuse424.com/">Evisions/Cayuse SP</a></li>
-                    <li><a href="http://uthsc.edu/research/research_administration/research_grants.php">Grants</a></li>
-                    <li><a href="">Research Agreements</a></li>
-                    <li><a href="http://uthsc.edu/research/research_administration/research_contracts/index.php">Forms & Information</a></li>
-                    <li><a href="http://uthsc.edu/research/research_administration/FAQ.php">FAQs</a></li>
+                    <li><a href="/research/research_administration/research_grants.php">Grants</a></li>
+                    <!--<li><a href="">Research Agreements</a></li>-->
+                    <li><a href="/research/research_administration/research_contracts/index.php">Forms & Information</a></li>
+                    <li><a href="/research/research_administration/FAQ.php">FAQs</a></li>
                 </ul>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Compliance </a>
+                <a href="/research/research_compliance/index.php" data-equalizer-watch="heading-links">Compliance </a>
                 <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">IRB Administration </a></li>
-                    <li><a href="#">Animal Care & Use (IACUC)</a></li>
-                    <li><a href="#">Institutional Biosafety Committee</a></li>
-                    <li><a href="#">Export Control</a></li>
-                    <li><a href="#">Radiation Safety Committee </a></li>
+                    <li><a href="/research/research_compliance/irb/">IRB</a></li>
+                    <li><a href="/research/research_compliance/IACUC/index.php">Animal Care &amp; Use (IACUC)</a></li>
+                    <li><a href="/research/research_compliance/IBC/index.php">Institutional Biosafety Committee</a></li>
+                    <li><a href="/research/research_compliance/export.php">Export Control</a></li>
+                    <li><a href="/research/research_compliance/rsc.php">Radiation Safety Committee </a></li>
                 </ul>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Institutional Cores</a>
+                <a href="/research/research_resources/index.php" data-equalizer-watch="heading-links">Institutional Cores</a>
                 <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">Mission & Vision </a></li>
-                    <li><a href="#">Core List </a></li>
                 </ul>
             </li>
 
-            <li class="uthsc-navigation-column small-2 columns">
+            <!--<li class="uthsc-navigation-column small-2 columns">
                 <a href="#" data-equalizer-watch="heading-links">Centers & Institutes</a>
                 <ul data-equalizer-watch="nested-links">
 
@@ -175,9 +172,9 @@
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Offices & Resources</a>
+                <a href="#" data-equalizer-watch="heading-links">Research Resources</a>
                 <ul data-equalizer-watch="nested-links"></ul>
-            </li>
+            </li>-->
         </ul>
     </nav>
     <div class="uthsc-section-nav-placeholder show-for-large" data-equalizer-watch="heading-links"></div>
@@ -345,9 +342,11 @@
             <div class="columns">
                 <p style="text-align:center;">
                     <a class="button" href="https://www.uthsc.edu/CRC/">Clinical Research</a>
-                    <a class="button" href="">Research Development</a>
+                    <!--<a class="button" href="">Research Development</a>
                     <a class="button" href="">Research Integrity Officer</a>
-                    <a class="button" href="">Governor’s Chair</a>
+                    <a class="button" href="">News &amp; Events</a>-->
+                    <a class="button" href="">Operational Strategic Plan for Research</a>
+                    <a class="button" href="">Allocation of Research Space Plan</a>
                 </p>
             </div>
         </div>
@@ -363,12 +362,11 @@
                 <div class="columns"></div>
                 <div class="columns">
                     <div class="row medium-up-2 large-up-3">
-                        <div class="columns">
-                            <!--Highlight box-->
+                        <!--<div class="columns">
                             <div class="uthsc-highlight-box uthsc-highlight-box-purple">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/research-kell-landscape.jpg">
+                                        <img src="/-resources/2015/images/research-kell-landscape.jpg">
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -384,12 +382,11 @@
                                 </a>
                             </div>
                         </div>
-
-                        <div class="columns">
-                            <!--Highlight box-->
+-->
+                       <!-- <div class="columns">
                             <div class="uthsc-highlight-box">
                                 <div class="uthsc-highlight-box-image">
-                                    <img src="../-resources/2015/images/research-morrow-landscape.jpg"/>
+                                    <img src="/-resources/2015/images/research-morrow-landscape.jpg"/>
                                 </div>
                                 <div class="uthsc-highlight-box-title">
                                     <p>Hot Topics in Research Featuring Dr. Casey D. Morrow, Director, UAB</p>
@@ -404,20 +401,20 @@
                                 </div>
                             </div>
                         </div>
-
+-->
                         <div class="columns">
                             <!--Highlight box-->
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/research-goodman.jpg"/>
+                                        <img src="/-resources/2015/images/research-goodman.jpg"/>
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>Vice Chancellor for Research, Dr. Steven R. Goodman's Second Research Town Hall Meeting </p>
                                     </div>
 
                                     <div class="uthsc-highlight-box-description">
-                                        <p></p>
+                                        <p>Fall 2016</p>
                                     </div>
                                 </a>
                             </div>
@@ -428,7 +425,7 @@
                             <div class="uthsc-highlight-box">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/research-compliance.jpg"/>
+                                        <img src="/-resources/2015/images/research-compliance.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -447,7 +444,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
                                 <a href="https://www.uthsc.edu/research/research_compliance/irb/">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/research-irb.jpg"/>
+                                        <img src="/-resources/2015/images/research-irb.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -469,7 +466,7 @@
                             <div class="uthsc-highlight-box  uthsc-highlight-box-purple">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/research-grants-research.jpg">
+                                        <img src="/-resources/2015/images/research-grants-research.jpg">
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>Grants & Research Agreements</p>
@@ -504,8 +501,8 @@
                 <div class="news-snippet-1234 row medium-up-2 large-up-3" data-equalizer="news-boxes-1234" data-equalize-on="large"></div>
                 <?php
                 $uthsc_news['1234'] = array(
-                    'post_count' => '6',
-                    'categories' => '60,331'
+                    'post_count' => '3',
+                    'categories' => '60'
                 );
                 ?>
                 <!--Snippet-->
@@ -515,33 +512,6 @@
         <!--**************-->
         <!--/Research News-->
         <!--**************-->
-
-
-        <!--*************-->
-        <!--Research News 2-->
-        <!--*************-->
-        <div class="row expanded">
-            <div class="row">
-                <div class="columns uthsc-row-title">
-                    <h3>Public Service News</h3>
-                </div>
-
-                <!--Snippet-->
-                <div class="news-snippet-5678 uthsc-news-box-dark row medium-up-2 large-up-3" data-equalizer="news-boxes-5678" data-equalize-on="large"></div>
-                <?php
-                $uthsc_news['5678'] = array(
-                    'post_count' => '3',
-                    'categories' => '331'
-                );
-                ?>
-                <!--Snippet-->
-
-            </div>
-        </div>
-        <!--**************-->
-        <!--/Research News 2-->
-        <!--**************-->
-
 
         <!--***************-->
         <!--Research Events-->
@@ -593,13 +563,13 @@
                 <h4>Office Links</h4><ul>
                     <li><a href="http://uthsc.edu/research/about.php">About the Office of Research </a></li>
                     <li><a href="http://uthsc.edu/research/research_administration/index.php">Grants & Research Agreements </a></li>
-                    <li><a href="(linked to Research Development landing page)">Research Development</a></li>
+                    <!--<li><a href="(linked to Research Development landing page)">Research Development</a></li>-->
                     <li><a href="http://uthsc.edu/research/research_compliance/index.php">Research Compliance</a></li>
                     <li><a href="http://uthsc.edu/research/research_resources/index.php">Institutional Cores</a></li>
                     <li><a href="http://uthsc.edu/research/research_programs/index.php">Centers & Institutes </a></li>
                     <li><a href="http://uthsc.edu/research/research_compliance/irb/">Institutional Review Board </a></li>
                     <li><a href="http://utrf.tennessee.edu">Technology Transfer & Licensing </a></li>
-                    <li><a href="(linked to Offices & Resources landing page)">Offices & Resources</a></li>
+                    <!--<li><a href="(linked to Offices & Resources landing page)">Offices & Resources</a></li>-->
                 </ul>
             </div>
             <div class="medium-4 columns footer-box hide-for-print">
@@ -631,7 +601,7 @@
                     <span class="fa fa-print"></span> print
                     </a>
                 </div>
-                <h5>Connect</h5>
+               <!-- <h5>Connect</h5>
                 <div class="uthsc-connect">
                     <a href="https://twitter.com/uthsc" class="uthsc-twitter">
                         <span class="fa fa-twitter-square fa-3x"></span>
@@ -685,7 +655,7 @@
                         <span class="fa fa-snapchat-square fa-3x"></span>
                         <span class="show-for-sr">connect on snapchat</span>
                     </a>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
@@ -857,35 +827,35 @@
         <h2 class="link-heading">Mission</h2>
 
         <a href="/education/"><span class="uthsc-fa-centered fa fa-graduation-cap"></span>&emsp;Academics</a>
-        <a href="research/"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
+        <a href="/redesign/research/"><span class="uthsc-fa-centered fa fa-flask"></span>&emsp;Research</a>
         <a href="/clinicalcare/"><span class="uthsc-fa-centered fa fa-medkit"></span>&emsp;Clinical Care</a>
         <a href="/publicservice/"><span class="uthsc-fa-centered fa fa-globe"></span>&emsp;Public Service</a>
     </div>
 
-    <a href="#" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift"></span>&emsp;Make a Gift</a>
-    <a href="template.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road"></span>&emsp;Take a Tour</a>
+    <a href="/give/" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift" aria-hidden="true"></span>&emsp;Make a Gift</a>
+    <a href="/admissions/visit-uthsc.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road" aria-hidden="true"></span>&emsp;Take a Tour</a>
 
     <ul>
         <li><span class="link-heading">Information for...</span>
             <ul>
-                <li><a href="#">Students</a></li>
-                <li><a href="#">Faculty &amp; Staff</a></li>
-                <li><a href="#">Alumni</a></li>
-                <li><a href="#">Visitors</a></li>
-                <li><a href="#">Patients</a></li>
+                <li><a href="/students/">Students</a></li>
+                <li><a href="/faculty/">Faculty &amp; Staff</a></li>
+                <li><a href="/alumni/">Alumni</a></li>
+                <li><a href="/visitors/">Visitors</a></li>
+                <li><a href="/clinicalcare/">Patients</a></li>
             </ul>
         </li>
         <li><span class="link-heading">Resources</span>
             <ul>
-                <li><a href="#">Banner</a></li>
-                <li><a href="#">Blackboard</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Career Opportunities</a></li>
-                <li><a href="#">iLogin</a></li>
-                <li><a href="#">Maps</a></li>
-                <li><a href="#">MyUT</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Webmail</a></li>
+                <li><a href="/banner/info/">Banner</a></li>
+                <li><a href="http://courses.uthsc.edu/">Blackboard</a></li>
+                <li><a href="http://events.uthsc.edu/">Calendar</a></li>
+                <li><a href="http://uthsc.edu/hr/employment/">Career Opportunities</a></li>
+                <li><a href="/ilogin/">iLogin</a></li>
+                <li><a href="/map/">Maps</a></li>
+                <li><a href="http://utap.tennessee.edu/">MyUT</a></li>
+                <li><a href="http://news.uthsc.edu/">News</a></li>
+                <li><a href="http://o365.uthsc.edu/">Webmail</a></li>
             </ul>
         </li>
     </ul>

@@ -26,40 +26,13 @@
           href="https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
     <link rel="shortcut icon" href="/images/favicon.ico?v=083012-1411" />
 
-    <!--*************************-->
-    <!--Headcode for Search UTHSC-->
-    <!--*************************-->
-    <?php
-        /*
-         * Assign search query to global js variable
-         */
-        echo $_GET['q'] ?  '<script>var searchUthscQuery = "' . $_GET['q'] . '"</script>' : '';
-
-        /*
-         * Assign search type to global js variable
-         */
-        echo $_GET['col'] ?  '<script>var searchUthscType = "' . $_GET['col'] . '"</script>' : '';
-    ?>
-
-    <?php
-
-    include '/var/www/html/search/scripts/lookup.php';
-
-    echo '<script>var peopleSearchResults = ' . $people_search . '</script>';
-
-    ?>
-<style>
-    tr {
-        border-bottom: 1px solid #777;
-    }
-
-    tr:last-child {
-        border-bottom: none;
-    }
-</style>
-    <!--*************************-->
-    <!--Headcode for Search UTHSC-->
-    <!--*************************-->
+    <!--********************************-->
+    <!--Headcode for Search UTHSC Detail-->
+    <!--********************************-->
+    <script><?php echo $_GET['id'] ? 'var peopleSearchId = "' . $_GET['id'] . '";' : 'var peopleSearchId = false;' ?></script>
+    <!--********************************-->
+    <!--Headcode for Search UTHSC Detail-->
+    <!--********************************-->
 </head>
 
 <body>
@@ -88,7 +61,7 @@
            <div class="row">
                <div class="medium-10 large-8 small-centered columns">
                    <a href="/">
-                       <img src="../-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
+                       <img src="/-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
                    </a>
                </div>
            </div>
@@ -188,26 +161,6 @@
            </div>
            <!--/title-->
 
-
-<!--           <div class="row expanded">-->
-<!--               <div class="row">-->
-<!--                   <div class="columns large-3">&nbsp;</div>-->
-<!--                   <div class="columns large-6">-->
-<!--                           <p><strong>Name:</strong> SPAKE, GEORGE P<br />-->
-<!--                           <strong>Campus:</strong> MEMPHIS<br />-->
-<!--                           <strong>Department:</strong> ITS WEB SERVICES<br />-->
-<!--                           <strong>Address:</strong> STE 763 ALEXANDER BUILDING<br />-->
-<!--                           <strong>Location:</strong> MEMPHIS TN 381632186<br />-->
-<!--                           <strong>Phone Number:</strong> (901)448-1888<br />-->
-<!--                           <strong>Designation:</strong> FACULTY/STAFF<br />-->
-<!--                           <strong>Title:</strong> IT ANALYST II<br />-->
-<!--                           <strong>NetID:</strong> gspake1<br />-->
-<!--                           <strong>E-Mail:</strong> <a href="mailto:gspake1@uthsc.edu">gspake1@uthsc.edu</a></p>-->
-<!--                   </div>-->
-<!--                   <div class="columns large-3">&nbsp;</div>-->
-<!--               </div>-->
-<!--           </div>-->
-
            <div class="row expanded">
                <div class="row">
                    <div class="columns large-3">&nbsp;</div>
@@ -218,44 +171,7 @@
                            <br />
                        </div>
 
-                       <div class="callout">
-                           <div class="row">
-                               <div class="columns small-2">
-                                   <img src="http://devel.uthsc.edu/images/w932_lichterman.jpg" alt="" />
-                               </div>
-                               <div class="columns small-10">
-                                   <p>SPAKE, GEORGE P is not eligible for the Lichterman Award. Only full-time,
-                                       non-exempt employees with three years of service are eligible.</p>
-                               </div>
-                           </div>
-                       </div>
-
-                       <div class="callout">
-                           <div class="row">
-                               <div class="columns small-2">
-                                   <img src="http://devel.uthsc.edu/images/w932_lichterman.jpg" alt="" />
-                               </div>
-                               <div class="columns small-10">
-                                   <p>SPAKE, GEORGE P might be eligible for the Lichterman Award!</p>
-                                   <a href="" ><span class="fa fa-trophy" aria-hidden="true"></span>&nbsp;Nominate SPAKE, GEORGE P </a>
-                               </div>
-                           </div>
-                       </div>
-
-                       <table>
-                           <tbody>
-                           <tr><td><strong>Name:</strong></td><td>SPAKE, GEORGE P</td></tr>
-                           <tr><td><strong>Campus:</strong></td><td>MEMPHIS</td></tr>
-                           <tr><td><strong>Department:</strong></td><td>ITS WEB SERVICES</td></tr>
-                           <tr><td><strong>Address:</strong></td><td>STE 763 ALEXANDER BUILDING</td></tr>
-                           <tr><td><strong>Location:</strong></td><td>MEMPHIS TN 381632186</td></tr>
-                           <tr><td><strong>Phone Number:</strong></td><td>(901) 448-1888</td></tr>
-                           <tr><td><strong>Designation:</strong></td><td>FACULTY/STAFF</td></tr>
-                           <tr><td><strong>Title:</strong></td><td>IT ANALYST II</td></tr>
-                           <tr><td><strong>NetID:</strong></td><td>gspake1</td></tr>
-                           <tr><td><strong>E-Mail:</strong></td><td><a href="mailto:gspake1@uthsc.edu">gspake1@uthsc.edu</a></td></tr>
-                           </tbody>
-                       </table>
+                       <div class="people-search-detail"></div>
 
                    </div>
                    <div class="columns large-3">
@@ -268,20 +184,16 @@
                <div class="row">
                    <div class="columns large-3">&nbsp;</div>
                    <div class="columns medium-6 large-3">
-                       <a href="http://oracle.uthsc.edu/w201_phonebook.php" class="button expanded"><span class="fa fa-edit" aria-hidden="true"></span>&nbsp;Change information</a>
+                       <a href="" class="button expanded change-information"><span class="fa fa-edit" aria-hidden="true"></span>&nbsp;Change information</a>
                    </div>
                    <div class="columns medium-6 large-3">
-                       <a href="" class="button expanded"><span class="fa fa-undo" aria-hidden="true"></span>&nbsp;Return to search results</a>
+                       <a href="" class="button expanded back-to-search-results"><span class="fa fa-undo" aria-hidden="true"></span>&nbsp;Return to search results</a>
                    </div>
                    <div class="columns large-3">
 
                    </div>
                </div>
            </div>
-
-
-
-
        </div>
 
        <!--******-->
@@ -458,7 +370,8 @@
        <!--*************************-->
        <!--Footcode for Search UTHSC-->
        <!--*************************-->
-        <script src="../-resources/2015/js/uthsc-emergency-notification.min.js"></script>
+       <script src="../-resources/2015/js/uthsc-emergency-notification.min.js"></script>
+       <script src="../-resources/2015/js/uthsc-search-detail.min.js"></script>
        <!--**************************-->
        <!--/Footcode for Search UTHSC-->
        <!--**************************-->

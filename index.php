@@ -25,7 +25,7 @@
     <!--****************-->
 
     <title>The University of Tennessee Health Science Center - UTHSC</title>
-    <link rel="stylesheet" href="-resources/2015/css/uthsc.css">
+    <link rel="stylesheet" href="-resources/2015/css/uthsc.min.css">
     <link rel="stylesheet" href="-resources/2015/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
@@ -79,20 +79,7 @@
         <div class="row">
             <div class="hide-for-large columns small-collapse">
                 <!--Search form-->
-                <form class="input-group" aria-label="Search the UTHSC site"
-                      action="search/" method="get" style="margin-bottom:0;">
-                    <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
-                           placeholder="search" style="margin-right:0;">
-                    <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
-                    <input type="hidden" name="cof" value="FORID:11" />
-                    <input type="hidden" name="ie" value="UTF-8" />
-                    <input type="hidden" name="col" value="uthsc" />
-                    <div class="input-group-button">
-                        <button type="submit" class="button" aria-label="Submit search form">
-                            <span class="fa fa-search" aria-hidden="true"></span>
-                        </button>
-                    </div>
-                </form>
+                <?php include('uthsc-search-form.php'); ?>
                 <!--/Search form-->
             </div>
         </div>
@@ -178,15 +165,10 @@
             </div>
             <div class="columns medium-6 large-12">
                 <div class="row">
-                    <div class="columns small-6 medium-12 large-4 large-push-2">
-                        <a href="/admissions/visit-uthsc.php" class="button secondary large expanded show-for-large"><span class="fa fa-road" aria-hidden="true"></span> Take a Tour</a>
-                        <a href="/admissions/visit-uthsc.php" class="button secondary expanded show-for-medium-only"><span class="fa fa-road" aria-hidden="true"></span> Take a Tour</a>
-                        <a href="/admissions/visit-uthsc.php" class="button secondary tiny expanded hide-for-medium"><span class="fa fa-road" aria-hidden="true"></span> Take a Tour</a>
-                    </div>
-                    <div class="columns small-6 medium-12 large-4 large-pull-2">
-                        <a href="/admissions/visit-uthsc.php" class="button secondary large expanded show-for-large"><span class="fa fa-clock-o" aria-hidden="true"></span> Schedule a Visit</a>
-                        <a href="/admissions/visit-uthsc.php" class="button secondary expanded show-for-medium-only"><span class="fa fa-clock-o" aria-hidden="true"></span> Schedule a Visit</a>
-                        <a href="/admissions/visit-uthsc.php" class="button secondary tiny expanded hide-for-medium"><span class="fa fa-clock-o" aria-hidden="true"></span> Schedule a Visit</a>
+                    <div class="columns large-6 large-push-3">
+                        <a href="/admissions/visit-uthsc.php" class="button secondary large expanded show-for-large"><span class="fa fa-clock-o" aria-hidden="true"></span> Schedule a visit to take a tour</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary expanded show-for-medium-only"><span class="fa fa-clock-o" aria-hidden="true"></span> Schedule a visit to take a tour</a>
+                        <a href="/admissions/visit-uthsc.php" class="button secondary expanded hide-for-medium"><span class="fa fa-clock-o" aria-hidden="true"></span> Schedule a visit to take a tour</a>
                     </div>
                 </div>
             </div>
@@ -209,8 +191,7 @@
                 <div class="columns medium-8">
                     <div class="row uthsc-program-explorer-tabs">
                         <div class="columns uthsc-program-explorer-heading text-center">
-                            <h2>Program Explorer</h2>
-                            <h2 class="subheader">Discover all that UTHSC has to offer</h2>
+                            <h2>Find Your Future</h2>
                         </div>
                         <div class="row collapse">
                             <div class="medium-7 large-5 columns">
@@ -283,7 +264,6 @@
                                                     <li><a href="/health-professions/him/index.php">Health Informatics &amp; Information Management</a></li>
                                                     <li><a href="/health-professions/cls/mls/index.php">Medical Laboratory Science</a></li>
                                                     <li><a href="/health-professions/ot/index.php">Occupational Therapy</a></li>
-                                                    <li><a href="/health-professions/pa/index.php">Physician Assistant</a></li>
                                                     <li><a href="/health-professions/pt/index.php">Physical Therapy, Entry Level (DPT Degree)</a></li>
                                                     <li><a href="/health-professions/pt/programs/pt-graduate/index.php">Physical Therapy, Graduate Program (MSPT Degree)</a></li>
                                                     <li><a href="/health-professions/pt/programs/pt-graduate/index.php">Physical Therapy, Graduate Program (ScDPT Degree)</a></li>
@@ -312,6 +292,7 @@
                                                     <li><a href="/pathology/">Pathology and Laboratory Medicine</a></li>
                                                     <li><a href="/pediatrics/">Pediatrics</a></li>
                                                     <li><a href="/pharmacology/">Pharmacology</a></li>
+                                                    <li><a href="/physician-assistant/">Physician Assistant</a></li>
                                                     <li><a href="/physiology/">Physiology</a></li>
                                                     <li><a href="/plasticsurgery/">Plastic Surgery</a></li>
                                                     <li><a href="/prevmed/">Preventive Medicine</a></li>
@@ -326,7 +307,7 @@
                                     <div class="tabs-panel" id="panel5v">
                                         <ul>
                                             <li>
-                                                <a href="/nursing">College of Nursing</a>
+                                                <a href="nursing/">College of Nursing</a>
                                                 <ul>
                                                     <li><a href="/nursing/academic-programs/index.php">Academic Programs</a></li>
                                                     <li><a href="/nursing/continuing-education/index.php">Continuing Education</a></li>
@@ -368,7 +349,7 @@
 
             <!--Search form-->
             <form class="row uthsc-people-search uthsc-row-space" aria-label="Search the UTHSC site"
-                  action="http://uthsc.edu/search/" method="get" >
+                  action="/redesign/search/" method="get" >
                 <div class="columns callout">
                     <div class="input-group">
                         <input class="input-group-field" type="text" placeholder="Search ..." type="search"
@@ -386,8 +367,8 @@
             <!--  Mission Row-->
             <div class="row uthsc-row-space medium-up-2 large-up-4">
                 <div class="columns">
-                    <img src="-resources/2015/images/mission-academics.jpg" alt="" class="uthsc-mission-image show-for-large">
-                    <img src="-resources/2015/images/mission-academics-mobile.jpg" alt="" class="uthsc-mission-image hide-for-large">
+                    <img src="/-resources/2015/images/mission-academics.jpg" alt="" class="uthsc-mission-image show-for-large">
+                    <img src="/-resources/2015/images/mission-academics-mobile.jpg" alt="" class="uthsc-mission-image hide-for-large">
                     <h2>Academics</h2>
                     <p>Since 1911, we have been training health care professionals through education, research, clinical care and public service. Today, our Colleges of Dentistry, Graduate Health Sciences, Health Professions , Medicine, Nursing and Pharmacy serve more than 3,000 students and 1,300 residents, post docs and fellows across four campuses.</p>
                     <ul>
@@ -401,23 +382,23 @@
                 </div>
 
                 <div class="columns">
-                    <img src="-resources/2015/images/mission-research.jpg" alt="" class="uthsc-mission-image show-for-large">
-                    <img src="-resources/2015/images/mission-research-mobile.jpg" alt="" class="uthsc-mission-image hide-for-large">
+                    <img src="/-resources/2015/images/mission-research.jpg" alt="" class="uthsc-mission-image show-for-large">
+                    <img src="/-resources/2015/images/mission-research-mobile.jpg" alt="" class="uthsc-mission-image hide-for-large">
                     <h2>Research</h2>
                     <p>UTHSC has a long and rich tradition of accomplishments in basic, clinical and translational research in a wide variety of disciplines focused on the health issues that impact our community, our region, the state of Tennessee and the world.</p>
                     <ul>
-                        <li><a href="research/research_administration/clinical_trials/">Clinical Trials</a></li>
-                        <li><a href="research/research_compliance/">Compliance</a></li>
-                        <li><a href="research/research_administration/">Grants and Research Agreements</a></li>
-                        <li><a href="research/">Office of Research</a></li>
+                        <li><a href="/research/research_administration/clinical_trials/">Clinical Trials</a></li>
+                        <li><a href="/research/research_compliance/">Compliance</a></li>
+                        <li><a href="/research/research_administration/">Grants and Research Agreements</a></li>
+                        <li><a href="/redesign/research/">Office of Research</a></li>
                     </ul>
 
                     <a class="button hollow small" href="research/"><span class="fa fa-plus-circle" aria-hidden="true"></span> Learn More...</a>
                 </div>
 
                 <div class="columns">
-                    <img src="-resources/2015/images/mission-clinical-care.jpg" alt="" class="uthsc-mission-image show-for-large">
-                    <img src="-resources/2015/images/mission-clinical-care-mobile.jpg" alt="" class="uthsc-mission-image hide-for-large">
+                    <img src="/-resources/2015/images/mission-clinical-care.jpg" alt="" class="uthsc-mission-image show-for-large">
+                    <img src="/-resources/2015/images/mission-clinical-care-mobile.jpg" alt="" class="uthsc-mission-image hide-for-large">
                     <h2>Clinical Care</H2>
                     <p>Our faculty and students provide health care to the community through our network of hospitals, practice groups, specialty care clinics, and mobile health care facilities.</p>
                     <ul>
@@ -430,8 +411,8 @@
                 </div>
 
                 <div class="columns">
-                    <img src="-resources/2015/images/mission-public-service.jpg" alt="" class="uthsc-mission-image show-for-large">
-                    <img src="-resources/2015/images/mission-public-service-mobile.jpg" alt="" class="uthsc-mission-image hide-for-large">
+                    <img src="/-resources/2015/images/mission-public-service.jpg" alt="" class="uthsc-mission-image show-for-large">
+                    <img src="/-resources/2015/images/mission-public-service-mobile.jpg" alt="" class="uthsc-mission-image hide-for-large">
                     <h2>Public Service</h2>
                     <p>Public service is central to our mission. Every year, thousands of faculty, staff and volunteers across four campuses located in Memphis, Knoxville, Chattanooga and Nashville provide clinical care, health education and preventive care programs to the people of Tennessee.</p>
                     <ul>
@@ -525,7 +506,7 @@
     <!--Last Published-->
     <!--**************-->
     <div class="uthsc-last-published text-center">
-        <p><small>Last Published: June 7, 2016</small></p>
+        <p><small>Last Published: Jul 26, 2016</small></p>
     </div>
     <!--***************-->
     <!--/Last Published-->
@@ -570,7 +551,7 @@
      aria-hidden="true">
 
     <div class="off-canvas-search">
-        <?php include('../off-canvas-search-form.php'); ?>
+        <?php include('uthsc-search-form.php'); ?>
     </div>
 
     <!--  Close menu button-->
@@ -603,7 +584,7 @@
 <nav id="uthsc-off-canvas-menu--slide-right" class="uthsc-off-canvas-menu uthsc-off-canvas-menu--slide-right hide-for-print" aria-hidden="true">
 
     <div class="off-canvas-search">
-        <?php include('../off-canvas-search-form.php'); ?>
+        <?php include('uthsc-search-form.php'); ?>
     </div>
 
     <!--  Close menu button-->
@@ -646,7 +627,7 @@
                 <li><a href="/map/">Maps</a></li>
                 <li><a href="http://utap.tennessee.edu/">MyUT</a></li>
                 <li><a href="http://news.uthsc.edu/">News</a></li>
-                <li><a href="/email/">Webmail</a></li>
+                <li><a href="http://o365.uthsc.edu/">Webmail</a></li>
             </ul>
         </li>
     </ul>

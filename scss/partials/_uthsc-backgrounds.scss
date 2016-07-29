@@ -5,18 +5,20 @@
 @mixin background($n, $image) {
   .uthsc-row-bg-#{$n} {
     background: linear-gradient( rgba(255, 255, 255, 0.30), rgba(0, 0, 0, 0.50) ),
-    url(http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/#{$image} );
+    url(/-resources/2015/images/#{$image} );
   }
 }
 
 @mixin uthsc-backgrounds {
-  @include background('1', 'uthsc-cork-purple.png');    //cork purple
-  @include background('2', 'uthsc-cork-green.png');     //cork green
-  @include background('3', 'uthsc-cork-blue.png');      //cork blue
+  @include background('cork-purple', 'uthsc-bg-cork-purple.png');            //pattern cork purple
+  @include background('cork-green', 'uthsc-bg-cork-green.png');              //pattern cork green
+  @include background('cork-blue', 'uthsc-bg-cork-blue.png');                //pattern cork blue
 
-  @include background('4', 'uthsc-lodyas-green.png');   //geometric-green
-  @include background('5', 'uthsc-lodyas-purple.png');  //geometric-purple
-  @include background('6', 'uthsc-lodyas-black.png');   //geometric-black
+  @include background('triangles-green', 'uthsc-bg-triangles-green.png');    //pattern triangles-green
+  @include background('triangles-purple', 'uthsc-bg-triangles-purple.png');  //pattern triangles-purple
+  @include background('triangles-black', 'uthsc-bg-triangles-black.png');    //pattern triangles-black
 
-  @include background('7', 'uthsc-paper-purple.jpg');   //paper-purple
+  @include background('paper-purple', 'uthsc-bg-paper-purple.jpg');          //pattern paper-purple
+
+  @include background('students-arch', 'uthsc-bg-students-arch.jpg');        //pattern students arch image
 }

@@ -7,6 +7,7 @@
 @import 'partials/uthsc-hero.scss';
 @import 'partials/uthsc-now.scss';
 @import 'partials/uthsc-backgrounds.scss';
+@import 'partials/uthsc-snippet-style-fixes.scss';
 
 //include foundation components
 @include foundation-global-styles;
@@ -65,9 +66,11 @@
 @include uthsc-badge-box;
 @include uthsc-background-stripe;
 @include uthsc-accordion;
+@include uthsc-list-styles;
 
 //include project components
 @include uthsc-homepage;
 @include uthsc-content-footer;
 @include uthsc-now;
 @include uthsc-backgrounds;
+@include uthsc-snippet-half-columns;

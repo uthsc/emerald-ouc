@@ -39,7 +39,7 @@ function peopleSearchItem(value, icon, message) {
  * @el        element to render html in
  * @offCampus bool: true if user is off campus
  */
-function peopleSearchTable(data, count, el, offCampus, soundsLike) {
+function peopleSearchTable(data, count, el, offCampus, soundsLike, lichterman) {
 
 	var html = '';
 
@@ -47,23 +47,37 @@ function peopleSearchTable(data, count, el, offCampus, soundsLike) {
 	html += "<div class=\"search-results-count\">";
 	html += "<p>";
 	html += offCampus ? "Showing <strong>" + countPeople(data) + "</strong> of " : "";
-	html += "<strong>" + count + "</strong> people";
+
+	//use person if there is only one result
+	if (count == 1) {
+		html += "<strong>" + count + "</strong> person";
+	} else {
+		html += "<strong>" + count + "</strong> people";
+	}
+
 	html += "</small>";
 	html += "</p>";
 
-	html += "<small>";
-
 	//off campus max results message
 	if (offCampus) {
+		html += "<small>";
 		html += "Maximum search results are limited for off-campus networks. ";
+		html += "</small>";
 	}
 
 	//use sounds like message
 	if (soundsLike) {
+		html += "<small>";
 		html += soundsLike ? soundsLike : "";
+		html += "</small>";
 	}
 
-	html += "</small><br /><br />";
+	//lichterman
+	if (lichterman) {
+		html += "<small>";
+		html += "If you are using people search to nominate a UTHSC employee for the Lichterman Award, click on the name of the person you wish to nominate in the list.";
+		html += "</small>";
+	}
 
 	//results table head
 	html += "<table class=\"stack\">";
@@ -79,10 +93,9 @@ function peopleSearchTable(data, count, el, offCampus, soundsLike) {
 
 	//results table body
 	for (var person in data) {
-
 		html += "<tr>";
 		html += "<td>";
-		html += "<a href=\"http://oracle.uthsc.edu/directory.php?action=DETAIL&id=" + data[person]['id'] + "\">";
+		html += "<a href=\"detail.php?id=" + data[person]['id'] + "\">";
 		html += data[person]['name'];
 		html += "</a>";
 		html += "</td>";
@@ -112,7 +125,8 @@ $(document).ready(function () {
 		campusResultsCount = peopleSearchResults['meta']['memphis_count'],
 		systemResultsCount = peopleSearchResults['meta']['system_count'],
 		campusResults = peopleSearchResults['campus'],
-		systemResults = peopleSearchResults['system'];
+		systemResults = peopleSearchResults['system'],
+		lichterman = peopleSearchResults['meta']['lichterman'];
 
 
 	//check for query
@@ -137,7 +151,7 @@ $(document).ready(function () {
 	}
 
 	if(campusResultsCount > 0) {
-		peopleSearchTable(campusResults, campusResultsCount, '#people-search-results-campus', offCampus, soundsLike);
+		peopleSearchTable(campusResults, campusResultsCount, '#people-search-results-campus', offCampus, soundsLike, lichterman);
 
 	} else {
 		$('#people-search-results-campus').html('no results')
@@ -145,7 +159,7 @@ $(document).ready(function () {
 
 	if(systemResultsCount > 0) {
 
-		peopleSearchTable(systemResults, systemResultsCount, '#people-search-results-system', offCampus, soundsLike);
+		peopleSearchTable(systemResults, systemResultsCount, '#people-search-results-system', offCampus, soundsLike, 0);
 
 	} else {
 		$('#people-search-results-system').html('no results')

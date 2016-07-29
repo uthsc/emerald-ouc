@@ -21,7 +21,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="research/">
+                        <a href="/redesign/research/">
                             <span aria-hidden="true" class="fa fa-flask"></span>
                             Research
                         </a>
@@ -56,7 +56,7 @@
                     <li><a href="/map/">Maps</a></li>
                     <li><a href="https://utap.tennessee.edu/">MyUT</a></li>
                     <li><a href="https://news.uthsc.edu/">News</a></li>
-                    <li><a href="/email/">Webmail</a></li>
+                    <li><a href="http://o365.uthsc.edu/">Webmail</a></li>
                 </ul>
             </li>
             <li><a href="/give/"><span aria-hidden="true" class="fa fa-gift"></span> Make a Gift</a></li>

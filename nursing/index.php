@@ -57,7 +57,7 @@
         <div class="row">
             <div class="medium-10 large-8 small-centered columns">
                 <a href="http://uthsc.edu">
-                    <img src="../-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
+                    <img src="/-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
                 </a>
             </div>
         </div>
@@ -65,20 +65,7 @@
         <div class="row">
             <div class="hide-for-large columns small-collapse">
                 <!--Search form-->
-                <form class="input-group" aria-label="Search the UTHSC site"
-                      action="http://uthsc.edu/search/" method="get" style="margin-bottom:0;">
-                    <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
-                           placeholder="search" style="margin-right:0;" />
-                    <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
-                    <input type="hidden" name="cof" value="FORID:11" />
-                    <input type="hidden" name="ie" value="UTF-8" />
-                    <input type="hidden" name="col" value="uthsc" />
-                    <div class="input-group-button">
-                        <button type="submit" class="button" aria-label="Submit search form">
-                            <span class="fa fa-search" aria-hidden="true"></span>
-                        </button>
-                    </div>
-                </form>
+                <?php include('uthsc-search-form.php'); ?>
                 <!--/Search form-->
             </div>
         </div>
@@ -90,18 +77,18 @@
     <!--**********************-->
     <!--Emergency Notification-->
     <!--**********************-->
-    <div class="row expanded hide-for-print emergency-notification" style="display:none;">
-        <div class="columns callout alert large-12" style="margin-bottom:0; padding:0;" data-closable>
-            <div class="row">
-                <h2>Emergency Notification!</h2>
-                <p>This section will be used for emergency notifications.</p>
-
-                <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-        </div>
-    </div>
+<!--    <div class="row expanded hide-for-print emergency-notification" style="display:none;">-->
+<!--        <div class="columns callout alert large-12" style="margin-bottom:0; padding:0;" data-closable>-->
+<!--            <div class="row">-->
+<!--                <h2>Emergency Notification!</h2>-->
+<!--                <p>This section will be used for emergency notifications.</p>-->
+<!---->
+<!--                <button class="close-button" aria-label="Dismiss alert" type="button" data-close>-->
+<!--                    <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <!--***********************-->
     <!--/Emergency Notification-->
     <!--***********************-->
@@ -324,7 +311,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
                                 <a href="https://www.uthsc.edu/nursing/future-students/admissions/bsn_req.php">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/nursing-bsn.jpg"/>
+                                        <img src="/-resources/2015/images/nursing-bsn.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -344,7 +331,7 @@
                             <div class="uthsc-highlight-box uthsc-highlight-box-purple">
                                 <a href="https://www.uthsc.edu/nursing/future-students/admissions/rn-bsn-req.php">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/nursing-rn-bsn.jpg"/>
+                                        <img src="/-resources/2015/images/nursing-rn-bsn.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -363,9 +350,9 @@
                         <div class="columns">
                             <!--Highlight box-->
                             <div class="uthsc-highlight-box">
-                                <a href="https://www.uthsc.edu/research/research_compliance/irb/">
+                                <a href="/nursing/future-students/admissions/dnp_req.php">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/nursing-dnp.jpg"/>
+                                        <img src="/-resources/2015/images/nursing-dnp.jpg"/>
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
@@ -386,7 +373,7 @@
                             <div class="uthsc-highlight-box">
                                 <a href="https://www.uthsc.edu/nursing/future-students/admissions/phd_req.php">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/nursing-phd.jpg">
+                                        <img src="/-resources/2015/images/nursing-phd.jpg">
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>PhD in Nursing Program</p>
@@ -404,7 +391,7 @@
                             <div class="uthsc-highlight-box  uthsc-highlight-box-green">
                                 <a href="https://www.uthsc.edu/nursing/future-students/admissions/dnp_anesthesia_req.php">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/nursing-crna.jpg">
+                                        <img src="/-resources/2015/images/nursing-crna.jpg">
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>Nurse Anesthesia Program</p>
@@ -420,9 +407,9 @@
                         <div class="columns">
                             <!--Highlight box-->
                             <div class="uthsc-highlight-box uthsc-highlight-box-purple">
-                                <a href="">
+                                <a href="/nursing/future-students/admissions/acnp-req.php">
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="../-resources/2015/images/nursing-ag-acnp.jpg">
+                                        <img src="/-resources/2015/images/nursing-ag-acnp.jpg">
                                     </div>
                                     <div class="uthsc-highlight-box-title">
                                         <p>Certificate Programs</p>
@@ -455,7 +442,15 @@
                     <h3>Nursing News</h3>
                 </div>
 
-                <div class="news-snippet" data-equalizer="news-boxes" data-equalize-on="large"></div>
+                <!--Snippet-->
+                <div class="news-snippet-1234 row medium-up-2 large-up-3" data-equalizer="news-boxes-1234" data-equalize-on="large"></div>
+                <?php
+                $uthsc_news['1234'] = array(
+                    'post_count' => '3',
+                    'categories' => '153'
+                );
+                ?>
+                <!--Snippet-->
 
             </div>
         </div>
@@ -510,11 +505,11 @@
             </div>
             <div class="medium-4 columns footer-box">
                 <h4>College Links</h4><ul>
-                    <li><a href="">View an Info Session</a></li>
-                    <li><a href="">Apply Online</a></li>
-                    <li><a href="">Tuition & Fees</a></li>
-                    <li><a href="">Scholarships</a></li>
-                    <li><a href="">Financial Aid</a></li>
+                    <li><a href="https://www.youtube.com/playlist?list=PLD1GQMb2ipWDIYwbGfEDK2-IBgVonj39z">View an Info Session&nbsp;<span class="fa fa-video-camera" aria-hidden="true" style="display: inherit;"></span></a></li>
+                    <li><a href="/nursing/future-students/admissions/index.php">Apply Online</a></li>
+                    <li><a href="/finaid/cost/college-of-nursing.php">Tuition & Fees</a></li>
+                    <li><a href="/nursing/future-students/scholarship_information.php">Scholarships</a></li>
+                    <li><a href="/finaid/">Financial Aid</a></li>
                 </ul>
             </div>
             <div class="medium-4 columns footer-box hide-for-print">
@@ -548,58 +543,23 @@
                 </div>
                 <h5>Connect</h5>
                 <div class="uthsc-connect">
-                    <a href="https://twitter.com/uthsc" class="uthsc-twitter">
+                    <a href="https://twitter.com/UTHSCnursing" class="uthsc-twitter">
                         <span class="fa fa-twitter-square fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on twitter</span>
                     </a>
-                    <a href="https://www.facebook.com/uthsc#" class="uthsc-facebook">
+                    <a href="https://www.facebook.com/nursing.uthsc" class="uthsc-facebook">
                         <span class="fa fa-facebook-square fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on facebook</span>
                     </a>
-                    <a href="https://www.instagram.com/uthsc/" class="uthsc-instagram">
+                    <a href="https://www.instagram.com/uthscnursing" class="uthsc-instagram">
                         <span class="fa fa-instagram fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on instagram</span>
                     </a>
-                    <a href="https://www.youtube.com/user/uthsc" class="uthsc-youtube">
+                    <a href="https://www.youtube.com/channel/UCKH6p0ubWMs4G--z9Cp_AkQ" class="uthsc-youtube">
                         <span class="fa fa-youtube-square fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on youtube</span>
                     </a>
-                    <a href="#" class="uthsc-linkedin">
-                        <span class="fa fa-linkedin-square fa-3x" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on linkedin</span>
-                    </a>
-                    <a href="#" class="uthsc-pinterest">
-                        <span class="fa fa-pinterest-square fa-3x" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on pinterest</span>
-                    </a>
-                    <a href="#" class="uthsc-google-plus">
-                        <span class="fa fa-google-plus-square fa-3x" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on google plus</span>
-                    </a>
-                    <a href="#" class="uthsc-tumblr">
-                        <span class="fa fa-tumblr-square fa-3x" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on tumblr</span>
-                    </a>
-                    <a href="#" class="uthsc-flickr">
-                        <span class="fa fa-flickr fa-3x" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on flickr</span>
-                    </a>
-                    <a href="#" class="uthsc-reddit">
-                        <span class="fa fa-reddit-square fa-3x" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on reddit</span>
-                    </a>
-                    <a href="#" class="uthsc-vine">
-                        <span class="uthsc-fa-vine" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on vine</span>
-                    </a>
-                    <a href="#" class="uthsc-vimeo">
-                        <span class="fa fa-vimeo-square fa-3x" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on vimeo</span>
-                    </a>
-                    <a href="#" class="uthsc-snapchat">
-                        <span class="fa fa-snapchat-square fa-3x" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on snapchat</span>
-                    </a>
+
                 </div>
             </div>
         </div>
@@ -613,7 +573,7 @@
     <!--Last Published-->
     <!--**************-->
     <div class="uthsc-last-published text-center">
-        <p><small>Last Published: Generated during publish by OUC</small></p>
+        <p><small>Last Published: Jul 29, 2016</small></p>
     </div>
     <!--***************-->
     <!--/Last Published-->
@@ -672,7 +632,7 @@
     </div>
 
     <div class="off-canvas-search">
-        <?php include('../off-canvas-search-form.php'); ?>
+        <?php include('uthsc-search-form.php'); ?>
     </div>
 
     <!--Close menu button-->
@@ -681,7 +641,7 @@
     </button>
 
     <ul>
-        <li><a href="#" class="link-heading">About</a>
+        <li><a href="http://uthsc.edu/nursing/about-the-college/index.php" class="link-heading">About</a>
             <ul>
                 <li><a href="http://uthsc.edu/nursing/about-the-college/mission.php">Mission & Philosophy</a></li>
                 <li><a href="http://uthsc.edu/nursing/news/annual-reports.php">Annual Report</a></li>
@@ -699,22 +659,22 @@
             </ul>
         </li>
 
-        <li><a href="#" class="link-heading">Academic Programs </a>
+        <li><a href="http://uthsc.edu/nursing/academic-programs/index.php" class="link-heading">Academic Programs </a>
             <ul>
             </ul>
         </li>
 
-        <li><a href="#" class="link-heading">Research Programs</a>
+        <li><a href="http://uthsc.edu/nursing/research-programs/index.php" class="link-heading">Research Programs</a>
             <ul>
 
             </ul>
         </li>
-        <li><a href="#" class="link-heading">Practice Programs</a>
+        <li><a href="http://uthsc.edu/nursing/practice-programs/index.php" class="link-heading">Practice Programs</a>
             <ul>
 
             </ul>
         </li>
-        <li><a href="#" class="link-heading">Continuing Education</a>
+        <li><a href="http://uthsc.edu/nursing/continuing-education/index.php" class="link-heading">Continuing Education</a>
             <ul>
                 <li><a href="http://uthsc.edu/nursing/jobs.php">Job Opportunities</a></li>
             </ul>
@@ -752,7 +712,7 @@
     </div>
 
     <div class="off-canvas-search">
-        <?php include('../off-canvas-search-form.php'); ?>
+        <?php include('uthsc-search-form.php'); ?>
     </div>
 
     <!--Close menu button-->
@@ -765,35 +725,35 @@
         <h2 class="link-heading">Mission</h2>
 
         <a href="/education/"><span class="uthsc-fa-centered fa fa-graduation-cap" aria-hidden="true"></span>&emsp;Academics</a>
-        <a href="/research/"><span class="uthsc-fa-centered fa fa-flask" aria-hidden="true"></span>&emsp;Research</a>
+        <a href="/redesign/research/"><span class="uthsc-fa-centered fa fa-flask" aria-hidden="true"></span>&emsp;Research</a>
         <a href="/clinicalcare/"><span class="uthsc-fa-centered fa fa-medkit" aria-hidden="true"></span>&emsp;Clinical Care</a>
         <a href="/publicservice/"><span class="uthsc-fa-centered fa fa-globe" aria-hidden="true"></span>&emsp;Public Service</a>
     </div>
 
-    <a href="#" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift" aria-hidden="true"></span>&emsp;Make a Gift</a>
-    <a href="template.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road" aria-hidden="true"></span>&emsp;Take a Tour</a>
+    <a href="/give/" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-gift" aria-hidden="true"></span>&emsp;Make a Gift</a>
+    <a href="/admissions/visit-uthsc.php" class="call-to-action-link"><span class="uthsc-fa-centered fa fa-road" aria-hidden="true"></span>&emsp;Take a Tour</a>
 
     <ul>
         <li><span class="link-heading">Information for...</span>
             <ul>
-                <li><a href="#">Students</a></li>
-                <li><a href="#">Faculty &amp; Staff</a></li>
-                <li><a href="#">Alumni</a></li>
-                <li><a href="#">Visitors</a></li>
-                <li><a href="#">Patients</a></li>
+                <li><a href="/students/">Students</a></li>
+                <li><a href="/faculty/">Faculty &amp; Staff</a></li>
+                <li><a href="/alumni/">Alumni</a></li>
+                <li><a href="/visitors/">Visitors</a></li>
+                <li><a href="/clinicalcare/">Patients</a></li>
             </ul>
         </li>
         <li><span class="link-heading">Resources</span>
             <ul>
-                <li><a href="#">Banner</a></li>
-                <li><a href="#">Blackboard</a></li>
-                <li><a href="#">Calendar</a></li>
-                <li><a href="#">Career Opportunities</a></li>
-                <li><a href="#">iLogin</a></li>
-                <li><a href="#">Maps</a></li>
-                <li><a href="#">MyUT</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Webmail</a></li>
+                <li><a href="/banner/info/">Banner</a></li>
+                <li><a href="http://courses.uthsc.edu/">Blackboard</a></li>
+                <li><a href="http://events.uthsc.edu/">Calendar</a></li>
+                <li><a href="http://uthsc.edu/hr/employment/">Career Opportunities</a></li>
+                <li><a href="/ilogin/">iLogin</a></li>
+                <li><a href="/map/">Maps</a></li>
+                <li><a href="http://utap.tennessee.edu/">MyUT</a></li>
+                <li><a href="http://news.uthsc.edu/">News</a></li>
+                <li><a href="/email/transition/">Webmail</a></li>
             </ul>
         </li>
     </ul>
@@ -837,68 +797,20 @@
 <script src="../-resources/2015/js/what-input.min.js"></script>
 <script src="../-resources/2015/js/foundation.min.js"></script>
 <script src="../-resources/2015/js/uthsc.min.js"></script>
-
-<script>
-    function parseNewsPosts() {
-
-        var html = '';
-
-        for (var i=0;i<3;i++) {
-
-            var postLink = posts[i]['link'],
-                featuredImageLink = '',
-                date = new Date( posts[i]['date'] ),
-                monthNames = [
-                "January", "February", "March",
-                "April", "May", "June", "July",
-                "August", "September", "October",
-                "November", "December"
-                ],
-                monthIndex = date.getMonth(),
-                postDate = monthNames[monthIndex] + ' ' + date.getDate() + ', ' + date.getFullYear(),
-                postTitle = posts[i]['title']['rendered'];
-
-            if (typeof posts[i]._embedded['wp:featuredmedia'] !== 'undefined') {
-                featuredImageLink = posts[i]._embedded['wp:featuredmedia'][0]['source_url'];
-                featuredImageLink = featuredImageLink.replace('.jpg', '-300x300.jpg')
-            } else {
-                featuredImageLink = '../-resources/2015/images/homepage-news-featured-image-place-holder.jpg';
-            }
-
-            html += '<div class="large-4 columns">' +
-            '<div class="uthsc-news-box ' + 'post-0' + (i + 1) + '">' +
-            '<a data-equalizer-watch="news-boxes" ' + 'href="' + postLink + '">' +
-            '<div class="row">' +
-
-            '<div class="columns small-3 medium-2 large-4">' +
-            '<img alt="" src="' + featuredImageLink + '" />' +
-            '</div>' +
-
-            '<div class="columns small-9 medium-10 large-8">' +
-            '<h4>' + postTitle +'</h4>' +
-            '<p>' + postDate +'</p>' +
-            '</div>' +
-
-            '</div>' +
-            '</a>' +
-            '</div>' +
-            '</div>';
-        }
-
-        return html;
-    }
-
-    /*
-     * Render names on page load
-     */
-    $(document).ready(function(){
-        newsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts?categories=153&per_page=3&_embed", '.news-snippet');
-    });
-</script>
-
 <!--********-->
 <!--/Scripts-->
 <!--********-->
+
+<!--snippet-->
+<script src="../-resources/2015/js/uthsc-news-ajax.min.js"></script>
+<script>
+    $(document).ready(function(){
+        <?php foreach ($uthsc_news as $key => $posts) {
+        echo 'newsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts?categories=' . $posts['categories'] . '&per_page=' . $posts['post_count'] . '&_embed", ' . '\'' . $key . '\',' . $posts['post_count'] .');' . "\r\n";
+    } ?>
+    });
+</script>
+<!--snippet-->
 
 </body>
 </html>
