@@ -342,8 +342,11 @@
             <div class="columns">
                 <p style="text-align:center;">
                     <a class="button" href="https://www.uthsc.edu/CRC/">Clinical Research</a>
-                    <a class="button" href="">Research Development</a>
+                    <!--<a class="button" href="">Research Development</a>
                     <a class="button" href="">Research Integrity Officer</a>
+                    <a class="button" href="">News &amp; Events</a>-->
+                    <a class="button" href="">Operational Strategic Plan for Research</a>
+                    <a class="button" href="">Allocation of Research Space Plan</a>
                 </p>
             </div>
         </div>
