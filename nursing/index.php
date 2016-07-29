@@ -505,7 +505,7 @@
             </div>
             <div class="medium-4 columns footer-box">
                 <h4>College Links</h4><ul>
-                    <!--<li><a href="">View an Info Session</a></li>-->
+                    <li><a href="https://www.youtube.com/playlist?list=PLD1GQMb2ipWDIYwbGfEDK2-IBgVonj39z">View an Info Session&nbsp;<span class="fa fa-video-camera" aria-hidden="true" style="display: inherit;"></span></a></li>
                     <li><a href="/nursing/future-students/admissions/index.php">Apply Online</a></li>
                     <li><a href="/finaid/cost/college-of-nursing.php">Tuition & Fees</a></li>
                     <li><a href="/nursing/future-students/scholarship_information.php">Scholarships</a></li>
