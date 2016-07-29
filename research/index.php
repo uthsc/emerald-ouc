@@ -128,7 +128,7 @@
             <li class="uthsc-navigation-column small-2 columns">
                 <a href="#" data-equalizer-watch="heading-links">Leadership</a>
                 <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">Mission &amp: Vision </a></li>
+                    <li><a href="#">Mission &amp; Vision </a></li>
                     <li><a href="/research/vc_research.php">Vice Chancellor for Research </a></li>
                     <li><a href="#">Organizational Chart</a></li>
                     <li><a href="#">Strategic Plans and Guides</a></li>
