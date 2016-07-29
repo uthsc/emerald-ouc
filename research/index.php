@@ -601,7 +601,7 @@
                     <span class="fa fa-print"></span> print
                     </a>
                 </div>
-                <h5>Connect</h5>
+               <!-- <h5>Connect</h5>
                 <div class="uthsc-connect">
                     <a href="https://twitter.com/uthsc" class="uthsc-twitter">
                         <span class="fa fa-twitter-square fa-3x"></span>
@@ -655,7 +655,7 @@
                         <span class="fa fa-snapchat-square fa-3x"></span>
                         <span class="show-for-sr">connect on snapchat</span>
                     </a>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
