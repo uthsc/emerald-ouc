@@ -26,6 +26,204 @@
     <!--*************************-->
     <?php include ("map-db-connection.php"); ?>
 
+    <style>
+        .uthsc-map-link {
+            background: #00a5e3;
+            color: #fff;
+            padding: 0.3rem;
+            vertical-align: 25%;
+            cursor: pointer;
+        }
+
+        #uthsc-map-canvas {
+            width: 100%;
+            height: 100%
+        }
+
+        @media screen and (max-width: 39.9375em) {
+            #uthsc-map-canvas {
+                height: 100vw
+            }
+        }
+
+        .uthsc-map-menu {
+            background: rgba(250, 250, 250, 0.9) !important;
+            padding: 2rem;
+            border-bottom: 0;
+            border-top: 0;
+            box-shadow: 0 -3px 0 #fefefe, 0 3px 0 #efefef, 2px 0px 4px #ccc
+        }
+
+        .uthsc-map-menu ul li {
+            font-size: 1.3rem;
+            padding: 0.5rem 0.6rem 0.5rem 1.5rem
+        }
+
+        .uthsc-map-menu ul li li {
+            font-size: initial;
+            padding: 0.1rem 0.5rem
+        }
+
+        @media screen and (min-width: 40em) {
+            .uthsc-map-menu {
+                position: absolute;
+                z-index: 1;
+                padding: 1rem !important
+            }
+        }
+
+        @media screen and (max-width: 39.9375em) {
+            .uthsc-map-menu {
+                background: none !important;
+                padding: 0;
+                box-shadow: none
+            }
+
+            .uthsc-map-menu .is-drilldown {
+                max-width: none;
+                width: 100%;
+                min-height: initial !important;
+                height: 148px
+            }
+        }
+
+        .uthsc-map-icon-toggle-box {
+            display: inline-block;
+            text-align: center;
+            padding: 0.6rem;
+            background-color: #efefef;
+            margin-left: 1rem;
+            max-width: 100px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-size: initial
+        }
+
+        .uthsc-map-list {
+            overflow: auto;
+            padding: 1rem
+        }
+
+        @media screen and (max-width: 39.9375em) {
+            .uthsc-map-list {
+                padding: 0.3rem 1rem;
+                height: 148px;
+                box-shadow: 0px -2px 4px #ddd inset, 0px 2px 4px #ddd inset
+            }
+        }
+
+        .uthsc-map-list li {
+            padding-bottom: 0.2rem
+        }
+
+        .uthsc-map-list ul {
+            width: 100%
+        }
+
+        li.is-submenu-item.is-drilldown-submenu-item:hover {
+            background: #ddd
+        }
+
+        li.is-submenu-item.is-drilldown-submenu-item a {
+            font-weight: normal;
+            text-indent: -0.65rem;
+            padding-left: 0.2rem
+        }
+
+        li.is-submenu-item.is-drilldown-submenu-item a:before {
+            content: "\203A \0020";
+            list-style: none;
+            font-size: 1.2em;
+            color: #aaa
+        }
+
+        .uthsc-map-controls {
+            margin: .5rem
+        }
+
+        .uthsc-map-controls .button {
+            margin: 0;
+            border-right: 1px solid;
+        }
+
+        .gm-style .gm-style-iw, .gm-style .gm-style-iw a, .gm-style .gm-style-iw span, .gm-style .gm-style-iw label, .gm-style .gm-style-iw div {
+            font-size: 11px
+        }
+
+        .uthsc-map-pop-up-image {
+            float: left;
+            margin: 0.5rem 10px 0 0;
+            width: 125px;
+            height: auto;
+            border: 1px solid #ddd
+        }
+
+        @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 568px)
+        and (orientation : landscape) {
+            .uthsc-map-pop-up-image {
+                width: 30%;
+            }
+        }
+        @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 568px)
+        and (orientation : portrait) {
+            .uthsc-map-pop-up-image {
+                width: 15%;
+            }
+        }
+
+        #get_link {
+            width: 125px;
+            background: none;
+            text-align: center
+        }
+
+        #permalink_label {
+            cursor: pointer;
+            color: inherit
+        }
+
+        #to_here_link, #from_here_link {
+            cursor: pointer
+        }
+
+        #directions_container {
+            float: left
+        }
+
+        #directions_container p {
+            margin-top: 1rem;
+            margin-bottom: .2rem
+        }
+
+        #visible_dir {
+            border: 1px solid #909090;
+            border-radius: 5px 0 0 5px;
+            font-size: 15px;
+            height: 30px;
+            padding: 0 0 0 6px;
+            width: 78%;
+            float: left
+        }
+
+        .submit {
+            border: 1px solid #A0A0A0;
+            border-radius: 0 5px 5px 0;
+            border-left: 0;
+            font-size: 15px;
+            height: 30px;
+            width: 21%
+        }
+
+        input:checked ~ .switch-paddle {
+            background: #F77F00
+        }
+    </style>
+
     <!--************-->
     <!--  Google Map-->
     <!--************-->
