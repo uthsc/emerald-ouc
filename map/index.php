@@ -234,12 +234,6 @@
     </script>
     <!--/ Google Map API-->
 
-    <!--  Google Map Scripts-->
-    <script src="js/directions.js"></script>
-    <script src="js/map-markers.js"></script>
-    <script src="js/toggle.js"></script>
-    <!--/ Google Map Scripts-->
-
     <!--************-->
     <!--/ Google Map-->
     <!--************-->
@@ -884,7 +878,14 @@
 <!--*************************-->
 <!--Footcode for Search UTHSC-->
 <!--*************************-->
+
+<!--  Google Map Scripts-->
 <script src="js/campusmap-resize.js"></script>
+<script src="js/directions.js"></script>
+<script src="js/map-markers.js"></script>
+<script src="js/toggle.js"></script>
+<!--/ Google Map Scripts-->
+
 <!--**************************-->
 <!--/Footcode for Search UTHSC-->
 <!--**************************-->
