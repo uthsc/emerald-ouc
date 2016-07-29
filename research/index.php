@@ -359,8 +359,7 @@
                 <div class="columns"></div>
                 <div class="columns">
                     <div class="row medium-up-2 large-up-3">
-                        <div class="columns">
-                            <!--Highlight box-->
+                        <!--<div class="columns">
                             <div class="uthsc-highlight-box uthsc-highlight-box-purple">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
@@ -380,9 +379,8 @@
                                 </a>
                             </div>
                         </div>
-
-                        <div class="columns">
-                            <!--Highlight box-->
+-->
+                       <!-- <div class="columns">
                             <div class="uthsc-highlight-box">
                                 <div class="uthsc-highlight-box-image">
                                     <img src="/-resources/2015/images/research-morrow-landscape.jpg"/>
@@ -400,7 +398,7 @@
                                 </div>
                             </div>
                         </div>
-
+-->
                         <div class="columns">
                             <!--Highlight box-->
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
@@ -413,7 +411,7 @@
                                     </div>
 
                                     <div class="uthsc-highlight-box-description">
-                                        <p></p>
+                                        <p>Fall 2016</p>
                                     </div>
                                 </a>
                             </div>
