@@ -358,57 +358,37 @@
     <!--*****************-->
     <!--UTHSC Section Nav-->
     <!--*****************-->
-    <div data-equalizer="heading-links">
-        <nav id="uthsc-section-navigation" data-equalizer="nested-links" aria-label="Current section menu"
-             role="navigation" class="hide-for-print">
-            <ul class="row collapse" >
-                <li class="uthsc-navigation-column small-2 columns">
-                    <a href="https://uthsc.edu/nursing/about-the-college/index.php" data-equalizer-watch="heading-links">About</a>
-                    <ul data-equalizer-watch="nested-links">
-                        <li><a href="https://uthsc.edu/nursing/about-the-college/mission.php">Mission & Philosophy</a></li>
-                        <li><a href="https://uthsc.edu/nursing/news/annual-reports.php">Annual Report</a></li>
-                        <li><a href="https://uthsc.edu/nursing/about-the-college/history.php">History</a></li>
-                        <li><a href="https://uthsc.edu/nursing/about-the-college/accreditation.php">Accreditation</a></li>
-                        <li><a href="https://uthsc.edu/nursing/documents/strategic-map-12-16-15.pdf">Strategic Map</a></li>
-                    </ul>
-                </li>
+    <nav id="uthsc-section-navigation" data-equalizer="nested-links" aria-label="Current section menu"
+         role="navigation" class="hide-for-print hide-class">
+        <ul class="row collapse" data-equalizer="heading-links">
 
-                <li class="uthsc-navigation-column small-2 columns">
-                    <a href="#" data-equalizer-watch="heading-links">Students</a>
-                    <ul data-equalizer-watch="nested-links">
-                        <li><a href="https://uthsc.edu/nursing/future-students/index.php">Future Students</a></li>
-                        <li><a href="https://uthsc.edu/nursing/acceptedstudents.php">Accepted Students</a></li>
-                        <li><a href="https://uthsc.edu/nursing/current-students/index.php">Current Students</a></li>
-                    </ul>
-                </li>
+            <li class="uthsc-navigation-column small-2 columns">
+                <a href="/education/" data-equalizer-watch="heading-links"><span class="fa fa-graduation-cap" aria-hidden="true"></span> Academics</a>
+            </li>
 
-                <li class="uthsc-navigation-column small-2 columns">
-                    <a href="https://uthsc.edu/nursing/academic-programs/index.php" data-equalizer-watch="heading-links">Academic Programs</a>
-                    <ul data-equalizer-watch="nested-links"></ul>
-                </li>
+            <li class="uthsc-navigation-column small-2 columns">
+                <a href="research/" data-equalizer-watch="heading-links"><span class="fa fa-flask"></span> Research</a>
+            </li>
 
-                <li class="uthsc-navigation-column small-2 columns">
-                    <a href="https://uthsc.edu/nursing/research-programs/index.php" data-equalizer-watch="heading-links">Research Programs</a>
-                    <ul data-equalizer-watch="nested-links">
+            <li class="uthsc-navigation-column small-2 columns">
+                <a href="/clinicalcare/" data-equalizer-watch="heading-links"><span class="fa fa-medkit" aria-hidden="true"></span>Clinical Care</a>
+            </li>
 
-                    </ul>
-                </li>
+            <li class="uthsc-navigation-column small-2 columns">
+                <a href="/publicservice/" data-equalizer-watch="heading-links"><span class="fa fa-globe"></span>Public Service</a>
+            </li>
 
-                <li class="uthsc-navigation-column small-2 columns">
-                    <a href="https://uthsc.edu/nursing/practice-programs/index.php" data-equalizer-watch="heading-links">Practice Programs</a>
-                    <ul data-equalizer-watch="nested-links"></ul>
-                </li>
+            <li class="uthsc-navigation-column small-2 columns">
+                <a href="/aboututhsc/" data-equalizer-watch="heading-links"><span class="fa fa-file-text-o"></span>About UTHSC</a>
+            </li>
 
-                <li class="uthsc-navigation-column small-2 columns">
-                    <a href="https://uthsc.edu/nursing/continuing-education/index.php" data-equalizer-watch="heading-links">Continuing Education</a>
-                    <ul data-equalizer-watch="nested-links">
-                        <li><a href="https://uthsc.edu/nursing/jobs.php">Job Opportunities</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    <div class="uthsc-section-nav-placeholder show-for-large" data-equalizer-watch="heading-links"></div>
-    </div>
+            <li class="uthsc-navigation-column small-2 columns">
+                <a href="http://uthscalumni.com/" data-equalizer-watch="heading-links"><span class="fa fa-users" aria-hidden="true"></span>Alumni &amp; Friends</a>
+            </li>
+
+            <li class="uthsc-navigation-column small-2 columns"></li>
+        </ul>
+    </nav>
     <!--******************-->
     <!--/UTHSC Section Nav-->
     <!--******************-->
