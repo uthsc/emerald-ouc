@@ -736,41 +736,37 @@
     </button>
 
     <ul>
-        <li><a href="#" class="link-heading">About</a>
+        <li><a href="#" class="link-heading">Leadership</a>
             <ul>
-                <li><a href="#">Mission & Vision </a></li>
-                <li><a href="#">Vice Chancellor for Research </a></li>
-                <li><a href="#">Reports and Publications </a></li>
+                <li><a href="/research/about/mission-vision.php">Mission &amp; Vision </a></li>
+                <li><a href="/research/vc_research.php">Vice Chancellor for Research </a></li>
                 <li><a href="/research/documents/research-organizational-chart.pdf">Organizational Chart</a></li>
-                <li><a href="#">News & Events</a></li>
+                <li><a href="/research/documents/research-resources/space-plan-2016.pdf">Allocation of Research Space Plan</li>
             </ul>
         </li>
         <li><a href="#" class="link-heading">Grants & Research Agreements</a>
             <ul>
-                <li><a href="http://uthsc.edu/research/research_administration/staff.php">About</a></li>
+                <li><a href="research/research_administration/staff.php">About</a></li>
                 <li><a href="https://tennessee.cayuse424.com/">Evisions/Cayuse SP</a></li>
-                <li><a href="http://uthsc.edu/research/research_administration/research_grants.php">Grants</a></li>
-                <li><a href="">Research Agreements</a></li>
-                <li><a href="http://uthsc.edu/research/research_administration/research_contracts/index.php">Forms & Information</a></li>
-                <li><a href="http://uthsc.edu/research/research_administration/FAQ.php">FAQs</a></li>
+                <li><a href="/research/research_administration/research_grants.php">Grants</a></li>
+                <!--<li><a href="">Research Agreements</a></li>-->
+                <li><a href="/research/research_administration/research_contracts/index.php">Forms & Information</a></li>
+                <li><a href="/research/research_administration/FAQ.php">FAQs</a></li>
             </ul>
         </li>
         <li><a href="#" class="link-heading">Compliance</a>
             <ul>
-                <li><a href="#">IRB Administration </a></li>
-                <li><a href="#">Animal Care & Use (IACUC)</a></li>
-                <li><a href="#">Institutional Biosafety Committee</a></li>
-                <li><a href="#">Export Control</a></li>
-                <li><a href="#">Radiation Safety Committee </a></li>
+                <li><a href="/research/research_compliance/irb/">IRB</a></li>
+                <li><a href="/research/research_compliance/IACUC/index.php">Animal Care &amp; Use (IACUC)</a></li>
+                <li><a href="/research/research_compliance/IBC/index.php">Institutional Biosafety Committee</a></li>
+                <li><a href="/research/research_compliance/export.php">Export Control</a></li>
+                <li><a href="/research/research_compliance/rsc.php">Radiation Safety Committee </a></li>
             </ul>
         </li>
         <li><a href="#" class="link-heading">Institutional Cores</a>
-            <ul>
-                <li><a href="#">Mission & Vision </a></li>
-                <li><a href="#">Core List </a></li>
-            </ul>
+
         </li>
-        <li><a href="#" class="link-heading">Centers & Institutes</a>
+        <!--<li><a href="#" class="link-heading">Centers & Institutes</a>
             <ul>
 
             </ul>
@@ -780,7 +776,7 @@
             <ul>
 
             </ul>
-        </li>
+        </li>-->
     </ul>
 
     <!--Safari bottom nav fix-->
