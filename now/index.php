@@ -265,8 +265,6 @@
             </div>
 
             <div class="uthsc-now-more" style="text-align:center;"></div>
-
-            <!--/Social-->
         </div>
 
     </div>
@@ -464,6 +462,17 @@
 <!--********-->
 <!--/Scripts-->
 <!--********-->
+
+<style>
+    .uthsc-now-more .uthsc-social-icons { margin-bottom: .5em; }
+    .uthsc-now-more .uthsc-social-icons a { padding: 0 .5em; }
+    .uthsc-now-more .fa-facebook {color:#3b5999}
+    .uthsc-now-more .fa-twitter {color:#55acee}
+    .uthsc-now-more .fa-instagram {color:#3f729b}
+    .uthsc-now-more .fa-linkedin {color:#0077b5}
+    .uthsc-now-more .fa-youtube {color:#cd201f}
+    .uthsc-now-more .fa-pinterest {color:#bd081c}
+</style>
 
 </body>
 </html>

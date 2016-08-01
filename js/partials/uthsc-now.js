@@ -3,6 +3,9 @@ var url = '/now/uthsc-now.json',
 	loadPostsLast = 20;
 
 function renderNewsPosts(containerElement, data, masonry) {
+
+	var remainingPostCount = posts.length - loadPostsLast;
+
 	$(containerElement).append(parseUthscNowPosts(data));
 
 	var $grid = $('.uthsc-now').imagesLoaded( function() {
