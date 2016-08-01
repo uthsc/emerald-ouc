@@ -362,27 +362,26 @@
                 <div class="columns"></div>
                 <div class="columns">
                     <div class="row medium-up-2 large-up-3">
-                        <!--<div class="columns">
+                        <div class="columns">
                             <div class="uthsc-highlight-box uthsc-highlight-box-purple">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="/-resources/2015/images/research-kell-landscape.jpg">
+                                        <img src="/research/images/research-highlight-box.png">
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
-                                        <p>The VCR Distinguished Lecture Series Featuring Prof. Douglas B. Kell</p>
+                                        <p>Hot Topics in Research featuring Dr. Kevin Shianna & Dr. Zach Johnson </p>
                                     </div>
 
                                     <div class="uthsc-highlight-box-description">
-                                        <p><em>"The Cellular Uptake of Pharmaceutical Drugs is Transporter-mediated, and
-                                            Thus a Problem Not of Biophysics but of Systems Biology"</em></p>
-                                        <p>June 16, 2016 from 1-2pm<br />
-                                            College of Pharmacy, Room 101</p>
+                                        <p><em>"Illumina’s sequencing and array based solutions for genomic research"</em></p>
+                                        <p>August 23, 2016 from 12-1pm <br />
+                                            GEB A303</p>
                                     </div>
                                 </a>
                             </div>
                         </div>
--->
+
                        <!-- <div class="columns">
                             <div class="uthsc-highlight-box">
                                 <div class="uthsc-highlight-box-image">
