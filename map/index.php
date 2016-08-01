@@ -27,6 +27,30 @@
     <?php include ("map-db-connection.php"); ?>
 
     <style>
+        .main-content .vertical a {
+            color: #555555 !important;
+        }
+
+        .is-drilldown-submenu-parent>a {
+           padding: .6rem !important;
+        }
+
+        .main-content .vertical a .fa {
+            width: 1rem;
+            text-align: center
+        }
+
+        .main-content .vertical a .fa.fa-building {
+            color: #006a4d
+        }
+
+        .main-content .vertical a .fa.fa-car {
+            color: #00a5e3
+        }
+
+        .main-content .vertical a .fa.fa-desktop {
+            color: #e8cf00
+        }
         .uthsc-map-link {
             background: #00a5e3;
             color: #fff;
@@ -56,12 +80,13 @@
 
         .uthsc-map-menu ul li {
             font-size: 1.3rem;
-            padding: 0.5rem 0.6rem 0.5rem 1.5rem
         }
 
         .uthsc-map-menu ul li li {
             font-size: initial;
-            padding: 0.1rem 0.5rem
+        }
+        .uthsc-map-menu ul li li a {
+            padding: 0.1rem 0;
         }
 
         @media screen and (min-width: 40em) {
@@ -72,6 +97,10 @@
             }
         }
 
+        .uthsc-map-menu .is-drilldown {
+            min-height: initial !important;
+            height: 50vh !important;
+        }
         @media screen and (max-width: 39.9375em) {
             .uthsc-map-menu {
                 background: none !important;
@@ -83,7 +112,7 @@
                 max-width: none;
                 width: 100%;
                 min-height: initial !important;
-                height: 148px
+                height: initial !important;
             }
         }
 
