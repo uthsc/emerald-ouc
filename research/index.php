@@ -344,8 +344,8 @@
                     <a class="button" href="https://www.uthsc.edu/CRC/">Clinical Research</a>
                     <!--<a class="button" href="">Research Development</a>
                     <a class="button" href="">Research Integrity Officer</a>
-                    <a class="button" href="">News &amp; Events</a>-->
-                    <a class="button" href="">Operational Strategic Plan for Research</a>
+                    <a class="button" href="">News &amp; Events</a>
+                    <a class="button" href="">Operational Strategic Plan for Research</a>-->
                     <a class="button" href="/research/documents/research-resources/space-plan-2016.pdf">Allocation of Research Space Plan</a>
                 </p>
             </div>
