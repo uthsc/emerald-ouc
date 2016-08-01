@@ -394,14 +394,14 @@
     <!--Content-->
     <!--*******-->
     <div class="main-content" id="main-content" aria-label="Page content" role="main">
-
-
+        <br />
+        <br />
         <!--**********-->
         <!--Page title-->
         <!--**********-->
         <div class="row">
             <div class="columns uthsc-row-title">
-                <h1>UTHSC Campus Map</h1>
+                <h1>Campus Map</h1>
             </div>
         </div>
         <div class="button-group secondary hide-for-small-only">
