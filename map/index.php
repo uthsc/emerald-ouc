@@ -342,10 +342,6 @@
                     </a>
                     <span class="fa fa-chevron-right" aria-hidden="true"></span>
                 </li>
-                <li>
-                    <a aria-label="go to parent section - Research" href="#">Nursing</a>
-                    <span class="fa fa-chevron-right" aria-hidden="true"></span>
-                </li>
                 <li class="disabled" aria-hidden="true">Current Page</li>
             </ul>
         </div>
