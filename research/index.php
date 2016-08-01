@@ -126,48 +126,45 @@
          role="navigation" class="hide-for-print">
         <ul class="row collapse" >
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">About</a>
+                <a href="#" data-equalizer-watch="heading-links">Leadership</a>
                 <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">Mission & Vision </a></li>
-                    <li><a href="#">Vice Chancellor for Research </a></li>
-                    <li><a href="#">Reports and Publications </a></li>
+                    <li><a href="#">Mission &amp; Vision </a></li>
+                    <li><a href="/research/vc_research.php">Vice Chancellor for Research </a></li>
                     <li><a href="#">Organizational Chart</a></li>
-                    <li><a href="#">News & Events</a></li>
+                    <li><a href="#">Strategic Plans and Guides</a></li>
                 </ul>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Grants & Research<br /> Agreements</a>
+                <a href="/research/research_administration/index.php" data-equalizer-watch="heading-links">Grants & Research<br /> Agreements</a>
                 <ul data-equalizer-watch="nested-links">
-                    <li><a href="http://uthsc.edu/research/research_administration/staff.php">About</a></li>
+                    <li><a href="research/research_administration/staff.php">About</a></li>
                     <li><a href="https://tennessee.cayuse424.com/">Evisions/Cayuse SP</a></li>
-                    <li><a href="http://uthsc.edu/research/research_administration/research_grants.php">Grants</a></li>
-                    <li><a href="">Research Agreements</a></li>
-                    <li><a href="http://uthsc.edu/research/research_administration/research_contracts/index.php">Forms & Information</a></li>
-                    <li><a href="http://uthsc.edu/research/research_administration/FAQ.php">FAQs</a></li>
+                    <li><a href="/research/research_administration/research_grants.php">Grants</a></li>
+                    <!--<li><a href="">Research Agreements</a></li>-->
+                    <li><a href="/research/research_administration/research_contracts/index.php">Forms & Information</a></li>
+                    <li><a href="/research/research_administration/FAQ.php">FAQs</a></li>
                 </ul>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Compliance </a>
+                <a href="/research/research_compliance/index.php" data-equalizer-watch="heading-links">Compliance </a>
                 <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">IRB Administration </a></li>
-                    <li><a href="#">Animal Care & Use (IACUC)</a></li>
-                    <li><a href="#">Institutional Biosafety Committee</a></li>
-                    <li><a href="#">Export Control</a></li>
-                    <li><a href="#">Radiation Safety Committee </a></li>
+                    <li><a href="/research/research_compliance/irb/">IRB</a></li>
+                    <li><a href="/research/research_compliance/IACUC/index.php">Animal Care &amp; Use (IACUC)</a></li>
+                    <li><a href="/research/research_compliance/IBC/index.php">Institutional Biosafety Committee</a></li>
+                    <li><a href="/research/research_compliance/export.php">Export Control</a></li>
+                    <li><a href="/research/research_compliance/rsc.php">Radiation Safety Committee </a></li>
                 </ul>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Institutional Cores</a>
+                <a href="/research/research_resources/index.php" data-equalizer-watch="heading-links">Institutional Cores</a>
                 <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">Mission & Vision </a></li>
-                    <li><a href="#">Core List </a></li>
                 </ul>
             </li>
 
-            <li class="uthsc-navigation-column small-2 columns">
+            <!--<li class="uthsc-navigation-column small-2 columns">
                 <a href="#" data-equalizer-watch="heading-links">Centers & Institutes</a>
                 <ul data-equalizer-watch="nested-links">
 
@@ -175,9 +172,9 @@
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Offices & Resources</a>
+                <a href="#" data-equalizer-watch="heading-links">Research Resources</a>
                 <ul data-equalizer-watch="nested-links"></ul>
-            </li>
+            </li>-->
         </ul>
     </nav>
     <div class="uthsc-section-nav-placeholder show-for-large" data-equalizer-watch="heading-links"></div>
@@ -345,8 +342,11 @@
             <div class="columns">
                 <p style="text-align:center;">
                     <a class="button" href="https://www.uthsc.edu/CRC/">Clinical Research</a>
-                    <a class="button" href="">Research Development</a>
+                    <!--<a class="button" href="">Research Development</a>
                     <a class="button" href="">Research Integrity Officer</a>
+                    <a class="button" href="">News &amp; Events</a>-->
+                    <a class="button" href="">Operational Strategic Plan for Research</a>
+                    <a class="button" href="">Allocation of Research Space Plan</a>
                 </p>
             </div>
         </div>
@@ -362,8 +362,7 @@
                 <div class="columns"></div>
                 <div class="columns">
                     <div class="row medium-up-2 large-up-3">
-                        <div class="columns">
-                            <!--Highlight box-->
+                        <!--<div class="columns">
                             <div class="uthsc-highlight-box uthsc-highlight-box-purple">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
@@ -383,9 +382,8 @@
                                 </a>
                             </div>
                         </div>
-
-                        <div class="columns">
-                            <!--Highlight box-->
+-->
+                       <!-- <div class="columns">
                             <div class="uthsc-highlight-box">
                                 <div class="uthsc-highlight-box-image">
                                     <img src="/-resources/2015/images/research-morrow-landscape.jpg"/>
@@ -403,7 +401,7 @@
                                 </div>
                             </div>
                         </div>
-
+-->
                         <div class="columns">
                             <!--Highlight box-->
                             <div class="uthsc-highlight-box uthsc-highlight-box-green">
@@ -416,7 +414,7 @@
                                     </div>
 
                                     <div class="uthsc-highlight-box-description">
-                                        <p></p>
+                                        <p>Fall 2016</p>
                                     </div>
                                 </a>
                             </div>
@@ -565,13 +563,13 @@
                 <h4>Office Links</h4><ul>
                     <li><a href="http://uthsc.edu/research/about.php">About the Office of Research </a></li>
                     <li><a href="http://uthsc.edu/research/research_administration/index.php">Grants & Research Agreements </a></li>
-                    <li><a href="(linked to Research Development landing page)">Research Development</a></li>
+                    <!--<li><a href="(linked to Research Development landing page)">Research Development</a></li>-->
                     <li><a href="http://uthsc.edu/research/research_compliance/index.php">Research Compliance</a></li>
                     <li><a href="http://uthsc.edu/research/research_resources/index.php">Institutional Cores</a></li>
                     <li><a href="http://uthsc.edu/research/research_programs/index.php">Centers & Institutes </a></li>
                     <li><a href="http://uthsc.edu/research/research_compliance/irb/">Institutional Review Board </a></li>
                     <li><a href="http://utrf.tennessee.edu">Technology Transfer & Licensing </a></li>
-                    <li><a href="(linked to Offices & Resources landing page)">Offices & Resources</a></li>
+                    <!--<li><a href="(linked to Offices & Resources landing page)">Offices & Resources</a></li>-->
                 </ul>
             </div>
             <div class="medium-4 columns footer-box hide-for-print">
@@ -603,7 +601,7 @@
                     <span class="fa fa-print"></span> print
                     </a>
                 </div>
-                <h5>Connect</h5>
+               <!-- <h5>Connect</h5>
                 <div class="uthsc-connect">
                     <a href="https://twitter.com/uthsc" class="uthsc-twitter">
                         <span class="fa fa-twitter-square fa-3x"></span>
@@ -657,7 +655,7 @@
                         <span class="fa fa-snapchat-square fa-3x"></span>
                         <span class="show-for-sr">connect on snapchat</span>
                     </a>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
@@ -854,10 +852,10 @@
                 <li><a href="http://events.uthsc.edu/">Calendar</a></li>
                 <li><a href="http://uthsc.edu/hr/employment/">Career Opportunities</a></li>
                 <li><a href="/ilogin/">iLogin</a></li>
-                <li><a href="/map/">Maps</a></li>
+                <li><a href="/redesign/map/">Maps</a></li>
                 <li><a href="http://utap.tennessee.edu/">MyUT</a></li>
                 <li><a href="http://news.uthsc.edu/">News</a></li>
-                <li><a href="/email/transition/">Webmail</a></li>
+                <li><a href="http://o365.uthsc.edu/">Webmail</a></li>
             </ul>
         </li>
     </ul>

@@ -77,18 +77,18 @@
     <!--**********************-->
     <!--Emergency Notification-->
     <!--**********************-->
-    <div class="row expanded hide-for-print emergency-notification" style="display:none;">
-        <div class="columns callout alert large-12" style="margin-bottom:0; padding:0;" data-closable>
-            <div class="row">
-                <h2>Emergency Notification!</h2>
-                <p>This section will be used for emergency notifications.</p>
-
-                <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-        </div>
-    </div>
+<!--    <div class="row expanded hide-for-print emergency-notification" style="display:none;">-->
+<!--        <div class="columns callout alert large-12" style="margin-bottom:0; padding:0;" data-closable>-->
+<!--            <div class="row">-->
+<!--                <h2>Emergency Notification!</h2>-->
+<!--                <p>This section will be used for emergency notifications.</p>-->
+<!---->
+<!--                <button class="close-button" aria-label="Dismiss alert" type="button" data-close>-->
+<!--                    <span aria-hidden="true">&times;</span>-->
+<!--                </button>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <!--***********************-->
     <!--/Emergency Notification-->
     <!--***********************-->
@@ -505,7 +505,7 @@
             </div>
             <div class="medium-4 columns footer-box">
                 <h4>College Links</h4><ul>
-                    <!--<li><a href="">View an Info Session</a></li>-->
+                    <li><a href="https://www.youtube.com/playlist?list=PLD1GQMb2ipWDIYwbGfEDK2-IBgVonj39z">View an Info Session&nbsp;<span class="fa fa-video-camera" aria-hidden="true" style="display: inherit;"></span></a></li>
                     <li><a href="/nursing/future-students/admissions/index.php">Apply Online</a></li>
                     <li><a href="/finaid/cost/college-of-nursing.php">Tuition & Fees</a></li>
                     <li><a href="/nursing/future-students/scholarship_information.php">Scholarships</a></li>
@@ -541,61 +541,26 @@
                     <span class="fa fa-print" aria-hidden="true"></span> print
                     </a>
                 </div>
-                <!--<h5>Connect</h5>
+                <h5>Connect</h5>
                 <div class="uthsc-connect">
-                    <a href="https://twitter.com/uthsc" class="uthsc-twitter">
+                    <a href="https://twitter.com/UTHSCnursing" class="uthsc-twitter">
                         <span class="fa fa-twitter-square fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on twitter</span>
                     </a>
-                    <a href="https://www.facebook.com/uthsc#" class="uthsc-facebook">
+                    <a href="https://www.facebook.com/nursing.uthsc" class="uthsc-facebook">
                         <span class="fa fa-facebook-square fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on facebook</span>
                     </a>
-                    <a href="https://www.instagram.com/uthsc/" class="uthsc-instagram">
+                    <a href="https://www.instagram.com/uthscnursing" class="uthsc-instagram">
                         <span class="fa fa-instagram fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on instagram</span>
                     </a>
-                    <a href="https://www.youtube.com/user/uthsc" class="uthsc-youtube">
+                    <a href="https://www.youtube.com/channel/UCKH6p0ubWMs4G--z9Cp_AkQ" class="uthsc-youtube">
                         <span class="fa fa-youtube-square fa-3x" aria-hidden="true"></span>
                         <span class="show-for-sr">connect on youtube</span>
                     </a>
-                    <a href="#" class="uthsc-linkedin">
-                        <span class="fa fa-linkedin-square fa-3x" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on linkedin</span>
-                    </a>
-                    <a href="#" class="uthsc-pinterest">
-                        <span class="fa fa-pinterest-square fa-3x" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on pinterest</span>
-                    </a>
-                    <a href="#" class="uthsc-google-plus">
-                        <span class="fa fa-google-plus-square fa-3x" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on google plus</span>
-                    </a>
-                    <a href="#" class="uthsc-tumblr">
-                        <span class="fa fa-tumblr-square fa-3x" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on tumblr</span>
-                    </a>
-                    <a href="#" class="uthsc-flickr">
-                        <span class="fa fa-flickr fa-3x" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on flickr</span>
-                    </a>
-                    <a href="#" class="uthsc-reddit">
-                        <span class="fa fa-reddit-square fa-3x" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on reddit</span>
-                    </a>
-                    <a href="#" class="uthsc-vine">
-                        <span class="uthsc-fa-vine" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on vine</span>
-                    </a>
-                    <a href="#" class="uthsc-vimeo">
-                        <span class="fa fa-vimeo-square fa-3x" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on vimeo</span>
-                    </a>
-                    <a href="#" class="uthsc-snapchat">
-                        <span class="fa fa-snapchat-square fa-3x" aria-hidden="true"></span>
-                        <span class="show-for-sr">connect on snapchat</span>
-                    </a>
-                </div>-->
+
+                </div>
             </div>
         </div>
     </div>
@@ -608,7 +573,7 @@
     <!--Last Published-->
     <!--**************-->
     <div class="uthsc-last-published text-center">
-        <p><small>Last Published: Jul 26, 2016</small></p>
+        <p><small>Last Published: Jul 29, 2016</small></p>
     </div>
     <!--***************-->
     <!--/Last Published-->
@@ -785,7 +750,7 @@
                 <li><a href="http://events.uthsc.edu/">Calendar</a></li>
                 <li><a href="http://uthsc.edu/hr/employment/">Career Opportunities</a></li>
                 <li><a href="/ilogin/">iLogin</a></li>
-                <li><a href="/map/">Maps</a></li>
+                <li><a href="/redesign/map/">Maps</a></li>
                 <li><a href="http://utap.tennessee.edu/">MyUT</a></li>
                 <li><a href="http://news.uthsc.edu/">News</a></li>
                 <li><a href="/email/transition/">Webmail</a></li>

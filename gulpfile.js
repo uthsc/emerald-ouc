@@ -130,7 +130,7 @@ gulp.task('uthsc-js', function() {
 
 gulp.task('buildjs',
 	[ 'uthsc-now-js',
-		'uthsc-now-js',
+		'uthsc-now-homepage-js',
 		'uthsc-js',
 		'copy-vendor-js',
 		'uthsc-emergency-notification',

@@ -12,7 +12,8 @@
     "emerald": "uthsc/emerald",
     "masonry": "^4.1.0",
     "imagesloaded": "^4.1.0",
-    "iframe-resizer": "^3.5.5"
+    "iframe-resizer": "^3.5.5",
+    "fontawesome-markers": "^4.6.1"
   },
   "ignore": [
     "**/.*",
