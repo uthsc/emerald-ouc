@@ -116,7 +116,7 @@
                 <li>
                     <div class="show-for-large">
                         <!--Search form-->
-                        <?php include('../uthsc-search-form.php'); ?>
+                        <?php include('../redesign/uthsc-search-form.php'); ?>
                         <!--/Search form-->
                     </div>
                 </li>
@@ -144,7 +144,7 @@
         <div class="row">
             <div class="hide-for-large columns small-collapse">
                 <!--Search form-->
-                <?php include('../uthsc-search-form.php'); ?>
+                <?php include('../redesign/uthsc-search-form.php'); ?>
                 <!--/Search form-->
             </div>
         </div>
@@ -291,7 +291,7 @@
     <!--*************-->
     <!--Global Footer-->
     <!--*************-->
-    <?php include('/now/uthsc-global-footer.php') ?>
+    <?php include('../redesign/uthsc-global-footer.php') ?>
     <!--**************-->
     <!--/Global Footer-->
     <!--**************-->
@@ -327,7 +327,7 @@
 
     <div class="off-canvas-search">
         <!--Search form-->
-        <?php include('/now/uthsc-search-form.php'); ?>
+        <?php include('../redesign/uthsc-search-form.php'); ?>
         <!--/Search form-->
     </div>
 
@@ -363,7 +363,7 @@
 
     <div class="off-canvas-search">
         <!--Search form-->
-        <?php include('/now/uthsc-search-form.php'); ?>
+        <?php include('../redesign/uthsc-search-form.php'); ?>
         <!--/Search form-->
     </div>
 
