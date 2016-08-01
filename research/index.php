@@ -130,7 +130,7 @@
                 <ul data-equalizer-watch="nested-links">
                     <li><a href="#">Mission &amp; Vision </a></li>
                     <li><a href="/research/vc_research.php">Vice Chancellor for Research </a></li>
-                    <li><a href="#">Organizational Chart</a></li>
+                    <li><a href="/research/documents/research-organizational-chart.pdf">Organizational Chart</a></li>
                     <li><a href="#">Strategic Plans and Guides</a></li>
                 </ul>
             </li>
@@ -741,7 +741,7 @@
                 <li><a href="#">Mission & Vision </a></li>
                 <li><a href="#">Vice Chancellor for Research </a></li>
                 <li><a href="#">Reports and Publications </a></li>
-                <li><a href="#">Organizational Chart</a></li>
+                <li><a href="/research/documents/research-organizational-chart.pdf">Organizational Chart</a></li>
                 <li><a href="#">News & Events</a></li>
             </ul>
         </li>
