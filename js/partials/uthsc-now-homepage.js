@@ -30,7 +30,7 @@ function renderNewsPosts(containerElement, data, masonry) {
 		});
 	} else {
 		// add go to uthsc now button
-		$('.uthsc-now-more').html('<a class="button" href="now">Go to UTHSC-Now&nbsp;<span class="fa fa-chevron-right" aria-hidden="true"></span></a>');
+		$('.uthsc-now-more').html('<a class="button" href="/now">Go to UTHSC-Now&nbsp;<span class="fa fa-chevron-right" aria-hidden="true"></span></a>');
 	}
 }
 
