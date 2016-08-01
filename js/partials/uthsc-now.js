@@ -25,12 +25,47 @@ function renderNewsPosts(containerElement, data, masonry) {
 		$('.uthsc-now').masonry();
 	}
 
-	$('.uthsc-now-more').html('<div class="button uthsc-now-load-more-button">Load More</div>');
-	$('.uthsc-now-load-more-button').click( function(){
-		renderNewsPosts('.uthsc-now',posts,true);
-	});
-}
+	if (remainingPostCount > 20) {
+		$('.uthsc-now-more').html('<div class="button uthsc-now-load-more-button">Load More</div>');
 
+		$('.uthsc-now-load-more-button').click( function(){
+			renderNewsPosts('.uthsc-now',posts,true);
+		});
+	} else {
+
+		var nowSocial = '';
+			nowSocial+='<div class="row">';
+			nowSocial+='<div class="columns text-center uthsc-social-icons" aria-label="UTHSC on social media">';
+			nowSocial+='<p>That\'s all for now<br/>Follow UTHSC online...</p>'			;
+			nowSocial+='<a href="https://facebook.com/uthsc" aria-label="facebook">';
+			nowSocial+='<span class="fa fa-facebook fa-2x " aria-hidden="true"></span>';
+			nowSocial+='<span class="show-for-sr">facebook</span>';
+			nowSocial+='</a>';
+			nowSocial+='<a href="https://twitter.com/uthsc" aria-label="twitter">';
+			nowSocial+='<span class="fa fa-twitter fa-2x " aria-hidden="true"></span>';
+			nowSocial+='<span class="show-for-sr">twitter</span>';
+			nowSocial+='</a>';
+			nowSocial+='<a href="https://instagram.com/uthsc" aria-label="instagram">';
+			nowSocial+='<span class="fa fa-instagram fa-2x " aria-hidden="true"></span>';
+			nowSocial+='<span class="show-for-sr">instagram</span>';
+			nowSocial+='</a>';
+			nowSocial+='<a href="https://linkedin.com/company/university-of-tennessee-health-science-center" aria-label="linked in">';
+			nowSocial+='<span class="fa fa-linkedin fa-2x " aria-hidden="true"></span>';
+			nowSocial+='<span class="show-for-sr">linked in</span>';
+			nowSocial+='</a>';
+			nowSocial+='<a href="https://youtube.com/user/uthsc" aria-label="youtube">';
+			nowSocial+='<span class="fa fa-youtube fa-2x " aria-hidden="true"></span>';
+			nowSocial+='<span class="show-for-sr">You-tube</span>';
+			nowSocial+='</a>';
+			nowSocial+='<a href="https://pinterest.com/uthsc/" aria-label="pinterest">';
+			nowSocial+='<span class="fa fa-pinterest fa-2x " aria-hidden="true"></span>';
+			nowSocial+='<span class="show-for-sr">pinterest</span>';
+			nowSocial+='</a>';
+			nowSocial+='</div>';
+			nowSocial+='</div>';
+		$('.uthsc-now-more').html(nowSocial);
+	}
+}
 
 function limitCaptionChars(string, limit) {
 	if(!!string && string.length > limit){
@@ -43,7 +78,6 @@ function limitCaptionChars(string, limit) {
 
 	return string;
 }
-
 
 function parseUthscNowPosts(data) {
 
@@ -101,7 +135,6 @@ function parseUthscNowPosts(data) {
 
 	return html;
 }
-
 
 $.ajax({
 	type: "GET",
