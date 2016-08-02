@@ -137,7 +137,7 @@
         @media screen and (max-width: 39.9375em) {
             .uthsc-map-list {
                 padding: 0.3rem 1rem;
-                height: 148px;
+                height: 155px;
                 box-shadow: 0px -2px 4px #ddd inset, 0px 2px 4px #ddd inset
             }
         }
