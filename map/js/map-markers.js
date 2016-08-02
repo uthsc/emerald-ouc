@@ -1111,6 +1111,7 @@ function initialize() {
     maxWidth: 350
 });
     // Open InfoWindow from URL
+    var locationID = "";
     scrollToMarker(locationID);
     // Close infowindows when map clicked
     google.maps.event.addListener(map, "click", function () {
