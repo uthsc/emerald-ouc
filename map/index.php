@@ -137,7 +137,7 @@
         @media screen and (max-width: 39.9375em) {
             .uthsc-map-list {
                 padding: 0.3rem 1rem;
-                height: 148px;
+                height: 155px;
                 box-shadow: 0px -2px 4px #ddd inset, 0px 2px 4px #ddd inset
             }
         }
@@ -446,7 +446,7 @@
                             <li>
                                 <a href="#" id="uthsc-map-buildings"><span class="fa fa-building secondary" aria-hidden="true"></span>
                                     &emsp;Buildings</a>
-                                <ul class="vertical menu uthsc-map-list uthsc-map-building-list">
+                                <ul class="vertical menu uthsc-map-list">
 
                                     <div class="uthsc-map-icon-toggle-box">
                                         <p>Buildings</p>
@@ -464,7 +464,7 @@
                             <li>
                                 <a href="#"><span class="fa fa-car secondary" aria-hidden="true"></span>
                                     &emsp;Parking</a>
-                                <ul class="vertical menu uthsc-map-list uthsc-map-parking-list">
+                                <ul class="vertical menu uthsc-map-list">
                                     <div class="uthsc-map-icon-toggle-box">
                                         <p>Parking</p>
                                         <div class="switch tiny">
@@ -481,7 +481,7 @@
                             <li>
                                 <a href="#"><span class="fa fa-desktop secondary" aria-hidden="true"></span>
                                     &emsp;Student Computer Labs</a>
-                                <ul class="vertical menu uthsc-map-list uthsc-map-labs-list">
+                                <ul class="vertical menu uthsc-map-list">
                                     <div class="uthsc-map-icon-toggle-box">
                                         <p>Student Computer Labs</p>
                                         <div class="switch tiny">
@@ -498,7 +498,7 @@
                             <li>
                                 <a href="#"><span class="fa fa-print secondary" aria-hidden="true"></span>
                                     &emsp;Printable Maps (PDF)</a>
-                                <ul class="vertical menu uthsc-map-list uthsc-map-labs-list">
+                                <ul class="vertical menu uthsc-map-list">
                                     <li><a href="sitemap/campusmap.pdf">Memphis</a></li>
                                     <li><a href="http://gsm.utmck.edu/about/documents/utmc_campus_map2014.pdf">Knoxville</a></li>
                                     <li><a href="sitemap/chattanooga-map.pdf">Chattanooga</a></li>
