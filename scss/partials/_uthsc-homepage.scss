@@ -78,8 +78,7 @@
               padding: .97rem;
               font-size: 1.3rem;
               font-weight: 300;
-
-
+              padding-left: 1.5rem;
 
               &:hover {
                 color: #fff;
@@ -102,7 +101,7 @@
                 color: #222;
                 background-color: #fff;
                 border-left: 4px solid $uthsc-orange;
-                padding-left: 7px;
+                padding-left: 1.25rem;
                 &:after {
                   color: $uthsc-orange;
                 }
