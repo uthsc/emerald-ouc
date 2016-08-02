@@ -15,11 +15,11 @@
     <!--/unfurling-->
 
     <title>Office of Research | UTHSC</title>
-    <link rel="stylesheet" href="../-resources/2015/css/uthsc.css">
-    <link rel="stylesheet" href="../-resources/2015/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300">
+    <link rel="stylesheet" href="/-resources/2015/css/uthsc.css">
+    <link rel="stylesheet" href="/-resources/2015/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
-          href="http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
+          href="https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
 </head>
 <body>
 
@@ -56,7 +56,7 @@
     <header aria-label="UTHSC Logo" role="banner" class="uthsc-banner hide-for-print">
         <div class="row">
             <div class="medium-10 large-8 small-centered columns">
-                <a href="http://uthsc.edu">
+                <a href="https://uthsc.edu">
                     <img src="/-resources/2015/images/uthsc-logo-white-text.svg" alt="UTHSC logo" class="uthsc-logo"/>
                 </a>
             </div>
@@ -188,7 +188,7 @@
     <!--Hero Image-->
     <!--**********-->
     <div class="hero hero-one hide-for-print" style="
-    background:url('http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/research-hero-3.jpg');
+    background:url('https://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/research-hero-3.jpg');
     background-position: 50%;
     background-position-y: 50%;
     background-size: cover;"></div>
@@ -357,7 +357,7 @@
         <!--******************************************-->
         <div class="row expanded background-stripe"
              style="background: linear-gradient( rgba(255, 255, 255, 0.60), rgba(0, 0, 0, 0.60) ),
-                 url(http://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/fullscreen-students.jpg);">
+                 url(https://uthsc.edu/test/gspake1/emerald-ouc/-resources/2015/images/fullscreen-students.jpg);">
             <div class="row ">
                 <div class="columns"></div>
                 <div class="columns">
@@ -523,7 +523,7 @@
 
             <div class="columns">
                 <div class="row uthsc-events">
-                    <?php readfile("http://events.uthsc.edu/widgets/uthsc-events-feed-research.php"); ?>
+                    <?php readfile("https://events.uthsc.edu/widgets/uthsc-events-feed-research.php"); ?>
                 </div>
             </div>
 
@@ -712,7 +712,7 @@
      aria-hidden="true">
     <!--Breadcrumbs-->
     <div class="uthsc-off-canvas-breadcrumbs button-group">
-        <a href="index.php" class="button home-button"><span class="fa fa-home"></span></a>
+        <a href="/redesign" class="button home-button"><span class="fa fa-home"></span></a>
         <button class="button breadcrumbs-button dropdown" type="button" data-toggle="left-breadcrumbs-dropdown">
             Breadcrumbs Back Home
         </button>
@@ -896,20 +896,20 @@
 <!--*******-->
 <!--Scripts-->
 <!--*******-->
-<script src="../-resources/2015/js/jquery.min.js"></script>
-<script src="../-resources/2015/js/what-input.min.js"></script>
-<script src="../-resources/2015/js/foundation.min.js"></script>
-<script src="../-resources/2015/js/uthsc.min.js"></script>
+<script src="/-resources/2015/js/jquery.min.js"></script>
+<script src="/-resources/2015/js/what-input.min.js"></script>
+<script src="/-resources/2015/js/foundation.min.js"></script>
+<script src="/-resources/2015/js/uthsc.min.js"></script>
 <!--********-->
 <!--/Scripts-->
 <!--********-->
 
 <!--snippet-->
-<script src="../-resources/2015/js/uthsc-news-ajax.min.js"></script>
+<script src="/-resources/2015/js/uthsc-news-ajax.min.js"></script>
 <script>
 $(document).ready(function(){
 <?php foreach ($uthsc_news as $key => $posts) {
-echo 'newsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts?categories=' . $posts['categories'] . '&per_page=' . $posts['post_count'] . '&_embed", ' . '\'' . $key . '\',' . $posts['post_count'] .');' . "\r\n";
+echo 'newsAjax("https://news.uthsc.edu/wp-json/wp/v2/posts?categories=' . $posts['categories'] . '&per_page=' . $posts['post_count'] . '&_embed", ' . '\'' . $key . '\',' . $posts['post_count'] .');' . "\r\n";
 } ?>
 });
 </script>

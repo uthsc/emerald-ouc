@@ -15,11 +15,11 @@
     <!--/unfurling-->
 
     <title>College of Nursing | UTHSC</title>
-    <link rel="stylesheet" href="../-resources/2015/css/uthsc.css">
-    <link rel="stylesheet" href="../-resources/2015/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300">
+    <link rel="stylesheet" href="/-resources/2015/css/uthsc.css">
+    <link rel="stylesheet" href="/-resources/2015/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
-          href="http://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
+          href="https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
 </head>
 <body>
 
@@ -100,7 +100,7 @@
         <div class="row">
             <ul class="breadcrumbs column">
                 <li>
-                    <a aria-label="go to UTHSC homepage" href="/">
+                    <a aria-label="go to UTHSC homepage" href="/redesign">
                         <span class="uthsc-home-icon-breadcrumbs fa fa-home fa-2x" aria-hidden="true"></span>
                     </a>
                     <span class="fa fa-chevron-right" aria-hidden="true"></span>
@@ -793,20 +793,20 @@
 <!--*******-->
 <!--Scripts-->
 <!--*******-->
-<script src="../-resources/2015/js/jquery.min.js"></script>
-<script src="../-resources/2015/js/what-input.min.js"></script>
-<script src="../-resources/2015/js/foundation.min.js"></script>
-<script src="../-resources/2015/js/uthsc.min.js"></script>
+<script src="/-resources/2015/js/jquery.min.js"></script>
+<script src="/-resources/2015/js/what-input.min.js"></script>
+<script src="/-resources/2015/js/foundation.min.js"></script>
+<script src="/-resources/2015/js/uthsc.min.js"></script>
 <!--********-->
 <!--/Scripts-->
 <!--********-->
 
 <!--snippet-->
-<script src="../-resources/2015/js/uthsc-news-ajax.min.js"></script>
+<script src="/-resources/2015/js/uthsc-news-ajax.min.js"></script>
 <script>
     $(document).ready(function(){
         <?php foreach ($uthsc_news as $key => $posts) {
-        echo 'newsAjax("http://news.uthsc.edu/wp-json/wp/v2/posts?categories=' . $posts['categories'] . '&per_page=' . $posts['post_count'] . '&_embed", ' . '\'' . $key . '\',' . $posts['post_count'] .');' . "\r\n";
+        echo 'newsAjax("https://news.uthsc.edu/wp-json/wp/v2/posts?categories=' . $posts['categories'] . '&per_page=' . $posts['post_count'] . '&_embed", ' . '\'' . $key . '\',' . $posts['post_count'] .');' . "\r\n";
     } ?>
     });
 </script>

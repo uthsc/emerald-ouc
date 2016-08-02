@@ -19,8 +19,8 @@
 
     <title>Search - UTHSC</title>
 
-    <link rel="stylesheet" href="../-resources/2015/css/uthsc.css">
-    <link rel="stylesheet" href="../-resources/2015/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/-resources/2015/css/uthsc.css">
+    <link rel="stylesheet" href="/-resources/2015/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:300">
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
@@ -438,10 +438,10 @@
        <!--*******-->
        <!--Scripts-->
        <!--*******-->
-       <script src="../-resources/2015/js/jquery.min.js"></script>
-       <script src="../-resources/2015/js/what-input.min.js"></script>
-       <script src="../-resources/2015/js/foundation.min.js"></script>
-       <script src="../-resources/2015/js/uthsc.min.js"></script>
+       <script src="/-resources/2015/js/jquery.min.js"></script>
+       <script src="/-resources/2015/js/what-input.min.js"></script>
+       <script src="/-resources/2015/js/foundation.min.js"></script>
+       <script src="/-resources/2015/js/uthsc.min.js"></script>
        <!--********-->
        <!--/Scripts-->
        <!--********-->
@@ -450,9 +450,9 @@
    <!--*************************-->
    <!--Footcode for Search UTHSC-->
    <!--*************************-->
-   <script src="../-resources/2015/js/uthsc-emergency-notification.min.js"></script>
-   <script src="../-resources/2015/js/uthsc-search.min.js"></script>
-   <script src="../-resources/2015/js/iframeResizer.min.js"></script>
+   <script src="/-resources/2015/js/uthsc-emergency-notification.min.js"></script>
+   <script src="/-resources/2015/js/uthsc-search.min.js"></script>
+   <script src="/-resources/2015/js/iframeResizer.min.js"></script>
    <script>iFrameResize()</script>
    <!--**************************-->
    <!--/Footcode for Search UTHSC-->
