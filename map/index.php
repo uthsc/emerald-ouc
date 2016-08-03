@@ -101,7 +101,7 @@
 
         .uthsc-map-menu .is-drilldown {
             min-height: initial !important;
-            height: 50vh !important;
+            height: 600px !important;
         }
 
         @media screen and (max-width: 39.9375em) {
@@ -109,6 +109,7 @@
                 background: none !important;
                 padding: 0;
                 box-shadow: none;
+                height: initial !important;
             }
 
             .uthsc-map-menu .is-drilldown {
