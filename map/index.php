@@ -24,33 +24,34 @@
     <!--*************************-->
     <!--Headcode for Search UTHSC-->
     <!--*************************-->
-    <?php include ("map-db-connection.php"); ?>
+    <?php include("map-db-connection.php"); ?>
 
     <style>
         .main-content .vertical a {
             color: #555555 !important;
         }
 
-        .is-drilldown-submenu-parent>a {
-           padding: .6rem !important;
+        .is-drilldown-submenu-parent > a {
+            padding: .6rem !important;
         }
 
         .main-content .vertical a .fa {
             width: 1rem;
-            text-align: center
+            text-align: center;
         }
 
         .main-content .vertical a .fa.fa-building {
-            color: #006a4d
+            color: #006a4d;
         }
 
         .main-content .vertical a .fa.fa-car {
-            color: #00a5e3
+            color: #00a5e3;
         }
 
         .main-content .vertical a .fa.fa-desktop {
-            color: #e8cf00
+            color: #e8cf00;
         }
+
         .uthsc-map-link {
             background: #00a5e3;
             color: #fff;
@@ -61,12 +62,12 @@
 
         #uthsc-map-canvas {
             width: 100%;
-            height: 100%
+            height: 100%;
         }
 
         @media screen and (max-width: 39.9375em) {
             #uthsc-map-canvas {
-                height: 100vw
+                height: 100vw;
             }
         }
 
@@ -75,7 +76,7 @@
             padding: 2rem;
             border-bottom: 0;
             border-top: 0;
-            box-shadow: 0 -3px 0 #fefefe, 0 3px 0 #efefef, 2px 0px 4px #ccc
+            box-shadow: 0 -3px 0 #fefefe, 0 3px 0 #efefef, 2px 0 4px #ccc;
         }
 
         .uthsc-map-menu ul li {
@@ -85,6 +86,7 @@
         .uthsc-map-menu ul li li {
             font-size: initial;
         }
+
         .uthsc-map-menu ul li li a {
             padding: 0.1rem 0;
         }
@@ -93,7 +95,7 @@
             .uthsc-map-menu {
                 position: absolute;
                 z-index: 1;
-                padding: 1rem !important
+                padding: 1rem !important;
             }
         }
 
@@ -101,11 +103,12 @@
             min-height: initial !important;
             height: 50vh !important;
         }
+
         @media screen and (max-width: 39.9375em) {
             .uthsc-map-menu {
                 background: none !important;
                 padding: 0;
-                box-shadow: none
+                box-shadow: none;
             }
 
             .uthsc-map-menu .is-drilldown {
@@ -126,12 +129,12 @@
             position: absolute;
             right: 0;
             top: 0;
-            font-size: initial
+            font-size: initial;
         }
 
         .uthsc-map-list {
             overflow: auto;
-            padding: 1rem
+            padding: 1rem;
         }
 
         @media screen and (max-width: 39.9375em) {
@@ -143,32 +146,32 @@
         }
 
         .uthsc-map-list li {
-            padding-bottom: 0.2rem
+            padding-bottom: 0.2rem;
         }
 
         .uthsc-map-list ul {
-            width: 100%
+            width: 100%;
         }
 
         li.is-submenu-item.is-drilldown-submenu-item:hover {
-            background: #ddd
+            background: #ddd;
         }
 
         li.is-submenu-item.is-drilldown-submenu-item a {
             font-weight: normal;
             text-indent: -0.65rem;
-            padding-left: 0.2rem
+            padding-left: 0.2rem;
         }
 
         li.is-submenu-item.is-drilldown-submenu-item a:before {
             content: "\203A \0020";
             list-style: none;
             font-size: 1.2em;
-            color: #aaa
+            color: #aaa;
         }
 
         .uthsc-map-controls {
-            margin: .5rem
+            margin: .5rem;
         }
 
         .uthsc-map-controls .button {
@@ -177,7 +180,7 @@
         }
 
         .gm-style .gm-style-iw, .gm-style .gm-style-iw a, .gm-style .gm-style-iw span, .gm-style .gm-style-iw label, .gm-style .gm-style-iw div {
-            font-size: 11px
+            font-size: 11px;
         }
 
         .uthsc-map-pop-up-image {
@@ -185,21 +188,22 @@
             margin: 0.5rem 10px 0 0;
             width: 125px;
             height: auto;
-            border: 1px solid #ddd
+            border: 1px solid #ddd;
         }
 
         @media only screen
-        and (min-device-width : 320px)
-        and (max-device-width : 568px)
-        and (orientation : landscape) {
+        and (min-device-width: 320px)
+        and (max-device-width: 568px)
+        and (orientation: landscape) {
             .uthsc-map-pop-up-image {
                 width: 30%;
             }
         }
+
         @media only screen
-        and (min-device-width : 320px)
-        and (max-device-width : 568px)
-        and (orientation : portrait) {
+        and (min-device-width: 320px)
+        and (max-device-width: 568px)
+        and (orientation: portrait) {
             .uthsc-map-pop-up-image {
                 width: 15%;
             }
@@ -208,20 +212,20 @@
         #get_link {
             width: 125px;
             background: none;
-            text-align: center
+            text-align: center;
         }
 
         #permalink_label {
             cursor: pointer;
-            color: inherit
+            color: inherit;
         }
 
         #to_here_link, #from_here_link {
-            cursor: pointer
+            cursor: pointer;
         }
 
         #directions_container {
-            float: left
+            float: left;
         }
 
         #directions_container p {
@@ -236,7 +240,7 @@
             height: 30px;
             padding: 0 0 0 6px;
             width: 78%;
-            float: left
+            float: left;
         }
 
         .submit {
@@ -245,11 +249,11 @@
             border-left: 0;
             font-size: 15px;
             height: 30px;
-            width: 21%
+            width: 21%;
         }
 
         input:checked ~ .switch-paddle {
-            background: #F77F00
+            background: #F77F00;
         }
     </style>
 
@@ -277,13 +281,22 @@
 <body>
 
 <!-- Google Tag Manager -->
-<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PR6VFZ"
-                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PR6VFZ');</script>
+<noscript>
+    <iframe src="//www.googletagmanager.com/ns.html?id=GTM-PR6VFZ"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-PR6VFZ');</script>
 <!-- End Google Tag Manager -->
 
 
@@ -321,11 +334,11 @@
                 <form class="input-group" aria-label="Search the UTHSC site"
                       action="https://uthsc.edu/search/" method="get" style="margin-bottom:0;">
                     <input type="search" aria-label="Search the UTHSC site" role="search" name="q"
-                           placeholder="search" style="margin-right:0;" />
-                    <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy" />
-                    <input type="hidden" name="cof" value="FORID:11" />
-                    <input type="hidden" name="ie" value="UTF-8" />
-                    <input type="hidden" name="col" value="uthsc" />
+                           placeholder="search" style="margin-right:0;"/>
+                    <input type="hidden" name="cx" value="010196583402354315885:vfumswlexgy"/>
+                    <input type="hidden" name="cof" value="FORID:11"/>
+                    <input type="hidden" name="ie" value="UTF-8"/>
+                    <input type="hidden" name="col" value="uthsc"/>
                     <div class="input-group-button">
                         <button type="submit" class="button" aria-label="Submit search form">
                             <span class="fa fa-search" aria-hidden="true"></span>
@@ -388,7 +401,9 @@
         <ul class="row collapse" data-equalizer="heading-links">
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="/education/" data-equalizer-watch="heading-links"><span class="fa fa-graduation-cap" aria-hidden="true"></span> Academics</a>
+                <a href="/education/" data-equalizer-watch="heading-links"><span class="fa fa-graduation-cap"
+                                                                                 aria-hidden="true"></span>
+                    Academics</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
@@ -396,19 +411,25 @@
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="/clinicalcare/" data-equalizer-watch="heading-links"><span class="fa fa-medkit" aria-hidden="true"></span>Clinical Care</a>
+                <a href="/clinicalcare/" data-equalizer-watch="heading-links"><span class="fa fa-medkit"
+                                                                                    aria-hidden="true"></span>Clinical
+                    Care</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="/publicservice/" data-equalizer-watch="heading-links"><span class="fa fa-globe"></span>Public Service</a>
+                <a href="/publicservice/" data-equalizer-watch="heading-links"><span class="fa fa-globe"></span>Public
+                    Service</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="/aboututhsc/" data-equalizer-watch="heading-links"><span class="fa fa-file-text-o"></span>About UTHSC</a>
+                <a href="/aboututhsc/" data-equalizer-watch="heading-links"><span class="fa fa-file-text-o"></span>About
+                    UTHSC</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="http://uthscalumni.com/" data-equalizer-watch="heading-links"><span class="fa fa-users" aria-hidden="true"></span>Alumni &amp; Friends</a>
+                <a href="http://uthscalumni.com/" data-equalizer-watch="heading-links"><span class="fa fa-users"
+                                                                                             aria-hidden="true"></span>Alumni
+                    &amp; Friends</a>
             </li>
 
             <li class="uthsc-navigation-column small-2 columns"></li>
@@ -423,8 +444,8 @@
     <!--Content-->
     <!--*******-->
     <div class="main-content" id="main-content" aria-label="Page content" role="main">
-        <br />
-        <br />
+        <br/>
+        <br/>
         <!--**********-->
         <!--Page title-->
         <!--**********-->
@@ -440,85 +461,91 @@
             <a class="button" id="uthsc-map-zoom-city"><span class="fa fa-building-o"></span> Memphis</a>
             <a class="button" id="uthsc-map-zoom-state"><span class="fa fa-map"></span> Tennessee</a>
         </div>
-        <div id="uthsc-center-map-on-page-mobile" class="row expanded small-collapse" data-equalizer="data-eqaulizer-maps" data-equalize-on-stack="false">
-                    <div class="columns medium-3 medium-push-1 uthsc-map-menu" data-equalizer-watch="data-eqaulizer-maps">
-                        <ul id="uthsc-map-menu-drilldown" class="vertical menu" data-drilldown>
-                            <li>
-                                <a href="#" id="uthsc-map-buildings"><span class="fa fa-building secondary" aria-hidden="true"></span>
-                                    &emsp;Buildings</a>
-                                <ul class="vertical menu uthsc-map-list">
+        <div id="uthsc-center-map-on-page-mobile" class="row expanded small-collapse"
+             data-equalizer="data-eqaulizer-maps" data-equalize-on-stack="false">
+            <div class="columns medium-3 medium-push-1 uthsc-map-menu" data-equalizer-watch="data-eqaulizer-maps">
+                <ul id="uthsc-map-menu-drilldown" class="vertical menu" data-drilldown>
+                    <li>
+                        <a href="#" id="uthsc-map-buildings"><span class="fa fa-building secondary"
+                                                                   aria-hidden="true"></span>
+                            &emsp;Buildings</a>
+                        <ul class="vertical menu uthsc-map-list">
 
-                                    <div class="uthsc-map-icon-toggle-box">
-                                        <p>Buildings</p>
-                                        <div class="switch tiny">
-                                            <input class="switch-input" id="buildings-switch" type="checkbox" checked="checked" name="buildings-switch">
-                                            <label class="switch-paddle" for="buildings-switch">
-                                                <span class="switch-active" aria-hidden="true">On</span>
-                                                <span class="switch-inactive" aria-hidden="true">Off</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <?php echo $bldg_list; ?>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><span class="fa fa-car secondary" aria-hidden="true"></span>
-                                    &emsp;Parking</a>
-                                <ul class="vertical menu uthsc-map-list">
-                                    <div class="uthsc-map-icon-toggle-box">
-                                        <p>Parking</p>
-                                        <div class="switch tiny">
-                                            <input class="switch-input" id="parking-switch" type="checkbox" checked="checked" name="parking-switch">
-                                            <label class="switch-paddle" for="parking-switch">
-                                                <span class="switch-active" aria-hidden="true">On</span>
-                                                <span class="switch-inactive" aria-hidden="true">Off</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <?php echo $pkng_list; ?>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><span class="fa fa-desktop secondary" aria-hidden="true"></span>
-                                    &emsp;Student Computer Labs</a>
-                                <ul class="vertical menu uthsc-map-list">
-                                    <div class="uthsc-map-icon-toggle-box">
-                                        <p>Student Computer Labs</p>
-                                        <div class="switch tiny">
-                                            <input class="switch-input" id="labs-switch" type="checkbox" name="labs-switch">
-                                            <label class="switch-paddle" for="labs-switch">
-                                                <span class="switch-active" aria-hidden="true">On</span>
-                                                <span class="switch-inactive" aria-hidden="true">Off</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <?php echo $labs_list; ?>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#"><span class="fa fa-print secondary" aria-hidden="true"></span>
-                                    &emsp;Printable Maps (PDF)</a>
-                                <ul class="vertical menu uthsc-map-list">
-                                    <li><a href="sitemap/campusmap.pdf">Memphis</a></li>
-                                    <li><a href="http://gsm.utmck.edu/about/documents/utmc_campus_map2014.pdf">Knoxville</a></li>
-                                    <li><a href="sitemap/chattanooga-map.pdf">Chattanooga</a></li>
-                                </ul>
-                            </li>
+                            <div class="uthsc-map-icon-toggle-box">
+                                <p>Buildings</p>
+                                <div class="switch tiny">
+                                    <input class="switch-input" id="buildings-switch" type="checkbox" checked="checked"
+                                           name="buildings-switch">
+                                    <label class="switch-paddle" for="buildings-switch">
+                                        <span class="switch-active" aria-hidden="true">On</span>
+                                        <span class="switch-inactive" aria-hidden="true">Off</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <?php echo $bldg_list; ?>
                         </ul>
-                    </div>
-                    <div class="columns sm-1 show-for-small-only text-center uthsc-map-controls">
-                        <div class="button-group secondary tiny show-for-small-only">
-                            <a href="#uthsc-center-map-on-page-mobile" class="button"><span class="fa fa-arrows-v"></span> Align Map</a>
-                            <a class="button" id="uthsc-map-zoom-campus-mobile"><span class="fa fa-flag"></span> Campus</a>
-                            <a class="button" id="uthsc-map-zoom-3d-mobile"><span class="fa fa-cube"></span> Campus 3D</a>
-                            <a class="button" id="uthsc-map-zoom-city-mobile"><span class="fa fa-building-o"></span> Memphis</a>
-                            <a class="button" id="uthsc-map-zoom-state-mobile"><span class="fa fa-map"></span> Tennessee</a>
-                        </div>
-                    </div>
-                    <div class="columns uthsc-map" data-equalizer-watch="data-eqaulizer-maps">
-                        <div id="uthsc-map-canvas"></div>
-                    </div>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-car secondary" aria-hidden="true"></span>
+                            &emsp;Parking</a>
+                        <ul class="vertical menu uthsc-map-list">
+                            <div class="uthsc-map-icon-toggle-box">
+                                <p>Parking</p>
+                                <div class="switch tiny">
+                                    <input class="switch-input" id="parking-switch" type="checkbox" checked="checked"
+                                           name="parking-switch">
+                                    <label class="switch-paddle" for="parking-switch">
+                                        <span class="switch-active" aria-hidden="true">On</span>
+                                        <span class="switch-inactive" aria-hidden="true">Off</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <?php echo $pkng_list; ?>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-desktop secondary" aria-hidden="true"></span>
+                            &emsp;Student Computer Labs</a>
+                        <ul class="vertical menu uthsc-map-list">
+                            <div class="uthsc-map-icon-toggle-box">
+                                <p>Student Computer Labs</p>
+                                <div class="switch tiny">
+                                    <input class="switch-input" id="labs-switch" type="checkbox" name="labs-switch">
+                                    <label class="switch-paddle" for="labs-switch">
+                                        <span class="switch-active" aria-hidden="true">On</span>
+                                        <span class="switch-inactive" aria-hidden="true">Off</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <?php echo $labs_list; ?>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><span class="fa fa-print secondary" aria-hidden="true"></span>
+                            &emsp;Printable Maps (PDF)</a>
+                        <ul class="vertical menu uthsc-map-list">
+                            <li><a href="sitemap/campusmap.pdf">Memphis</a></li>
+                            <li><a href="http://gsm.utmck.edu/about/documents/utmc_campus_map2014.pdf">Knoxville</a>
+                            </li>
+                            <li><a href="sitemap/chattanooga-map.pdf">Chattanooga</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
+            <div class="columns sm-1 show-for-small-only text-center uthsc-map-controls">
+                <div class="button-group secondary tiny show-for-small-only">
+                    <a href="#uthsc-center-map-on-page-mobile" class="button"><span class="fa fa-arrows-v"></span> Align
+                        Map</a>
+                    <a class="button" id="uthsc-map-zoom-campus-mobile"><span class="fa fa-flag"></span> Campus</a>
+                    <a class="button" id="uthsc-map-zoom-3d-mobile"><span class="fa fa-cube"></span> Campus 3D</a>
+                    <a class="button" id="uthsc-map-zoom-city-mobile"><span class="fa fa-building-o"></span> Memphis</a>
+                    <a class="button" id="uthsc-map-zoom-state-mobile"><span class="fa fa-map"></span> Tennessee</a>
+                </div>
+            </div>
+            <div class="columns uthsc-map" data-equalizer-watch="data-eqaulizer-maps">
+                <div id="uthsc-map-canvas"></div>
+            </div>
+        </div>
         <!--***********-->
         <!--/Page title-->
         <!--***********-->
@@ -540,15 +567,16 @@
             <div class="medium-4 columns footer-box">
                 <h4>Contact Us</h4>
 
-                <p>Office of Student Affairs<br />
-                    920 Madison, #1020<br />
-                    Memphis, TN 38163<br />
-                    901-448-6125<br />
+                <p>Office of Student Affairs<br/>
+                    920 Madison, #1020<br/>
+                    Memphis, TN 38163<br/>
+                    901-448-6125<br/>
                     <a href="mailto:nurse.recruit@uthsc.edu">nurse.recruit@uthsc.edu</a>
                 </p>
             </div>
             <div class="medium-4 columns footer-box">
-                <h4>College Links</h4><ul>
+                <h4>College Links</h4>
+                <ul>
                     <li><a href="">View an Info Session</a></li>
                     <li><a href="">Apply Online</a></li>
                     <li><a href="">Tuition & Fees</a></li>
@@ -560,25 +588,30 @@
                 <h4>Social</h4>
                 <h5>Share</h5>
                 <div class="expanded button-group stacked-for-small small uthsc-share">
-                    <a href="https://twitter.com/intent/tweet?text=Read%20this.&url=https://uthsc.edu/aboututhsc/utmission.php&via=uthsc&original_referer=https://uthsc.edu/&hashtags=Education,Research,Clinical-Care,PublicService&related=uthscadmissions%3AUTHSC%20Admissions,UTHSCRefDesk%3AUTHSC%20Library" class="button uthsc-twitter">
+                    <a href="https://twitter.com/intent/tweet?text=Read%20this.&url=https://uthsc.edu/aboututhsc/utmission.php&via=uthsc&original_referer=https://uthsc.edu/&hashtags=Education,Research,Clinical-Care,PublicService&related=uthscadmissions%3AUTHSC%20Admissions,UTHSCRefDesk%3AUTHSC%20Library"
+                       class="button uthsc-twitter">
                         <span class="fa fa-twitter" aria-hidden="true"></span> Tweet
                         <span class="show-for-sr">on twitter</span>
                     </a>
-                    <a href="https://www.facebook.com/sharer.php?u=https://uthsc.edu/aboututhsc/utmission.php" class="button uthsc-facebook">
+                    <a href="https://www.facebook.com/sharer.php?u=https://uthsc.edu/aboututhsc/utmission.php"
+                       class="button uthsc-facebook">
                         <span class="fa fa-facebook" aria-hidden="true"></span> Share
                         <span class="show-for-sr">on facebook</span>
                     </a>
-                    <a href="https://plus.google.com/share?url=https://uthsc.edu/aboututhsc/utmission.php" class="button uthsc-google-plus">
+                    <a href="https://plus.google.com/share?url=https://uthsc.edu/aboututhsc/utmission.php"
+                       class="button uthsc-google-plus">
                         <span class="fa fa-google-plus" aria-hidden="true"></span> Share
                         <span class="show-for-sr">on google plus</span>
                     </a>
                 </div>
                 <div class="expanded button-group stacked-for-small small uthsc-share">
-                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://uthsc.edu/aboututhsc/utmission.php&title=University%20of%20Tennessee%20Mission%20Statements&summary=Read%20this.&source=UTHSC" class="button uthsc-linkedin">
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://uthsc.edu/aboututhsc/utmission.php&title=University%20of%20Tennessee%20Mission%20Statements&summary=Read%20this.&source=UTHSC"
+                       class="button uthsc-linkedin">
                         <span class="fa fa-linkedin" aria-hidden="true"></span> Share
                         <span class="show-for-sr">on linked in</span>
                     </a>
-                    <a href="mailto:?body=Read%20this.%20https://uthsc.edu/aboututhsc/utmission.php.&amp;subject=University%20of%20Tennessee%20Mission%20Statements" class="button">
+                    <a href="mailto:?body=Read%20this.%20https://uthsc.edu/aboututhsc/utmission.php.&amp;subject=University%20of%20Tennessee%20Mission%20Statements"
+                       class="button">
                         <span class="fa fa-envelope" aria-hidden="true"></span> email
                     </a>
                     <a href="javascript:window.print()" class="button uthsc-print">
@@ -652,7 +685,9 @@
     <!--Last Published-->
     <!--**************-->
     <div class="uthsc-last-published text-center">
-        <p><small>Last Published: Generated during publish by OUC</small></p>
+        <p>
+            <small>Last Published: Generated during publish by OUC</small>
+        </p>
     </div>
     <!--***************-->
     <!--/Last Published-->
