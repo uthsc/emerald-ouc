@@ -187,7 +187,7 @@
                 </li>
 
                 <li class="uthsc-navigation-column small-2 columns">
-                    <a href="../research/" data-equalizer-watch="heading-links"><span class="fa fa-flask"></span> Research</a>
+                    <a href="/redesign/research/" data-equalizer-watch="heading-links"><span class="fa fa-flask"></span> Research</a>
                 </li>
 
                 <li class="uthsc-navigation-column small-2 columns">
@@ -455,7 +455,6 @@
 <script src="../-resources/2015/js/foundation.min.js"></script>
 <script src="../-resources/2015/js/uthsc.min.js"></script>
 <script src="../-resources/2015/js/masonry.pkgd.min.js"></script>
-<script src="http://imagesloaded.desandro.com/imagesloaded.pkgd.js"></script>
 <script src="../-resources/2015/js/imagesloaded.pkgd.min.js"></script>
 <script src="../-resources/2015/js/uthsc-now.min.js"></script>
 
