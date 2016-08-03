@@ -227,6 +227,7 @@
 
         #directions_container {
             float: left;
+            width: 58%;
         }
 
         #directions_container p {
@@ -240,7 +241,7 @@
             font-size: 15px;
             height: 30px;
             padding: 0 0 0 6px;
-            width: 78%;
+            width: 72%;
             float: left;
         }
 
