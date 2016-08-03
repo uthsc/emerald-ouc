@@ -402,45 +402,40 @@
     <!--*****************-->
     <!--UTHSC Section Nav-->
     <!--*****************-->
-    <nav id="uthsc-section-navigation" data-equalizer="nested-links" aria-label="Current section menu"
-         role="navigation" class="hide-for-print hide-class">
-        <ul class="row collapse" data-equalizer="heading-links">
+    <div data-equalizer="heading-links">
+        <nav id="uthsc-section-navigation" data-equalizer="nested-links" aria-label="Current section menu"
+             role="navigation" class="hide-for-print">
+            <ul class="row collapse" data-equalizer="heading-links">
 
-            <li class="uthsc-navigation-column small-2 columns">
-                <a href="/education/" data-equalizer-watch="heading-links"><span class="fa fa-graduation-cap"
-                                                                                 aria-hidden="true"></span>
-                    Academics</a>
-            </li>
+                <li class="uthsc-navigation-column small-2 columns">
+                    <a href="/education/" data-equalizer-watch="heading-links"><span aria-hidden="true" class="fa fa-graduation-cap"></span> Academics</a>
+                </li>
 
-            <li class="uthsc-navigation-column small-2 columns">
-                <a href="research/" data-equalizer-watch="heading-links"><span class="fa fa-flask"></span> Research</a>
-            </li>
+                <li class="uthsc-navigation-column small-2 columns">
+                    <a href="/redesign/research/" data-equalizer-watch="heading-links"><span aria-hidden="true" class="fa fa-flask"></span> Research</a>
+                </li>
 
-            <li class="uthsc-navigation-column small-2 columns">
-                <a href="/clinicalcare/" data-equalizer-watch="heading-links"><span class="fa fa-medkit"
-                                                                                    aria-hidden="true"></span>Clinical
-                    Care</a>
-            </li>
+                <li class="uthsc-navigation-column small-2 columns">
+                    <a href="/clinicalcare/" data-equalizer-watch="heading-links"><span aria-hidden="true" class="fa fa-medkit"></span>Clinical Care</a>
+                </li>
 
-            <li class="uthsc-navigation-column small-2 columns">
-                <a href="/publicservice/" data-equalizer-watch="heading-links"><span class="fa fa-globe"></span>Public
-                    Service</a>
-            </li>
+                <li class="uthsc-navigation-column small-2 columns">
+                    <a href="/publicservice/" data-equalizer-watch="heading-links"><span aria-hidden="true" class="fa fa-globe"></span>Public Service</a>
+                </li>
 
-            <li class="uthsc-navigation-column small-2 columns">
-                <a href="/aboututhsc/" data-equalizer-watch="heading-links"><span class="fa fa-file-text-o"></span>About
-                    UTHSC</a>
-            </li>
+                <li class="uthsc-navigation-column small-2 columns">
+                    <a href="/aboututhsc/" data-equalizer-watch="heading-links"><span aria-hidden="true" class="fa fa-file-text-o"></span>About UTHSC</a>
+                </li>
 
-            <li class="uthsc-navigation-column small-2 columns">
-                <a href="http://uthscalumni.com/" data-equalizer-watch="heading-links"><span class="fa fa-users"
-                                                                                             aria-hidden="true"></span>Alumni
-                    &amp; Friends</a>
-            </li>
+                <li class="uthsc-navigation-column small-2 columns">
+                    <a href="http://uthscalumni.com/" data-equalizer-watch="heading-links"><span aria-hidden="true" class="fa fa-users"></span>Alumni &amp; Friends</a>
+                </li>
 
-            <li class="uthsc-navigation-column small-2 columns"></li>
-        </ul>
-    </nav>
+                <li class="uthsc-navigation-column small-2 columns"></li>
+            </ul>
+        </nav>
+        <div class="uthsc-section-nav-placeholder show-for-large" data-equalizer-watch="heading-links"></div>
+    </div>
     <!--******************-->
     <!--/UTHSC Section Nav-->
     <!--******************-->
@@ -450,8 +445,6 @@
     <!--Content-->
     <!--*******-->
     <div class="main-content" id="main-content" aria-label="Page content" role="main">
-        <br/>
-        <br/>
         <!--**********-->
         <!--Page title-->
         <!--**********-->
