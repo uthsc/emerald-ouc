@@ -128,10 +128,10 @@
             <li class="uthsc-navigation-column small-2 columns">
                 <a href="#" data-equalizer-watch="heading-links">Leadership</a>
                 <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">Mission &amp; Vision </a></li>
+                    <li><a href="/research/about/mission-vision.php">Mission &amp; Vision </a></li>
                     <li><a href="/research/vc_research.php">Vice Chancellor for Research </a></li>
-                    <li><a href="#">Organizational Chart</a></li>
-                    <li><a href="#">Strategic Plans and Guides</a></li>
+                    <li><a href="/research/documents/research-organizational-chart.pdf">Organizational Chart</a></li>
+                    <li><a href="/research/documents/research-resources/space-plan-2016.pdf">Allocation of Research Space Plan</a></li>
                 </ul>
             </li>
 
@@ -344,9 +344,9 @@
                     <a class="button" href="https://www.uthsc.edu/CRC/">Clinical Research</a>
                     <!--<a class="button" href="">Research Development</a>
                     <a class="button" href="">Research Integrity Officer</a>
-                    <a class="button" href="">News &amp; Events</a>-->
-                    <a class="button" href="">Operational Strategic Plan for Research</a>
-                    <a class="button" href="">Allocation of Research Space Plan</a>
+                    <a class="button" href="">News &amp; Events</a>
+                    <a class="button" href="">Operational Strategic Plan for Research</a>-->
+                    <a class="button" href="/research/documents/research-resources/space-plan-2016.pdf">Allocation of Research Space Plan</a>
                 </p>
             </div>
         </div>
@@ -362,27 +362,26 @@
                 <div class="columns"></div>
                 <div class="columns">
                     <div class="row medium-up-2 large-up-3">
-                        <!--<div class="columns">
+                        <div class="columns">
                             <div class="uthsc-highlight-box uthsc-highlight-box-purple">
                                 <a>
                                     <div class="uthsc-highlight-box-image">
-                                        <img src="/-resources/2015/images/research-kell-landscape.jpg">
+                                        <img src="/research/images/research-highlight-box.png">
                                     </div>
 
                                     <div class="uthsc-highlight-box-title">
-                                        <p>The VCR Distinguished Lecture Series Featuring Prof. Douglas B. Kell</p>
+                                        <p>Hot Topics in Research featuring Dr. Kevin Shianna & Dr. Zach Johnson </p>
                                     </div>
 
                                     <div class="uthsc-highlight-box-description">
-                                        <p><em>"The Cellular Uptake of Pharmaceutical Drugs is Transporter-mediated, and
-                                            Thus a Problem Not of Biophysics but of Systems Biology"</em></p>
-                                        <p>June 16, 2016 from 1-2pm<br />
-                                            College of Pharmacy, Room 101</p>
+                                        <p><em>"Illumina’s sequencing and array based solutions for genomic research"</em></p>
+                                        <p>August 23, 2016 from 12-1pm <br />
+                                            GEB A303</p>
                                     </div>
                                 </a>
                             </div>
                         </div>
--->
+
                        <!-- <div class="columns">
                             <div class="uthsc-highlight-box">
                                 <div class="uthsc-highlight-box-image">
@@ -736,41 +735,37 @@
     </button>
 
     <ul>
-        <li><a href="#" class="link-heading">About</a>
+        <li><a href="#" class="link-heading">Leadership</a>
             <ul>
-                <li><a href="#">Mission & Vision </a></li>
-                <li><a href="#">Vice Chancellor for Research </a></li>
-                <li><a href="#">Reports and Publications </a></li>
-                <li><a href="#">Organizational Chart</a></li>
-                <li><a href="#">News & Events</a></li>
+                <li><a href="/research/about/mission-vision.php">Mission &amp; Vision </a></li>
+                <li><a href="/research/vc_research.php">Vice Chancellor for Research </a></li>
+                <li><a href="/research/documents/research-organizational-chart.pdf">Organizational Chart</a></li>
+                <li><a href="/research/documents/research-resources/space-plan-2016.pdf">Allocation of Research Space Plan</a></li>
             </ul>
         </li>
         <li><a href="#" class="link-heading">Grants & Research Agreements</a>
             <ul>
-                <li><a href="http://uthsc.edu/research/research_administration/staff.php">About</a></li>
+                <li><a href="research/research_administration/staff.php">About</a></li>
                 <li><a href="https://tennessee.cayuse424.com/">Evisions/Cayuse SP</a></li>
-                <li><a href="http://uthsc.edu/research/research_administration/research_grants.php">Grants</a></li>
-                <li><a href="">Research Agreements</a></li>
-                <li><a href="http://uthsc.edu/research/research_administration/research_contracts/index.php">Forms & Information</a></li>
-                <li><a href="http://uthsc.edu/research/research_administration/FAQ.php">FAQs</a></li>
+                <li><a href="/research/research_administration/research_grants.php">Grants</a></li>
+                <!--<li><a href="">Research Agreements</a></li>-->
+                <li><a href="/research/research_administration/research_contracts/index.php">Forms & Information</a></li>
+                <li><a href="/research/research_administration/FAQ.php">FAQs</a></li>
             </ul>
         </li>
         <li><a href="#" class="link-heading">Compliance</a>
             <ul>
-                <li><a href="#">IRB Administration </a></li>
-                <li><a href="#">Animal Care & Use (IACUC)</a></li>
-                <li><a href="#">Institutional Biosafety Committee</a></li>
-                <li><a href="#">Export Control</a></li>
-                <li><a href="#">Radiation Safety Committee </a></li>
+                <li><a href="/research/research_compliance/irb/">IRB</a></li>
+                <li><a href="/research/research_compliance/IACUC/index.php">Animal Care &amp; Use (IACUC)</a></li>
+                <li><a href="/research/research_compliance/IBC/index.php">Institutional Biosafety Committee</a></li>
+                <li><a href="/research/research_compliance/export.php">Export Control</a></li>
+                <li><a href="/research/research_compliance/rsc.php">Radiation Safety Committee </a></li>
             </ul>
         </li>
         <li><a href="#" class="link-heading">Institutional Cores</a>
-            <ul>
-                <li><a href="#">Mission & Vision </a></li>
-                <li><a href="#">Core List </a></li>
-            </ul>
+
         </li>
-        <li><a href="#" class="link-heading">Centers & Institutes</a>
+        <!--<li><a href="#" class="link-heading">Centers & Institutes</a>
             <ul>
 
             </ul>
@@ -780,7 +775,7 @@
             <ul>
 
             </ul>
-        </li>
+        </li>-->
     </ul>
 
     <!--Safari bottom nav fix-->
