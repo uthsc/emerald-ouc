@@ -119,7 +119,8 @@ gulp.task('uthsc-js', function() {
       './js/app.js',
       './bower_components/emerald/js/partials/uthsc.off-canvas.js',
       './bower_components/emerald/js/partials/uthsc.safari-bottom-nav-fix.js',
-			'./js/partials/uthsc.section-nav.js'
+			'./js/partials/uthsc.section-nav.js',
+	  './js/partials/uthsc-navigation-highlight.js'
       ])
           .pipe($.concat('uthsc.js'))
           .pipe(gulp.dest('./-resources/2015/js'))
