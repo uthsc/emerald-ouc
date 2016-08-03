@@ -186,10 +186,13 @@
 
         <!--todo: does this need to have the about class or should that be moved to something else-->
         <div class="content-area">
+
             <!-- Program Explorer-->
             <div class="row uthsc-program-explorer uthsc-row-space">
+
                 <div class="columns medium-8">
-                    <div class="row uthsc-program-explorer-tabs">
+                    <!--Tabs-->
+                    <div class="row uthsc-program-explorer-tabs show-for-medium">
                         <div class="columns uthsc-program-explorer-heading text-center">
                             <h2>Find Your Future</h2>
                         </div>
@@ -304,6 +307,7 @@
                                             </li>
                                         </ul>
                                     </div>
+
                                     <div class="tabs-panel" id="panel5v">
                                         <ul>
                                             <li>
@@ -322,6 +326,7 @@
                                             </li>
                                         </ul>
                                     </div>
+
                                     <div class="tabs-panel" id="panel6v">
                                         <ul>
                                             <li>
@@ -337,13 +342,204 @@
                             </div>
                         </div>
                     </div>
+                    <!--Tabs-->
+
+                    <!--Accordion-->
+                    <div class="row hide-for-medium">
+                        <div class="row">
+                            <div class="columns uthsc-program-explorer-heading text-center">
+                                <h2>Find Your Future</h2>
+                            </div>
+                        </div>
+                        <ul class="accordion" data-accordion="data-accordion">
+                            <!--Dentistry-->
+                            <li class="accordion-item" data-accordion-item="data-accordion-item">
+                                <a href="#" class="accordion-title">Dentistry</a>
+                                <div class="accordion-content" data-tab-content="data-tab-content">
+                                    <ul>
+                                        <li>
+                                            <a href="/dentistry/">College of Dentistry</a>
+                                            <ul>
+                                                <li><a href="/dentistry/Fac_Depts/bidx.php">Diagnostic Sciences &amp; Oral Medicine</a></li>
+                                                <li><a href="/dentistry/omds/">Oral and Maxillofacial Diagnostic Services</a></li>
+                                                <li><a href="/dentistry/dental-hygiene/">Dental Hygiene, Entry Level (B.S. Degree)</a></li>
+                                                <li><a href="/dentistry/dental-hygiene/masters/index.php">Dental Hygiene, Graduate Program (MDH Degree)</a></li>
+                                                <li><a href="/dentistry/Fac_Depts/endo.php">Endodontics</a></li>
+                                                <li><a href="/dentistry/Fac_Depts/general-practice-staff.php">General Practice</a></li>
+                                                <li><a href="/dentistry/Fac_Depts/oms.php">Oral &amp; Maxillofacial Surgery</a></li>
+                                                <li><a href="/dentistry/Fac_Depts/ortho.php">Orthodontics</a></li>
+                                                <li><a href="/dentistry/Fac_Depts/pedocoh.php">Pediatric Dentistry &amp; Community Oral Health</a></li>
+                                                <li><a href="/dentistry/Fac_Depts/perio.php">Periodontology</a></li>
+                                                <li><a href="/dentistry/Fac_Depts/rest.php">Prosthodontics</a></li>
+                                                <li><a href="/dentistry/research/">Bioscience Research</a></li>
+                                                <li><a href="/dentistry/Fac_Depts/newrest.php">Restorative</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!--Graduate Health Sciences-->
+                            <li class="accordion-item" data-accordion-item="data-accordion-item">
+                                <a href="#" class="accordion-title">Graduate Health Sciences</a>
+                                <div class="accordion-content" data-tab-content="data-tab-content">
+                                    <ul>
+                                        <li>
+                                            <a href="/grad/">College of Graduate Health Sciences</a>
+                                            <ul>
+                                                <li><a href="/grad/Programs/index.php?page=BIOM">Biomedical Engineering and Imaging</a></li>
+                                                <li><a href="/grad/Programs/index.php?page=DSCI">Dental Science (Masters only)</a>
+                                                </li>
+                                                <li><a href="/grad/Programs/index.php?page=BIOE">Epidemiology (Masters only)</a>
+                                                </li>
+                                                <li><a href="/grad/Programs/index.php?page=HOPR">Health Outcomes and Policy Research</a></li>
+                                                <li><a href="/grad/PROGRAMS/BCLRMMO.php">Biomedical Sciences (Masters only)</a>
+                                                </li>
+                                                <li><a href="/grad/IBS/">Integrated Program in Biomedical Sciences (PhD only)</a>
+                                                </li>
+                                                <li><a href="/grad/Programs/index.php?page=NSG">Nursing</a></li>
+                                                <li><a href="/grad/Programs/index.php?page=PharmSci">Pharmaceutical Sciences</a></li>
+                                                <li><a href="/grad/Programs/index.php?page=PharmacologyMS">Pharmacology (Masters only)</a>
+                                                </li>
+                                                <li><a href="/health-professions/asp/phd/index.php">Speech and Hearing Science</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!--Health Professions-->
+                            <li class="accordion-item" data-accordion-item="data-accordion-item">
+                                <a href="#" class="accordion-title">Health Professions</a>
+                                <div class="accordion-content" data-tab-content="data-tab-content">
+
+                                    <ul>
+                                        <li>
+                                            <a href="/health-professions/">College of Health Professions</a>
+                                            <ul>
+                                                <li><a href="/health-professions/asp/index.php">Audiology &amp; Speech
+                                                        Pathology</a></li>
+                                                <li><a href="/health-professions/cls/index.php">Clinical Laboratory
+                                                        Sciences</a></li>
+                                                <li><a href="/health-professions/cls/ct/index.php">Cytotechnology &amp;
+                                                        Histotechnology </a></li>
+                                                <li><a href="/health-professions/him/index.php">Health Informatics &amp;
+                                                        Information Management</a></li>
+                                                <li><a href="/health-professions/cls/mls/index.php">Medical Laboratory
+                                                        Science</a></li>
+                                                <li><a href="/health-professions/ot/index.php">Occupational Therapy</a></li>
+                                                <li><a href="/health-professions/pt/index.php">Physical Therapy, Entry Level
+                                                        (DPT Degree)</a></li>
+                                                <li><a href="/health-professions/pt/programs/pt-graduate/index.php">Physical
+                                                        Therapy, Graduate Program (MSPT Degree)</a></li>
+                                                <li><a href="/health-professions/pt/programs/pt-graduate/index.php">Physical
+                                                        Therapy, Graduate Program (ScDPT Degree)</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+
+                            <!--Medicine-->
+                            <li class="accordion-item" data-accordion-item="data-accordion-item">
+                                <a href="#" class="accordion-title">Medicine</a>
+                                <div class="accordion-content" data-tab-content="data-tab-content">
+
+                                    <ul>
+                                        <li>
+                                            <a href="/medicine/">College of Medicine</a>
+                                            <ul>
+                                                <li><a href="/anatomy-neurobiology/">Anatomy &amp; Neurobiology</a></li>
+                                                <li><a href="/anesthesiology/">Anesthesiology</a></li>
+                                                <li><a href="/compmed/">Comparative Medicine</a></li>
+                                                <li><a href="/dermatology/">Dermatology</a></li>
+                                                <li><a href="/fammed/">Family Medicine</a></li>
+                                                <li><a href="/internalmedicine/">Medicine</a></li>
+                                                <li><a href="/molecular_sciences/">Microbiology, Immunology and
+                                                        Biochemistry</a></li>
+                                                <li><a href="/neurology/">Neurology</a></li>
+                                                <li><a href="/neurosurgery/">Neurosurgery</a></li>
+                                                <li><a href="/obgyn/">Obstetrics and Gynecology</a></li>
+                                                <li><a href="/eye/">Ophthalmology</a></li>
+                                                <li><a href="/ortho/">Orthopaedic Surgery &amp; Biomedical Engineering</a>
+                                                </li>
+                                                <li><a href="/otolaryngology/">Otolaryngology - Head and Neck Surgery</a>
+                                                </li>
+                                                <li><a href="/pathology/">Pathology and Laboratory Medicine</a></li>
+                                                <li><a href="/pediatrics/">Pediatrics</a></li>
+                                                <li><a href="/pharmacology/">Pharmacology</a></li>
+                                                <li><a href="/physician-assistant/">Physician Assistant</a></li>
+                                                <li><a href="/physiology/">Physiology</a></li>
+                                                <li><a href="/plasticsurgery/">Plastic Surgery</a></li>
+                                                <li><a href="/prevmed/">Preventive Medicine</a></li>
+                                                <li><a href="/psych/">Psychiatry</a></li>
+                                                <li><a href="/radiology/">Radiology</a></li>
+                                                <li><a href="/surgery/">Surgery</a></li>
+                                                <li><a href="/urology/">Urology</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </li>
+
+                            <!--Nursing-->
+                            <li class="accordion-item" data-accordion-item="data-accordion-item">
+                                <a href="#" class="accordion-title">Nursing</a>
+                                <div class="accordion-content" data-tab-content="data-tab-content">
+                                    <ul>
+                                        <li>
+                                            <a href="nursing/">College of Nursing</a>
+                                            <ul>
+                                                <li><a href="/nursing/academic-programs/index.php">Academic Programs</a></li>
+                                                <li><a href="/nursing/continuing-education/index.php">Continuing Education</a>
+                                                </li>
+                                                <li><a href="/nursing/practice-programs/index.php">Practice Programs</a></li>
+                                                <li><a href="/nursing/research-programs/index.php">Research Programs</a></li>
+                                                <li><a href="/nursing/academic-programs/BSN/index.php">Bachelor of Science in Nursing (BSN)</a></li>
+                                                <li><a href="/nursing/academic-programs/MSN/index.php">Clinical Nurse Leader (CNL)</a></li>
+                                                <li><a href="/nursing/academic-programs/DNP/index.php">Doctor of Nursing Practice (DNP)</a></li>
+                                                <li><a href="/nursing/academic-programs/DNP/nurse_anesthesia/index.php">Nurse Anesthesia (DNP)</a></li>
+                                                <li><a href="/nursing/academic-programs/PhD/index.php">Doctor of Philosophy (PhD)</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!--Pharmacy-->
+                            <li class="accordion-item" data-accordion-item="data-accordion-item">
+                                <a href="#" class="accordion-title">Pharmacy</a>
+                                <div class="accordion-content" data-tab-content="data-tab-content">
+                                    <ul>
+                                        <li>
+                                            <a href="/pharmacy/">College of Pharmacy</a>
+                                            <ul>
+                                                <li><a href="/pharmacy/dcp/">Department of Clinical Pharmacy</a></li>
+                                                <li><a href="/pharmacy/pharmsci/">Department of Pharmaceutical
+                                                        Sciences</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!--Accordion-->
                 </div>
+
+                <!--Did you know-->
                 <div class="columns medium-4 uthsc-did-you-know text-center">
                     <h2><span class="fa fa-lightbulb-o" aria-hidden="true"></span> Did you know...</h2>
                     <p>UTHSC is ranked</p>
                     <p class="uthsc-did-you-know-number"><sup>#</sup>17</p>
                     <p>nationally among US pharmacy schools</p>
                 </div>
+                <!--Did you know-->
+            </div>
+
             </div>
             <!--/Program Explorer-->
 

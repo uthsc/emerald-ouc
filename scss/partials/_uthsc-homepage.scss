@@ -44,6 +44,10 @@
       }
 
     }
+    .uthsc-program-explorer-heading {
+      text-align: center;
+      background: $uthsc-green;
+    }
     .uthsc-program-explorer {
       height:407px;
 
@@ -57,10 +61,6 @@
       }
 
       .uthsc-program-explorer-tabs {
-        .uthsc-program-explorer-heading {
-          text-align: center;
-          background: $uthsc-green;
-        }
 
         ul.tabs {
           margin-right: 0;
@@ -75,7 +75,7 @@
             margin-left: initial;
 
             a {
-              padding: .97rem;
+              padding: 1.13rem;
               font-size: 1.3rem;
               font-weight: 300;
               padding-left: 1.5rem;
@@ -129,7 +129,7 @@
             -ms-scroll-limit-x-max: 0;
             overflow-x: hidden;
             overflow-x: visible;
-            height: 313px;
+            height: 346px;
           }
         }
 
@@ -151,6 +151,11 @@
           //box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
         }
       }
+
+      .accordion-title {
+        border-left: 4px solid $uthsc-orange;
+      }
+
       .uthsc-did-you-know {
         background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35)), url("../images/pharmacy-grads.jpg");
         background-size: cover;
@@ -177,6 +182,20 @@
             line-height: 0.9;
           }
         }
+
+        @include breakpoint(medium only) {
+          h2 {
+            font-size: 1.5em;
+          }
+          p{
+            font-size: 1.25em;
+            &.uthsc-did-you-know-number {
+              font-size: 4em;
+            }
+          }
+
+        }
+
       }
     }
 
