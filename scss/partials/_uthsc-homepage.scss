@@ -7,10 +7,6 @@
       margin-top: 1rem;
     }
 
-    .columns.mission-image {
-      margin-top: -15px;
-    }
-
     .toggle-push-right {
       background-image: url("../images/full-width-menu-button.png");
       background-repeat: no-repeat;
@@ -20,7 +16,7 @@
       background-image: linear-gradient(
                       rgba(0, 0, 0, 0.65),
                       rgba(0, 0, 0, 0.45)
-      ),url("../images/fullscreen-students.jpg");
+      ), url("../images/fullscreen-students.jpg");
       background-size: cover;
       background-position-x: 100%;
       background-position-y: 80%;
@@ -57,79 +53,6 @@
       }
     }
 
-    // Flags
-    //  .fullscreen {
-    //    width: 100%;
-    //    height: calc(90vh - 105px);
-    //    background-image: url("../images/campus-flags.jpg");
-    //    background-size: cover;
-    //    background-position-y: 50%;
-    //    background-repeat: no-repeat;
-    //  }
-
-    .news-box {
-      h3 {
-        margin: 5px 0 0 0;
-        .news-box-for {
-          font-size: 0.8rem;
-          float: left;
-          padding-left: 46px;
-          color: #666666;
-          line-height: 0;
-          margin-bottom: 13px;
-        }
-      }
-      a {
-        &:not(:last-child):after {
-          content: "";
-          display: block;
-          height: 1px;
-          width: 90%;
-          margin: 8px;
-          background: #ccc;
-        }
-      }
-      p {
-        margin-bottom: 0;
-        font-size: .9rem;
-        padding: 0 1rem 0 0;
-      }
-
-      figure {
-        float:left;
-        margin-bottom: .25em;
-        margin-right: .75em;
-
-        img {
-          width:100px;
-          height:100px;
-        }
-      }
-
-      .post-01 {
-        @media #{$medium-up} {
-          img {
-            width: 100%;
-            height: inherit;
-          }
-        }
-      }
-
-    }
-    .hero-name-stripe {
-      height: 7vh;
-      background-color: rgba(0, 106, 77, 0.7);
-      position: relative;
-      bottom: 7vh;
-    }
-    h2.hero-text {
-      font-size: 7vh;
-      color: white;
-      position: relative;
-      bottom: 16vh;
-      margin-bottom: -17vh;
-      text-align: center;
-    }
     .uthsc-infographics h2 {
       font-weight: bolder;
       font-size: 4rem;
@@ -157,25 +80,6 @@
       font-variant-ligatures: no-common-ligatures;
     }
 
-    .blockquote {
-      .quotemark {
-        color: $gainsboro;
-      }
-      blockquote {
-        border-left: 0;
-        p {
-          font-size: 1.7vw;
-          letter-spacing: 0;
-          @media #{$small-only} {
-            font-size: 5vw;
-            line-height: 6vw !important;
-          }
-        }
-        cite {
-          text-align: right;
-        }
-      }
-    }
 
     .uthsc-infographic {
       background-size: contain !important;
@@ -202,10 +106,5 @@
         background: url("../images/numbers-million-m.png");
       }
     }
-    .uthsc-center-graphic {
-      display: block;
-      margin: 1rem auto 0;
-    }
-
   }
 }
