@@ -24,7 +24,7 @@
     <link rel="stylesheet" type="text/css"
           href="https://fonts.googleapis.com/css?family=Roboto:400italic,700italic,300,700,300italic,400">
 </head>
-<body class="homepage">
+<body>
 
 <!--******************-->
 <!--Google Tag Manager-->
