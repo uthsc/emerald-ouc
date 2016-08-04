@@ -56,24 +56,6 @@
         font-size: 1.1rem;
       }
     }
-    .uthsc-social-boxs {
-      .columns {
-        img {
-          width:100%;
-        }
-        margin-bottom: 1.7rem;
-      }
-      img:not(.uthsc-social-box-no-image) {
-        filter: sepia(.4);
-        &:hover {
-          filter: sepia(0);
-          transition: all 0.5s ease;
-        }
-      }
-      img.uthsc-social-box-no-image:hover {
-        filter: brightness(.9);
-      }
-    }
 
     // Flags
     //  .fullscreen {
