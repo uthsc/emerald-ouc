@@ -162,9 +162,9 @@
             </li>
 
             <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Compliance </a>
+                <a href="/test/todd/emerald-ouc/research/irb.php" data-equalizer-watch="heading-links">Compliance </a>
                 <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">IRB Administration </a></li>
+                    <li><a href="/test/todd/emerald-ouc/research/irb.php">IRB Administration </a></li>
                     <li><a href="#">Animal Care & Use (IACUC)</a></li>
                     <li><a href="#">Institutional Biosafety Committee</a></li>
                     <li><a href="#">Export Control</a></li>
@@ -824,9 +824,9 @@
                 <li><a href="http://uthsc.edu/research/research_administration/FAQ.php">FAQs</a></li>
             </ul>
         </li>
-        <li><a href="#" class="link-heading">Compliance</a>
+        <li><a href="/test/todd/emerald-ouc/research/irb.php" class="link-heading">Compliance</a>
             <ul>
-                <li><a href="#">IRB Administration </a></li>
+                <li><a href="/test/todd/emerald-ouc/research/irb.php">IRB Administration </a></li>
                 <li><a href="#">Animal Care & Use (IACUC)</a></li>
                 <li><a href="#">Institutional Biosafety Committee</a></li>
                 <li><a href="#">Export Control</a></li>
