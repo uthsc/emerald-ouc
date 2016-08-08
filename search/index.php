@@ -197,7 +197,7 @@
                    <!--UTHSC search results-->
                    <!--********************-->
                    <div class="row search-uthsc-results" style="display:none;">
-                       <div class="columns large-6">
+                       <div class="columns large-7">
                            <ul class="tabs" data-tabs id="custom-search-tabs">
                                <li class="tabs-title is-active"><a href="#custom-search-results-campus" aria-selected="true">Campus</a></li>
                                <li class="tabs-title"><a href="#custom-search-results-system">System</a></li>
@@ -237,7 +237,7 @@
                            </div>
                        </div>
 
-                       <div class="columns large-6">
+                       <div class="columns large-5">
 
                            <h2>People</h2>
 
