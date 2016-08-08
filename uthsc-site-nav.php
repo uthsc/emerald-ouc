@@ -53,6 +53,7 @@
                     <li><a href="http://events.uthsc.edu/">Calendar</a></li>
                     <li><a href="/hr/employment/">Career Opportunities</a></li>
                     <li><a href="/ilogin/">iLogin</a></li>
+                    <li><a href="http://library.uthsc.edu/">Library</a></li>
                     <li><a href="/redesign/map/">Maps</a></li>
                     <li><a href="https://utap.tennessee.edu/">MyUT</a></li>
                     <li><a href="https://news.uthsc.edu/">News</a></li>
