@@ -43,8 +43,10 @@ function peopleSearchTable(data, count, el, offCampus, soundsLike, lichterman) {
 
 	var html = '';
 
+	//search results info
+	html += "<div class=\"search-results-info\">";
+
 	//search result count
-	html += "<div class=\"search-results-count\">";
 	html += "<p>";
 	html += offCampus ? "Showing <strong>" + countPeople(data) + "</strong> of " : "";
 
