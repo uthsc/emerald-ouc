@@ -26,7 +26,7 @@ function peopleSearchItem(value, icon, message) {
 		value = "<em>Not Available</em>"
 	}
 
-	html += "<span class=\"fa " + icon + " hide-for-large\"></span>&nbsp;&nbsp;";
+	html += "<span class=\"fa " + icon + " hide-for-large\">&nbsp;&nbsp;</span>";
 	html += value;
 
 	return html;
