@@ -1126,6 +1126,7 @@
                 <li><a href="http://events.uthsc.edu/">Calendar</a></li>
                 <li><a href="http://uthsc.edu/hr/employment/">Career Opportunities</a></li>
                 <li><a href="/ilogin/">iLogin</a></li>
+                <li><a href="http://library.uthsc.edu/">Library</a></li>
                 <li><a href="/redesign/map/">Maps</a></li>
                 <li><a href="http://utap.tennessee.edu/">MyUT</a></li>
                 <li><a href="http://news.uthsc.edu/">News</a></li>
