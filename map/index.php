@@ -770,6 +770,7 @@
 <!--*************************-->
 
 <!--  Google Map Scripts-->
+<?php echo '<script> var locations = ['.$locations.']; </script>'; ?>
 <script src="js/campusmap-resize.js"></script>
 <script src="js/directions.js"></script>
 <script src="js/map-markers.js"></script>
