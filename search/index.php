@@ -246,7 +246,7 @@
                                <li class="tabs-title"><a href="#people-search-results-system">System</a></li>
                            </ul>
 
-                           <div class="tabs-content" data-tabs-content="people-search-tabs">
+                           <div class="tabs-content people-search-results" data-tabs-content="people-search-tabs">
                                <div class="tabs-panel is-active" id="people-search-results-campus"></div>
                                <div class="tabs-panel" id="people-search-results-system"></div>
                            </div>
