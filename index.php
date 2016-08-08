@@ -351,7 +351,7 @@
                                 <h2>Find Your Future</h2>
                             </div>
                         </div>
-                        <ul class="accordion" data-accordion="data-accordion">
+                        <ul class="accordion" data-accordion="data-accordion" data-allow-all-closed="data-allow-all-closed">
                             <!--Dentistry-->
                             <li class="accordion-item" data-accordion-item="data-accordion-item">
                                 <a href="#" class="accordion-title">Dentistry</a>
