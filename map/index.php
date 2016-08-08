@@ -453,96 +453,100 @@
                 <h1>Campus Map</h1>
             </div>
         </div>
-        <div class="button-group secondary hide-for-small-only">
-            <a href="#main-content" class="button"><span class="fa fa-arrows-v"></span> Align Map</a>
-            <a class="button" id="uthsc-map-zoom-campus"><span class="fa fa-flag"></span> Campus</a>
-            <a class="button" id="uthsc-map-zoom-3d"><span class="fa fa-cube"></span> Campus 3D</a>
-            <a class="button" id="uthsc-map-zoom-city"><span class="fa fa-building-o"></span> Memphis</a>
-            <a class="button" id="uthsc-map-zoom-state"><span class="fa fa-map"></span> Tennessee</a>
-        </div>
-        <div id="uthsc-center-map-on-page-mobile" class="row expanded small-collapse"
-             data-equalizer="data-eqaulizer-maps" data-equalize-on-stack="false">
-            <div class="columns medium-3 medium-push-1 uthsc-map-menu" data-equalizer-watch="data-eqaulizer-maps">
-                <ul id="uthsc-map-menu-drilldown" class="vertical menu" data-drilldown>
-                    <li>
-                        <a href="#" id="uthsc-map-buildings"><span class="fa fa-building secondary"
-                                                                   aria-hidden="true"></span>
-                            &emsp;Buildings</a>
-                        <ul class="vertical menu uthsc-map-list">
-
-                            <div class="uthsc-map-icon-toggle-box">
-                                <p>Buildings</p>
-                                <div class="switch tiny">
-                                    <input class="switch-input" id="buildings-switch" type="checkbox" checked="checked"
-                                           name="buildings-switch">
-                                    <label class="switch-paddle" for="buildings-switch">
-                                        <span class="switch-active" aria-hidden="true">On</span>
-                                        <span class="switch-inactive" aria-hidden="true">Off</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <?php echo $bldg_list; ?>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><span class="fa fa-car secondary" aria-hidden="true"></span>
-                            &emsp;Parking</a>
-                        <ul class="vertical menu uthsc-map-list">
-                            <div class="uthsc-map-icon-toggle-box">
-                                <p>Parking</p>
-                                <div class="switch tiny">
-                                    <input class="switch-input" id="parking-switch" type="checkbox" checked="checked"
-                                           name="parking-switch">
-                                    <label class="switch-paddle" for="parking-switch">
-                                        <span class="switch-active" aria-hidden="true">On</span>
-                                        <span class="switch-inactive" aria-hidden="true">Off</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <?php echo $pkng_list; ?>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><span class="fa fa-desktop secondary" aria-hidden="true"></span>
-                            &emsp;Student Computer Labs</a>
-                        <ul class="vertical menu uthsc-map-list">
-                            <div class="uthsc-map-icon-toggle-box">
-                                <p>Student Computer Labs</p>
-                                <div class="switch tiny">
-                                    <input class="switch-input" id="labs-switch" type="checkbox" name="labs-switch">
-                                    <label class="switch-paddle" for="labs-switch">
-                                        <span class="switch-active" aria-hidden="true">On</span>
-                                        <span class="switch-inactive" aria-hidden="true">Off</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <?php echo $labs_list; ?>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#"><span class="fa fa-print secondary" aria-hidden="true"></span>
-                            &emsp;Printable Maps (PDF)</a>
-                        <ul class="vertical menu uthsc-map-list">
-                            <li><a href="sitemap/campusmap.pdf">Memphis</a></li>
-                            <li><a href="http://gsm.utmck.edu/about/documents/utmc_campus_map2014.pdf">Knoxville</a>
-                            </li>
-                            <li><a href="sitemap/chattanooga-map.pdf">Chattanooga</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="columns sm-1 show-for-small-only text-center uthsc-map-controls">
-                <div class="button-group secondary tiny show-for-small-only">
-                    <a href="#uthsc-center-map-on-page-mobile" class="button"><span class="fa fa-arrows-v"></span> Align
-                        Map</a>
-                    <a class="button" id="uthsc-map-zoom-campus-mobile"><span class="fa fa-flag"></span> Campus</a>
-                    <a class="button" id="uthsc-map-zoom-3d-mobile"><span class="fa fa-cube"></span> Campus 3D</a>
-                    <a class="button" id="uthsc-map-zoom-city-mobile"><span class="fa fa-building-o"></span> Memphis</a>
-                    <a class="button" id="uthsc-map-zoom-state-mobile"><span class="fa fa-map"></span> Tennessee</a>
+        <div class="row expanded">
+            <div class="columns">
+                <div class="button-group secondary hide-for-small-only">
+                    <a href="#main-content" class="button"><span class="fa fa-arrows-v"></span> Align Map</a>
+                    <a class="button" id="uthsc-map-zoom-campus"><span class="fa fa-flag"></span> Campus</a>
+                    <a class="button" id="uthsc-map-zoom-3d"><span class="fa fa-cube"></span> Campus 3D</a>
+                    <a class="button" id="uthsc-map-zoom-city"><span class="fa fa-building-o"></span> Memphis</a>
+                    <a class="button" id="uthsc-map-zoom-state"><span class="fa fa-map"></span> Tennessee</a>
                 </div>
-            </div>
-            <div class="columns uthsc-map" data-equalizer-watch="data-eqaulizer-maps">
-                <div id="uthsc-map-canvas"></div>
+                <div id="uthsc-center-map-on-page-mobile" class="small-collapse"
+                     data-equalizer="data-eqaulizer-maps" data-equalize-on-stack="false">
+                    <div class="columns medium-3 medium-push-1 uthsc-map-menu" data-equalizer-watch="data-eqaulizer-maps">
+                        <ul id="uthsc-map-menu-drilldown" class="vertical menu" data-drilldown>
+                            <li>
+                                <a href="#" id="uthsc-map-buildings"><span class="fa fa-building secondary"
+                                                                           aria-hidden="true"></span>
+                                    &emsp;Buildings</a>
+                                <ul class="vertical menu uthsc-map-list">
+
+                                    <div class="uthsc-map-icon-toggle-box">
+                                        <p>Buildings</p>
+                                        <div class="switch tiny">
+                                            <input class="switch-input" id="buildings-switch" type="checkbox" checked="checked"
+                                                   name="buildings-switch">
+                                            <label class="switch-paddle" for="buildings-switch">
+                                                <span class="switch-active" aria-hidden="true">On</span>
+                                                <span class="switch-inactive" aria-hidden="true">Off</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <?php echo $bldg_list; ?>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-car secondary" aria-hidden="true"></span>
+                                    &emsp;Parking</a>
+                                <ul class="vertical menu uthsc-map-list">
+                                    <div class="uthsc-map-icon-toggle-box">
+                                        <p>Parking</p>
+                                        <div class="switch tiny">
+                                            <input class="switch-input" id="parking-switch" type="checkbox" checked="checked"
+                                                   name="parking-switch">
+                                            <label class="switch-paddle" for="parking-switch">
+                                                <span class="switch-active" aria-hidden="true">On</span>
+                                                <span class="switch-inactive" aria-hidden="true">Off</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <?php echo $pkng_list; ?>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-desktop secondary" aria-hidden="true"></span>
+                                    &emsp;Student Computer Labs</a>
+                                <ul class="vertical menu uthsc-map-list">
+                                    <div class="uthsc-map-icon-toggle-box">
+                                        <p>Student Computer Labs</p>
+                                        <div class="switch tiny">
+                                            <input class="switch-input" id="labs-switch" type="checkbox" name="labs-switch">
+                                            <label class="switch-paddle" for="labs-switch">
+                                                <span class="switch-active" aria-hidden="true">On</span>
+                                                <span class="switch-inactive" aria-hidden="true">Off</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <?php echo $labs_list; ?>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#"><span class="fa fa-print secondary" aria-hidden="true"></span>
+                                    &emsp;Printable Maps (PDF)</a>
+                                <ul class="vertical menu uthsc-map-list">
+                                    <li><a href="sitemap/campusmap.pdf">Memphis</a></li>
+                                    <li><a href="http://gsm.utmck.edu/about/documents/utmc_campus_map2014.pdf">Knoxville</a>
+                                    </li>
+                                    <li><a href="sitemap/chattanooga-map.pdf">Chattanooga</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="columns sm-1 show-for-small-only text-center uthsc-map-controls">
+                        <div class="button-group secondary tiny show-for-small-only">
+                            <a href="#uthsc-center-map-on-page-mobile" class="button"><span class="fa fa-arrows-v"></span> Align
+                                Map</a>
+                            <a class="button" id="uthsc-map-zoom-campus-mobile"><span class="fa fa-flag"></span> Campus</a>
+                            <a class="button" id="uthsc-map-zoom-3d-mobile"><span class="fa fa-cube"></span> Campus 3D</a>
+                            <a class="button" id="uthsc-map-zoom-city-mobile"><span class="fa fa-building-o"></span> Memphis</a>
+                            <a class="button" id="uthsc-map-zoom-state-mobile"><span class="fa fa-map"></span> Tennessee</a>
+                        </div>
+                    </div>
+                    <div class="columns uthsc-map" data-equalizer-watch="data-eqaulizer-maps">
+                        <div id="uthsc-map-canvas"></div>
+                    </div>
+                </div>
             </div>
         </div>
         <!--***********-->
