@@ -26,7 +26,7 @@ function peopleSearchItem(value, icon, message) {
 		value = "<em>Not Available</em>"
 	}
 
-	html += "<span class=\"fa " + icon + " hide-for-large\"></span>&nbsp;&nbsp;";
+	html += "<span class=\"fa " + icon + " hide-for-large\">&nbsp;&nbsp;</span>";
 	html += value;
 
 	return html;
@@ -43,8 +43,10 @@ function peopleSearchTable(data, count, el, offCampus, soundsLike, lichterman) {
 
 	var html = '';
 
+	//search results info
+	html += "<div class=\"search-results-info\">";
+
 	//search result count
-	html += "<div class=\"search-results-count\">";
 	html += "<p>";
 	html += offCampus ? "Showing <strong>" + countPeople(data) + "</strong> of " : "";
 
@@ -55,7 +57,6 @@ function peopleSearchTable(data, count, el, offCampus, soundsLike, lichterman) {
 		html += "<strong>" + count + "</strong> people";
 	}
 
-	html += "</small>";
 	html += "</p>";
 
 	//off campus max results message
@@ -78,6 +79,9 @@ function peopleSearchTable(data, count, el, offCampus, soundsLike, lichterman) {
 		html += "If you are using people search to nominate a UTHSC employee for the Lichterman Award, click on the name of the person you wish to nominate in the list.";
 		html += "</small>";
 	}
+
+	//end search result info
+	html += "</div>";
 
 	//results table head
 	html += "<table class=\"stack\">";

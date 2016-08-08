@@ -48,6 +48,9 @@
         iframe.uthsc-search-results{width: 100%;border: 0}
         .uthsc-banner form { display:none; }
         .uthsc-row-title { border:0; margin-bottom:0; }
+        .tabs-panel {padding: 0;}
+        .people-search-results .tabs-panel .search-results-info {padding: 1em;}
+        .people-search-results .tabs-panel table {margin-bottom:0;}
         #people-search-results-system table td, #people-search-results-campus table td{ font-size:.8em; }
         .tabs-content {margin-bottom: 2em;}
         small {margin-bottom:1em; display:block;}
@@ -197,7 +200,7 @@
                    <!--UTHSC search results-->
                    <!--********************-->
                    <div class="row search-uthsc-results" style="display:none;">
-                       <div class="columns large-6">
+                       <div class="columns large-7">
                            <ul class="tabs" data-tabs id="custom-search-tabs">
                                <li class="tabs-title is-active"><a href="#custom-search-results-campus" aria-selected="true">Campus</a></li>
                                <li class="tabs-title"><a href="#custom-search-results-system">System</a></li>
@@ -237,7 +240,7 @@
                            </div>
                        </div>
 
-                       <div class="columns large-6">
+                       <div class="columns large-5">
 
                            <h2>People</h2>
 
@@ -246,7 +249,7 @@
                                <li class="tabs-title"><a href="#people-search-results-system">System</a></li>
                            </ul>
 
-                           <div class="tabs-content" data-tabs-content="people-search-tabs">
+                           <div class="tabs-content people-search-results" data-tabs-content="people-search-tabs">
                                <div class="tabs-panel is-active" id="people-search-results-campus"></div>
                                <div class="tabs-panel" id="people-search-results-system"></div>
                            </div>
