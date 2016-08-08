@@ -57,7 +57,6 @@ function peopleSearchTable(data, count, el, offCampus, soundsLike, lichterman) {
 		html += "<strong>" + count + "</strong> people";
 	}
 
-	html += "</small>";
 	html += "</p>";
 
 	//off campus max results message
@@ -80,6 +79,9 @@ function peopleSearchTable(data, count, el, offCampus, soundsLike, lichterman) {
 		html += "If you are using people search to nominate a UTHSC employee for the Lichterman Award, click on the name of the person you wish to nominate in the list.";
 		html += "</small>";
 	}
+
+	//end search result info
+	html += "</div>";
 
 	//results table head
 	html += "<table class=\"stack\">";
