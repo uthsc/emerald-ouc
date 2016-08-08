@@ -48,6 +48,9 @@
         iframe.uthsc-search-results{width: 100%;border: 0}
         .uthsc-banner form { display:none; }
         .uthsc-row-title { border:0; margin-bottom:0; }
+        .tabs-panel {padding: 0;}
+        .people-search-results .tabs-panel .search-results-info {padding: 1em;}
+        .people-search-results .tabs-panel table {margin-bottom:0;}
         #people-search-results-system table td, #people-search-results-campus table td{ font-size:.8em; }
         .tabs-content {margin-bottom: 2em;}
         small {margin-bottom:1em; display:block;}
