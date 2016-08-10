@@ -540,29 +540,27 @@
                 </div>
             </div>
         </div>
-            <!-- Program Explorer-->
-            <div class="row uthsc-program-explorer uthsc-row-space">
 
-
-            </div>
-            <!--/Program Explorer-->
-
-            <!--Search form-->
-            <form class="row uthsc-people-search uthsc-row-space" aria-label="Search the UTHSC site"
-                  action="/redesign/search/" method="get" >
-                <div class="columns callout">
-                    <div class="input-group">
-                        <input class="input-group-field" type="text" placeholder="Search ..." type="search"
-                               aria-label="Search the UTHSC site" role="search" name="q" />
-                        <div class="input-group-button">
-                            <button type="submit" class="button" aria-label="Submit search form">
-                                <span class="fa fa-search" aria-hidden="true"></span>
-                            </button>
+        <div class="row expanded">
+            <div class="row">
+                <div class="columns">
+                    <form class="uthsc-people-search" aria-label="Search the UTHSC site"
+                          action="/redesign/search/" method="get" >
+                        <div class="columns callout">
+                            <div class="input-group">
+                                <input class="input-group-field" type="text" placeholder="Search ..." type="search"
+                                       aria-label="Search the UTHSC site" role="search" name="q" />
+                                <div class="input-group-button">
+                                    <button type="submit" class="button" aria-label="Submit search form">
+                                        <span class="fa fa-search" aria-hidden="true"></span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
-            </form>
-            <!--/Search form-->
+            </div>
+        </div>
 
             <!--  Mission Row-->
             <div class="row uthsc-row-space medium-up-2 large-up-4">
