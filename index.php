@@ -528,19 +528,22 @@
                         <!--Accordion-->
                     </div>
                 </div>
+                <div class="large-4 medium-5 columns">
+                    <!--Did you know-->
+                    <div class="uthsc-did-you-know text-center">
+                        <h2><span class="fa fa-lightbulb-o" aria-hidden="true"></span> Did you know...</h2>
+                        <p>UTHSC is ranked</p>
+                        <p class="uthsc-did-you-know-number"><sup>#</sup>17</p>
+                        <p>nationally among US pharmacy schools</p>
+                    </div>
+                    <!--Did you know-->
+                </div>
             </div>
         </div>
             <!-- Program Explorer-->
             <div class="row uthsc-program-explorer uthsc-row-space">
 
-                <!--Did you know-->
-                <div class="columns medium-4 uthsc-did-you-know text-center">
-                    <h2><span class="fa fa-lightbulb-o" aria-hidden="true"></span> Did you know...</h2>
-                    <p>UTHSC is ranked</p>
-                    <p class="uthsc-did-you-know-number"><sup>#</sup>17</p>
-                    <p>nationally among US pharmacy schools</p>
-                </div>
-                <!--Did you know-->
+
             </div>
             <!--/Program Explorer-->
 
