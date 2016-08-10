@@ -128,9 +128,9 @@
     color: #fff;
     font-weight: bold;
 
-    @include breakpoint(medium) {
+    /*@include breakpoint(medium) {
       border-left: 2rem solid #fff;
-    }
+    }*/
 
     h2 {
       border-bottom: 0.4rem solid $uthsc-green;
