@@ -35,7 +35,7 @@ function parseNewsPosts(postCount, oucSnippetId) {
 			featuredImageLink = posts[i]._embedded['wp:featuredmedia'][0]['source_url'];
 			featuredImageLink = featuredImageLink.replace('.jpg', '-300x300.jpg')
 		} else {
-			featuredImageLink = '../-resources/2015/images/homepage-news-featured-image-place-holder.jpg';
+			featuredImageLink = '/-resources/2015/images/homepage-news-featured-image-place-holder.jpg';
 		}
 
 		html += '<div class="column">' +
