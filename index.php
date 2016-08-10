@@ -185,8 +185,7 @@
     <div class="main-content" id="main-content" aria-label="Page content" role="main">
 
         <!--todo: does this need to have the about class or should that be moved to something else-->
-        <div class="content-area">
-
+        
             <!-- Program Explorer-->
             <div class="row uthsc-program-explorer uthsc-row-space">
 
@@ -538,8 +537,6 @@
                     <p>nationally among US pharmacy schools</p>
                 </div>
                 <!--Did you know-->
-            </div>
-
             </div>
             <!--/Program Explorer-->
 
