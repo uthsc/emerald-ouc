@@ -562,67 +562,62 @@
             </div>
         </div>
 
+
             <!--  Mission Row-->
-            <div class="row uthsc-row-space medium-up-2 large-up-4">
+        <div class="row expanded">              <div class="row">
+                <!--full-->
                 <div class="columns">
-                    <img src="/-resources/2015/images/mission-academics.jpg" alt="" class="uthsc-mission-image show-for-large">
-                    <img src="/-resources/2015/images/mission-academics-mobile.jpg" alt="" class="uthsc-mission-image hide-for-large">
-                    <h2>Academics</h2>
-                    <p>Since 1911, we have been training health care professionals through education, research, clinical care and public service. Today, our Colleges of Dentistry, Graduate Health Sciences, Health Professions , Medicine, Nursing and Pharmacy serve more than 3,000 students and 1,300 residents, post docs and fellows across four campuses.</p>
-                    <ul>
-                        <li><a href="/admissions/">Admissions</a></li>
-                        <li><a href="/registrar/academic_calendar.php">Academic Calendar</a></li>
-                        <li><a href="/registrar/">Registrar</a></li>
-                        <li><a href="/residency/">Residencies and Fellowships</a></li>
-                    </ul>
-
-                    <a class="button hollow small" href="/education/"><span class="fa fa-plus-circle" aria-hidden="true"></span> Learn More...</a>
-                </div>
-
-                <div class="columns">
-                    <img src="/-resources/2015/images/mission-research.jpg" alt="" class="uthsc-mission-image show-for-large">
-                    <img src="/-resources/2015/images/mission-research-mobile.jpg" alt="" class="uthsc-mission-image hide-for-large">
-                    <h2>Research</h2>
-                    <p>UTHSC has a long and rich tradition of accomplishments in basic, clinical and translational research in a wide variety of disciplines focused on the health issues that impact our community, our region, the state of Tennessee and the world.</p>
-                    <ul>
-                        <li><a href="/research/research_administration/clinical_trials/">Clinical Trials</a></li>
-                        <li><a href="/research/research_compliance/">Compliance</a></li>
-                        <li><a href="/research/research_administration/">Grants and Research Agreements</a></li>
-                        <li><a href="/redesign/research/">Office of Research</a></li>
-                    </ul>
-
-                    <a class="button hollow small" href="research/"><span class="fa fa-plus-circle" aria-hidden="true"></span> Learn More...</a>
-                </div>
-
-                <div class="columns">
-                    <img src="/-resources/2015/images/mission-clinical-care.jpg" alt="" class="uthsc-mission-image show-for-large">
-                    <img src="/-resources/2015/images/mission-clinical-care-mobile.jpg" alt="" class="uthsc-mission-image hide-for-large">
-                    <h2>Clinical Care</H2>
-                    <p>Our faculty and students provide health care to the community through our network of hospitals, practice groups, specialty care clinics, and mobile health care facilities.</p>
-                    <ul>
-                        <li><a href="/bcdd/">Boling Center</a></li>
-                        <li><a href="/dentistry/Patients/">Dental Clinic</a></li>
-                        <li><a href="/rkstc/">Rachel Kay Stevens Therapy Center</a></li>
-                        <li><a href="/ULPS/">UT Le Bonheur Pediatric Specialists</a></li>
-                    </ul>
-                    <a class="button hollow small" href="/clinicalcare/"><span class="fa fa-plus-circle" aria-hidden="true"></span> Learn More...</a>
-                </div>
-
-                <div class="columns">
-                    <img src="/-resources/2015/images/mission-public-service.jpg" alt="" class="uthsc-mission-image show-for-large">
-                    <img src="/-resources/2015/images/mission-public-service-mobile.jpg" alt="" class="uthsc-mission-image hide-for-large">
-                    <h2>Public Service</h2>
-                    <p>Public service is central to our mission. Every year, thousands of faculty, staff and volunteers across four campuses located in Memphis, Knoxville, Chattanooga and Nashville provide clinical care, health education and preventive care programs to the people of Tennessee.</p>
-                    <ul>
-                        <li><a href="/ciao/">CIAO</a></li>
-                        <li><a href="/publicservice/clinica_esperanza.pdf">Clinica Esperanza (Clinic of Hope)</a></li>
-                        <li><a href="/fooddrive/">Food Drive</a></li>
-                        <li><a href="/hcp/">Health Career Programs</a></li>
-                    </ul>
-
-                    <a class="button hollow small" href="/publicservice/"><span class="fa fa-plus-circle" aria-hidden="true"></span> Learn More...</a>
+                    <div class="row uthsc-block-grid small-up-1 medium-up-2 large-up-4">
+                        <div class="column"><img src="/images/mission-academics.jpg" alt="" class="show-for-large"><img src="/images/mission-academics-mobile.jpg" alt="" class="hide-for-large"><h2>Academics</h2>
+                            <p>Since 1911, we have been training health care professionals through education, research,
+                                clinical care and public service. Today, our Colleges of Dentistry, Graduate Health
+                                Sciences, Health Professions , Medicine, Nursing and Pharmacy serve more than 3,000
+                                students and 1,300 residents, post docs and fellows across four campuses.
+                            </p>
+                            <ul>
+                                <li><a href="/admissions/">Admissions</a></li>
+                                <li><a href="/registrar/academic_calendar.php">Academic Calendar</a></li>
+                                <li><a href="/registrar/">Registrar</a></li>
+                                <li><a href="/residency/">Residencies and Fellowships</a></li>
+                            </ul><a class="button hollow small" href="/education/"><span class="fa fa-plus-circle" aria-hidden="true"></span> Learn More...</a></div>
+                        <div class="column"><img src="/images/mission-research.jpg" alt="" class="show-for-large"><img src="/images/mission-research-mobile.jpg" alt="" class="hide-for-large"><h2>Research</h2>
+                            <p>UTHSC has a long and rich tradition of accomplishments in basic, clinical and translational
+                                research in a wide variety of disciplines focused on the health issues that impact
+                                our community, our region, the state of Tennessee and the world.
+                            </p>
+                            <ul>
+                                <li><a href="/research/research_administration/clinical_trials/">Clinical Trials</a></li>
+                                <li><a href="/research/research_compliance/">Compliance</a></li>
+                                <li><a href="/research/research_administration/">Grants and Research Agreements</a></li>
+                                <li><a href="/redesign/research/">Office of Research</a></li>
+                            </ul><a class="button hollow small" href="research/"><span class="fa fa-plus-circle" aria-hidden="true"></span> Learn More...</a></div>
+                        <div class="column"><img src="/images/mission-clinical-care.jpg" alt="" class="show-for-large"><img src="/images/mission-clinical-care-mobile.jpg" alt="" class="hide-for-large"><h2>Clinical Care</h2>
+                            <p>Our faculty and students provide health care to the community through our network
+                                of hospitals, practice groups, specialty care clinics, and mobile health care facilities.
+                            </p>
+                            <ul>
+                                <li><a href="/bcdd/">Boling Center</a></li>
+                                <li><a href="/dentistry/Patients/">Dental Clinic</a></li>
+                                <li><a href="/rkstc/">Rachel Kay Stevens Therapy Center</a></li>
+                                <li><a href="/ULPS/">UT Le Bonheur Pediatric Specialists</a></li>
+                            </ul><a class="button hollow small" href="/clinicalcare/"><span class="fa fa-plus-circle" aria-hidden="true"></span> Learn More...</a></div>
+                        <div class="column"><img src="/images/mission-public-service.jpg" alt="" class="show-for-large"><img src="/images/mission-public-service-mobile.jpg" alt="" class="hide-for-large"><h2>Public Service</h2>
+                            <p>Public service is central to our mission. Every year, thousands of faculty, staff
+                                and volunteers across four campuses located in Memphis, Knoxville, Chattanooga and
+                                Nashville provide clinical care, health education and preventive care programs to
+                                the people of Tennessee.
+                            </p>
+                            <ul>
+                                <li><a href="/ciao/">CIAO</a></li>
+                                <li><a href="/publicservice/clinica_esperanza.pdf">Clinica Esperanza (Clinic of Hope)</a></li>
+                                <li><a href="/fooddrive/">Food Drive</a></li>
+                                <li><a href="/hcp/">Health Career Programs</a></li>
+                            </ul><a class="button hollow small" href="/publicservice/"><span class="fa fa-plus-circle" aria-hidden="true"></span> Learn More...</a></div>
+                    </div>
+                    <p>&nbsp;</p>
                 </div>
             </div>
+        </div>
             <!--/ Mission Row-->
 
             <hr />
