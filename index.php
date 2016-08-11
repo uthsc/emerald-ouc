@@ -622,6 +622,43 @@
 
             <hr />
 
+        <div class="row expanded">              <div class="row">
+                <!-- 1/4 1/2 1/4 -->
+                <div class="large-6 large-push-3 columns">
+                    <div class="row uthsc-infographic tennessee">
+                        <div class="columns medium-6">
+                            <h2>4<span class="fa fa-map-marker" aria-hidden="true"></span></h2>
+                            <p>Campuses</p>
+                            <p>
+                                <a href="/aboututhsc/ourcampuses.php#memphis">Memphis |</a>
+                                <a href="/aboututhsc/ourcampuses.php#knoxville"> Knoxville |</a>
+                                <a href="/aboututhsc/ourcampuses.php#nashville"> Nashville |</a>
+                                <a href="/aboututhsc/ourcampuses.php#chattanooga"> Chattanooga</a>
+                            </p>
+                        </div>
+                        <div class="columns medium-6">
+                            <h2>100+</h2>
+                            <p>Clinical &amp<br />Educational Sites</p>
+                        </div>
+                    </div>
+                    <p><span class="uthsc-infographic-highlight" style="position: relative; top: -2.7rem;">Across Tennessee</span></p>
+                </div>
+                <div class="large-3 large-pull-6 medium-6 columns">
+                    <div class="uthsc-infographic millions">
+                        <h2>$200</h2>
+                        <p>Million</p>
+                        <p>in sponsored programs<br><span class="uthsc-infographic-highlight">in fiscal 2014</span></p>
+                    </div>
+                </div>
+                <div class="large-3 medium-6 columns">
+                    <div class="uthsc-infographic billions">
+                        <h2>$2.7</h2>
+                        <p>Billion</p>
+                        <p>contributed to the<br><span class="uthsc-infographic-highlight">Tennessee economy</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
             <!--Infographics-->
             <div class="uthsc-infographics row text-center" data-equalizer="homepage-stats" data-equalize-on-stack="false">
                 <div data-equalizer-watch="homepage-stats" class="columns medium-3">
