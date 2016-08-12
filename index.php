@@ -188,7 +188,6 @@
         <div class="row expanded">
             <div class="row">
                 <div class="large-8 medium-7 columns">
-                    <div class="uthsc-program-explorer">
                         <!--Tabs-->
                         <div class="row uthsc-program-explorer-tabs show-for-large">
                                 <div class="columns uthsc-program-explorer-heading text-center">
@@ -349,7 +348,7 @@
                                         <h2>Find Your Future</h2>
                                     </div>
                                 </div>
-                                <ul class="accordion" data-accordion="data-accordion" data-allow-all-closed="data-allow-all-closed">
+                                <ul class="accordion uthsc-program-explorer-accordion" data-accordion="data-accordion" data-allow-all-closed="data-allow-all-closed">
                                     <!--Dentistry-->
                                     <li class="accordion-item" data-accordion-item="data-accordion-item">
                                         <a href="#" class="accordion-title">Dentistry</a>
@@ -526,7 +525,6 @@
                                 </ul>
                             </div>
                         <!--Accordion-->
-                    </div>
                 </div>
                 <div class="large-4 medium-5 columns">
                     <!--Did you know-->
