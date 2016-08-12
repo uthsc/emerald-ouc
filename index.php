@@ -188,7 +188,6 @@
         <div class="row expanded">
             <div class="row">
                 <div class="large-8 medium-7 columns">
-                    <div class="uthsc-program-explorer">
                         <!--Tabs-->
                         <div class="row uthsc-program-explorer-tabs show-for-large">
                                 <div class="columns uthsc-program-explorer-heading text-center">
@@ -526,7 +525,6 @@
                                 </ul>
                             </div>
                         <!--Accordion-->
-                    </div>
                 </div>
                 <div class="large-4 medium-5 columns">
                     <!--Did you know-->
