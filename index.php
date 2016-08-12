@@ -641,8 +641,8 @@
                             <h2>100+</h2>
                             <p>Clinical &amp<br />Educational Sites</p>
                         </div>
+                        <p><span class="uthsc-infographic-highlight">Across Tennessee</span></p>
                     </div>
-                    <p><span class="uthsc-infographic-highlight" style="position: relative; top: -2.7rem;">Across Tennessee</span></p>
                 </div>
                 <div class="large-3 large-pull-6 medium-6 columns">
                     <div class="uthsc-infographic millions">
