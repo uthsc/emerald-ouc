@@ -662,28 +662,33 @@
         </div>
 
             <!--Social-->
-
-            <div class="row uthsc-social">
+        <div class="row expanded">
+            <div class="row">
                 <div class="columns uthsc-row-title">
                     <h3>UTHSC Now</h3>
                 </div>
-            </div>
 
-            <div class="row">
-                <div class="uthsc-now-loader" style="color:#006a4d; text-align:center;">
-                    <span class="fa fa-spinner fa-spin" aria-hidden="true"></span>&nbsp;Loading UTHSC Now
+                <div class="columns">
+                    <div class="uthsc-now-loader" style="color:#006a4d; text-align:center;">
+                        <span class="fa fa-spinner fa-spin" aria-hidden="true"></span>&nbsp;Loading UTHSC Now
+                    </div>
+
+                    <div class="uthsc-now grid">
+                        <div class="grid-sizer"></div>
+                    </div>
                 </div>
-
-                <div class="uthsc-now grid">
-                    <div class="grid-sizer"></div>
-                </div>
+                
             </div>
-
-            <div class="uthsc-now-more" style="text-align:center;"></div>
-
-            <!--/Social-->
         </div>
+        <!--/Social-->
 
+        <div class="row expanded">
+            <div class="row">
+                <div class="columns">
+                    <div class="uthsc-now-more" style="text-align:center;"></div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--********-->
     <!--/Content-->
