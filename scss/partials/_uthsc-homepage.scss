@@ -88,22 +88,16 @@
       margin: 1.5rem 0px !important;
       padding: 0.5rem;
       &.tennessee {
-        background: url("../images/uthsc-tennessee-gray.png");
+        background: url("/images/homepage/uthsc-tennessee-gray.png");
         &:hover {
-          background: url("../images/uthsc-tennessee-color.png");
+          background: url("/images/homepage/uthsc-tennessee-color.png");
         }
       }
-      &.pharmacy {
-        background: url("../images/numbers-pharmacy-seal.png");
-      }
-      &.foam-hand {
-        background: url("../images/numbers-foam-hand.png");
-      }
       &.billions {
-        background: url("../images/numbers-billion-b.png");
+        background: url("/images/homepage/numbers-billion-b.png");
       }
       &.millions {
-        background: url("../images/numbers-million-m.png");
+        background: url("/images/homepage/numbers-million-m.png");
       }
     }
   }
