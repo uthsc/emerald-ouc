@@ -622,7 +622,8 @@
 
             <hr />
 
-        <div class="row expanded">              <div class="row">
+        <div class="row expanded">
+            <div class="row">
                 <!-- 1/4 1/2 1/4 -->
                 <div class="large-6 large-push-3 columns">
                     <div class="row uthsc-infographic tennessee">
