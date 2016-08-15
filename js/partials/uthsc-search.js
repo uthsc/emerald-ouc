@@ -141,7 +141,7 @@ $(document).ready(function () {
 		$('form.search-form .search-input').attr({value: searchUthscQuery});
 	} else {
 		//add bottom-margin to input
-		$('.main-content .search-form').attr({style:"margin-bottom:30em;"})
+		$('.main-content .search-form').attr({style:"margin-bottom:14em;"})
 	}
 
 	//check for search type
