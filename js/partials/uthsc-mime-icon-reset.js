@@ -1,3 +1,3 @@
 $(document).ready(function(){
-	$('a:has(img)').addClass('image-link');
+	$('a:has(img)').addClass('uthsc-image-link');
 });
