@@ -1,0 +1,33 @@
+////
+/// @group uthsc-faqs
+////
+
+@mixin uthsc-faqs {
+  .uthsc-faq h2 a, .uthsc-faq h3 a {
+    color: #555;
+    font-weight: 300;
+  }
+
+  .uthsc-faq-heading-1 a:after, .uthsc-faq-heading-2 a:after {
+    font-family: "FontAwesome";
+    content: " \f0c1";
+    color: #555;
+    font-size:.75em
+  }
+
+  .uthsc-faq-heading-1, .uthsc-faq-heading-2 {
+    margin: 1em 0 .25em 0;
+  }
+
+  .uthsc-faq .uthsc-row-title h2 {
+    margin: 0;
+  }
+
+  .uthsc-faq-answer {
+    margin-bottom: 2em;
+  }
+
+  p.uthsc-faq-question {
+    margin-bottom:0
+  }
+}

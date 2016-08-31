@@ -9,6 +9,7 @@
 @import 'partials/uthsc-now.scss';
 @import 'partials/uthsc-backgrounds.scss';
 @import 'partials/uthsc-snippet-style-fixes.scss';
+@import 'partials/uthsc-faqs';
 
 //include foundation components
 @include foundation-global-styles;
@@ -77,3 +78,4 @@
 @include uthsc-now;
 @include uthsc-backgrounds;
 @include uthsc-snippet-half-columns;
+@include uthsc-faqs;
