@@ -8,14 +8,14 @@
     font-weight: 300;
   }
 
-  .uthsc-faq-heading-1 a:after, .uthsc-faq-heading-2 a:after {
+  .uthsc-faq h2 a:after, .uthsc-faq h3 a:after {
     font-family: "FontAwesome";
     content: " \f0c1";
     color: #555;
     font-size:.75em
   }
 
-  .uthsc-faq-heading-1, .uthsc-faq-heading-2 {
+  .uthsc-faq h2, .uthsc-faq h3 {
     margin: 1em 0 .25em 0;
   }
 
@@ -29,5 +29,13 @@
 
   p.uthsc-faq-question {
     margin-bottom:0
+  }
+
+  .uthsc-faq-answer-heading {
+    color: #0084b6;
+  }
+
+  .uthsc-faq-heading-1, .uthsc-faq-heading-2 {
+    border-bottom: 1px solid #ccc;
   }
 }
