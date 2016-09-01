@@ -1,0 +1,15 @@
+////
+/// @group uthsc-navigation-fix-ie
+////
+
+@mixin uthsc-navigation-fix-ie {
+  #uthsc-section-navigation>ul>li{
+    display:flex;
+    justify-content: center;
+    -ms-flex-align:center;
+  }
+  #uthsc-section-navigation>ul>li>a {
+    width:100%;
+    display:block;
+  }
+}
