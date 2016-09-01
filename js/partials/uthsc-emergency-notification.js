@@ -43,7 +43,8 @@ $.ajax({
 		renderUthscAlert(uthscAlert);
 	},
 	error: function(xhr, status, error) {
-		var err = eval(xhr.responseText);
-		alert(err.Message);
+		//var err = eval(xhr.responseText);
+		//alert(err.Message);
+		console.log(error);
 	}
 });
