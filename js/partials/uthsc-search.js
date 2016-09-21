@@ -122,6 +122,20 @@ function peopleSearchTable(data, count, el, offCampus, soundsLike, lichterman) {
 	$(el).html(html);
 }
 
+function peopleSearchNoResultsHtml() {
+
+	var html = '',
+		  useSoundsLike = peopleSearchResults['meta']['use_sounds_like'],
+		  soundsLike = '';
+
+	if ( useSoundsLike ) {
+		soundsLike += '<p>' + useSoundsLike + '</p>';
+	}
+
+	html += '<div class="search-results-info"><p>no results</p>' + soundsLike + '</div>';
+	return html;
+}
+
 
 $(document).ready(function () {
 	var offCampus = peopleSearchResults['meta']['off_campus'],
@@ -158,7 +172,7 @@ $(document).ready(function () {
 		peopleSearchTable(campusResults, campusResultsCount, '#people-search-results-campus', offCampus, soundsLike, lichterman);
 
 	} else {
-		$('#people-search-results-campus').html('no results')
+		$('#people-search-results-campus').html( peopleSearchNoResultsHtml() );
 	}
 
 	if(systemResultsCount > 0) {
@@ -166,6 +180,6 @@ $(document).ready(function () {
 		peopleSearchTable(systemResults, systemResultsCount, '#people-search-results-system', offCampus, soundsLike, 0);
 
 	} else {
-		$('#people-search-results-system').html('no results')
+		$('#people-search-results-system').html( peopleSearchNoResultsHtml() );
 	}
 });
