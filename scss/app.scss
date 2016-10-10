@@ -12,6 +12,7 @@
 @import 'partials/uthsc-faqs';
 @import 'partials/uthsc-navigation-flex-fix-ie';
 @import 'partials/uthsc-image-navigation';
+@import 'partials/uthsc-pretty-photo';
 
 //include foundation components
 @include foundation-global-styles;
@@ -82,6 +83,7 @@
 @include uthsc-snippet-half-columns;
 @include uthsc-faqs;
 @include uthsc-image-navigation;
+@include uthsc-pretty-photo;
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   @include uthsc-navigation-fix-ie;
