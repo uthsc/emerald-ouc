@@ -31,7 +31,7 @@ function parseNewsPosts(postCount, oucSnippetId) {
 			postDate = monthNames[monthIndex] + ' ' + date.getDate() + ', ' + date.getFullYear(),
 			postTitle = posts[i]['title']['rendered'];
 
-		if (typeof posts[i]._embedded['wp:featuredmedia'] !== 'undefined') {
+		if ( (typeof posts[i]._embedded['wp:featuredmedia'] !== 'undefined') && (posts[i]._embedded['wp:featuredmedia'][0]['code'] !== 'rest_forbidden') ) {
 			featuredImageLink = posts[i]._embedded['wp:featuredmedia'][0]['source_url'];
 			featuredImageLink = featuredImageLink.replace('.jpg', '-300x300.jpg')
 		} else {
