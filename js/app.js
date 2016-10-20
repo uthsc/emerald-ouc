@@ -8,6 +8,6 @@ Foundation.Keyboard.register('DropdownMenu',{
     'ARROW_LEFT': 'previous',
     'ESCAPE': 'close'
 });
-$(document).ready(function(){
-	$("a[rel^='prettyPhoto']").prettyPhoto();
-});
+// $(document).ready(function(){
+// 	$("a[rel^='prettyPhoto']").prettyPhoto();
+// });
