@@ -1,5 +1,5 @@
 var uthscNowHomepage = {
-	url: '/now/uthsc-now-homepage.json',
+	url: '/now/json/uthsc-now-homepage.json',
 
 	loadPostsFirst: 0,
 
