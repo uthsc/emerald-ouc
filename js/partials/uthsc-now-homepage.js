@@ -5,6 +5,8 @@ var uthscNowHomepage = {
 
 	loadPostsLast: 14,
 
+	posts: [],
+
 	renderNewsPosts: function(containerElement, data, masonry) {
 		jQuery(containerElement).append(uthscNowHomepage.parseUthscNowPosts(data));
 
@@ -29,7 +31,7 @@ var uthscNowHomepage = {
 			//add load more button
 			jQuery('.uthsc-now-more').html('<div class="button uthsc-now-load-more-button">Load More&nbsp;<span class="fa fa-refresh" aria-hidden="true"></span></div>');
 			jQuery('.uthsc-now-load-more-button').click( function(){
-				uthscNowHomepage.renderNewsPosts('.uthsc-now',posts,true);
+				uthscNowHomepage.renderNewsPosts('.uthsc-now',uthscNowHomepage.posts,true);
 			});
 		} else {
 			// add go to uthsc now button
@@ -104,12 +106,12 @@ var uthscNowHomepage = {
 	}
 };
 
-
 $.ajax({
 	type: "GET",
 	url: uthscNowHomepage.url,
 	dataType: "json",
 	success: function (data) {
+		uthscNowHomepage.posts = data;
 		uthscNowHomepage.renderNewsPosts('.uthsc-now',data);
 	}
 });
