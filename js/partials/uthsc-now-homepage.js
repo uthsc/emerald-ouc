@@ -10,14 +10,18 @@ var uthscNowHomepage = {
 	renderNewsPosts: function(containerElement, data, masonry) {
 		jQuery(containerElement).append(uthscNowHomepage.parseUthscNowPosts(data));
 
-		var $grid = jQuery('.uthsc-now').imagesLoaded( function(){
-			$grid.masonry({
-				// set itemSelector so .grid-sizer is not used in layout
-				itemSelector: '.grid-item',
-				// use element for option
-				columnWidth: '.grid-sizer',
-				percentPosition: true
-			});
+		// init Masonry
+		var $grid = $('.uthsc-now').masonry({
+			// set itemSelector so .grid-sizer is not used in layout
+			itemSelector: '.grid-item',
+			// use element for option
+			columnWidth: '.grid-sizer',
+			percentPosition: true
+		});
+
+		// layout Masonry after each image loads
+		$grid.imagesLoaded().progress( function() {
+			$grid.masonry('layout');
 		});
 
 		jQuery('.uthsc-now-loader').empty();
