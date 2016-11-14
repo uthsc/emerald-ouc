@@ -1,4 +1,4 @@
-var url = '/now/uthsc-now.json',
+var url = '/now/json/uthsc-now.json',
 	loadPostsFirst = 0,
 	loadPostsLast = 20;
 
