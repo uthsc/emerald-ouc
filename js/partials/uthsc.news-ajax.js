@@ -7,20 +7,38 @@ function newsAjax(url, oucSnippetId, postCount) {
 		url: url,
 		dataType: "json",
 		success: function (data) {
-			posts = data;
-			renderNewsPosts(oucSnippetId, reFlowNews, postCount);
+			uthscNewsSnippet.renderNewsPosts(oucSnippetId, postCount, data);
 		}
 	});
 }
 
-function parseNewsPosts(postCount, oucSnippetId) {
-	var html = '';
+var uthscNewsSnippet = (function(){
 
-	for (var i=0;i<postCount;i++) {
+	function hasFeaturedMedia(post) {
+		if( typeof(post._embedded['wp:featuredmedia']) !== 'undefined' ){
+			if ( post._embedded['wp:featuredmedia'][0]['code'] == 'rest_forbidden' ) {
+				return false
+			}
+			return true
+		}
+		return false;
+	}
 
-		var postLink = posts[i]['link'],
-			featuredImageLink = '',
-			date = new Date( posts[i]['date'] ),
+	function getFeaturedImage(post) {
+		var featuredImageLink = '/-resources/2015/images/homepage-news-featured-image-place-holder.jpg';
+		if ( hasFeaturedMedia(post) ) {
+			if (typeof(post._embedded['wp:featuredmedia'][0]['media_details']['sizes']['thumbnail']) !== 'undefined') {
+				featuredImageLink = post._embedded['wp:featuredmedia'][0]['media_details']['sizes']['thumbnail']['source_url'];
+			}
+		}
+		return featuredImageLink
+	}
+
+	function parseSinglePost(post, oucSnippetId) {
+
+		var postLink = post['link'],
+			featuredImageLink = getFeaturedImage(post),
+			date = new Date(post['date']),
 			monthNames = [
 				"January", "February", "March",
 				"April", "May", "June", "July",
@@ -29,17 +47,10 @@ function parseNewsPosts(postCount, oucSnippetId) {
 			],
 			monthIndex = date.getMonth(),
 			postDate = monthNames[monthIndex] + ' ' + date.getDate() + ', ' + date.getFullYear(),
-			postTitle = posts[i]['title']['rendered'];
+			postTitle = post['title']['rendered'];
 
-		if ( (typeof posts[i]._embedded['wp:featuredmedia'] !== 'undefined') && (posts[i]._embedded['wp:featuredmedia'][0]['code'] !== 'rest_forbidden') ) {
-			featuredImageLink = posts[i]._embedded['wp:featuredmedia'][0]['source_url'];
-			featuredImageLink = featuredImageLink.replace('.jpg', '-300x300.jpg')
-		} else {
-			featuredImageLink = '/-resources/2015/images/homepage-news-featured-image-place-holder.jpg';
-		}
-
-		html += '<div class="column">' +
-			'<div class="uthsc-news-box ' + 'post-0' + (i + 1) + '">' +
+		parsedPost = '<div class="column">' +
+			'<div class="uthsc-news-box">' +
 			'<a data-equalizer-watch="news-boxes-' + oucSnippetId + '" ' + 'href="' + postLink + '">' +
 			'<div class="row">' +
 
@@ -48,33 +59,49 @@ function parseNewsPosts(postCount, oucSnippetId) {
 			'</div>' +
 
 			'<div class="columns small-9 large-8">' +
-			'<h4>' + postTitle +'</h4>' +
-			'<p>' + postDate +'</p>' +
+			'<h4>' + postTitle + '</h4>' +
+			'<p>' + postDate + '</p>' +
 			'</div>' +
 
 			'</div>' +
 			'</a>' +
 			'</div>' +
 			'</div>';
+
+		return parsedPost;
 	}
 
-	return html;
-}
+	function parseNewsPosts(postCount, oucSnippetId, posts) {
 
-function reFlowNews(oucSnippetId) {
-	//equalizer re-flow
-	//$('.news-snippet').foundation();
-	// var elem = new Foundation.Equalizer($(".news-snippet"), {
-	// 	equalizeOnStack: false
-	// });
-	//Foundation.reInit('equalizer');
- 	//$('.random-snippet-class-' + oucSnippetId).foundation();
-	var foo = new Foundation.Equalizer($('.news-snippet-' + oucSnippetId), {equalizeOnStack:false});
-}
+		var htmlPosts = posts.map(function (post) {
+			return parseSinglePost(post, oucSnippetId)
+		});
 
-function renderNewsPosts(oucSnippetId, reFlowNews, postCount) {
-	$('.news-snippet-' + oucSnippetId).empty();
-	$('.news-snippet-' + oucSnippetId).html(parseNewsPosts(postCount, oucSnippetId));
+		return htmlPosts.join('');
+	}
 
-	if ( reFlowNews &&  ( typeof(reFlowNews) === 'function' ) ) reFlowNews(oucSnippetId);
-}
+	function reFlowNews(oucSnippetId) {
+		//equalizer re-flow
+		//$('.news-snippet').foundation();
+		// var elem = new Foundation.Equalizer($(".news-snippet"), {
+		// 	equalizeOnStack: false
+		// });
+		//Foundation.reInit('equalizer');
+		//$('.random-snippet-class-' + oucSnippetId).foundation();
+		var foo = new Foundation.Equalizer($('.news-snippet-' + oucSnippetId), {equalizeOnStack:false});
+	}
+
+	publicAPI = {
+		featuredImage: function (post) {
+			return getFeaturedImage(post);
+		},
+
+		renderNewsPosts: function (oucSnippetId, postCount, posts) {
+			$('.news-snippet-' + oucSnippetId).empty();
+			$('.news-snippet-' + oucSnippetId).html( parseNewsPosts(postCount, oucSnippetId, posts) );
+			reFlowNews(oucSnippetId);
+		}
+	}
+
+	return publicAPI;
+})();
