@@ -39,7 +39,7 @@ function peopleSearchItem(value, icon, message) {
  * @el        element to render html in
  * @offCampus bool: true if user is off campus
  */
-function peopleSearchTable(data, count, el, offCampus, soundsLike, lichterman) {
+function peopleSearchTable(data, count, el, offCampus, soundsLike, lichterman, erc_esc) {
 
 	var html = '';
 
@@ -77,6 +77,13 @@ function peopleSearchTable(data, count, el, offCampus, soundsLike, lichterman) {
 	if (lichterman) {
 		html += "<small>";
 		html += "If you are using people search to nominate a UTHSC employee for the Lichterman Award, click on the name of the person you wish to nominate in the list.";
+		html += "</small>";
+	}
+
+	//erc esc nominations
+	if (erc_esc) {
+		html += "<small>";
+		html += "If you are using people search to nominate a UTHSC employee for the ERC or ESC, click on the name of the person you wish to nominate in the list.";
 		html += "</small>";
 	}
 
@@ -144,7 +151,8 @@ $(document).ready(function () {
 		systemResultsCount = peopleSearchResults['meta']['system_count'],
 		campusResults = peopleSearchResults['campus'],
 		systemResults = peopleSearchResults['system'],
-		lichterman = peopleSearchResults['meta']['lichterman'];
+		lichterman = peopleSearchResults['meta']['lichterman'],
+		erc_esc = peopleSearchResults['meta']['erc_esc'];
 
 
 	//check for query
@@ -169,7 +177,7 @@ $(document).ready(function () {
 	}
 
 	if(campusResultsCount > 0) {
-		peopleSearchTable(campusResults, campusResultsCount, '#people-search-results-campus', offCampus, soundsLike, lichterman);
+		peopleSearchTable(campusResults, campusResultsCount, '#people-search-results-campus', offCampus, soundsLike, lichterman, erc_esc);
 
 	} else {
 		$('#people-search-results-campus').html( peopleSearchNoResultsHtml() );
