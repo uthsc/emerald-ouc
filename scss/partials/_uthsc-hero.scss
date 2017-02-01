@@ -14,13 +14,13 @@
       background-size: cover;
 
 
-      @media #{$small-up} {
+      @include breakpoint(small up) {
         height: 10vh;
       }
-      @media #{$medium-up} {
+      @include breakpoint(medium up) {
         height: 25vh;
       }
-      @media #{$large-up} {
+      @include breakpoint(large up) {
         height: 50vh;
       }
 
