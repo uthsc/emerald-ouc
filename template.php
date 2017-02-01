@@ -275,6 +275,16 @@
 
             <div class="row">
                     <div class="columns medium-9">
+                        <h4>Icons</h4>
+                        <p><a href="test.pdf#page=4">Test pdf#page=4</a></p>
+                        <p><a href="test.pdf">Test pdf</a></p>
+                        <p><a href="test.doc">Test doc</a></p>
+                        <p><a href="test.docx">Test docx</a></p>
+                        <p><a href="test.xls">Test xls</a></p>
+                        <p><a href="test.xlsx">Test xlsx</a></p>
+                        <p><a href="test.ppt">Test ppt</a></p>
+                        <p><a href="test.pptx">Test pptx</a></p>
+
                         <h3><strong><em>Content</em></strong> <b><i>Row</i></b> 1</h3>
                         <p>This is a full width row with columns inside of it.</p>
                         <p>Thanks to<a href="http://fortawesome.github.io/Font-Awesome/">
@@ -834,6 +844,22 @@
                         </div>
                     </li>
                 </ul>
+
+                <h4>Tabs</h4>
+                <ul class="tabs" data-tabs id="example-tabs">
+                  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+                  <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+                </ul>
+                <div class="tabs-content" data-tabs-content="example-tabs">
+                  <div class="tabs-panel is-active" id="panel1">
+                    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+                  </div>
+                  <div class="tabs-panel" id="panel2">
+                    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                  </div>
+                </div>
+                <br />
+
             </div>
         </div>
     </div>
