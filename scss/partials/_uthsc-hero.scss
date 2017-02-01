@@ -13,12 +13,11 @@
       background-position: 50%;
       background-size: cover;
 
-
       @include breakpoint(small up) {
-        height: 10vh;
+        height: 30vh;
       }
       @include breakpoint(medium up) {
-        height: 25vh;
+        height: 36vh;
       }
       @include breakpoint(large up) {
         height: 50vh;
