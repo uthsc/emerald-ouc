@@ -275,6 +275,16 @@
 
             <div class="row">
                     <div class="columns medium-9">
+                        <h4>Icons</h4>
+                        <p><a href="test.pdf#page=4">Test pdf#page=4</a></p>
+                        <p><a href="test.pdf">Test pdf</a></p>
+                        <p><a href="test.doc">Test doc</a></p>
+                        <p><a href="test.docx">Test docx</a></p>
+                        <p><a href="test.xls">Test xls</a></p>
+                        <p><a href="test.xlsx">Test xlsx</a></p>
+                        <p><a href="test.ppt">Test ppt</a></p>
+                        <p><a href="test.pptx">Test pptx</a></p>
+
                         <h3><strong><em>Content</em></strong> <b><i>Row</i></b> 1</h3>
                         <p>This is a full width row with columns inside of it.</p>
                         <p>Thanks to<a href="http://fortawesome.github.io/Font-Awesome/">
