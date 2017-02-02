@@ -36,6 +36,41 @@ function parsePersonDetails(data) {
 		}
 	}
 
+	if (meta.ercesc) {
+		if (meta.ercesc_eligible) {
+			html += "<div class=\"callout\">";
+			html += "<div class=\"row\">";
+			html += "<div class=\"columns small-3\">";
+			if (meta.ercesc_exempt_code == 1) {
+				html += "<img src=\"/search/images/esc.jpg\" alt=\"\" />";
+			}
+			if (meta.ercesc_exempt_code == 2) {
+				html += "<img src=\"/search/images/erc.jpg\" alt=\"\" />";
+			}
+			html += "</div>";
+			html += "<div class=\"columns small-9\">";
+			if (meta.ercesc_nominated) {
+				html += "<p>" + person.name + " has already been nominated to serve.</p>";
+			} else {
+				html += "<p>" + person.name + " might be eligible to serve!</p>";
+				html += "<a href=\"" + meta.ercesc_nominate_url + "\" ><span class=\"fa fa-trophy\" aria-hidden=\"true\"></span>&nbsp;Nominate " + person.name + "</a>";
+			}
+
+			html += "</div>";
+			html += "</div>";
+			html += "</div>";
+		} else {
+			html += "<div class=\"callout\">";
+			html += "<div class=\"row\">";
+			html += "<div class=\"columns small-12\">";
+			html += "<p>" + person.name + " is not eligible to serve on the ERC or ESC. Only full-time, ";
+			html += "employees with at least one year of service are eligible.</p>";
+			html += "</div>";
+			html += "</div>";
+			html += "</div>";
+		}
+	}
+
 	html += "<table>";
 	html += "<tbody>";
 	html += "<tr><td><strong>Name:</strong></td><td>" + person.name + "</td></tr>";
@@ -63,7 +98,7 @@ function RenderPersonDetails (data) {
 	}
 
 	$('.people-search-detail').html(html);
-	
+
 }
 
 $(document).ready(function () {
@@ -93,7 +128,7 @@ $(document).ready(function () {
 		// 	console.log("complete");
 		// });
 	}
-	
+
 	//return to search results (history.back)
 	$('.back-to-search-results').on('click', function(){
 		history.back()
