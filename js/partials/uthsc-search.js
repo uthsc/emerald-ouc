@@ -139,7 +139,7 @@ function peopleSearchNoResultsHtml() {
 		soundsLike += '<p>' + useSoundsLike + '</p>';
 	}
 
-	html += '<div class="search-results-info"><p>no results</p>' + soundsLike + '</div>';
+	html += '<div class="search-results-info"><p>No Results</p>' + soundsLike + '</div>';
 	return html;
 }
 
