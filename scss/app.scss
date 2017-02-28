@@ -4,7 +4,6 @@
 //import project components
 @import 'partials/uthsc-homepage';
 @import 'partials/uthsc-program-explorer.scss';
-@import 'partials/uthsc-content-footer';
 @import 'partials/uthsc-hero.scss';
 @import 'partials/uthsc-now.scss';
 @import 'partials/uthsc-backgrounds.scss';
@@ -62,6 +61,7 @@
 @include uthsc-site-nav;
 @include uthsc-anchortext;
 @include uthsc-banner;
+@include uthsc-content-footer;
 @include uthsc-hero-dev;
 @include uthsc-off-canvas;
 @include uthsc-global-footer;
@@ -81,7 +81,6 @@
 //include project components
 @include uthsc-homepage;
 @include uthsc-program-explorer;
-@include uthsc-content-footer;
 @include uthsc-now;
 @include uthsc-backgrounds;
 @include uthsc-snippet-half-columns;
