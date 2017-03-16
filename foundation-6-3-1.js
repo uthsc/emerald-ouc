@@ -2,7 +2,7 @@
 
   "use strict";
 
-  var FOUNDATION_VERSION = '6.2.4';
+  var FOUNDATION_VERSION = '6.3.1';
 
   // Global Foundation object
   // This is attached to the window, or used as a module for AMD/Browserify
@@ -86,7 +86,7 @@
        * Fires when the plugin has been destroyed.
        * @event Plugin#destroyed
        */
-        .trigger('destroyed.zf.' + pluginName);
+      .trigger('destroyed.zf.' + pluginName);
       for (var prop in plugin) {
         plugin[prop] = null; //clean up script to prep for garbage collection.
       }
@@ -108,22 +108,22 @@
           });
         } else {
           var type = typeof plugins,
-            _this = this,
-            fns = {
-              'object': function (plgs) {
-                plgs.forEach(function (p) {
-                  p = hyphenate(p);
-                  $('[data-' + p + ']').foundation('_init');
-                });
-              },
-              'string': function () {
-                plugins = hyphenate(plugins);
-                $('[data-' + plugins + ']').foundation('_init');
-              },
-              'undefined': function () {
-                this['object'](Object.keys(_this._plugins));
-              }
-            };
+              _this = this,
+              fns = {
+            'object': function (plgs) {
+              plgs.forEach(function (p) {
+                p = hyphenate(p);
+                $('[data-' + p + ']').foundation('_init');
+              });
+            },
+            'string': function () {
+              plugins = hyphenate(plugins);
+              $('[data-' + plugins + ']').foundation('_init');
+            },
+            'undefined': function () {
+              this['object'](Object.keys(_this._plugins));
+            }
+          };
           fns[type](plugins);
         }
       } catch (err) {
@@ -158,8 +158,8 @@
       }
       // If plugins is a string, convert it to an array with one item
       else if (typeof plugins === 'string') {
-        plugins = [plugins];
-      }
+          plugins = [plugins];
+        }
 
       var _this = this;
 
@@ -174,7 +174,7 @@
         // For each plugin found, initialize it
         $elem.each(function () {
           var $el = $(this),
-            opts = {};
+              opts = {};
           // Don't double-dip on plugins
           if ($el.data('zfPlugin')) {
             console.warn("Tried to initialize " + name + " on an element that already has a Foundation plugin.");
@@ -208,7 +208,7 @@
         'OTransition': 'otransitionend'
       };
       var elem = document.createElement('div'),
-        end;
+          end;
 
       for (var t in transitions) {
         if (typeof elem.style[t] !== 'undefined') {
@@ -239,7 +239,7 @@
 
       return function () {
         var context = this,
-          args = arguments;
+            args = arguments;
 
         if (timer === null) {
           timer = setTimeout(function () {
@@ -259,8 +259,8 @@
    */
   var foundation = function (method) {
     var type = typeof method,
-      $meta = $('meta.foundation-mq'),
-      $noJS = $('.no-js');
+        $meta = $('meta.foundation-mq'),
+        $noJS = $('.no-js');
 
     if (!$meta.length) {
       $('<meta class="foundation-mq">').appendTo(document.head);
@@ -347,11 +347,11 @@
       }
 
       var aArgs = Array.prototype.slice.call(arguments, 1),
-        fToBind = this,
-        fNOP = function () {},
-        fBound = function () {
-          return fToBind.apply(this instanceof fNOP ? this : oThis, aArgs.concat(Array.prototype.slice.call(arguments)));
-        };
+          fToBind = this,
+          fNOP = function () {},
+          fBound = function () {
+        return fToBind.apply(this instanceof fNOP ? this : oThis, aArgs.concat(Array.prototype.slice.call(arguments)));
+      };
 
       if (this.prototype) {
         // native functions don't have a prototype
@@ -375,7 +375,7 @@
     }
   }
   function parseValue(str) {
-    if (/true/.test(str)) return true;else if (/false/.test(str)) return false;else if (!isNaN(str * 1)) return parseFloat(str);
+    if ('true' === str) return true;else if ('false' === str) return false;else if (!isNaN(str * 1)) return parseFloat(str);
     return str;
   }
   // Convert PascalCase to kebab-case
@@ -406,10 +406,10 @@
    */
   function ImNotTouchingYou(element, parent, lrOnly, tbOnly) {
     var eleDims = GetDimensions(element),
-      top,
-      bottom,
-      left,
-      right;
+        top,
+        bottom,
+        left,
+        right;
 
     if (parent) {
       var parDims = GetDimensions(parent);
@@ -453,10 +453,10 @@
     }
 
     var rect = elem.getBoundingClientRect(),
-      parRect = elem.parentNode.getBoundingClientRect(),
-      winRect = document.body.getBoundingClientRect(),
-      winY = window.pageYOffset,
-      winX = window.pageXOffset;
+        parRect = elem.parentNode.getBoundingClientRect(),
+        winRect = document.body.getBoundingClientRect(),
+        winY = window.pageYOffset,
+        winX = window.pageXOffset;
 
     return {
       width: rect.width,
@@ -498,7 +498,7 @@
    */
   function GetOffsets(element, anchor, position, vOffset, hOffset, isOverflow) {
     var $eleDims = GetDimensions(element),
-      $anchorDims = anchor ? GetDimensions(anchor) : null;
+        $anchorDims = anchor ? GetDimensions(anchor) : null;
 
     switch (position) {
       case 'top':
@@ -563,13 +563,13 @@
       case 'left bottom':
         return {
           left: $anchorDims.offset.left,
-          top: $anchorDims.offset.top + $anchorDims.height
+          top: $anchorDims.offset.top + $anchorDims.height + vOffset
         };
         break;
       case 'right bottom':
         return {
           left: $anchorDims.offset.left + $anchorDims.width + hOffset - $eleDims.width,
-          top: $anchorDims.offset.top + $anchorDims.height
+          top: $anchorDims.offset.top + $anchorDims.height + vOffset
         };
         break;
       default:
@@ -616,9 +616,17 @@
      */
     parseKey: function (event) {
       var key = keyCodes[event.which || event.keyCode] || String.fromCharCode(event.which).toUpperCase();
+
+      // Remove un-printable characters, e.g. for `fromCharCode` calls for CTRL only events
+      key = key.replace(/\W+/, '');
+
       if (event.shiftKey) key = 'SHIFT_' + key;
       if (event.ctrlKey) key = 'CTRL_' + key;
       if (event.altKey) key = 'ALT_' + key;
+
+      // Remove trailing underscore, in case only modifiers were used (e.g. only `CTRL_ALT`)
+      key = key.replace(/_$/, '');
+
       return key;
     },
 
@@ -631,10 +639,10 @@
      */
     handleKey: function (event, component, functions) {
       var commandList = commands[component],
-        keyCode = this.parseKey(event),
-        cmds,
-        command,
-        fn;
+          keyCode = this.parseKey(event),
+          cmds,
+          command,
+          fn;
 
       if (!commandList) return console.warn('Component not defined!');
 
@@ -670,6 +678,9 @@
      * @return {jQuery} $focusable - all focusable elements within `$element`
      */
     findFocusable: function ($element) {
+      if (!$element) {
+        return false;
+      }
       return $element.find('a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, *[tabindex], *[contenteditable]').filter(function () {
         if (!$(this).is(':visible') || $(this).attr('tabindex') < 0) {
           return false;
@@ -687,6 +698,35 @@
 
     register: function (componentName, cmds) {
       commands[componentName] = cmds;
+    },
+
+
+    /**
+     * Traps the focus in the given element.
+     * @param  {jQuery} $element  jQuery object to trap the foucs into.
+     */
+    trapFocus: function ($element) {
+      var $focusable = Foundation.Keyboard.findFocusable($element),
+          $firstFocusable = $focusable.eq(0),
+          $lastFocusable = $focusable.eq(-1);
+
+      $element.on('keydown.zf.trapfocus', function (event) {
+        if (event.target === $lastFocusable[0] && Foundation.Keyboard.parseKey(event) === 'TAB') {
+          event.preventDefault();
+          $firstFocusable.focus();
+        } else if (event.target === $firstFocusable[0] && Foundation.Keyboard.parseKey(event) === 'SHIFT_TAB') {
+          event.preventDefault();
+          $lastFocusable.focus();
+        }
+      });
+    },
+
+    /**
+     * Releases the trapped focus from the given element.
+     * @param  {jQuery} $element  jQuery object to release the focus for.
+     */
+    releaseFocus: function ($element) {
+      $element.off('keydown.zf.trapfocus');
     }
   };
 
@@ -765,6 +805,23 @@
 
 
     /**
+     * Checks if the screen matches to a breakpoint.
+     * @function
+     * @param {String} size - Name of the breakpoint to check, either 'small only' or 'small'. Omitting 'only' falls back to using atLeast() method.
+     * @returns {Boolean} `true` if the breakpoint matches, `false` if it does not.
+     */
+    is: function (size) {
+      size = size.trim().split(' ');
+      if (size.length > 1 && size[1] === 'only') {
+        if (size[0] === this._getCurrentSize()) return true;
+      } else {
+        return this.atLeast(size[0]);
+      }
+      return false;
+    },
+
+
+    /**
      * Gets the media query of a breakpoint.
      * @function
      * @param {String} size - Name of the breakpoint to get.
@@ -817,7 +874,7 @@
 
       $(window).on('resize.zf.mediaquery', function () {
         var newSize = _this._getCurrentSize(),
-          currentSize = _this.current;
+            currentSize = _this.current;
 
         if (newSize !== currentSize) {
           // Change the current media query
@@ -844,8 +901,8 @@
     // For those that don't support matchMedium
     if (!styleMedia) {
       var style = document.createElement('style'),
-        script = document.getElementsByTagName('script')[0],
-        info = null;
+          script = document.getElementsByTagName('script')[0],
+          info = null;
 
       style.type = 'text/css';
       style.id = 'matchmediajs-test';
@@ -943,12 +1000,18 @@
 
   function Move(duration, elem, fn) {
     var anim,
-      prog,
-      start = null;
+        prog,
+        start = null;
     // console.log('called');
 
+    if (duration === 0) {
+      fn.apply(elem);
+      elem.trigger('finished.zf.animate', [elem]).triggerHandler('finished.zf.animate', [elem]);
+      return;
+    }
+
     function move(ts) {
-      if (!start) start = window.performance.now();
+      if (!start) start = ts;
       // console.log(start, ts);
       prog = ts - start;
       fn.apply(elem);
@@ -1027,28 +1090,33 @@
       menu.attr('role', 'menubar');
 
       var items = menu.find('li').attr({ 'role': 'menuitem' }),
-        subMenuClass = 'is-' + type + '-submenu',
-        subItemClass = subMenuClass + '-item',
-        hasSubClass = 'is-' + type + '-submenu-parent';
-
-      menu.find('a:first').attr('tabindex', 0);
+          subMenuClass = 'is-' + type + '-submenu',
+          subItemClass = subMenuClass + '-item',
+          hasSubClass = 'is-' + type + '-submenu-parent';
 
       items.each(function () {
         var $item = $(this),
-          $sub = $item.children('ul');
+            $sub = $item.children('ul');
 
         if ($sub.length) {
           $item.addClass(hasSubClass).attr({
             'aria-haspopup': true,
-            'aria-expanded': false,
             'aria-label': $item.children('a:first').text()
           });
+          // Note:  Drilldowns behave differently in how they hide, and so need
+          // additional attributes.  We should look if this possibly over-generalized
+          // utility (Nest) is appropriate when we rework menus in 6.4
+          if (type === 'drilldown') {
+            $item.attr({ 'aria-expanded': false });
+          }
 
           $sub.addClass('submenu ' + subMenuClass).attr({
             'data-submenu': '',
-            'aria-hidden': true,
             'role': 'menu'
           });
+          if (type === 'drilldown') {
+            $sub.attr({ 'aria-hidden': true });
+          }
         }
 
         if ($item.parent('[data-submenu]').length) {
@@ -1059,10 +1127,10 @@
       return;
     },
     Burn: function (menu, type) {
-      var items = menu.find('li').removeAttr('tabindex'),
-        subMenuClass = 'is-' + type + '-submenu',
-        subItemClass = subMenuClass + '-item',
-        hasSubClass = 'is-' + type + '-submenu-parent';
+      var //items = menu.find('li'),
+      subMenuClass = 'is-' + type + '-submenu',
+          subItemClass = subMenuClass + '-item',
+          hasSubClass = 'is-' + type + '-submenu-parent';
 
       menu.find('>li, .menu, .menu > li').removeClass(subMenuClass + ' ' + subItemClass + ' ' + hasSubClass + ' is-submenu-item submenu is-active').removeAttr('data-submenu').css('display', '');
 
@@ -1091,12 +1159,12 @@
 
   function Timer(elem, options, cb) {
     var _this = this,
-      duration = options.duration,
-      //options is an object for easily adding features later.
-      nameSpace = Object.keys(elem.data())[0] || 'timer',
-      remain = -1,
-      start,
-      timer;
+        duration = options.duration,
+        //options is an object for easily adding features later.
+    nameSpace = Object.keys(elem.data())[0] || 'timer',
+        remain = -1,
+        start,
+        timer;
 
     this.isPaused = false;
 
@@ -1142,22 +1210,26 @@
    */
   function onImagesLoaded(images, callback) {
     var self = this,
-      unloaded = images.length;
+        unloaded = images.length;
 
     if (unloaded === 0) {
       callback();
     }
 
     images.each(function () {
-      if (this.complete) {
+      // Check if image is loaded
+      if (this.complete || this.readyState === 4 || this.readyState === 'complete') {
         singleImageLoaded();
-      } else if (typeof this.naturalWidth !== 'undefined' && this.naturalWidth > 0) {
-        singleImageLoaded();
-      } else {
-        $(this).one('load', function () {
-          singleImageLoaded();
-        });
       }
+      // Force load the image
+      else {
+          // fix for IE. See https://css-tricks.com/snippets/jquery/fixing-load-in-ie-for-cached-images/
+          var src = $(this).attr('src');
+          $(this).attr('src', src + (src.indexOf('?') >= 0 ? '&' : '?') + new Date().getTime());
+          $(this).one('load', function () {
+            singleImageLoaded();
+          });
+        }
     });
 
     function singleImageLoaded() {
@@ -1177,119 +1249,119 @@
 //**************************************************
 (function ($) {
 
-  $.spotSwipe = {
-    version: '1.0.0',
-    enabled: 'ontouchstart' in document.documentElement,
-    preventDefault: false,
-    moveThreshold: 75,
-    timeThreshold: 200
-  };
+	$.spotSwipe = {
+		version: '1.0.0',
+		enabled: 'ontouchstart' in document.documentElement,
+		preventDefault: false,
+		moveThreshold: 75,
+		timeThreshold: 200
+	};
 
-  var startPosX,
-    startPosY,
-    startTime,
-    elapsedTime,
-    isMoving = false;
+	var startPosX,
+	    startPosY,
+	    startTime,
+	    elapsedTime,
+	    isMoving = false;
 
-  function onTouchEnd() {
-    //  alert(this);
-    this.removeEventListener('touchmove', onTouchMove);
-    this.removeEventListener('touchend', onTouchEnd);
-    isMoving = false;
-  }
+	function onTouchEnd() {
+		//  alert(this);
+		this.removeEventListener('touchmove', onTouchMove);
+		this.removeEventListener('touchend', onTouchEnd);
+		isMoving = false;
+	}
 
-  function onTouchMove(e) {
-    if ($.spotSwipe.preventDefault) {
-      e.preventDefault();
-    }
-    if (isMoving) {
-      var x = e.touches[0].pageX;
-      var y = e.touches[0].pageY;
-      var dx = startPosX - x;
-      var dy = startPosY - y;
-      var dir;
-      elapsedTime = new Date().getTime() - startTime;
-      if (Math.abs(dx) >= $.spotSwipe.moveThreshold && elapsedTime <= $.spotSwipe.timeThreshold) {
-        dir = dx > 0 ? 'left' : 'right';
-      }
-      // else if(Math.abs(dy) >= $.spotSwipe.moveThreshold && elapsedTime <= $.spotSwipe.timeThreshold) {
-      //   dir = dy > 0 ? 'down' : 'up';
-      // }
-      if (dir) {
-        e.preventDefault();
-        onTouchEnd.call(this);
-        $(this).trigger('swipe', dir).trigger('swipe' + dir);
-      }
-    }
-  }
+	function onTouchMove(e) {
+		if ($.spotSwipe.preventDefault) {
+			e.preventDefault();
+		}
+		if (isMoving) {
+			var x = e.touches[0].pageX;
+			var y = e.touches[0].pageY;
+			var dx = startPosX - x;
+			var dy = startPosY - y;
+			var dir;
+			elapsedTime = new Date().getTime() - startTime;
+			if (Math.abs(dx) >= $.spotSwipe.moveThreshold && elapsedTime <= $.spotSwipe.timeThreshold) {
+				dir = dx > 0 ? 'left' : 'right';
+			}
+			// else if(Math.abs(dy) >= $.spotSwipe.moveThreshold && elapsedTime <= $.spotSwipe.timeThreshold) {
+			//   dir = dy > 0 ? 'down' : 'up';
+			// }
+			if (dir) {
+				e.preventDefault();
+				onTouchEnd.call(this);
+				$(this).trigger('swipe', dir).trigger('swipe' + dir);
+			}
+		}
+	}
 
-  function onTouchStart(e) {
-    if (e.touches.length == 1) {
-      startPosX = e.touches[0].pageX;
-      startPosY = e.touches[0].pageY;
-      isMoving = true;
-      startTime = new Date().getTime();
-      this.addEventListener('touchmove', onTouchMove, false);
-      this.addEventListener('touchend', onTouchEnd, false);
-    }
-  }
+	function onTouchStart(e) {
+		if (e.touches.length == 1) {
+			startPosX = e.touches[0].pageX;
+			startPosY = e.touches[0].pageY;
+			isMoving = true;
+			startTime = new Date().getTime();
+			this.addEventListener('touchmove', onTouchMove, false);
+			this.addEventListener('touchend', onTouchEnd, false);
+		}
+	}
 
-  function init() {
-    this.addEventListener && this.addEventListener('touchstart', onTouchStart, false);
-  }
+	function init() {
+		this.addEventListener && this.addEventListener('touchstart', onTouchStart, false);
+	}
 
-  function teardown() {
-    this.removeEventListener('touchstart', onTouchStart);
-  }
+	function teardown() {
+		this.removeEventListener('touchstart', onTouchStart);
+	}
 
-  $.event.special.swipe = { setup: init };
+	$.event.special.swipe = { setup: init };
 
-  $.each(['left', 'up', 'down', 'right'], function () {
-    $.event.special['swipe' + this] = { setup: function () {
-      $(this).on('swipe', $.noop);
-    } };
-  });
+	$.each(['left', 'up', 'down', 'right'], function () {
+		$.event.special['swipe' + this] = { setup: function () {
+				$(this).on('swipe', $.noop);
+			} };
+	});
 })(jQuery);
 /****************************************************
  * Method for adding psuedo drag events to elements *
  ***************************************************/
 !function ($) {
-  $.fn.addTouch = function () {
-    this.each(function (i, el) {
-      $(el).bind('touchstart touchmove touchend touchcancel', function () {
-        //we pass the original event object because the jQuery event
-        //object is normalized to w3c specs and does not provide the TouchList
-        handleTouch(event);
-      });
-    });
+	$.fn.addTouch = function () {
+		this.each(function (i, el) {
+			$(el).bind('touchstart touchmove touchend touchcancel', function () {
+				//we pass the original event object because the jQuery event
+				//object is normalized to w3c specs and does not provide the TouchList
+				handleTouch(event);
+			});
+		});
 
-    var handleTouch = function (event) {
-      var touches = event.changedTouches,
-        first = touches[0],
-        eventTypes = {
-          touchstart: 'mousedown',
-          touchmove: 'mousemove',
-          touchend: 'mouseup'
-        },
-        type = eventTypes[event.type],
-        simulatedEvent;
+		var handleTouch = function (event) {
+			var touches = event.changedTouches,
+			    first = touches[0],
+			    eventTypes = {
+				touchstart: 'mousedown',
+				touchmove: 'mousemove',
+				touchend: 'mouseup'
+			},
+			    type = eventTypes[event.type],
+			    simulatedEvent;
 
-      if ('MouseEvent' in window && typeof window.MouseEvent === 'function') {
-        simulatedEvent = new window.MouseEvent(type, {
-          'bubbles': true,
-          'cancelable': true,
-          'screenX': first.screenX,
-          'screenY': first.screenY,
-          'clientX': first.clientX,
-          'clientY': first.clientY
-        });
-      } else {
-        simulatedEvent = document.createEvent('MouseEvent');
-        simulatedEvent.initMouseEvent(type, true, true, window, 1, first.screenX, first.screenY, first.clientX, first.clientY, false, false, false, false, 0 /*left*/, null);
-      }
-      first.target.dispatchEvent(simulatedEvent);
-    };
-  };
+			if ('MouseEvent' in window && typeof window.MouseEvent === 'function') {
+				simulatedEvent = new window.MouseEvent(type, {
+					'bubbles': true,
+					'cancelable': true,
+					'screenX': first.screenX,
+					'screenY': first.screenY,
+					'clientX': first.clientX,
+					'clientY': first.clientY
+				});
+			} else {
+				simulatedEvent = document.createEvent('MouseEvent');
+				simulatedEvent.initMouseEvent(type, true, true, window, 1, first.screenX, first.screenY, first.clientX, first.clientY, false, false, false, false, 0 /*left*/, null);
+			}
+			first.target.dispatchEvent(simulatedEvent);
+		};
+	};
 }(jQuery);
 
 //**********************************
@@ -2056,7 +2128,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
       }
 
       /**
-       * Goes through a form to find inputs and proceeds to validate them in ways specific to their type.
+       * Goes through a form to find inputs and proceeds to validate them in ways specific to their type. 
        * Ignores inputs with data-abide-ignore, type="hidden" or disabled attributes set
        * @fires Abide#invalid
        * @fires Abide#valid
