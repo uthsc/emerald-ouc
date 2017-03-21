@@ -51,23 +51,23 @@ gulp.task('copy-vendor-js', function() {
     return gulp.src ([
         './bower_components/jquery/dist/jquery.min.js',
         './bower_components/what-input/what-input.min.js',
-        './bower_components/foundation-sites/dist/foundation.min.js',
+        './bower_components/foundation-sites/dist/js/foundation.min.js',
         './bower_components/masonry/dist/masonry.pkgd.min.js',
-				'./bower_components/imagesloaded/imagesloaded.pkgd.min.js',
+		'./bower_components/imagesloaded/imagesloaded.pkgd.min.js',
         './bower_components/iframe-resizer/js/iframeResizer.min.js',
         './bower_components/iframe-resizer/js/iframeResizer.contentWindow.min.js',
-			  './js/partials/uthsc.pretty-photo.js'
+		'./js/partials/uthsc.pretty-photo.js'
     ])
-        .pipe(gulp.dest('./-resources/2015/js'));
+    .pipe(gulp.dest('./-resources/2015/js'));
 });
 
 gulp.task('uthsc-now-homepage-js', function() {
 	return gulp.src ([
 		'./js/partials/uthsc-now-homepage.js'
 	])
-		.pipe($.uglify())
-		.pipe($.rename('uthsc-now-homepage.min.js'))
-		.pipe(gulp.dest('./-resources/2015/js'));
+	.pipe($.uglify())
+	.pipe($.rename('uthsc-now-homepage.min.js'))
+	.pipe(gulp.dest('./-resources/2015/js'));
 });
 
 gulp.task('uthsc-now-js', function() {
