@@ -157,7 +157,7 @@
                 <!--Medical/Behavioral-->
                 <!--******************-->
 
-                <li class="accordion-item">
+                <li class="accordion-item" data-accordion-item="data-accordion-item">
                     <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
                     <a href="#panel1d" role="tab" class="accordion-title" id="panel1d-heading"
                        aria-controls="panel1d">
@@ -191,7 +191,7 @@
                 <!--*******************-->
                 <!--Medical Urgent Care-->
                 <!--*******************-->
-                <li class="accordion-item ">
+                <li class="accordion-item" data-accordion-item="data-accordion-item">
                     <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
                     <a href="#panel2d" role="tab" class="accordion-title" id="panel2d-heading"
                        aria-controls="panel2d">
@@ -216,7 +216,7 @@
                 <!--*****************************-->
                 <!--Behavioral Health Urgent Care-->
                 <!--*****************************-->
-                <li class="accordion-item ">
+                <li class="accordion-item" data-accordion-item="data-accordion-item">
                     <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
                     <a href="#panel3d" role="tab" class="accordion-title" id="panel3d-heading"
                        aria-controls="panel3d">
@@ -241,7 +241,7 @@
                 <!--**************************-->
                 <!--Student Assistance Program-->
                 <!--**************************-->
-                <li class="accordion-item ">
+                <li class="accordion-item" data-accordion-item="data-accordion-item">
                     <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
                     <a href="#panel4d" role="tab" class="accordion-title" id="panel4d-heading"
                        aria-controls="panel4d">
@@ -268,7 +268,7 @@
                 <!--***************************-->
                 <!--Employee Assistance Program-->
                 <!--***************************-->
-                <li class="accordion-item ">
+                <li class="accordion-item" data-accordion-item="data-accordion-item">
                     <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
                     <a href="#panel5d" role="tab" class="accordion-title" id="panel5d-heading"
                        aria-controls="panel5d">
@@ -294,7 +294,7 @@
                 <!--******************************-->
                 <!--After Hours Medical/Behavioral-->
                 <!--******************************-->
-                <li class="accordion-item ">
+                <li class="accordion-item" data-accordion-item="data-accordion-item">
                     <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
                     <a href="#panel6d" role="tab" class="accordion-title" id="panel6d-heading"
                        aria-controls="panel6d">
