@@ -126,79 +126,79 @@
     <!--UTHSC Section Nav-->
     <!--*****************-->
     <div data-equalizer="heading-links">
-    <nav id="uthsc-section-navigation" data-equalizer="nested-links" aria-label="Current section menu"
-         role="navigation" class="hide-for-print">
-        <ul class="row collapse" >
+        <nav id="uthsc-section-navigation" data-equalizer="nested-links" aria-label="Current section menu"
+             role="navigation" class="hide-for-print">
+            <ul class="row collapse" >
 
-            <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Menu Dropdown One<br />Menu Dropdown One</a>
-                <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">First Item in Dropdown</a></li>
-                    <li><a href="#">Second Item in Dropdown</a></li>
-                    <li><a href="#">Third Item in Dropdown</a></li>
-                    <li><a href="#">Fourth Item in Dropdown</a></li>
-                    <li><a href="#">Fifth Item in Dropdown</a></li>
-                </ul>
-            </li>
+                <li class="uthsc-navigation-column small-2 columns">
+                    <a href="#" data-equalizer-watch="heading-links">Menu Dropdown One<br />Menu Dropdown One</a>
+                    <ul data-equalizer-watch="nested-links">
+                        <li><a href="#">First Item in Dropdown</a></li>
+                        <li><a href="#">Second Item in Dropdown</a></li>
+                        <li><a href="#">Third Item in Dropdown</a></li>
+                        <li><a href="#">Fourth Item in Dropdown</a></li>
+                        <li><a href="#">Fifth Item in Dropdown</a></li>
+                    </ul>
+                </li>
 
-            <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Menu Dropdown Two</a>
-                <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">First Item in Dropdown</a></li>
-                    <li><a href="#">Second Item in Dropdown</a></li>
-                    <li><a href="#">Third Item in Dropdown That Goes to Two Lines</a></li>
-                    <li><a href="#">Fourth Item in Dropdown</a></li>
-                </ul>
-            </li>
+                <li class="uthsc-navigation-column small-2 columns">
+                    <a href="#" data-equalizer-watch="heading-links">Menu Dropdown Two</a>
+                    <ul data-equalizer-watch="nested-links">
+                        <li><a href="#">First Item in Dropdown</a></li>
+                        <li><a href="#">Second Item in Dropdown</a></li>
+                        <li><a href="#">Third Item in Dropdown That Goes to Two Lines</a></li>
+                        <li><a href="#">Fourth Item in Dropdown</a></li>
+                    </ul>
+                </li>
 
-            <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Menu Dropdown Three</a>
-                <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">First Item in Dropdown</a></li>
-                    <li><a href="#">Second Item in Dropdown</a></li>
-                    <li><a href="#">Third Item in Dropdown</a></li>
-                    <li><a href="#">Fourth Item in Dropdown</a></li>
-                    <li><a href="#">Fifth Item in Dropdown</a></li>
-                    <li><a href="#">Sixth Item in Dropdown</a></li>
-                    <li><a href="#">Seventh Item in Dropdown</a></li>
-                </ul>
-            </li>
+                <li class="uthsc-navigation-column small-2 columns">
+                    <a href="#" data-equalizer-watch="heading-links">Menu Dropdown Three</a>
+                    <ul data-equalizer-watch="nested-links">
+                        <li><a href="#">First Item in Dropdown</a></li>
+                        <li><a href="#">Second Item in Dropdown</a></li>
+                        <li><a href="#">Third Item in Dropdown</a></li>
+                        <li><a href="#">Fourth Item in Dropdown</a></li>
+                        <li><a href="#">Fifth Item in Dropdown</a></li>
+                        <li><a href="#">Sixth Item in Dropdown</a></li>
+                        <li><a href="#">Seventh Item in Dropdown</a></li>
+                    </ul>
+                </li>
 
-            <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Menu Dropdown Four</a>
-                <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">First Item in Dropdown</a></li>
-                    <li><a href="#">Second Item in Dropdown</a></li>
-                    <li><a href="#">Third Item in Dropdown</a></li>
-                    <li><a href="#">Fourth Item in Dropdown</a></li>
-                    <li><a href="#">Fifth Item in Dropdown</a></li>
-                    <li><a href="#">Sixth Item in Dropdown</a></li>
-                    <li><a href="#">Seventh Item in Dropdown</a></li>
-                </ul>
-            </li>
+                <li class="uthsc-navigation-column small-2 columns">
+                    <a href="#" data-equalizer-watch="heading-links">Menu Dropdown Four</a>
+                    <ul data-equalizer-watch="nested-links">
+                        <li><a href="#">First Item in Dropdown</a></li>
+                        <li><a href="#">Second Item in Dropdown</a></li>
+                        <li><a href="#">Third Item in Dropdown</a></li>
+                        <li><a href="#">Fourth Item in Dropdown</a></li>
+                        <li><a href="#">Fifth Item in Dropdown</a></li>
+                        <li><a href="#">Sixth Item in Dropdown</a></li>
+                        <li><a href="#">Seventh Item in Dropdown</a></li>
+                    </ul>
+                </li>
 
-            <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Menu Dropdown Five</a>
-                <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">First Item in Dropdown</a></li>
-                </ul>
-            </li>
+                <li class="uthsc-navigation-column small-2 columns">
+                    <a href="#" data-equalizer-watch="heading-links">Menu Dropdown Five</a>
+                    <ul data-equalizer-watch="nested-links">
+                        <li><a href="#">First Item in Dropdown</a></li>
+                    </ul>
+                </li>
 
-            <li class="uthsc-navigation-column small-2 columns">
-                <a href="#" data-equalizer-watch="heading-links">Menu Dropdown Six</a>
-                <ul data-equalizer-watch="nested-links">
-                    <li><a href="#">First Item in Dropdown</a></li>
-                    <li><a href="#">Second Item in Dropdown</a></li>
-                    <li><a href="#">Third Item in Dropdown</a></li>
-                    <li><a href="#">Fourth Item in Dropdown</a></li>
-                    <li><a href="#">Fifth Item in Dropdown That Goes to Three Lines Because it Is Long</a></li>
-                    <li><a href="#">Sixth Item in Dropdown</a></li>
-                    <li><a href="#">Seventh Item in Dropdown</a></li>
-                </ul>
-            </li>
-        </ul>
-    </nav>
-    <div class="uthsc-section-nav-placeholder show-for-large" data-equalizer-watch="heading-links"></div>
+                <li class="uthsc-navigation-column small-2 columns">
+                    <a href="#" data-equalizer-watch="heading-links">Menu Dropdown Six</a>
+                    <ul data-equalizer-watch="nested-links">
+                        <li><a href="#">First Item in Dropdown</a></li>
+                        <li><a href="#">Second Item in Dropdown</a></li>
+                        <li><a href="#">Third Item in Dropdown</a></li>
+                        <li><a href="#">Fourth Item in Dropdown</a></li>
+                        <li><a href="#">Fifth Item in Dropdown That Goes to Three Lines Because it Is Long</a></li>
+                        <li><a href="#">Sixth Item in Dropdown</a></li>
+                        <li><a href="#">Seventh Item in Dropdown</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="uthsc-section-nav-placeholder show-for-large" data-equalizer-watch="heading-links"></div>
     </div>
     <!--******************-->
     <!--/UTHSC Section Nav-->
@@ -274,90 +274,90 @@
             </div>
 
             <div class="row">
-                    <div class="columns medium-9">
-                        <h4>Icons</h4>
-                        <p><a href="test.pdf#page=4">Test pdf#page=4</a></p>
-                        <p><a href="test.pdf">Test pdf</a></p>
-                        <p><a href="test.doc">Test doc</a></p>
-                        <p><a href="test.docx">Test docx</a></p>
-                        <p><a href="test.xls">Test xls</a></p>
-                        <p><a href="test.xlsx">Test xlsx</a></p>
-                        <p><a href="test.ppt">Test ppt</a></p>
-                        <p><a href="test.pptx">Test pptx</a></p>
+                <div class="columns medium-9">
+                    <h4>Icons</h4>
+                    <p><a href="test.pdf#page=4">Test pdf#page=4</a></p>
+                    <p><a href="test.pdf">Test pdf</a></p>
+                    <p><a href="test.doc">Test doc</a></p>
+                    <p><a href="test.docx">Test docx</a></p>
+                    <p><a href="test.xls">Test xls</a></p>
+                    <p><a href="test.xlsx">Test xlsx</a></p>
+                    <p><a href="test.ppt">Test ppt</a></p>
+                    <p><a href="test.pptx">Test pptx</a></p>
 
-                        <h3><strong><em>Content</em></strong> <b><i>Row</i></b> 1</h3>
-                        <p>This is a full width row with columns inside of it.</p>
-                        <p>Thanks to<a href="http://fortawesome.github.io/Font-Awesome/">
-                                Fontawesome&nbsp;<span class="fa fa-flag" aria-hidden="true"></span></a> we can use these handy icons anywhere.
-                            Here's an example of a<a href=""> pdf link&nbsp;<span class="fa fa-file-pdf-o" aria-hidden="true"></span></a>.</p>
-                        <div class="row">
-                            <div class="columns">
-                                <h4>Buttons</h4>
-                                <div class="row medium-text-center large-text-left">
-                                    <div class="columns large-6 large-text-right">
-                                        <a class="tiny button" href="#">Tiny</a>
-                                        <a class="small button" href="#">Small</a>
-                                        <a class="button" href="#">Basic</a>
-                                        <a class="large button" href="#">Large</a>
-                                    </div>
-                                    <div class="columns large-6">
-                                        <a class="large hollow button" href="#">Large</a>
-                                        <a class="button hollow" href="#">Basic</a>
-                                        <a class="small hollow button" href="#">Small</a>
-                                        <a class="tiny hollow button" href="#">Tiny</a>
-                                    </div>
-                                    <div class="columns">
-                                        <a class="expanded button" href="#">Basic Expand</a>
-                                        <a class="small expanded button" href="#">Small Expand</a>
-                                    </div>
+                    <h3><strong><em>Content</em></strong> <b><i>Row</i></b> 1</h3>
+                    <p>This is a full width row with columns inside of it.</p>
+                    <p>Thanks to<a href="http://fortawesome.github.io/Font-Awesome/">
+                            Fontawesome&nbsp;<span class="fa fa-flag" aria-hidden="true"></span></a> we can use these handy icons anywhere.
+                        Here's an example of a<a href=""> pdf link&nbsp;<span class="fa fa-file-pdf-o" aria-hidden="true"></span></a>.</p>
+                    <div class="row">
+                        <div class="columns">
+                            <h4>Buttons</h4>
+                            <div class="row medium-text-center large-text-left">
+                                <div class="columns large-6 large-text-right">
+                                    <a class="tiny button" href="#">Tiny</a>
+                                    <a class="small button" href="#">Small</a>
+                                    <a class="button" href="#">Basic</a>
+                                    <a class="large button" href="#">Large</a>
                                 </div>
-                                <div class="row">
-                                    <div class="columns large-6">
-                                        <div class="row">
-                                            <div class="columns small-4 medium-3 large-4">
-                                                <button class="button secondary">Secondary</button>
-                                            </div>
-                                            <div class="columns small-8 medium-9 large-8">
-                                                <button class="button secondary expanded">Secondary</button>
-                                            </div>
+                                <div class="columns large-6">
+                                    <a class="large hollow button" href="#">Large</a>
+                                    <a class="button hollow" href="#">Basic</a>
+                                    <a class="small hollow button" href="#">Small</a>
+                                    <a class="tiny hollow button" href="#">Tiny</a>
+                                </div>
+                                <div class="columns">
+                                    <a class="expanded button" href="#">Basic Expand</a>
+                                    <a class="small expanded button" href="#">Small Expand</a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="columns large-6">
+                                    <div class="row">
+                                        <div class="columns small-4 medium-3 large-4">
+                                            <button class="button secondary">Secondary</button>
                                         </div>
-                                    </div>
-                                    <div class="columns large-6">
-                                        <div class="row">
-                                            <div class="columns small-7 medium-9 large-8">
-                                                <button class="button secondary hollow expanded">Secondary</button>
-                                            </div>
-                                            <div class="columns small-5 medium-3 large-4">
-                                                <button class="button secondary hollow expanded">Secondary</button>
-                                            </div>
+                                        <div class="columns small-8 medium-9 large-8">
+                                            <button class="button secondary expanded">Secondary</button>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="columns medium-3">
-                        <div class="row">
-                            <h3><strong><em>Content</em></strong> <b><i>Row</i></b> 1</h3>
-                            <h4>Callouts</h4>
-                            <div class="callout columns">
-                                <h5>Callout</h5>
-                            </div>
-                            <div class="callout secondary columns">
-                                <h5>Secondary Callout</h5>
-                            </div>
-                            <div class="callout success columns">
-                                <h5>Success Callout</h5>
-                            </div>
-                            <div class="callout warning columns">
-                                <h5>Warning Callout</h5>
-                            </div>
-                            <div class="callout alert columns">
-                                <h5>Alert Callout</h5>
+                                <div class="columns large-6">
+                                    <div class="row">
+                                        <div class="columns small-7 medium-9 large-8">
+                                            <button class="button secondary hollow expanded">Secondary</button>
+                                        </div>
+                                        <div class="columns small-5 medium-3 large-4">
+                                            <button class="button secondary hollow expanded">Secondary</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="columns medium-3">
+                    <div class="row">
+                        <h3><strong><em>Content</em></strong> <b><i>Row</i></b> 1</h3>
+                        <h4>Callouts</h4>
+                        <div class="callout columns">
+                            <h5>Callout</h5>
+                        </div>
+                        <div class="callout secondary columns">
+                            <h5>Secondary Callout</h5>
+                        </div>
+                        <div class="callout success columns">
+                            <h5>Success Callout</h5>
+                        </div>
+                        <div class="callout warning columns">
+                            <h5>Warning Callout</h5>
+                        </div>
+                        <div class="callout alert columns">
+                            <h5>Alert Callout</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!--******-->
         <!--/Row 1-->
@@ -403,7 +403,11 @@
             <div class="large-4 columns">
                 <h3>Full Width Content Row 2</h3>
                 <h5>One Third</h5>
-
+                <figure class="left uthsc-figure uthsc-figure-60">
+                    <img src="https://unsplash.it/3000/400"
+                         alt="blah" />
+                    <figcaption>Yuge photo (3000px)</figcaption>
+                </figure>
                 <p><strong>This is a three column layout</strong> Sed ut perspiciatis unde omnis iste natus error
                     sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
                     inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
@@ -434,7 +438,13 @@
 
                 <p><strong>This is a three column layout</strong> Sed ut perspiciatis unde omnis iste natus error
                     sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    <figure class="left thumbnail uthsc-figure">
+                        <img src="https://unsplash.it/40"
+                             alt="blah" />
+                        <figcaption>Little photo (40px)</figcaption>
+                    </figure>
+                    Nemo enim ipsam
                     voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
                     eos qui ratione voluptatem sequi nesciunt.</p><a href="#" class="button radius">Academic
                     Calendar&ensp;<span class="fa fa-calendar" aria-hidden="true"></span></a>
@@ -443,7 +453,7 @@
                 <h3>Full Width Content Row 2</h3>
                 <h5>UT President Joe DiPietro describes challenges facing higher ed and its role in preparing the
                     workforce of the future</h5>
-                <figure class="left image-40">
+                <figure class="left uthsc-figure uthsc-figure-50">
                     <img src="http://news.uthsc.edu/wp-content/uploads/2014/09/Dr.-Dipietro2.jpg"
                          alt="UT President Joe DiPietro addresses panel members
                          about the role of higher education in workforce preparedness." />
@@ -451,12 +461,6 @@
                         higher education in workforce preparedness.
                     </figcaption>
                 </figure>
-                <br class="clearfix"/>
-                <p><strong>This is a three column layout</strong> Sed ut perspiciatis unde omnis iste natus error
-                    sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo
-                    inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                    voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-                    eos qui ratione voluptatem sequi nesciunt.</p>
                 <ul>
                     <li><a href="#">Nunc dignissim <strong>risus id metus</strong></a></li>
                     <li>Cras ornare tristique elit
@@ -468,10 +472,28 @@
                         </ul>
                     </li>
                     <li><a href="#">Vivamus vestibulum nulla nec ante</a></li>
+                    <li><a href="#">Vivamus vestibulum nulla nec ante</a></li>
+                    <li><a href="#">Vivamus vestibulum nulla nec ante</a></li>
+                    <li><a href="#">Vivamus vestibulum nulla nec ante</a></li>
+                    <li><a href="#">Vivamus vestibulum nulla nec ante</a></li>
+                    <li><a href="#">Vivamus vestibulum nulla nec ante</a></li>
+                    <li><a href="#">Vivamus vestibulum nulla nec ante</a></li>
+                    <li><a href="#">Vivamus vestibulum nulla nec ante</a></li>
+                    <li><a href="#">Vivamus vestibulum nulla nec ante</a></li>
+                    <li><a href="#">Vivamus vestibulum nulla nec ante</a></li>
                 </ul>
                 <a href="#" class="button radius">
                     Get Directions&ensp;<span class="fa fa-map-marker" aria-hidden="true"></span>
                 </a>
+                <div class="callout secondary">
+
+                    <h2 style="text-align: center;">Annual Department of Medicine and AΩA Beta Tennessee Chapter Research Day 2017</h2>
+                    <figure class="left uthsc-figure uthsc-figure-40 thumbnail"><img src="http://news.uthsc.edu/wp-content/uploads/2017/04/research-day-summary.jpg" alt="research day winners on stage with their awards" width="275" height="189" /><figcaption class="text-left">2017 Winners</figcaption>
+                    </figure><p>The Department of Medicine and the Alpha Omega Alpha Beta Tennessee Chapter presented
+                        the annual Research in Medicine and Alpha Omega Alpha Medical Student Research Day
+                        on Friday, February 24. The event was from 3-6 p.m. in the Madison Plaza with presentations
+                        in the Hamilton Eye Institute Freeman Auditorium. <a href="https://news.uthsc.edu/annual-department-medicine-alpha-omega-alpha-beta-tennessee-chapter-research-day-2017/">Read More<br style="clear:both;" /></a></p>
+                </div>
             </div>
         </div>
         <!--******-->
@@ -492,9 +514,9 @@
                 <div class="large-4 columns">
                     <h3>Content Row 3</h3>
                     <h5>One Third</h5>
-                    <figure class="right image-40"><img
-                            src="http://news.uthsc.edu/wp-content/uploads/2014/12/Top-Workplace-HomePageSlider.jpg"
-                            alt="the arches on union avenue">
+                    <figure class="left thumbnail uthsc-figure"><img
+                                src="http://news.uthsc.edu/wp-content/uploads/2014/12/Top-Workplace-HomePageSlider.jpg"
+                                alt="the arches on union avenue">
                         <figcaption>UTHSC named one of the <a href="#">2014 Top Workplaces</a> in Memphis.</figcaption>
                     </figure>
                     <p><strong>This is a <em>two</em> column layout</strong> Sed ut perspiciatis unde omnis iste natus
@@ -740,52 +762,52 @@
                 </div>
             </div>
 
-        <div class="row">
-            <div class="columns large-3"></div>
-            <div class="columns large-6 large-centered">
-                <div class="uthsc-faq">
-                    <div class="uthsc-faq-questions">
-                        <ul>
-                            <li><a href="#q1">What is your name?</a></li>
-                            <li><a href="#q2">What is your favorite color?</a></li>
-                            <li><a href="#q3">What is your the weight of an unladen swallow?</a></li>
-                        </ul>
+            <div class="row">
+                <div class="columns large-3"></div>
+                <div class="columns large-6 large-centered">
+                    <div class="uthsc-faq">
+                        <div class="uthsc-faq-questions">
+                            <ul>
+                                <li><a href="#q1">What is your name?</a></li>
+                                <li><a href="#q2">What is your favorite color?</a></li>
+                                <li><a href="#q3">What is your the weight of an unladen swallow?</a></li>
+                            </ul>
+                        </div>
+
+                        <hr />
+
+                        <div class="uthsc-faq-answers">
+                            <h4 id="q1"><a href="#q1">What is your name?</a></h4>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto beat</p>
+
+                            <h4 id="q2"><a href="#q2">What is your favorite color?</a></h4>
+                            <p>sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                                sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
+                                quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
+                                non numquam eius modi</p>
+
+                            <h4 id="q3"><a href="#q3">What is your the weight of an unladen swallow?</a></h4>
+                            <p>ncidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
+                                quis nostrumexercitationem ullam corporis suscipit laboriosam, nisi
+                            </p>
+                        </div>
                     </div>
 
-                    <hr />
 
-                    <div class="uthsc-faq-answers">
-                        <h4 id="q1"><a href="#q1">What is your name?</a></h4>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-                            laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                            architecto beat</p>
 
-                        <h4 id="q2"><a href="#q2">What is your favorite color?</a></h4>
-                        <p>sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                            sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
-                            quisquam est, quidolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
-                            non numquam eius modi</p>
 
-                        <h4 id="q3"><a href="#q3">What is your the weight of an unladen swallow?</a></h4>
-                        <p>ncidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam,
-                            quis nostrumexercitationem ullam corporis suscipit laboriosam, nisi
-                        </p>
-                    </div>
+
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                    tempora
+                    iut aliquid ex ea commodi consequatur? Quis
+                    autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
+                    illum qui dolorem eum fugiat quo voluptas nulla pariatur?<br /><br /><br />
                 </div>
-
-
-
-
-
-                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
-                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
-                 tempora
-                iut aliquid ex ea commodi consequatur? Quis
-                autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel
-                illum qui dolorem eum fugiat quo voluptas nulla pariatur?<br /><br /><br />
+                <div class="columns large-3"> </div>
             </div>
-            <div class="columns large-3"> </div>
-        </div>
         </div>
         <!--*****-->
         <!--/Row 5-->
@@ -847,51 +869,51 @@
 
                 <h4>Tabs</h4>
                 <ul class="tabs" data-tabs id="example-tabs">
-                  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
-                  <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+                    <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+                    <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
                 </ul>
                 <div class="tabs-content" data-tabs-content="example-tabs">
-                  <div class="tabs-panel is-active" id="panel1">
-                    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
-                  </div>
-                  <div class="tabs-panel" id="panel2">
-                    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
-                  </div>
+                    <div class="tabs-panel is-active" id="panel1">
+                        <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+                    </div>
+                    <div class="tabs-panel" id="panel2">
+                        <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                    </div>
                 </div>
                 <br />
 
-              <h4>Table</h4>
-              <table>
-                <thead>
-                <tr>
-                  <th width="200">Table Header</th>
-                  <th>Table Header</th>
-                  <th width="150">Table Header</th>
-                  <th width="150">Table Header</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>Content Goes Here</td>
-                  <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
-                  <td>Content Goes Here</td>
-                  <td>Content Goes Here</td>
-                </tr>
-                <tr>
-                  <td>Content Goes Here</td>
-                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-                  <td>Content Goes Here</td>
-                  <td>Content Goes Here</td>
-                </tr>
-                <tr>
-                  <td>Content Goes Here</td>
-                  <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
-                  <td>Content Goes Here</td>
-                  <td>Content Goes Here</td>
-                </tr>
-                </tbody>
-              </table>
-              <br />
+                <h4>Table</h4>
+                <table>
+                    <thead>
+                    <tr>
+                        <th width="200">Table Header</th>
+                        <th>Table Header</th>
+                        <th width="150">Table Header</th>
+                        <th width="150">Table Header</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Content Goes Here</td>
+                        <td>This is longer content Donec id elit non mi porta gravida at eget metus.</td>
+                        <td>Content Goes Here</td>
+                        <td>Content Goes Here</td>
+                    </tr>
+                    <tr>
+                        <td>Content Goes Here</td>
+                        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                        <td>Content Goes Here</td>
+                        <td>Content Goes Here</td>
+                    </tr>
+                    <tr>
+                        <td>Content Goes Here</td>
+                        <td>This is longer Content Goes Here Donec id elit non mi porta gravida at eget metus.</td>
+                        <td>Content Goes Here</td>
+                        <td>Content Goes Here</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <br />
 
             </div>
         </div>
