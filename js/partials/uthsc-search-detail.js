@@ -79,7 +79,7 @@ function parsePersonDetails(data) {
 	html += "<tr><td><strong>Address:</strong></td><td>" + person.address + "</td></tr>";
 	html += "<tr><td><strong>Location:</strong></td><td>" + person.location + "</td></tr>";
 	html += "<tr><td><strong>Phone Number:</strong></td><td>" + person.phone + "</td></tr>";
-	html += "<tr><td><strong>Designation:</strong></td><td>" + person.designation + "</td></tr>";
+	//html += "<tr><td><strong>Designation:</strong></td><td>" + person.designation + "</td></tr>";
 	html += "<tr><td><strong>Title:</strong></td><td>" + person.title + "</td></tr>";
 	html += "<tr><td><strong>NetID:</strong></td><td>" + person.netid + "</td></tr>";
 	html += "<tr><td><strong>E-Mail:</strong></td><td><a href=\"mailto:" + person.email + "\">" + person.email + "</a></td></tr>";
